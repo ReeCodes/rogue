@@ -1,0 +1,615 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "outer_worlds"
+	group: "5CE92435AF830225"
+	icon: "immersive_aircraft:enhanced_propeller"
+	id: "372A0A4FCA61B7E5"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "create:propeller"
+			id: "3AC4DD7DB2F7F10C"
+			rewards: [
+				{
+					id: "40446DFEFC62C02C"
+					type: "xp"
+					xp: 12
+				}
+				{
+					count: 2
+					id: "5F2D911115D61FEB"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "106CE589D7EDACE1"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Early Flight"
+			tasks: [
+				{
+					id: "288067D1352EC868"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "immersive_aircraft:engine"
+								}
+								{
+									Count: 1b
+									id: "immersive_aircraft:propeller"
+								}
+							]
+						}
+					}
+					title: "&eMain Parts"
+					type: "item"
+				}
+				{
+					icon: "create:propeller"
+					id: "6FC91C2B0505EBD4"
+					title: "&eFly: &r1st Generation Aircraft"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "cloudstorage:balloon"
+						tag: {
+							3DRender: 1b
+						}
+					}
+					id: "2637C9786B140F06"
+					title: "&eReach: &rAbove Y100"
+					type: "custom"
+				}
+			]
+			title: "&eIntroduction: &aPilot's License"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "5C8EEF45B6265E7A"
+			rewards: [
+				{
+					id: "24471F14F10C1451"
+					type: "xp"
+					xp: 12
+				}
+				{
+					count: 2
+					id: "3A1CB322206CD263"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "2004019A818C97C2"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Manned Gadgets"
+			tasks: [
+				{
+					id: "1C5EE643282D2358"
+					item: "immersive_aircraft:rotary_cannon"
+					type: "item"
+				}
+				{
+					id: "211B1DEF9AAEBEFE"
+					item: "immersive_aircraft:heavy_crossbow"
+					type: "item"
+				}
+				{
+					id: "76C581DD7117255E"
+					item: "immersive_aircraft:telescope"
+					type: "item"
+				}
+				{
+					id: "2C3E3FBA32F5316B"
+					item: "immersive_aircraft:bomb_bay"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rArmament Equipment"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3AC4DD7DB2F7F10C"
+				"288067D1352EC868"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_aircraft:airship"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "341CF68652A5A18D"
+			rewards: [
+				{
+					id: "0CB6CA12A955FE40"
+					type: "xp"
+					xp: 8
+				}
+				{
+					count: 2
+					id: "235786F5C4540730"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "46572CFE7837347A"
+					item: "kubejs:bloated_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Delivery Recruit"
+			tasks: [{
+				id: "6CF3B2EBB3E186A3"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			title: "&eConstruct: &rSimple Aeronautics"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["341CF68652A5A18D"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_aircraft:cargo_airship"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "7B58C255F8871A56"
+			rewards: [
+				{
+					id: "62DF967301FC019B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 2
+					id: "6327EC8C180A2CD9"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5DE8B60156A45581"
+					item: "kubejs:bloated_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Flying Freight"
+			tasks: [{
+				id: "1571073E1B1D85E5"
+				item: "immersive_aircraft:cargo_airship"
+				type: "item"
+			}]
+			title: "&eConstruct: &rCargo Airship"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"288067D1352EC868"
+				"3AC4DD7DB2F7F10C"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_aircraft:gyrodyne"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "42E663D292FF2959"
+			rewards: [
+				{
+					id: "05AF371B7B35037C"
+					type: "xp"
+					xp: 8
+				}
+				{
+					count: 2
+					id: "47F32E8DAD6BF9D3"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Rotor Lift"
+			tasks: [{
+				id: "4F3DE47CA5C02A61"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			title: "&eConstruct: &rGyrodyne"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3AC4DD7DB2F7F10C"
+				"288067D1352EC868"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_aircraft:quadrocopter"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "2895C3EAD0466131"
+			rewards: [
+				{
+					id: "73DBD764E8C2111F"
+					type: "xp"
+					xp: 8
+				}
+				{
+					count: 2
+					id: "73FDC967AD11631E"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Drone Physics"
+			tasks: [{
+				id: "74D30BE3208A33CC"
+				item: "immersive_aircraft:quadrocopter"
+				type: "item"
+			}]
+			title: "&eConstruct: &rQuadrocopter"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3AC4DD7DB2F7F10C"]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_aircraft:biplane"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "15B67DA34F8375CD"
+			rewards: [
+				{
+					id: "423B5E174C0573A4"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "1EB21BE3B1AA06C3"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "44753225E7130B73"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Fragile Model"
+			tasks: [
+				{
+					id: "1AA081492C194847"
+					item: "immersive_aircraft:biplane"
+					type: "item"
+				}
+				{
+					icon: "immersive_aircraft:biplane"
+					id: "219AD5F2D044C067"
+					title: "&eFly: &rWinged Aircraft"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "cloudstorage:balloon"
+						tag: {
+							3DRender: 1b
+						}
+					}
+					id: "48A44AD54A4F1733"
+					title: "&eReach: &rAbove Y150"
+					type: "custom"
+				}
+			]
+			title: "&eChapter I: &aAdvanced Aeronautics"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"15B67DA34F8375CD"
+				"1AA081492C194847"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "man_of_many_planes:scarlet_biplane"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "27BDF32658F99718"
+			rewards: [
+				{
+					id: "39B060E1EC6D9D1A"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 6
+					id: "35FD072F067240A4"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1401E10743BB714B"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Freshly Painted"
+			tasks: [{
+				id: "451019495688AF8C"
+				item: "man_of_many_planes:scarlet_biplane"
+				type: "item"
+			}]
+			title: "&eConstruct: &rScarlet Biplane"
+			x: 10.0d
+			y: -17.0d
+		}
+		{
+			dependencies: [
+				"15B67DA34F8375CD"
+				"1AA081492C194847"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "man_of_many_planes:economy_plane"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "27A28D17EFD1908A"
+			rewards: [
+				{
+					id: "703586DC3A14D2C5"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 6
+					id: "5BE3C7922FB01BF0"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7E75C43A61D36E23"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Mail Delivery"
+			tasks: [{
+				id: "55F32D3130AEFEEC"
+				item: "man_of_many_planes:economy_plane"
+				type: "item"
+			}]
+			title: "&eConstruct: &rEconomy Plane"
+			x: -10.0d
+			y: -17.0d
+		}
+		{
+			id: "7139BE70B1428B73"
+			rewards: [
+				{
+					id: "3EC7770646D6150F"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "713C49C9D6B37ACD"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Feature Installments"
+			tasks: [{
+				count: 4L
+				id: "1A5313CA8F9F1813"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "immersive_aircraft:hull_reinforcement"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:gyroscope"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:sturdy_pipes"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:industrial_gears"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:steel_boiler"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:nether_engine"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:eco_engine"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:enhanced_propeller"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:improved_landing_gear"
+							}
+						]
+					}
+				}
+				title: "&eUpgrades"
+				type: "item"
+			}]
+			title: "&6Collection: &rAeronautic Upgrades"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"27BDF32658F99718"
+				"27A28D17EFD1908A"
+			]
+			dependency_requirement: "one_completed"
+			icon: "man_of_many_planes:economy_plane"
+			id: "4BD0848C8CEB691C"
+			rewards: [
+				{
+					id: "4FB91256F39EC18F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "77F17B5FA2C7F7C2"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2B2CA9EA0E795FF9"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "534FBCF3F06EE244"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Mercury Alike"
+			tasks: [
+				{
+					icon: "man_of_many_planes:economy_plane"
+					id: "5966779569D94092"
+					title: "&eFly: &rSophisticated Airplane"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "cloudstorage:balloon"
+						tag: {
+							3DRender: 1b
+						}
+					}
+					id: "0AE5474451690DC4"
+					title: "&eReach: &rAbove Y200"
+					type: "custom"
+				}
+			]
+			title: "&eFinale: &aFirst Class"
+			x: 0.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["7B58C255F8871A56"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_aircraft:warship"
+					DisplayMobScale: 0.75d
+				}
+			}
+			id: "779B65CC0FA3028F"
+			rewards: [
+				{
+					id: "6EBB77F6B73FBF46"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 3
+					id: "5FD46E98BD7F8BC2"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2E26B7F1B2479AB4"
+					item: "kubejs:bloated_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Flying Horde"
+			tasks: [{
+				id: "1DB3CAC3891787EF"
+				item: "immersive_aircraft:warship"
+				type: "item"
+			}]
+			title: "&eConstruct: &rWarship"
+			x: 0.0d
+			y: 21.0d
+		}
+	]
+	title: "{quest.overview.base_label.title} Sky Tied"
+}

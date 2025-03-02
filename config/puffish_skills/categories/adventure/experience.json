@@ -1,0 +1,57 @@
+{
+	"experience_per_level": {
+		"type": "expression",
+		"data": {
+			"expression": "min(level ^ 2.132 + 200, 5000)"
+		}
+	},
+	"sources": [
+		{
+			"type": "puffish_skills:mine_block",
+			"data": {
+				"variables": {
+					"mined_pickaxe": {
+						"operations": [{
+								"type": "get_mined_block_state"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"block": "#mineable/pickaxe"
+								}
+							}
+						]
+					},
+					"mined_axe": {
+						"operations": [{
+								"type": "get_mined_block_state"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"block": "#mineable/axe"
+								}
+							}
+						]
+					},
+					"mined_shovel": {
+						"operations": [{
+								"type": "get_mined_block_state"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"block": "#mineable/shovel"
+								}
+							}
+						]
+					}
+				},
+				"experience": [{
+					"condition": "(mined_axe | mined_pickaxe | mined_shovel)",
+					"expression": "1"
+				}]
+			}
+		}
+	]
+}

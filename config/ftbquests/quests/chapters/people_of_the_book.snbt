@@ -1,0 +1,139 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "people_of_the_book"
+	group: "3D958E05CD56D7EA"
+	icon: "ars_nouveau:novice_spell_book"
+	id: "56A5B49AFD4D8ABA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "ars_nouveau:worn_notebook"
+			id: "6D544692632B5B3D"
+			rewards: [{
+				id: "67DBEEEA39D54336"
+				type: "xp"
+				xp: 10
+			}]
+			size: 3.0d
+			subtitle: "Bookworm"
+			tasks: [
+				{
+					id: "17408E8BCB27769A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:logs/archwood"
+						}
+					}
+					title: "&eArchwood Logs"
+					type: "item"
+				}
+				{
+					id: "16F5CD2C1CD578A1"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+			]
+			title: "&eIntroduction: &aPedantic Studies"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6D544692632B5B3D"
+				"17408E8BCB27769A"
+			]
+			dependency_requirement: "one_completed"
+			icon: "ars_nouveau:scribes_table"
+			id: "7AC2EEEA96D962DB"
+			rewards: [{
+				id: "05039EF79F354F48"
+				type: "xp"
+				xp: 15
+			}]
+			size: 2.0d
+			subtitle: "Report To Paper"
+			tasks: [
+				{
+					id: "5E99066AD2D70FC7"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+				{
+					id: "3F76EE11F873F343"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:id_regex"
+									tag: {
+										value: "ars_.*:.*glyph.*"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "ars_nouveau:blank_glyph"
+										}]
+									}
+								}
+							]
+						}
+					}
+					title: "&eGlyphs"
+					type: "item"
+				}
+				{
+					icon: "ars_nouveau:blank_glyph"
+					id: "4547300A9B5BA937"
+					title: "&eLearn: &rGlyph"
+					type: "custom"
+				}
+			]
+			title: "&eSegment: &aGlyph Examination"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6D544692632B5B3D"
+				"17408E8BCB27769A"
+			]
+			dependency_requirement: "one_completed"
+			icon: "ars_nouveau:imbuement_chamber"
+			id: "4F51F7E406EB29E2"
+			rewards: [{
+				id: "3D59FAC4359AD82E"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			subtitle: "Source Of Source"
+			tasks: [
+				{
+					id: "19A633A7EB1A42DD"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					id: "436D281D6534F780"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aPassive Infuse"
+			x: 2.0d
+			y: -2.0d
+		}
+	]
+	title: "&f{quest.overview.magic_label.title} &dArcane: &rPeople Of The Book"
+}

@@ -1,0 +1,2020 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "admirable_machinery"
+	group: "4E6F24CF14FB572B"
+	icon: "thermal:machine_pulverizer"
+	id: "530C5EF46481ACBC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "64B536F73A545995"
+			rewards: [
+				{
+					id: "7B0135F3CD0A3D78"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 3
+					id: "5E3587D300007ED7"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Multi Grinder"
+			tasks: [{
+				id: "7033B478FB1F21B6"
+				item: "enderio:sag_mill"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["23736A09E5EEF31C"]
+			id: "60A3E1607331A729"
+			rewards: [
+				{
+					id: "16E5EDF4074347CE"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 3
+					id: "7F754FD8A8FE590F"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Multi Alloyer"
+			tasks: [{
+				id: "593030433592C7C0"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			id: "03A8F9FC02486D29"
+			rewards: [
+				{
+					id: "224B1587ADEA23C0"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 6
+					id: "31DBD80C5394DCA2"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Dynamic"
+			tasks: [
+				{
+					id: "4D13B4C7885415AD"
+					item: "thermal:dynamo_stirling"
+					type: "item"
+				}
+				{
+					id: "6E0DE79FF415A9B2"
+					item: "thermal:dynamo_compression"
+					type: "item"
+				}
+				{
+					id: "3C2FDC5F06BE441D"
+					item: "thermal:dynamo_magmatic"
+					type: "item"
+				}
+				{
+					id: "3FE286D463AC5F89"
+					item: "thermal:dynamo_numismatic"
+					type: "item"
+				}
+				{
+					id: "08375FDAA3969649"
+					item: "thermal:dynamo_lapidary"
+					type: "item"
+				}
+				{
+					id: "3B14E707F68650EF"
+					item: "thermal:dynamo_disenchantment"
+					type: "item"
+				}
+				{
+					id: "353EE739E5C2A471"
+					item: "thermal:dynamo_gourmand"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rDynamos"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			icon: "immersiveengineering:thermoelectric_generator"
+			id: "7F80D8855E600B48"
+			rewards: [
+				{
+					id: "25E03B3D8E2370E7"
+					type: "xp"
+					xp: 7
+				}
+				{
+					id: "44103304FB218C70"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Temperature Difference"
+			tasks: [
+				{
+					id: "7208424AFC350BE8"
+					item: "immersiveengineering:thermoelectric_generator"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2B9F72AB9C252159"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "immersiveengineering:storage_uranium"
+								}
+								{
+									Count: 1b
+									id: "minecraft:magma_block"
+								}
+								{
+									Count: 1b
+									id: "minecraft:lava_bucket"
+								}
+							]
+						}
+					}
+					title: "&eHeated Blocks"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "13B378A10674E1E8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:blue_ice"
+								}
+								{
+									Count: 1b
+									id: "minecraft:packed_ice"
+								}
+								{
+									Count: 1b
+									id: "minecraft:ice"
+								}
+							]
+						}
+					}
+					title: "&eCooled Blocks"
+					type: "item"
+				}
+			]
+			title: "&eBuild: &rThermoelectric Chamber"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:watermill"
+					DisplayScale: 2.0d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "4B46237FDAD5C810"
+			rewards: [
+				{
+					id: "1A52F1A06663FC62"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "398CD69BCE044009"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Aquatic Source"
+			tasks: [
+				{
+					id: "75A4719775E0D8E1"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "7F33DF98D7E283CB"
+					item: "immersiveengineering:watermill"
+					type: "item"
+				}
+			]
+			title: "&eBuild: &rWaterwheel"
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:windmill"
+					DisplayScale: 2.5d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "0FEAD7FBB24D281B"
+			rewards: [
+				{
+					id: "024414D048EDC9F9"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "698087C3E2D64602"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Aerial Source"
+			tasks: [
+				{
+					id: "1D02582F5CF7C328"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "414B4250EA3C6C6C"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3C9F3F714AA7EF07"
+					item: { Count: 8, id: "immersiveengineering:windmill_sail" }
+					type: "item"
+				}
+			]
+			title: "&eBuild: &rWindmill"
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0000000000000699"]
+			dependency_requirement: "all_started"
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:coke_oven"
+					DisplayScale: 1.25d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "0000000000000315"
+			rewards: [
+				{
+					id: "0000000000000383"
+					type: "xp"
+					xp: 3
+				}
+				{
+					count: 2
+					id: "4A929275BBF5C440"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Coke Fabrication"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:coke_oven"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 1
+							DisplayZoom: 0
+						}
+					}
+					id: "55FECE322606AD4A"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rCoke Oven"
+					to_observe: "immersiveengineering:coke_oven"
+					type: "observation"
+				}
+				{
+					count: 27L
+					id: "7B725AD41914DF41"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aCoke Oven"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000699"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:alloy_smelter"
+					DisplayScale: 1.25d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "0000000000000317"
+			rewards: [
+				{
+					id: "0000000000000382"
+					type: "xp"
+					xp: 3
+				}
+				{
+					count: 2
+					id: "1142E650F8B29AC7"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Simply Alloying"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:alloy_smelter"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 1
+							DisplayZoom: 0
+						}
+					}
+					id: "79FD73879ACF5ACC"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rAlloy Kiln"
+					to_observe: "immersiveengineering:alloy_smelter"
+					type: "observation"
+				}
+				{
+					count: 8L
+					id: "3E176B0D67CA3923"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aAlloy Kiln"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000000699"
+				"4F1AB519E7B23A3F"
+			]
+			hide_dependency_lines: true
+			id: "0000000000000681"
+			rewards: [
+				{
+					id: "0000000000000697"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "550B4F58FE3B48E7"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Better Than The Other Press"
+			tasks: [{
+				advancement: "immersiveengineering:main/mb_metalpress"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "citadel:fancy_item"
+					tag: {
+						DisplayBob: 0
+						DisplayItem: "immersiveengineering:metal_press"
+						DisplayScale: 2
+						DisplayShake: 0
+						DisplaySpin: 0
+						DisplayZoom: 0
+					}
+				}
+				id: "0000000000000687"
+				title: "&eBuild: &rMetal Press"
+				type: "advancement"
+			}]
+			title: "&eSegment: &aMetal Press"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "0000000000000699"
+			rewards: [
+				{
+					id: "000000000000069C"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "60127AFC5CF59031"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			subtitle: "Mallet O' Multiblocks"
+			tasks: [{
+				id: "228DB61DEA44E593"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			hide_dependency_lines: false
+			id: "38CA95685E6442C9"
+			rewards: [
+				{
+					id: "63E782D67638D811"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 18
+					id: "037F1B8F41566CAF"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Nitro Speed"
+			tasks: [
+				{
+					id: "6B72899763D52555"
+					item: "powah:furnator_nitro"
+					type: "item"
+				}
+				{
+					id: "1198881E5413B6EC"
+					item: "powah:magmator_nitro"
+					type: "item"
+				}
+				{
+					id: "6939C53E7F1758C0"
+					item: "powah:thermo_generator_nitro"
+					type: "item"
+				}
+				{
+					id: "0D8D158C5AC642BB"
+					item: "powah:solar_panel_nitro"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rNitro Generation"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0000000000000699"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:blast_furnace"
+					DisplayScale: 1.25d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "5C0541B0209B7F45"
+			rewards: [
+				{
+					id: "04B3DA95A8178DE2"
+					type: "xp"
+					xp: 7
+				}
+				{
+					count: 2
+					id: "190FCB02E498D58F"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Tinker's Techniques"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/mb_blastfurnace"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:blast_furnace"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 1
+							DisplayZoom: 0
+						}
+					}
+					id: "50B59933D45B9879"
+					title: "&eBuild: &rCrude Blast Furnace"
+					type: "advancement"
+				}
+				{
+					count: 27L
+					id: "58ADB02F68D3AE04"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+				{
+					id: "4F1AB519E7B23A3F"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aCrude Blast Furnace"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000000699"
+				"4F1AB519E7B23A3F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:excavator"
+					DisplayScale: 2
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "5B4CFEBDAFEDE635"
+			rewards: [
+				{
+					id: "07B7879897D688D2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "14FE2A5A037C1DE1"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Ores Out Of Nothing"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/mb_excavator"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:excavator"
+							DisplayScale: 1
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "3F71EF3D1603E033"
+					title: "&eBuild: &rExcavator"
+					type: "advancement"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:bucket_wheel"
+							DisplayScale: 1
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "2809E1B211E9AF70"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rBucket Wheel"
+					to_observe: "immersiveengineering:bucket_wheel"
+					type: "observation"
+				}
+			]
+			title: "&eSegment: &aExcavator"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000000699"
+				"4F1AB519E7B23A3F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:diesel_generator"
+					DisplayScale: 2
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "36848C89850E34F2"
+			rewards: [
+				{
+					id: "2478BA4358577DD9"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "51F386F6D1D083C7"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Hearing Damage Included"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/mb_dieselgen"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:diesel_generator"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "1B4909A22D3D1E73"
+					title: "&eBuild: &rDiesel Generator"
+					type: "advancement"
+				}
+				{
+					id: "7699B24D39BC3017"
+					item: "immersiveengineering:earmuffs"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aDiesel Generator"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000000699"
+				"4F1AB519E7B23A3F"
+			]
+			hide_dependency_lines: true
+			id: "691A90F3E4EA4ABA"
+			rewards: [
+				{
+					id: "3CF91D433FE7AD93"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 6
+					id: "09EEF576961596B3"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Be Careful With That!"
+			tasks: [{
+				advancement: "immersiveengineering:main/mb_crusher"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "citadel:fancy_item"
+					tag: {
+						DisplayBob: 0
+						DisplayItem: "immersiveengineering:crusher"
+						DisplayScale: 2
+						DisplayShake: 0
+						DisplaySpin: 0
+						DisplayZoom: 0
+					}
+				}
+				id: "696E2C4F5A7E924A"
+				title: "&eBuild: &rCrusher"
+				type: "advancement"
+			}]
+			title: "&eSegment: &aCrusher"
+			x: -6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5C0541B0209B7F45"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:advanced_blast_furnace"
+					DisplayScale: 2
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "454AC6C173492ED9"
+			rewards: [
+				{
+					id: "1900FCCDB746CB08"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 4
+					id: "7819FFEC3C66C031"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Automated Steel"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/mb_improvedblastfurnace"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:advanced_blast_furnace"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "308AF1FD99DB70CD"
+					title: "&eBuild: &rImproved Blast Furnace"
+					type: "advancement"
+				}
+				{
+					count: 2L
+					id: "42DADA63479C183A"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aImproved Blast Furnace"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000000699"
+				"4F1AB519E7B23A3F"
+			]
+			hide_dependency_lines: true
+			id: "63BB47FC26345E9A"
+			rewards: [
+				{
+					id: "0DCB511A2F467F15"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 7
+					id: "67880C863BC8EFEF"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Multi-Alloying-Machine"
+			tasks: [{
+				advancement: "immersiveengineering:main/mb_arcfurnace"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "citadel:fancy_item"
+					tag: {
+						DisplayBob: 0
+						DisplayItem: "immersiveengineering:arc_furnace"
+						DisplayScale: 2
+						DisplayShake: 0
+						DisplaySpin: 0
+						DisplayZoom: 0
+					}
+				}
+				id: "6CA21742E120A763"
+				title: "&eBuild: &rArc Furnace"
+				type: "advancement"
+			}]
+			title: "&eSegment: &aArc Furnace"
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000000699"
+				"4F1AB519E7B23A3F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:sawmill"
+					DisplayScale: 2
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "50E743AB8B4D0D02"
+			rewards: [
+				{
+					id: "150C3F6D7DC97206"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 6
+					id: "3387DBFCB5DD9B04"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Carpenter's Value"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:sawmill"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "1943434B998D54F1"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rSawmill"
+					to_observe: "immersiveengineering:sawmill"
+					type: "observation"
+				}
+				{
+					count: 8L
+					id: "54B5C8F3F2F86B38"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0FD022DE16124914"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6A4D74F91A7D44A3"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "22C8DEB0E6F79A3D"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "45C82363941ED167"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3DD2C42E4B93A87F"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aSawmill"
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			id: "0571C720616E30E4"
+			rewards: [
+				{
+					id: "53255D861E1AA783"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "7FB516F16AE5CDAE"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Handyman's Bench"
+			tasks: [{
+				id: "0EBFC2A5A657DD37"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "40184DDB4E5D0FBF"
+			rewards: [
+				{
+					id: "6AEEDCBDAF5D913C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "1B7C9F4AF0CF99E8"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Electrician's Bench"
+			tasks: [{
+				id: "3447B91FDBAFF995"
+				item: "immersiveengineering:circuit_table"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0571C720616E30E4"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:auto_workbench"
+					DisplayScale: 2
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "03092FF264C55F8D"
+			rewards: [
+				{
+					id: "338E19F69E450E31"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "12723F1104765FC5"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Modifying Timelessly"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:auto_workbench"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "6E47B68C812085D7"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rAutomated Engineer's Workbench"
+					to_observe: "immersiveengineering:auto_workbench"
+					type: "observation"
+				}
+				{
+					count: 4L
+					id: "4A699D54985F05DF"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3420B5D84BF995EA"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7B36FCA62F2E4443"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1D64361C5762B780"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					id: "1F8C9FB1094F7C79"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "46447EEC3D0DA2CA"
+					item: "immersiveengineering:slab_treated_wood_horizontal"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aAutomated Engineer's Workbench"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000000699"
+				"4F1AB519E7B23A3F"
+			]
+			description: [""]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:fermenter"
+					DisplayScale: 2
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "09499EB9915324B5"
+			rewards: [
+				{
+					id: "6B80E57EAC587F86"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "5D6B05C3ABC38232"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Rotten Yield"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:fermenter"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "476B4106653C1651"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rFermenter"
+					to_observe: "immersiveengineering:fermenter"
+					type: "observation"
+				}
+				{
+					count: 6L
+					id: "224466A68F8B35B9"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "018279A8AEB024B1"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0DFD7DB47CC14BD0"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "6B91DC7E41F2054E"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7F051DF118E44AE9"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "768040309D4ED33C"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aFermenter"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000000699"
+				"4F1AB519E7B23A3F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:squeezer"
+					DisplayScale: 2
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "76615AE50D214BBC"
+			rewards: [
+				{
+					id: "36F9BE562490EC87"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "17AE3C385DEB5B2F"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Sqashing Into Juice"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:squeezer"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "23872E1B7196FE1D"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rSqueezer"
+					to_observe: "immersiveengineering:squeezer"
+					type: "observation"
+				}
+				{
+					id: "7EBF639C8FC43BC3"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "20E6734631A6CDC6"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "045039C470ED6C6A"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "476C00A388B798DE"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "14DD08F2F6735248"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "21D665FB7F09353C"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "45A135E3CDE10C9C"
+					item: "immersiveengineering:wooden_barrel"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aSqueezer"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"76615AE50D214BBC"
+				"09499EB9915324B5"
+			]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "immersiveengineering:refinery"
+					DisplayScale: 2
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "46F39DBAAFD4D7B8"
+			rewards: [
+				{
+					id: "5087A6032DD5D2BF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 5
+					id: "72ECBF8CC056718B"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Ethanol Production"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "immersiveengineering:refinery"
+							DisplayScale: 2
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "2724D2B5266D01C3"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rRefinery"
+					to_observe: "immersiveengineering:refinery"
+					type: "observation"
+				}
+				{
+					count: 8L
+					id: "2224F3BA9AEE7106"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6436FBB9B836C7A0"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "74D742C29EB4A94D"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "06AED4B80432AC06"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					id: "76E2907672EB8224"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3DF1115033933282"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aRefinery"
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			id: "435A5F548069DE79"
+			rewards: [
+				{
+					id: "32A477222A6BB38E"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 15
+					id: "7BF3D3542FDF5785"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+				{
+					advancement: "rogue:rogue/unlock_powah_end"
+					auto: "enabled"
+					criterion: ""
+					icon: "kubejs:gear_box"
+					id: "2BC43E3BB4F6B6E6"
+					title: "&aBetter Drops"
+					type: "advancement"
+				}
+			]
+			size: 2.0d
+			subtitle: "Noxious"
+			tasks: [{
+				count: 36L
+				id: "0C9D36226A7B115B"
+				item: { Count: 36, id: "powah:reactor_nitro" }
+				title: "&eBuild: &rNitro Reactor"
+				type: "item"
+			}]
+			title: "&eSegment: &aPowerful Reactor"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			id: "57BB7691CF50EBBA"
+			rewards: [
+				{
+					id: "613FA5925B329735"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "5C87253DA9FE85E0"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Compact Press"
+			tasks: [{
+				id: "68BA2976CACBD706"
+				item: "ad_astra:compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			id: "70FEBF392743A0F7"
+			rewards: [
+				{
+					id: "027D85852F94270F"
+					type: "xp"
+					xp: 7
+				}
+				{
+					count: 2
+					id: "5CC97BD8F61BE155"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Pressurized"
+			tasks: [{
+				id: "1CB48535150A1173"
+				item: "pneumaticcraft:pneumatic_dynamo"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			id: "493F9F8EA44E9789"
+			rewards: [
+				{
+					id: "38E4FDB22F985356"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "3DB2E98817E78342"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Mob Processor"
+			tasks: [{
+				id: "0AC231D379B5D7A1"
+				item: "enderio:slice_and_splice"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -12.5d
+		}
+		{
+			id: "00C82F97426F30BA"
+			rewards: [
+				{
+					id: "7963A00F2AEF4A38"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "28D30897B86A62B5"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Spiritual Attachment"
+			tasks: [{
+				id: "4534BA1245E33276"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			id: "5227E6ED06F6DA43"
+			rewards: [
+				{
+					id: "337A8F087A9598CE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "43A29EB05F3DBAEB"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Soul Based Spawning"
+			tasks: [{
+				id: "35151A1BF1AC8F1F"
+				item: {
+					Count: 1
+					id: "enderio:powered_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			id: "0A7D38B4036239C0"
+			rewards: [
+				{
+					id: "04F1C0A4DD81FAB8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "17A7E8C2DA781CA4"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Storing Wisdom"
+			tasks: [{
+				id: "76824ECB8A590B7B"
+				item: "enderio:xp_obelisk"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			id: "6B161002504B573E"
+			rewards: [
+				{
+					id: "3ED182087F014447"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "2992682AE5708522"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Immoral Energy"
+			tasks: [{
+				id: "22429B6AE1DDF84F"
+				item: {
+					Count: 1
+					id: "enderio:soul_engine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -12.5d
+		}
+		{
+			id: "2C5ADDB4E6086610"
+			rewards: [
+				{
+					id: "011E7395E2AF005D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "6B41C003594DF0F8"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Compostable"
+			tasks: [{
+				id: "01FACC9082AB4AEC"
+				item: "industrialforegoing:biofuel_generator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			id: "388541B446B102AE"
+			rewards: [
+				{
+					id: "7563FBC84FCBC33C"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 20
+					id: "573CD0350EA07AD9"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Spread The Mold"
+			tasks: [
+				{
+					id: "51654285170190B5"
+					item: "industrialforegoing:mycelial_furnace"
+					type: "item"
+				}
+				{
+					id: "65A7107252EBEA9E"
+					item: "industrialforegoing:mycelial_slimey"
+					type: "item"
+				}
+				{
+					id: "605F66729B1B314D"
+					item: "industrialforegoing:mycelial_culinary"
+					type: "item"
+				}
+				{
+					id: "19B15E6724865333"
+					item: "industrialforegoing:mycelial_potion"
+					type: "item"
+				}
+				{
+					id: "0919C3E825AB6498"
+					item: "industrialforegoing:mycelial_disenchantment"
+					type: "item"
+				}
+				{
+					id: "637A6DD24C774543"
+					item: "industrialforegoing:mycelial_ender"
+					type: "item"
+				}
+				{
+					id: "295988C1BA820B9C"
+					item: "industrialforegoing:mycelial_explosive"
+					type: "item"
+				}
+				{
+					id: "553F7CB4CEDDE215"
+					item: "industrialforegoing:mycelial_frosty"
+					type: "item"
+				}
+				{
+					id: "6DC7E56D9D389C13"
+					item: "industrialforegoing:mycelial_halitosis"
+					type: "item"
+				}
+				{
+					id: "7388BA1658C82FDD"
+					item: "industrialforegoing:mycelial_magma"
+					type: "item"
+				}
+				{
+					id: "762857BD1DE9118D"
+					item: "industrialforegoing:mycelial_pink"
+					type: "item"
+				}
+				{
+					id: "55EF88B216CB0CFD"
+					item: "industrialforegoing:mycelial_netherstar"
+					type: "item"
+				}
+				{
+					id: "4B8C405D915A0A4D"
+					item: "industrialforegoing:mycelial_death"
+					type: "item"
+				}
+				{
+					id: "756B4289941F026E"
+					item: "industrialforegoing:mycelial_rocket"
+					type: "item"
+				}
+				{
+					id: "16C3C8EBF3DBDBAA"
+					item: "industrialforegoing:mycelial_crimed"
+					type: "item"
+				}
+				{
+					id: "000E38607F45D526"
+					item: "industrialforegoing:mycelial_meatallurgic"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rMycelial Generators"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			id: "439920D0AE4620F2"
+			rewards: [
+				{
+					id: "6F96F3304ED7AD6B"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 10
+					id: "6E319E7DDE5FC07C"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Thermal Factory"
+			tasks: [
+				{
+					id: "38925A7006685378"
+					item: "thermal:machine_furnace"
+					type: "item"
+				}
+				{
+					id: "7D011B26D655AC95"
+					item: "thermal:machine_sawmill"
+					type: "item"
+				}
+				{
+					id: "62E5FFEFAA28DF16"
+					item: "thermal:machine_smelter"
+					type: "item"
+				}
+				{
+					id: "27A22C1DAD26AF16"
+					item: "thermal:machine_insolator"
+					type: "item"
+				}
+				{
+					id: "1696330F5310BFD7"
+					item: "thermal:machine_centrifuge"
+					type: "item"
+				}
+				{
+					id: "353F232F649472C8"
+					item: "thermal:machine_press"
+					type: "item"
+				}
+				{
+					id: "073E36A29C5F41F6"
+					item: "thermal:machine_crucible"
+					type: "item"
+				}
+				{
+					id: "197904DD6DDCCC10"
+					item: "thermal:machine_chiller"
+					type: "item"
+				}
+				{
+					id: "0901FEEE6F95EF05"
+					item: "thermal:machine_refinery"
+					type: "item"
+				}
+				{
+					id: "67F9115C25028E4E"
+					item: "thermal:machine_pyrolyzer"
+					type: "item"
+				}
+				{
+					id: "4806B6F8A3F7C6EB"
+					item: "thermal:machine_bottler"
+					type: "item"
+				}
+				{
+					id: "500033A5661EEC95"
+					item: "thermal:machine_crystallizer"
+					type: "item"
+				}
+				{
+					id: "6173F3088EB20B58"
+					item: "thermal:machine_crafter"
+					type: "item"
+				}
+				{
+					id: "299B80F491A5F9B3"
+					item: "thermal:machine_pulverizer"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rThermal Machines"
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			id: "1DF6286B9BFD4DB4"
+			rewards: [
+				{
+					id: "062A2282F8557B31"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "3A420576F28B5AEB"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Utilitarian"
+			tasks: [
+				{
+					id: "1DA287C78194FDC7"
+					item: "thermal:charge_bench"
+					type: "item"
+				}
+				{
+					id: "0AF50C433E778DA2"
+					item: "thermal:device_fisher"
+					type: "item"
+				}
+				{
+					id: "7F04186D98071BD1"
+					item: "thermal:device_composter"
+					type: "item"
+				}
+				{
+					id: "21D9188660A80513"
+					item: "thermal:device_soil_infuser"
+					type: "item"
+				}
+				{
+					id: "53929B939AB3D3C7"
+					item: "thermal:device_water_gen"
+					type: "item"
+				}
+				{
+					id: "5F0839B23B73AB2A"
+					item: "thermal:device_rock_gen"
+					type: "item"
+				}
+				{
+					id: "6E9E2ABB6D6EA092"
+					item: "thermal:device_collector"
+					type: "item"
+				}
+				{
+					id: "06929CE3AB2B9024"
+					item: "thermal:device_xp_condenser"
+					type: "item"
+				}
+				{
+					id: "12B3579867F9FDE6"
+					item: "thermal:device_nullifier"
+					type: "item"
+				}
+				{
+					id: "068AF72CFB0F8D16"
+					item: "thermal:device_potion_diffuser"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rThermal Utility Blocks"
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			id: "50EB16D64E2A6E98"
+			rewards: [
+				{
+					id: "451A9093B991F21F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 12
+					id: "1777D469BACE6CE2"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Endergetic Blueprint"
+			tasks: [
+				{
+					id: "062371291DC38065"
+					item: "enderio:vacuum_chest"
+					type: "item"
+				}
+				{
+					id: "261EF4C4DF3F1465"
+					item: "enderio:xp_vacuum"
+					type: "item"
+				}
+				{
+					id: "08D5E76AE03CE4B5"
+					item: "enderio:travel_anchor"
+					type: "item"
+				}
+				{
+					id: "51127505B4DC8780"
+					item: "enderio:drain"
+					type: "item"
+				}
+				{
+					id: "55B174A8ED97CA61"
+					item: "enderio:impulse_hopper"
+					type: "item"
+				}
+				{
+					id: "5E102251B9131D2E"
+					item: "enderio:painting_machine"
+					type: "item"
+				}
+				{
+					id: "42CEC3644C541E53"
+					item: "enderio:wired_charger"
+					type: "item"
+				}
+				{
+					id: "37014E1863DFDC14"
+					item: "enderio:crafter"
+					type: "item"
+				}
+				{
+					id: "440C94314E3E5132"
+					item: "enderio:enchanter"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rEndergetic Utility Blocks"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			id: "5B403F6EED86A308"
+			rewards: [
+				{
+					id: "27CFE02FFDFF3F05"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 5
+					id: "7BB252EE05888101"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Wireless Everything"
+			tasks: [{
+				count: 2L
+				id: "0E06C1143D25E2E6"
+				item: "tesseract:tesseract"
+				type: "item"
+			}]
+			title: "&eSegment: &aTesseract Interference"
+			x: 1.0d
+			y: -4.0d
+		}
+	]
+	title: "{quest.overview.base_label.title} Admirable Machinery"
+}

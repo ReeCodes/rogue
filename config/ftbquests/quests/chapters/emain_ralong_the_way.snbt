@@ -1,0 +1,1069 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "emain_ralong_the_way"
+	group: "52C1111E0945C360"
+	icon: "quark:pathfinders_quill"
+	id: "79AF378B6436EA9D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:snowball"
+			id: "648483F84A2E39C5"
+			rewards: [
+				{
+					id: "6EB98DBC58773869"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "6532A22EE3175367"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			subtitle: "Niflheim Experience"
+			tasks: [{
+				advancement: "cold_sweat:huddle_close"
+				criterion: ""
+				id: "5512FBF05045C881"
+				title: "Warm Up"
+				type: "advancement"
+			}]
+			title: "&bWhen In Cold..."
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			icon: "irons_spellbooks:fire_upgrade_orb"
+			id: "245F22162E11EA0F"
+			rewards: [
+				{
+					id: "4326CB9D8B99BC29"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "7B3164B018772F38"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			subtitle: "Tartarus Experience"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "citadel:effect_item"
+					tag: {
+						DisplayEffect: "minecraft:fire_resistance"
+					}
+				}
+				id: "025A519AF6945B42"
+				title: "&eGain Effect: &rFire Resistance"
+				type: "custom"
+			}]
+			title: "&6When In Heat..."
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			icon: "cold_sweat:sewing_table"
+			id: "7525D2194D408D54"
+			rewards: [
+				{
+					id: "3DD878526768DFB4"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 5
+					id: "10D6C98ABE2ECE42"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Insulation Tactics"
+			tasks: [
+				{
+					id: "3C95C83A5B2DA6DE"
+					item: "cold_sweat:sewing_table"
+					type: "item"
+				}
+				{
+					advancement: "cold_sweat:insulate_armor"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "1E44F6696E1766CB"
+					title: "&eInsulate: &rArmor"
+					type: "advancement"
+				}
+				{
+					advancement: "cold_sweat:full_insulation"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "citadel:effect_item"
+						tag: {
+							DisplayEffect: "cold_sweat:warmth"
+						}
+					}
+					id: "16C17D843C41E3C6"
+					title: "&eFully Insulate: &rArmor"
+					type: "advancement"
+				}
+			]
+			title: "&eSegment: &aInsulating"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			icon: "cold_sweat:boiler"
+			id: "2340109634946CFE"
+			rewards: [
+				{
+					id: "06C789CCCB302EAB"
+					type: "xp"
+					xp: 4
+				}
+				{
+					id: "70EEAD6F0C10C3EE"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			subtitle: "Evading Hypothermia"
+			tasks: [{
+				id: "6F5197808505D612"
+				item: "cold_sweat:boiler"
+				type: "item"
+			}]
+			title: "Boiling"
+			x: -2.0d
+			y: 14.0d
+		}
+		{
+			icon: "cold_sweat:icebox"
+			id: "5EA64C21B9936AD8"
+			rewards: [
+				{
+					id: "7F92E1FB1C5148CE"
+					type: "xp"
+					xp: 4
+				}
+				{
+					id: "48F00B2522C1E421"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			subtitle: "Refrigerate"
+			tasks: [{
+				id: "26550017F8130D0B"
+				item: "cold_sweat:icebox"
+				type: "item"
+			}]
+			title: "Cooling"
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			id: "5272FF1BDC667878"
+			rewards: [
+				{
+					id: "75EEBE736BDCF9B0"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "4C5FE87A8A2A0583"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			subtitle: "Duo-Capability"
+			tasks: [{
+				id: "006A82FE275C6934"
+				item: "cold_sweat:hearth"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2413453C334727D1"]
+			id: "5CE1E16C37C0D8F8"
+			rewards: [
+				{
+					id: "04B4F65F2BFEFE98"
+					type: "xp"
+					xp: 7
+				}
+				{
+					count: 2
+					id: "0240DB7F1607F650"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+				{
+					id: "0251DEE4798F54EA"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Auto-Filtration"
+			tasks: [{
+				id: "326CC2D74602494D"
+				item: "thirst:sand_filter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"5272FF1BDC667878"
+				"7525D2194D408D54"
+				"5CE1E16C37C0D8F8"
+				"2340109634946CFE"
+				"5EA64C21B9936AD8"
+				"648483F84A2E39C5"
+				"245F22162E11EA0F"
+				"0A12D1871E992570"
+				"71FE71DD87AAB1A8"
+			]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "cold_sweat:thermometer"
+					DisplayScale: 1.0d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 1
+				}
+			}
+			id: "6D914EF851B509AD"
+			rewards: [
+				{
+					id: "01F28C5C7CA8163B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 8
+					id: "280D15B3242EF7C1"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 3.0d
+			subtitle: "Survivalist's Simplicity"
+			tasks: [{
+				id: "51D0F34A8B42750B"
+				title: "&eComplete: &aHow To Survive"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			description: [
+				"These little reptiles can be found throughout &etropical biomes&r."
+				""
+				"Wait for them to shed their skin, to obtain &eChameleon Molt&r."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "cold_sweat:chameleon"
+					DisplayMobScale: 1.25d
+				}
+			}
+			id: "0A12D1871E992570"
+			rewards: [
+				{
+					id: "530ACD9AD7BC4C5D"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "70CDCA81D355D62A"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+				{
+					id: "324EAD24F9816678"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			subtitle: "Innately Adaptive"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "cold_sweat:chameleon"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "7240042625E84AD9"
+					title: "&eTame: &rChameleon"
+					type: "custom"
+				}
+				{
+					id: "1CA812BF6C98F05E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "cold_sweat:chameleon/taming"
+						}
+					}
+					title: "&eChameleon Food"
+					type: "item"
+				}
+				{
+					id: "706DA77014434D5B"
+					item: "cold_sweat:chameleon_molt"
+					type: "item"
+				}
+			]
+			title: "Tropical Reptile"
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"7525D2194D408D54"
+				"3C95C83A5B2DA6DE"
+			]
+			dependency_requirement: "one_completed"
+			icon: "cold_sweat:goat_fur"
+			id: "14344985077FC690"
+			rewards: [
+				{
+					id: "01F3C5971AF5199D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 4
+					id: "3E870EEC448A47A3"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Fluffed Up"
+			tasks: [{
+				id: "38D26F553547E87F"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "cold_sweat:fur"
+										}
+										{
+											Count: 1b
+											id: "cold_sweat:fur_cap"
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											Count: 1b
+											id: "cold_sweat:fur_parka"
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											Count: 1b
+											id: "cold_sweat:fur_pants"
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											Count: 1b
+											id: "cold_sweat:fur_boots"
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "minecraft:wool"
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:or"
+										tag: {
+											items: [
+												{
+													Count: 1b
+													id: "itemfilters:mod"
+													tag: {
+														value: "ad_astra"
+													}
+												}
+												{
+													Count: 1b
+													id: "itemfilters:mod"
+													tag: {
+														value: "chipped"
+													}
+												}
+												{
+													Count: 1b
+													id: "itemfilters:mod"
+													tag: {
+														value: "dyenamics"
+													}
+												}
+												{
+													Count: 1b
+													id: "itemfilters:mod"
+													tag: {
+														value: "rats"
+													}
+												}
+											]
+										}
+									}]
+								}
+							}
+						]
+					}
+				}
+				title: "&eCold Insulators"
+				type: "item"
+			}]
+			title: "&eOne The Side: &aAgainst Cold"
+			x: -3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"7525D2194D408D54"
+				"3C95C83A5B2DA6DE"
+			]
+			dependency_requirement: "one_completed"
+			icon: "cold_sweat:hoglin_hide"
+			id: "54526C35C855F280"
+			rewards: [
+				{
+					id: "1181D57927ED136B"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "46AC962C457252F3"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Heatproof"
+			tasks: [{
+				id: "33415481B72852A5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "cold_sweat:hoglin_headpiece"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "cold_sweat:hoglin_tunic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "cold_sweat:hoglin_trousers"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "cold_sweat:hoglin_hooves"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "cold_sweat:hoglin_hide"
+							}
+							{
+								Count: 1b
+								id: "minecraft:rabbit_hide"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "thermal:rockwool"
+								}
+							}
+						]
+					}
+				}
+				title: "&eHeat Insulators"
+				type: "item"
+			}]
+			title: "&eOne The Side: &aAgainst Heat"
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"7525D2194D408D54"
+				"3C95C83A5B2DA6DE"
+			]
+			dependency_requirement: "one_completed"
+			icon: "minecraft:leather"
+			id: "1B90E63E1ADD34B6"
+			rewards: [
+				{
+					id: "574347DB16DAD67D"
+					type: "xp"
+					xp: 1
+				}
+				{
+					id: "36283BFE8BBCC1A7"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			subtitle: "Slightly Adaptive"
+			tasks: [{
+				id: "3ED5F134072E1E9A"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "minecraft:leather"
+										}
+										{
+											Count: 1b
+											id: "immersiveengineering:ersatz_leather"
+										}
+										{
+											Count: 1b
+											id: "cold_sweat:chameleon_molt"
+										}
+										{
+											Count: 1b
+											id: "minecraft:leather_helmet"
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											Count: 1b
+											id: "minecraft:leather_chestplate"
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											Count: 1b
+											id: "minecraft:leather_leggings"
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											Count: 1b
+											id: "minecraft:leather_boots"
+											tag: {
+												Damage: 0
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:custom"
+								tag: {
+									value: "only_damage"
+								}
+							}
+						]
+					}
+				}
+				title: "&eBi-Insulators"
+				type: "item"
+			}]
+			title: "Bisulation"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "cold_sweat:filled_waterskin"
+				tag: {
+					Purity: 3
+				}
+			}
+			id: "71FE71DD87AAB1A8"
+			rewards: [{
+				id: "0AC37A2C9586408F"
+				type: "xp"
+				xp: 1
+			}]
+			subtitle: "Attune To Temperatures"
+			tasks: [
+				{
+					count: 2L
+					id: "0366411EC0B9B72B"
+					item: "cold_sweat:waterskin"
+					type: "item"
+				}
+				{
+					id: "25798EF7FF53C993"
+					item: {
+						Count: 1
+						id: "cold_sweat:filled_waterskin"
+						tag: {
+							Purity: 3
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Desired Temperatures"
+			x: -1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"43C3E5D8167F0493"
+				"0FA241E6F30219A4"
+				"754E3803934A331B"
+				"73C6238D482A08FB"
+				"26599AA681E7B97E"
+				"5D5B989A4F8D0E9D"
+				"551277B21629C127"
+				"77AADFD11BD171CE"
+				"474475C9E4D3A306"
+				"50D551FBF08FE43A"
+				"2B3E220FA1C386A6"
+				"402E7B02FEA57F6F"
+				"43032D6B5107B8BB"
+			]
+			description: ["[\"\",{\"text\":\"Visit all the \"},{\"text\": \"dimensions\", \"color\": \"aqua\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"21115BA133AA7495\" } },{\"text\":\".\"}]"]
+			icon: "minecraft:red_nether_bricks"
+			id: "12BD792A1087249F"
+			rewards: [
+				{
+					id: "7AC6410B3621E0E1"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					count: 20
+					id: "5EE0B0BDE3C0E811"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Dimensional Vacation"
+			tasks: [{
+				id: "1C81B5BF1C23AC89"
+				title: "&eComplete: &aExtraterrestial"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6352258B73068E95"]
+			description: ["[\"\",{\"text\":\"Defeat all the \"},{\"text\": \"Main Bosses\", \"color\": \"aqua\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6352258B73068E95\" } },{\"text\":\".\"}]"]
+			hide_dependency_lines: true
+			icon: "alexsmobs:void_worm_eye"
+			id: "7B64C4783B21BBC9"
+			rewards: [
+				{
+					id: "15EE98243E48F838"
+					type: "xp_levels"
+					xp_levels: 200
+				}
+				{
+					count: 25
+					id: "26C8A5D073B8B1BA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Next In Line"
+			tasks: [{
+				id: "2A9A77582429228E"
+				type: "checkmark"
+			}]
+			title: "&eComplete: &aLeft Out"
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"6D73587BC264822D"
+				"691A90F3E4EA4ABA"
+				"5291A7659D321F0D"
+				"64B536F73A545995"
+				"299B80F491A5F9B3"
+				"7EAFF36709C1FDB7"
+				"4776514880CB6259"
+				"2AAB2B96FBD7138B"
+				"5C032838DF3C0E75"
+			]
+			description: ["Find every single way to increase the output by double or more of the original amount."]
+			icon: "thermal:ruby_dust"
+			id: "62A3167052A0E13A"
+			rewards: [
+				{
+					id: "47AC4F30577FA98C"
+					type: "xp_levels"
+					xp_levels: 150
+				}
+				{
+					count: 20
+					id: "2BD002619CBE1AE3"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "584257B5AF508F15"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "All The Ways"
+			tasks: [{
+				id: "0E4F4291CB07E2F4"
+				title: "&eComplete: &aOre Yields: Extreme"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			id: "170AFFCB6917032B"
+			rewards: [
+				{
+					id: "20A3E388AA749E92"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 6
+					id: "742D04A464B0B9FC"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Healthy Fellow"
+			tasks: [{
+				icon: "bhc:yellow_heart"
+				id: "3FD294778CAE3400"
+				title: "&eReach: &r100 Health"
+				type: "custom"
+			}]
+			title: "&eOne The Side: &aBe Healthy, Pt. I"
+			x: 0.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["170AFFCB6917032B"]
+			id: "6114045CF657721C"
+			rewards: [
+				{
+					id: "5B8EF04819F73109"
+					type: "xp_levels"
+					xp_levels: 150
+				}
+				{
+					count: 20
+					id: "516FEBE0D9DE3F5C"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Unkillable"
+			tasks: [{
+				icon: "bhc:blue_heart"
+				id: "62A2B8521C7318A5"
+				title: "&eReach: &r300 Health"
+				type: "custom"
+			}]
+			title: "&eOne The Side: &aBe Healthy, Pt. II"
+			x: 0.0d
+			y: 23.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "automobility:automobile"
+				tag: {
+					Automobile: {
+						engine: "automobility:stone"
+						frame: "automobility:wooden_motorcar"
+						isPrefab: 1b
+						wheels: "automobility:carriage"
+					}
+					display: {
+						Name: "{\"translate\":\"prefab.automobility.wooden_motorcar\",\"italic\":\"false\"}"
+					}
+				}
+			}
+			id: "0A50F622FAFABA71"
+			rewards: [
+				{
+					id: "2E9B0BC4787ED58A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "013245C6451CE76D"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1397AD8CE4D5C6B3"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Small Vehicles"
+			tasks: [
+				{
+					id: "720ECA5A062C09C5"
+					item: "automobility:auto_mechanic_table"
+					type: "item"
+				}
+				{
+					id: "72A0C18F359D6186"
+					item: "automobility:automobile_assembler"
+					type: "item"
+				}
+				{
+					id: "6CC4043846C80335"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "am_is_frame"
+						}
+					}
+					title: "&eFrames"
+					type: "item"
+				}
+				{
+					id: "610AF9508D4A1CD4"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "am_is_engine"
+						}
+					}
+					title: "&eEngines"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "47BC9D52D07067EF"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "am_is_wheel"
+						}
+					}
+					title: "&eWheels"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "automobility:automobile"
+						tag: {
+							Automobile: {
+								engine: "automobility:stone"
+								frame: "automobility:wooden_motorcar"
+								isPrefab: 1b
+								wheels: "automobility:carriage"
+							}
+							display: {
+								Name: "{\"translate\":\"prefab.automobility.wooden_motorcar\",\"italic\":\"false\"}"
+							}
+						}
+					}
+					id: "1A29673838D3EB79"
+					title: "&eEnter: &rVehicle"
+					type: "custom"
+				}
+				{
+					id: "1F17B90F18576687"
+					item: "automobility:crowbar"
+					type: "item"
+				}
+			]
+			title: "&eOne The Side: &aCar Mobility"
+			x: -6.0d
+			y: 20.0d
+		}
+		{
+			icon: "transmog:transmogrification_table"
+			id: "2FDDA5B9B0AB6766"
+			rewards: [
+				{
+					id: "4FF03F8ADD10BE16"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 3
+					id: "2AB5DA36C6DEE335"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "30FDFE5EFDD5B48F"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Camouflaged Items"
+			tasks: [
+				{
+					id: "2FBF2A94E16965E0"
+					item: "transmog:transmogrification_table"
+					type: "item"
+				}
+				{
+					block: "transmog:transmogrification_table"
+					block_type: 0
+					id: "7F25722E3292056B"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rTransmogrification Table"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					icon: "transmog:void_fragment"
+					id: "5AC863CAF54EB649"
+					title: "&eTransmogrify: &rItem"
+					type: "custom"
+				}
+			]
+			title: "&eOne The Side: &aTransmogification"
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			id: "0F630E9FE0ECCDD9"
+			rewards: [
+				{
+					id: "5497D5FBB032A605"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 3
+					id: "3DF291A04D5AA05E"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6A7ED9EEEDAD8E53"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Trophy Collector"
+			tasks: [{
+				id: "0B5C9DB410D96DD4"
+				item: {
+					Count: 1
+					id: "itemfilters:mod"
+					tag: {
+						value: "trofers"
+					}
+				}
+				match_nbt: false
+				title: "&eAcquire: &rAny Trophy"
+				type: "item"
+			}]
+			title: "&eOne The Side: &aHeadhunter"
+			x: 0.0d
+			y: 27.0d
+		}
+	]
+	title: "{quest.overview.main_label.title} Main Route"
+}

@@ -1,0 +1,490 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "steps_to_not_die"
+	group: "74EF14CF5929C9D0"
+	icon: "pneumaticcraft:search_upgrade"
+	id: "30D28AF91FDB9D59"
+	images: [{
+		height: 6.0d
+		image: "rogue:textures/misc/icon_4k.png"
+		rotation: 0.0d
+		width: 6.2d
+		x: 0.0d
+		y: 1.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6CE5FC09F1303683"
+				"1134D17C621A7C37"
+				"288E3F4677B312F7"
+				"499DFD7948A31116"
+				"66B22F62FA87E39E"
+				"62765CDB07A527CB"
+				"430A80F5FB598377"
+				"14D2A28D7AB62763"
+				"5F8AA70D71B8D52A"
+				"44032D95B4718270"
+				"282573AD877C7146"
+			]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 1
+					DisplayItem: "pneumaticcraft:search_upgrade"
+					DisplayScale: 1.0d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "7B97BD09F41FDCB2"
+			rewards: [
+				{
+					id: "601B043278B683DD"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 10
+					id: "5F66ACF8EBD5A5DD"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 3.0d
+			tasks: [{
+				id: "5FF97203BD94D701"
+				title: "&eComplete: &aTips \\& Tricks"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Many different ways of acquiring a &eSpawner&r exist: "
+				""
+				"The most known method involves breaking the Spawner with &eSilk Touch&r."
+			]
+			icon: "minecraft:spawner"
+			id: "14D2A28D7AB62763"
+			rewards: [
+				{
+					id: "43D91A58FF05A376"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 3
+					id: "6FA9B43E5F0B1BAE"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "How To: Spawners"
+			tasks: [{
+				icon: "minecraft:spawner"
+				id: "1FAE1ED7FF14FB95"
+				title: "&eBreak: &rSpawner using Silk Touch"
+				type: "custom"
+			}]
+			title: "&eTip: &aSpawners \\& Co"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"All &eenchanted items&r happen to be illegible. "
+				""
+				"Unless you own an &eEnchanting Table&r, the &eIdentification Scroll&r is the only way to reveal all hidden enchantments."
+				""
+				"If you do however, right-clicking the &eEnchantment Table&r with the item reveals it's enchantments."
+			]
+			icon: "irons_rpg_tweaks:identification_scroll"
+			id: "282573AD877C7146"
+			rewards: [
+				{
+					id: "313C57C4CBAD7588"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "2E15BA179F59E372"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+				{
+					id: "1D0B140B5F26DB9B"
+					item: "irons_rpg_tweaks:identification_scroll"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Revealing Scribbles"
+			tasks: [
+				{
+					id: "2C6AE6B8E5BD427F"
+					item: "irons_rpg_tweaks:identification_scroll"
+					title: "Scroll of Identification"
+					type: "item"
+				}
+				{
+					icon: "minecraft:enchanting_table"
+					id: "17112A820A544182"
+					title: "&eIdentify: &rEnchantment using Enchantment Table"
+					type: "custom"
+				}
+			]
+			title: "&eTip: &aIdentifying Enchantments"
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			description: ["Upon &4dying&r a totem will spawn bearing all of your otherwise dropped &eitems&r."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "quark:totem"
+					DisplayMobScale: 1.5d
+				}
+			}
+			id: "288E3F4677B312F7"
+			rewards: [
+				{
+					id: "7D55F9B255B23D1B"
+					type: "xp"
+					xp: 1
+				}
+				{
+					id: "1EC548DFA0EC78BD"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Possibly"
+			tasks: [{
+				id: "71ADE0908FAA01D2"
+				type: "checkmark"
+			}]
+			title: "&eTip: &aYour First Death"
+			x: -5.0d
+			y: 13.0d
+		}
+		{
+			description: [
+				"Travel across long distances or dimensions at the cost of a small amount of your &eXP&r."
+				""
+				"Dimensions will likely cost you more &eXP&r."
+			]
+			id: "62765CDB07A527CB"
+			rewards: [
+				{
+					id: "78E231DF95517CD4"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "0B42DF2E1C7556CE"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Across Miles"
+			tasks: [{
+				block: "waystones:waystones"
+				block_type: 1
+				checkItem: false
+				id: "12E1027598AA7D57"
+				isItemInteraction: false
+				title: "&eActivate: &rWaystone"
+				type: "questsadditions:use"
+				value: 1L
+			}]
+			title: "&eTip: &aTravel By Waystone"
+			x: -5.0d
+			y: 9.0d
+		}
+		{
+			id: "44032D95B4718270"
+			rewards: [
+				{
+					id: "7675B6EA7380D91E"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "73DCF83B5D5A8108"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Multiplayer Friendly"
+			tasks: [{
+				advancement: "lootr:1chest"
+				criterion: ""
+				icon: "lootr:lootr_chest"
+				id: "2642A0A481B4BCBA"
+				title: "&eOpen: &rLootr Chest"
+				type: "advancement"
+			}]
+			title: "&eTip: &aPer Player Loot"
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			description: [
+				"Mobs have the ability to study you, making themselves stronger by adapting to your total &ehealth&r, while also peeking at your recent &eachievements&r and &eattributes&r, thereby granting themselves &ebetter stats&r. "
+				""
+				"This boost of stats is also granted to mobs such as &eanimals&r and &enon-hostile mobs&r, though the attributes given are &e33%&r weaker."
+				""
+				"Achievements are the only category of adaptation which &ecannot be undone&r."
+				"{@pagebreak}"
+				"Every time your &edifficulty modifier&r increases or decreases, the &eRogue Meter&r will appear in the bottom left of your screen, reminding you of your current difficulty along with a sound cue."
+				""
+				"&a1.0&r is your starting value; &e10.0&r is hard on it's own; &420.0&r is the limit meaning: most mobs will finish you fast."
+			]
+			icon: {
+				Count: 1
+				id: "citadel:effect_item"
+				tag: {
+					DisplayEffect: "minecraft:health_boost"
+				}
+			}
+			id: "430A80F5FB598377"
+			rewards: [{
+				id: "6B0EEC773E058264"
+				type: "xp"
+				xp: 1
+			}]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Equal Rights"
+			tasks: [{
+				id: "5BF546C5C248CCDA"
+				type: "checkmark"
+			}]
+			title: "&eTip: &aEquality Matters"
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"Upon clicking the checkmark, your world will be set to a public server."
+				""
+				"Ignore this if your already playing on a server."
+				""
+				"The &eIP&r will be shown in chat."
+			]
+			icon: "ae2:creative_item_cell"
+			id: "6924F6186EB94A2A"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				exclude_from_claim_all: true
+				icon: "ad_astra:earth_globe"
+				id: "472DFD56C18719BD"
+				tags: ["public_server"]
+				title: "Online"
+				type: "custom"
+			}]
+			shape: "circle"
+			size: 3.0d
+			subtitle: "Public Server"
+			tasks: [
+				{
+					id: "5A8C0C86A3D5A773"
+					title: "&eEnable: &rPublic Server"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					icon: "ae2:creative_fluid_cell"
+					id: "527A5EAFAEEEAC1B"
+					title: "&eChecking: &rSingleplayer"
+					type: "custom"
+				}
+			]
+			title: "&eTip: &aLan 2 Public"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Upon entering a world for the first time, a &eluggage&r accomplice will spawn next to you."
+				""
+				""
+				"[\"\",{\"text\":\"Press \"},{ \"keybind\": \"keybind.luggage.call\", \"color\": \"gold\"},{\"text\":\" to call your luggage.\"}]"
+				""
+				"[\"\",{\"text\":\"Press \"},{ \"keybind\": \"keybind.luggage.wait\", \"color\": \"gold\"},{\"text\":\" to make your Luggage dormant.\"}]"
+			]
+			id: "66B22F62FA87E39E"
+			rewards: [{
+				id: "6E8AEE86AC2242AE"
+				type: "xp"
+				xp: 1
+			}]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Everlasting Friendship"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "luggage:luggage"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "4B441BBD1EDB4FE7"
+				observe_type: 5
+				timer: 0L
+				title: "&eObserve: &rLuggage"
+				to_observe: "luggage:luggage"
+				type: "observation"
+			}]
+			title: "&eTip: &aPolylegged Follower"
+			x: -6.0d
+			y: 11.0d
+		}
+		{
+			description: [
+				"[\"\",{\"text\":\"Press \"},{ \"keybind\": \"key.ftbultimine\", \"color\": \"gold\"},{\"text\":\" to enable Vein Miner.\"}]"
+				""
+				"The &eDefault Range&r is 8 blocks."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "499DFD7948A31116"
+			rewards: [
+				{
+					id: "6736DCF45EC20588"
+					type: "xp"
+					xp: 1
+				}
+				{
+					id: "3EA6337ADC39C26A"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Multi Break"
+			tasks: [{
+				id: "6D8F928F58E0856C"
+				type: "checkmark"
+			}]
+			title: "&eTip: &aVein Mining"
+			x: 5.0d
+			y: 13.0d
+		}
+		{
+			description: ["[\"\",{\"text\":\"Pressing \"},{ \"keybind\": \"key.findme.search\", \"color\": \"gold\"},{\"text\":\" while hovering over an item highlights it for you in any nearby inventories.\"}]"]
+			icon: "ironchests:gold_chest"
+			id: "1134D17C621A7C37"
+			rewards: [
+				{
+					id: "3F6B3CBD84A9DECA"
+					type: "xp"
+					xp: 1
+				}
+				{
+					id: "13D907DA1688B977"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Found You"
+			tasks: [{
+				id: "75CA60D23FBC76F3"
+				type: "checkmark"
+			}]
+			title: "&eTip: &aFind Me"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"[\"\",{\"text\":\"Press \"},{ \"keybind\": \"key.puffish_skills.open\", \"color\": \"gold\"},{\"text\":\" to open up the skill tree menu.\"}]"
+				""
+				"Gain experience to unlock skills and choose wisely."
+			]
+			icon: {
+				Count: 1
+				id: "citadel:icon_item"
+				tag: {
+					IconLocation: "rogue:textures/pufferfish/skills/elementalist.png"
+				}
+			}
+			id: "6CE5FC09F1303683"
+			rewards: [{
+				id: "1F4CDB21CA7434CE"
+				type: "xp"
+				xp: 1
+			}]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Better Stats"
+			tasks: [{
+				id: "57044B1972D0C152"
+				type: "checkmark"
+			}]
+			title: "&eTip: &aSkill Trees"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"Equipping &efour pieces&r of armor made of the &esame material&r gives the user &eunique effects&r."
+				""
+				"Rare instances of &epartial armor sets&r do also exist, requiring only &eone piece&r."
+				""
+				"{@pagebreak}"
+				""
+				"Both of them can be found using the search bar via &e'#Full'&r \\& &e'#Partial'&r."
+			]
+			icon: "minecraft:armor_stand"
+			id: "5F8AA70D71B8D52A"
+			rewards: [{
+				id: "62AD9D4AAABF2C9C"
+				type: "xp"
+				xp: 1
+			}]
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Collector's Reward"
+			tasks: [{
+				id: "690CA6DA5DC9154F"
+				type: "checkmark"
+			}]
+			title: "&eTip: &aArmor Set Effects"
+			x: 5.0d
+			y: 9.0d
+		}
+	]
+	title: "&eIntro: &rFundamentals"
+}

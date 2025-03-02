@@ -1,0 +1,1842 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "enmities"
+	group: "46789BE19B4F2E15"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			Parent: {
+				Items: [ ]
+				Size: 1
+			}
+		}
+		id: "sons_of_sins:puppet_of_strife"
+		tag: {
+			Inventory: {
+				Items: [ ]
+				Size: 1
+			}
+		}
+	}
+	id: "7285283690E8A55C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0FA241E6F30219A4"]
+			id: "2B122C71AF75ADE9"
+			rewards: [
+				{
+					id: "0E58BFDEF72113AF"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					count: 5
+					id: "5CF39176D12EF682"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Extra Hard"
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "minecraft:ender_dragon"
+						DisplayMobScale: 0.5d
+					}
+				}
+				id: "36AFD123D715ED5C"
+				title: "&cSlay: &rEnder Dragon"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "48D4CC406B2AAE10"
+			rewards: [
+				{
+					id: "59D1B6905FC2B813"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					count: 5
+					id: "42847B9A36A39F5A"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Visible Decay"
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "minecraft:wither"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "1A0251706A4E62C0"
+				title: "&cSlay: &rWither"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: -10.0d
+		}
+		{
+			id: "2F7DD0247D9CA67B"
+			rewards: [
+				{
+					id: "636AA8F227AAB02C"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+				{
+					count: 6
+					id: "21FBF700F5806CAD"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Chamber Guardian"
+			tasks: [{
+				entity: "dungeonnowloading:chaos_spawner"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "dungeonnowloading:chaos_spawner"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "0110B4C7732F8FF0"
+				title: "&cSlay: &rChaos Spawner"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -17.0d
+		}
+		{
+			id: "0B3A9C0C6054BD95"
+			rewards: [
+				{
+					id: "7CEE1553E0C37B96"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 2
+					id: "0FA649C39C39B229"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Abyssal Depths"
+			tasks: [{
+				entity: "aquamirae:anglerfish"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "aquamirae:anglerfish"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "1B37475633CF49DE"
+				title: "&cSlay: &rAnglerfish"
+				type: "kill"
+				value: 1L
+			}]
+			x: 25.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"11F9FA26E9009809"
+				"0B3A9C0C6054BD95"
+				"4B3CF658A83A6D83"
+				"1674C5D0CA5DF7A7"
+				"5289CBEAFDE36EC9"
+				"01CB646AF26E1E15"
+				"2586C2A78D34EFEE"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:comb_jelly"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "7C8578D4BC65D536"
+			rewards: [
+				{
+					id: "1D10CDEB7427B2E9"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 12
+					id: "543A4583B8736F90"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Aquatic Legacy"
+			tasks: [{
+				id: "04145FDFA8DD22DA"
+				title: "&eDefeat: &aChildren Of Ikaroa"
+				type: "checkmark"
+			}]
+			title: "&eComplete: &aChildren Of Ikaroa"
+			x: 21.0d
+			y: 16.5d
+		}
+		{
+			id: "4B3CF658A83A6D83"
+			rewards: [
+				{
+					id: "1B4AFA5A815B6DE5"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 2
+					id: "566279E43F7B0581"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "More Teeth Than Eye"
+			tasks: [{
+				entity: "upgrade_aquatic:great_thrasher"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "upgrade_aquatic:great_thrasher"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "3436633D5A192BF6"
+				title: "&cSlay: &rGreat Thrasher"
+				type: "kill"
+				value: 1L
+			}]
+			x: 17.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"2F7DD0247D9CA67B"
+				"48D4CC406B2AAE10"
+				"6E146E136318462F"
+				"7AFE491263E9DA60"
+				"52384762E2693325"
+				"2B122C71AF75ADE9"
+				"4B3FFBE574A3BD7E"
+				"7320CBE229F99827"
+			]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "dungeonnowloading:great_experience_bottle"
+					DisplayScale: 1.0d
+					DisplayShake: 0
+					DisplaySpin: 1
+					DisplayZoom: 0
+				}
+			}
+			id: "6352258B73068E95"
+			rewards: [
+				{
+					id: "6DC3F7E4BD4A7A83"
+					type: "xp_levels"
+					xp_levels: 200
+				}
+				{
+					count: 15
+					id: "312936E7CB1C2C88"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Main Focus"
+			tasks: [{
+				id: "411761E133338DCF"
+				title: "&eComplete: &aMajor Attractions"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"56FD92D06EB96EE9"
+				"5302950126282D5E"
+				"6E42313688278E8C"
+				"29A0EE962817140F"
+				"76FD382F265C156C"
+				"077654F392613E79"
+				"2F8CE021A72C0569"
+				"769B29C2444ED613"
+			]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "4169D212E732562A"
+			rewards: [
+				{
+					id: "18CE0D403C9327A4"
+					type: "xp_levels"
+					xp_levels: 150
+				}
+				{
+					count: 12
+					id: "3A9E550572508A59"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Ongoing Tumult"
+			tasks: [{
+				id: "7E12B8896D2EA018"
+				title: "&eComplete: &aHaunted Mystical Bosses"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 16.5d
+		}
+		{
+			id: "56FD92D06EB96EE9"
+			rewards: [
+				{
+					id: "1CF2A74112EEE61B"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+				{
+					count: 4
+					id: "53A2913304CEB591"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "twilightforest:naga"
+				icon: "twilightforest:naga_trophy"
+				id: "348FA3FD2DFCC6BA"
+				title: "&cSlay: &rNaga"
+				type: "kill"
+				value: 1L
+			}]
+			x: -11.0d
+			y: 12.0d
+		}
+		{
+			id: "5302950126282D5E"
+			rewards: [
+				{
+					id: "2BD03EC82FCB1A95"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+				{
+					count: 4
+					id: "5415415245F25C52"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "twilightforest:lich"
+				icon: "twilightforest:lich_trophy"
+				id: "59B650E980E96727"
+				title: "&cSlay: &rLich"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.0d
+			y: 11.0d
+		}
+		{
+			id: "6E42313688278E8C"
+			rewards: [
+				{
+					id: "4F8D0133F54307F5"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+				{
+					count: 4
+					id: "37CC8411C8B74152"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "twilightforest:hydra"
+				icon: "twilightforest:hydra_trophy"
+				id: "79D6A32685C2F2D6"
+				title: "&cSlay: &rHydra"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.0d
+			y: 12.0d
+		}
+		{
+			id: "29A0EE962817140F"
+			rewards: [
+				{
+					id: "7A0C816350E96D54"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+				{
+					count: 4
+					id: "10030F532C1922CA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				icon: "twilightforest:snow_queen_trophy"
+				id: "2ED319D69924AC8F"
+				title: "&cSlay: &rSnow Queen"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.0d
+			y: 14.0d
+		}
+		{
+			id: "76FD382F265C156C"
+			rewards: [
+				{
+					id: "71B9EFFC9FA9BF18"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 3
+					id: "541BD20E21286091"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				icon: "twilightforest:minoshroom_trophy"
+				id: "60A85B69EA26AB89"
+				title: "&cSlay: &rMinoshroom"
+				type: "kill"
+				value: 1L
+			}]
+			x: -11.0d
+			y: 20.0d
+		}
+		{
+			id: "077654F392613E79"
+			rewards: [
+				{
+					id: "1C1BD37F49057097"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 3
+					id: "732A04AE60A9AB7A"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				icon: "twilightforest:knight_phantom_trophy"
+				id: "43A01B6D98217EDE"
+				title: "&cSlay: &rKnight Phantom"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.0d
+			y: 21.0d
+		}
+		{
+			id: "2F8CE021A72C0569"
+			rewards: [
+				{
+					id: "7FDDF9EC33777081"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 3
+					id: "1A8A03F6E8D142FF"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				icon: "twilightforest:alpha_yeti_trophy"
+				id: "2BB0A3351BDE4DF4"
+				title: "&cSlay: &rAlpha Yeti"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.0d
+			y: 20.0d
+		}
+		{
+			id: "41D4129824DDA25E"
+			rewards: [
+				{
+					id: "72733842C9D21813"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 4
+					id: "35E30AF35EE1F425"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Airborne Chief"
+			tasks: [{
+				entity: "rats:rat_baron"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "rats:rat_baron_plane"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "1A936DF65993274F"
+				title: "&cSlay: &rRat Baron"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			id: "4513CD56703B4E11"
+			rewards: [
+				{
+					id: "63573693DF13E1B4"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "70F921ED3131373F"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Intertwined Tails"
+			tasks: [{
+				entity: "rats:rat_king"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "rats:rat_king"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "17F6F9A1E8FE81AD"
+				title: "&cSlay: &rRat King"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			id: "562C1096EFA61E5B"
+			rewards: [
+				{
+					id: "39C71AB9034DD7FA"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 5
+					id: "6C4FDE2D1CEB7474"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Rotten Captain"
+			tasks: [{
+				entity: "rats:dutchrat"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "rats:dutchrat"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "547CAD1926E5DBEF"
+				title: "&cSlay: &rFlying Dutchrat"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5D5B989A4F8D0E9D"]
+			id: "7AFE491263E9DA60"
+			rewards: [
+				{
+					id: "5C87847546A789D1"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 4
+					id: "275D318DF9557F39"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Breakout Confrontation"
+			tasks: [{
+				entity: "outer_end:stalker"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "deeperdarker:stalker"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "203A5AD7BF767924"
+				title: "&cSlay: &rStalker"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0FA241E6F30219A4"]
+			id: "6E146E136318462F"
+			rewards: [
+				{
+					id: "36F45A70FB4E1DBD"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					count: 5
+					id: "6DA5AA7C73DDF113"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Void's Revenge"
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				icon: {
+					Count: 1
+					id: "citadel:fancy_item"
+					tag: {
+						DisplayBob: 0
+						DisplayItem: "alexsmobs:void_worm_eye"
+						DisplayScale: 1.0d
+						DisplayShake: 0
+						DisplaySpin: 0
+						DisplayZoom: 1
+					}
+				}
+				id: "4DEAC50F1A2E30F9"
+				title: "&cSlay: &rVoid Worm"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			id: "52384762E2693325"
+			rewards: [
+				{
+					id: "0CBA32D814FABAA0"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 4
+					id: "45463674BFEAD2F9"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Deep Sea Icon"
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "aquamirae:captain_cornelia"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "7EE56E7D979DB4D8"
+				title: "&cSlay: &rCaptain Cornelia"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"41D4129824DDA25E"
+				"4513CD56703B4E11"
+				"562C1096EFA61E5B"
+				"7B299E0906DD4F89"
+				"09721AF482FEA9F6"
+			]
+			icon: "rats:idol_of_ratlantis"
+			id: "5BF8B0A7CC52B824"
+			rewards: [
+				{
+					id: "567175F5F2600C93"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					count: 8
+					id: "4DF494F04396F7A9"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Rogue Rodents"
+			tasks: [{
+				id: "67CF6C3B94B97B5C"
+				title: "&eComplete: &aMurine Residence"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			id: "7B299E0906DD4F89"
+			rewards: [
+				{
+					id: "2C2E37EF65F8A320"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 2
+					id: "3919BF5791BAB6F6"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Bubonic Bigot"
+			tasks: [{
+				entity: "rats:black_death"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "rats:black_death"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "14C5A60364B65798"
+				title: "&cSlay: &rBlack Death"
+				type: "kill"
+				value: 1L
+			}]
+			x: 9.0d
+			y: 21.0d
+		}
+		{
+			id: "09721AF482FEA9F6"
+			rewards: [
+				{
+					id: "6424D11BACC1858F"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 2
+					id: "17DBC5EF6A513353"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Skillful Flautist"
+			tasks: [{
+				entity: "rats:pied_piper"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "rats:pied_piper"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "58B3466D9A04B85F"
+				title: "&cSlay: &rPied Piper"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 21.0d
+		}
+		{
+			id: "01CB646AF26E1E15"
+			rewards: [
+				{
+					id: "3438F49A534A6FF4"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					count: 2
+					id: "6835C287FE055B66"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Skele-Jockeys"
+			tasks: [{
+				entity: "alexsmobs:skelewag"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:skelewag"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "28E40E8978E651BF"
+				title: "&cSlay: &rSkelewag"
+				type: "kill"
+				value: 1L
+			}]
+			x: 17.0d
+			y: 14.0d
+		}
+		{
+			id: "5289CBEAFDE36EC9"
+			rewards: [
+				{
+					id: "717E5DD9E92A3D76"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 5
+					id: "2A5833B28BA7DAE7"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Old Man"
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "minecraft:elder_guardian"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "7F9BD01C9DE70762"
+				title: "&cSlay: &rElder Guardian"
+				type: "kill"
+				value: 1L
+			}]
+			x: 21.0d
+			y: 11.0d
+		}
+		{
+			id: "1674C5D0CA5DF7A7"
+			rewards: [
+				{
+					id: "359E7306D327CADA"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 2
+					id: "34189694D4A75BF2"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Temple Minions"
+			tasks: [{
+				entity: "minecraft:guardian"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "minecraft:guardian"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "794DEDC33AB7D3EF"
+				title: "&cSlay: &rGuardian"
+				type: "kill"
+				value: 20L
+			}]
+			x: 25.0d
+			y: 14.0d
+		}
+		{
+			id: "769B29C2444ED613"
+			rewards: [
+				{
+					id: "51AE0E44D4681ACA"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+				{
+					count: 4
+					id: "2BD3087BA41FBD7B"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				icon: "twilightforest:ur_ghast_trophy"
+				id: "782D54E41DC956F5"
+				title: "&cSlay: &rUr-Ghast"
+				type: "kill"
+				value: 1L
+			}]
+			x: -12.0d
+			y: 14.0d
+		}
+		{
+			id: "2586C2A78D34EFEE"
+			rewards: [
+				{
+					id: "412BC04187B4D8BD"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 3
+					id: "6388CCB4200B6CFC"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Prehistoric Blob"
+			tasks: [{
+				entity: "shineals_prehistoric_expansion:dunkleosteus"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "shineals_prehistoric_expansion:dunkleosteus"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "4872FDBC08F8EDCF"
+				title: "&cSlay: &rDunk"
+				type: "kill"
+				value: 1L
+			}]
+			x: 21.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"337C6809857A9435"
+				"2A41D087A5D13CAF"
+				"75DBB6AC74F225B4"
+				"54001D0BAC9E43CE"
+			]
+			icon: {
+				Count: 1
+				id: "citadel:effect_item"
+				tag: {
+					DisplayEffect: "mutantmonsters:chemical_x"
+				}
+			}
+			id: "127CC0A68078BA90"
+			rewards: [
+				{
+					id: "46896085923C8467"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 6
+					id: "6260DBB702547D57"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Virus Outbreak"
+			tasks: [{
+				id: "533A4CC6A77797A5"
+				title: "&eComplete: &aMutated Beings"
+				type: "checkmark"
+			}]
+			x: -24.0d
+			y: 16.5d
+		}
+		{
+			id: "337C6809857A9435"
+			rewards: [
+				{
+					id: "75993F13F179A572"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "08FB96D12BDE335D"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Undeniable Explosion"
+			tasks: [{
+				entity: "mutantmonsters:mutant_creeper"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmonsters:mutant_creeper"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "2D01A3FDCB5F262D"
+				title: "&cSlay: &rMutant Creeper"
+				type: "kill"
+				value: 1L
+			}]
+			x: -21.0d
+			y: 13.0d
+		}
+		{
+			id: "2A41D087A5D13CAF"
+			rewards: [
+				{
+					id: "4CDA475A2F795E06"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "4B3F67D95C257C17"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Ender Extremity"
+			tasks: [{
+				entity: "mutantmonsters:mutant_enderman"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmonsters:mutant_enderman"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "050593552595E9EC"
+				title: "&cSlay: &rMutant Enderman"
+				type: "kill"
+				value: 1L
+			}]
+			x: -27.0d
+			y: 13.0d
+		}
+		{
+			id: "75DBB6AC74F225B4"
+			rewards: [
+				{
+					id: "5CFC5922DF4F145C"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "3C530F14EC0397D0"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Toxo-Skeletal"
+			tasks: [{
+				entity: "mutantmonsters:mutant_skeleton"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmonsters:mutant_skeleton"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "2AD0326E5715BEA0"
+				title: "&cSlay: &rMutant Skeleton"
+				type: "kill"
+				value: 1L
+			}]
+			x: -27.0d
+			y: 21.0d
+		}
+		{
+			id: "54001D0BAC9E43CE"
+			rewards: [
+				{
+					id: "41612F10FA29732A"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "025031FF73394F13"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Undead Recovery"
+			tasks: [{
+				entity: "mutantmonsters:mutant_zombie"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmonsters:mutant_zombie"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "390F4E03F3D2023C"
+				title: "&cSlay: &rMutant Zombie"
+				type: "kill"
+				value: 1L
+			}]
+			x: -21.0d
+			y: 21.0d
+		}
+		{
+			id: "095226AFC1EA1231"
+			rewards: [
+				{
+					id: "12DF2AE4AD65DD7D"
+					type: "xp_levels"
+					xp_levels: 75
+				}
+				{
+					count: 10
+					id: "58F8D84503AC9AEF"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:the_harbinger"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "16894389844662E7"
+				title: "&cSlay: &rThe Harbinger"
+				type: "kill"
+				value: 1L
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			id: "4B3FFBE574A3BD7E"
+			rewards: [
+				{
+					id: "569F41CB78BFB27D"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 5
+					id: "092FBB9E3210E063"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Salted Wounds"
+			tasks: [{
+				entity: "galosphere:berserker"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "galosphere:berserker"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "70E2459EE9E0D32D"
+				title: "&cSlay: &rBerserker"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -14.0d
+		}
+		{
+			id: "7320CBE229F99827"
+			rewards: [
+				{
+					id: "42D59B7D6FCB0217"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 7
+					id: "3A582B199FD8FC93"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Sculk Hearing"
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "minecraft:warden"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "3B5517808C75175A"
+				title: "&cSlay: &rWarden"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"5C27FCF8ABFF3C0D"
+				"641654E62B7EA314"
+				"0E868D3A7A804BED"
+				"09B5CDF23422FEA1"
+			]
+			icon: "mowziesmobs:logo"
+			id: "43CDD5A23151415F"
+			rewards: [
+				{
+					id: "255B125972FA8CA0"
+					type: "xp_levels"
+					xp_levels: 125
+				}
+				{
+					count: 6
+					id: "52D46919305A4314"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Mobs Of Mowzie"
+			tasks: [{
+				id: "232956A23A094AC0"
+				title: "&eComplete: &aMowzie's Residency"
+				type: "checkmark"
+			}]
+			x: -15.0d
+			y: -7.5d
+		}
+		{
+			id: "5C27FCF8ABFF3C0D"
+			rewards: [
+				{
+					id: "5E6033DF49A0B283"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 3
+					id: "64F7DB51CDBE9A38"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Metalliferous Champion"
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mowziesmobs:ferrous_wroughtnaut"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "0AAA778369F2D962"
+				title: "&cSlay: &rFerrous Wroughtnaut"
+				type: "kill"
+				value: 1L
+			}]
+			x: -18.0d
+			y: -11.0d
+		}
+		{
+			id: "641654E62B7EA314"
+			rewards: [
+				{
+					id: "4B15EE8FB5B59695"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 5
+					id: "75B97339F2AF6D62"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Sanctified Sunbird"
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mowziesmobs:umvuthi"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "0266A42E4DE262A2"
+				title: "&cSlay: &rUmvuthi"
+				type: "kill"
+				value: 1L
+			}]
+			x: -12.0d
+			y: -11.0d
+		}
+		{
+			id: "0E868D3A7A804BED"
+			rewards: [
+				{
+					id: "4ED469817DF7B755"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 5
+					id: "10A742B034C9A50B"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Frozen Monstrosity"
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mowziesmobs:frostmaw"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "2BFB64E09A27FD52"
+				title: "&cSlay: &rFrostmaw"
+				type: "kill"
+				value: 1L
+			}]
+			x: -12.0d
+			y: -4.0d
+		}
+		{
+			id: "09B5CDF23422FEA1"
+			rewards: [
+				{
+					id: "379124F52FFB0DBD"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 3
+					id: "207BFB403A262620"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Winged Serpent"
+			tasks: [{
+				entity: "mowziesmobs:naga"
+				icon: "mowziesmobs:naga_fang"
+				id: "43AC3F7D3A872899"
+				title: "&cSlay: &rNaga"
+				type: "kill"
+				value: 1L
+			}]
+			x: -18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2EDBF7CC01D76E88"
+				"367E12AEEEB10B8B"
+				"095226AFC1EA1231"
+				"56B7D8DE9E86B2B4"
+				"30F3AC0161FE81AA"
+				"3B026E7325C96A42"
+			]
+			icon: {
+				Count: 1
+				id: "citadel:effect_item"
+				tag: {
+					DisplayEffect: "cataclysm:blazing_brand"
+				}
+			}
+			id: "564E27580778175F"
+			rewards: [
+				{
+					id: "5DBDBABE1F8227BD"
+					type: "xp_levels"
+					xp_levels: 250
+				}
+				{
+					count: 40
+					id: "428FB702A5F3D60D"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Old Legends"
+			tasks: [{
+				id: "085D72F2D7033D24"
+				title: "&eComplete: &aCataclystic Chaos"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: -7.5d
+		}
+		{
+			id: "2EDBF7CC01D76E88"
+			rewards: [
+				{
+					id: "00BF2A3B041DDF7B"
+					type: "xp_levels"
+					xp_levels: 75
+				}
+				{
+					count: 10
+					id: "792346E3EC35352A"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "cataclysm:ignis"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:ignis"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "4A71CDAD3317D256"
+				title: "&cSlay: &rIgnis"
+				type: "kill"
+				value: 1L
+			}]
+			x: 9.0d
+			y: -12.0d
+		}
+		{
+			id: "367E12AEEEB10B8B"
+			rewards: [
+				{
+					id: "4E6A84C31BA8A66D"
+					type: "xp_levels"
+					xp_levels: 75
+				}
+				{
+					count: 10
+					id: "40A30A33DBCAEBC1"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:ender_guardian"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "35A985D2063F12B7"
+				title: "&cSlay: &rEnder Guardian"
+				type: "kill"
+				value: 1L
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			id: "56B7D8DE9E86B2B4"
+			rewards: [
+				{
+					id: "5BCC10E1664FD835"
+					type: "xp_levels"
+					xp_levels: 75
+				}
+				{
+					count: 10
+					id: "10DCA264742475F0"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:netherite_monstrosity"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "5703961D28D96579"
+				title: "&cSlay: &rNetherite Monstrosity"
+				type: "kill"
+				value: 1L
+			}]
+			x: 20.0d
+			y: -2.0d
+		}
+		{
+			id: "30F3AC0161FE81AA"
+			rewards: [
+				{
+					id: "40108981A55110F3"
+					type: "xp_levels"
+					xp_levels: 75
+				}
+				{
+					count: 10
+					id: "49C8B08CE97B5FEB"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:the_leviathan"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "32FF0008C96F9807"
+				title: "&cSlay: &rThe Leviathan"
+				type: "kill"
+				value: 1L
+			}]
+			x: 14.0d
+			y: -21.0d
+		}
+		{
+			id: "3B026E7325C96A42"
+			rewards: [
+				{
+					id: "4AD5CAE5A0F11D6B"
+					type: "xp_levels"
+					xp_levels: 75
+				}
+				{
+					count: 10
+					id: "4E208FC4ECB18F46"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:ancient_remnant"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "75404DB9DF0E0415"
+				title: "&cSlay: &rAncient Remnant"
+				type: "kill"
+				value: 1L
+			}]
+			x: 20.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"7DC9B919F9818A00"
+				"7DE34F59679A81A7"
+				"7759A42B3A1A2CEF"
+				"1F8B70AFB5FE8496"
+			]
+			icon: "meetyourfight:dame_fortuna_head"
+			id: "1620AD479D2CB88B"
+			rewards: [
+				{
+					id: "0C80CD67494B921D"
+					type: "xp_levels"
+					xp_levels: 150
+				}
+				{
+					count: 10
+					id: "2A7CAF0C5E6741AE"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "+4 Bosses"
+			tasks: [{
+				id: "59BCDE42FA3DF345"
+				title: "&eComplete: &aThe Accursed"
+				type: "checkmark"
+			}]
+			x: -25.5d
+			y: -7.5d
+		}
+		{
+			icon: "meetyourfight:fossil_bait"
+			id: "7DC9B919F9818A00"
+			rewards: [
+				{
+					id: "7E44D20C35D2C71B"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 2
+					id: "79081890B6D6DB5D"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Decayed"
+			tasks: [
+				{
+					id: "4129C598F73483BC"
+					item: "meetyourfight:fossil_bait"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:swampjaw"
+					icon: "meetyourfight:fossil_bait"
+					id: "42A6108D69CA33D9"
+					title: "&cSlay: &rSwampjaw"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&cSlay: &rSwampjaw"
+			x: -28.0d
+			y: -11.0d
+		}
+		{
+			icon: "meetyourfight:haunted_bell"
+			id: "7DE34F59679A81A7"
+			rewards: [
+				{
+					id: "521C8B10D1030EC2"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					count: 3
+					id: "6E5A8436DF7C5AC0"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Audible"
+			tasks: [
+				{
+					id: "78005E47B196535D"
+					item: "meetyourfight:haunted_bell"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:bellringer"
+					icon: "meetyourfight:haunted_bell"
+					id: "3B5062A530D87161"
+					title: "&cSlay: &rBellringer"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&cSlay: &rBellringer"
+			x: -23.0d
+			y: -11.0d
+		}
+		{
+			icon: "meetyourfight:devils_ante"
+			id: "7759A42B3A1A2CEF"
+			rewards: [
+				{
+					id: "7728FFD52BC4B306"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+				{
+					count: 4
+					id: "3521ADD3B7A20897"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Serendipitous"
+			tasks: [
+				{
+					id: "2D582E5C2C7EC5DF"
+					item: "meetyourfight:devils_ante"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:dame_fortuna"
+					icon: "meetyourfight:devils_ante"
+					id: "78C411190F7F4D56"
+					title: "&cSlay: &rDame Fortuna"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&cSlay: &rDame Fortuna"
+			x: -28.0d
+			y: -4.0d
+		}
+		{
+			icon: "meetyourfight:dusk_key"
+			id: "1F8B70AFB5FE8496"
+			rewards: [
+				{
+					id: "79A3B86F25CA18D2"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 5
+					id: "6EBCD6B894D77AD9"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Mutilated"
+			tasks: [
+				{
+					id: "488414430D1CCBE8"
+					item: "meetyourfight:dusk_key"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:rosalyne"
+					icon: "meetyourfight:dusk_key"
+					id: "2D609CBEAE7F725B"
+					title: "&cSlay: &rRosalyne"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&cSlay: &rRosalyne"
+			x: -23.0d
+			y: -4.0d
+		}
+	]
+	title: "{quest.overview.base_label.title} Enmities"
+}

@@ -1,0 +1,776 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "reaching_culmination"
+	group: "52C1111E0945C360"
+	icon: "apotheosis:augmenting_table"
+	id: "7B5877B6568E7960"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "apotheosis:apoth_chronicle"
+				}
+			}
+			id: "4DC8AB60F08F5BB8"
+			rewards: [
+				{
+					id: "0055920976BA914A"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 2
+					id: "1396D6C509F75DF5"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Hedonists Like You"
+			tasks: [
+				{
+					id: "40E387396E92BB70"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "apothic_sockets"
+									}
+								}
+								{
+									Count: 1b
+									id: "apotheosis:gem"
+								}
+							]
+						}
+					}
+					match_nbt: false
+					title: "&eAcquire: &rGem"
+					type: "item"
+				}
+				{
+					advancement: "apotheosis:affix/root"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "69AD9C58E1FB2C27"
+					title: "&eAcquire: &rAffixed Item"
+					type: "advancement"
+				}
+				{
+					id: "4A12D71AA059DE70"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+				{
+					id: "6D7912360E9D1491"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+			]
+			title: "&eIntroduction: &aReaching Culmination"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4DC8AB60F08F5BB8"
+				"4A12D71AA059DE70"
+			]
+			dependency_requirement: "one_completed"
+			icon: "apotheosis:salvaging_table"
+			id: "4B63C777893C83F4"
+			rewards: [
+				{
+					id: "1B2D3CB95D21B885"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "50CD8A653DBDCEBF"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Recycler"
+			tasks: [
+				{
+					id: "16C1ECABE673B3C5"
+					item: "apotheosis:salvaging_table"
+					type: "item"
+				}
+				{
+					id: "2429A9D9B3524BCD"
+					item: "apotheosis:common_material"
+					type: "item"
+				}
+				{
+					id: "627720DECE31E373"
+					item: "apotheosis:uncommon_material"
+					type: "item"
+				}
+				{
+					id: "4AFB46B6AD463741"
+					item: "apotheosis:rare_material"
+					type: "item"
+				}
+				{
+					id: "5A244201BE4817D8"
+					item: "apotheosis:epic_material"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aSalvage, Pt. I"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			id: "4AFF8673B04C1978"
+			rewards: [
+				{
+					id: "0731B7D806D727DE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "289EE87EC31C6C43"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "In Control"
+			tasks: [
+				{
+					id: "3A83C37C942F7B78"
+					item: "minecraft:spawner"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					advancement: "apotheosis:spawner/modifier"
+					criterion: ""
+					icon: "minecraft:spawner"
+					id: "666D3F43FCA2DBB8"
+					title: "&eTweak: &rMonster Spawner"
+					type: "advancement"
+				}
+			]
+			title: "&eOn The Side: &aSpawner Augmentations"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4DC8AB60F08F5BB8"
+				"4A12D71AA059DE70"
+			]
+			dependency_requirement: "one_completed"
+			icon: "apotheosis:gem_cutting_table"
+			id: "56CDCD2E264F04DB"
+			rewards: [
+				{
+					id: "799F11D7805DD9BC"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "14072B08F4A922EC"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Stone Shaper"
+			tasks: [
+				{
+					id: "744C9DC904EEF039"
+					item: "apotheosis:gem_cutting_table"
+					type: "item"
+				}
+				{
+					advancement: "apotheosis:affix/gem_cut"
+					criterion: ""
+					icon: "apotheosis:gem_dust"
+					id: "3685851FB726993A"
+					title: "&eUpgrade: &rApothic Gem"
+					type: "advancement"
+				}
+			]
+			title: "&eSegment: &aGemmologist"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4B63C777893C83F4"
+				"16C1ECABE673B3C5"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "apotheosis:salvaging_table"
+					DisplayScale: 1.0d
+					DisplayShake: 0
+					DisplaySpin: 1
+					DisplayZoom: 0
+				}
+			}
+			id: "089EB50C3A032059"
+			rewards: [
+				{
+					id: "13A0892C772265C1"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 6
+					id: "797C408D326082E1"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Noble Retrieve"
+			tasks: [
+				{
+					id: "691BADF562607730"
+					item: "apotheosis:mythic_material"
+					type: "item"
+				}
+				{
+					id: "11775F8E7319EA74"
+					item: "apotheotic_additions:artifact_material"
+					type: "item"
+				}
+				{
+					id: "4031E95C913D2854"
+					item: "apotheotic_additions:heirloom_material"
+					type: "item"
+				}
+				{
+					id: "77E8A72A6E5D5E4D"
+					item: "apotheotic_additions:esoteric_material"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aSalvage, Pt. II"
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5B17CBCCE48C56CF"
+				"4DC8AB60F08F5BB8"
+				"40E387396E92BB70"
+			]
+			icon: "minecraft:smithing_table"
+			id: "31D541C8299F16FC"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "0B7D03BCC6439C2A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "2B0D61E1A6DD01F5"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Socketeer"
+			tasks: [
+				{
+					id: "4138567191D15B94"
+					item: "apotheosis:sigil_of_socketing"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4E4FF455B21253C3"
+					item: {
+						Count: 1
+						id: "itemfilters:weak_nbt"
+						tag: {
+							value: {
+								affix_data: {
+									sockets: 3
+								}
+							}
+						}
+					}
+					title: "&eAcquire: &rTool with 3 Sockets"
+					type: "item"
+				}
+				{
+					advancement: "apotheosis:affix/socket"
+					criterion: ""
+					id: "54979D79695E8F8D"
+					title: "&eApply: &rGem to Socket"
+					type: "advancement"
+				}
+			]
+			title: "&eSegment: &aSocketing"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4DC8AB60F08F5BB8"
+				"4A12D71AA059DE70"
+			]
+			dependency_requirement: "one_completed"
+			icon: "apotheosis:simple_reforging_table"
+			id: "1426FA0C7F48D6DE"
+			rewards: [
+				{
+					id: "351765FB52431156"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "7D24FFFA35597F51"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Stat Reroll"
+			tasks: [
+				{
+					id: "4AD354A204286442"
+					item: "apotheosis:simple_reforging_table"
+					type: "item"
+				}
+				{
+					id: "0281CDAF5C18EF5D"
+					item: "apotheosis:sigil_of_rebirth"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aReforging, Pt. I"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"089EB50C3A032059"
+				"691BADF562607730"
+				"48D4CC406B2AAE10"
+			]
+			icon: "apotheosis:augmenting_table"
+			id: "1DFB631AA0421966"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "3A8D412119BC2272"
+					type: "xp"
+					xp: 175
+				}
+				{
+					count: 6
+					id: "04EF49A068B03571"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Aspective Choice"
+			tasks: [
+				{
+					id: "7080467FF719BA70"
+					item: "apotheosis:augmenting_table"
+					type: "item"
+				}
+				{
+					id: "0059DD1B88829E94"
+					item: "apotheosis:sigil_of_enhancement"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aBuffing Attributes"
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"1426FA0C7F48D6DE"
+				"4AD354A204286442"
+				"4B63C777893C83F4"
+				"5A244201BE4817D8"
+			]
+			icon: "apotheosis:reforging_table"
+			id: "2EC4D77D6800E215"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "0A2D11CCEAAA5B10"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "75A3312064DD0948"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "New Stats Enhanced"
+			tasks: [{
+				id: "745B2BB4B90D5593"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			title: "&eSegment: &aReforging, Pt. II"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "4D08BA54580EC328"
+			rewards: [
+				{
+					id: "3B7FF157AFB4E0E0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "088BE91DF96BDE14"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Picky Enchanter"
+			tasks: [{
+				id: "6DDDB3630CF1AA55"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:helmet_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:chestplate_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:leggings_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:boots_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:weapon_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:bow_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:pickaxe_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:fishing_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:other_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:scrap_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:extraction_tome"
+							}
+						]
+					}
+				}
+				title: "&eEnchantment Tomes"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4DC8AB60F08F5BB8"
+				"6D7912360E9D1491"
+			]
+			dependency_requirement: "one_completed"
+			icon: "apotheosis:library"
+			id: "6A7D7A6001394631"
+			rewards: [
+				{
+					id: "4055B08264CBC46B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 5
+					id: "568990800DF599D8"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Longer Shelf Live"
+			tasks: [
+				{
+					id: "18A9B2A3074B1955"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "apotheosis:infused_shelves"
+						}
+					}
+					title: "&eInfused Shelves"
+					type: "item"
+				}
+				{
+					id: "54D057CB57EBDBD9"
+					item: "apotheosis:library"
+					type: "item"
+				}
+				{
+					advancement: "apotheosis:enchanting/60ench"
+					criterion: ""
+					id: "4352943800BB0E61"
+					title: "&eEnchant: &rAt Lv. 60"
+					type: "advancement"
+				}
+			]
+			title: "&eChapter I: &aBetter Book Storage"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4B63C777893C83F4"
+				"089EB50C3A032059"
+				"18A9B2A3074B1955"
+			]
+			id: "646A3DCD8C0E0621"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "5C08912C6BE86B96"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 8
+					id: "0BFD9640D89BC0AD"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Runic Bonuses"
+			tasks: [{
+				id: "535CBDF436BD96C3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheotic_additions:sacrificial_shelf"
+							}
+							{
+								Count: 1b
+								id: "apotheotic_additions:wavebinders_shelf"
+							}
+							{
+								Count: 1b
+								id: "apotheotic_additions:void_shelf"
+							}
+							{
+								Count: 1b
+								id: "apotheotic_additions:terra_shelf"
+							}
+						]
+					}
+				}
+				title: "&eBook Runes"
+				type: "item"
+			}]
+			title: "&eOn The Side: &aNewfangled Shelves"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6A7D7A6001394631"
+				"18A9B2A3074B1955"
+			]
+			dependency_requirement: "one_completed"
+			id: "2083B4F1A9F0C573"
+			rewards: [
+				{
+					id: "63528121F05874EE"
+					type: "xp"
+					xp: 175
+				}
+				{
+					count: 5
+					id: "27CBCC3738938B83"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Particular Functionality"
+			tasks: [
+				{
+					id: "214435F04EFBAC16"
+					item: "apotheosis:treasure_shelf"
+					type: "item"
+				}
+				{
+					id: "445A8BCAB29FDC65"
+					item: "apotheosis:sightshelf_t2"
+					type: "item"
+				}
+				{
+					id: "0B6DF91EC77FC0F8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "apotheosis:beeshelf"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:melonshelf"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:stoneshelf"
+								}
+							]
+						}
+					}
+					title: "&eSpecial Shelves"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aNotable Shelves"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"6A7D7A6001394631"
+				"2083B4F1A9F0C573"
+				"646A3DCD8C0E0621"
+			]
+			dependency_requirement: "one_completed"
+			icon: "apotheosis:ender_library"
+			id: "2EE76657DE42B2F0"
+			rewards: [
+				{
+					id: "4E8D894F3795261D"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 7
+					id: "53E80EABC89AE3F3"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Decypher Of Glyphs"
+			tasks: [
+				{
+					id: "3D3BABB0C16F742A"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "apotheosis:draconic_endshelf"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:soul_touched_sculkshelf"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:rectifier_t3"
+								}
+							]
+						}
+					}
+					title: "&eHigh-Tier Shelves"
+					type: "item"
+				}
+				{
+					advancement: "apotheosis:enchanting/100ench"
+					criterion: ""
+					id: "7751EF1C6AAFABEA"
+					title: "&eEnchant: &rAt Lv. 100"
+					type: "advancement"
+				}
+				{
+					id: "080C13B897BA7E42"
+					item: "apotheosis:ender_library"
+					type: "item"
+				}
+			]
+			title: "&eFinale: &aEndgame Enchanter"
+			x: 0.0d
+			y: 5.0d
+		}
+	]
+	title: "{quest.overview.main_label.title} Culminated Wisdom"
+}

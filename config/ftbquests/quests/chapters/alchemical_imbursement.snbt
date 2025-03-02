@@ -1,0 +1,613 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "alchemical_imbursement"
+	group: "29237F79502E6EF5"
+	icon: {
+		Count: 1
+		id: "citadel:icon_item"
+		tag: {
+			IconLocation: "theurgy:textures/item/empty_jar.png"
+		}
+	}
+	id: "0A2B025C418074C8"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				id: "modonomicon:modonomicon"
+				tag: {
+					"modonomicon:book_id": "theurgy:the_hermetica"
+				}
+			}
+			id: "176E586C9F2E7411"
+			rewards: [{
+				id: "7005F0815FD6240B"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "circle"
+			size: 3.0d
+			subtitle: "Value From Waste"
+			tasks: [{
+				id: "75D1D227DE8337EB"
+				item: "theurgy:pyromantic_brazier"
+				type: "item"
+			}]
+			title: "&eIntroduction: &aAspects Of Matter"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["176E586C9F2E7411"]
+			icon: "theurgy:alchemical_salt_mineral"
+			id: "0091344CAA1BC9B5"
+			rewards: [{
+				id: "0F235DB2FBDEE815"
+				type: "xp"
+				xp: 3
+			}]
+			size: 2.0d
+			subtitle: "Compund Assembly"
+			tasks: [
+				{
+					id: "3DA8AB9651E61201"
+					item: "theurgy:calcination_oven"
+					type: "item"
+				}
+				{
+					id: "4DD91F9B2FA0ED68"
+					item: "theurgy:alchemical_salt_mineral"
+					type: "item"
+				}
+			]
+			title: "&eChapter I, Pt. II: &aCalcifying"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["176E586C9F2E7411"]
+			icon: "theurgy:mercury_shard"
+			id: "78FA8660995E0604"
+			rewards: [
+				{
+					id: "4479DC90EEA096B5"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "11434FBB52AFAB3C"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Toxic Collusion"
+			tasks: [
+				{
+					id: "23CFB19B6DAF928E"
+					item: "theurgy:distiller"
+					type: "item"
+				}
+				{
+					id: "717E0B72F8980814"
+					item: "theurgy:mercury_shard"
+					type: "item"
+				}
+			]
+			title: "&eChapter I, Pt. I: &aDistilling"
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78FA8660995E0604"]
+			description: ["Use &eMercury&r as a heating source, instead of regular fuel."]
+			icon: "theurgy:mercury_catalyst"
+			id: "5E4E9A4FAA353662"
+			rewards: [
+				{
+					id: "1EF376632904C5E8"
+					type: "xp"
+					xp: 7
+				}
+				{
+					id: "37CDD41015C13F6F"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Not As Distasteful"
+			tasks: [
+				{
+					id: "33FDD76AD723426A"
+					item: "theurgy:mercury_catalyst"
+					type: "item"
+				}
+				{
+					id: "1C7394FA69904DBB"
+					item: "theurgy:caloric_flux_emitter"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aFlux Heating"
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["176E586C9F2E7411"]
+			icon: "theurgy:sal_ammoniac_bucket"
+			id: "41E67315C256C772"
+			rewards: [
+				{
+					id: "2619F19AA0C7860A"
+					type: "xp"
+					xp: 7
+				}
+				{
+					id: "358FDE96D57DC498"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Liquid Ammoniac"
+			tasks: [
+				{
+					block: "theurgy:sal_ammoniac_ore"
+					block_type: 0
+					checkItem: false
+					id: "61B8452E79A28C75"
+					title: "&eBreak: &rSal Ammoniac Ore"
+					type: "questsadditions:break"
+					value: 1L
+				}
+				{
+					id: "6B17FB10B13E2595"
+					item: "theurgy:sal_ammoniac_accumulator"
+					type: "item"
+				}
+				{
+					id: "548A63CDD2C793CC"
+					item: "theurgy:sal_ammoniac_tank"
+					type: "item"
+				}
+				{
+					id: "7AB54A5C0DF44D12"
+					item: "theurgy:liquefaction_cauldron"
+					type: "item"
+				}
+				{
+					id: "2E3E451E95EAF2D1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "theurgy:alchemical_sulfurs"
+						}
+					}
+					title: "&eAlchemical Sulfur"
+					type: "item"
+				}
+			]
+			title: "&eChapter I, Pt. III: &aAccumulating"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"0091344CAA1BC9B5"
+				"78FA8660995E0604"
+				"41E67315C256C772"
+			]
+			dependency_requirement: "all_started"
+			icon: "theurgy:incubator"
+			id: "2AAB2B96FBD7138B"
+			rewards: [
+				{
+					id: "7CBF7EF092735490"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "7183B60F3998D15B"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+				{
+					advancement: "rogue:rogue/unlock_theurgy"
+					auto: "enabled"
+					criterion: ""
+					icon: "kubejs:druidic_box"
+					id: "1DC4D0F717B5717D"
+					title: "&aBetter Drops"
+					type: "advancement"
+				}
+			]
+			size: 2.0d
+			subtitle: "Element Recycling"
+			tasks: [
+				{
+					id: "696F7B6316DF192B"
+					item: "theurgy:incubator"
+					type: "item"
+				}
+				{
+					id: "5465DAB6CC76CBD6"
+					item: "theurgy:incubator_salt_vessel"
+					type: "item"
+				}
+				{
+					id: "5B57A03DCF81A3DF"
+					item: "theurgy:incubator_sulfur_vessel"
+					type: "item"
+				}
+				{
+					id: "29D04B8185055F04"
+					item: "theurgy:incubator_mercury_vessel"
+					type: "item"
+				}
+			]
+			title: "&eChapter II: &aRecombining"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"2AAB2B96FBD7138B"
+				"0091344CAA1BC9B5"
+				"41E67315C256C772"
+				"06D722E91BB72D5F"
+				"2DC84B1D2E50BDD5"
+			]
+			dependency_requirement: "all_started"
+			description: ["The book &eThe Hermetica&r will help you construct this apparatus."]
+			icon: "theurgy:reformation_result_pedestal"
+			id: "5C032838DF3C0E75"
+			min_required_dependencies: 10
+			rewards: [
+				{
+					id: "4996DA2E51E52BF0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 4
+					id: "0000D46F0D2D8407"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Legal Duplication"
+			tasks: [
+				{
+					id: "2140CF623B7C3C16"
+					item: "theurgy:reformation_source_pedestal"
+					type: "item"
+				}
+				{
+					id: "3F1F05B64203B12F"
+					item: "theurgy:reformation_result_pedestal"
+					type: "item"
+				}
+				{
+					id: "1400987E2DBEE032"
+					item: "theurgy:reformation_target_pedestal"
+					type: "item"
+				}
+				{
+					id: "50F82D249502411C"
+					item: "theurgy:sulfuric_flux_emitter"
+					type: "item"
+				}
+				{
+					id: "1E7D136FB6CFE1DA"
+					item: "theurgy:mercury_catalyst"
+					type: "item"
+				}
+			]
+			title: "&eFinale: &aReplicating"
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2E3E451E95EAF2D1"]
+			icon: "theurgy:fermentation_vat"
+			id: "06D722E91BB72D5F"
+			rewards: [
+				{
+					id: "1086C4FF1D37454B"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "67432DC881F6F3F6"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Transmute"
+			tasks: [
+				{
+					id: "541F0533779771B4"
+					item: "theurgy:fermentation_vat"
+					type: "item"
+				}
+				{
+					id: "054DD03759F05CCA"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "theurgy:alchemical_sulfur_gems_abundant"
+								}
+								{
+									Count: 1b
+									id: "theurgy:alchemical_sulfur_metals_abundant"
+								}
+								{
+									Count: 1b
+									id: "theurgy:alchemical_sulfur_other_minerals_abundant"
+								}
+							]
+						}
+					}
+					title: "&eAbundant Niter"
+					type: "item"
+				}
+			]
+			title: "&eChapter III, Pt. I: &aNiter Downgrading"
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["61B8452E79A28C75"]
+			icon: "theurgy:digestion_vat"
+			id: "2DC84B1D2E50BDD5"
+			rewards: [
+				{
+					id: "0BF951F73DBF79F5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 4
+					id: "5840F855F5454734"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Exalte"
+			tasks: [
+				{
+					id: "46472DCF94B8E1E6"
+					item: "theurgy:digestion_vat"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "5C1246344B6D9953"
+					item: "theurgy:purified_gold"
+					type: "item"
+				}
+			]
+			title: "&eChapter III, Pt. II: &aNiter Upgrading"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["41E67315C256C772"]
+			id: "7CF786DF0823A086"
+			rewards: [
+				{
+					id: "79FE227DD71C08ED"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 2
+					id: "57D5E3A80364125F"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Tiered Finder"
+			tasks: [{
+				id: "178751CC38BBB47B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "theurgy:sulfur_attuned_divination_rod_abundant"
+								tag: {
+									Damage: 0
+									"theurgy:divination.setting.allow_attuning": 0b
+									"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t1_allowed_blocks"
+									"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t1_disallowed_blocks"
+									"theurgy:divination.setting.duration": 40
+									"theurgy:divination.setting.max_damage": 16
+									"theurgy:divination.setting.range": 96
+									"theurgy:divination.setting.tier": "minecraft:stone"
+								}
+							}
+							{
+								Count: 1b
+								id: "theurgy:sulfur_attuned_divination_rod_common"
+								tag: {
+									Damage: 0
+									"theurgy:divination.setting.allow_attuning": 0b
+									"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t1_allowed_blocks"
+									"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t1_disallowed_blocks"
+									"theurgy:divination.setting.duration": 40
+									"theurgy:divination.setting.max_damage": 16
+									"theurgy:divination.setting.range": 96
+									"theurgy:divination.setting.tier": "minecraft:stone"
+								}
+							}
+							{
+								Count: 1b
+								id: "theurgy:sulfur_attuned_divination_rod_rare"
+								tag: {
+									Damage: 0
+									"theurgy:divination.setting.allow_attuning": 0b
+									"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t2_allowed_blocks"
+									"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t2_disallowed_blocks"
+									"theurgy:divination.setting.duration": 40
+									"theurgy:divination.setting.max_damage": 32
+									"theurgy:divination.setting.range": 96
+									"theurgy:divination.setting.tier": "minecraft:stone"
+								}
+							}
+							{
+								Count: 1b
+								id: "theurgy:sulfur_attuned_divination_rod_precious"
+								tag: {
+									Damage: 0
+									"theurgy:divination.setting.allow_attuning": 0b
+									"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t3_allowed_blocks"
+									"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t3_disallowed_blocks"
+									"theurgy:divination.setting.duration": 40
+									"theurgy:divination.setting.max_damage": 32
+									"theurgy:divination.setting.range": 96
+									"theurgy:divination.setting.tier": "minecraft:stone"
+								}
+							}
+						]
+					}
+				}
+				title: "&eTiered Divination Rods"
+				type: "item"
+			}]
+			title: "&eOn The Side: &aPreciser Rods"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			id: "598A7AA1A4205094"
+			rewards: [{
+				id: "70AAD1652FA3023F"
+				type: "xp"
+				xp: 7
+			}]
+			subtitle: "Predetermined"
+			tasks: [{
+				id: "7B39D7011C0E2D2B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "theurgy:divination_rod_t2"
+								tag: {
+									Damage: 0
+									"theurgy:divination.setting.allow_attuning": 1b
+									"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t2_allowed_blocks"
+									"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t2_disallowed_blocks"
+									"theurgy:divination.setting.duration": 40
+									"theurgy:divination.setting.max_damage": 16
+									"theurgy:divination.setting.range": 96
+									"theurgy:divination.setting.tier": "minecraft:iron"
+								}
+							}
+							{
+								Count: 1b
+								id: "theurgy:divination_rod_t3"
+								tag: {
+									Damage: 0
+									"theurgy:divination.setting.allow_attuning": 1b
+									"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t3_allowed_blocks"
+									"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t3_disallowed_blocks"
+									"theurgy:divination.setting.duration": 40
+									"theurgy:divination.setting.max_damage": 32
+									"theurgy:divination.setting.range": 96
+									"theurgy:divination.setting.tier": "minecraft:diamond"
+								}
+							}
+							{
+								Count: 1b
+								id: "theurgy:divination_rod_t4"
+								tag: {
+									Damage: 0
+									"theurgy:divination.setting.allow_attuning": 1b
+									"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t4_allowed_blocks"
+									"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t4_disallowed_blocks"
+									"theurgy:divination.setting.duration": 40
+									"theurgy:divination.setting.max_damage": 128
+									"theurgy:divination.setting.range": 96
+									"theurgy:divination.setting.tier": "minecraft:netherite"
+								}
+							}
+							{
+								Count: 1b
+								id: "theurgy:amethyst_divination_rod"
+								tag: {
+									Damage: 0
+									"theurgy:divination.linked_block_id": "minecraft:budding_amethyst"
+									"theurgy:divination.setting.allow_attuning": 0b
+									"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t1_allowed_blocks"
+									"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t1_disallowed_blocks"
+									"theurgy:divination.setting.duration": 40
+									"theurgy:divination.setting.max_damage": 16
+									"theurgy:divination.setting.range": 96
+									"theurgy:divination.setting.tier": "minecraft:stone"
+								}
+							}
+						]
+					}
+				}
+				title: "&ePreset Divination Rods"
+				type: "item"
+			}]
+			title: "Preset Rods"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "4014CDD8E7FE1411"
+			rewards: [{
+				id: "15DD370E5DC946F4"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "Yet Fragile"
+			tasks: [{
+				id: "24298AF19D8EC7C7"
+				item: {
+					Count: 1
+					id: "theurgy:divination_rod_t1"
+					tag: {
+						Damage: 0
+						"theurgy:divination.setting.allow_attuning": 1b
+						"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t1_allowed_blocks"
+						"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t1_disallowed_blocks"
+						"theurgy:divination.setting.duration": 40
+						"theurgy:divination.setting.max_damage": 8
+						"theurgy:divination.setting.range": 96
+						"theurgy:divination.setting.tier": "minecraft:stone"
+					}
+				}
+				type: "item"
+			}]
+			title: "Customizable Rod"
+			x: -2.0d
+			y: 0.0d
+		}
+	]
+	title: "&f{quest.overview.magic_label.title} &dDruid: &rEsoteric Alchemist"
+}

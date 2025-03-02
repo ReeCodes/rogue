@@ -1,0 +1,17 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_mighty_architect"
+	group: "4E6F24CF14FB572B"
+	icon: {
+		Count: 1
+		id: "rechiseled:chisel"
+		tag: { }
+	}
+	id: "4FA118A2A453020F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "{quest.overview.base_label.title} The Mighty Architect"
+}

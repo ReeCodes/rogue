@@ -1,0 +1,2510 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "curio_trove"
+	group: "073810E5E4A0A5DB"
+	icon: "artifacts:crystal_heart"
+	id: "108CD0344ADB1C40"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "50299A41930935ED"
+			rewards: [
+				{
+					id: "3CE466D2CBAE71F1"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "47D5B7C7D66C95EC"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Tarocchini"
+			tasks: [{
+				id: "19AC336D6FF289CA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tarotcards:tarot_cards"
+					}
+				}
+				title: "&eTarot Cards"
+				type: "item"
+			}]
+			title: "&eAcquire: &rTarot Card"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["50299A41930935ED"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "tarotcards:tarot_deck"
+					DisplayScale: 1.5d
+					DisplayShake: 0
+					DisplaySpin: 1
+					DisplayZoom: 0
+				}
+			}
+			id: "659527D04DF53D44"
+			rewards: [
+				{
+					id: "4724BD6F5447C056"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 12
+					id: "0CCD9518FE82EDED"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "First Hand"
+			tasks: [
+				{
+					id: "321D7C7D457710B6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 22
+							}
+						}
+						id: "tarotcards:tarot_deck"
+					}
+					type: "item"
+				}
+				{
+					id: "29825043BE1306DE"
+					item: {
+						Count: 1
+						id: "tarotcards:death"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6526B71D5081B8D5"
+					item: {
+						Count: 1
+						id: "tarotcards:judgement"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6D653069CF20CC59"
+					item: {
+						Count: 1
+						id: "tarotcards:strength"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4646334A4E994E06"
+					item: {
+						Count: 1
+						id: "tarotcards:temperance"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "382CDCDD974E0363"
+					item: {
+						Count: 1
+						id: "tarotcards:the_chariot"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4A83B57B52A93ED5"
+					item: {
+						Count: 1
+						id: "tarotcards:the_devil"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4C86D7693CA72FF3"
+					item: {
+						Count: 1
+						id: "tarotcards:the_emperor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "18331ED6C310FB8E"
+					item: {
+						Count: 1
+						id: "tarotcards:the_empress"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6349C1677D5CCDF3"
+					item: {
+						Count: 1
+						id: "tarotcards:the_fool"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4F58641D77FF6FDE"
+					item: {
+						Count: 1
+						id: "tarotcards:the_hanged_man"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3FD562A6CE1E11F1"
+					item: {
+						Count: 1
+						id: "tarotcards:the_hermit"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4B723CC1428C022C"
+					item: {
+						Count: 1
+						id: "tarotcards:the_hierophant"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "21AAA722453846E1"
+					item: {
+						Count: 1
+						id: "tarotcards:the_high_priestess"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "111049026C6D8950"
+					item: {
+						Count: 1
+						id: "tarotcards:the_lovers"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6B2ADBE56A1F39AF"
+					item: {
+						Count: 1
+						id: "tarotcards:the_magician"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "33F9945836D74E29"
+					item: {
+						Count: 1
+						id: "tarotcards:the_moon"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "240AB093F1E50877"
+					item: {
+						Count: 1
+						id: "tarotcards:the_star"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "319B0C8326B292DF"
+					item: {
+						Count: 1
+						id: "tarotcards:the_sun"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0030A332D5F4609F"
+					item: {
+						Count: 1
+						id: "tarotcards:the_tower"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "237C492CB9FA2477"
+					item: {
+						Count: 1
+						id: "tarotcards:the_world"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5762DE0A2AAD3170"
+					item: {
+						Count: 1
+						id: "tarotcards:wheel_of_fortune"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rTarot Cards"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "0000000000000031"
+			rewards: [
+				{
+					id: "00000000000007B1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0028A6519FBA84B7"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 10L
+				id: "0000000000000032"
+				item: "bhc:red_heart_canister"
+				title: "&eAcquire: &rRed Heart Canister"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0000000000000031"]
+			id: "0000000000000033"
+			rewards: [
+				{
+					id: "00000000000007B2"
+					type: "xp"
+					xp: 35
+				}
+				{
+					count: 2
+					id: "3D6B6850DAF894FD"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 10L
+				id: "0000000000000034"
+				item: "bhc:yellow_heart_canister"
+				title: "&eAcquire: &rYellow Heart Canister"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000033"]
+			id: "0000000000000035"
+			rewards: [
+				{
+					id: "00000000000007B3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 3
+					id: "4D9CB7A8DB55F8A1"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 10L
+				id: "0000000000000036"
+				item: "bhc:green_heart_canister"
+				title: "&eAcquire: &rGreen Heart Canister"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000035"]
+			id: "0000000000000037"
+			rewards: [
+				{
+					id: "00000000000007B4"
+					type: "xp"
+					xp: 55
+				}
+				{
+					count: 4
+					id: "0D3855EAA63C9FC7"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 10L
+				id: "0000000000000038"
+				item: "bhc:blue_heart_canister"
+				title: "&eAcquire: &rBlue Heart Canister"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0000000000000031"
+				"0000000000000033"
+				"0000000000000035"
+				"0000000000000037"
+				"10E3F2B916F16C68"
+			]
+			hide_dependency_lines: true
+			id: "0000000000000039"
+			rewards: [
+				{
+					id: "00000000000007B5"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 10
+					id: "5C0CB60D0F5743FD"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Wearing Your Hearts"
+			tasks: [{
+				id: "3C8C4CC1F155628C"
+				item: {
+					Count: 1
+					id: "bhc:soul_heart_amulet"
+					tag: {
+						bhc_itemlist: {
+							Items: [
+								{
+									Count: 10b
+									Slot: 0
+									id: "bhc:red_heart_canister"
+								}
+								{
+									Count: 10b
+									Slot: 1
+									id: "bhc:yellow_heart_canister"
+								}
+								{
+									Count: 10b
+									Slot: 2
+									id: "bhc:green_heart_canister"
+								}
+								{
+									Count: 10b
+									Slot: 3
+									id: "bhc:blue_heart_canister"
+								}
+								{
+									Count: 10b
+									Slot: 4
+									id: "bhc:soul_heart_canister"
+								}
+							]
+							Size: 5
+						}
+						heart_amount: [I;
+							20
+							20
+							20
+							20
+							20
+						]
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "&6Collection: &rHeart Canisters"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "0000000000000077"
+			rewards: [
+				{
+					id: "00000000000007B0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 3
+					id: "541A80FEC5483D7A"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "+1 Life"
+			tasks: [{
+				id: "0000000000000078"
+				item: "minecraft:totem_of_undying"
+				title: "&eAcquire: &rTotem Of Holding"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35C2D260EF739762"]
+			description: ["&o\"Deep down in the Lands of the Jellyfish, he sipped his last drink.\""]
+			hide_dependency_lines: true
+			id: "4C0481A708CD6977"
+			rewards: [
+				{
+					id: "5F428CA67B4DE681"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 5
+					id: "1DC41E9DA642E411"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Smitty's Remains"
+			tasks: [{
+				id: "1AA427C1426B6ED7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "artifacts:novelty_drinking_hat"
+				}
+				title: "&eAcquire: &rNovel Drinking Hat"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.5d
+		}
+		{
+			id: "35C2D260EF739762"
+			rewards: [
+				{
+					id: "4AEC85FC4569CB4E"
+					type: "xp"
+					xp: 8
+				}
+				{
+					id: "15D49554384B3CF8"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "One Of The Artifacts"
+			tasks: [{
+				id: "1EADED8BB9CBA634"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:mod"
+								tag: {
+									value: "artifacts"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:or"
+										tag: {
+											items: [
+												{
+													Count: 1b
+													id: "artifacts:novelty_drinking_hat"
+												}
+												{
+													Count: 1b
+													id: "artifacts:everlasting_beef"
+												}
+												{
+													Count: 1b
+													id: "artifacts:eternal_steak"
+												}
+												{
+													Count: 1b
+													id: "artifacts:mimic_spawn_egg"
+												}
+											]
+										}
+									}]
+								}
+							}
+						]
+					}
+				}
+				title: "&eAcquire: &rArtifact"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.5d
+		}
+		{
+			id: "281088C5B705303A"
+			rewards: [
+				{
+					id: "3A236C728981A5E6"
+					type: "xp"
+					xp: 8
+				}
+				{
+					id: "5325FA12860A7336"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			tasks: [{
+				id: "33C13937E04285DD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "relics:amphibian_boot"
+								tag: {
+									abilities: {
+										gills: {
+											points: 0
+											stats: {
+												chance: 0.09583d
+											}
+										}
+										slipping: {
+											points: 0
+											stats: {
+												duration: 18.51158d
+												speed: 0.00549d
+											}
+										}
+										swimming: {
+											points: 0
+											stats: {
+												duration: 18.48064d
+												speed: 0.00999d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:aqua_walker"
+								tag: {
+									abilities: {
+										walking: {
+											points: 0
+											stats: {
+												time: 38.09915d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:arrow_quiver"
+								tag: {
+									abilities: {
+										agility: {
+											points: 0
+											stats: {
+												modifier: 1.0d
+											}
+										}
+										leap: {
+											points: 0
+											stats: {
+												cooldown: 14.75098d
+												duration: 5.24489d
+												multiplier: 0.31082d
+											}
+										}
+										rain: {
+											points: 0
+											stats: {
+												delay: 0.86863d
+												duration: 10.19846d
+												radius: 4.99594d
+											}
+										}
+										receptacle: {
+											points: 0
+											stats: {
+												slots: 3.14221d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:bastion_ring"
+								tag: {
+									abilities: {
+										trade: {
+											points: 0
+											stats: {
+												rolls: 0.96895d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:chorus_inhibitor"
+								tag: {
+									abilities: {
+										blink: {
+											points: 0
+											stats: {
+												cooldown: 9.15801d
+												distance: 29.94509d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:drowned_belt"
+								tag: {
+									abilities: {
+										anchor: {
+											points: 0
+											stats: {
+												sinking: 4.49503d
+												slowness: 0.33895d
+											}
+										}
+										pressure: {
+											points: 0
+											stats: {
+												damage: 1.88395d
+											}
+										}
+										riptide: {
+											points: 0
+											stats: {
+												cooldown: 9.15938d
+											}
+										}
+										slots: {
+											points: 0
+											stats: {
+												talisman: 0.13507d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:elytra_booster"
+								tag: {
+									abilities: {
+										boost: {
+											points: 0
+											stats: {
+												capacity: 89.45936d
+												speed: 1.21239d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:enders_hand"
+								tag: {
+									abilities: {
+										swap: {
+											points: 0
+											stats: {
+												distance: 20.11501d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:holy_locket"
+								tag: {
+									abilities: {
+										steal: {
+											points: 0
+											stats: {
+												amount: 0.11299d
+												radius: 5.60743d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:hunter_belt"
+								tag: {
+									abilities: {
+										slots: {
+											points: 0
+											stats: {
+												talisman: 1.27496d
+											}
+										}
+										training: {
+											points: 0
+											stats: {
+												damage: 1.38703d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:ice_breaker"
+								tag: {
+									abilities: {
+										impact: {
+											points: 0
+											stats: {
+												damage: 4.46583d
+												size: 4.25818d
+											}
+										}
+										sustainability: {
+											points: 0
+											stats: {
+												modifier: 0.69665d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:ice_skates"
+								tag: {
+									abilities: {
+										ram: {
+											points: 0
+											stats: {
+												damage: 0.17047d
+											}
+										}
+										skating: {
+											points: 0
+											stats: {
+												duration: 32.48296d
+												speed: 0.01275d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:jellyfish_necklace"
+								tag: {
+									abilities: {
+										paralysis: {
+											points: 0
+											stats: {
+												duration: 0.56364d
+											}
+										}
+										shock: {
+											points: 0
+											stats: {
+												damage: 0.60169d
+											}
+											temp: {
+												ticking: 1b
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:leather_belt"
+								tag: {
+									abilities: {
+										slots: {
+											points: 0
+											stats: {
+												talisman: 2.15379d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:magma_walker"
+								tag: {
+									abilities: {
+										pace: {
+											points: 0
+											stats: {
+												time: 36.90893d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:midnight_robe"
+								tag: {
+									abilities: {
+										backstab: {
+											points: 0
+											stats: {
+												damage: 1.74681d
+												distance: 17.47969d
+											}
+										}
+										vanish: {
+											points: 0
+											stats: {
+												light: 1.16601d
+												speed: 0.20595d
+											}
+											temp: {
+												ticking: 1b
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:rage_glove"
+								tag: {
+									abilities: {
+										phlebotomy: {
+											points: 0
+											stats: {
+												attack_speed: 0.00828d
+												heal: 2.1E-4d
+												movement_speed: 0.01764d
+											}
+										}
+										rage: {
+											points: 0
+											stats: {
+												dealt_damage: 0.05654d
+												duration: 2.76178d
+												incoming_damage: 0.02618d
+											}
+										}
+										spurt: {
+											points: 0
+											stats: {
+												cooldown: 15.51347d
+												damage: 0.2023d
+												distance: 3.96448d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:reflection_necklace"
+								tag: {
+									abilities: {
+										explode: {
+											points: 0
+											stats: {
+												capacity: 32.08181d
+												damage: 0.44778d
+												stun: 0.06933d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:roller_skates"
+								tag: {
+									abilities: {
+										skating: {
+											points: 0
+											stats: {
+												duration: 31.21167d
+												speed: 0.0016d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:spore_sack"
+								tag: {
+									abilities: {
+										buffer: {
+											points: 0
+											stats: {
+												capacity: 4.44177d
+												chance: 0.04777d
+											}
+										}
+										explosion: {
+											points: 0
+											stats: {
+												size: 0.18704d
+											}
+										}
+										multiplying: {
+											points: 0
+											stats: {
+												amount: 0.08598d
+												chance: 0.09022d
+												size: 0.0728d
+											}
+										}
+										spore: {
+											points: 0
+											stats: {
+												cooldown: 13.16544d
+												damage: 0.39849d
+												duration: 2.7425d
+												size: 0.15787d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:wool_mitten"
+								tag: {
+									abilities: {
+										mold: {
+											points: 0
+											stats: {
+												damage: 0.14639d
+												freeze: 1.1447d
+												size: 15.86116d
+												stun: 0.03139d
+											}
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				match_nbt: false
+				title: "&eAcquire: &rRelic"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["35C2D260EF739762"]
+			id: "70B5A20114F16BDE"
+			rewards: [
+				{
+					id: "69E0D9BA32DEABCC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 10
+					id: "03568729533F68C9"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Museum Belongings"
+			tasks: [
+				{
+					id: "5E8A13E84DFE7603"
+					item: "artifacts:plastic_drinking_hat"
+					type: "item"
+				}
+				{
+					id: "13E223AD757A9C56"
+					item: "artifacts:snorkel"
+					type: "item"
+				}
+				{
+					id: "4B84DA121D771312"
+					item: "artifacts:night_vision_goggles"
+					type: "item"
+				}
+				{
+					id: "5D41FF9BFF767763"
+					item: "artifacts:villager_hat"
+					type: "item"
+				}
+				{
+					id: "7CD36FA7A07FC297"
+					item: "artifacts:superstitious_hat"
+					type: "item"
+				}
+				{
+					id: "5465911388A61F5C"
+					item: "artifacts:lucky_scarf"
+					type: "item"
+				}
+				{
+					id: "2165832B2B89F05A"
+					item: "artifacts:scarf_of_invisibility"
+					type: "item"
+				}
+				{
+					id: "07071D91B21151A9"
+					item: "artifacts:cross_necklace"
+					type: "item"
+				}
+				{
+					id: "242B8F7111E373D7"
+					item: "artifacts:panic_necklace"
+					type: "item"
+				}
+				{
+					id: "2157C45E955C95F4"
+					item: "artifacts:shock_pendant"
+					type: "item"
+				}
+				{
+					id: "1C23DC229A598BE4"
+					item: "artifacts:flame_pendant"
+					type: "item"
+				}
+				{
+					id: "5584B7889A04E974"
+					item: "artifacts:thorn_pendant"
+					type: "item"
+				}
+				{
+					id: "64FB11A6BAE0B2BD"
+					item: "artifacts:charm_of_sinking"
+					type: "item"
+				}
+				{
+					id: "64FA775A7808AD09"
+					item: "artifacts:cloud_in_a_bottle"
+					type: "item"
+				}
+				{
+					id: "22022AEE580949C6"
+					item: "artifacts:obsidian_skull"
+					type: "item"
+				}
+				{
+					id: "0599054809A22BB1"
+					item: "artifacts:antidote_vessel"
+					type: "item"
+				}
+				{
+					id: "2B01BC4D076E6D36"
+					item: "artifacts:universal_attractor"
+					type: "item"
+				}
+				{
+					id: "6B31DF3F102EA8C6"
+					item: "artifacts:crystal_heart"
+					type: "item"
+				}
+				{
+					id: "60A2B3E390D1297D"
+					item: "artifacts:helium_flamingo"
+					type: "item"
+				}
+				{
+					id: "096C1C908D6DF199"
+					item: "artifacts:digging_claws"
+					type: "item"
+				}
+				{
+					id: "77E1E6EF68760673"
+					item: "artifacts:feral_claws"
+					type: "item"
+				}
+				{
+					id: "7A380B39F0EDCED2"
+					item: "artifacts:power_glove"
+					type: "item"
+				}
+				{
+					id: "76166A591BB2488A"
+					item: "artifacts:fire_gauntlet"
+					type: "item"
+				}
+				{
+					id: "5408CB5D32A241CF"
+					item: "artifacts:pocket_piston"
+					type: "item"
+				}
+				{
+					id: "1A3BBA853077B54C"
+					item: "artifacts:vampiric_glove"
+					type: "item"
+				}
+				{
+					id: "68EC731C6E5208EA"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "7753DA12F7FF0E4D"
+					item: "artifacts:aqua_dashers"
+					type: "item"
+				}
+				{
+					id: "2C48FECA51FF0FDB"
+					item: "artifacts:anglers_hat"
+					type: "item"
+				}
+				{
+					id: "49155D5E1F9ABF6B"
+					item: "artifacts:chorus_totem"
+					type: "item"
+				}
+				{
+					id: "0D8BE77A222E6A86"
+					item: "artifacts:cowboy_hat"
+					type: "item"
+				}
+				{
+					id: "556A3BA6BD6268EC"
+					item: "artifacts:onion_ring"
+					type: "item"
+				}
+				{
+					id: "72CE89E6E272F73E"
+					item: "artifacts:pickaxe_heater"
+					type: "item"
+				}
+				{
+					id: "5224FB7451E5E775"
+					item: "artifacts:rooted_boots"
+					type: "item"
+				}
+				{
+					id: "002A1117DB732038"
+					item: "artifacts:snowshoes"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rArtifacts"
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			id: "5E32D90C9E3E8162"
+			rewards: [
+				{
+					id: "0366B7DD93F43945"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 15
+					id: "363EA34E2A6B1EB8"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "62ACB85FA398C359"
+					item: {
+						Count: 1
+						id: "relics:amphibian_boot"
+						tag: {
+							abilities: {
+								gills: {
+									points: 0
+									stats: {
+										chance: 0.09583d
+									}
+								}
+								slipping: {
+									points: 0
+									stats: {
+										duration: 18.51158d
+										speed: 0.00549d
+									}
+								}
+								swimming: {
+									points: 0
+									stats: {
+										duration: 18.48064d
+										speed: 0.00999d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3DBB756D6F5B29C7"
+					item: {
+						Count: 1
+						id: "relics:aqua_walker"
+						tag: {
+							abilities: {
+								walking: {
+									points: 0
+									stats: {
+										time: 38.09915d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5BF3C0943FDE96F1"
+					item: {
+						Count: 1
+						id: "relics:arrow_quiver"
+						tag: {
+							abilities: {
+								agility: {
+									points: 0
+									stats: {
+										modifier: 1.0d
+									}
+								}
+								leap: {
+									points: 0
+									stats: {
+										cooldown: 14.75098d
+										duration: 5.24489d
+										multiplier: 0.31082d
+									}
+								}
+								rain: {
+									points: 0
+									stats: {
+										delay: 0.86863d
+										duration: 10.19846d
+										radius: 4.99594d
+									}
+								}
+								receptacle: {
+									points: 0
+									stats: {
+										slots: 3.14221d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2E68FCA778BDAEAB"
+					item: {
+						Count: 1
+						id: "relics:bastion_ring"
+						tag: {
+							abilities: {
+								trade: {
+									points: 0
+									stats: {
+										rolls: 0.96895d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5F832855C238DEE3"
+					item: {
+						Count: 1
+						id: "relics:blazing_flask"
+						tag: {
+							abilities: {
+								bonfire: {
+									points: 0
+									stats: {
+										height: 3.83705d
+										speed: 0.02542d
+										step: 1.88221d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "24B991D43CD0E9C6"
+					item: {
+						Count: 1
+						id: "relics:chorus_inhibitor"
+						tag: {
+							abilities: {
+								blink: {
+									points: 0
+									stats: {
+										cooldown: 9.15801d
+										distance: 29.94509d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "6C234C82AE2E8929"
+					item: {
+						Count: 1
+						id: "relics:drowned_belt"
+						tag: {
+							abilities: {
+								anchor: {
+									points: 0
+									stats: {
+										sinking: 4.49503d
+										slowness: 0.33895d
+									}
+								}
+								pressure: {
+									points: 0
+									stats: {
+										damage: 1.88395d
+									}
+								}
+								riptide: {
+									points: 0
+									stats: {
+										cooldown: 9.15938d
+									}
+								}
+								slots: {
+									points: 0
+									stats: {
+										talisman: 0.13507d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5077925F8D36AD7A"
+					item: {
+						Count: 1
+						id: "relics:elytra_booster"
+						tag: {
+							abilities: {
+								boost: {
+									points: 0
+									stats: {
+										capacity: 89.45936d
+										speed: 1.21239d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "6115B3FB563C783C"
+					item: {
+						Count: 1
+						id: "relics:enders_hand"
+						tag: {
+							abilities: {
+								swap: {
+									points: 0
+									stats: {
+										distance: 20.11501d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "6EECDD2C3713CFA9"
+					item: {
+						Count: 1
+						id: "relics:holy_locket"
+						tag: {
+							abilities: {
+								steal: {
+									points: 0
+									stats: {
+										amount: 0.11299d
+										radius: 5.60743d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2DC725C651393194"
+					item: {
+						Count: 1
+						id: "relics:horse_flute"
+						tag: {
+							abilities: {
+								heal: {
+									points: 0
+									stats: {
+										amount: 0.024d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "1DE8079722176A96"
+					item: {
+						Count: 1
+						id: "relics:hunter_belt"
+						tag: {
+							abilities: {
+								slots: {
+									points: 0
+									stats: {
+										talisman: 1.27496d
+									}
+								}
+								training: {
+									points: 0
+									stats: {
+										damage: 1.38703d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "7E41767734D442B7"
+					item: {
+						Count: 1
+						id: "relics:ice_breaker"
+						tag: {
+							abilities: {
+								impact: {
+									points: 0
+									stats: {
+										damage: 4.46583d
+										size: 4.25818d
+									}
+								}
+								sustainability: {
+									points: 0
+									stats: {
+										modifier: 0.69665d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3FA9E108D7A5E2FC"
+					item: {
+						Count: 1
+						id: "relics:ice_skates"
+						tag: {
+							abilities: {
+								ram: {
+									points: 0
+									stats: {
+										damage: 0.17047d
+									}
+								}
+								skating: {
+									points: 0
+									stats: {
+										duration: 32.48296d
+										speed: 0.01275d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2202A23F974BE511"
+					item: {
+						Count: 1
+						id: "relics:infinity_ham"
+						tag: {
+							abilities: {
+								autophagy: {
+									points: 0
+									stats: {
+										feed: 1.99505d
+									}
+								}
+								infusion: {
+									points: 0
+									stats: {
+										duration: 2.85533d
+									}
+								}
+							}
+							pieces: 10
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "0668CB9511C08AE9"
+					item: {
+						Count: 1
+						id: "relics:jellyfish_necklace"
+						tag: {
+							abilities: {
+								paralysis: {
+									points: 0
+									stats: {
+										duration: 0.56364d
+									}
+								}
+								shock: {
+									points: 0
+									stats: {
+										damage: 0.60169d
+									}
+									temp: {
+										ticking: 1b
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "35AF0F69F448AFE4"
+					item: {
+						Count: 1
+						id: "relics:leather_belt"
+						tag: {
+							abilities: {
+								slots: {
+									points: 0
+									stats: {
+										talisman: 2.15379d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "0032E00461C74A9F"
+					item: {
+						Count: 1
+						id: "relics:magic_mirror"
+						tag: {
+							abilities: {
+								teleport: {
+									points: 0
+									stats: {
+										cooldown: 90.1244d
+										distance: 978.0891d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "070A07FDDD58E802"
+					item: {
+						Count: 1
+						id: "relics:magma_walker"
+						tag: {
+							abilities: {
+								pace: {
+									points: 0
+									stats: {
+										time: 36.90893d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "1C16678D7E9FA21B"
+					item: {
+						Count: 1
+						id: "relics:midnight_robe"
+						tag: {
+							abilities: {
+								backstab: {
+									points: 0
+									stats: {
+										damage: 1.74681d
+										distance: 17.47969d
+									}
+								}
+								vanish: {
+									points: 0
+									stats: {
+										light: 1.16601d
+										speed: 0.20595d
+									}
+									temp: {
+										ticking: 1b
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5981F139EFAE1744"
+					item: {
+						Count: 1
+						id: "relics:rage_glove"
+						tag: {
+							abilities: {
+								phlebotomy: {
+									points: 0
+									stats: {
+										attack_speed: 0.00828d
+										heal: 2.1E-4d
+										movement_speed: 0.01764d
+									}
+								}
+								rage: {
+									points: 0
+									stats: {
+										dealt_damage: 0.05654d
+										duration: 2.76178d
+										incoming_damage: 0.02618d
+									}
+								}
+								spurt: {
+									points: 0
+									stats: {
+										cooldown: 15.51347d
+										damage: 0.2023d
+										distance: 3.96448d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2940D0B01B718D8B"
+					item: {
+						Count: 1
+						id: "relics:reflection_necklace"
+						tag: {
+							abilities: {
+								explode: {
+									points: 0
+									stats: {
+										capacity: 32.08181d
+										damage: 0.44778d
+										stun: 0.06933d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3368A64BAC3872B1"
+					item: {
+						Count: 1
+						id: "relics:roller_skates"
+						tag: {
+							abilities: {
+								skating: {
+									points: 0
+									stats: {
+										duration: 31.21167d
+										speed: 0.0016d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "7DC35D4EE36CF52C"
+					item: {
+						Count: 1
+						id: "relics:spore_sack"
+						tag: {
+							abilities: {
+								buffer: {
+									points: 0
+									stats: {
+										capacity: 4.44177d
+										chance: 0.04777d
+									}
+								}
+								explosion: {
+									points: 0
+									stats: {
+										size: 0.18704d
+									}
+								}
+								multiplying: {
+									points: 0
+									stats: {
+										amount: 0.08598d
+										chance: 0.09022d
+										size: 0.0728d
+									}
+								}
+								spore: {
+									points: 0
+									stats: {
+										cooldown: 13.16544d
+										damage: 0.39849d
+										duration: 2.7425d
+										size: 0.15787d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "19010BD9CEDCF1FB"
+					item: {
+						Count: 1
+						id: "relics:wool_mitten"
+						tag: {
+							abilities: {
+								mold: {
+									points: 0
+									stats: {
+										damage: 0.14639d
+										freeze: 1.1447d
+										size: 15.86116d
+										stun: 0.03139d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5D66D3CCC1E20514"
+					item: {
+						Count: 1
+						id: "ramcompat:frost_robe"
+						tag: {
+							abilities: {
+								freeze: {
+									points: 0
+									stats: {
+										chance: 0.05648d
+										duration: 0.93335d
+									}
+								}
+								icicle: {
+									points: 0
+									stats: {
+										amount: 6.92158d
+										chance: 0.69555d
+										cooldown: 5.07828d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "1F5D6761B5A7DBA9"
+					item: {
+						Count: 1
+						id: "ramcompat:stink_gland"
+						tag: {
+							abilities: {
+								dash: {
+									points: 0
+									stats: {
+										cooldown: 7.21699d
+										power: 1.01179d
+									}
+								}
+								defense: {
+									points: 0
+									stats: {
+										cooldown: 18.62599d
+										duration: 3.53193d
+										radius: 2.77875d
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "43383770241C40D0"
+					item: {
+						Count: 1
+						id: "ramcompat:tendon_lump"
+						tag: {
+							abilities: {
+								tendon: {
+									points: 0
+									stats: {
+										cooldown: 9.10146d
+										damage: 3.74289d
+										distance: 3.72822d
+									}
+									temp: {
+										ticking: 1b
+									}
+								}
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rRelics"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0000000000000037"]
+			id: "10E3F2B916F16C68"
+			rewards: [
+				{
+					id: "3030C0A0DC090864"
+					type: "xp"
+					xp: 65
+				}
+				{
+					count: 6
+					id: "144884603992D44F"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 10L
+				id: "7D812C3B8838E0C7"
+				item: { Count: 10, id: "bhc:soul_heart_canister" }
+				title: "&eAcquire: &rSoul Heart Canister"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			id: "64A3EF738F43767A"
+			rewards: [
+				{
+					id: "41FCC65A26DF3412"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "3BF80B9992DB3F77"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			subtitle: "Basic Protection"
+			tasks: [{
+				id: "00086C45663EC05E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "eidolon:basic_ring"
+							}
+							{
+								Count: 1b
+								id: "eidolon:basic_amulet"
+							}
+							{
+								Count: 1b
+								id: "eidolon:basic_belt"
+							}
+						]
+					}
+				}
+				title: "&eAcquire: &rBasic Curio"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			id: "18D40DF43E5CF7D5"
+			rewards: [
+				{
+					id: "053EEF31AD8E593B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 6
+					id: "087CC27979F67459"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Flight &c(Currently Not Working)"
+			tasks: [{
+				id: "0A352EFE3964056A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:angelring"
+					}
+				}
+				title: "&eAcquire: &rAngel Ring"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3CDB45845A0E258F"]
+			id: "30CB0D1FBB7C8963"
+			rewards: [
+				{
+					id: "34B9E16223AF0BB5"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 4
+					id: "7EEC56CE49439E23"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2DE63080AB9F929B"
+				item: {
+					Count: 1
+					id: "raccompat:acid_walker"
+					tag: {
+						abilities: {
+							walking: {
+								points: 0
+								stats: {
+									duration: 11.77903d
+								}
+							}
+						}
+					}
+				}
+				match_nbt: false
+				title: "&eAcquire: &rAcid Walker"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6468C02D2D4838B5"]
+			id: "319E03FE0710CDA3"
+			rewards: [
+				{
+					id: "615A68EFA808A2F2"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 4
+					id: "2CCCF1F47FE34BD3"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "799D414ACE2790B4"
+				item: {
+					Count: 1
+					id: "raccompat:desolate_pendant"
+					tag: {
+						abilities: {
+							desolate: {
+								points: 0
+								stats: {
+									chance: 0.09579d
+									damage: 0.16373d
+								}
+							}
+							devastate: {
+								points: 0
+								stats: {
+									cooldown: 30.37676d
+									count: 1.63265d
+								}
+							}
+						}
+					}
+				}
+				match_nbt: false
+				title: "&eAcquire: &rDesolate Pendant"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			id: "792C68E7AEC6487E"
+			rewards: [
+				{
+					id: "0823A5174845ACC3"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 4
+					id: "5846F61850DE9522"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "544E6DB91752CB41"
+				item: {
+					Count: 1
+					id: "raccompat:polar_boot"
+					tag: {
+						abilities: {
+							polarity: {
+								points: 0
+								stats: {
+									speed: 0.9286d
+								}
+								temp: {
+									ticking: 1b
+								}
+							}
+						}
+					}
+				}
+				match_nbt: false
+				title: "&eAcquire: &rPolar Boot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E42D48A1836EB3B"]
+			id: "138921ACDC11CD8C"
+			rewards: [
+				{
+					id: "36780634F8013F83"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 4
+					id: "3BCD2645AD4562C6"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2A9CEE1DE4EF1818"
+				item: {
+					Count: 1
+					id: "raccompat:vine_ring"
+					tag: {
+						abilities: {
+							vine: {
+								points: 0
+								stats: {
+									cooldown: 21.93535d
+									length: 12.99874d
+								}
+							}
+						}
+					}
+				}
+				match_nbt: false
+				title: "&eAcquire: &rRing Of Vines"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "5FE0F641FCAEABA2"
+			rewards: [
+				{
+					id: "7AB219AE3A0A83C4"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 4
+					id: "08B43268917002E2"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Devil's Deal"
+			tasks: [
+				{
+					id: "679354C389E2EC80"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:enigmatic_amulet"
+						tag: {
+							AssignedColor: 0.1f
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "34D7A67627304199"
+					item: "enigmaticlegacy:cursed_ring"
+					type: "item"
+				}
+			]
+			title: "&eAcquire: &rCursed Trinkets"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			id: "76B81AB110381A55"
+			rewards: [
+				{
+					id: "4FDD310235D9710C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "19773A8C7F42976E"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Polar Opposites"
+			tasks: [{
+				id: "296067D74DDC8BD4"
+				item: {
+					Count: 1
+					id: "alexscaves_torpedoes:pocket_magnet"
+					tag: { }
+				}
+				title: "&eAcquire: &rPocket Magnet"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -1.0d
+		}
+		{
+			id: "6EDB090E64B39AF7"
+			rewards: [
+				{
+					id: "2DBEAF542743C366"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "0C5A4781B6B9C96F"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Additional Stats"
+			tasks: [{
+				id: "1AA6455DAF31A3D9"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:mod"
+								tag: {
+									value: "irons_spellbooks"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "curios:ring"
+								}
+							}
+						]
+					}
+				}
+				title: "&eMagical Rings"
+				type: "item"
+			}]
+			title: "&eAcquire: &rMagical Ring"
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6EDB090E64B39AF7"]
+			id: "667B9B389871F9A5"
+			rewards: [
+				{
+					id: "047C3FE3387676C1"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "375E8187AE0B506E"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "All The Extras"
+			tasks: [
+				{
+					id: "58735C8EF6C1B9B8"
+					item: "irons_spellbooks:silver_ring"
+					type: "item"
+				}
+				{
+					id: "23795F3FC7D594B9"
+					item: "irons_spellbooks:cooldown_ring"
+					type: "item"
+				}
+				{
+					id: "04E3B845DD9C1596"
+					item: "irons_spellbooks:cast_time_ring"
+					type: "item"
+				}
+				{
+					id: "555D79FE9EEFD887"
+					item: "irons_spellbooks:emerald_stoneplate_ring"
+					type: "item"
+				}
+				{
+					id: "79459D7530AA8DCA"
+					item: "irons_spellbooks:fireward_ring"
+					type: "item"
+				}
+				{
+					id: "11FD666FEED04971"
+					item: "irons_spellbooks:frostward_ring"
+					type: "item"
+				}
+				{
+					id: "68F9B29294D27680"
+					item: "irons_spellbooks:poisonward_ring"
+					type: "item"
+				}
+				{
+					id: "0FE931A92527CAF1"
+					item: "irons_spellbooks:affinity_ring"
+					type: "item"
+				}
+				{
+					id: "218597BEA0EB2418"
+					item: "irons_spellbooks:mana_ring"
+					type: "item"
+				}
+				{
+					id: "30A5A3B35E6E3F58"
+					item: "irons_spellbooks:invisibility_ring"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rMagical Rings"
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"55A03CAC8D2415A5"
+				"577AA3CDA3EBE44C"
+				"17E1EE88E5CCDA15"
+			]
+			dependency_requirement: "one_completed"
+			id: "3D97FB6DC6DD5A99"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "2D5260C83996F747"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "1F9D00F7B3754E42"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Esoteric Ornaments"
+			tasks: [
+				{
+					id: "7D29FDFD4460EC56"
+					item: "embers:dawnstone_mail"
+					type: "item"
+				}
+				{
+					id: "7F7B8CBE8B39279F"
+					item: "embers:ashen_amulet"
+					type: "item"
+				}
+				{
+					id: "422322A6FD3074EA"
+					item: "embers:nonbeliever_amulet"
+					type: "item"
+				}
+				{
+					id: "3A00089ACF0DE6BB"
+					item: "embers:explosion_charm"
+					type: "item"
+				}
+				{
+					id: "0BA33BE8087EF5C3"
+					item: "embers:ember_ring"
+					type: "item"
+				}
+				{
+					id: "5694DC18AC94934F"
+					item: "embers:ember_belt"
+					type: "item"
+				}
+				{
+					id: "52A2435CA1D4F4DC"
+					item: "embers:ember_amulet"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rAshen Keepsake"
+			x: -15.0d
+			y: -1.0d
+		}
+	]
+	title: "{quest.overview.base_label.title} Curio Trove"
+}

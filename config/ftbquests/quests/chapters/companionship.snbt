@@ -1,0 +1,1006 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "companionship"
+	group: "46789BE19B4F2E15"
+	icon: {
+		Count: 1
+		id: "alexsmobs:tab_icon"
+		tag: {
+			DisplayEntityType: "friendsandfoes:glare"
+			DisplayMobScale: 1.0d
+		}
+	}
+	id: "60873094522C3290"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "11E618B39C0677FC"
+			rewards: [
+				{
+					id: "0A7D4F4D9CC9F056"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "287599C98E1F8340"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "7E8385CC3861F3DE"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "M...w"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "enderzoology:wither_cat"
+						DisplayMobScale: 1.5d
+					}
+				}
+				id: "1CD35C926F3BD87F"
+				title: "&eTame: &rCat"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:capuchin_monkey"
+					DisplayMobScale: 1.5d
+				}
+			}
+			id: "6F97A961BA63F4D7"
+			rewards: [
+				{
+					id: "1298B411BBDE6BE2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "4EA9EBDFDE17B6B2"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "5C376AA6DD1E0EA9"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Playful Primate"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:capuchin_monkey"
+							DisplayMobScale: 1.5d
+						}
+					}
+					id: "517D569FF1FFCC8F"
+					title: "&eTame: &rCapuchin Monkey"
+					type: "custom"
+				}
+				{
+					icon: "alexsmobs:ancient_dart"
+					id: "08AAAD7C68DBDFEE"
+					title: "&eEquip with: &rAncient Dart"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "citadel:icon_item"
+						tag: {
+							IconLocation: "rogue:textures/misc/shoulder_mount.png"
+						}
+					}
+					id: "1637B0358CD14B59"
+					title: "&eShoulder Mount: &rCapuchin Monkey"
+					type: "custom"
+				}
+			]
+			x: 9.0d
+			y: -9.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:komodo_dragon"
+					DisplayMobScale: 0.8d
+				}
+			}
+			id: "7CB80773BA35DE26"
+			rewards: [
+				{
+					id: "199FEC2B6407A6A3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "7833F980B527172C"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "512F1FA0E69DD7E8"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Leathery Skin"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:komodo_dragon"
+							DisplayMobScale: 0.8d
+						}
+					}
+					id: "731FDD53B78414B9"
+					title: "&eTame: &rKomodo Dragon"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "63D1332EF0DDB4F6"
+					title: "&eMount: &rKomodo Dragon"
+					type: "custom"
+				}
+			]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "75362D6074D0F702"
+			rewards: [
+				{
+					id: "637C7C09961246F5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "10707440271CE969"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "68AA43A5EF77FE3C"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Gentle Beasts"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:gorilla"
+						DisplayMobScale: 1.5d
+					}
+				}
+				id: "60E41D3C0C9F67F9"
+				title: "&eTame: &rGorilla"
+				type: "custom"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "3DFCBC1AEB01528A"
+			rewards: [
+				{
+					id: "6AE77CEC96F65105"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "76D18F2C544F6CB9"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "36CC249C416F094E"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Mutated Frog"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:warped_toad"
+						DisplayMobScale: 0.75d
+					}
+				}
+				id: "21105485939A9245"
+				title: "&eTame: &rWarped Toad"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:elephant"
+					DisplayMobScale: 0.6d
+				}
+			}
+			id: "4A73858AD4658BC6"
+			rewards: [
+				{
+					id: "6B4292BEE5B1FAAD"
+					type: "xp_levels"
+					xp_levels: 9
+				}
+				{
+					count: 4
+					id: "6BC548563202A711"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3DC96F89966FC51A"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Gentle Giants"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:elephant"
+							DisplayMobScale: 0.6d
+						}
+					}
+					id: "313936FC178EBF54"
+					title: "&eTame: &rElephant"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:chest"
+					id: "4CF9D2BF1E14BCC4"
+					title: "&eEquip with: &rChest"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:white_carpet"
+					id: "25D6772643013B4C"
+					title: "&eEquip with: &rCarpet"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "42351A136C064897"
+					title: "&eMount: &rElephant"
+					type: "custom"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			id: "083DADA621D02290"
+			rewards: [
+				{
+					id: "63B0C460ECA05466"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "74AA8B83D99DB9ED"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "1CEFCFC679827A66"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Sleek Individual"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:crow"
+						DisplayMobScale: 1.5d
+					}
+				}
+				id: "670B9CF038ECDC1F"
+				title: "&eTame: &rCrow"
+				type: "custom"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:mantis_shrimp"
+					DisplayMobScale: 0.8d
+				}
+			}
+			id: "657BCB9E3452E29F"
+			rewards: [
+				{
+					id: "1C6445048E1D5FFA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 3
+					id: "1BE47C7EBDA4E652"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "7F90206D114AFDB2"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Eye Catching"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:mantis_shrimp"
+							DisplayMobScale: 0.8d
+						}
+					}
+					id: "3CBA0F62405A85CB"
+					title: "&eTame: &rMantis Shrimp"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "ecologics:crab_claw"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "7D4480E4D601F185"
+					title: "&eCommand to: &rBreak Blocks"
+					type: "custom"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:kangaroo"
+					DisplayMobScale: 0.8d
+				}
+			}
+			id: "487871D2B474FAFA"
+			rewards: [
+				{
+					id: "09390405BBE3DBD7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 3
+					id: "05A6F86681729B61"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "065D40F3CCBAD118"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Outback Buddy"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:kangaroo"
+							DisplayMobScale: 0.8d
+						}
+					}
+					id: "0C023564D56C7D60"
+					title: "&eTame: &rKangaroo"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "21FBCCFB52C71B38"
+					title: "&eFully Equip: &rKangaroo"
+					type: "custom"
+				}
+			]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:bald_eagle"
+					DisplayMobScale: 1.5d
+				}
+			}
+			id: "43838E6EC1C66E66"
+			rewards: [
+				{
+					id: "1BFD2E65E7536BC7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 5
+					id: "5C6A02067E8526D0"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C6D9A0D843A3229"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Freedom Intensifies"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:bald_eagle"
+							DisplayMobScale: 1.5d
+						}
+					}
+					id: "3EE87005F6A6DCDC"
+					title: "&eTame: &rBald Eagle"
+					type: "custom"
+				}
+				{
+					id: "17F2A899933F3832"
+					item: "alexsmobs:falconry_glove"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "citadel:icon_item"
+						tag: {
+							IconLocation: "rogue:textures/misc/shoulder_mount.png"
+						}
+					}
+					id: "5580F2944EFD5AC8"
+					title: "&eShoulder Mount: &rBald Eagle"
+					type: "custom"
+				}
+				{
+					id: "016C8E73C2ACC383"
+					item: "alexsmobs:falconry_hood"
+					type: "item"
+				}
+				{
+					icon: "alexsmobs:falconry_hood"
+					id: "306474F0DF86D367"
+					title: "&eFly as Eagle for: &r30s"
+					type: "custom"
+				}
+			]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			id: "3FD75B269AFF88DE"
+			rewards: [
+				{
+					id: "44CED2C4C34B5BD2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 3
+					id: "2A1EF3BADE0F5AC9"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "093068DCC09EF165"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Parasitoid"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:tarantula_hawk"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "2629976388226C5A"
+				title: "&eTame: &rTarantula Hawk"
+				type: "custom"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:mimic_octopus"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "66D739A8C165C3CF"
+			rewards: [
+				{
+					id: "116AA6AEBE9B7F95"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					count: 5
+					id: "441AB1E892630D8E"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2A8CECC3930CDEC8"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Everchanging"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:mimic_octopus"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "3B4324D922B98CD9"
+					title: "&eTame: &rMimic Octopus"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:gunpowder"
+					id: "256016CC7D7F6590"
+					title: "&eChange Mimic State: &rCreeper"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:prismarine_shard"
+					id: "1C0AB80C27E29EAF"
+					title: "&eChange Mimic State: &rGuardian"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:pufferfish"
+					id: "6F5A3171390909F6"
+					title: "&eChange Mimic State: &rPufferfish"
+					type: "custom"
+				}
+				{
+					icon: "alexsmobs:mimicream"
+					id: "4C5704F62767A12D"
+					title: "&eUpgrade: &rMimic Octopus"
+					type: "custom"
+				}
+				{
+					id: "47333EAC140522A8"
+					item: "alexsmobs:mimic_octopus_bucket"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			id: "5210FC1D0F2007CC"
+			rewards: [
+				{
+					id: "208720FAC91F10DD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "0322337448EC9C7D"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "0D436853E98237EC"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Proboscis Fish"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:cosmaw"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "693950A1809A92AF"
+				title: "&eTame: &rCosmaw"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			description: ["Interacting with mobs, using the &eAnimal Dictionary&r, explains to every last detail &ehow to tame&r or &eheal&r the mob. As well as what it's &eabilities&r are."]
+			id: "1490B8D678E2CCC0"
+			rewards: [
+				{
+					id: "354D093CD88A2415"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "42FD2B7A184EC0DD"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "203BCEEB39B00100"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Bestiary"
+			tasks: [{
+				icon: "alexsmobs:animal_dictionary"
+				id: "3BA790B9D9DD30F6"
+				title: "&eAnalyze: &rAlex's Mobs"
+				type: "custom"
+			}]
+			title: "&eSegment: &aAlex's Mobs"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:flutter"
+					DisplayMobScale: 1.5d
+				}
+			}
+			id: "491A61F28A71A21B"
+			rewards: [
+				{
+					id: "54247D233180DB82"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+				{
+					count: 3
+					id: "2D072A1383771B96"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5FDAF069777D61A6"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Picky Fellow"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:flutter"
+							DisplayMobScale: 1.5d
+						}
+					}
+					id: "2A0EE30FE9CED1E1"
+					title: "&eTame: &rFlutter"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:flower_pot"
+					id: "7C5E7C14BF452286"
+					title: "&eEquip with: &rFlower Pot"
+					type: "custom"
+				}
+				{
+					id: "66A30DEB7B31C369"
+					item: "alexsmobs:potted_flutter"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -9.0d
+		}
+		{
+			id: "0A5E61528B03D9A1"
+			rewards: [
+				{
+					id: "1784CAB9E06934FE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "7D5E04BA74AA60D1"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "756C96E88E1DEB3C"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Muddy Fellow"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:mudskipper"
+						DisplayMobScale: 1.5d
+					}
+				}
+				id: "5E1685DB44BCDCC1"
+				title: "&eTame: &rMudskipper"
+				type: "custom"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:sugar_glider"
+					DisplayMobScale: 1.5d
+				}
+			}
+			id: "2F4049B462BF3FB4"
+			rewards: [
+				{
+					id: "7B8DFE600A44DDA9"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+				{
+					count: 2
+					id: "1C3C43C4FB5034AE"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5301AD20A3E80082"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Floating Fluff Balls"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:sugar_glider"
+							DisplayMobScale: 1.5d
+						}
+					}
+					id: "109415D8596CEB19"
+					title: "&eTame: &rSugar Glider"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "citadel:icon_item"
+						tag: {
+							IconLocation: "rogue:textures/misc/shoulder_mount.png"
+						}
+					}
+					id: "7D081DFA8574775D"
+					title: "&eShoulder Mount: &rSugar Glider"
+					type: "custom"
+				}
+			]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			description: ["Tamed with &bglow berries&r."]
+			id: "13A3037DB5434C46"
+			rewards: [
+				{
+					id: "12E7D4CAA6D9F884"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 3
+					id: "600FBB8AC7DF866F"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "2CFADC74BC5BB192"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Worried Bush"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "friendsandfoes:glare"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "732CC3554429D768"
+				title: "&eTame: &rGlare"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: 16.0d
+		}
+		{
+			description: ["They seem to like &bArcane Essence&r."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alshanex_familiars:druid_pet"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "05F76623101D6B4F"
+			rewards: [
+				{
+					id: "2585F49AA6D2F26E"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 2
+					id: "55970A2A5DDAB92A"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1C4E79FE5684F3B9"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Henchmen"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alshanex_familiars:druid_pet"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "7628C671DBEB0B5C"
+					title: "&eTame: &rFamiliar"
+					type: "custom"
+				}
+				{
+					icon: "alshanex_familiars:familiar_tome"
+					id: "2AB92E03C6FBF951"
+					title: "&eCapture: &rFamiliar using Familiar Tome"
+					type: "custom"
+				}
+			]
+			title: "&eSegment: &aAlshanex's Familiars"
+			x: 0.0d
+			y: 14.0d
+		}
+	]
+	title: "{quest.overview.base_label.title} Companionship"
+}

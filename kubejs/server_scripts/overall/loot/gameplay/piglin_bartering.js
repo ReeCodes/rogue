@@ -1,0 +1,35 @@
+ServerEvents.genericLootTables(event => {
+	event.addGeneric('minecraft:gameplay/piglin_bartering', table => {
+		table.addPool(pool => {
+			pool.rolls = 1;
+			pool.addItem('minecraft:book', 5).addFunction(func_ench_random(['minecraft:soul_speed']))
+			pool.addItem('minecraft:iron_boots', 8).addFunction(func_ench_random(['minecraft:soul_speed']))
+			pool.addItem('minecraft:potion', 8).addFunction(func_set_potion('minecraft:fire_resistance'))
+			pool.addItem('minecraft:splash_potion', 8).addFunction(func_set_potion('minecraft:fire_resistance'))
+			pool.addItem('minecraft:ender_pearl', 10, [2, 4])
+			pool.addItem('minecraft:string', 20, [3, 9])
+			pool.addItem('minecraft:quartz', 20, [5, 12])
+			pool.addItem('minecraft:obsidian', 40)
+			pool.addItem('minecraft:crying_obsidian', 40, [1, 3])
+			pool.addItem('minecraft:fire_charge', 40)
+			pool.addItem('minecraft:leather', 40, [2, 4])
+			pool.addItem('minecraft:soul_sand', 40, [2, 8])
+			pool.addItem('minecraft:nether_brick', 40, [2, 8])
+			pool.addItem('minecraft:spectral_arrow', 40, [6, 12])
+			pool.addItem('minecraft:gravel', 40, [8, 16])
+			pool.addItem('minecraft:blackstone', 40, [8, 16])
+			pool.addItem('nethersdelight:propelpearl', 20, [1, 3])
+			
+			//ADDED
+			pool.addItem('enigmaticlegacy:golden_ring', 1)
+			pool.addItem('create:brass_nugget', 15, [6, 12])
+			pool.addItem('more_jellyfish:netherite_chunk', 2, [1, 3])
+			pool.addItem('biomesoplenty:rose_quartz_chunk', 8, [2, 5])
+			pool.addItem('forbidden_arcanus:mundabitur_dust', 6, [1, 2])
+			pool.addItem('create:cinder_flour', 16, [2, 6])
+			pool.addItem('xreliquary:molten_core', 6, [1, 2])
+			pool.addItem('bhc:yellow_heart', 2)
+			pool.addItem('minecraft:netherite_upgrade_smithing_template', 1)
+		})
+	})
+})

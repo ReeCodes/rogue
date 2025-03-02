@@ -1,0 +1,8 @@
+const $TIAB_API = Java.loadClass('com.magorage.tiab.api.ITimeInABottleAPI')
+
+BlockEvents.rightClicked(event => {
+	const { block, player, server } = event
+	const { x, y, z } = block
+	event.server.tell(block)
+	let accelerateBlock = $TIAB_API.accelerateBlock(API, 'minecraft:wooden_axe', player, player.level, block)
+})

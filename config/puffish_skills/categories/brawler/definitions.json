@@ -1,0 +1,2289 @@
+{
+	"support_tank": {
+		"title": "\uE803",
+		"cost": 0,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ironchests:lock"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "jjvrlmqgqirrap1d"
+		}
+	},
+	"support_rogue": {
+		"title": "\uE803",
+		"cost": 0,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ironchests:lock"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "cv38vsvzgvvuzn4f"
+		}
+	},
+	"support_paladin": {
+		"title": "\uE803",
+		"cost": 0,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ironchests:lock"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "guuf2v82cycj93vm"
+		}
+	},
+	"support_sickle": {
+		"title": "\uE803",
+		"cost": 0,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ironchests:lock"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "b8xm866lr9f6doec"
+		}
+	},
+	"support_ranger": {
+		"title": "\uE803",
+		"cost": 0,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ironchests:lock"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "kpoaojcj8xwh2d4s"
+		}
+	},
+	"root_tank": {
+		"title": "§6Class:§r Sentinel",
+		"description": "§a+2.5%§r Resistance\n§a+2§r Hearts\n§a+3%§r Armor\n§a+15%§r Experience Gained\n§a+3§r Magic Resistance\n§a+10%§r Spell Resistance (Irons)\n§a+1§r Received Regeneration\n§c-10%§r Speed",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:oakskin"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 4,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.armor",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:experience_gained",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_resistance",
+					"value": 3,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_resist",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": -0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:healing",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "up05au32wrrjo9c8"
+		}
+	},
+	"root_rogue": {
+		"title": "§6Class:§r Rogue",
+		"description": "§a+15%§r Attack Speed\n§a+9%§r Movement Speed\n§a+6%§r Dodge Chance\n§a+4%§r Armor Pierce\n§a+8%§r Prot Pierce\n§c-3§r Hearts",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "alexscaves:rage"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_speed",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": 0.09,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:dodge_chance",
+					"value": 0.06,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:armor_pierce",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:prot_pierce",
+					"value": 0.08,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": -6,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "2puk28cd0ewqoj5g"
+		}
+	},
+	"root_paladin": {
+		"title": "§6Class:§r Paladin",
+		"description": "§a+20%§r Cold Damage\n§a+20%§r Fire Damage\n§a+20%§r Magical Damage\n§a+0.5%§r Life Steal\n§a+1§r Extra Magic Damage\n§c-30%§r Crit Damage\n\uE810 §7Shift§r",
+		"extra_description": "\n§6Fire Damage§f is bonus magic damage applied to attacks. Sets the target on fire for a short time dependent on §6Fire Damage§f dealt.\n\n§bCold Damage§r is bonus magic damage applied to attacks. Applies slowness for a short time based on the strength of §bCold Damage§r.\n\n§dExtra Magic Damage§r applies extra damage to any type of damage dealt by the player.",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "rogue:textures/pufferfish/skills/icon_paladin.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:cold_damage",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:fire_damage",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:life_steal",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": -0.3,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "jq2rj5aars6np8j0"
+		}
+	},
+	"root_sickle": {
+		"title": "§6Class:§r Sickle",
+		"description": "§a+10%§r Crit Damage\n§a+7.5%§r Crit Chance\n§a+4%§r Overhealing\n§a+0.5%§r Current HP Damage\n§a+7%§r Attack Speed\n§c-20%§r Attack Damage",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "tools_complement:gold_sickle"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_chance",
+					"value": 0.075,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:overheal",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:current_hp_damage",
+					"value": 0.005,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_speed",
+					"value": 0.07,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": -0.2,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "lz8e1wbdoc3e8d3o"
+		}
+	},
+	"root_ranger": {
+		"title": "§6Class:§r Toxophilite",
+		"description": "§a+0.5§r Ranged Damage\n§a+2§r Arrow Damage\n§a+10%§r Arrow Velocity\n§a+25%§r Draw Speed",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "botania:crystal_bow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:ranged_damage",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_damage",
+					"value": 2,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_velocity",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:draw_speed",
+					"value": 0.25,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"ranged_damage": {
+		"title": "§a+2%§r Ranged Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:arrowmantic"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:ranged_damage",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "hxkkbe8a39t4w78z"
+		}
+	},
+	"arrow_velocity": {
+		"title": "§a+1.5%§r Arrow Velocity",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "attributeslib:flying"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_velocity",
+					"value": 0.015,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "wj4rht5z085icbkj"
+		}
+	},
+	"draw_speed": {
+		"title": "§a+1.5%§r Draw Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "immersive_aircraft:heavy_crossbow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:draw_speed",
+					"value": 0.015,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "gqolk7uttiv3b8hq"
+		}
+	},
+	"accuracy": {
+		"title": "§a+1%§r Accuracy",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:target"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "obscure_api:accuracy",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "zfrbthdnvcjb6m6u"
+		}
+	},
+	"arrow_damage": {
+		"title": "§a+3%§r Arrow Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "apotheosis:iron_mining_arrow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "o7cy752aln52yr11"
+		}
+	},
+	"health_add": {
+		"title": "§a+0.5§r Health",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "artifacts:crystal_heart"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "93tsohoofjbhs00q"
+		}
+	},
+	"health_add_percentage": {
+		"title": "§a+2%§r Bonus Health",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "attributeslib:vitality"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "jff0uxkwfiagn2qe"
+		}
+	},
+	"resistance": {
+		"title": "§a+0.75%§r Resistance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "tetra:unwavering"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.0075,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "eafcsopm4hwm638r"
+		}
+	},
+	"magic_resistance": {
+		"title": "§a+5%§r Magic Resistance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "cofh_core:magic_resistance"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_resistance",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "67azcq842dj5arvb"
+		}
+	},
+	"dodge_chance": {
+		"title": "§a+4%§r Dodge",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:shadow_walk"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:dodge_chance",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "rnr237iirge8wrqo"
+		}
+	},
+	"armor": {
+		"title": "§a+1.25%§r Armor",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "copperworks:iron_plate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.armor",
+					"value": 0.015,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "stmi8nrdvmonib9v"
+		}
+	},
+	"armor_toughness": {
+		"title": "§a+1%§r Armor Toughness",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "quark:resilience"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"melee_damage": {
+		"title": "§a+3%§r Melee Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "aether:leather_gloves"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.melee_damage",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "s1g6q883pnnmv5py"
+		}
+	},
+	"attack_damage": {
+		"title": "§a+2.5%§r Attack Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "copperworks:copper_broad_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "f9ko9cb4r17ft84e"
+		}
+	},
+	"current_hp_damage": {
+		"title": "§a+0.25%§r Current HP Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:heartstop"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:current_hp_damage",
+					"value": 0.0025,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "harja4yoxr4h78xh"
+		}
+	},
+	"cold_damage": {
+		"title": "§a+5%§r Cold Damage",
+		"description": "\uE810 §7Shift§r",
+		"extra_description": "\n§bCold Damage§f is bonus magic damage applied to existing §bCold Damage§f.\nApplies slowness for a short time based on the strength of §bCold Damage§r.",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "twilightdelight:frozen_range"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:cold_damage",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "820iu3qpu84z6kb9"
+		}
+	},
+	"fire_damage": {
+		"title": "§a+5%§r Fire Damage",
+		"description": "\uE810 §7Shift§r",
+		"extra_description": "\n§6Fire Damage§f is bonus magic damage applied to existing §6Fire Damage§f.\nSets the target on fire for a short time dependent on §6Fire Damage§f dealt.",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "twilightdelight:fire_range"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:fire_damage",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "zydiqo4h142x16ug"
+		}
+	},
+	"magic_damage": {
+		"title": "§a+2%§r Extra Magic Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "aether:zanite_gloves"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "bgehc7k02mnuytre"
+		}
+	},
+	"attack_speed": {
+		"title": "§a+1.75%§r Attack Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "obscure_api:rush"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_speed",
+					"value": 0.0175,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "6buprloka674ha9r"
+		}
+	},
+	"armor_shred": {
+		"title": "§a+3%§r Armor Shred",
+		"description": "\uE810 §7Shift§r",
+		"extra_description": "\n§3Armor Shred§f ignores target's armor based on §3percentage§f\n\n§3Armor Shred§f is applied before §3Armor Pierce§r",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "convivium:delicacy"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:armor_shred",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "8ns2m0ryvuqifz62"
+		}
+	},
+	"prot_shred": {
+		"title": "§a+4%§r Prot Shred",
+		"description": "\uE810 §7Shift§r",
+		"extra_description": "\n§3Prot Shred§f ignores target's armor based on §3percentage§f\n\n§3Prot Shred§f is applied before §3Prot Pierce§r",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "attributeslib:sundering"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:prot_shred",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "xcp2gpjowoc7524v"
+		}
+	},
+	"armor_pierce": {
+		"title": "§a+5%§r Armor Pierce",
+		"description": "\uE810 §7Shift§r",
+		"extra_description": "\n§3Armor Pierce§f ignores target's protection points based on §3flat numbers§r",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:busted"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:armor_pierce",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "g3avfb1fa2t0kg05"
+		}
+	},
+	"prot_pierce": {
+		"title": "§a+6%§r Prot Pierce",
+		"description": "\uE810 §7Shift§r",
+		"extra_description": "\n§3Prot Pierce§f ignores target's protection points based on §3flat numbers§r",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "cofh_core:sundered"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:prot_pierce",
+					"value": 0.06,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "dxwjcxq6f9mji0tj"
+		}
+	},
+	"received_regen": {
+		"title": "§a+2%§r Received Regeneration",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:regeneration"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:healing",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "26jmzf6ro52tekei"
+		}
+	},
+	"xp_gained": {
+		"title": "§a+5%§r Experience Gained",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ars_nouveau:experience_gem"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:experience_gained",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"overheal": {
+		"title": "§a+3%§r Overhealing",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "bhc:yellow_heart_melted"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:overheal",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "5rozjfd3ydku0taq"
+		}
+	},
+	"crit_dmg": {
+		"title": "§a+3%§r Crit Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "caupona:hyperactive"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "v529sryg9d2hnjmj"
+		}
+	},
+	"crit_chance": {
+		"title": "§a+2%§r Crit Chance",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "goety:fanged_dagger"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_chance",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "09cpjkdllxc1ouex"
+		}
+	},
+	"life_steal": {
+		"title": "§a+0.25%§r Life Steal",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "alexsmobs:exsanguination"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:life_steal",
+					"value": 0.0025,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "2vx0s6advzqyoax3"
+		}
+	},
+	"entity_reach": {
+		"title": "§a+3%§r Attack Range",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ae2:wireless_receiver"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:entity_reach",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "otbcjmq9715ei2lp"
+		}
+	},
+	"movement_speed": {
+		"title": "§a+4%§r Movement Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:speed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "5cfbaihxsbl5wmnp"
+		}
+	},
+	"spell_resist": {
+		"title": "§a+7.5%§r Spell Resistance",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:magic_cloth"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_resist",
+					"value": 0.075,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"big_ranged_damage": {
+		"title": "§a+4%§r Ranged Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "immersiveengineering:casull"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:ranged_damage",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "omhsmy5ckzuege6d"
+		}
+	},
+	"big_arrow_velocity": {
+		"title": "§a+3%§r Arrow Velocity",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "malum:aethers_charm"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_velocity",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "m9bikoa3ld9nyhnj"
+		}
+	},
+	"big_draw_speed": {
+		"title": "§a+3%§r Draw Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "voidscape:voidic_crystal_xbow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:draw_speed",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "3xf9hs9hrft5g0lo"
+		}
+	},
+	"big_accuracy": {
+		"title": "§a+3%§r Accuracy",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:spyglass"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "obscure_api:accuracy",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "6jswk8rg81ootcup"
+		}
+	},
+	"big_arrow_damage": {
+		"title": "§a+7%§r Arrow Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "archers_paradox:quartz_arrow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.07,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "onl5v7dyqvkyc0qh"
+		}
+	},
+	"big_health_add_percentage": {
+		"title": "§a+5%§r Bonus Health",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "ffvosdpl2iklv709"
+		}
+	},
+	"big_overheal": {
+		"title": "§a+6%§r Overhealing",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "bhc:yellow_heart"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:overheal",
+					"value": 0.06,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "aft1dqasi10f4g6k"
+		}
+	},
+	"big_movement_speed": {
+		"title": "§a+8%§r Movement Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "artifacts:aqua_dashers"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.08,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "rg4trm2k0m5n67dy"
+		}
+	},
+	"big_attack_damage": {
+		"title": "§a+9%§r Attack Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "the_bumblezone:essence_raging"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": 0.09,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "t32y7hq9qgz0c1vc"
+		}
+	},
+	"big_cold_damage": {
+		"title": "§a+1§r Cold Damage",
+		"description": "\uE810 §7Shift§r",
+		"extra_description": "\n§bCold Damage§f is bonus magic damage applied to existing §bCold Damage§f.\nApplies slowness for a short time based on the strength of §bCold Damage§r.",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "ars_elemental:frozen"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:cold_damage",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "7ppk3b1z67x4hm3e"
+		}
+	},
+	"big_fire_damage": {
+		"title": "§a+1§r Fire Damage",
+		"description": "\uE810 §7Shift§r",
+		"extra_description": "\n§6Fire Damage§f is bonus magic damage applied to existing §6Fire Damage§f.\nSets the target on fire for a short time dependent on §6Fire Damage§f dealt.",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:flame_hands"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:fire_damage",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "6gqj4zpw7if2yln9"
+		}
+	},
+	"big_magic_damage": {
+		"title": "\uE801§r Bewitched",
+		"description": "§a+12%§r Magical Damage\n§a+0.5§r Extra Magic Damage\n\uE810 §7Shift§r",
+		"extra_description": "\n§dExtra Magic Damage§f applies damage to any type of damage dealt by the player.",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "malum:warp_flux"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.12,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "xaq34ax357zzmtl6"
+		}
+	},
+	"big_attack_speed": {
+		"title": "§a+9%§r Attack Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "forbidden_arcanus:whirlwind_prism"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_speed",
+					"value": 0.09,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "dl2n0wirbg4d7iok"
+		}
+	},
+	"big_crit_dmg": {
+		"title": "§a+10%§r Crit Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "eidolon:cleaving_axe"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "6mpodyw7w3fgaeup"
+		}
+	},
+	"big_crit_chance": {
+		"title": "§a+5%§r Crit Chance",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "twilightdelight:knightmetal_knife"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_chance",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "hyjusrh53dg7lykc"
+		}
+	},
+	"big_xp_gained": {
+		"title": "§a+10%§r Experience Gained",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ars_nouveau:greater_experience_gem"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:experience_gained",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"combo_unrelenting": {
+		"title": "\uE801§r Bore",
+		"description": "§a+15%§r Ranged Damage\n§a6%§r Arrow Velocity",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "thermal:drill_head"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:ranged_damage",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_velocity",
+					"value": 0.06,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "92aww5evpkrlrdxv"
+		}
+	},
+	"combo_puncture": {
+		"title": "\uE801§r Puncture",
+		"description": "§a+15%§r Arrow Damage\n§a+4%§r Draw Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "tetra:punctured"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:draw_speed",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "4t338mu7tfcac0hr"
+		}
+	},
+	"combo_shred": {
+		"title": "\uE801§r Corrosive Touch",
+		"description": "§a+6%§r Armor Shred\n§a+10%§r Prot Shred",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "biomancy:corrosive"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:armor_shred",
+					"value": 0.06,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:prot_shred",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "zgdrhrqx0vui2gzu"
+		}
+	},
+	"combo_pierce": {
+		"title": "\uE801§r Caustic Edge",
+		"description": "§a+3%§r Armor Pierce\n§a+5%§r Prot Pierce",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:rend"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:armor_pierce",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:prot_pierce",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "gf43761bf6p3eu4r"
+		}
+	},
+	"combo_armor": {
+		"title": "\uE801§r Hoplite",
+		"description": "§a+4%§r Armor Toughness\n§a+6%§r Armor Protection",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "voidscape:voidic_crystal_shield"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.armor",
+					"value": 0.06,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "w0as6xk3t24c3k7w"
+		}
+	},
+	"combo_resistance": {
+		"title": "\uE801§r Sponge",
+		"description": "§a+5%§r Resistance\n§a+12%§r Magic Protection\n§a+15%§r Spell Resistance (Irons)",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "enigmaticlegacy:mega_sponge"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_resistance",
+					"value": 0.12,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_resist",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "9df627ptlmlmnc2n"
+		}
+	},
+	"combo_rtb": {
+		"title": "\uE801§r Release The Beast",
+		"description": "§a+6%§r Movement Speed\n§a+10%§r Attack Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "cataclysm:flame_eye"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.06,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "8eqdt511thdvj55l"
+		}
+	},
+	"combo_grim": {
+		"title": "\uE801§r Grim",
+		"description": "§a+3.5%§r Crit Chance\n§a+12%§r Crit Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "hauntedharvest:grim_apple"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_chance",
+					"value": 0.035,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": 0.12,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "433l4nmz246ya2xm"
+		}
+	},
+	"combo_vigor": {
+		"title": "\uE801§r Vigor",
+		"description": "§a+4%§r Overheal\n§a+10%§r Attack Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:hastened"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:overheal",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_speed",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "upybr27i5bhr4n1k"
+		}
+	},
+	"combo_conflux": {
+		"title": "\uE801§r Conflux",
+		"description": "§a+20%§r Cold Damage\n§a+20%§r Fire Damage",
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "rogue:textures/pufferfish/skills/icon_conflux.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:cold_damage",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:fire_damage",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "nyk4lvn783mx5kmu"
+		}
+	},
+	"combo_sustainment": {
+		"title": "\uE801§r Sustainment",
+		"description": "§a+1%§r Life Steal\n§a+15%§r Magic Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "biomancy:despoil"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:life_steal",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "1k2gl05vbdvl146o"
+		}
+	},
+	"special_stv": {
+		"title": "\uE802 Feral Club",
+		"description": "§a+30%§r Attack Damage\n§a+1 Level§r Silence The Voice\n\uE810 §7Shift§r",
+		"extra_description": "§f\n\uE804 §c§oYour strikes become more powerful but less precise§f\nStun yourself with a §b+1% per Level§f chance when hitting a mob.\nWhile the cooldown is active you cannot get stunned again.\n§9Cooldown: 5s§r",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "alexscaves:primitive_club"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": 0.3,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_silence_the_voice"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "t32y7hq9qgz0c1vc"
+		}
+	},
+	"special_mb": {
+		"title": "\uE802 Magic Barrage",
+		"description": "§a+1 Level Magic Barrage§f \n\uE810 §7Shift§r",
+		"extra_description": "§f\n\uE804 §b+4% per Level§f chance when hitting a mob to summon a §bHoming Magic Missile§f near the player which seeks out to nearby enemies.\n§9No Cooldown§r",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "goety:ectoplasm"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_magic_barrage"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "t32y7hq9qgz0c1vc"
+		}
+	},
+	"node_cutsman": {
+		"title": "§6Node:§r Miscreant",
+		"description": "\nUnlocks after finishing at least one \uE812",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "monobank:thief"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "xkdi4zfgf2zprr10"
+		}
+	},
+	"node_beskar": {
+		"title": "§6Node:§r Beskar",
+		"description": "\nUnlocks after finishing at least one \uE812",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "superiorshields:manasteel_shield"
+			}
+		},
+		"rewards": [],
+		"metadata": {
+			"icon": "fwgq81tcfrwno0vd"
+		}
+	},
+	"milestone_ranger": {
+		"title": "\uE812 Master Toxophilite",
+		"size": 1.5,
+		"description": "§a+25%§r Ranged Damage\n§a+75%§r Arrow Damage\n§a+10%§r Arrow Velocity\n§a+9%§r Draw Speed\n\uE802 §6Arrow Volley§r\n\uE810 §7Shift§r\n\nUnlocks all §6Nodes§r",
+		"extra_description": "§f\n\uE804 §fA successful projectile hit spawns a barrage of §bMagic Arrows§f.\n§cDamage scales with Coefficient§r\n§9Cooldown: 20s§r",
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "rogue:textures/pufferfish/skills/icon_arrow_volley.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:ranged_damage",
+					"value": 0.25,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.75,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:arrow_velocity",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:draw_speed",
+					"value": 0.09,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pf_skills_unlock_ranger"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_arrow_volley"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "z3pwqx2lqmzyawjo"
+		}
+	},
+	"milestone_tank": {
+		"title": "\uE812 Sentinel",
+		"size": 1.5,
+		"description": "§a+5%§r Resistance\n§a+2§r Hearts\n§a+5%§r Armor\n§a+15%§r Experience Gained\n§a+15%§r Magic Resistance\n§a+15%§r Spell Resistance (Irons)\n§c-12%§r Speed\n\uE802 §6Robust Stance§r\n\uE810 §7Shift§r\n\nUnlocks all §6Nodes§r",
+		"extra_description": "§f\n\uE804 §fGetting hit by an enemy has a 33% chance to spawn §b1 to 3 Temporary Shields§f blocking any amount of damage once.\nIf successful the ability goes on cooldown.\n§9Cooldown: 10s§r",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "lost_aether_content:shield_of_emile"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 4,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.armor",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:experience_gained",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_resistance",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_resist",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": -0.12,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pf_skills_unlock_tank"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_robust_stance"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "5926bl8kvuv2ga7t"
+		}
+	},
+	"milestone_rogue": {
+		"title": "\uE812 Rogue",
+		"size": 1.5,
+		"description": "§a+15%§r Attack Speed\n§a+12%§r Movement Speed\n§a+10%§r Dodge Chance\n§a+5%§r Armor Pierce\n§a+10%§r Prot Pierce\n§c-2§r Hearts\n\uE802 §6Nimble§r\n\uE810 §7Shift§r\n\nUnlocks all §6Nodes§r",
+		"extra_description": ["",{"text":"§f\n\uE804 §rAfter §bRolling§f using "},{ "keybind": "keybinds.combatroll.roll", "color": "gold"},{"text":" the next attack does §bTriple Damage§r\n§9Cooldown: 10s§r"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "malum:zephyrs_courage"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_speed",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": 0.12,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:dodge_chance",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:armor_pierce",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:prot_pierce",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": -4,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pf_skills_unlock_rogue"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_nimble"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "k2cl23nerduz6otc"
+		}
+	},
+	"milestone_paladin": {
+		"title": "\uE812 Paladin",
+		"size": 1.5,
+		"description": "§a+36%§r Cold Damage\n§a+36%§r Fire Damage\n§a+2%§r Life Steal\n§a+30%§r Magic Damage\n§c-40%§r Crit Damage\n§a+1 Level§r Magic Barrage\n\uE802 §6Spellbound Missile§r\n\uE810 §7Shift§r\n\nUnlocks all §6Nodes§r",
+		"extra_description": "§f\n\uE804 §fSummons a §bHoming Magic Missile§f near the player after killing an enemy which seeks out to nearby enemies.\n§9Cooldown: 3s§r",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "reliquary:magicbane"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:cold_damage",
+					"value": 0.36,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:fire_damage",
+					"value": 0.36,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:life_steal",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.3,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": -0.4,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pf_skills_unlock_paladin"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_spellbound_missile"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_magic_barrage"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "8yihlfzc7wa3ymsx"
+		}
+	},
+	"milestone_sickle": {
+		"title": "\uE812 Sickle",
+		"size": 1.5,
+		"description": "§a+15%§r Crit Damage\n§a+9%§r Crit Chance\n§a+5%§r Overhealing\n§a+1.5%§r Current HP Damage\n§a+10%§r Attack Speed\n§c-20%§r Attack Damage\n\uE802 §6Aerial Assault§r\n\uE810 §7Shift§r\n\nUnlocks all §6Nodes§r",
+		"extra_description": "§f\n\uE804 §fWhile airborne, deal 50% more damage\n§9No Cooldown§r",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:airborne"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": 0.15,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_chance",
+					"value": 0.09,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:overheal",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:current_hp_damage",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_speed",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": -0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pf_skills_unlock_sickle"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_aerial_assault"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "ina34m057fz3puz9"
+		}
+	}
+}

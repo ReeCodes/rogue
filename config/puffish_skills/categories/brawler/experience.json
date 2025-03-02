@@ -1,0 +1,112 @@
+{
+	"experience_per_level": {
+		"type": "expression",
+		"data": {
+			"expression": "min(level ^ 1.432 + 20, 1000)"
+		}
+	},
+	"sources": [{
+			"type": "puffish_skills:kill_entity",
+			"data": {
+				"variables": {
+					"dropped_xp": {
+						"operations": [
+							{
+								"type": "get_dropped_experience"
+							}
+						]
+					},
+					"max_health": {
+						"operations": [
+							{
+								"type": "get_killed_living_entity"
+							},
+							{
+								"type": "get_max_health"
+							}
+						]
+					},
+					"tools": {
+						"operations": [{
+								"type": "get_weapon_item_stack"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"item": "#forge:tools"
+								}
+							}
+						]
+					},
+					"swords": {
+						"operations": [{
+								"type": "get_weapon_item_stack"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"item": "#minecraft:swords"
+								}
+							}
+						]
+					}
+				},
+				"experience": [{
+					"condition": "(tools | swords)",
+					"expression": "1 + min((dropped_xp + max_health) ^ 0.97, 1600) * 0.07"
+				}],
+				"anti_farming": {
+					"limit_per_chunk": 30,
+					"reset_after_seconds": 200
+				}
+			}
+		},
+		{
+			"type": "puffish_skills:kill_entity",
+			"data": {
+				"variables": {
+					"dropped_xp": {
+						"operations": [
+							{
+								"type": "get_dropped_experience"
+							}
+						]
+					},
+					"max_health": {
+						"operations": [
+							{
+								"type": "get_killed_living_entity"
+							},
+							{
+								"type": "get_max_health"
+							}
+						]
+					},
+					"bows": {
+						"operations": [{
+								"type": "get_damage_source"
+							},
+							{
+								"type": "get_type"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"damage_type": "#is_projectile"
+								}
+							}
+						]
+					}
+				},
+				"experience": [{
+					"condition": "bows",
+					"expression": "1 + min((dropped_xp + max_health) ^ 0.67, 1600) * 0.09"
+				}],
+				"anti_farming": {
+					"limit_per_chunk": 30,
+					"reset_after_seconds": 200
+				}
+			}
+		}
+	]
+}

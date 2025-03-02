@@ -1,0 +1,589 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "pitiful_machinery"
+	group: "52C1111E0945C360"
+	icon: "industrialforegoing:pitiful_generator"
+	id: "17447AD7CAD59ABF"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "industrialforegoing:pitiful_generator"
+			id: "5EE0DE521B56812D"
+			rewards: [
+				{
+					id: "22D15702F849ECD0"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "076FD5FA903669EE"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+				{
+					advancement: "rogue:rogue/unlock_low_generator"
+					auto: "enabled"
+					criterion: ""
+					icon: "kubejs:gear_box"
+					id: "3FF7AA8607734609"
+					title: "&aBetter Drops"
+					type: "advancement"
+				}
+			]
+			size: 3.0d
+			subtitle: "Pitiful Amounts"
+			tasks: [{
+				id: "648E0DD4A9F2BB33"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "powah:furnator_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:magmator_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:thermo_generator_starter"
+							}
+							{
+								Count: 1b
+								id: "powah:solar_panel_starter"
+							}
+							{
+								Count: 1b
+								id: "productivebees:honey_generator"
+							}
+						]
+					}
+				}
+				title: "&eLow Tier Generators"
+				type: "item"
+			}]
+			title: "&eIntroduction: &aLow Grade Energy"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "47C8D029BB25A343"
+			rewards: [
+				{
+					id: "76FB95F680A949D0"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "1FC486D4BCCB5639"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Latex Business"
+			tasks: [{
+				id: "36B06A86653AE190"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "thermal:device_tree_extractor"
+							}
+							{
+								Count: 1b
+								id: "industrialforegoing:fluid_extractor"
+							}
+						]
+					}
+				}
+				title: "&eLatex Producers"
+				type: "item"
+			}]
+			title: "&eSegment: &aRubber"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["735F640B11C05517"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "create:millstone"
+					DisplayScale: 1.5d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "4603A9D966F22A4A"
+			rewards: [
+				{
+					id: "73DE999406EA07D5"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "41F93F37683A23FB"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Quern Alike"
+			tasks: [{
+				id: "12DD2DB032DDB057"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["735F640B11C05517"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "create:mechanical_press"
+					DisplayScale: 1.5d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "63ABE076D9328EB6"
+			rewards: [
+				{
+					id: "4B792B9949BF46D3"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "43103EC0F637CBAA"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Plate Printer"
+			tasks: [{
+				id: "09F780CB75637C8D"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["735F640B11C05517"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "create:mechanical_mixer"
+					DisplayScale: 1.5d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "46B662B255C93E9C"
+			rewards: [
+				{
+					id: "2905E2774BFFC68B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "5F47D0BD3D11EF50"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Cake Battering"
+			tasks: [
+				{
+					id: "123E6D3AF9CC46E1"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "6F0CCA2FB0F6EF9D"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["47C8D029BB25A343"]
+			id: "46A4C08718DD7EA2"
+			rewards: [
+				{
+					id: "185ADA03AAF4369D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "2BC2A348222383D7"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Humid Extraction"
+			tasks: [{
+				id: "13A259511195762E"
+				item: "industrialforegoing:water_condensator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["47C8D029BB25A343"]
+			id: "53F2E2C26082F3E5"
+			rewards: [
+				{
+					id: "4047A15DEDC90CFD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6AD18C989452D4C4"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Retains XP"
+			tasks: [{
+				id: "2A3BED61A4C8E38B"
+				item: "industrialforegoing:resourceful_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["735F640B11C05517"]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "createaddition:rolling_mill"
+					DisplayScale: 1.5d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "18D3427677011A2C"
+			rewards: [
+				{
+					id: "72B12FA8C2521F88"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "091C08F37C1E908F"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Wire Extrusion"
+			tasks: [{
+				id: "7EB1336DC87F8450"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"735F640B11C05517"
+				"2413453C334727D1"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "create:hand_crank"
+					DisplayScale: 1.5d
+					DisplayShake: 0
+					DisplaySpin: 0
+					DisplayZoom: 0
+				}
+			}
+			id: "296BE85AE70D4D9A"
+			rewards: [
+				{
+					id: "12F9A33E3729F175"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "2D1C9B94CD7F6620"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Constrainments"
+			tasks: [{
+				id: "339639287FB6E428"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:hand_crank"
+							}
+							{
+								Count: 1b
+								id: "create:water_wheel"
+							}
+							{
+								Count: 1b
+								id: "create:large_water_wheel"
+							}
+							{
+								Count: 1b
+								id: "create:windmill_bearing"
+							}
+						]
+					}
+				}
+				title: "&eStress Generators"
+				type: "item"
+			}]
+			title: "&eChapter I: &aLow Grade Stress"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "create:cogwheel"
+					DisplayScale: 1.5d
+					DisplayShake: 0
+					DisplaySpin: 1
+					DisplayZoom: 0
+				}
+			}
+			id: "2413453C334727D1"
+			rewards: [
+				{
+					id: "7C979E6C20D722E6"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "5CE650B7646E91AC"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Gyrating"
+			tasks: [
+				{
+					id: "735F640B11C05517"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "54D04C1944A2F420"
+					item: "create:belt_connector"
+					type: "item"
+				}
+			]
+			title: "&eIntroduction: &aUnlike Electronics"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "57E00AA9987470BD"
+			rewards: [
+				{
+					id: "0FAE92FF9D7B878D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "7200898DE3E57535"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Charge \\& Upgrade"
+			tasks: [{
+				id: "0A4F952FB6557790"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "23881255397BBDE8"
+			rewards: [
+				{
+					id: "2671013716F53B3B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "7888786ECEF4DFB5"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Quad Blasting"
+			tasks: [{
+				id: "07ADD40BAE24B810"
+				item: "ad_astra:etrionic_blast_furnace"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "23736A09E5EEF31C"
+			rewards: [
+				{
+					id: "06DC16CBA7622C14"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "111633824989382C"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Obsolete Amalgamation"
+			tasks: [{
+				id: "6613DDC05731A10F"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			id: "1FD7B01B65815D5B"
+			rewards: [
+				{
+					id: "0DE8BC41F61D681D"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "57EEB9EE20E42C78"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "Starchy"
+			tasks: [{
+				id: "042934E3BC1C07CC"
+				item: {
+					Count: 1
+					id: "thermal:rf_potato"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "4537E3583F4E30E6"
+			rewards: [
+				{
+					id: "15ED5D6D9E57BA1B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "70F870B6E0300C2B"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+				{
+					advancement: "rogue:rogue/unlock_modular_router"
+					auto: "enabled"
+					criterion: ""
+					icon: "kubejs:gear_box"
+					id: "09FE834F49CE884A"
+					title: "&aBetter Drops"
+					type: "advancement"
+				}
+			]
+			subtitle: "Wireless Transport"
+			tasks: [{
+				id: "6C3EB2F6240D756F"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			id: "7EAFF36709C1FDB7"
+			rewards: [
+				{
+					id: "5A7C57EAB36E50D3"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "34F3543C80F1298B"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			subtitle: "DIY Crushing"
+			tasks: [{
+				id: "24372E9BECB17DEE"
+				item: "integrateddynamics:squeezer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+	]
+	title: "{quest.overview.main_label.title} Pitiful Machinery"
+}

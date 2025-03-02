@@ -1,0 +1,16 @@
+{
+	"dimensions": [
+		"minecraft:overworld"
+	],
+	"stack": {
+		"item": "botania:manasteel_sword",
+		"count": 1,
+		"nbt": {
+			"Damage": 0
+		}
+	},
+	"min_rarity": "apotheosis:uncommon",
+	"max_rarity": "apotheosis:epic",
+	"weight": 55,
+	"quality": 5
+}

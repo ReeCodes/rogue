@@ -1,0 +1,5 @@
+#List of slots to create or modify.
+#See documentation for syntax: https://docs.illusivesoulworks.com/curios/configuration#slot-configuration
+#
+slots = ["id=curio;size=1;operation=REMOVE", "id=dalite_storage_slot;size=1;operation=REMOVE", "id=return_ring_slot;size=1;operation=REMOVE", "id=wither_totem_slot;size=1;operation=REMOVE"]
+

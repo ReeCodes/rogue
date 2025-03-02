@@ -1,0 +1,4625 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "below_the_surface"
+	group: "5CE92435AF830225"
+	icon: {
+		Count: 1
+		id: "alexscaves:cave_codex"
+		tag: {
+			Rainbow: 1b
+		}
+	}
+	id: "29ABA1187F27E14B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependency_requirement: "one_started"
+			id: "131EC76F11203262"
+			rewards: [
+				{
+					id: "1A0ECBAD28B0AE38"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 5
+					id: "3D63DAD898EC1EBF"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2DF7881220623241"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Rare Indeed"
+			tasks: [
+				{
+					count: 4L
+					id: "2B6CCDFFA6A6A3F3"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:ancient_debris"
+								}
+								{
+									Count: 1b
+									id: "minecraft:netherite_scrap"
+								}
+							]
+						}
+					}
+					title: "&eNether Debris"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1F37EC51A9FB198E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "irons_spellbooks:arcane_debris"
+								}
+								{
+									Count: 1b
+									id: "irons_spellbooks:arcane_salvage"
+								}
+							]
+						}
+					}
+					title: "&eOverworld Debris"
+					type: "item"
+				}
+				{
+					id: "1E5C9625E462D031"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "voidscape:voidic_crystal_ore"
+								}
+								{
+									Count: 1b
+									id: "voidscape:voidic_crystal"
+								}
+							]
+						}
+					}
+					title: "&eVoidic Ore"
+					type: "item"
+				}
+				{
+					id: "56BED3D6F75E7818"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "voidscape:titanite_ore"
+								}
+								{
+									Count: 1b
+									id: "voidscape:titanite_chunk"
+								}
+							]
+						}
+					}
+					title: "&eTitanite Ore"
+					type: "item"
+				}
+				{
+					id: "1B5D8313BE34A46E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "voidscape:flesh_ore"
+								}
+								{
+									Count: 1b
+									id: "voidscape:flesh_chunk"
+								}
+							]
+						}
+					}
+					title: "&eFleshy Ore"
+					type: "item"
+				}
+				{
+					id: "709ED3B00D6595ED"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "voidscape:strange_ore"
+								}
+								{
+									Count: 1b
+									id: "voidscape:strange_pearl"
+								}
+							]
+						}
+					}
+					title: "&eStrange Ore"
+					type: "item"
+				}
+				{
+					id: "17CC925B45ADC97E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gobber2:gobber2_ore_end"
+								}
+								{
+									Count: 1b
+									id: "gobber2:gobber2_globette_end"
+								}
+								{
+									Count: 1b
+									id: "gobber2:gobber2_glob_end"
+								}
+							]
+						}
+					}
+					title: "&eEnd Gobber"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aSumptuous Findings"
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			id: "30558EA99F6D9DF8"
+			rewards: [
+				{
+					id: "6B37F5F12D61182F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "25F21BACCE28E8C5"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Deep Sea"
+			tasks: [{
+				biome: "alexscaves:abyssal_chasm"
+				icon: {
+					Count: 1
+					id: "citadel:icon_item"
+					tag: {
+						IconLocation: "alexscaves:textures/misc/advancement/icon/abyssal_chasm.png"
+					}
+				}
+				id: "246530E832F8E9B1"
+				title: "&eDiscover: &rAbyssal Chasm"
+				type: "biome"
+			}]
+			title: "&eSegment: &aAbyssal Chasm"
+			x: -14.0d
+			y: 16.0d
+		}
+		{
+			id: "6468C02D2D4838B5"
+			rewards: [
+				{
+					id: "5639343236CBFF34"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "1CF4987C56249BCB"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Desolate"
+			tasks: [{
+				biome: "alexscaves:forlorn_hollows"
+				icon: {
+					Count: 1
+					id: "citadel:icon_item"
+					tag: {
+						IconLocation: "alexscaves:textures/misc/advancement/icon/forlorn_hollows.png"
+					}
+				}
+				id: "64D2FF527E11AF82"
+				title: "&eDiscover: &rForlorn Hollows"
+				type: "biome"
+			}]
+			title: "&eSegment: &aForlorn Hollows"
+			x: -14.0d
+			y: -2.0d
+		}
+		{
+			id: "0E28503420F2B547"
+			rewards: [
+				{
+					id: "3512FFB151695912"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "62CF5CB7C99A122E"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Attracting"
+			tasks: [{
+				biome: "alexscaves:magnetic_caves"
+				icon: {
+					Count: 1
+					id: "citadel:icon_item"
+					tag: {
+						IconLocation: "alexscaves:textures/misc/advancement/icon/magnetic_caves.png"
+					}
+				}
+				id: "02D2481ED801CBA5"
+				title: "&eDiscover: &rMagnetic Caves"
+				type: "biome"
+			}]
+			title: "&eSegment: &aMagnetic Caves"
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			id: "0E42D48A1836EB3B"
+			rewards: [
+				{
+					id: "5F6E92D6A00E373B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "4CA44CF916C05E70"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Endangered"
+			tasks: [{
+				biome: "alexscaves:primordial_caves"
+				icon: {
+					Count: 1
+					id: "citadel:icon_item"
+					tag: {
+						IconLocation: "alexscaves:textures/misc/advancement/icon/primordial_caves.png"
+					}
+				}
+				id: "4EB6A781C571A1A7"
+				title: "&eDiscover: &rPrimordial Caves"
+				type: "biome"
+			}]
+			title: "&eSegment: &aPrimordial Caves"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			id: "3CDB45845A0E258F"
+			rewards: [
+				{
+					id: "5A8D8A68C3F8913F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "6436E916BBFC7A54"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Irradiated"
+			tasks: [{
+				biome: "alexscaves:toxic_caves"
+				icon: {
+					Count: 1
+					id: "citadel:icon_item"
+					tag: {
+						IconLocation: "alexscaves:textures/misc/advancement/icon/toxic_caves.png"
+					}
+				}
+				id: "04C3ED3550EA72DD"
+				title: "&eDiscover: &rToxic Caves"
+				type: "biome"
+			}]
+			title: "&eSegment: &aToxic Caves"
+			x: 14.0d
+			y: 16.0d
+		}
+		{
+			icon: "alexscaves:cave_book"
+			id: "23CFB3F4493BD55E"
+			rewards: [
+				{
+					id: "679C9DDC605C1770"
+					type: "xp"
+					xp: 35
+				}
+				{
+					count: 4
+					id: "00A9D13C714B85A6"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Unfound Remains"
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/cave_tablet"
+					criterion: ""
+					id: "40B770AAD8CF5299"
+					title: "&eFind: &rCave Tablet"
+					type: "advancement"
+				}
+				{
+					icon: "alexscaves:spelunkery_table"
+					id: "50389219B5C5A366"
+					observe_type: 0
+					timer: 0L
+					title: "&eFind: &rSpelunkery Table"
+					to_observe: "alexscaves:spelunkery_table"
+					type: "observation"
+				}
+				{
+					advancement: "alexscaves:alexscaves/cave_codex"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "alexscaves:cave_codex"
+						tag: {
+							Rainbow: 1b
+						}
+					}
+					id: "26A2C951459820E6"
+					title: "&eDecipher: &rCave Tablet"
+					type: "advancement"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "alexscaves:cave_codex"
+						tag: {
+							Rainbow: 1b
+						}
+					}
+					id: "327E361C62833D5F"
+					title: "&eGain: &rKnowledge about a Cave"
+					type: "custom"
+				}
+			]
+			title: "&eIntroduction: &aDown Below"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["44A00394D98A789D"]
+			dependency_requirement: "one_started"
+			id: "0E214E3D034B04B6"
+			rewards: [
+				{
+					id: "61D5E6239CDB1357"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7098793903BF9567"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Briny Mineral"
+			tasks: [{
+				icon: "salt:salt"
+				id: "6786695993CCE7AC"
+				item: {
+					Count: 1
+					id: "itemfilters:weak_nbt"
+					tag: {
+						value: {
+							Salted: 1b
+						}
+					}
+				}
+				title: "&eSalt: &rAny Food"
+				type: "item"
+			}]
+			title: "Natural Seasoning"
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			icon: "salt:raw_rock_salt_block"
+			id: "3E521350BF67162E"
+			rewards: [
+				{
+					id: "5D2584135D7B69AA"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 5
+					id: "2D7A272383BCE640"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Salt Amass"
+			tasks: [
+				{
+					advancement: "salt:adventure/boil_off"
+					criterion: ""
+					id: "31D78FCBB1B65B66"
+					title: "&eScrape: &rSalt"
+					type: "advancement"
+				}
+				{
+					advancement: "salt:adventure/crystal_garden"
+					criterion: ""
+					id: "2204EF5E5409A302"
+					title: "&eHarvest: &rSalt Crystal"
+					type: "advancement"
+				}
+				{
+					id: "4F8969F446A2413F"
+					item: "galosphere:pink_salt_shard"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "44A00394D98A789D"
+					item: { Count: 64, id: "salt:salt" }
+					type: "item"
+				}
+			]
+			title: "Salt Collection"
+			x: 1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6468C02D2D4838B5"]
+			id: "0C49C6304CF448E6"
+			rewards: [
+				{
+					id: "1C181E6531E7F059"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "16A37AED700762EF"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					id: "71545FADB67C5B3A"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "2A88150954C00CFA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Echolocators"
+			tasks: [{
+				entity: "alexscaves:vesper"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:vesper"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "2F28585F37C9DC87"
+				title: "&cSlay: &rVesper"
+				type: "kill"
+				value: 1L
+			}]
+			x: -16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6468C02D2D4838B5"]
+			id: "0259D14AED737A35"
+			rewards: [
+				{
+					id: "4E6316910E8C1AB7"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "7CBB842B5295099F"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "05775DA5C0F66B80"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "1CC7E4A4AEB63B83"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Burrowed"
+			tasks: [{
+				entity: "alexscaves:corrodent"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:corrodent"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "2C4661557020017C"
+				title: "&cSlay: &rCorrodent"
+				type: "kill"
+				value: 1L
+			}]
+			x: -12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3A4C2A732F2DE9E0"]
+			id: "58982FA3607D3486"
+			rewards: [
+				{
+					id: "6F528B1C876EBAF0"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 4
+					id: "2FFF86B5A729204B"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "74101F35A3D70B09"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "238657DC409A6B5A"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Corrupted Moth"
+			tasks: [{
+				entity: "alexscaves:watcher"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:watcher"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "06AE819318A098E2"
+				title: "&cSlay: &rWatcher"
+				type: "kill"
+				value: 1L
+			}]
+			x: -11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3A4C2A732F2DE9E0"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:forsaken"
+					DisplayMobScale: 0.5d
+				}
+			}
+			id: "12650B26439A1456"
+			rewards: [
+				{
+					id: "4B711E65542C2E3E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "778BC052E15EE5B0"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "78DD3253242B8021"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0DEA047AA2B43982"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Abominable"
+			tasks: [
+				{
+					entity: "alexscaves:forsaken"
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:forsaken"
+							DisplayMobScale: 0.5d
+						}
+					}
+					id: "19968A1E18431F97"
+					title: "&cSlay: &rForsaken"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "5F9F28BB8FA2FC8F"
+					item: "alexscaves:pure_darkness"
+					type: "item"
+				}
+			]
+			title: "&eSegment, Pt. II: &aDarkness Engulfed Abomination"
+			x: -14.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6468C02D2D4838B5"]
+			id: "3A4C2A732F2DE9E0"
+			rewards: [
+				{
+					id: "47F17C1A41D0158F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "65F1088FAB4CC1A3"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "77A05A90C18363DA"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "77FAE16051F375B8"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Become A Witness"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/underzealot_sacrifice"
+				criterion: ""
+				id: "23D210B53CEEED97"
+				title: "&eWitness: &rSummoning Sacrifice"
+				type: "advancement"
+			}]
+			title: "&eSegment, Pt. I: &aWitness Supernatural"
+			x: -14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["58982FA3607D3486"]
+			id: "5B42353632FB072C"
+			rewards: [
+				{
+					id: "0A4151CC231C55ED"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 2
+					id: "62A4CF8A40E8C4F0"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4A0D9966CE3A8C50"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "608716BC86687A85"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Blood Bending"
+			tasks: [
+				{
+					id: "096A609121E5786E"
+					item: {
+						Count: 1
+						id: "alexscaves:totem_of_possession"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "alexscaves:totem_of_possession"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "6F77AA460DC9D6B6"
+					title: "&ePossess: &rMob"
+					type: "custom"
+				}
+			]
+			title: "&eOn The Side: &aPossession"
+			x: -9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"12650B26439A1456"
+				"72AA6A72690C49F1"
+				"58982FA3607D3486"
+			]
+			id: "549E8A5C6B047F44"
+			rewards: [
+				{
+					id: "2D2434567D6F71DB"
+					type: "xp"
+					xp: 175
+				}
+				{
+					count: 4
+					id: "50A99D0C884EC289"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B2D10E6A864A387"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "56A8DAC2A69BB3FA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Cultic"
+			tasks: [
+				{
+					id: "5A22712C5613296E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:hood_of_darkness"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "28A0F588D64D4C83"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:cloak_of_darkness"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5BEAD2D02DCEE001"
+					item: {
+						Count: 1
+						id: "alexscaves:dreadbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "7FC91961A4A65022"
+					item: {
+						Count: 1
+						id: "alexscaves:desolate_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rCovert Armory"
+			x: -14.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6468C02D2D4838B5"]
+			id: "72AA6A72690C49F1"
+			rewards: [
+				{
+					id: "21A73A402F93E442"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 4
+					id: "2CD7FF296BD4160F"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "07F65C8698072CF3"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "3A6083EDB07B95E4"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Strong Beliefs"
+			tasks: [{
+				entity: "alexscaves:underzealot"
+				icon: {
+					Count: 1
+					id: "citadel:icon_item"
+					tag: {
+						IconLocation: "alexscaves:textures/misc/advancement/icon/discover_underzealot.png"
+					}
+				}
+				id: "6FF3F61A5E086C2C"
+				title: "&cSlay: &rUnderzealot"
+				type: "kill"
+				value: 1L
+			}]
+			x: -17.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0E42D48A1836EB3B"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:subterranodon"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "6C3744BEF896C068"
+			rewards: [
+				{
+					id: "6031D80E18786A68"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "4F56DAE975D10AC4"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4CBA7ECBF9BCE6C3"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "68CB76E9AF286090"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Hang On"
+			tasks: [
+				{
+					icon: "alexscaves:trilocaris_tail"
+					id: "6462A506F78FA43A"
+					title: "&eTame: &rSubterranodon"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "117D40394B0BAF34"
+					title: "&eRide: &rSubterranodon"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "cloudstorage:balloon"
+						tag: {
+							3DRender: 1b
+						}
+					}
+					id: "6527F4A47F447521"
+					title: "&eReach: &rAbove Y200"
+					type: "custom"
+				}
+			]
+			title: "&eMeet: &aSubterranodon"
+			x: 4.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["0E42D48A1836EB3B"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:vallumraptor"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "263EFC8C4D853891"
+			rewards: [
+				{
+					id: "380F00B2FF7FE38B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 3
+					id: "3EF2128665C867DB"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5D47C2180CB387FC"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "1F0AED4922CBC49F"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Thief"
+			tasks: [
+				{
+					id: "6AF7B0F46ED4F216"
+					item: "alexscaves:dinosaur_nugget"
+					type: "item"
+				}
+				{
+					icon: "alexscaves:dinosaur_nugget"
+					id: "72CBAD503889F198"
+					title: "&eRelax: &rVallumraptor"
+					type: "custom"
+				}
+				{
+					icon: "alexscaves:serene_salad"
+					id: "499DDE39730D0FBB"
+					title: "&eTame: &rVallumraptor"
+					type: "custom"
+				}
+			]
+			title: "&eMeet: &aVallumraptor"
+			x: 4.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["58982FA3607D3486"]
+			icon: "alexscaves:beholder"
+			id: "46571495B0495DD9"
+			rewards: [
+				{
+					id: "0BDB536BBB3362E3"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 2
+					id: "35FC41188B4F739F"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					id: "417BC89DC4BE9972"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "78A91B006254A210"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Stalking Eye"
+			tasks: [
+				{
+					id: "45AB59B62121BC61"
+					item: "alexscaves:beholder"
+					type: "item"
+				}
+				{
+					block: "alexscaves:beholder"
+					block_type: 0
+					checkItem: true
+					id: "5E804F5A82D4FD3F"
+					isItemInteraction: true
+					item: "alexscaves:occult_gem"
+					title: "&eBind: &rOccult Gem"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "&eOn The Side: &aWatching From Afar"
+			x: -9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0E42D48A1836EB3B"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:tremorsaurus"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "3EB29921E8E8CB65"
+			rewards: [
+				{
+					id: "4BF8D0455B575BAA"
+					type: "xp"
+					xp: 125
+				}
+				{
+					count: 4
+					id: "682ABF24CB76FCC3"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "788F06F58455E609"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4509B46F88107A21"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Bigger One"
+			tasks: [
+				{
+					id: "3846446A862D2F7E"
+					item: {
+						Count: 1
+						id: "alexscaves:primitive_club"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "alexscaves:primitive_club"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "71AACB5B150D754A"
+					title: "&eStun: &rTremorsaurus"
+					type: "custom"
+				}
+				{
+					icon: "alexscaves:serene_salad"
+					id: "41394AFA2757311F"
+					title: "&eTame: &rTremorsaurus"
+					type: "custom"
+				}
+			]
+			title: "&eMeet: &aTremorsaurus"
+			x: -4.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["0E42D48A1836EB3B"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:relicheirus"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "1F59B18BED5643DB"
+			rewards: [
+				{
+					id: "137715932BA63DEA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "471BC7BA3825D33F"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0A0D1196A0F10385"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "3AF963D128CAFE92"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Vegeterian"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/feed_relicheirus"
+				criterion: ""
+				id: "14BB777DBD6E6245"
+				title: "&eEnergize: &rRelicheirus"
+				type: "advancement"
+			}]
+			title: "&eMeet: &aRelicheirus"
+			x: 4.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["31D764961C683FAA"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:atlatitan"
+					DisplayMobScale: 0.4d
+				}
+			}
+			id: "5EBE2237E672ABEB"
+			rewards: [
+				{
+					id: "3E6FE4F784C9A6D7"
+					type: "xp"
+					xp: 175
+				}
+				{
+					count: 4
+					id: "256E76AECCBFB8E4"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "65640518AE3E36CB"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6451617E33A76623"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Colossus"
+			tasks: [
+				{
+					icon: "alexscaves:serene_salad"
+					id: "23A40F31301BBF70"
+					title: "&ePacify: &rAtlatitan"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "35C378EF9413F586"
+					title: "&eMount: &rAtlatitan"
+					type: "custom"
+				}
+				{
+					advancement: "alexscaves:alexscaves/atlatitan_stomp"
+					criterion: ""
+					id: "4389A8FD16A8C317"
+					title: "&eUse: &rAtlatitan's Ability"
+					type: "advancement"
+				}
+			]
+			title: "&eOn The Side: &aAtlatitan"
+			x: -4.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["0E42D48A1836EB3B"]
+			icon: "alexscaves:amber_curiosity"
+			id: "2CE3589FAF10DD88"
+			rewards: [
+				{
+					id: "4BB69819815E0ADC"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "05176B5962B36E86"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6267C05C067B4CFC"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "178141B22F00BC93"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Way Of Life"
+			tasks: [
+				{
+					block: "alexscaves:amber"
+					block_type: 0
+					checkItem: false
+					id: "0BB9F4CAF2B29B1E"
+					title: "&eBreak: &rAmber"
+					type: "questsadditions:break"
+					value: 1L
+				}
+				{
+					id: "71303767650F808E"
+					item: "alexscaves:amber_curiosity"
+					type: "item"
+				}
+				{
+					id: "27A8231D4DB436B0"
+					item: "alexscaves:ominous_catalyst"
+					type: "item"
+				}
+				{
+					advancement: "alexscaves:alexscaves/summon_luxtructosaurus"
+					criterion: ""
+					id: "2BDD3CED63B6BF15"
+					title: "&eSummon: &rLuxtructosaurus"
+					type: "advancement"
+				}
+			]
+			title: "&eSegment, Pt. I: &aEmbryonic Secrets"
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2CE3589FAF10DD88"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:luxtructosaurus"
+					DisplayMobScale: 0.4d
+				}
+			}
+			id: "31D764961C683FAA"
+			rewards: [
+				{
+					id: "2D542EFA3BB79044"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "291D4DD6312CACB3"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7F35FA9D7A558651"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2AF22DCE0A9C20B6"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Birthed By Vulcano"
+			tasks: [
+				{
+					entity: "alexscaves:luxtructosaurus"
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:luxtructosaurus"
+							DisplayMobScale: 0.1d
+						}
+					}
+					id: "624DF2125FB04C37"
+					title: "&cSlay: &rLuxtructosaurus"
+					type: "kill"
+					value: 1L
+				}
+				{
+					count: 5L
+					id: "18326224466381F8"
+					item: "alexscaves:tectonic_shard"
+					type: "item"
+				}
+			]
+			title: "&eSegment, Pt. II: &aExtinction Event"
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["31D764961C683FAA"]
+			id: "6A35422DFEDDE98D"
+			rewards: [
+				{
+					id: "68D0BD88575CA4F6"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "0467F74498605EC3"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "0E1958CA6BFAEE5A"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "10EBD72DCABF9641"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Wiped Out"
+			tasks: [
+				{
+					id: "4669A3D1D59FC752"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves_torpedoes:tectonic_helmet"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2C6BD5FDF1D50EEC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves_torpedoes:tectonic_chestplate"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "11202F32E8672A12"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves_torpedoes:tectonic_leggings"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "528D56E056CA73CC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves_torpedoes:tectonic_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5FF5FD89C47B4E2F"
+					item: {
+						Count: 1
+						id: "alexscaves:extinction_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rExtinct Armory"
+			x: -4.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["0E42D48A1836EB3B"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:grottoceratops"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "6E9E789659A89CD4"
+			rewards: [
+				{
+					id: "5B6103E499D15350"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 4
+					id: "79E07DD29329AE33"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "59D7735E87C6E581"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "3F8EE6182F462FDD"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Shield Face"
+			tasks: [
+				{
+					entity: "alexscaves:grottoceratops"
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:grottoceratops"
+							DisplayMobScale: 0.6d
+						}
+					}
+					id: "7693735A9DD5AE97"
+					title: "&cSlay: &rGrottoceratops"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "3EB3D4CFA7605C7D"
+					item: "alexscaves:tough_hide"
+					type: "item"
+				}
+			]
+			title: "&eMeet: &aGrottoceratops"
+			x: -4.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6E9E789659A89CD4"]
+			id: "6D05033A4350ED6C"
+			rewards: [
+				{
+					id: "3DE72C13796C745D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "30347B264E62A939"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A0925D8EFD803A0"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4848F71A35249CF7"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Back To The Bones"
+			tasks: [
+				{
+					id: "2B0EA60AF351DF34"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:primordial_helmet"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3F50F1760FD1420F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:primordial_tunic"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "0FEB8A9238B05635"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:primordial_pants"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2AB021CE2E4EC2A7"
+					item: {
+						Count: 1
+						id: "alexscaves:primitive_club"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rPrimordial Caveman"
+			x: -4.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["3CDB45845A0E258F"]
+			id: "202BD5229D40A58B"
+			rewards: [
+				{
+					id: "6D3B8A7348E9DB33"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "69CDE5AD4BAF26F8"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5E604F5AEDAB5F47"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "70D373902AB8FF87"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Eighteen Half-Lives"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:raycat"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "5AFE3B12D1837D37"
+				title: "&eTame: &rRaycat"
+				type: "custom"
+			}]
+			x: 16.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["3CDB45845A0E258F"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:nucleeper"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "55099D2F524223B6"
+			rewards: [
+				{
+					id: "3B021BAF94144B04"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 3
+					id: "2FD409B740DB8C45"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "19985BE8D84A3711"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "487C32FC2639685B"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Approaching Criticality"
+			tasks: [{
+				entity: "alexscaves:nucleeper"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:nucleeper"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "3D6B92F825E9E3DF"
+				title: "&cSlay: &rNucleeper"
+				type: "kill"
+				value: 1L
+			}]
+			x: 12.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["711DE64D1E60BBD5"]
+			dependency_requirement: "one_completed"
+			id: "28ACFFDDB261D6AB"
+			rewards: [
+				{
+					id: "6948040E256E0F80"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 3
+					id: "5E61B540934A18D5"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "5A56765B90E751E5"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "122B50CDC72DBAE0"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Atomic"
+			tasks: [
+				{
+					id: "1A2F2FEEDD19A0AB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:hazmat_mask"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58E2EEED187768DE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:hazmat_chestplate"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6ED1723D38E8671E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:hazmat_leggings"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CFA95265B4C4482"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:hazmat_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C60CDEE88579599"
+					item: {
+						Count: 1
+						id: "alexscaves:raygun"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "31DBBB2F647A9AE8"
+					item: "alexscaves:remote_detonator"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rNuclear Scientist"
+			x: 11.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["3CDB45845A0E258F"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:gammaroach"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "5275DD4271CF755E"
+			rewards: [
+				{
+					id: "4501CBCC4AD6606E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 3
+					id: "2C94189CB8FDF3C3"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "45093E149261CB84"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "7F1196A53CE2815F"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Withstanding Critter"
+			tasks: [{
+				entity: "alexscaves:gammaroach"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:gammaroach"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "28B66A492979A8D8"
+				title: "&cSlay: &rGamma Roach"
+				type: "kill"
+				value: 1L
+			}]
+			x: 14.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"55099D2F524223B6"
+				"07472EAE1B8BC817"
+				"5275DD4271CF755E"
+			]
+			dependency_requirement: "one_completed"
+			icon: "alexscaves:uranium"
+			id: "711DE64D1E60BBD5"
+			rewards: [
+				{
+					id: "7AE12EFCDD0EAAE4"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 5
+					id: "3391F14ABFFB4EEE"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0541B60CC65DB99D"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "422A20B70AA4C304"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Recipe For Disaster"
+			tasks: [
+				{
+					id: "3748673897464635"
+					item: "alexscaves:uranium"
+					type: "item"
+				}
+				{
+					id: "441A40C76D85E7AD"
+					item: "alexscaves:radon_bottle"
+					type: "item"
+				}
+				{
+					id: "7DF3AA4B7F24D4C1"
+					item: "alexscaves:fissile_core"
+					type: "item"
+				}
+				{
+					id: "072C83E17088E3D3"
+					item: "alexscaves:toxic_paste"
+					type: "item"
+				}
+				{
+					id: "575B0C7A93CC11B2"
+					item: "alexscaves:charred_remnant"
+					type: "item"
+				}
+			]
+			title: "&eSegment, Pt. I: &aRadioactive Components"
+			x: 14.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["3CDB45845A0E258F"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:brainiac"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "07472EAE1B8BC817"
+			rewards: [
+				{
+					id: "41DBD0282C95CE19"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 3
+					id: "40AD64010B6636BC"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3ED9933A996941B2"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "1568563C809ED6E6"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Lickers Alike"
+			tasks: [{
+				entity: "alexscaves:brainiac"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:brainiac"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "6D76682CDD307D61"
+				title: "&cSlay: &rBrainiac"
+				type: "kill"
+				value: 1L
+			}]
+			x: 16.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["07472EAE1B8BC817"]
+			id: "00B98941418CE7DC"
+			rewards: [
+				{
+					id: "46186E209C68681E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 2
+					id: "57F759C1CE394891"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "68EE548C860E3E6A"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "66245005AB6213C4"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Unstable Yet Fast"
+			tasks: [
+				{
+					count: 8L
+					id: "04FEC78394B929E2"
+					item: { Count: 8, id: "alexscaves:nuclear_furnace_component" }
+					type: "item"
+				}
+				{
+					icon: "alexscaves:nuclear_furnace_component"
+					id: "3B6243FF600225A6"
+					observe_type: 0
+					timer: 0L
+					title: "&eBuild: &rNuclear Furnace"
+					to_observe: "alexscaves:nuclear_furnace"
+					type: "observation"
+				}
+			]
+			title: "&eOn The Side: &aNuclear Furnace"
+			x: 17.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			id: "351180D331979CF1"
+			rewards: [
+				{
+					id: "52B298CD8B7E1283"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "66C4EACD84BAFD39"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					id: "0CB4ACE9F45C5F3C"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "3495AC6BF3DBBF23"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Pesky Snitch"
+			tasks: [{
+				entity: "alexscaves:notor"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:notor"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "75E6D8B6509F53D3"
+				title: "&cSlay: &rNotor"
+				type: "kill"
+				value: 1L
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			id: "7541A25EAE480BF5"
+			rewards: [
+				{
+					id: "7A6A7A1E38C27A77"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "622FF20D8AF1BED3"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5337878C0EBA2B9F"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "7BC64E62787130D0"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Telekinetic"
+			tasks: [{
+				entity: "alexscaves:teletor"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:teletor"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "583E8CFB90DF78FD"
+				title: "&cSlay: &rTeletor"
+				type: "kill"
+				value: 1L
+			}]
+			x: 14.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			id: "1867E9991040673A"
+			rewards: [
+				{
+					id: "1D0029F03E1297CC"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "36D123618385E49F"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5494455BAEDBAA96"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "5716D3C8571737B7"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Block Bender"
+			tasks: [{
+				entity: "alexscaves:magnetron"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:magnetron"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "0BEA654F23E1215E"
+				title: "&cSlay: &rMagnetron"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			id: "318F280D1A59EE85"
+			rewards: [
+				{
+					id: "0A103B318FB5A6BB"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 3
+					id: "39789FCE9AFD7260"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5C1DD0F96150B042"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "7007EDB0058E6A6F"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Dynamic Duo"
+			tasks: [{
+				entity: "alexscaves:boundroid"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:boundroid"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "0E9DFB7046104494"
+				title: "&cSlay: &rBoundroid"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			id: "21C08D06E7A5643E"
+			rewards: [
+				{
+					id: "24E2A29FE3E55DFC"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "011F33848CAA8ACE"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5EC1CADB36015F76"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "48BBBBBE3770CFF2"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Ferrous Composite"
+			tasks: [{
+				entity: "alexscaves:ferrouslime"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:ferrouslime"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "2CA39C0B3CDFBBF8"
+				title: "&cSlay: &rFerrouslime"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"351180D331979CF1"
+				"7541A25EAE480BF5"
+			]
+			icon: "alexscaves:hologram_projector"
+			id: "14DF2DAFC1F05E4A"
+			rewards: [
+				{
+					id: "04249838DA5AD008"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 3
+					id: "181CE22D7D0D7914"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "52D16FBED45F77DE"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "6BD4600E063475E8"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Copy Mobs"
+			tasks: [
+				{
+					id: "1A48D04482CB0398"
+					item: "alexscaves:holocoder"
+					type: "item"
+				}
+				{
+					id: "7E79117279689EA8"
+					item: "alexscaves:hologram_projector"
+					type: "item"
+				}
+				{
+					block: "alexscaves:hologram_projector"
+					block_type: 0
+					checkItem: true
+					id: "5115E2E5D5FB3968"
+					isItemInteraction: false
+					item: "alexscaves:holocoder"
+					title: "&eProject: &rHologram"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "&eOn The Side: &aHolographic"
+			x: 12.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1867E9991040673A"
+				"318F280D1A59EE85"
+				"351180D331979CF1"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:quarry_smasher"
+					DisplayMobScale: 0.75d
+				}
+			}
+			id: "5FA9B7C53A00EBAE"
+			rewards: [
+				{
+					id: "0D409BE2AB5DAE1D"
+					type: "xp"
+					xp: 125
+				}
+				{
+					count: 10
+					id: "7517938F00218E6E"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4CF2A44D9EEAF0D8"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "41E40A179F648206"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Ferrous Spewer"
+			tasks: [
+				{
+					id: "37A9239185FE9B9B"
+					item: "alexscaves:quarry"
+					type: "item"
+				}
+				{
+					id: "703977C54A9399FB"
+					item: "alexscaves:quarry_smasher"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "59152DAF7C98D7F4"
+					item: "alexscaves:magnetic_light"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aMagnetic Quarry"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			description: ["By placing a &eCarved Pumpkin&r on top of either a &eScarlet &ror &eAzure Energized Galena&r, a &ePolarizz&r will emerge."]
+			id: "4A4421262D59875C"
+			rewards: [
+				{
+					id: "6943010E4E4EB1F1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "359BCE3E9E9352D5"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E15B7ECEFA2B34E"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "5FBB877A4486A4CD"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Bouncy Buddy"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves_torpedoes:polarizz"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "7B5C666306976657"
+				observe_type: 5
+				timer: 0L
+				title: "&eSummon: &rPolarizz"
+				to_observe: "alexscaves_torpedoes:polarizz"
+				type: "observation"
+			}]
+			title: "&eOn The Side: &aPolarizz"
+			x: 17.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7541A25EAE480BF5"
+				"21C08D06E7A5643E"
+			]
+			dependency_requirement: "one_completed"
+			id: "06B0B4C24491B497"
+			rewards: [
+				{
+					id: "7C589395D15E5BEF"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 6
+					id: "5909E394FF2D486B"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1093824C9FF62659"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2461416FEF764013"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Futuristic Set"
+			tasks: [
+				{
+					id: "0C9B624D4321E2B7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves_torpedoes:magnetic_helmet"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "51C3472000AF6A6C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves_torpedoes:ferrousslime_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "377EA56E714473F1"
+					item: {
+						Count: 1
+						id: "alexscaves_torpedoes:pulsargun"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0752F36270F10847"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alexscaves:scarlet_magnet"
+								}
+								{
+									Count: 1b
+									id: "alexscaves:azure_magnet"
+								}
+							]
+						}
+					}
+					title: "&eMagnets"
+					type: "item"
+				}
+				{
+					id: "20AE71D5AC8090FE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:resistor_shield"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E6E629B1522524A"
+					item: {
+						Count: 1
+						id: "alexscaves:galena_gauntlet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rAttractive Complexion"
+			x: 16.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7541A25EAE480BF5"]
+			id: "7CC6F695CF6CE193"
+			rewards: [
+				{
+					id: "356CFC0E1E7382E3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 3
+					id: "35D7A435064CC972"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7372E34087203644"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "15FFF81A99C0CB7D"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Random Zaps"
+			tasks: [
+				{
+					id: "626CA605C9AFDFFA"
+					item: "alexscaves:tesla_bulb"
+					type: "item"
+				}
+				{
+					block: "alexscaves:tesla_bulb"
+					block_type: 0
+					id: "1BC0E16F97592F24"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rTesla Bulb"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "&eOn The Side: &aUnreliable Home Security"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0E28503420F2B547"]
+			id: "3BD4D8E8C01683AE"
+			rewards: [
+				{
+					id: "195BCEAD0D8F03A2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "7396380C33880F73"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "6F972965B9F15086"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0DAFA129A7F5FAC6"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Magnetic Tools"
+			tasks: [
+				{
+					id: "6F636B9DE2264444"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:azure_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:scarlet_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "&eNeodymium Sword"
+					type: "item"
+				}
+				{
+					id: "207D8CE0DDDEFCFE"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:azure_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:scarlet_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "&eNeodymium Pickaxe"
+					type: "item"
+				}
+				{
+					id: "746F448EFE6C36FF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:azure_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:scarlet_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "&eNeodymium Axe"
+					type: "item"
+				}
+				{
+					id: "16A954D5078D0725"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:azure_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:scarlet_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "&eNeodymium Shovel"
+					type: "item"
+				}
+				{
+					id: "6AE731F394C8E94A"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:azure_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "alexscaves_torpedoes:scarlet_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "&eNeodymium Hoe"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rTools Of Opposition"
+			x: 17.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30558EA99F6D9DF8"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:sea_pig"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "3C81B5A4C32CB0C8"
+			rewards: [
+				{
+					id: "17E7770D7D361CED"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "2C5E53A6E410BA1F"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "144D2F1B6D50F367"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "2C6FB6709BB31AD3"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Squishy Lad"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:sea_pig"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "40FF39CFA43FE8B4"
+					title: "&eFeed: &rSea Pig"
+					type: "custom"
+				}
+				{
+					id: "7D8E44A28FF2F243"
+					item: "alexscaves:marine_snow"
+					title: "&eAcquire: &rMarine Snow"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aSea Piggy"
+			x: -19.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"30558EA99F6D9DF8"
+				"3C0072AA153B05D4"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:floater"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "1A5CB83A6CEDF262"
+			rewards: [
+				{
+					id: "249D7F1DC7D1DE9E"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "05B4DED9F3137BA0"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "7238B2283230297F"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "181CD8D537B7E922"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Emergency Rescue"
+			tasks: [
+				{
+					id: "4AEBDE4D42A6AC7F"
+					item: "alexscaves:floater"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:floater"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "3F80D0223B517E84"
+					title: "&eUse: &rFloater"
+					type: "custom"
+				}
+			]
+			title: "&eOn The Side: &aImmidiate Extraction"
+			x: -9.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["30558EA99F6D9DF8"]
+			icon: "alexscaves:gossamer_worm_bucket"
+			id: "32E711E8BD3DE64E"
+			rewards: [
+				{
+					id: "47F99F3C495DA207"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "6B74C15893E174BD"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "39A1238C8805B492"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "11A5429D7B3F89B9"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Sponges, Fishes, Anemones"
+			tasks: [
+				{
+					count: 4L
+					id: "2E6658A2395C0CFB"
+					item: "alexscaves:dusk_anemone"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "140D91042C595B6B"
+					item: "alexscaves:twilight_anemone"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2ADB46E7D2FAE3A6"
+					item: "alexscaves:midnight_anemone"
+					type: "item"
+				}
+				{
+					advancement: "alexscaves:alexscaves/abyssal_bucket"
+					criterion: ""
+					id: "2D7DEA5F938D54C7"
+					title: "&eCatch: &rEvery Deep Sea Fish"
+					type: "advancement"
+				}
+				{
+					count: 4L
+					id: "0AB74A51100920FE"
+					item: { Count: 4, id: "alexscaves:tube_worm" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3C0072AA153B05D4"
+					item: { Count: 3, id: "alexscaves:ping_pong_sponge" }
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aDeep Sea Collector"
+			x: -10.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["30558EA99F6D9DF8"]
+			id: "6EDA2FAE011A63A9"
+			rewards: [
+				{
+					id: "39F0F052B036F2A3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 4
+					id: "27D1E66F38E68E81"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "263B90348ABA467D"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "See Through Mist"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "citadel:effect_item"
+					tag: {
+						DisplayEffect: "alexscaves:deepsight"
+					}
+				}
+				id: "19F73C4CDCD8235E"
+				title: "&eGain Effect: &rDeepsight"
+				type: "custom"
+			}]
+			title: "&eOn The Side: &aDeep Seeing"
+			x: -18.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["30558EA99F6D9DF8"]
+			id: "108B4358F78EA291"
+			rewards: [
+				{
+					id: "75998FB9FB5A53AD"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "25AB4CBCEAC4393A"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5AD61C9C3D082FB9"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "58B73B30C03AD70E"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Pokey Mine"
+			tasks: [{
+				entity: "alexscaves:mine_guardian"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:mine_guardian"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "7D067600771BCAA1"
+				title: "&cSlay: &rMine Guardian"
+				type: "kill"
+				value: 1L
+			}]
+			x: -18.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["30558EA99F6D9DF8"]
+			icon: "alexscaves:mussel"
+			id: "358EDF38FD6E034D"
+			rewards: [
+				{
+					id: "49582C66091DE820"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 4
+					id: "32B883612BD94900"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7FEA167F28B886EF"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1796F8C7A52D60EF"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Take My Offer"
+			tasks: [
+				{
+					block: "alexscaves:mussel"
+					block_type: 0
+					checkItem: false
+					id: "4D5EBB1B36775152"
+					title: "&eBreak: &rMussel"
+					type: "questsadditions:break"
+					value: 1L
+				}
+				{
+					id: "4E0595CA735D084B"
+					item: "alexscaves:pearl"
+					title: "&eAcquire: &rPearl"
+					type: "item"
+				}
+				{
+					block: "alexscaves:abyssal_altar"
+					block_type: 0
+					id: "63F357CDC44DAA4B"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rAbyssal Altar"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					block: "alexscaves:abyssal_altar"
+					block_type: 0
+					checkItem: true
+					id: "2F1AA94E97070653"
+					isItemInteraction: false
+					item: "alexscaves:pearl"
+					title: "&eOffer: &rPearl"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "&eSegment, Pt. I: &aMussel Hustle"
+			x: -14.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["30558EA99F6D9DF8"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:hullbreaker"
+					DisplayMobScale: 0.4d
+				}
+			}
+			id: "10C77A9784AE6A96"
+			rewards: [
+				{
+					id: "4B735E191BACECD6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 6
+					id: "433B94E972A8734A"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0347CAC00E010522"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "26B1F19DB4D564B6"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			secret: true
+			size: 2.0d
+			subtitle: "Prehistoric Fish"
+			tasks: [
+				{
+					entity: "alexscaves:hullbreaker"
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:hullbreaker"
+							DisplayMobScale: 0.25d
+						}
+					}
+					id: "11F9FA26E9009809"
+					title: "&cSlay: &rHullbreaker"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "7CCECCA45C2DA6D5"
+					item: "alexscaves:immortal_embryo"
+					type: "item"
+				}
+			]
+			title: "&eMeet: &aHullbreaker"
+			x: -9.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["30558EA99F6D9DF8"]
+			icon: "alexscaves:submarine"
+			id: "7BE119E5775870E3"
+			rewards: [
+				{
+					id: "01917D9DCF2DA767"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 4
+					id: "35D199290E3DF6E6"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3D99CF1004BF98C9"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "58C976BB378A69DA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Requires Maintenance"
+			tasks: [
+				{
+					icon: "alexscaves:submarine"
+					id: "7D418F1A40083E29"
+					observe_type: 5
+					timer: 0L
+					title: "&eFind/Build: &rSubmarine"
+					to_observe: "alexscaves:submarine"
+					type: "observation"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "016E87C448173B5B"
+					title: "&eRemove: &rSubmarine's Oxidization"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:honeycomb"
+					id: "205938E983127750"
+					title: "&eWax: &rSubmarine"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:copper_ingot"
+					id: "78AEA110712B36EC"
+					title: "&eRepair: &rSubmarine"
+					type: "custom"
+				}
+				{
+					icon: "alexscaves:submarine"
+					id: "3CB28E4CB01B7919"
+					title: "&eEnter: &rSubmarine"
+					type: "custom"
+				}
+			]
+			title: "&eOn The Side: &aCopper Submersible"
+			x: -16.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["358EDF38FD6E034D"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:deep_one"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "764C1A625048A550"
+			rewards: [
+				{
+					id: "2248745AE957E169"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 6
+					id: "36FACC1BD1DBC035"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1A6423669358B829"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7E73AB587FF62989"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Your New Clique"
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/trade_with_deep_one"
+					criterion: ""
+					id: "155617E391CCDF24"
+					title: "&eTrade with: &rDeep Ones"
+					type: "advancement"
+				}
+				{
+					advancement: "alexscaves:alexscaves/deep_ones_become_neutral"
+					criterion: ""
+					id: "7580AF49E35D07C2"
+					title: "&eIncrease: &rReputation"
+					type: "advancement"
+				}
+				{
+					advancement: "alexscaves:alexscaves/deep_ones_become_helpful"
+					criterion: ""
+					id: "3D324906AB862C94"
+					title: "&eFully Increase: &rReputation"
+					type: "advancement"
+				}
+			]
+			title: "&eSegment, Pt. II: &aMeet The Deep Ones"
+			x: -14.0d
+			y: 27.0d
+		}
+		{
+			dependencies: [
+				"764C1A625048A550"
+				"155617E391CCDF24"
+			]
+			dependency_requirement: "one_completed"
+			id: "3C7F8F6BA6737F09"
+			rewards: [
+				{
+					id: "00DF44A1313B528F"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 6
+					id: "48C72925B603066A"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "38E5172AB57CCB69"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "23C353E3F57F2540"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Deep Sea Souvenirs"
+			tasks: [
+				{
+					id: "129EFE29D4D7B787"
+					item: "alexscaves:gazing_pearl"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "579DB9020422EFC4"
+					item: {
+						Count: 1
+						id: "alexscaves:ortholance"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2B4EF56E8BA176CF"
+					item: {
+						Count: 1
+						id: "alexscaves:sea_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3565AC39AEF1B6C5"
+					item: {
+						Count: 1
+						id: "alexscaves:magic_conch"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rRespected Nauticalities"
+			x: -16.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["30558EA99F6D9DF8"]
+			id: "3C8E2CA334C2A564"
+			rewards: [
+				{
+					id: "5CBCB12C02B50EC2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 5
+					id: "60BE5020C1DD7803"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3A2B26F434F67F1E"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5097A00C8443310F"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Pressure-Safe"
+			tasks: [
+				{
+					id: "3C8C737AD50E2924"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:diving_helmet"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "6BC27D7CEEBE661A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:diving_chestplate"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "07BF26794E3BA3A2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:diving_leggings"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "78E211DAA0C1723B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:diving_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rDeep Sea Diver"
+			x: -12.0d
+			y: 26.0d
+		}
+		{
+			dependencies: [
+				"10C77A9784AE6A96"
+				"31D764961C683FAA"
+				"711DE64D1E60BBD5"
+				"7DF3AA4B7F24D4C1"
+				"3748673897464635"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:tremorzilla"
+					DisplayMobScale: 0.5d
+				}
+			}
+			id: "7F8ECC2965A54198"
+			min_required_dependencies: 4
+			rewards: [
+				{
+					id: "1A89B71BC71F019A"
+					type: "xp_levels"
+					xp_levels: 75
+				}
+				{
+					count: 10
+					id: "2C1E625E928AC83C"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "21D9FC22A2C4E0EC"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1C8D64A9E2E0CEBA"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "3402E402B8778176"
+					item: {
+						Count: 1
+						id: "kubejs:gluttonous_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "7F69BD1850E22EC0"
+					item: "alexscaves:tremorzilla_egg"
+					type: "item"
+				}
+				{
+					block: "alexscaves:nuclear_bomb"
+					block_type: 0
+					id: "2D40CDBFD3EE26EC"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rNuclear Bomb"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					icon: "alexscaves:nuclear_bomb"
+					id: "0B5B19E4F9EA58C5"
+					observe_type: 5
+					timer: 0L
+					title: "&eIgnite: &rNuclear Bomb"
+					to_observe: "alexscaves:nuclear_bomb"
+					type: "observation"
+				}
+				{
+					icon: "alexscaves:waste_drum"
+					id: "42C75973743A5B18"
+					title: "&eTame: &rTremorzilla"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "20AC35886319AD3B"
+					title: "&eMount: &rTremorzilla"
+					type: "custom"
+				}
+			]
+			title: "&eFinale: &aRadioactive Pet"
+			x: 0.0d
+			y: 37.0d
+		}
+		{
+			id: "52E6D93E1D4A19A5"
+			rewards: [
+				{
+					id: "252A81453AFDC35D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "7EAAD2E010BCB509"
+					item: "kubejs:oxidized_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Bewitched Idyll"
+			tasks: [{
+				biome: "alexscaves:candy_cavity"
+				icon: {
+					Count: 1
+					id: "citadel:icon_item"
+					tag: {
+						IconLocation: "alexscaves:textures/misc/advancement/icon/candy_cavity.png"
+					}
+				}
+				id: "7A8DE43FCE57404A"
+				title: "&eDiscover: &aCandy Cavity"
+				type: "biome"
+			}]
+			title: "&eSegment: &aCandy Cavity"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			id: "50AAB3DC9119665C"
+			rewards: [
+				{
+					id: "5EFE3E45F8ABF7F6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 2
+					id: "7F2F16D35B1C3CD7"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4BAF53F2AD535A2D"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Flinger"
+			tasks: [{
+				entity: "alexscaves:gumbeeper"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:gumbeeper"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "7E66296BFAE30989"
+				title: "&cSlay: &rGumbeeper"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			id: "6F1AF5F60856871A"
+			rewards: [
+				{
+					id: "578A087554E072EB"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "1280932A1A43B18B"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "68E85D6C4A67936B"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Stiff Aggressors"
+			tasks: [{
+				entity: "alexscaves:caniac"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:caniac"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "43B7674339621AD3"
+				title: "&cSlay: &rCaniac"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			id: "424519E52978BAC1"
+			rewards: [
+				{
+					id: "35238E91984E8FB9"
+					type: "xp"
+					xp: 35
+				}
+				{
+					count: 2
+					id: "5A5BE0F2EF381B6B"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "5E5DEBE358CB13B3"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Oozing Cube"
+			tasks: [{
+				entity: "alexscaves:caramel_cube"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexscaves:caramel_cube"
+						DisplayMobScale: 1.0d
+					}
+				}
+				id: "7C71F8C9DF988CA1"
+				title: "&cSlay: &rCaramel Cube"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			id: "20273381BE95E999"
+			rewards: [
+				{
+					id: "44EBA4C1BD5BC755"
+					type: "xp"
+					xp: 55
+				}
+				{
+					count: 2
+					id: "0F900E27BE58F9D9"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "197979076AD750E7"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Glutinous Invertebrate"
+			tasks: [{
+				entity: "alexscaves:gum_worm"
+				icon: {
+					Count: 1
+					id: "citadel:icon_item"
+					tag: {
+						IconLocation: "alexscaves:textures/misc/advancement/icon/ride_gum_worm.png"
+					}
+				}
+				id: "539342D12F572524"
+				title: "&cSlay: &rGum Worm"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			icon: {
+				Count: 1
+				id: "citadel:icon_item"
+				tag: {
+					IconLocation: "alexscaves:textures/misc/advancement/icon/feed_gummy_bear.png"
+				}
+			}
+			id: "22C15536EDAC8ABB"
+			rewards: [
+				{
+					id: "118B4F59A78259A0"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 2
+					id: "4AB3D664AF31A215"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6E1295ABB68C3562"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Inner Infusements"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+						}
+					}
+					id: "447B979989707FDC"
+					title: "&eFeed: &rPotion to Gummy Bear"
+					type: "custom"
+				}
+				{
+					id: "01136F78E9C09EBA"
+					item: "alexscaves:jelly_bean"
+					title: "&eAcquire: &rPotion-Infused Jelly Bean"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aSoaked Gum"
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			icon: {
+				Count: 1
+				id: "citadel:icon_item"
+				tag: {
+					IconLocation: "alexscaves:textures/misc/advancement/icon/gingerbread_town.png"
+				}
+			}
+			id: "297A3A220FDBAAA1"
+			rewards: [
+				{
+					id: "25BD8A0CF7FDC97D"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "3E9FB3CB2AEAC44C"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "76184A465E0828D6"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Crippling Life"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:gingerbread_man"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "625E88F19B51255D"
+					title: "&eHit: &rGingerbread Man"
+					type: "custom"
+				}
+				{
+					count: 4L
+					id: "32B849331CAF916B"
+					item: "alexscaves:gingerbread_crumbs"
+					title: "&eAcquire: &rGingerbread Crumbs"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aPiece By Piece"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			id: "31450119165CF6C3"
+			rewards: [
+				{
+					id: "185331A126C426A7"
+					type: "xp"
+					xp: 35
+				}
+				{
+					id: "720F34F69CD7E207"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "1FC666408C7E6C85"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "High On Sugar"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "citadel:effect_item"
+					tag: {
+						DisplayEffect: "alexscaves:sugar_rush"
+					}
+				}
+				id: "68B25C8ACCD9E370"
+				title: "&eGain Effect: &rSugar Rush"
+				type: "custom"
+			}]
+			title: "&eOn The Side: &aSugar High"
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6F1AF5F60856871A"
+				"50AAB3DC9119665C"
+				"20273381BE95E999"
+				"508D58C8D17A35F7"
+			]
+			dependency_requirement: "one_completed"
+			id: "256AF06E6F09C426"
+			rewards: [
+				{
+					id: "2146D7EEF50E0EFC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 2
+					id: "05C507686573E6AA"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7C26697D57E8518F"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Raindancer"
+			tasks: [
+				{
+					id: "2DC5CC2E3743E8F0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:rainbounce_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "742E7CAEA51BF630"
+					item: {
+						Count: 1
+						id: "alexscaves:shot_gum"
+						tag: {
+							CrankAngle: 540.0f
+							PrevCrankAngle: 540.0f
+							PrevShootTime: 0
+							ShootTime: 0
+							Shooting: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "7806325564465F9E"
+					item: {
+						Count: 1
+						id: "alexscaves:candy_cane_hook"
+						tag: {
+							Damage: 0
+							Reeling: 1b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "576415690E91FB7F"
+					item: {
+						Count: 1
+						id: "alexscaves:sack_of_sating"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0B8326E042AF79A4"
+					item: {
+						Count: 1
+						id: "alexscaves:sugar_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rDessert Connoisseur"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["297A3A220FDBAAA1"]
+			id: "24169FE4FE396235"
+			rewards: [
+				{
+					id: "7D4675BC45052957"
+					type: "xp"
+					xp: 225
+				}
+				{
+					count: 2
+					id: "762F99BCE02DB08F"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "05A893B7E008ABBA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Part Of Them"
+			tasks: [
+				{
+					id: "75582F45DD66F5AE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:gingerbread_helmet"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "6EF35AD1FB18A7C9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:gingerbread_chestplate"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "46CB52E001D783B6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:gingerbread_leggings"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "0E5BD4C9E471FDF5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "alexscaves:gingerbread_boots"
+						tag: {
+							Damage: 0
+							Insulation: [ ]
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "4160954DB948504A"
+					item: "alexscaves:confection_oven"
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rCrumbleton Resident"
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			icon: {
+				Count: 1
+				id: "citadel:icon_item"
+				tag: {
+					IconLocation: "alexscaves:textures/misc/advancement/icon/tame_candicorn.png"
+				}
+			}
+			id: "548A8EA769BAA989"
+			rewards: [
+				{
+					id: "4AECA798F243A603"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "17EF38F9AD8F7A1D"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "4460FACFA91CB3D8"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Passive Charge-Up"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:candicorn"
+							DisplayMobScale: 0.75d
+						}
+					}
+					id: "03AF6E0C1BA1EB20"
+					title: "&eTame: &rCandicorn"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "7F7D198CD0C38A85"
+					title: "&eEquip with: &rSaddle"
+					type: "custom"
+				}
+			]
+			title: "&eOn The Side: &aSugar Coated"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexscaves:licowitch"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "508D58C8D17A35F7"
+			rewards: [
+				{
+					id: "246B34F5FD0982E4"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 2
+					id: "7167EA992D5E97C9"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "16AFB4FAD6632212"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Evil Root Cause"
+			tasks: [
+				{
+					icon: "alexscaves:licoroot"
+					id: "2637C6D614A8C811"
+					structure: "alexscaves:licowitch_tower"
+					title: "&eLocate: &rLicowitch Tower"
+					type: "structure"
+				}
+				{
+					entity: "minecraft:zombie"
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:licowitch"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "66BFEC85024548C5"
+					title: "&cSlay: &rLicowitch"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "20CE2D15619A2CE0"
+					item: "alexscaves:radiant_essence"
+					type: "item"
+				}
+			]
+			title: "&eSegment, Pt. I: &aA Witches Coven"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["52E6D93E1D4A19A5"]
+			icon: "alexscaves:gobthumper"
+			id: "73A724492F8AEC63"
+			rewards: [
+				{
+					id: "584EDDCAE6F0A2EF"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 2
+					id: "22055C12E14EC885"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A636F1EB13F19EB"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Make Angry"
+			tasks: [
+				{
+					block: "alexscaves:gobthumper"
+					block_type: 0
+					id: "653B0DADF24AA188"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rGobthumper"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					count: 2L
+					id: "07412E21199ABC43"
+					item: {
+						Count: 2
+						id: "alexscaves:candy_cane_hook"
+						tag: {
+							Damage: 0
+							Reeling: 1b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					advancement: "alexscaves:alexscaves/ride_gum_worm"
+					criterion: ""
+					id: "48F4D1FC028BD978"
+					title: "&eRide: &rGum Worm"
+					type: "advancement"
+				}
+			]
+			title: "&eOn The Side: &aReeling Ride"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["508D58C8D17A35F7"]
+			icon: {
+				Count: 1
+				id: "citadel:icon_item"
+				tag: {
+					IconLocation: "alexscaves:textures/misc/advancement/icon/convert_biome.png"
+				}
+			}
+			id: "7EDC8AA51F5C3BEB"
+			rewards: [
+				{
+					id: "6A52F0A7C5EAF0C6"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 4
+					id: "508F0E49979E8475"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6BCE75C78988161A"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Crossover Habitat"
+			tasks: [
+				{
+					id: "4FB656447761C2E0"
+					item: "alexscaves:conversion_crucible"
+					type: "item"
+				}
+				{
+					id: "170B48E078EB9EAD"
+					item: "alexscaves:biome_treat"
+					type: "item"
+				}
+				{
+					icon: "alexscaves:biome_treat"
+					id: "190F0B6FECDE65C9"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alexscaves:biome_treat"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "bound_treat"
+									}
+								}
+							]
+						}
+					}
+					title: "&eBind: &rBiome Treat"
+					type: "item"
+				}
+				{
+					block: "alexscaves:conversion_crucible"
+					block_type: 0
+					id: "58DF1A8B3DC0E689"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rConversion Crucible"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					advancement: "alexscaves:alexscaves/convert_biome"
+					criterion: ""
+					id: "1E3578E0366B6FE6"
+					title: "&eWitness: &rBiome Conversion"
+					type: "advancement"
+				}
+			]
+			title: "&eSegment, Pt. II: &aUndergoing Conversion"
+			x: 0.0d
+			y: 5.0d
+		}
+	]
+	title: "{quest.overview.base_label.title} Below The Surface"
+}

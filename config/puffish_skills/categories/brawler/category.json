@@ -1,0 +1,12 @@
+{
+	"unlocked_by_default": true,
+	"exclusive_root": true,
+	"title": "Brawler",
+	"icon": {
+		"type": "item",
+		"data": {
+			"item": "voidscape:astral_sword"
+		}
+	},
+	"background": "bloodmagic:textures/block/dungeon/dungeon_brick1.png"
+}
