@@ -10,13 +10,13 @@
 * Tamed mobs have been given a [Sync Health System]: 
 * Right-click tamed mobs to sync to current DIFFICULTY modifier - sets [Attribute Sync] on cooldown
 
-###UNIFIED ORE PROCESSING
+### UNIFIED ORE PROCESSING
 * All ores can now be processed using different methods
 
 ### MAJOR REWRITE OF SCRIPTS
 * Most script have been rewritten and refined for better overview
 
-###SKILLTREE OVERHAUL
+### SKILLTREE OVERHAUL
 * All 3 skill trees have been overhauled
 * Abilities have been overhauled
 
@@ -234,3 +234,4 @@
 * TooManyRecipeViewers (TMRV)
 * UniLib
 * Waystones
+
