@@ -1,8 +1,9 @@
-# Rogue! Mayhem | v0.14
+# ROGUE! MAYHEM | v0.14
 
-## MAJOR CHANGES ( ''' )
+## Major Changes ( ''' )
 
-### Forge Update 47.4.10 ( ⬆️ )
+### Forge updated to 47.4.10 ( ⬆️ )
+* If you have previously installed the modpack and won't start after this update, either fully re-download it or try deleting the folder ``config/coldsweat``.
 
 ### DYNAMIC SCALING
 * Readjusts mobs to your current COEF/DIFFICULTY modifier (seen bottom left)
@@ -20,7 +21,7 @@
 * All 3 skill trees have been overhauled
 * Abilities have been overhauled
 
-## MINOR CHANGES ( '' )
+## Minor Changes ( '' )
 * fixed Angel Ring and general flight options
 * Mutant Monsters no longer count as bosses to the scaling system
 * Removed Torn Pocket & Orb Of Clearance
@@ -234,4 +235,5 @@
 * TooManyRecipeViewers (TMRV)
 * UniLib
 * Waystones
+
 
