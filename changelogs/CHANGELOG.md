@@ -3,7 +3,6 @@
 ## Major Changes ( ''' )
 
 ### Forge updated to 47.4.10 ( ⬆️ )
-* If you have previously installed the modpack and won't start after this update, either fully re-download it or try deleting the folder ``config/coldsweat``.
 
 ### DYNAMIC SCALING
 * Readjusts mobs to your current COEF/DIFFICULTY modifier (seen bottom left)
@@ -235,5 +234,6 @@
 * TooManyRecipeViewers (TMRV)
 * UniLib
 * Waystones
+
 
 
