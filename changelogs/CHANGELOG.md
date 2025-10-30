@@ -25,7 +25,6 @@
 * fixed Angel Ring and general flight options
 * Mutant Monsters no longer count as bosses to the scaling system
 * Removed Torn Pocket & Orb Of Clearance
-* Orb Of Clearance is now set within the middle of each skill tree
 
 ### Resources added ( °+ )
 * Assorted Wardens
@@ -91,7 +90,6 @@
 
 ### Mods removed ( -- )
 * Allayed
-* Enchantment Descriptions
 * Graveyard
 * Icterine
 * Inventory Tweaks - ReFoxed
@@ -235,6 +233,7 @@
 * TooManyRecipeViewers (TMRV)
 * UniLib
 * Waystones
+
 
 
 
