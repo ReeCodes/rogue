@@ -1,3 +1,7 @@
+# ROGUE! MAYHEM | v0.14d
+* redecleration error fix
+
+---
 # ROGUE! MAYHEM | v0.14c
 * Modpack format fix for server files
 * Startup event fix for server files
@@ -241,6 +245,7 @@
 * TooManyRecipeViewers (TMRV)
 * UniLib
 * Waystones
+
 
 
 
