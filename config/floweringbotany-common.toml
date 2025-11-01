@@ -1,0 +1,35 @@
+
+[floramobius]
+	#Should the floramobius consumes flowers when it spawn a mob.
+	consumeFlowers = false
+	#Formula used for spawn time : ((minTime + maxTime) / 2 ) +/- random(0=>modifier)
+	#The minimum spawn time (in ticks) of a mob by the floramobius. Default: 100 ticks
+	#Range: > 1
+	minSpawnTime = 100
+	#The minimum spawn time (in ticks) of a mob by the floramobius. Default: 200 ticks
+	#Range: > 2
+	maxSpawnTime = 200
+	#The modifier of the spawn time (in ticks) of a mob by the floramobius. Default: 10 ticks
+	#Range: > 1
+	spawnTimeModifier = 10
+
+[malusceae]
+	#The amount of mana consumed when the malusceae give players food. Default: 2500
+	#Range: 0 ~ 500000
+	manaConsumed = 2500
+	#The max amount of found point that can be stored in the flower (It include food + saturation). Default: 80
+	#Range: > 1
+	maxFoodPoints = 80
+	#The radius in which players can be fed by the flower. Default: 32
+	#Range: > 1
+	range = 32
+	#The delay (in ticks) between each feeding. Default: 100
+	#Range: > 1
+	delay = 20
+	#The amount of food/saturation added by each feeding. Default: 2
+	#Range: 1 ~ 40
+	addedFood = 2
+	#The max amount of saturation which the flower can go up. Default: 20
+	#Range: > 1
+	maxSaturation = 20
+

@@ -1,0 +1,1005 @@
+{
+	"reset_sorcery": {
+		"title": [{"text":"§f\uE83D","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"\n§9§oResets skill tree and refunds points."},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"extra_description": [{"text":"\n§f\uEB16 ","font":"symbols_n_stuff:symbols"},{"text":"[XP Sources]","color":"#8CDEA2"},{"text":"\nKill mobs using §3Magic Damage§f"}],
+		"size": 1.25,
+		"cost": 0,
+		"required_spent_points": 1,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "railways:remote_lens"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "puffish_reset sorcery"
+				}
+			}
+		]
+	},
+	"root_nature": {
+		"title": "§6School:§f Naturalist",
+		"description": "§a+1§f Nature Spell Power\n§a+1§f Lightning Spell Power\n§a+10%§r Magic Damage",
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:blight"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:nature_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:lightning_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"root_elemental": {
+		"title": "§6School:§f Elementalist",
+		"description": "§a+1§f Ice Spell Power\n§a+1§f Fire Spell Power\n§a+10%§r Magic Damage",
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "texture",
+				"data": {
+					"texture": "rogue:textures/pufferfish/skills/elementalist.png"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:ice_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:fire_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"root_druid": {
+		"title": "§6School:§f Druid",
+		"description": "§a+1§f Ender Spell Power\n§a+1§f Eldritch Spell Power\n§a+1§f Blood Spell Power\n§a+5%§r Magic Damage",
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+				"data": {
+					"effect": "irons_spellbooks:abyssal_shroud"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:ender_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:eldritch_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:blood_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"root_cleric": {
+		"title": "§6School:§f Apprentice Cleric",
+		"description": "§a+1§f Holy Spell Power\n§a+1§f Evocation Spell Power\n§a+1§f Sound Spell Power\n§a+5%§r Magic Damage",
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+				"data": {
+					"item": "irons_spellbooks:divine_pearl"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:holy_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:evocation_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "alshanex_familiars:sound_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"root_ars": {
+		"title": "§6School:§f Sourcerer",
+		"description": "§a+1§f Spell Damage (Ars)\n§a+25%§r Magic Damage",
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+				"data": {
+					"item": "ars_nouveau:novice_spell_book"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_nouveau.perk.spell_damage",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.25,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"pixie_chance": {
+		"title": "§a+1.5%§f Pixie Spawn Chance",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "botania:pixie_dust"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "botania:pixie_spawn_chance",
+					"value": 0.015,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"summon_damage_iron": {
+		"title": "§a+6%§f Summoning Damage (Irons)",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "dungeonnowloading:scepter_of_sealed_chaos"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:summon_damage",
+					"value": 0.06,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"magic_damage": {
+		"title": "§a+1%§f Magic Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "hexcasting:amethyst_dust"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.01,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_iron": {
+		"title": "§a+3%§f Spell Power (Irons)",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:copper_spell_book"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.03,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_damage_ars": {
+		"title": "§a+4%§f Spell Damage (Ars)",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "malum:echoing_arcana"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_nouveau.perk.spell_damage",
+					"value": 0.04,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"summon_power_ars": {
+		"title": "§a+6%§f Summoning Power (Ars)",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ars_nouveau:summon_focus"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_elemental.perk.summon_power",
+					"value": 0.06,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"mana_regen_ars": {
+		"title": "§a+5%§f Mana Regen (Ars)",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "ars_nouveau:mana_regen"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"max_mana_ars": {
+		"title": "§a+9%§f Max Mana (Ars)",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "delightful:source_berry_pie_slice"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+					"value": 0.09,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"spell_cd_iron": {
+		"title": "§a+4%§f Cooldown Reduction (Irons)",
+		"icon": {
+			"type": "item",
+				"data": {
+					"item": "botania:cosmetic_clock_eye"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:cooldown_reduction",
+					"value": 0.04,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"cast_time_cd_iron": {
+		"title": "§a+5%§f Cast Time Reduction (Irons)",
+		"icon": {
+			"type": "item",
+				"data": {
+					"item": "irons_spellbooks:cooldown_upgrade_orb"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:cast_time_reduction",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"max_mana_iron": {
+		"title": "§a+4%§f Max Mana (Irons)",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:instant_mana"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:max_mana",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"mana_regen_iron": {
+		"title": "§a+2.5%§f Mana Regen (Irons)",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:amethyst_resonance_charm"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:mana_regen",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"spell_power_blood": {
+		"title": "§a+5%§f Blood Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:blood_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:blood_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_eldritch": {
+		"title": "§a+5%§f Eldritch Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:eldritch_manuscript"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:eldritch_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_ender": {
+		"title": "§a+5%§f Ender Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:ender_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:ender_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_evocation": {
+		"title": "§a+5%§f Evocation Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:evocation_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:evocation_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_sound": {
+		"title": "§a+5%§f Sound Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "alshanex_familiars:sound_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "alshanex_familiars:sound_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_fire": {
+		"title": "§a+5%§f Fire Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:fire_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:fire_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_holy": {
+		"title": "§a+5%§f Holy Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:holy_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:holy_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_ice": {
+		"title": "§a+5%§f Ice Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:ice_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:ice_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_lightning": {
+		"title": "§a+5%§f Lightning Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:lightning_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:lightning_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_nature": {
+		"title": "§a+5%§f Nature Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:nature_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:nature_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_magic_damage": {
+		"title": [{"text":"Shiny Pearl","color":"#E045F7"}],
+		"description": "§a+10%§f Magic Damage",
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "alexscaves:pearl"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_spell_damage_ars": {
+		"title": [{"text":"Mauve Shimmer","color":"#E045F7"}],
+		"description": "§a+12%§f Spell Damage (Ars)",
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "hexcasting:dye_colorizer_purple"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_nouveau.perk.spell_damage",
+					"value": 0.12,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_spell_power_iron": {
+		"title": [{"text":"Caster's Core","color":"#E045F7"}],
+		"description": "§a+12%§f Spell Power (Irons)",
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:energized_core"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:spell_power",
+					"value": 0.12,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"milestone_nature": {
+		"title": "§6The Pestilent",
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+25%§f Nature Spell Power\n§a+25%§f Lightning Spell Power\n§a+1 Lv§f to Nature Spells\n§a+1 Lv§f to Lightning Spells\n\nLocks other §6Milestones"}],
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "irons_spellbooks:blight"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:nature_spell_power",
+					"value": 0.25,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:lightning_spell_power",
+					"value": 0.25,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_nature",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_lightning",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"milestone_elementalist": {
+		"title": "§6Chroma",
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+25%§f Ice Spell Power\n§a+25%§f Fire Spell Power\n§a+1 Lv§f to Fire Spells\n§a+1 Lv§f to Ice Spells\n\nLocks other §6Milestones"}],
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "texture",
+				"data": {
+					"texture": "rogue:textures/pufferfish/skills/elementalist.png"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:fire_spell_power",
+					"value": 0.25,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:ice_spell_power",
+					"value": 0.25,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_fire",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_ice",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"milestone_druid": {
+		"title": "§6Occultist",
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+15%§f Blood Spell Power\n§a+15%§f Eldritch Spell Power\n§a+15%§f Ender Spell Power\n§a+1 Lv§f to Blood Spells\n§a+1 Lv§f to Eldritch Spells\n§a+1 Lv§f to Elder Spells\n\nLocks other §6Milestones"}],
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+				"data": {
+					"effect": "irons_spellbooks:abyssal_shroud"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:blood_spell_power",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:eldritch_spell_power",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:ender_spell_power",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_blood",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_eldritch",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_ender",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"milestone_priest": {
+		"title": "§6Conjurer",
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+15%§f Holy Spell Power\n§a+15%§f Evocation Spell Power\n§a+15%§f Sound Spell Power\n§a+1 Lv§f to Holy Spells\n§a+1 Lv§f to Sound Spells\n§a+1 Lv§f to Evocation Spells\n\nLocks other §6Milestones"}],
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+				"data": {
+					"item": "irons_spellbooks:divine_pearl"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:holy_spell_power",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:evocation_spell_power",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "alshanex_familiars:sound_spell_power",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:school/alshanex_familiars/sound",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_holy",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:spell_school_evocation",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"milestone_archmage": {
+		"title": "§6Archsourcerer",
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+75%§f Spell Damage (Ars)\n§a+25%§f Magic Damage\n\nLocks other §6Milestones"}],
+		"size": 2.0,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+				"data": {
+					"item": "ars_nouveau:archmage_spell_book"
+				}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_nouveau.perk.spell_damage",
+					"value": 0.75,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:magic_damage",
+					"value": 0.25,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	}
+}

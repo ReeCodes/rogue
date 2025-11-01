@@ -1,0 +1,16 @@
+{
+	"dimensions": [
+		"minecraft:overworld"
+	],
+	"stack": {
+		"item": "ae2:fluix_shovel",
+		"count": 1,
+		"nbt": {
+			"Damage": 0
+		}
+	},
+	"min_rarity": "apotheosis:uncommon",
+	"max_rarity": "apotheosis:epic",
+	"weight": 20,
+	"quality": 5
+}

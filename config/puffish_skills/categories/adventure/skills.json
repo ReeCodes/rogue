@@ -1,0 +1,920 @@
+{
+	"dodkfee68bani2dn": {
+		"definition": "shovel_speed",
+		"x": -256,
+		"y": -517.3058411939046,
+		"root": false
+	},
+	"edttyuojrzmv53ot": {
+		"definition": "fortune",
+		"x": 128,
+		"y": -517.3058411939046,
+		"root": false
+	},
+	"c5ks7pu891noagc1": {
+		"definition": "saturation",
+		"x": 64,
+		"y": -480.35542396576847,
+		"root": false
+	},
+	"vuokh877nlk5zq1j": {
+		"definition": "mining_speed",
+		"x": -128,
+		"y": -591.2066756501767,
+		"root": false
+	},
+	"sf73aye7fjo2g7az": {
+		"definition": "shovel_speed",
+		"x": -64,
+		"y": -628.1570928783128,
+		"root": false
+	},
+	"5kn6wvfbq6sq9t63": {
+		"definition": "sprinting_speed",
+		"x": 64,
+		"y": -554.2562584220407,
+		"root": false
+	},
+	"7x10ju62fvt8qzzz": {
+		"definition": "mining_speed",
+		"x": -128,
+		"y": -517.3058411939048,
+		"root": false
+	},
+	"8dn67yehq4roweqe": {
+		"definition": "saturation",
+		"x": -192,
+		"y": -554.2562584220409,
+		"root": false
+	},
+	"dgfy1zyhy900uazr": {
+		"definition": "saturation",
+		"x": -192,
+		"y": -480.3554239657686,
+		"root": false
+	},
+	"w5xkme7ddpqt1zot": {
+		"definition": "pickaxe_speed",
+		"x": 64,
+		"y": -628.1570928783128,
+		"root": false
+	},
+	"pzvckq06yvxudidv": {
+		"definition": "saturation",
+		"x": 0,
+		"y": -591.2066756501767,
+		"root": false
+	},
+	"3jnszgnjsd7oge6l": {
+		"definition": "saturation",
+		"x": 192,
+		"y": -554.2562584220407,
+		"root": false
+	},
+	"lpqendp7rtmuh1rp": {
+		"definition": "sprinting_speed",
+		"x": -64,
+		"y": -554.2562584220407,
+		"root": false
+	},
+	"5y32r51v22b3zkv2": {
+		"definition": "xp_gained",
+		"x": 0,
+		"y": -665.1075101064489,
+		"root": false
+	},
+	"ky1jstdkl3q6o9w1": {
+		"definition": "root_mole",
+		"x": 0,
+		"y": -517.3058411939046,
+		"root": true
+	},
+	"av1wlc8m09y6ipxm": {
+		"definition": "saturation",
+		"x": 192,
+		"y": -480.3554239657686,
+		"root": false
+	},
+	"k35w548pxuj18egd": {
+		"definition": "pickaxe_speed",
+		"x": 256,
+		"y": -517.3058411939046,
+		"root": false
+	},
+	"bealh80negr5u6g7": {
+		"definition": "saturation",
+		"x": -64,
+		"y": -480.3554239657687,
+		"root": false
+	},
+	"4d78a7ttjccoyph0": {
+		"definition": "big_fortune",
+		"x": -128,
+		"y": -443.4050067376326,
+		"root": false
+	},
+	"g29apbg5bc4bwnez": {
+		"definition": "big_pickaxe_speed",
+		"x": -64,
+		"y": -406.45458950949654,
+		"root": false
+	},
+	"44ksh4ls8zc9rqlf": {
+		"definition": "big_mining_speed",
+		"x": 128,
+		"y": -443.4050067376324,
+		"root": false
+	},
+	"agql9rel61ll8z8n": {
+		"definition": "big_shovel_speed",
+		"x": 64,
+		"y": -406.45458950949654,
+		"root": false
+	},
+	"96g7pfzjf9tq7dan": {
+		"definition": "xp_gained",
+		"x": -576,
+		"y": -332.55375505322445,
+		"root": false
+	},
+	"chu05fmrvictztfl": {
+		"definition": "fishing_luck",
+		"x": -512,
+		"y": -369.5041722813605,
+		"root": false
+	},
+	"lmykfpqol3m2jei5": {
+		"definition": "fishing_lure",
+		"x": -576,
+		"y": -258.6529205969523,
+		"root": false
+	},
+	"kadg69b0ydkz14ja": {
+		"definition": "player_luck",
+		"x": -576,
+		"y": -184.75208614068026,
+		"root": false
+	},
+	"2op2y6jr7bwb19hn": {
+		"definition": "decreased_exhaustion",
+		"x": -576,
+		"y": -110.85125168440817,
+		"root": false
+	},
+	"xol4i398a04bvrdi": {
+		"definition": "harvest_addition",
+		"x": -448,
+		"y": -406.4545895094964,
+		"root": false
+	},
+	"iuuotwljk2xl4xh3": {
+		"definition": "decreased_exhaustion",
+		"x": -384,
+		"y": -443.40500673763245,
+		"root": false
+	},
+	"4jw0lpgo1q4bfhiy": {
+		"definition": "decreased_exhaustion",
+		"x": -512,
+		"y": -295.6033378250884,
+		"root": false
+	},
+	"8gdwr00kbr6lqo82": {
+		"definition": "sprinting_speed",
+		"x": -448,
+		"y": -332.55375505322445,
+		"root": false
+	},
+	"9scovakaef1va2ju": {
+		"definition": "harvest_addition",
+		"x": -384,
+		"y": -369.5041722813605,
+		"root": false
+	},
+	"39tzwn9bp3xhaom2": {
+		"definition": "sprinting_speed",
+		"x": -512,
+		"y": -221.70250336881625,
+		"root": false
+	},
+	"53e4tg0srq431xjd": {
+		"definition": "player_luck",
+		"x": -512,
+		"y": -147.8016689125442,
+		"root": false
+	},
+	"zl5px02xtrfmnb6q": {
+		"definition": "root_cultivator",
+		"x": -448,
+		"y": -258.6529205969523,
+		"root": true
+	},
+	"1jawln1zlm2vre37": {
+		"definition": "decreased_exhaustion",
+		"x": -384,
+		"y": -295.6033378250884,
+		"root": false
+	},
+	"5hiytmhhi55836gf": {
+		"definition": "decreased_exhaustion",
+		"x": -448,
+		"y": -184.7520861406802,
+		"root": false
+	},
+	"gdc2olt8hdtopvx6": {
+		"definition": "big_fishing_lure",
+		"x": -320,
+		"y": -258.6529205969523,
+		"root": false
+	},
+	"fa7xdcfezzfn0kjy": {
+		"definition": "big_fishing_luck",
+		"x": -384,
+		"y": -147.80166891254424,
+		"root": false
+	},
+	"gtslwltsqjrtr5hb": {
+		"definition": "big_harvest_addition",
+		"x": -448,
+		"y": -110.85125168440811,
+		"root": false
+	},
+	"45xz0zw7prxt4l23": {
+		"definition": "decreased_exhaustion",
+		"x": -512,
+		"y": -73.9008344562721,
+		"root": false
+	},
+	"ysqocmivhstdlxcj": {
+		"definition": "fishing_lure",
+		"x": -576,
+		"y": -36.950417228136075,
+		"root": false
+	},
+	"5bc8nl7661q3ia5a": {
+		"definition": "big_player_luck",
+		"x": -320,
+		"y": -332.55375505322445,
+		"root": false
+	},
+	"9m3ufcab3bscio56": {
+		"definition": "decreased_exhaustion",
+		"x": -320,
+		"y": -406.4545895094966,
+		"root": false
+	},
+	"etyy8m05qkjcdjy5": {
+		"definition": "fishing_luck",
+		"x": -320,
+		"y": -480.3554239657683,
+		"root": false
+	},
+	"djj0briyw8qqfnbh": {
+		"definition": "xp_gained",
+		"x": 576,
+		"y": -332.55375505322445,
+		"root": false
+	},
+	"3osmk5thakoo7p99": {
+		"definition": "cr_recharge_time",
+		"x": 512,
+		"y": -369.50417228136064,
+		"root": false
+	},
+	"4qek6yhpma8hford": {
+		"definition": "cr_extra_count",
+		"x": 576,
+		"y": -258.6529205969523,
+		"root": false
+	},
+	"ouhnpkz7cct5fywo": {
+		"definition": "decreased_exhaustion",
+		"x": 512,
+		"y": -295.6033378250884,
+		"root": false
+	},
+	"48dxyugm5ult4l3q": {
+		"definition": "root_adversary",
+		"x": 448,
+		"y": -258.6529205969523,
+		"root": true
+	},
+	"ua872a4eq45lc4o4": {
+		"definition": "looting_addition",
+		"x": 448,
+		"y": -406.4545895094965,
+		"root": false
+	},
+	"ox71txov8refdmoc": {
+		"definition": "decreased_exhaustion",
+		"x": 384,
+		"y": -443.4050067376325,
+		"root": false
+	},
+	"u2qx6ja632qwwnx5": {
+		"definition": "cr_distance",
+		"x": 320,
+		"y": -480.3554239657686,
+		"root": false
+	},
+	"08wovqbvna2o0aiq": {
+		"definition": "cr_distance",
+		"x": 576,
+		"y": -184.75208614068015,
+		"root": false
+	},
+	"d2jdnf72uhr143yu": {
+		"definition": "decreased_exhaustion",
+		"x": 576,
+		"y": -110.85125168440823,
+		"root": false
+	},
+	"edtzksnult6lk94x": {
+		"definition": "looting_addition",
+		"x": 576,
+		"y": -36.950417228136075,
+		"root": false
+	},
+	"ap4o2vauk95cao18": {
+		"definition": "sprinting_speed",
+		"x": 448,
+		"y": -332.55375505322445,
+		"root": false
+	},
+	"gnj9ecbs5itse4ie": {
+		"definition": "looting_addition",
+		"x": 384,
+		"y": -369.5041722813604,
+		"root": false
+	},
+	"7gvkgu51p4hb2l83": {
+		"definition": "decreased_exhaustion",
+		"x": 320,
+		"y": -406.4545895094965,
+		"root": false
+	},
+	"av0en643a6mb4zxf": {
+		"definition": "decreased_exhaustion",
+		"x": 384,
+		"y": -295.60333782508826,
+		"root": false
+	},
+	"70rlquknpueamyve": {
+		"definition": "big_cr_distance",
+		"x": 320,
+		"y": -332.55375505322434,
+		"root": false
+	},
+	"g5jy270g22tvb0op": {
+		"definition": "sprinting_speed",
+		"x": 512,
+		"y": -221.70250336881622,
+		"root": false
+	},
+	"a3f47of4u8ia9zq3": {
+		"definition": "cr_distance",
+		"x": 512,
+		"y": -147.8016689125443,
+		"root": false
+	},
+	"pnx9wftyi45fqpju": {
+		"definition": "decreased_exhaustion",
+		"x": 512,
+		"y": -73.9008344562721,
+		"root": false
+	},
+	"hkedw8srtupfhu0m": {
+		"definition": "decreased_exhaustion",
+		"x": 448,
+		"y": -184.75208614068038,
+		"root": false
+	},
+	"br0640b23qsagk2z": {
+		"definition": "big_looting_addition",
+		"x": 448,
+		"y": -110.85125168440823,
+		"root": false
+	},
+	"jmepd3jcmj8oua04": {
+		"definition": "big_cr_extra_count",
+		"x": 320,
+		"y": -258.6529205969524,
+		"root": false
+	},
+	"g6wyk0423nzm8nul": {
+		"definition": "decreased_exhaustion",
+		"x": 256,
+		"y": -295.6033378250885,
+		"root": false
+	},
+	"nqv7xfxnrp15jqeh": {
+		"definition": "big_cr_recharge_time",
+		"x": 384,
+		"y": -147.8016689125442,
+		"root": false
+	},
+	"x3uw0zft09jgakoi": {
+		"definition": "decreased_exhaustion",
+		"x": 384,
+		"y": -73.90083445627204,
+		"root": false
+	},
+	"llxgopr7wbsucamq": {
+		"definition": "saturation",
+		"x": -128,
+		"y": -369.50417228136047,
+		"root": false
+	},
+	"s238d9g2ka8rilfn": {
+		"definition": "saturation",
+		"x": 128,
+		"y": -369.50417228136047,
+		"root": false
+	},
+	"2xmlusp7vqtib8ix": {
+		"definition": "decreased_exhaustion",
+		"x": -384,
+		"y": -73.90083445627215,
+		"root": false
+	},
+	"hqw7prq3y45hchn5": {
+		"definition": "decreased_exhaustion",
+		"x": -256,
+		"y": -295.6033378250884,
+		"root": false
+	},
+	"j0k2pss7hfz4t0pa": {
+		"definition": "big_fortune",
+		"x": -64,
+		"y": -332.5537550532244,
+		"root": false
+	},
+	"ebmv6rp9vq3ndio0": {
+		"definition": "big_mining_speed",
+		"x": 64,
+		"y": -332.5537550532244,
+		"root": false
+	},
+	"66s9xl5ks1eg56wk": {
+		"definition": "big_cr_distance",
+		"x": 256,
+		"y": -221.70250336881628,
+		"root": false
+	},
+	"9p178yxjd5460d4i": {
+		"definition": "big_looting_addition",
+		"x": 320,
+		"y": -110.85125168440814,
+		"root": false
+	},
+	"lssce48lxrajnt4m": {
+		"definition": "big_player_luck",
+		"x": -256,
+		"y": -221.70250336881625,
+		"root": false
+	},
+	"4mrc1n3kdk43v2lu": {
+		"definition": "big_harvest_addition",
+		"x": -320,
+		"y": -110.85125168440814,
+		"root": false
+	},
+	"t6mvvd1p4yad428y": {
+		"definition": "xp_gained",
+		"x": 0,
+		"y": 665.1075101064489,
+		"root": false
+	},
+	"3g2sizuz7x81n3bl": {
+		"definition": "swimming_speed",
+		"x": -64,
+		"y": 628.1570928783128,
+		"root": false
+	},
+	"c5fm72cmyl0h48er": {
+		"definition": "block_reach",
+		"x": -128,
+		"y": 591.2066756501767,
+		"root": false
+	},
+	"o9xv4a4x9u4t5yan": {
+		"definition": "natural_regen",
+		"x": 64,
+		"y": 628.1570928783128,
+		"root": false
+	},
+	"9j11ywmuqxywe4mg": {
+		"definition": "respiration_addition",
+		"x": 128,
+		"y": 591.2066756501767,
+		"root": false
+	},
+	"lsgf635e5gggh0ka": {
+		"definition": "saturation",
+		"x": -192,
+		"y": 554.2562584220408,
+		"root": false
+	},
+	"v5o10as8pv4hx36f": {
+		"definition": "swimming_speed",
+		"x": -256,
+		"y": 517.3058411939047,
+		"root": false
+	},
+	"780xbo69fhh3gle1": {
+		"definition": "natural_regen",
+		"x": 256,
+		"y": 517.3058411939046,
+		"root": false
+	},
+	"7obv8bm1hae3obje": {
+		"definition": "saturation",
+		"x": 0,
+		"y": 591.2066756501767,
+		"root": false
+	},
+	"t8ajd639zpjpftfy": {
+		"definition": "root_joa",
+		"x": 0,
+		"y": 517.3058411939046,
+		"root": true
+	},
+	"eb760go6862qkp0b": {
+		"definition": "sprinting_speed",
+		"x": -64,
+		"y": 554.2562584220407,
+		"root": false
+	},
+	"zkj42fw1wv0ahn66": {
+		"definition": "saturation",
+		"x": -64,
+		"y": 480.3554239657685,
+		"root": false
+	},
+	"4oo0xe62c83d1olm": {
+		"definition": "block_reach",
+		"x": -128,
+		"y": 517.3058411939046,
+		"root": false
+	},
+	"lykz26utt2he9okr": {
+		"definition": "saturation",
+		"x": -192,
+		"y": 480.35542396576864,
+		"root": false
+	},
+	"0yh3rxq6hkdsh1k4": {
+		"definition": "sprinting_speed",
+		"x": 64,
+		"y": 554.2562584220407,
+		"root": false
+	},
+	"17u71l73zgwrd8mv": {
+		"definition": "saturation",
+		"x": 64,
+		"y": 480.35542396576864,
+		"root": false
+	},
+	"xn6lyzoh9gir1wg5": {
+		"definition": "respiration_addition",
+		"x": 128,
+		"y": 517.3058411939046,
+		"root": false
+	},
+	"jueo8soiaxi5h3cz": {
+		"definition": "saturation",
+		"x": 192,
+		"y": 480.35542396576864,
+		"root": false
+	},
+	"mbte6m29ypviqzrw": {
+		"definition": "saturation",
+		"x": -128,
+		"y": 369.50417228136047,
+		"root": false
+	},
+	"c2iz9shuk2gx3f3t": {
+		"definition": "big_respiration_addition",
+		"x": -128,
+		"y": 443.4050067376325,
+		"root": false
+	},
+	"kcl9wtpw3z852ma3": {
+		"definition": "big_block_reach",
+		"x": 128,
+		"y": 443.40500673763256,
+		"root": false
+	},
+	"t1deoyb7qbm859ok": {
+		"definition": "saturation",
+		"x": 128,
+		"y": 369.50417228136047,
+		"root": false
+	},
+	"2jzows97ibowmin2": {
+		"definition": "saturation",
+		"x": 192,
+		"y": 554.2562584220407,
+		"root": false
+	},
+	"jb4hj8s0traf13j8": {
+		"definition": "big_natural_regen",
+		"x": -64,
+		"y": 406.4545895094965,
+		"root": false
+	},
+	"8eg9ahwjczb38a8y": {
+		"definition": "big_respiration_addition",
+		"x": -64,
+		"y": 332.55375505322445,
+		"root": false
+	},
+	"ouq6q79lebybjab3": {
+		"definition": "big_swimming_speed",
+		"x": 64,
+		"y": 406.4545895094965,
+		"root": false
+	},
+	"oa9badm371dretnp": {
+		"definition": "big_block_reach",
+		"x": 64,
+		"y": 332.55375505322445,
+		"root": false
+	},
+	"cr2dwtw18o180k7t": {
+		"definition": "fortune",
+		"x": 128,
+		"y": -591.2066756501767,
+		"root": false
+	},
+	"gxdropztjiy4itdl": {
+		"definition": "special_adaptive",
+		"x": -384,
+		"y": -221.70250336881625,
+		"root": false
+	},
+	"d6eky5274gdts3cg": {
+		"definition": "special_adaptive",
+		"x": 0,
+		"y": -443.4050067376325,
+		"root": false
+	},
+	"qp1q7kar35v6vtuo": {
+		"definition": "special_adaptive",
+		"x": 384,
+		"y": -221.70250336881628,
+		"root": false
+	},
+	"r9lmb27geaysik3l": {
+		"definition": "special_adaptive",
+		"x": 0,
+		"y": 443.40500673763256,
+		"root": false
+	},
+	"vosbmjifvl1t8lmd": {
+		"definition": "big_pickaxe_speed",
+		"x": 0,
+		"y": -295.6033378250884,
+		"root": false
+	},
+	"4p75ejad3w36r09z": {
+		"definition": "big_shovel_speed",
+		"x": 0,
+		"y": -221.70250336881628,
+		"root": false
+	},
+	"xl1keu4bmv8yp0j5": {
+		"definition": "big_fortune",
+		"x": 0,
+		"y": -147.8016689125442,
+		"root": false
+	},
+	"x077v7ci9rzlmh0s": {
+		"definition": "big_cr_extra_count",
+		"x": 256,
+		"y": -147.8016689125442,
+		"root": false
+	},
+	"m6xykf1p0e8ankax": {
+		"definition": "big_fishing_lure",
+		"x": -256,
+		"y": -147.8016689125442,
+		"root": false
+	},
+	"hfpmt19eiulfsiqt": {
+		"definition": "big_player_luck",
+		"x": -64,
+		"y": -36.95041722813605,
+		"root": false
+	},
+	"xpa98p0hs9r5igdm": {
+		"definition": "big_decreased_exhaustion",
+		"x": -320,
+		"y": -184.75208614068023,
+		"root": false
+	},
+	"hc39ei62qweoykda": {
+		"definition": "big_saturation",
+		"x": 0,
+		"y": -369.5041722813604,
+		"root": false
+	},
+	"n1uzpf4lbug1ba1j": {
+		"definition": "big_harvest_addition",
+		"x": -128,
+		"y": -73.9008344562721,
+		"root": false
+	},
+	"jxm035i5uwu7e7zs": {
+		"definition": "big_fishing_luck",
+		"x": -192,
+		"y": -110.85125168440814,
+		"root": false
+	},
+	"rwonbcdfkzn2zpl3": {
+		"definition": "big_mining_speed",
+		"x": 0,
+		"y": -73.9008344562721,
+		"root": false
+	},
+	"7z00bdbi29ingnkk": {
+		"definition": "big_decreased_exhaustion",
+		"x": 320,
+		"y": -184.75208614068023,
+		"root": false
+	},
+	"a78el2i8zw9kxezw": {
+		"definition": "big_saturation",
+		"x": 0,
+		"y": 369.50417228136047,
+		"root": false
+	},
+	"rtuw7sdsev1cbn49": {
+		"definition": "big_natural_regen",
+		"x": 0,
+		"y": 295.6033378250884,
+		"root": false
+	},
+	"3ht5qcnktj4fkbbw": {
+		"definition": "big_swimming_speed",
+		"x": 0,
+		"y": 221.70250336881628,
+		"root": false
+	},
+	"j2y67k9mnqb4ml2o": {
+		"definition": "big_block_reach",
+		"x": 0,
+		"y": 147.8016689125442,
+		"root": false
+	},
+	"nyxiz1r2wvbbvzy0": {
+		"definition": "big_respiration_addition",
+		"x": 0,
+		"y": 73.9008344562721,
+		"root": false
+	},
+	"4ipiziujv4k9h2sc": {
+		"definition": "big_cr_recharge_time",
+		"x": 192,
+		"y": -110.85125168440814,
+		"root": false
+	},
+	"luka83iy9iveuws9": {
+		"definition": "big_cr_distance",
+		"x": 128,
+		"y": -73.9008344562721,
+		"root": false
+	},
+	"b9zyoc2kjxf68y8y": {
+		"definition": "big_looting_addition",
+		"x": 64,
+		"y": -36.95041722813605,
+		"root": false
+	},
+	"d92bqy8z33m3pudd": {
+		"definition": "ability_graceful",
+		"x": 64,
+		"y": -110.85125168440814,
+		"root": false
+	},
+	"5t8brlzejtiiai1s": {
+		"definition": "ability_quenched",
+		"x": 128,
+		"y": 73.9008344562721,
+		"root": false
+	},
+	"3fqvkkw23btkbmjm": {
+		"definition": "ability_graceful",
+		"x": 320,
+		"y": 184.75208614068023,
+		"root": false
+	},
+	"2hfz46pumsnrfyvc": {
+		"definition": "ability_quenched",
+		"x": -128,
+		"y": 73.9008344562721,
+		"root": false
+	},
+	"lezeqroac5jj7f55": {
+		"definition": "xp_gained",
+		"x": 64,
+		"y": 110.85125168440814,
+		"root": false
+	},
+	"erukitbzk2tgy5yn": {
+		"definition": "block_reach",
+		"x": -192,
+		"y": 184.75208614068023,
+		"root": false
+	},
+	"hl29w91lu8qqywzh": {
+		"definition": "big_decreased_exhaustion",
+		"x": 192,
+		"y": 110.85125168440814,
+		"root": false
+	},
+	"22hfxci5zfzns9w8": {
+		"definition": "reset_adventure",
+		"x": 0,
+		"y": 0,
+		"root": true
+	},
+	"futc417bcssmifmx": {
+		"definition": "xp_gained",
+		"x": -64,
+		"y": 110.85125168440814,
+		"root": false
+	},
+	"3yl84sqid21t5ug8": {
+		"definition": "ability_graceful",
+		"x": -64,
+		"y": -110.85125168440814,
+		"root": false
+	},
+	"1hk6vyxkx4p641xz": {
+		"definition": "xp_gained",
+		"x": -128,
+		"y": 0,
+		"root": false
+	},
+	"1o7hjqcclhpo5peq": {
+		"definition": "xp_gained",
+		"x": 128,
+		"y": 0,
+		"root": false
+	},
+	"bpo2oqzbgq1ibp3m": {
+		"definition": "big_decreased_exhaustion",
+		"x": -192,
+		"y": 110.85125168440814,
+		"root": false
+	},
+	"fiy9x6afz81n0ww9": {
+		"definition": "respiration_addition",
+		"x": 192,
+		"y": 184.75208614068023,
+		"root": false
+	},
+	"yzf8i0p51uon3j5d": {
+		"definition": "cr_distance",
+		"x": 256,
+		"y": 73.9008344562721,
+		"root": false
+	},
+	"egednmj44ncrvwfw": {
+		"definition": "player_luck",
+		"x": -256,
+		"y": 73.9008344562721,
+		"root": false
+	},
+	"xvj65qjbraauwbci": {
+		"definition": "natural_regen",
+		"x": -64,
+		"y": 36.95041722813605,
+		"root": false
+	},
+	"d57smh31s6v40nnd": {
+		"definition": "natural_regen",
+		"x": 64,
+		"y": 36.95041722813605,
+		"root": false
+	},
+	"g6wwu27hbnktg7in": {
+		"definition": "ability_graceful",
+		"x": -320,
+		"y": 184.75208614068023,
+		"root": false
+	},
+	"ovdvwp1n6vzrzj64": {
+		"definition": "big_saturation",
+		"x": 256,
+		"y": 147.8016689125442,
+		"root": false
+	},
+	"enve7l82ammp021h": {
+		"definition": "big_saturation",
+		"x": -256,
+		"y": 147.8016689125442,
+		"root": false
+	}
+}

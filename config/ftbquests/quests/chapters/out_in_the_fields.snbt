@@ -1,0 +1,1441 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "out_in_the_fields"
+	group: "092734D55C33B066"
+	icon: "caupona:portable_brazier"
+	id: "7699FC69B514AC1B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"652ABF40A0980A4E"
+				"2FDE0B45C7BDFBDF"
+			]
+			dependency_requirement: "one_completed"
+			description: [""]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "caupona:asafoetida_spice_jar"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4CC803E28A718CB4"
+			rewards: [
+				{
+					id: "6BCEF1466C72CD77"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "7A3896098C94FF31"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Archaic Spice"
+			tasks: [
+				{
+					icon: "caupona:silphium"
+					id: "59BE5FEB57FC3C6B"
+					observe_type: 0
+					timer: 0L
+					title: "&eFind: &rSilphium"
+					to_observe: "caupona:silphium_block"
+					type: "observation"
+				}
+				{
+					id: "123495B7188DF866"
+					item: {
+						Count: 1
+						id: "caupona:asafoetida_spice_jar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&ePreperate: &rAsafœtida"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependency_requirement: "one_started"
+			hide_dependency_lines: true
+			icon: "caupona:portable_brazier"
+			id: "5711223A05FB932D"
+			rewards: [
+				{
+					id: "29BA1E86F6059D9D"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "33ADDD94AE423C54"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Stews \\& Soups"
+			tasks: [
+				{
+					id: "59AACE57CFDD53FF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:stew_pot"
+								}
+								{
+									Count: 1b
+									id: "caupona:lead_stew_pot"
+								}
+							]
+						}
+					}
+					title: "&eStew Pots"
+					type: "item"
+				}
+				{
+					id: "6221C285775D615D"
+					item: "caupona:portable_brazier"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aStew Pots"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "652ABF40A0980A4E"
+			rewards: [
+				{
+					id: "6B14CE7AC6F19722"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "3FD873ADDF0DBE42"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Herbal Resting"
+			tasks: [{
+				id: "4082E8C9C8F1DC8A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "caupona:opus_latericium_counter_with_dolium"
+							}
+							{
+								Count: 1b
+								id: "caupona:opus_incertum_counter_with_dolium"
+							}
+							{
+								Count: 1b
+								id: "caupona:brick_counter_with_dolium"
+							}
+							{
+								Count: 1b
+								id: "caupona:stone_brick_counter_with_dolium"
+							}
+							{
+								Count: 1b
+								id: "caupona:mud_counter_with_dolium"
+							}
+						]
+					}
+				}
+				title: "&eDolia"
+				type: "item"
+			}]
+			title: "&eSegment: &aDolia"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"652ABF40A0980A4E"
+				"053651F4A767892B"
+				"5711223A05FB932D"
+				"7B8A09FB3D63B5B9"
+				"528A196F5B5BDF95"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "caupona:book"
+				}
+			}
+			id: "334A9E0B3371010A"
+			rewards: [{
+				id: "1A5DCBC1E85F4AAF"
+				type: "xp"
+				xp: 1
+			}]
+			shape: "circle"
+			size: 3.0d
+			subtitle: "Back Then..."
+			tasks: [{
+				id: "255C09D4385A621D"
+				title: "&eIntroduction: &aRustic Accommodation"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "053651F4A767892B"
+			rewards: [
+				{
+					id: "2B292EBB0668897E"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "21F6AE937DA98A9B"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Heating Surface"
+			tasks: [{
+				id: "718DDEFC6879E80B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "caupona:mud_kitchen_stove"
+							}
+							{
+								Count: 1b
+								id: "caupona:stone_brick_kitchen_stove"
+							}
+							{
+								Count: 1b
+								id: "caupona:brick_kitchen_stove"
+							}
+							{
+								Count: 1b
+								id: "caupona:opus_incertum_kitchen_stove"
+							}
+							{
+								Count: 1b
+								id: "caupona:opus_latericium_kitchen_stove"
+							}
+						]
+					}
+				}
+				title: "&eStoves"
+				type: "item"
+			}]
+			title: "&eSegment: &aStoves"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			icon: "caupona:tessellation_workbench"
+			id: "7B8A09FB3D63B5B9"
+			rewards: [
+				{
+					id: "224561EE018C3087"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 4
+					id: "5D497DECDE270082"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Artisanal Tesserae"
+			tasks: [
+				{
+					id: "39D920763078060C"
+					item: "caupona:tessellation_workbench"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "52EA86FBD190DC17"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:brick_tesserae"
+								}
+								{
+									Count: 1b
+									id: "caupona:basalt_tesserae"
+								}
+								{
+									Count: 1b
+									id: "caupona:pumice_tesserae"
+								}
+							]
+						}
+					}
+					title: "Mosaic Pieces"
+					type: "item"
+				}
+				{
+					id: "67569416A3235FE9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "caupona:mosaic_bases"
+						}
+					}
+					title: "Mosaic Base"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "chiselsandbits:chisel_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "0D4FD79E66BEAA3D"
+					item: "caupona:mosaic"
+					title: "&eCarve: &rMosaic"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aTessalation Workbench"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["053651F4A767892B"]
+			icon: "caupona:copper_frying_pan"
+			id: "2407BAC4CB90536C"
+			rewards: [
+				{
+					id: "34295215648A50F0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5379AA81EB36DE4C"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Sauté's \\& Stir-Fry"
+			tasks: [
+				{
+					id: "107BA3D8FF242C97"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:stone_griddle"
+								}
+								{
+									Count: 1b
+									id: "caupona:copper_frying_pan"
+								}
+								{
+									Count: 1b
+									id: "caupona:iron_frying_pan"
+								}
+								{
+									Count: 1b
+									id: "caupona:lead_frying_pan"
+								}
+							]
+						}
+					}
+					title: "&eGriddle \\& Pans"
+					type: "item"
+				}
+				{
+					block: "caupona:gravy_boat"
+					block_type: 0
+					icon: {
+						Count: 1
+						id: "caupona:gravy_boat"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4E3884A33432669B"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rGravy Boat"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					icon: {
+						Count: 1
+						id: "caupona:sauteed_beef"
+						tag: {
+							dish: {
+								feffects: [ ]
+								hasSpice: 0b
+								heal: 30
+								items: [{
+									Count: 1b
+									id: "minecraft:beef"
+									th_countf: 2.0f
+								}]
+								sat: 0.88666666f
+							}
+						}
+					}
+					id: "17CC0B8CBA0C2097"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:id_regex"
+									tag: {
+										value: "caupona:seared_.*"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:id_regex"
+									tag: {
+										value: "caupona:sauteed_.*"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:id_regex"
+									tag: {
+										value: "caupona:huevos_.*"
+									}
+								}
+							]
+						}
+					}
+					match_nbt: false
+					title: "&eSauté/Stir Fry: &rDish"
+					type: "item"
+				}
+			]
+			title: "Pans \\& Oil"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5711223A05FB932D"]
+			icon: {
+				Count: 1
+				id: "caupona:bamboo_skimmer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "38557059FC67B597"
+			rewards: [
+				{
+					id: "7E3B8BCAEEE4A7C9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "564F1BD18148F5EA"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Soup Concentrating"
+			tasks: [
+				{
+					id: "2737F4B30272683B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:bamboo_skimmer"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "caupona:iron_skimmer"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "&eSkimmers"
+					type: "item"
+				}
+				{
+					id: "0968AC2FA9ECE718"
+					item: "caupona:scraps"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["43C3E5D8167F0493"]
+			hide_dependency_lines: true
+			icon: "caupona:litharge_cake"
+			id: "3BF1C3D19006FF99"
+			rewards: [
+				{
+					id: "5A55ACFE0007ED07"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 4
+					id: "7C564E219972BA3B"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Inedible Cake"
+			tasks: [
+				{
+					id: "5BE918F07FF7B895"
+					item: "caupona:leaden_walnut"
+					title: "&eObtain: &rLeaden Walnut"
+					type: "item"
+				}
+				{
+					id: "59E31B40866978BE"
+					item: "caupona:litharge_cake"
+					type: "item"
+				}
+			]
+			title: "&eAcquire: &rLitharge Cake"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			id: "3027B76930D38EF5"
+			rewards: [
+				{
+					id: "24A3A02E1342CC63"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "4EB639FE310FC63B"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Rustic Trail Mix"
+			tasks: [
+				{
+					count: 3L
+					id: "42D6B95C3CA02A10"
+					item: { Count: 3, id: "caupona:wolfberries" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "561C17194EF6FC2B"
+					item: { Count: 3, id: "caupona:fig" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "2685B6BAB4C9868A"
+					item: { Count: 3, id: "caupona:walnut" }
+					type: "item"
+				}
+			]
+			title: "Berries \\& Nuts"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["053651F4A767892B"]
+			description: ["Gain enough building materials to build a rustic bathhouse. While resting inside the heated water, you gain &eexperience&r."]
+			icon: "caupona:wolf_statue"
+			id: "64E650AF8F9CAEF9"
+			rewards: [
+				{
+					id: "526107C7FE98373A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 3
+					id: "58824040D04EEBE3"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Dormant Knowledge"
+			tasks: [
+				{
+					id: "0CAA7E66341AE04E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:stone_brick_hypocaust_firebox"
+								}
+								{
+									Count: 1b
+									id: "caupona:brick_hypocaust_firebox"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_incertum_hypocaust_firebox"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_latericium_hypocaust_firebox"
+								}
+							]
+						}
+					}
+					title: "&eFireboxes"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "1A9ED67666F3AF18"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:stone_brick_caliduct"
+								}
+								{
+									Count: 1b
+									id: "caupona:brick_caliduct"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_incertum_caliduct"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_latericium_caliduct"
+								}
+							]
+						}
+					}
+					title: "&eCaliducts"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5E4971FA2D2EDCA3"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:stone_bricks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:bricks"
+								}
+								{
+									Count: 1b
+									id: "caupona:mixed_bricks"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_incertum"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_latericium"
+								}
+							]
+						}
+					}
+					title: "&eBathhouse Materials"
+					type: "item"
+				}
+				{
+					id: "7EFA9017E253F358"
+					item: {
+						Count: 1
+						id: "minecraft:water_bucket"
+						tag: {
+							Purity: -1
+						}
+					}
+					type: "item"
+				}
+				{
+					block: "caupona:wolf_statue"
+					block_type: 0
+					id: "4ABD38C1C4F1996D"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rWolf Statue"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "&eBuild: &rRustic Bathhouse"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			description: ["Come across a &eFumarole Vent&r."]
+			id: "5BAC332F07D06C71"
+			rewards: [
+				{
+					id: "1614177FCBE8E4E6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 2
+					id: "72DF1BFAFE66E147"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Volcanic Source"
+			tasks: [{
+				icon: "caupona:fumarole_vent"
+				id: "57F2459F092FDA23"
+				observe_type: 0
+				timer: 0L
+				title: "&eFind: &rFumarole Vent"
+				to_observe: "caupona:fumarole_vent"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"652ABF40A0980A4E"
+				"2FDE0B45C7BDFBDF"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "caupona:garum_spice_jar"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "282887425437831F"
+			rewards: [
+				{
+					id: "189631EA4305603D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 2
+					id: "23785F5791156A5C"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Fermented Fish"
+			tasks: [
+				{
+					id: "740EE48E68F4DD5F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "caupona:garum_fish"
+						}
+					}
+					title: "&eGarum Components"
+					type: "item"
+				}
+				{
+					id: "31CB43577512BBAD"
+					item: {
+						Count: 1
+						id: "caupona:garum_spice_jar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&ePreperate: &rGarum"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"652ABF40A0980A4E"
+				"2FDE0B45C7BDFBDF"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "caupona:vinegar_spice_jar"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "62471DA8DD4127B8"
+			rewards: [
+				{
+					id: "4058B51EDE513123"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 2
+					id: "68B87F597A9558EA"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Fermented Fruits"
+			tasks: [
+				{
+					id: "178FD14B64AFEF02"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "caupona:vinegar_fruits"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "caupona:vinegar_fruits_small"
+									}
+								}
+							]
+						}
+					}
+					title: "Vinegar Components"
+					type: "item"
+				}
+				{
+					id: "0B01699BF7D03F8A"
+					item: {
+						Count: 1
+						id: "caupona:vinegar_spice_jar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&ePreperate: &rVinegar"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"652ABF40A0980A4E"
+				"2FDE0B45C7BDFBDF"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "48A769386B759EBD"
+			rewards: [
+				{
+					id: "013DB3DF42026BA1"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "798BC193093194A2"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Simpler Condiments"
+			tasks: [{
+				id: "4434B85EE6B65E42"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "caupona:chives_spice_jar"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "caupona:sugar_spice_jar"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Simple Spices"
+				type: "item"
+			}]
+			title: "&ePreperate: &rSimpler Spices"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["053651F4A767892B"]
+			icon: "caupona:soot"
+			id: "01C993B7456C832A"
+			rewards: [
+				{
+					id: "7D1B913C4552E11E"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 3
+					id: "02CD8D670141D8FA"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Soot Accumulation"
+			tasks: [
+				{
+					count: 2L
+					id: "7EEF8C06CD6A548F"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:mud_chimney_flue"
+								}
+								{
+									Count: 1b
+									id: "caupona:stone_brick_chimney_flue"
+								}
+								{
+									Count: 1b
+									id: "caupona:brick_chimney_flue"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_incertum_chimney_flue"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_latericium_chimney_flue"
+								}
+							]
+						}
+					}
+					title: "&eChimney Flues"
+					type: "item"
+				}
+				{
+					id: "119EA5E9A6652CB8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:mud_chimney_pot"
+								}
+								{
+									Count: 1b
+									id: "caupona:stone_brick_chimney_pot"
+								}
+								{
+									Count: 1b
+									id: "caupona:brick_chimney_pot"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_incertum_chimney_pot"
+								}
+								{
+									Count: 1b
+									id: "caupona:opus_latericium_chimney_pot"
+								}
+							]
+						}
+					}
+					title: "&eChimney Pots"
+					type: "item"
+				}
+				{
+					block: "caupona:chimney_pot"
+					block_type: 1
+					checkItem: true
+					id: "35E406AED2155C3E"
+					isItemInteraction: false
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:shovels"
+						}
+					}
+					title: "&eCollect: &rSoot"
+					type: "questsadditions:use"
+					value: 1L
+				}
+				{
+					id: "6A043D55E8EF1B42"
+					item: "caupona:soot"
+					type: "item"
+				}
+			]
+			title: "&eBuild: &rChimney Facility"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"62471DA8DD4127B8"
+				"652ABF40A0980A4E"
+				"2FDE0B45C7BDFBDF"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Cook something using &9Leaden Cookware&r amidst &eVinegar&r to accumulate the desired Spice."]
+			icon: {
+				Count: 1
+				id: "caupona:sapa_spice_jar"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2FA3F6212144DCA4"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "4C818FB0BB13EDD5"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 4
+					id: "3A2DCECFEFB22A06"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Lead Leached"
+			tasks: [
+				{
+					id: "0C39F99774EBB6E1"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "caupona:lead_frying_pan"
+								}
+								{
+									Count: 1b
+									id: "caupona:lead_stew_pot"
+								}
+								{
+									Count: 1b
+									id: "convivium:lead_basin"
+								}
+							]
+						}
+					}
+					title: "Leaden Cookware"
+					type: "item"
+				}
+				{
+					id: "14B5E69E64B614A9"
+					item: {
+						Count: 1
+						id: "caupona:sapa_spice_jar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&ePreparate: &rDefrutum"
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"652ABF40A0980A4E"
+				"5711223A05FB932D"
+			]
+			dependency_requirement: "one_completed"
+			id: "7F6EC22B30D4F185"
+			rewards: [
+				{
+					id: "33456BB9D1B3B2CB"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "6016897D3618789A"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Gelling Process"
+			tasks: [{
+				id: "5A569366C340EA69"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "caupona:aspics"
+					}
+				}
+				title: "&eAspic Types"
+				type: "item"
+			}]
+			title: "&eForm: &rAspic"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			icon: "caupona:situla"
+			id: "05C7CEBC9BA8F21D"
+			rewards: [
+				{
+					id: "0D9029049245BD5B"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "38537DE0CE64815C"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Fluid Vessels"
+			tasks: [
+				{
+					id: "4D24C592712A35AD"
+					item: "caupona:situla"
+					type: "item"
+				}
+				{
+					id: "5CAE65FCF9FE2466"
+					item: "convivium:jug"
+					type: "item"
+				}
+			]
+			title: "Situla \\& Jug"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "326E995473F992AE"
+			rewards: [
+				{
+					id: "2093AD943A48401F"
+					type: "xp"
+					xp: 3
+				}
+				{
+					id: "31B1FB115A1A7357"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Presentation Matters"
+			tasks: [{
+				id: "38C5CED40C36ACA7"
+				item: "convivium:fruit_platter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			hide_dependency_lines: true
+			icon: "convivium:aeolipile"
+			id: "528A196F5B5BDF95"
+			rewards: [
+				{
+					id: "3FF20D78B1B2D8C7"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 2
+					id: "254D580105BDE66F"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Steam Turbine"
+			tasks: [
+				{
+					id: "1C8042587A1E43E4"
+					item: "convivium:aeolipile"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "22C396DA7983E6E8"
+					item: "convivium:cage_wheel"
+					type: "item"
+				}
+				{
+					id: "31DE3820775979A0"
+					item: "convivium:cog"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aÆolipile"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["528A196F5B5BDF95"]
+			id: "404BAEC4AE0F49BE"
+			rewards: [
+				{
+					id: "405943FEBB4435C1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "76CFA6C4980229B9"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Blending Ingredients"
+			tasks: [{
+				id: "0F43ECF0397A0F97"
+				item: "convivium:whisk"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["528A196F5B5BDF95"]
+			id: "4E3D30DEC0888555"
+			rewards: [
+				{
+					id: "668BDB186570EDC6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 2
+					id: "5675992DF70BE2B7"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Fine Powders"
+			tasks: [{
+				id: "57F293F76B411C5D"
+				item: "convivium:pestle_and_mortar"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"053651F4A767892B"
+				"5BAC332F07D06C71"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: "convivium:basin"
+			id: "2FDE0B45C7BDFBDF"
+			rewards: [
+				{
+					id: "60E0DC544A7DC856"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "5A4FD20300E27F79"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Evaporating Results"
+			tasks: [{
+				id: "66A0D5209DFAA367"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "convivium:basin"
+							}
+							{
+								Count: 1b
+								id: "convivium:lead_basin"
+							}
+						]
+					}
+				}
+				title: "&eBasins"
+				type: "item"
+			}]
+			title: "Basins"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["31DE3820775979A0"]
+			id: "4B41ECB71602563F"
+			rewards: [
+				{
+					id: "34FB9CA0E6FFE474"
+					type: "xp"
+					xp: 8
+				}
+				{
+					count: 2
+					id: "3FADE80014EE42D6"
+					item: "kubejs:rustic_box"
+					type: "item"
+				}
+			]
+			subtitle: "Water Conveying"
+			tasks: [
+				{
+					count: 8L
+					id: "1BDD8CD4994260C8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "convivium:felsic_tuff_aqueduct"
+								}
+								{
+									Count: 1b
+									id: "convivium:stone_aqueduct"
+								}
+								{
+									Count: 1b
+									id: "convivium:sandstone_aqueduct"
+								}
+							]
+						}
+					}
+					title: "&eAqueducts"
+					type: "item"
+				}
+				{
+					id: "3210EECBC0374C23"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "convivium:felsic_tuff_aqueduct_wavemaker"
+								}
+								{
+									Count: 1b
+									id: "convivium:stone_aqueduct_wavemaker"
+								}
+								{
+									Count: 1b
+									id: "convivium:sandstone_aqueduct_wavemaker"
+								}
+							]
+						}
+					}
+					title: "&eAqueduct Wavemakers"
+					type: "item"
+				}
+			]
+			title: "&eBuild: &rAqueduct Channel"
+			x: 0.0d
+			y: 5.5d
+		}
+	]
+	title: "{quest.overview.base_label.title} De Agri Cultura"
+}

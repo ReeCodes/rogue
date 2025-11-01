@@ -1,0 +1,344 @@
+{
+  "wooden": {
+    "weight": 2.2,
+    "length": 6.0,
+    "duration": 100,
+    "damage": 3.0
+  },
+  "stone": {
+    "weight": 4.0,
+    "length": 7.0,
+    "duration": 200,
+    "damage": 4.0
+  },
+  "copper": {
+    "weight": 4.5,
+    "length": 7.5,
+    "duration": 250,
+    "damage": 4.5
+  },
+  "iron": {
+    "weight": 5.0,
+    "length": 8.0,
+    "duration": 300,
+    "damage": 5.0
+  },
+  "gold": {
+    "weight": 6.5,
+    "length": 11.0,
+    "duration": 450,
+    "damage": 4.5
+  },
+  "diamond": {
+    "weight": 4.0,
+    "length": 9.0,
+    "duration": 500,
+    "damage": 6.0
+  },
+  "netherite": {
+    "weight": 6.2,
+    "length": 10.0,
+    "duration": 600,
+    "damage": 7.0
+  },
+  "creative": {
+    "weight": 0.9,
+    "length": 24.0,
+    "duration": -1,
+    "damage": 256.0
+  },
+  "ironwood": {
+    "weight": 4.0,
+    "length": 9.0,
+    "duration": 350,
+    "damage": 5.5
+  },
+  "naga_scale": {
+    "weight": 4.5,
+    "length": 9.0,
+    "duration": 350,
+    "damage": 5.5
+  },
+  "knightmetal": {
+    "weight": 5.0,
+    "length": 9.0,
+    "duration": 450,
+    "damage": 6.0
+  },
+  "steeleaf": {
+    "weight": 4.0,
+    "length": 10.0,
+    "duration": 450,
+    "damage": 6.0
+  },
+  "fiery": {
+    "weight": 6.0,
+    "length": 11.0,
+    "duration": 600,
+    "damage": 8.0
+  },
+  "nickel": {
+    "weight": 5.0,
+    "length": 8.0,
+    "duration": 300,
+    "damage": 5.0
+  },
+  "tin": {
+    "weight": 5.0,
+    "length": 8.0,
+    "duration": 300,
+    "damage": 5.0
+  },
+  "lead": {
+    "weight": 6.0,
+    "length": 8.0,
+    "duration": 300,
+    "damage": 5.0
+  },
+  "silver": {
+    "weight": 5.5,
+    "length": 8.0,
+    "duration": 300,
+    "damage": 5.0
+  },
+  "bronze": {
+    "weight": 5.0,
+    "length": 9.0,
+    "duration": 500,
+    "damage": 6.0
+  },
+  "constantan": {
+    "weight": 5.0,
+    "length": 9.0,
+    "duration": 500,
+    "damage": 6.0
+  },
+  "invar": {
+    "weight": 5.0,
+    "length": 9.0,
+    "duration": 500,
+    "damage": 6.0
+  },
+  "electrum": {
+    "weight": 6.0,
+    "length": 9.0,
+    "duration": 500,
+    "damage": 6.0
+  },
+  "lumium": {
+    "weight": 3.5,
+    "length": 10.0,
+    "duration": 550,
+    "damage": 6.5
+  },
+  "signalum": {
+    "weight": 4.0,
+    "length": 10.0,
+    "duration": 550,
+    "damage": 6.5
+  },
+  "enderium": {
+    "weight": 4.5,
+    "length": 12.0,
+    "duration": 600,
+    "damage": 7.0
+  },
+  "steel": {
+    "weight": 5.5,
+    "length": 9.0,
+    "duration": 500,
+    "damage": 6.0
+  },
+  "rose_gold": {
+    "weight": 5.5,
+    "length": 10.0,
+    "duration": 500,
+    "damage": 5.0
+  },
+  "flux": {
+    "weight": 6.5,
+    "length": 14.0,
+    "duration": 400,
+    "damage": 6.5
+  },
+  "compressed_iron": {
+    "weight": 5.5,
+    "length": 7.5,
+    "duration": 350,
+    "damage": 5.5
+  },
+  "iesnium": {
+    "weight": 5.1,
+    "length": 9.5,
+    "duration": 550,
+    "damage": 6.5
+  },
+  "depth": {
+    "weight": 6.0,
+    "length": 11.0,
+    "duration": 550,
+    "damage": 6.5
+  },
+  "sky": {
+    "weight": 4.0,
+    "length": 8.0,
+    "duration": 350,
+    "damage": 5.5
+  },
+  "hallowed_gold": {
+    "weight": 6.5,
+    "length": 12.0,
+    "duration": 550,
+    "damage": 5.0
+  },
+  "malignant_pewter": {
+    "weight": 6.0,
+    "length": 10.0,
+    "duration": 600,
+    "damage": 6.5
+  },
+  "soul_stained_steel": {
+    "weight": 5.5,
+    "length": 9.0,
+    "duration": 450,
+    "damage": 5.5
+  },
+  "deorum": {
+    "weight": 6.0,
+    "length": 11.0,
+    "duration": 550,
+    "damage": 6.5
+  },
+  "obsidian": {
+    "weight": 6.5,
+    "length": 6.0,
+    "duration": 600,
+    "damage": 6.0
+  },
+  "wyvern": {
+    "weight": 6.0,
+    "length": 8.0,
+    "duration": 450,
+    "damage": 6.0
+  },
+  "draconic": {
+    "weight": 7.0,
+    "length": 18.0,
+    "duration": 800,
+    "damage": 9.0
+  },
+  "chaotic": {
+    "weight": 7.5,
+    "length": 18.0,
+    "duration": 800,
+    "damage": 10.0
+  },
+  "andesite_alloy": {
+    "weight": 4.5,
+    "length": 7.5,
+    "duration": 250,
+    "damage": 4.5
+  },
+  "zinc": {
+    "weight": 5.0,
+    "length": 8.0,
+    "duration": 300,
+    "damage": 5.0
+  },
+  "brass": {
+    "weight": 5.0,
+    "length": 9.0,
+    "duration": 400,
+    "damage": 5.5
+  },
+  "manasteel": {
+    "weight": 4.5,
+    "length": 9.0,
+    "duration": 400,
+    "damage": 5.5
+  },
+  "elementium": {
+    "weight": 5.0,
+    "length": 10.0,
+    "duration": 500,
+    "damage": 6.0
+  },
+  "terrasteel": {
+    "weight": 6.0,
+    "length": 11.0,
+    "duration": 650,
+    "damage": 7.0
+  },
+  "gaia_spirit": {
+    "weight": 5.0,
+    "length": 12.0,
+    "duration": 700,
+    "damage": 8.0
+  },
+  "alfsteel": {
+    "weight": 6.0,
+    "length": 18.0,
+    "duration": 800,
+    "damage": 9.0
+  },
+  "desh": {
+    "weight": 4.5,
+    "length": 10.0,
+    "duration": 400,
+    "damage": 5.5
+  },
+  "ostrum": {
+    "weight": 5.0,
+    "length": 11.0,
+    "duration": 500,
+    "damage": 6.0
+  },
+  "calorite": {
+    "weight": 5.5,
+    "length": 12.0,
+    "duration": 550,
+    "damage": 6.5
+  },
+  "amethyst_bronze": {
+    "weight": 5.0,
+    "length": 8.0,
+    "duration": 300,
+    "damage": 5.5
+  },
+  "cobalt": {
+    "weight": 4.5,
+    "length": 10.0,
+    "duration": 400,
+    "damage": 6.0
+  },
+  "hepatizon": {
+    "weight": 5.0,
+    "length": 10.0,
+    "duration": 500,
+    "damage": 7.0
+  },
+  "manyullyn": {
+    "weight": 6.0,
+    "length": 11.0,
+    "duration": 600,
+    "damage": 7.5
+  },
+  "pigiron": {
+    "weight": 4.5,
+    "length": 8.0,
+    "duration": 250,
+    "damage": 5.5
+  },
+  "queens_slime": {
+    "weight": 6.0,
+    "length": 11.0,
+    "duration": 500,
+    "damage": 7.0
+  },
+  "slimesteel": {
+    "weight": 5.5,
+    "length": 9.0,
+    "duration": 350,
+    "damage": 6.0
+  }
+}

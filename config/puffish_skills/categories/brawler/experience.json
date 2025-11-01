@@ -1,0 +1,451 @@
+{
+	"experience_per_level": {
+		"type": "expression",
+		"data": {
+			"expression": "min(level ^ 1.432 + 20, 3000)"
+		}
+	},
+	"sources": [
+		{
+			"type": "puffish_skills:kill_entity",
+			"data": {
+				"variables": {
+					"dropped_xp": {
+						"operations": [
+							{
+								"type": "get_dropped_experience"
+							}
+						]
+					},
+					"max_health": {
+						"operations": [
+							{
+								"type": "get_killed_living_entity"
+							},
+							{
+								"type": "get_max_health"
+							}
+						]
+					},
+					"tools": {
+						"operations": [{
+								"type": "get_weapon_item_stack"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"item": "#forge:tools"
+								}
+							}
+						]
+					},
+					"swords": {
+						"operations": [{
+								"type": "get_weapon_item_stack"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"item": "#minecraft:swords"
+								}
+							}
+						]
+					}
+				},
+				"experience": [{
+					"condition": "(tools | swords)",
+					"expression": "1 + min((dropped_xp + max_health) ^ 0.97, 100) * 0.07"
+				}],
+				"anti_farming": {
+					"limit_per_chunk": 30,
+					"reset_after_seconds": 200
+				}
+			}
+		},
+		{
+			"type": "puffish_skills:kill_entity",
+			"data": {
+				"variables": {
+					"dropped_xp": {
+						"operations": [
+							{
+								"type": "get_dropped_experience"
+							}
+						]
+					},
+					"max_health": {
+						"operations": [
+							{
+								"type": "get_killed_living_entity"
+							},
+							{
+								"type": "get_max_health"
+							}
+						]
+					},
+					"bows": {
+						"operations": [{
+								"type": "get_damage_source"
+							},
+							{
+								"type": "get_type"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"damage_type": "#is_projectile"
+								}
+							}
+						]
+					}
+				},
+				"experience": [{
+					"condition": "bows",
+					"expression": "1 + min((dropped_xp + max_health) ^ 0.67, 100) * 0.08"
+				}],
+				"anti_farming": {
+					"limit_per_chunk": 30,
+					"reset_after_seconds": 200
+				}
+			}
+		},
+		{
+			"type": "puffish_skills:kill_entity",
+			"data": {
+				"variables": {
+					"dropped_xp": {
+						"operations": [
+							{
+								"type": "get_dropped_experience"
+							}
+						]
+					},
+					"max_health": {
+						"operations": [
+							{
+								"type": "get_killed_living_entity"
+							},
+							{
+								"type": "get_max_health"
+							}
+						]
+					},
+					"magic": {
+						"operations": [{
+								"type": "get_damage_source"
+							},
+							{
+								"type": "get_type"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"damage_type": "#forge:is_magic"
+								}
+							}
+						]
+					}
+				},
+				"experience": [{
+					"condition": "magic",
+					"expression":"1 + min((dropped_xp + max_health) ^ 0.57, 100) * 0.06"
+				}],
+				"anti_farming": {
+					"limit_per_chunk": 30,
+					"reset_after_seconds": 200
+				}
+			}
+		},
+		{
+         "type":"puffish_skills:take_damage",
+         "data":{
+            "variables":{
+               "damage":{
+                  "operations":[
+                     {
+                        "type":"get_taken_damage"
+                     }
+                  ]
+               },
+               "is_mob":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"minecraft:mob_attack"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "projectile":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"arrow"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_fire":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:fire_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_blood":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:blood_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_ice":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:ice_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_lightning":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:lightning_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_holy":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:holy_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_ender":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:ender_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_evocation":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:evocation_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_nature":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:nature_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_eldritch":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"irons_spellbooks:eldritch_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":2,
+                           "false":0
+                        }
+                     }
+                  ]
+               },
+               "damage_sound":{
+                  "operations":[
+                     {
+                        "type":"get_damage_source"
+                     },
+                     {
+                        "type":"get_type"
+                     },
+                     {
+                        "type":"puffish_skills:test",
+                        "data":{
+                           "damage_type":"alshanex_familiars:sound_magic"
+                        }
+                     },
+                     {
+                        "type":"switch",
+                        "data":{
+                           "true":1,
+                           "false":0
+                        }
+                     }
+                  ]
+               }
+            },
+            "experience":"((damage_blood | damage_eldritch | damage_ender | damage_evocation | damage_evocation | damage_fire | damage_holy | damage_ice | damage_lightning | damage_nature | damage_sound) + is_mob + projectile) * (damage ^ 0.1)"
+         }
+      }
+	]
+}

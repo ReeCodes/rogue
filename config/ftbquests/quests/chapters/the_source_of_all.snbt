@@ -1,0 +1,1412 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_source_of_all"
+	group: "0073D527594A66DD"
+	icon: {
+		Count: 1
+		id: "citadel:fancy_item"
+		tag: {
+			DisplayBob: 0
+			DisplayItem: "elementalcraft:pure_element_holder"
+			DisplayScale: 1.0d
+			DisplayShake: 0
+			DisplaySpin: 1
+			DisplayZoom: 0
+		}
+	}
+	id: "3532652C1733BE31"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Seek out those &eUnknown Floating Orbs&r."]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "elementalcraft:element_book"
+				}
+			}
+			id: "45529191476D01F1"
+			rewards: [
+				{
+					id: "14A40D029790232B"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "068FA6452F3848D3"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Unknown Floating Orbs"
+			tasks: [
+				{
+					count: 2L
+					id: "2886FED13045BD34"
+					item: "elementalcraft:inert_crystal"
+					type: "item"
+				}
+				{
+					id: "5A76EA88034BED5C"
+					item: "elementalcraft:small_container"
+					type: "item"
+				}
+				{
+					id: "13D4380AB79FD3A9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "elementalcraft:evaporator"
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:extractor"
+								}
+							]
+						}
+					}
+					title: "&eElemental Extractors"
+					type: "item"
+				}
+			]
+			title: "&eIntroduction: &aElemental Outsourcing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45529191476D01F1"]
+			icon: "elementalcraft:drenched_iron_ingot"
+			id: "2BF663625E036D19"
+			rewards: [
+				{
+					id: "7527FE3D0AD7C907"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "290FF4CA8CF82E08"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Permeating Vessels"
+			tasks: [
+				{
+					id: "08E1B1951AF9B89E"
+					item: "elementalcraft:infuser"
+					type: "item"
+				}
+				{
+					id: "700C19EFF145DF4F"
+					item: "elementalcraft:drenched_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "4B12001F251170D6"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "elementalcraft:aircrystal"
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:watercrystal"
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:firecrystal"
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:earthcrystal"
+								}
+							]
+						}
+					}
+					title: "&eElement Crystals"
+					type: "item"
+				}
+			]
+			title: "&eChapter I: &aElemental Infusion"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BF663625E036D19"]
+			id: "723DE14E176AAFBA"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "676A6FD6E843AD06"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "5EF6A687B3033811"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			subtitle: "Aer"
+			tasks: [{
+				id: "0F6567B18BD24C17"
+				item: "elementalcraft:aircrystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2BF663625E036D19"]
+			id: "10F9384AD7D4DBC2"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "67CA6DD369B25F92"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "169505477EC03ED5"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			subtitle: "Aqua"
+			tasks: [{
+				id: "4830F7F06CC3B57D"
+				item: "elementalcraft:watercrystal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2BF663625E036D19"]
+			id: "5301ABC20AC7C437"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "7647F18C6E210E03"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "6ACD717E87BB7FE3"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			subtitle: "Ignis"
+			tasks: [{
+				id: "2B9C367A40B48D9D"
+				item: "elementalcraft:firecrystal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2BF663625E036D19"]
+			id: "3E1069E23E665AD5"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "020EB921DF49A62B"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "760526F65A5CBB58"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			subtitle: "Terra"
+			tasks: [{
+				id: "4C2144BF0BFD8A56"
+				item: "elementalcraft:earthcrystal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"2BF663625E036D19"
+				"723DE14E176AAFBA"
+			]
+			icon: "elementalcraft:swift_alloy_ingot"
+			id: "09686C5AEE1F4125"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "7C1C090876549A3B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "086CEA136CB44658"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Holding Together"
+			tasks: [
+				{
+					id: "23BB4A3632659A1A"
+					item: "elementalcraft:container"
+					type: "item"
+				}
+				{
+					id: "50AFEABB8CE9A179"
+					item: "elementalcraft:binder"
+					type: "item"
+				}
+				{
+					id: "444E85E0F8D1AD0D"
+					item: "elementalcraft:swift_alloy_ingot"
+					type: "item"
+				}
+			]
+			title: "&eChapter II: &aElemental Binding"
+			x: -7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4290CD4909C0862C"]
+			id: "2A4223847D90954F"
+			rewards: [
+				{
+					id: "6625D6F2B1C90740"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 4
+					id: "5FECD1CE1EB5FAE9"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Giant's Source"
+			tasks: [{
+				id: "612F41B3BAA38DBF"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "elementalcraft:reservoir_fire"
+										}
+										{
+											Count: 1b
+											id: "elementalcraft:reservoir_water"
+										}
+										{
+											Count: 1b
+											id: "elementalcraft:reservoir_earth"
+										}
+										{
+											Count: 1b
+											id: "elementalcraft:reservoir_air"
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:custom"
+								tag: {
+									value: "no_nbt"
+								}
+							}
+						]
+					}
+				}
+				title: "&eElement Reservoirs"
+				type: "item"
+			}]
+			title: "&eOn The Side: &aMajor Containment"
+			x: -2.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["09686C5AEE1F4125"]
+			icon: "elementalcraft:crystallizer"
+			id: "4290CD4909C0862C"
+			rewards: [
+				{
+					id: "7EE69440C405B694"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 4
+					id: "340D269D93E9AAAF"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Solidifying Intensely"
+			tasks: [
+				{
+					id: "4AE5877B892C632E"
+					item: "elementalcraft:crystallizer"
+					type: "item"
+				}
+				{
+					id: "7FF7245663C32108"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "elementalcraft:.+_gem"
+						}
+					}
+					title: "&eElemental Gems"
+					type: "item"
+				}
+			]
+			title: "&eChapter III: &aCrystallization"
+			x: 0.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["4290CD4909C0862C"]
+			icon: "minecraft:anvil"
+			id: "345C05A0381D8A7C"
+			rewards: [
+				{
+					id: "601E44BFA9262BBC"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 4
+					id: "59DDEF6BA29D97A2"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Setting Gemstones"
+			tasks: [
+				{
+					id: "2C58199A83C39ACD"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "elementalcraft:jewel"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "ec_jewel"
+									}
+								}
+							]
+						}
+					}
+					title: "&eConstruct: &rJewel"
+					type: "item"
+				}
+				{
+					icon: "minecraft:anvil"
+					id: "0DC2F94E32B5B42F"
+					title: "&eApply: &rJewel"
+					type: "custom"
+				}
+			]
+			title: "&eOn The Side: &aJewel Application"
+			x: 2.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["5301ABC20AC7C437"]
+			id: "1535B639AF73AFC6"
+			rewards: [
+				{
+					id: "74A4AF191753B79F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "07351151D64372CD"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			subtitle: "Incinerator"
+			tasks: [{
+				id: "5297A9896230F577"
+				item: "elementalcraft:firefurnace"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"3E1069E23E665AD5"
+				"7312D901B08A5823"
+			]
+			id: "2A4C0D5433F63EE7"
+			rewards: [
+				{
+					id: "586C4BADE1D44754"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 6
+					id: "1E6261165BF62845"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			subtitle: "Impurity Riddance"
+			tasks: [{
+				id: "362382EE3F2A2CD9"
+				item: "elementalcraft:purifier"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"700C19EFF145DF4F"
+				"10F9384AD7D4DBC2"
+			]
+			id: "4E2528C843B41286"
+			rewards: [
+				{
+					id: "467311F5BF16E952"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "278F0934AF6D90C0"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			subtitle: "Hydrodynamic Sharpness"
+			tasks: [{
+				id: "38E2E7051BE3F8E2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "elementalcraft:water_mill_wood_saw"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:water_mill_grindstone"
+							}
+						]
+					}
+				}
+				title: "&eWater Mill Grinders"
+				type: "item"
+			}]
+			title: "Water Mill Instruments"
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4290CD4909C0862C"]
+			icon: "elementalcraft:inscriber"
+			id: "24062E85EBFB6B5C"
+			rewards: [
+				{
+					id: "1CA4C21114A9FE86"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 4
+					id: "2247ADE0C413D37D"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Stonemason"
+			tasks: [
+				{
+					id: "3ACFEBCF338E1F51"
+					item: "elementalcraft:inscriber"
+					type: "item"
+				}
+				{
+					id: "4078DA27A938A6BD"
+					item: {
+						Count: 1
+						id: "elementalcraft:chisel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CE6BC4BB7A2DB47"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:wii"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:kaworu"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:manx"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:soaryn"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:zod"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:tzeentch"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:fus"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:mewtwo"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:jita"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:claptrap"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:tano"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:rune"
+									tag: {
+										elementalcraft: {
+											rune: "elementalcraft:bombadil"
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eRunes"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aRune Inscription"
+			x: 0.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["7312D901B08A5823"]
+			icon: "elementalcraft:focus"
+			id: "60FA90A74829137A"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "0BAF797FB4CE3B6F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 5
+					id: "6A1216D910C73BD2"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Spell Poet"
+			tasks: [
+				{
+					id: "1E01403CA3567005"
+					item: "elementalcraft:spell_desk"
+					type: "item"
+				}
+				{
+					id: "0B837E55228D435C"
+					item: "elementalcraft:scroll_paper"
+					type: "item"
+				}
+				{
+					id: "403D322AD551C153"
+					item: "elementalcraft:spell_book"
+					type: "item"
+				}
+				{
+					id: "37003B0B9FAA047F"
+					item: "elementalcraft:focus"
+					type: "item"
+				}
+				{
+					id: "7E2C45B6C55A9317"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:gravelfall"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:stonewall"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:fireball"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:item_pull"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:ender_strike"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:flame_cleave"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:translocation"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:dash"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:silk_vein"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:animal_growth"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:ripening"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:purification"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:feather_spikes"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:tree_fall"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:inferno"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:heal"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:speed"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:shockwave"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:air_shield"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:scroll"
+									tag: {
+										elementalcraft: {
+											spell: "elementalcraft:repair"
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eCreate: &rSpell"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aSpells"
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5301ABC20AC7C437"
+				"09686C5AEE1F4125"
+			]
+			id: "500401D9C2C50009"
+			rewards: [
+				{
+					id: "0CFDD05D1474574E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "625EB0F962CE5967"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			subtitle: "Blasting Incinerator"
+			tasks: [{
+				id: "59837C41D0D58CA8"
+				item: "elementalcraft:fireblastfurnace"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4290CD4909C0862C"]
+			icon: "elementalcraft:pureinfuser"
+			id: "7312D901B08A5823"
+			rewards: [
+				{
+					id: "7EC8A2FFB8503828"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 5
+					id: "219B2E6615D0D1B7"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "All Four"
+			tasks: [
+				{
+					id: "71FAFA4A34678996"
+					item: "elementalcraft:pureinfuser"
+					type: "item"
+				}
+				{
+					id: "5031011E65AA03F0"
+					item: "elementalcraft:pedestal_fire"
+					type: "item"
+				}
+				{
+					id: "631E77E6EBC69FBB"
+					item: "elementalcraft:pedestal_water"
+					type: "item"
+				}
+				{
+					id: "372C7ED80E053147"
+					item: "elementalcraft:pedestal_earth"
+					type: "item"
+				}
+				{
+					id: "6705ADE77F3B5029"
+					item: "elementalcraft:pedestal_air"
+					type: "item"
+				}
+				{
+					id: "6C7DD61ECE0A1E03"
+					item: "elementalcraft:purecrystal"
+					type: "item"
+				}
+			]
+			title: "&eFinale: &aPedestal Infusion"
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4290CD4909C0862C"]
+			id: "7D48FEB11DD73287"
+			rewards: [
+				{
+					id: "5FCFDA9831034D92"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "28396A085C693C2B"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Natural Machines"
+			tasks: [{
+				id: "6684AB9C9EEF9D6D"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "elementalcraft:.+shrine"
+					}
+				}
+				title: "&eShrines"
+				type: "item"
+			}]
+			title: "&eOn The Side: &aShrines"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["09686C5AEE1F4125"]
+			id: "226D0B9D26B3C1C6"
+			rewards: [
+				{
+					id: "637BD616E810FA6D"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "22870FF0E6BF04D2"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Additional Attributes"
+			tasks: [{
+				id: "7EAA3C950D42D2DC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_efficiency"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_filling"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_mystical_grove"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_planting"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_stem_pollination"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_fortune"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_protection"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_nectar"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_vortex"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_range"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_strength"
+							}
+						]
+					}
+				}
+				title: "&eT1 Shrine Upgrades"
+				type: "item"
+			}]
+			title: "&eOn The Side: &aShrine Upgrades, Pt. I"
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7312D901B08A5823"]
+			id: "711801572A977117"
+			rewards: [
+				{
+					id: "05066CE1DEA3E2C6"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 6
+					id: "1ED21B7BDDBCA964"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Meaningful Changes"
+			tasks: [{
+				id: "4361EF754DB68F09"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_crystal_growth"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_translocation"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_overclocked_acceleration"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_optimization"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_springaline"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_boneless_growth"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_acceleration"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_silk_touch"
+							}
+							{
+								Count: 1b
+								id: "elementalcraft:shrine_upgrade_pickup"
+							}
+						]
+					}
+				}
+				title: "&eT2 Shrine Upgrades"
+				type: "item"
+			}]
+			title: "&eOn The Side: &aShrine Upgrades, Pt. II"
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"7312D901B08A5823"
+				"50AFEABB8CE9A179"
+			]
+			dependency_requirement: "one_completed"
+			icon: "elementalcraft:source_analysis_glass"
+			id: "6AA6F89407B8AFF3"
+			rewards: [
+				{
+					id: "07C6A3E93FBD9ABC"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "4ED7631233F94488"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Artificial Sources"
+			tasks: [
+				{
+					id: "75747BA73D00E236"
+					item: "elementalcraft:source_analysis_glass"
+					type: "item"
+				}
+				{
+					id: "66B30EDB13E73A7A"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "elementalcraft:source_displacement_plate_fire"
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:source_displacement_plate_water"
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:source_displacement_plate_earth"
+								}
+								{
+									Count: 1b
+									id: "elementalcraft:source_displacement_plate_air"
+								}
+							]
+						}
+					}
+					title: "&eDisplacement Plates"
+					type: "item"
+				}
+				{
+					id: "77227395DC9A3D0C"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											element_type: "fire"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											element_type: "water"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											element_type: "air"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											element_type: "earth"
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eSource Receptacles"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aSource Displacement"
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7312D901B08A5823"]
+			id: "3F41480757D4833F"
+			rewards: [
+				{
+					id: "3D98B985800679E7"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "496BB38580B649A9"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Elemental Pocket"
+			tasks: [
+				{
+					id: "7E27B16369FBAF74"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								air: 0
+								earth: 0
+								fire: 0
+								water: 0
+							}
+						}
+						id: "elementalcraft:pure_element_holder"
+					}
+					type: "item"
+				}
+				{
+					id: "69ED8B7B61356DD9"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									ForgeCaps: {
+										Parent: {
+											air: 0
+											earth: 0
+											fire: 0
+											water: 0
+										}
+									}
+									id: "elementalcraft:pure_element_holder"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											air: 100000
+											earth: 100000
+											fire: 100000
+											water: 100000
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eFill: &rElement Holder"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aAspect Collector"
+			x: 7.0d
+			y: -5.0d
+		}
+	]
+	title: "&f{quest.overview.magic_label.title} &dFloral: &rSourcing Out Source"
+}

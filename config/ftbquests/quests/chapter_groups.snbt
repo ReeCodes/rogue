@@ -1,0 +1,13 @@
+{
+	chapter_groups: [
+		{ id: "073810E5E4A0A5DB", title: "Toy Arsenal" }
+		{ id: "4E6F24CF14FB572B", title: "Innovative Interlude" }
+		{ id: "014FD9EFEDA986CF", title: "&fHoarder's Convenience" }
+		{ id: "46789BE19B4F2E15", title: "Fiends \\& Friends" }
+		{ id: "5CE92435AF830225", title: "Outer Worlds" }
+		{ id: "092734D55C33B066", title: "&fCherished Cultivation" }
+		{ id: "0073D527594A66DD", title: "Floral Encounters" }
+		{ id: "29237F79502E6EF5", title: "Druidic Arts" }
+		{ id: "3D958E05CD56D7EA", title: "Arcane Artistry" }
+	]
+}

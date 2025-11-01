@@ -1,0 +1,634 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "emain_ralong_the_way"
+	group: ""
+	icon: {
+		Count: 1
+		id: "citadel:fancy_item"
+		tag: {
+			DisplayBob: 0
+			DisplayItem: "rogue:completionist_trophy"
+			DisplayScale: 2.0d
+			DisplayShake: 0
+			DisplaySpin: 0
+			DisplayZoom: 0
+		}
+	}
+	id: "79AF378B6436EA9D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["21115BA133AA7495"]
+			description: ["[\"\",{\"text\":\"Visit all the \"},{\"text\": \"Dimensions\", \"color\": \"gold\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"21115BA133AA7495\" } },{\"text\":\".\"}]"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/alien_trophy"
+					}
+				}
+			}
+			id: "12BD792A1087249F"
+			rewards: [
+				{
+					id: "7AC6410B3621E0E1"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					count: 25
+					id: "5EE0B0BDE3C0E811"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "4F5518BE30034D2C"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/alien_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Extraterrestial"
+			tasks: [{
+				id: "1C81B5BF1C23AC89"
+				title: "&eComplete: &aSuperposition"
+				type: "checkmark"
+			}]
+			title: "&6Alien"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46789BE19B4F2E15"]
+			description: ["[\"\",{\"text\":\"Defeat\",\"color\":\"red\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7285283690E8A55C\"}},{\"text\":\" and \",\"color\":\"white\"},{\"text\":\"befriend\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"60873094522C3290\"}},{\"text\":\" all the Mobs.\"}]"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/miscreant_trophy"
+					}
+				}
+			}
+			id: "7B64C4783B21BBC9"
+			rewards: [
+				{
+					id: "15EE98243E48F838"
+					type: "xp_levels"
+					xp_levels: 200
+				}
+				{
+					count: 25
+					id: "26C8A5D073B8B1BA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "116D4B57AD40A685"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/miscreant_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "All The Bosses"
+			tasks: [{
+				id: "2A9A77582429228E"
+				title: "&eComplete: &aEnmities"
+				type: "checkmark"
+			}]
+			title: "&6Miscreant"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "170AFFCB6917032B"
+			rewards: [
+				{
+					id: "20A3E388AA749E92"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 5
+					id: "742D04A464B0B9FC"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "Healthy Fellow"
+			tasks: [{
+				icon: "bhc:yellow_heart"
+				id: "3FD294778CAE3400"
+				title: "&eReach: &r100 Health"
+				type: "custom"
+			}]
+			title: "&eOne The Side: &aBe Healthy, Pt. I"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["170AFFCB6917032B"]
+			id: "6114045CF657721C"
+			rewards: [
+				{
+					id: "5B8EF04819F73109"
+					type: "xp_levels"
+					xp_levels: 150
+				}
+				{
+					count: 10
+					id: "516FEBE0D9DE3F5C"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Tough Skin"
+			tasks: [{
+				icon: "bhc:green_heart"
+				id: "62A2B8521C7318A5"
+				title: "&eReach: &r300 Health"
+				type: "custom"
+			}]
+			title: "&eOne The Side: &aBe Healthy, Pt. II"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"12BD792A1087249F"
+				"67F9837B918EF95D"
+				"7B64C4783B21BBC9"
+				"246D2D006328DEB6"
+				"071F47032DC3929D"
+				"5C1D37460164ECB3"
+				"4F5338339868DA96"
+				"4509CEEAEB451F3D"
+			]
+			description: ["Complete every dependency tied to this quest."]
+			icon: {
+				Count: 1
+				id: "citadel:fancy_item"
+				tag: {
+					DisplayBob: 0
+					DisplayItem: "rogue:completionist_trophy"
+					DisplayScale: 1.75d
+					DisplayShake: 0
+					DisplaySpin: 1
+					DisplayZoom: 0
+				}
+			}
+			id: "52DEDCEA74ACCE4B"
+			rewards: [
+				{
+					count: 64
+					id: "45A703D261743966"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					count: 100
+					id: "6CB19B55E9061747"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "6EEC214D287E3F78"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/completionist_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 5.0d
+			subtitle: "All Done"
+			tasks: [{
+				id: "0E80E4ECE2657507"
+				title: "&eComplete: &aEverything"
+				type: "checkmark"
+			}]
+			title: "&6Completionist"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6114045CF657721C"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/health_trophy"
+					}
+				}
+			}
+			id: "246D2D006328DEB6"
+			rewards: [
+				{
+					id: "7E1D469EF4E762FA"
+					type: "xp_levels"
+					xp_levels: 300
+				}
+				{
+					count: 25
+					id: "2E71A6D652DBE47E"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "4C8F446462E28B2D"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/health_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Invulnerable"
+			tasks: [{
+				icon: "bhc:blue_heart"
+				id: "451F36FB9784BE0D"
+				title: "&eReach: &r600 Health"
+				type: "custom"
+			}]
+			title: "&6Vivid"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["29237F79502E6EF5"]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/druid_trophy"
+					}
+				}
+			}
+			id: "4A89C9B88E482EF4"
+			rewards: [
+				{
+					id: "330977AD862A5292"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 10
+					id: "6C06A0093BFCBAFA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "1AECC503BB16CA65"
+					item: {
+						Count: 1
+						id: "trofers:medium_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/druid_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Tainted"
+			tasks: [{
+				id: "16108E0B1A5B24C1"
+				title: "&eComplete: &aDruidic Arts"
+				type: "checkmark"
+			}]
+			title: "&6True Druid"
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0073D527594A66DD"]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/anthophile_trophy"
+					}
+				}
+			}
+			id: "210E53EC4EB50EC6"
+			rewards: [
+				{
+					id: "2356C0A9112741E1"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 10
+					id: "2AC53A8D378BE48C"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "1AA90F618F62C5EF"
+					item: {
+						Count: 1
+						id: "trofers:medium_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/anthophile_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Flourished"
+			tasks: [{
+				id: "5C74F19504A3EF1C"
+				title: "&eComplete: &aFloral Encounters"
+				type: "checkmark"
+			}]
+			title: "&6Florist"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"4A89C9B88E482EF4"
+				"210E53EC4EB50EC6"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/mage_trophy"
+					}
+				}
+			}
+			id: "5C1D37460164ECB3"
+			rewards: [
+				{
+					id: "0CF71CB227AC4327"
+					type: "xp_levels"
+					xp_levels: 75
+				}
+				{
+					count: 20
+					id: "455EB8AB188A1638"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "46897C08DE9BDDD3"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/mage_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "All-Knowing"
+			tasks: [{
+				id: "1F27FB47F3C93960"
+				title: "&eComplete: &aMagic Chapters"
+				type: "checkmark"
+			}]
+			title: "&6Omnimagus"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7B97BD09F41FDCB2"
+				"6D914EF851B509AD"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:medium_plate"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/founder_trophy"
+					}
+				}
+			}
+			id: "071F47032DC3929D"
+			rewards: [
+				{
+					id: "43883D08239A3E79"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "452F5D671795DB7C"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "39918F7C95DDA00F"
+					item: {
+						Count: 1
+						id: "trofers:medium_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/founder_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Basics"
+			tasks: [{
+				id: "280395C34CA28027"
+				title: "&eComplete: &aFundamentals"
+				type: "checkmark"
+			}]
+			title: "&6Founder"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["073810E5E4A0A5DB"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/antiquarian_trophy"
+					}
+				}
+			}
+			id: "67F9837B918EF95D"
+			rewards: [
+				{
+					id: "57EF2D183EAE89F9"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					count: 25
+					id: "5E8DEB7ECE1EF981"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "1CA22C33DDADC0DA"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/antiquarian_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Collector"
+			tasks: [{
+				id: "578674C957FB157F"
+				title: "&eComplete: &aToy Arsenal"
+				type: "checkmark"
+			}]
+			title: "&6Antiquarian"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"29ABA1187F27E14B"
+				"7DE69203ACF3C120"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/mole_trophy"
+					}
+				}
+			}
+			id: "4F5338339868DA96"
+			rewards: [
+				{
+					id: "766431D09D15E248"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					count: 25
+					id: "5E15D9B8C0346184"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					id: "2DDDC33C55EFE7D2"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/mole_trophy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Subsurface"
+			tasks: [{
+				id: "5C971C6953C2BF5D"
+				title: "&eComplete: &aOuter Worlds"
+				type: "checkmark"
+			}]
+			title: "&6Mole"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4E6F24CF14FB572B"
+				"014FD9EFEDA986CF"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/innovator_trophy"
+					}
+				}
+			}
+			id: "4509CEEAEB451F3D"
+			rewards: [{
+				id: "0079953038728158"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/innovator_trophy"
+						}
+					}
+				}
+				type: "item"
+			}]
+			size: 3.0d
+			tasks: [{
+				id: "2884DB437B5811D5"
+				title: "&eComplete: &aInnovative Interlude"
+				type: "checkmark"
+			}]
+			title: "&6Innovator"
+			x: 3.0d
+			y: -3.0d
+		}
+	]
+	title: "<rainb>Completionist</rainb>"
+}

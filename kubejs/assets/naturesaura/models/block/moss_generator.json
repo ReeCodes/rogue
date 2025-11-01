@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "naturesaura:block/moss_generator",
+    "side": "naturesaura:block/moss_generator",
+    "top": "naturesaura:block/moss_generator_top"
+  }
+}

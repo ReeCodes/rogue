@@ -1,0 +1,6 @@
+{
+   "parent": "item/handheld",
+   "textures": {
+        "layer0": "yoyos:item/create/andesite_alloy"
+    }
+}

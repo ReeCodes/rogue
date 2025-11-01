@@ -1,0 +1,53 @@
+{
+	"experience_per_level": {
+		"type": "expression",
+		"data": {
+			"expression": "min(level ^ 1.432 + 20, 1000)"
+		}
+	},
+	"sources": [
+		{
+			"type": "puffish_skills:kill_entity",
+			"data": {
+				"variables": {
+					"dropped_xp": {
+						"operations": [
+							{
+								"type": "get_dropped_experience"
+							}
+						]
+					},
+					"max_health": {
+						"operations": [
+							{
+								"type": "get_killed_living_entity"
+							},
+							{
+								"type": "get_max_health"
+							}
+						]
+					},
+					"magic": {
+						"operations": [{
+								"type": "get_damage_source"
+							},
+							{
+								"type": "get_type"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"damage_type": "#forge:is_magic"
+								}
+							}
+						]
+					}
+				},
+				"experience": [{
+					"condition": "magic",
+					"expression":"1 + min((dropped_xp + max_health) ^ 0.97, 700) * 0.07"
+				}]
+			}
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"rogue_completed": {
+	"sounds": [
+			"rogue:misc/rogue_completed"
+		],
+	"subtitle": "rogue.sound.subtitle.rogue_completed"
+	}
+}

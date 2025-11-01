@@ -1,0 +1,33 @@
+{
+	"unlocked_by_default": true,
+	"exclusive_root": false,
+	"title": "Explorer",
+	"icon": {
+		"type": "item",
+		"data": {
+				"item": "alexscaves:cave_tablet",
+				"nbt": "{Rainbow:1b}"
+		}
+	},
+	"background": "alexscaves:textures/block/limestone.png",
+	"colors": {
+        "connections": {
+			"locked": {
+				"fill": "#403f35",
+				"stroke": "#272521"
+			},
+			"available": {
+				"fill": "#ffffff",
+				"stroke": "#402d04"
+			},
+			"unlocked": {
+				"fill": "#a8851c",
+				"stroke": "#6f5712"
+			},
+			"excluded": {
+				"fill": "#00FFFFFF",
+				"stroke": "#00FFFFFF"
+			}
+        }
+    }
+}

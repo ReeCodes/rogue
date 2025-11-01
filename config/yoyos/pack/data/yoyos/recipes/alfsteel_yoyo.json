@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mythicbotany:alfsteel_ingot"
+  },
+  "base": {
+    "item": "yoyos:terrasteel_yoyo"
+  },
+  "result": {
+    "item": "yoyos:alfsteel_yoyo"
+  },
+  "template": {
+    "item": "mythicbotany:alfsteel_template"
+  }
+}

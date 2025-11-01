@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft:block/hopper_inside",
+    "side": "naturesaura:block/hopper_upgrade",
+    "top": "naturesaura:block/infused_iron_block"
+  }
+}

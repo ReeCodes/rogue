@@ -1,0 +1,1152 @@
+{
+	"reset_adventure": {
+		"title": [{"text":"§f\uE83D","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"\n§9Resets skill tree, abilities (also [Brawler] abilties) and refunds points."},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"extra_description": [{"text":"\n§f\uEB16 ","font":"symbols_n_stuff:symbols"},{"text":"[XP Sources]","color":"#8CDEA2"},{"text":"\n§3Mine blocks§f, §3fish§f and §3harvest crops§f"}],
+		"size": 1.25,
+		"cost": 0,
+		"required_spent_points": 1,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "railways:remote_lens"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "puffish_reset adventure"
+				}
+			}
+		]
+	},
+	"root_mole": {
+		"title": "§6Archetype:§f Mole",
+		"size": 2.0,
+		"description": "§a+0.5§f Fortune\n§a+1§f Mining Speed\n§a+5%§f Shovel Speed\n§a+5%§f Pickaxe Speed",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "alexscaves:textures/misc/advancement/icon/discover_underzealot.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.fortune",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.mining_speed",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:shovel_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:pickaxe_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "g09hvo5vdqrlmtxp"
+		}
+	},
+	"root_cultivator": {
+		"title": "§6Archetype:§f Cultivator",
+		"size": 2.0,
+		"description": "§a+0.5§f Fishing Luck\n§a+0.5§f Fishing Lure\n§a+0.5§f Additional Harvest Drops\n§a+0.5§f Extra Luck",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "reliquary:fertile_lily_pad"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:fishing_luck",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:fishing_lure",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:harvest",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "7no0dnl5p9ic5c2i"
+		}
+	},
+	"root_adversary": {
+		"title": "§6Archetype:§f Adversary",
+		"size": 2.0,
+		"description": "§a+0.5§f Looting\n§a+50%§f Roll Distance\n§a+1§f Extra Roll\n§a+15%§f Roll Cooldown",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "alexscaves:hood_of_darkness"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:looting",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:distance",
+					"value": 0.5,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:count",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:recharge",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "0v73bbn042elpcqt"
+		}
+	},
+	"root_joa": {
+		"title": "§6Archetype:§f Jack Of All",
+		"size": 2.0,
+		"description": "§a+3%§f Natural Regeneration\n§a+5%§f Swimming Speed\n§a+10%§f Block Reach\n§a+20%§f Respiration",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "chipped:silly_carved_pumpkin"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:player.healing",
+					"value": 0.03,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:swim_speed",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:block_reach",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:respiration",
+					"value": 0.2,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "bj8qnmch4m65ntex"
+		}
+	},
+	"fortune": {
+		"title": "§a+0.5§f Mining Fortune",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:fortunate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.fortune",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "3o2s6bu8oslt7kw7"
+		}
+	},
+	"mining_speed": {
+		"title": "§a+4%§f Mining Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:haste"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.mining_speed",
+					"value": 0.04,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "dtgr20q1htf9cab3"
+		}
+	},
+	"sprinting_speed": {
+		"title": "§a+4%§f Sprint Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "speed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.sprinting_speed",
+					"value": 0.04,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "0twx5jlc3308uvft"
+		}
+	},
+	"xp_gained": {
+		"title": "§a+3%§f XP Gained",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "attributeslib:knowledge"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:experience_gained",
+					"value": 0.03,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "hooumwen6e8f8e4y"
+		}
+	},
+	"cr_distance": {
+		"title": "§a+15%§f Roll Distance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:swift_swim"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:distance",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "1j1qk9mkp0km5p8j"
+		}
+	},
+	"cr_extra_count": {
+		"title": "§a+1§f Extra Roll",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:cursed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:count",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "sdz6e7fi8wv371lj"
+		}
+	},
+	"cr_recharge_time": {
+		"title": "§a+10%§f Roll Cooldown",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "ender_wyrmlings:dash_cooldown"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:recharge",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "cmbrhggvar73v0fx"
+		}
+	},
+	"fishing_luck": {
+		"title": "§a+0.5§f Fishing Luck",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "aquaculture:gold_fishing_rod"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:fishing_luck",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "06tjq9wyespbt7eq"
+		}
+	},
+	"fishing_lure": {
+		"title": "§a+0.5§f Fishing Lure",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "majruszsaccessories:metal_lure"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:fishing_lure",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "qh9zyjmgbkg90mhd"
+		}
+	},
+	"harvest_addition": {
+		"title": "§a+0.5§f Additional Harvest Drops",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:golden_hoe"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:harvest",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "v1m9v02x8nnkrior"
+		}
+	},
+	"looting_addition": {
+		"title": "§a+0.5§f Additional Looting",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "majruszsaccessories:adventurer_kit"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:looting",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "q48grim2tkrb6nbh"
+		}
+	},
+	"respiration_addition": {
+		"title": "§a+10%§f Respiration",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "endermanoverhaul:bubble_pearl"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:respiration",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "g6sq5uxg2mcwuwev"
+		}
+	},
+	"natural_regen": {
+		"title": "§a+3%§f Natural Regeneration",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "bhc:red_heart_melted"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:player.healing",
+					"value": 0.03,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"metadata": {
+			"icon": "ownivocw7szyxjuz"
+		}
+	},
+	"saturation": {
+		"title": "§a+3%§f Saturation",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "farmersdelight:nourishment"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_nouveau.perk.saturation",
+					"value": 0.03,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"decreased_exhaustion": {
+		"title": "§a+3%§f Decreased Exhaustion",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "tetra:exhausted"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:player.stamina",
+					"value": 0.03,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"block_reach": {
+		"title": "§a+0.5§f Block Reach",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "convivium:toss_power"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:block_reach",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"swimming_speed": {
+		"title": "§a+5%§f Swim Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "convivium:thrusted"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:swim_speed",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"player_luck": {
+		"title": "§a+0.5§f Extra Luck",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "botania:cosmetic_four_leaf_clover"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"shovel_speed": {
+		"title": "§a+10%§f Shovel Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:diamond_shovel"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:shovel_speed",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"pickaxe_speed": {
+		"title": "§a+10%§f Pickaxe Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:diamond_pickaxe"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:pickaxe_speed",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"big_shovel_speed": {
+		"title": "§6Reinforced Spade",
+		"description": "§f\uE801\n\n§a+20%§f Shovel Speed\n§a+5%§f Pickaxe Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "botania:elementium_shovel"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:shovel_speed",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:pickaxe_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"big_pickaxe_speed": {
+		"title": "§6Reinforced Pick",
+		"description": "§f\uE801\n\n§a+20%§f Pickaxe Speed\n§a+5%§f Shovel Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "botania:elementium_pickaxe"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:pickaxe_speed",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:shovel_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"big_player_luck": {
+		"title": "§a+1§f Luck",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "luck"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"big_fortune": {
+		"title": "§a+1§f Mining Fortune",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "ae2:fluix_pickaxe"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.fortune",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"big_mining_speed": {
+		"title": "§a+8%§f Mining Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "artifacts:digging_claws"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.mining_speed",
+					"value": 0.08,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_sprinting_speed": {
+		"title": "§a+8%§f Sprint Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "neapolitan:sugar_rush"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.sprinting_speed",
+					"value": 0.08,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_xp_gained": {
+		"title": "§a+8%§f XP Gained",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "cofh_core:clarity"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:experience_gained",
+					"value": 0.08,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_cr_distance": {
+		"title": "§a+50%§f Roll Distance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "ender_wyrmlings:dash_forward"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:distance",
+					"value": 0.5,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_cr_extra_count": {
+		"title": "§a+2§f Additional Rolls",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "alexsmobs:earthquake"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:count",
+					"value": 2,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"big_cr_recharge_time": {
+		"title": "§a+24%§f Roll Cooldown",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "alexscaves:fiddlehead"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "combatroll:recharge",
+					"value": 0.24,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_fishing_luck": {
+		"title": "§a+1§f Fishing Luck",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "aquaculture:gold_hook"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:fishing_luck",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"big_fishing_lure": {
+		"title": "§a+1§f Fishing Lure",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "aquaculture:nether_star_hook"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:fishing_lure",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"big_harvest_addition": {
+		"title": "§a+1§f Additional Harvest Drops",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "reliquary:fertile_essence"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:harvest",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"big_looting_addition": {
+		"title": "§a+1§f Additional Looting",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "forbidden_arcanus:reinforced_deorum_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:looting",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"big_respiration_addition": {
+		"title": "§a+20%§f Respiration",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "alexscaves:bubbled"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:respiration",
+					"value": 0.2,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_natural_regen": {
+		"title": "§a+5%§f Natural Regeneration",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "regeneration"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:player.healing",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_saturation": {
+		"title": "§a+5%§f Saturation",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "hunger"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ars_nouveau:ars_nouveau.perk.saturation",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_decreased_exhaustion": {
+		"title": "§a+8%§f Decreased Exhaustion",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "alexsmobs:roadrunner_boots"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:player.stamina",
+					"value": 0.08,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"big_block_reach": {
+		"title": "§a+1§f Block Reach",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "goety:grave_glove"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:block_reach",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"big_swimming_speed": {
+		"title": "§a+14%§f Swim Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "convivium:maritime_fatigue"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:swim_speed",
+					"value": 0.14,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"special_adaptive": {
+		"size": 1.5,
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"title": "§6Adaptive",
+		"description": "§f\uE801\n\n§a+4%§f Heat Resistance\n§a+4%§f Cold Resistance",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "cold_sweat:chameleon_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "cold_sweat:cold_dampening",
+					"value": 0.04,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "cold_sweat:heat_dampening",
+					"value": 0.04,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"ability_graceful": {
+		"title": "§a+1 Level§f [§6Graceful§f]",
+		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn kill, gain Grace for §a(30s × Lv)§f.\n§9Cooldown: (30s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"extra_description": "\n§6Grace§f: Immunity against temperature-based damage.",
+		"size": 2.0,
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "rogue:textures/misc/gui/frame_ability_unlocked.png",
+				"available": "rogue:textures/misc/gui/frame_ability.png"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "cold_sweat:grace"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_graceful"
+				}
+			}
+		]
+	},
+	"ability_quenched": {
+		"title": "§a+1 Level§f [§6Quenched§f]",
+		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn kill, restore §a(1 §f\uE813§a × Lv)§f Thirst.\n\nWhile §bsated§f, double the effect.\n§9Cooldown: 3s§f","font":"minecraft:default"}],
+		"size": 2.0,
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "rogue:textures/misc/gui/frame_ability_unlocked.png",
+				"available": "rogue:textures/misc/gui/frame_ability.png"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "convivium:water",
+				"nbt": "{\"caupona:fluid\":{type:\"minecraft:empty\"}}"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_quenched"
+				}
+			}
+		]
+	}
+}

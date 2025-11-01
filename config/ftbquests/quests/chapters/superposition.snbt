@@ -1,0 +1,1066 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "superposition"
+	group: "5CE92435AF830225"
+	icon: "minecraft:echo_shard"
+	id: "21115BA133AA7495"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0000000000000176"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "mythicbotany:alf_pixie"
+					DisplayMobScale: 1.5d
+				}
+			}
+			id: "754E3803934A331B"
+			rewards: [
+				{
+					id: "60EA7460DDB285FF"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 4
+					id: "48BD87394B38A4BA"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "140267DEF89737E1"
+					item: "kubejs:floral_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Kvasir's Traversal"
+			tasks: [
+				{
+					id: "11DB46FE011D631A"
+					item: "mythicbotany:kvasir_mead"
+					title: "&eAcquire: &rMead of Kvasir"
+					type: "item"
+				}
+				{
+					dimension: "mythicbotany:alfheim"
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "mythicbotany:alf_pixie"
+							DisplayMobScale: 1.5d
+						}
+					}
+					id: "3D906DAF4A458059"
+					title: "&9Enter: &rAlfheim"
+					type: "dimension"
+				}
+			]
+			title: "&9Enter: &rAlfheim"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			description: ["Slowly lose your &esanity&r whilst standing on &eBedrock&r until being fully consumed by the fog."]
+			icon: "voidscape:voidic_crystal"
+			id: "2B3E220FA1C386A6"
+			rewards: [
+				{
+					id: "7630746E2D188F65"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "059E1EF0D5B51FF6"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Losing Sanity"
+			tasks: [
+				{
+					icon: "minecraft:bedrock"
+					id: "1F1A0B5E5F71A6AD"
+					title: "&9Task: &rStand on Bedrock below Y10"
+					type: "custom"
+				}
+				{
+					dimension: "voidscape:void"
+					icon: "voidscape:voidic_crystal"
+					id: "290570E8DEA3B152"
+					title: "&9Enter: &rThe Void"
+					type: "dimension"
+				}
+			]
+			title: "&9Enter: &rThe Void"
+			x: -63.0d
+			y: 0.0d
+		}
+		{
+			icon: "hyperbox:hyperbox"
+			id: "26599AA681E7B97E"
+			rewards: [
+				{
+					id: "68D2E69316B5D58B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "266271C67BAF12DC"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Personal Machine"
+			tasks: [
+				{
+					id: "4FD60C3E942460B3"
+					item: "hyperbox:hyperbox"
+					type: "item"
+				}
+				{
+					biome: "hyperbox:hyperbox"
+					icon: "hyperbox:hyperbox"
+					id: "315346F39C53CF0B"
+					title: "&9Enter: &rHyperbox"
+					type: "biome"
+				}
+			]
+			title: "&9Enter: &rHyperbox"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: "javd:portal_block"
+			id: "402E7B02FEA57F6F"
+			rewards: [
+				{
+					id: "4F5765C767143EC2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "254DE75D2289F5A3"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Free Space"
+			tasks: [
+				{
+					id: "225085A487708192"
+					item: "javd:portal_block"
+					type: "item"
+				}
+				{
+					dimension: "javd:void"
+					icon: "javd:portal_block"
+					id: "4BD1FF8B55EE4FEB"
+					title: "&9Enter: &rVoid Dimension"
+					type: "dimension"
+				}
+			]
+			title: "&9Enter: &rVoid Dimension"
+			x: -27.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"The portal frame is made out of ten normal &eStone Bricks&r. "
+				""
+				"Use the &eCatalyst&r onto the inner frame to open it."
+			]
+			icon: "undergarden:deepturf_block"
+			id: "50D551FBF08FE43A"
+			rewards: [
+				{
+					id: "31F7B5D633A48EF4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "47F59CC071D48CA0"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "The Swamp Below"
+			tasks: [
+				{
+					id: "65D4426852965C77"
+					item: "undergarden:catalyst"
+					type: "item"
+				}
+				{
+					dimension: "undergarden:undergarden"
+					icon: "undergarden:deepturf_block"
+					id: "709919FF642E4257"
+					title: "&9Enter: &rThe Undergarden"
+					type: "dimension"
+				}
+			]
+			title: "&9Enter: &rThe Undergarden"
+			x: -36.0d
+			y: 0.0d
+		}
+		{
+			description: ["Throwing a &ediamond&r into a two by two &epond of water&r surrounded by &eeight flowers&r will open the portal."]
+			id: "474475C9E4D3A306"
+			rewards: [
+				{
+					id: "4C07AB770111CC52"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "13EA8A6E12847B94"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Mystical Woodlands"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				id: "1D46584FAB33ECEE"
+				title: "&9Enter: &rThe Twilight Forest"
+				type: "dimension"
+			}]
+			x: -45.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"The portal frame is made out of ten &eGlowstone Blocks&r."
+				""
+				"Use a &eWater Bucket&r onto the inner frame to open it."
+			]
+			icon: "aether:aether_portal_frame"
+			id: "551277B21629C127"
+			rewards: [
+				{
+					id: "6066B27405254426"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "2FCB3F5E8377AE32"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Heavenly"
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "4C81710CC0CABCCA"
+				title: "&9Enter: &rThe Aether"
+				type: "dimension"
+			}]
+			title: "&9Enter: &rThe Aether"
+			x: -54.0d
+			y: 0.0d
+		}
+		{
+			id: "43C3E5D8167F0493"
+			rewards: [
+				{
+					id: "2882A77C83D202BC"
+					type: "xp"
+					xp: 7
+				}
+				{
+					id: "088F4CA37BD2D931"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Known Hellscape"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:netherrack"
+				id: "08D1A01A32F6F71B"
+				title: "&9Enter: &rThe Nether"
+				type: "dimension"
+			}]
+			x: -18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D0ADA64280B0E84"]
+			id: "0FA241E6F30219A4"
+			rewards: [
+				{
+					id: "3F7D47AE7534CD2B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "66B199BABE46628E"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Refurbished Exile"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:end_portal_frame"
+				id: "26BD8D85D54202FB"
+				title: "&9Enter: &rThe End"
+				type: "dimension"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			description: ["By throwing an &eEnder Pearl&r at either a &eBee Nest&r or &eBee Hive&r, you will be send into the &eRealm Of The Bees&r."]
+			id: "77AADFD11BD171CE"
+			rewards: [
+				{
+					id: "07B052754F471C46"
+					type: "xp"
+					xp: 8
+				}
+				{
+					count: 2
+					id: "04C2A54A71B6852F"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Inside The Hive"
+			tasks: [{
+				dimension: "the_bumblezone:the_bumblezone"
+				icon: "minecraft:bee_nest"
+				id: "6F50FE9D7C584D30"
+				title: "&9Enter: &rThe Bumblezone"
+				type: "dimension"
+			}]
+			title: "&9Enter: &rThe Bumblezone"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			description: ["Using a Warden's &eHeart Of The Deep&r allows the user to light up the inner frame, constructed in the middle of the &eAncient City&r."]
+			icon: "deeperdarker:infested_sculk"
+			id: "5D5B989A4F8D0E9D"
+			rewards: [
+				{
+					id: "58132DD9A580A3CF"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 4
+					id: "7C1503919DB64407"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Deeper \\& Darker"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/find_ancient_city"
+					criterion: ""
+					icon: "minecraft:echo_shard"
+					id: "5CB8E07DE8D6C913"
+					title: "&eDiscover: &rAncient City"
+					type: "advancement"
+				}
+				{
+					id: "4E15A1E0FB7C2C10"
+					item: "deeperdarker:heart_of_the_deep"
+					type: "item"
+				}
+				{
+					dimension: "deeperdarker:otherside"
+					icon: "deeperdarker:infested_sculk"
+					id: "7D4FEE57A2585B1E"
+					title: "&9Enter: &rOtherside"
+					type: "dimension"
+				}
+			]
+			title: "&9Enter: &rOtherside"
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			icon: "dimdungeons:block_portal_keyhole"
+			id: "73C6238D482A08FB"
+			rewards: [
+				{
+					id: "3DFE1F979520B914"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 2
+					id: "0859EA0667370CF5"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Challenges Await"
+			tasks: [
+				{
+					id: "7B8931F9A61A5C2F"
+					item: "dimdungeons:item_portal_key"
+					type: "item"
+				}
+				{
+					block: "minecraft:end_portal_frame"
+					block_type: 0
+					checkItem: true
+					id: "0B17C5604A484345"
+					isItemInteraction: true
+					item: "dimdungeons:item_portal_key"
+					title: "&eInscribe: &rBlank Portal Key"
+					type: "questsadditions:use"
+					value: 1L
+				}
+				{
+					icon: {
+						Count: 1
+						id: "dimdungeons:item_portal_key"
+						tag: {
+							dungeon_type: "BASIC"
+							key_activated: 1b
+						}
+					}
+					id: "2819CCC63E948548"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "dimdungeons:item_portal_key"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											key_activated: 1b
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											dungeon_type: "BASIC"
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eActivate: &rPortal Key"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7F95CA276077121E"
+					item: { Count: 9, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4951E5394752490D"
+					item: { Count: 2, id: "dimdungeons:block_gilded_portal" }
+					type: "item"
+				}
+				{
+					id: "57C0FA8AEC85198C"
+					item: "dimdungeons:block_portal_keyhole"
+					type: "item"
+				}
+				{
+					dimension: "dimdungeons:dungeon_dimension"
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "dimdungeons:block_gold_portal"
+							DisplayScale: 1.0d
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "2A18D8E8D99EEDDC"
+					title: "&9Enter: &rDungeon Dimension"
+					type: "dimension"
+				}
+			]
+			title: "&9Enter: &rDungeon Dimension"
+			x: 36.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B8931F9A61A5C2F"]
+			icon: "dimdungeons:item_homeward_pearl"
+			id: "2E758AE521BAE249"
+			rewards: [
+				{
+					id: "51EAAF879108AF5A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "4816814607243623"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Personal Homestead"
+			tasks: [
+				{
+					id: "3E3578ED043C70A8"
+					item: "dimdungeons:item_homeward_pearl"
+					type: "item"
+				}
+				{
+					id: "7CA7694B24B8AB10"
+					item: "dimdungeons:item_blank_build_key"
+					type: "item"
+				}
+				{
+					icon: "dimdungeons:item_key_build"
+					id: "54A2B3F1986751CE"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "dimdungeons:item_key_build"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											dungeon_type: "PERSONAL_BUILD"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											key_activated: 1b
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eActivate: &rPersonal Dimension Key"
+					type: "item"
+				}
+				{
+					dimension: "dimdungeons:build_dimension"
+					icon: {
+						Count: 1
+						id: "citadel:fancy_item"
+						tag: {
+							DisplayBob: 0
+							DisplayItem: "dimdungeons:block_gold_portal"
+							DisplayScale: 1.0d
+							DisplayShake: 0
+							DisplaySpin: 0
+							DisplayZoom: 0
+						}
+					}
+					id: "0ABFA9713AE8F7C8"
+					title: "&9Enter: &rBuilding Dimension"
+					type: "dimension"
+				}
+			]
+			title: "&eOn The Side: &aBound To You"
+			x: 34.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["73C6238D482A08FB"]
+			icon: "dimdungeons:block_key_charger"
+			id: "63E22D450C78E3E4"
+			rewards: [
+				{
+					id: "6C5DC7D1747A0BDD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 2
+					id: "17B107ACE21B95E4"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Less Laborious"
+			tasks: [
+				{
+					id: "0B7839E4C13D0E79"
+					item: "dimdungeons:block_key_charger"
+					title: "&eFind: &rKey Inscribing Station"
+					type: "item"
+				}
+				{
+					block: "dimdungeons:block_key_charger"
+					block_type: 0
+					checkItem: true
+					id: "1EADF094F2C6D24D"
+					isItemInteraction: true
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "dimdungeons:item_portal_key"
+								}
+								{
+									Count: 1b
+									id: "dimdungeons:item_blank_advanced_key"
+								}
+							]
+						}
+					}
+					title: "&eInscribe: &rBlank Key"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "&eOn The Side: &aAutomated Inscription"
+			x: 36.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["73C6238D482A08FB"]
+			hide_dependency_lines: true
+			icon: "dimdungeons:item_blank_advanced_key"
+			id: "3074818E5335C10D"
+			rewards: [
+				{
+					id: "3E430DA0F509B328"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 3
+					id: "4F81CC183C42DE10"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "The Next Level"
+			tasks: [
+				{
+					id: "2DD596BC32D8AB80"
+					item: "dimdungeons:item_blank_advanced_key"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5EA8B179E568A2F6"
+					item: { Count: 2, id: "dimdungeons:block_portal_crown" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6D5D08DFD3E57470"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:or"
+									tag: {
+										items: [
+											{
+												Count: 1b
+												id: "minecraft:white_banner"
+											}
+											{
+												Count: 1b
+												id: "minecraft:purple_banner"
+											}
+										]
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "itemfilters:weak_nbt"
+											tag: {
+												value: {
+													HideFlags: 32
+												}
+											}
+										}]
+									}
+								}
+							]
+						}
+					}
+					title: "&eValid Banners"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "dimdungeons:item_portal_key"
+						tag: {
+							dungeon_type: "ADVANCED"
+							key_activated: 1b
+						}
+					}
+					id: "2E0820B0F0247D6D"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "dimdungeons:item_blank_advanced_key"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											dungeon_type: "ADVANCED"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											key_activated: 1b
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eActivate: &rAdvanced Key"
+					type: "item"
+				}
+				{
+					advancement: "dimdungeons:dungeons/enter_advanced_dungeon"
+					criterion: ""
+					id: "70C1F21E671E504B"
+					title: "&9Enter: &rAdvanced Dungeon"
+					type: "advancement"
+				}
+			]
+			title: "&eOn The Side: &aLess Easy"
+			x: 38.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["73C6238D482A08FB"]
+			hide_dependency_lines: true
+			icon: "dimdungeons:item_blank_teleporter_key"
+			id: "6EACB0E1CB471682"
+			rewards: [
+				{
+					id: "04B1360BB7E9000F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1B87465696806898"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Entering The Hub"
+			tasks: [
+				{
+					id: "78268FC13C30C038"
+					item: "dimdungeons:item_blank_teleporter_key"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "dimdungeons:item_portal_key"
+						tag: {
+							dungeon_type: "TELEPORTER_HUB"
+							key_activated: 1b
+							theme: 0
+						}
+					}
+					id: "1F18DEE808919CB7"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "dimdungeons:item_blank_teleporter_key"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											dungeon_type: "TELEPORTER_HUB"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											key_activated: 1b
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eActivate: &rTeleporter Key"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aHub Of Portals"
+			x: 36.0d
+			y: 3.0d
+		}
+		{
+			id: "6D0ADA64280B0E84"
+			rewards: [
+				{
+					id: "5AB83E595A14BFBC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "2DAF810B94F5B5BF"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Steps Ahead"
+			tasks: [{
+				block: "minecraft:end_portal_frame"
+				block_type: 0
+				checkItem: true
+				id: "1AAD211F2470A12E"
+				isItemInteraction: true
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "endrem:black_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:cold_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:corrupted_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:lost_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:nether_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:old_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:rogue_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:cursed_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:evil_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:guardian_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:magical_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:wither_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:witch_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:undead_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:exotic_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "endrem:cryptic_eye"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "&ePlace: &rEnder Eyes into End Portal Frame"
+				type: "questsadditions:use"
+				value: 12L
+			}]
+			title: "&eSegment: &aMore To It"
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			icon: "rats:ratlantis_portal"
+			id: "43032D6B5107B8BB"
+			rewards: [
+				{
+					id: "386CF78893244282"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 6
+					id: "20A892695D80E091"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Marbled Murine World"
+			tasks: [
+				{
+					id: "0C6F935CE5CA88A1"
+					item: "rats:chunky_cheese_token"
+					type: "item"
+				}
+				{
+					dimension: "rats:ratlantis"
+					icon: "rats:ratlantis_portal"
+					id: "02BB975B32D7AA02"
+					title: "&9Enter: &rRatlantis"
+					type: "dimension"
+				}
+			]
+			title: "&9Enter: &rRatlantis"
+			x: -72.0d
+			y: 0.0d
+		}
+	]
+	title: "{quest.overview.base_label.title} Superposition"
+}

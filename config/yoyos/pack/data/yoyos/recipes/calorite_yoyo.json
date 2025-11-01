@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "yoyos:cheese_cord"
+    },
+    "I": {
+      "item": "ad_astra:calorite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " I ",
+    "ISI",
+    "CI "
+  ],
+  "result": {
+    "item": "yoyos:calorite_yoyo"
+  },
+  "show_notification": true
+}

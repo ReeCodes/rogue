@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "naturesaura:block/gold_brick",
+    "side": "naturesaura:block/conversion_catalyst"
+  }
+}

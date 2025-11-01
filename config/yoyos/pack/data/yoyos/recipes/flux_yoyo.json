@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "yoyos:cord"
+    },
+    "I": {
+      "item": "redstone_arsenal:flux_ingot"
+    },
+    "S": {
+      "item": "redstone_arsenal:flux_obsidian_rod"
+    }
+  },
+  "pattern": [
+    " I ",
+    "ISI",
+    "CI "
+  ],
+  "result": {
+    "item": "yoyos:flux_yoyo"
+  },
+  "show_notification": true
+}

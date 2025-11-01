@@ -1,0 +1,29 @@
+{
+  "killWholeStackOnDeath": false,
+  "stackHealth": false,
+  "maxMobStackSize": 3,
+  "stackRadius": 6.0,
+  "enableSeparator": false,
+  "consumeSeparator": true,
+  "separatorItem": "minecraft:diamond",
+  "enableAssimilator": false,
+  "consumeAssimilator": true,
+  "assimilatorItem": "minecraft:emerald",
+  "ignoredEntities": [
+    "minecraft:ender_dragon",
+    "minecraft:vex",
+    "quark:totem"
+  ],
+  "ignoredMods": [
+    "corpse"
+  ],
+  "mobCaps": {
+    "monster": 22,
+    "creature": 5,
+    "ambient": 7,
+    "axolotls": 2,
+    "undergroundWaterCreature": 2,
+    "waterCreature": 2,
+    "waterAmbient": 8
+  }
+}

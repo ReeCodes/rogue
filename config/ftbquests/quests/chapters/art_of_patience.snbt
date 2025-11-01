@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "art_of_patience"
+	group: "092734D55C33B066"
+	icon: "minecraft:pufferfish_bucket"
+	id: "3E995D25D005D0D4"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "{quest.overview.base_label.title} Angler's Patience"
+}

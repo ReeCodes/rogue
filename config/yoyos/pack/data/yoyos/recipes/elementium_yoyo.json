@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "yoyos:mana_cord"
+    },
+    "I": {
+      "item": "botania:elementium_ingot"
+    },
+    "S": {
+      "item": "botania:dreamwood_twig"
+    }
+  },
+  "pattern": [
+    " I ",
+    "ISI",
+    "CI "
+  ],
+  "result": {
+    "item": "yoyos:elementium_yoyo"
+  },
+  "show_notification": true
+}

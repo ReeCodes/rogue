@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "yoyos:item/redstone_arsenal/flux"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "charged": 1.0
+      },
+      "model": "yoyos:item/flux_yoyo_charged"
+    }
+  ]
+}

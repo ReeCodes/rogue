@@ -1,0 +1,142 @@
+{
+  "dynamicCrosshair": true,
+  "disableDebugCrosshair": false,
+  "thirdPersonCrosshair": false,
+  "hideWithScreen": true,
+  "hideWithMap": true,
+  "crosshairConfig": {
+    "onBlock": true,
+    "onEntity": true,
+    "holdingTool": "Always",
+    "holdingMeleeWeapon": true,
+    "meleeWeaponOnEntity": false,
+    "meleeWeaponOnBreakableBlock": false,
+    "holdingRangedWeapon": "IfInteractable",
+    "holdingThrowable": "IfInteractable",
+    "holdingShield": true,
+    "holdingBlock": "IfInteractable",
+    "holdingUsableItem": "IfInteractable",
+    "forceHoldingSpyglass": false,
+    "onInteractableBlock": true
+  },
+  "dynamicCrosshairStyle": true,
+  "crosshairStyle": {
+    "regular": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/cross-open.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "onBlock": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/cross-open.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "onEntity": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/cross-open-diagonal.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "holdingTool": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/square.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "holdingMeleeWeapon": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/cross-open.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "holdingRangedWeapon": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/cross-open-diagonal.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "holdingThrowable": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/circle.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "holdingBlock": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/diamond-large.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "interact": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/brackets.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "useItem": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/brackets-round.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "shield": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/brackets-bottom.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    }
+  },
+  "crosshairModifiers": {
+    "modCorrectTool": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/dot.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    },
+    "modIncorrectTool": {
+      "style": "dynamiccrosshair:textures/gui/sprites/crosshair/cross-open-diagonal.png",
+      "color": {
+        "overrideColor": false,
+        "customColor": -5588020,
+        "enableBlend": true
+      }
+    }
+  },
+  "enableTweaks": false,
+  "additionalTools": [],
+  "additionalMeleeWeapons": [],
+  "additionalRangedWeapons": [],
+  "additionalThrowables": [],
+  "additionalUsableItems": [],
+  "color": {
+    "overrideColor": false,
+    "customColor": -5588020,
+    "enableBlend": true
+  }
+}

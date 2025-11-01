@@ -1,0 +1,929 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "biopunk"
+	group: "4E6F24CF14FB572B"
+	icon: "biomancy:primordial_core"
+	id: "2D7BA6AF592BB739"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Enchant an item with &bDespoil&r or use the &bFlesh Plunderer&r."
+				""
+				"After collecting the needed body parts, you will be able to craft the &bPrimordial Cradle&r."
+			]
+			icon: {
+				Count: 1
+				id: "biomancy:despoil_sickle"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4174A9E1A2FC8D32"
+			rewards: [
+				{
+					id: "0D559704FAC60079"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 4
+					id: "55B8923690B325EB"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "13E7D02C69848BDA"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Offal Extraction"
+			tasks: [
+				{
+					id: "4F0C9F088F2A6232"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:and"
+									tag: {
+										items: [
+											{
+												Count: 1b
+												id: "itemfilters:custom"
+												tag: {
+													value: "has_biomancy_despoil"
+												}
+											}
+											{
+												Count: 1b
+												id: "itemfilters:always_true"
+											}
+										]
+									}
+								}
+								{
+									Count: 1b
+									id: "biomancy:despoil_sickle"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "&eDespoiling Items"
+					type: "item"
+				}
+				{
+					id: "63696A8E1769DACC"
+					item: "biomancy:primordial_core"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "biomancy:despoil_sickle"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "1624298920C7C612"
+					title: "&cSlay: &rAny Mob using a &eDespoiling Item"
+					type: "custom"
+				}
+				{
+					id: "2FE5A9B921335F86"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "biomancy:fangs"
+						}
+					}
+					title: "&eFangs"
+					type: "item"
+				}
+				{
+					id: "58B35A74DCB0EF9C"
+					item: "biomancy:primordial_cradle"
+					type: "item"
+				}
+			]
+			title: "&eIntroduction: &aCruel Flesh"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4174A9E1A2FC8D32"]
+			description: [
+				"Activate the &bCradle&r with any health-restoring item — &bgolden apples&r, &bhealth potions&r, &bregeneration‑granting foods&r, the &bTotem of Undying&r, or even the &bNether Star&r."
+				""
+				"Additionally, offer it any &braw meat&r. The order in which you feed it is irrelevant."
+			]
+			icon: "biomancy:primordial_cradle"
+			id: "36FB9A91C8D33139"
+			rewards: [
+				{
+					id: "551B50698EA51F87"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 5
+					id: "07B43D311BAB4FAF"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "50C00ED648F90494"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Birthing Flesh"
+			tasks: [
+				{
+					block: "biomancy:primordial_cradle"
+					block_type: 0
+					id: "16EF94E6A85D3209"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rPrimordial Cradle"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					icon: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_regeneration"
+						}
+					}
+					id: "38D833C5567A1A9D"
+					title: "&eActivate: &rCradle"
+					type: "custom"
+				}
+				{
+					block: "biomancy:primordial_cradle"
+					block_type: 0
+					checkItem: true
+					id: "508C5C8C3AEC8C3F"
+					isItemInteraction: true
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "biomancy:raw_meats"
+						}
+					}
+					title: "&eFeed: &rCradle with &eRaw Meat"
+					type: "questsadditions:use"
+					value: 2L
+				}
+			]
+			title: "&eChapter I: &aLively Acid Bin"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["36FB9A91C8D33139"]
+			description: ["Birth a &bfleshy being&r."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "biomancy:flesh_blob"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "2B36C0021383C51E"
+			rewards: [
+				{
+					id: "2F7E8CE9917A5220"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 3
+					id: "5707480FFD4E89DB"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "7287B98218C62D41"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Akin"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "biomancy:flesh_blob"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "5FFC34ACCC0F4E32"
+					title: "&cKill: &rAny Flesh Blob"
+					type: "custom"
+				}
+				{
+					id: "2E7B46706CCEC7B9"
+					item: "biomancy:living_flesh"
+					type: "item"
+				}
+			]
+			title: "&eChapter II: &aKindred"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B36C0021383C51E"]
+			icon: "biomancy:decomposer"
+			id: "1CA3CFA93D0F4089"
+			rewards: [
+				{
+					id: "3FD7EEDCD135D919"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 4
+					id: "0321BA7DADF08B94"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "7CE39A60417D60D9"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Rending Matter"
+			tasks: [
+				{
+					id: "4A58B61EA826C214"
+					item: "biomancy:decomposer"
+					type: "item"
+				}
+				{
+					block: "biomancy:decomposer"
+					block_type: 0
+					id: "77753C9305818620"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rDecomposer"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					id: "1B636F49534B6576"
+					item: "biomancy:flesh_bits"
+					type: "item"
+				}
+				{
+					id: "589C1A5007DE16EF"
+					item: "biomancy:bone_fragments"
+					type: "item"
+				}
+				{
+					id: "0137CDC97EE8CC1C"
+					item: "biomancy:tough_fibers"
+					type: "item"
+				}
+				{
+					id: "4E77B51C56716FC7"
+					item: "biomancy:elastic_fibers"
+					type: "item"
+				}
+				{
+					id: "4D1CFBEF5BE9E4E3"
+					item: "biomancy:exotic_dust"
+					type: "item"
+				}
+				{
+					id: "6A12B25644F0EB0A"
+					item: "biomancy:bile"
+					type: "item"
+				}
+			]
+			title: "&eChapter III, Pt. I: &aDisaggregation"
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2B36C0021383C51E"]
+			id: "1F3A79A6165C3E47"
+			rewards: [
+				{
+					id: "69AD5FE71623A750"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 3
+					id: "45465A401A37ACA2"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "16C32FB30C079DCA"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Chimerization "
+			tasks: [
+				{
+					id: "234B39F3D7F88DB0"
+					item: "biomancy:bio_forge"
+					type: "item"
+				}
+				{
+					block: "biomancy:bio_forge"
+					block_type: 0
+					id: "472654D69EC028FE"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rBio-Forge"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "&eChapter III, Pt. II: &aFleshworks"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1F3A79A6165C3E47"
+				"1CA3CFA93D0F4089"
+				"6A12B25644F0EB0A"
+				"4E77B51C56716FC7"
+				"589C1A5007DE16EF"
+				"1B636F49534B6576"
+			]
+			icon: "biomancy:digester"
+			id: "6ED28334E5218C37"
+			min_required_dependencies: 5
+			rewards: [
+				{
+					id: "4E27CB06AB863439"
+					type: "xp"
+					xp: 65
+				}
+				{
+					count: 4
+					id: "328D4B9E1AC16FB0"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2978DFA66830A389"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Miremaking"
+			tasks: [
+				{
+					id: "4E38433306D03C21"
+					item: "biomancy:digester"
+					type: "item"
+				}
+				{
+					block: "biomancy:digester"
+					block_type: 0
+					id: "7EA2A4F57A503E33"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rDigester"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					count: 32L
+					id: "2992D2AA44E34C15"
+					item: "biomancy:nutrient_paste"
+					type: "item"
+				}
+				{
+					id: "19E2A88E27BC0451"
+					item: "biomancy:nutrient_bar"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aCarnal Pulp"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F3A79A6165C3E47"
+				"1CA3CFA93D0F4089"
+				"4D1CFBEF5BE9E4E3"
+				"0137CDC97EE8CC1C"
+				"589C1A5007DE16EF"
+				"1B636F49534B6576"
+			]
+			icon: "biomancy:bio_lab"
+			id: "691475616E946FF1"
+			min_required_dependencies: 5
+			rewards: [
+				{
+					id: "42645FB0B5274FEF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 6
+					id: "7D63CD01835E0F97"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2CC28AAC64BE7D19"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Lab Rat"
+			tasks: [
+				{
+					id: "2E8DFABD57A41AC4"
+					item: "biomancy:bio_lab"
+					type: "item"
+				}
+				{
+					block: "biomancy:bio_lab"
+					block_type: 0
+					id: "4B58F428D60724CF"
+					replace: false
+					replaced: "minecraft:air"
+					title: "&ePlace: &rBio-Lab"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					count: 2L
+					id: "2919051EC295FBF0"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "biomancy:insomnia_cure"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:id_regex"
+									tag: {
+										value: "biomancy:.+_serum"
+									}
+								}
+							]
+						}
+					}
+					title: "&eSerums"
+					type: "item"
+				}
+				{
+					id: "73675C48E3C16BDA"
+					item: {
+						Count: 1
+						id: "biomancy:injector"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "biomancy:injector"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "48871351101E71C0"
+					title: "&eInject: &rMob using &eAny Serum"
+					type: "custom"
+				}
+			]
+			title: "&eFinale: &aBiomodder"
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1F3A79A6165C3E47"]
+			id: "4825C37E3FB06B19"
+			rewards: [
+				{
+					id: "1C0AA51AD2808670"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 10
+					id: "320199B49D6C8C9C"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4EE15D977E03767B"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Flesh-Veiled"
+			tasks: [
+				{
+					id: "0DCE1E9DA1564439"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "biomancy:acolyte_armor_helmet"
+						tag: {
+							"biomancy:nutrients": 200
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "261FF86923825369"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "biomancy:acolyte_armor_chestplate"
+						tag: {
+							"biomancy:nutrients": 250
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "735444F0CE01A8AA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "biomancy:acolyte_armor_leggings"
+						tag: {
+							"biomancy:nutrients": 250
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A415A57A1208BBD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "biomancy:acolyte_armor_boots"
+						tag: {
+							"biomancy:nutrients": 200
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12EC6DB7A4B32572"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "biomancy:thorn_shield"
+						tag: {
+							"biomancy:nutrients": 250
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E006C43DC472EAC"
+					item: {
+						Count: 1
+						id: "biomancy:ravenous_claws"
+						tag: {
+							LivingToolState: 1b
+							"biomancy:nutrients": 250
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57A67955F5459B47"
+					item: {
+						Count: 1
+						id: "biomancy:caustic_gunblade"
+						tag: {
+							"biomancy:nutrients": 200
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6Collection: &rVisceral Devotee"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1F3A79A6165C3E47"]
+			icon: {
+				Count: 1
+				id: "biomancy:extractor"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4C0228F1C119CB9B"
+			rewards: [
+				{
+					id: "10AEA37DE4EDF7AD"
+					type: "xp"
+					xp: 65
+				}
+				{
+					count: 4
+					id: "0180CA41FC504630"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5383D14DCFB901BD"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Essence Claimed"
+			tasks: [
+				{
+					id: "275ACA44B117E2BA"
+					item: {
+						Count: 1
+						id: "biomancy:extractor"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "biomancy:extractor"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "29BFD62D1F5C2862"
+					title: "&eExtract: &rMob Essence"
+					type: "custom"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "biomancy:essence"
+						tag: {
+							colors: [I;
+								5451574
+								9804699
+							]
+						}
+					}
+					id: "7078C6EF7D9B6522"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "biomancy:essence"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "biomancy_mob_essence"
+									}
+								}
+							]
+						}
+					}
+					match_nbt: false
+					title: "&eCapture: &rMob Essence"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "biomancy:essence"
+						tag: {
+							colors: [I;
+								44975
+								4602533
+							]
+						}
+					}
+					id: "4250B770FB697A88"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "biomancy:essence"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "biomancy_player_essence"
+									}
+								}
+							]
+						}
+					}
+					title: "&eCapture: &rPlayer Essence"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aEssence Extraction"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"4C0228F1C119CB9B"
+				"275ACA44B117E2BA"
+			]
+			icon: {
+				Count: 1
+				id: "biomancy:extractor"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "biomancy:surgical_precision"
+						lvl: 6s
+					}]
+					RepairCost: 1
+				}
+			}
+			id: "697CD57F81B873AF"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "2597C364B6B9C267"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					count: 2
+					id: "3695AF6FA955FEF7"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "04B6FBE5533C8536"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Better Quality"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "biomancy:extractor"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "biomancy:surgical_precision"
+								lvl: 6s
+							}]
+							RepairCost: 1
+						}
+					}
+					id: "1619F1E920AD2628"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "biomancy:extractor"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "has_biomancy_s_precision"
+									}
+								}
+							]
+						}
+					}
+					title: "&eEnchant: &rEssence Extractor using &eSurgical Precision"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "biomancy:essence"
+						tag: { }
+					}
+					id: "1DB54613058888C6"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "biomancy:essence"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											essence_tier: 3
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "&eCapture: &rEssence (Tier III)"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aPrecise Yield"
+			x: 2.0d
+			y: 9.0d
+		}
+	]
+	title: "{quest.overview.base_label.title} Biopunk"
+}
