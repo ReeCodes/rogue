@@ -1,0 +1,5 @@
+*
+!config/
+!defaultconfig/
+!kubejs/
+!.gitignore

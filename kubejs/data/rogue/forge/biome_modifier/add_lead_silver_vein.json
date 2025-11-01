@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
-  "features": "rogue:vein_lead_silver",
-  "step": "underground_ores"
-}

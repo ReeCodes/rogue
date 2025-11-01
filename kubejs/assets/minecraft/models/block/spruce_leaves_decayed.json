@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "minecraft:block/spruce_leaves_decayed",
-    "particle": "minecraft:block/spruce_leaves_decayed"	
-  }
-}

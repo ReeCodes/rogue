@@ -1,8 +1,0 @@
-{
-	"rogue_meter_updated": {
-	"sounds": [
-			"rogue:misc/rogue_meter_updated"
-		],
-	"subtitle": "rogue.sound.subtitle.rogue_meter_updated"
-	}
-}
