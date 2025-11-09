@@ -217,7 +217,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "Random In A Bottle"
+			subtitle: "Random in a Bottle"
 			tasks: [{
 				id: "000000000000007C"
 				item: {
@@ -1941,7 +1941,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Collection: &rAlfsteel Armory"
+			title: "&6Collection: &rMerigold"
 			x: 2.0d
 			y: 22.0d
 		}
@@ -2564,8 +2564,8 @@
 				}
 			]
 			title: "&eOn The Side: &aSparkly"
-			x: -4.0d
-			y: 12.0d
+			x: -5.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["00000000000000D4"]
@@ -2679,18 +2679,31 @@
 			subtitle: "Extreme Measures"
 			tasks: [
 				{
-					icon: {
+					id: "119FE202C49F0884"
+					item: {
 						Count: 1
-						id: "botania:terra_pick"
+						id: "itemfilters:and"
 						tag: {
-							Damage: 0
-							mana: 999999
-							tipped: 1b
+							items: [
+								{
+									Count: 1b
+									id: "botania:terra_pick"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "ss_tier_pickaxe"
+									}
+								}
+							]
 						}
 					}
-					id: "119FE202C49F0884"
 					title: "&eFully Upgrade: &rTerra Shatterer"
-					type: "custom"
+					type: "item"
 				}
 				{
 					advancement: "botania:challenge/rank_ss_pick"
@@ -2895,8 +2908,8 @@
 				}
 			]
 			title: "&eOn The Side: &aCorporea"
-			x: -5.0d
-			y: 14.0d
+			x: -6.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -3056,7 +3069,7 @@
 					type: "item"
 				}
 			]
-			title: "&6Collection: &rDiligent Armory"
+			title: "&6Collection: &rAzure"
 			x: -4.0d
 			y: 5.0d
 		}
@@ -3215,8 +3228,8 @@
 				}
 			]
 			title: "&6Collection: &rPixie Warrior"
-			x: -4.0d
-			y: 18.0d
+			x: -6.0d
+			y: 19.0d
 		}
 		{
 			dependencies: [
@@ -3663,7 +3676,7 @@
 			]
 			title: "&eOn The Side: &aIndividual Automation"
 			x: -5.0d
-			y: 16.0d
+			y: 17.0d
 		}
 	]
 	title: "&f{quest.overview.magic_label.title} &dFloral: &rOf Leaves And Petals"

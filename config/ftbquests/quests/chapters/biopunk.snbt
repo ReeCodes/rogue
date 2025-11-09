@@ -105,7 +105,7 @@
 						Count: 1
 						id: "itemfilters:tag"
 						tag: {
-							value: "biomancy:fangs"
+							value: "c:fangs"
 						}
 					}
 					title: "&eFangs"
@@ -530,7 +530,7 @@
 						}
 					}
 					id: "48871351101E71C0"
-					title: "&eInject: &rMob using &eAny Serum"
+					title: "&eInject: &rMob using &eany Serum"
 					type: "custom"
 				}
 			]

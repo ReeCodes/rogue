@@ -17,13 +17,13 @@ ServerEvents.recipes(event => {
 				naturesaura.altar('3x #forge:dusts/' + i.name, '#forge:ores/' + i.name, 1000, 20, 'naturesaura:crushing_catalyst').id('naturesaura:altar/' + i.name + '_ore_crushing');
 				bm_alchemy_table(event, ['#forge:ores/'+i.name, '#bloodmagic:arc/cuttingfluid'], '2x #forge:dusts/'+i.name, 300, 50, 3, 'sand_'+i.name);
 				bm_arc(event, false, false, ['#forge:ores/' + i.name], 1, 0.0, '3x #forge:dusts/' + i.name, false, '#bloodmagic:arc/cuttingfluid', 'ore/dust' + i.name);
-				if (!['gold', 'quartz', 'draconium'].includes(i.name)) {
+				if (!['gold', 'quartz', 'draconium', 'netherite_scrap'].includes(i.name)) {
 					eio_sag_mill(event, 2400, '#forge:ores/' + i.name, [
 						'#forge:dusts/' + i.name,
 						{chance: 0.33, item: '#forge:dusts/' + i.name},
 						{chance: 0.15, item: 'minecraft:cobblestone'}
 					], i.name + '_ore');
-				} else {
+				} else if (!['netherite_scrap'].includes(i.name)) {
 					eio_sag_mill(event, 2400, '#forge:ores/' + i.name, [
 						'#forge:dusts/' + i.name,
 						{chance: 0.33, item: '#forge:dusts/' + i.name}
@@ -273,17 +273,18 @@ ServerEvents.recipes(event => {
 		}
 		
 		if (i.plate_able) {
-			event.remove(['ad_astra:compressing', 'immersiveengineering:metal_press'].map(t => ({type: t , output: '#forge:plates/' + i.name})));
-			
 			if (!['gem', 'abundant_gem'].includes(i.type)) {
+				event.remove(['ad_astra:compressing', 'immersiveengineering:metal_press', 'thermal:press'].map(t => ({type: t , output: '#forge:plates/' + i.name})));
+				
 				aa_compressing(event, 100, 20, '#forge:ingots/'+i.name, {id: '#forge:plates/'+i.name}, i.name+'_plate_from_compressing_'+i.name+'_ingots');
 				aa_compressing(event, 800, 20, '#forge:storage_blocks/'+i.name, {id: '#forge:plates/'+i.name, count: 9}, i.name+'_plate_from_compressing_'+i.name+'_blocks');
 				ie_metal_pressing(event, 2400, '#forge:ingots/' + i.name, 1, 'immersiveengineering:mold_plate', '#forge:plates/' + i.name, 'plate_' + i.name);
+				thermal.press('#forge:plates/' + i.name, '#forge:ingots/' + i.name).id('thermal:machines/press/press_' + i.name + '_ingot_to_plate');
 			}
 		}
 		
 		if (i.rod_able) {
-			event.remove(['createaddition:rolling', 'immersiveengineering:metal_press', 'thermal:chiller'].map(t => ({type: t , output: '#forge:rods/' + i.name})));
+			event.remove(['createaddition:rolling', 'immersiveengineering:metal_press'].map(t => ({type: t , output: '#forge:rods/' + i.name})));
 			
 			rolling(event, '#forge:ingots/' + i.name, '2x #forge:rods/' + i.name, i.name + '_ingot');
 			ie_metal_pressing(event, 2400, '#forge:ingots/' + i.name, 1, 'immersiveengineering:mold_rod', '2x #forge:rods/' + i.name, 'rod_' + i.name);

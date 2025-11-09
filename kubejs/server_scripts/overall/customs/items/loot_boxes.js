@@ -55,47 +55,42 @@ ItemEvents.rightClicked(event => {
 
 		if (box.special_event) {
 			if (boxName === 'glitched') {
-				if (Math.random() < 0.92) {
-					playEffects(server, player, soundEffect, particles);
+				playEffects(server, player, soundEffect, particles);
+				let chance = Math.random();
+				if (chance < 0.91) {					
 					spawnLoot(server, player, level, lootPath, calcLootAmountFromLuck(player));
+				} else if (chance < 0.94) {
+					player.tell('8%')
+					//server.runCommandSilent(`execute as ${player.username} in ${level.dimension} run open_gateway ${player.username} ${randomize(allGateways)}`);
+				} else if (chance < 0.97) {
+					addPlayerMaxCoef(player, 2);
+					player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
+						.append(Text.of('[Personal Max Coefficient] ').color(COLOR_ROGUE))
+						.append(Text.of('§a+2§f'))
+					]);
+					player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
+						.append(Text.of('[Personal Max Coefficient] ').color(COLOR_ROGUE))
+						.append(Text.of('Current: '))
+						.append(Text.of(BASE_MAX_COEF + player.persistentData.player_max_coef).gold())
+						.append(Text.of(' (Max: '))
+						.append(Text.of(ABSOLUTE_MAX_COEF).gold())
+						.append(Text.of(')'))
+					]);
 				} else {
-					playEffects(server, player, soundEffect, particles);
-					let rand = Math.random();
-					if (rand < 0.33) {
-						server.runCommandSilent(
-							`execute as ${player.username} in ${level.dimension} run open_gateway ${player.username} ${randomize(allGateways)}`
-						);
-					} else if (rand < 0.66) {
-						addPlayerMaxCoef(player, 2);
-						player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
-							.append(Text.of('[Personal Max Coefficient] ').color(COLOR_ROGUE))
-							.append(Text.of('§a+2§f'))
-							]);
+					addPlayerExtraCoef(player, 2);
+					player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
+						.append(Text.of('[Personal Extra Coefficient] ').color(COLOR_ROGUE))
+						.append(Text.of('§a+2§f'))
+						]);
 
-						player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
-							.append(Text.of('[Personal Max Coefficient] ').color(COLOR_ROGUE))
-							.append(Text.of('Current: '))
-							.append(Text.of(player.persistentData.player_max_coef.toFixed(0)).gold())
-							.append(Text.of(' (Max: '))
-							.append(Text.of(ABSOLUTE_MAX_COEF).gold())
-							.append(Text.of(')'))
-							]);
-					} else {
-						addPlayerExtraCoef(player, 2);
-						player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
-							.append(Text.of('[Personal Extra Coefficient] ').color(COLOR_ROGUE))
-							.append(Text.of('§a+2§f'))
-							]);
-
-						player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
-							.append(Text.of('[Personal Extra Coefficient] ').color(COLOR_ROGUE))
-							.append(Text.of('Current: '))
-							.append(Text.of('+'+player.persistentData.player_extra_coef.toFixed(0)).gold())
-							.append(Text.of(' (Max: '))
-							.append(Text.of(ABSOLUTE_MAX_EXTRA_COEF).gold())
-							.append(Text.of(')'))
-							]);
-					}
+					player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
+						.append(Text.of('[Personal Extra Coefficient] ').color(COLOR_ROGUE))
+						.append(Text.of('Current: '))
+						.append(Text.of('+'+player.persistentData.player_extra_coef.toFixed(0)).gold())
+						.append(Text.of(' (Max: '))
+						.append(Text.of(+ABSOLUTE_MAX_EXTRA_COEF).gold())
+						.append(Text.of(')'))
+					]);
 				}
 			}
 		} else {

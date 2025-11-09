@@ -229,10 +229,16 @@
 					type: "item"
 				}
 				{
-					icon: "betterarcheology:unidentified_artifact"
-					id: "098B7E03BAF494F0"
+					id: "0D0AA38B5F530455"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "identified_artifact"
+						}
+					}
 					title: "&eIdentify: &rArtifact"
-					type: "custom"
+					type: "item"
 				}
 			]
 			title: "&eSegment: &aExcavation Preserve"

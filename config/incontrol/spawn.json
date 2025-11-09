@@ -316,16 +316,6 @@
 	},
 	{
 		"spawner": false,
-		"mod": "sons_of_sins",
-		"mincount": {
-			"amount": 15,
-			"mod": "sons_of_sins",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
 		"mod": "cataclysm",
 		"mincount": {
 			"amount": 18,

@@ -89,8 +89,6 @@ ServerEvents.tags('item', event => {
 	])
 	
 	bulkAddFromList(event, 'forge:tools', [
-		'copperworks:copper_drill',
-		'copperworks:copper_broad_sword',
 		'species:spectralibur'
 	])
 	

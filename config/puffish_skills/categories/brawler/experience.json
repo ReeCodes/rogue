@@ -54,7 +54,7 @@
 				},
 				"experience": [{
 					"condition": "(tools | swords)",
-					"expression": "1 + min((dropped_xp + max_health) ^ 0.97, 100) * 0.07"
+					"expression": "1 + (min((dropped_xp + max_health) ^ 0.97, 100) * 0.07)"
 				}],
 				"anti_farming": {
 					"limit_per_chunk": 30,
@@ -101,7 +101,7 @@
 				},
 				"experience": [{
 					"condition": "bows",
-					"expression": "1 + min((dropped_xp + max_health) ^ 0.67, 100) * 0.08"
+					"expression": "1 + (min((dropped_xp + max_health) ^ 0.67, 100) * 0.08)"
 				}],
 				"anti_farming": {
 					"limit_per_chunk": 30,
@@ -148,7 +148,7 @@
 				},
 				"experience": [{
 					"condition": "magic",
-					"expression":"1 + min((dropped_xp + max_health) ^ 0.57, 100) * 0.06"
+					"expression":"1 + (min((dropped_xp + max_health) ^ 0.57, 100) * 0.06)"
 				}],
 				"anti_farming": {
 					"limit_per_chunk": 30,

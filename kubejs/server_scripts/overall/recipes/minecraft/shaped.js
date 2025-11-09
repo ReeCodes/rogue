@@ -215,8 +215,8 @@ ServerEvents.recipes(event => {
 			A: '#minecraft:wooden_slabs'
 		}
 	).id('handcrafted:wood_plate')
-
-	event.shaped('luphieclutteredmod:small_shelf',
+	
+	event.shaped('cluttered:small_shelf',
 		[
 			'   ',
 			'AAA',
@@ -224,8 +224,8 @@ ServerEvents.recipes(event => {
 		], {
 			A: '#minecraft:wooden_slabs'
 		}
-	).id('luphieclutteredmod:small_shelf_recipe')
-
+	).id('cluttered:small_shelf_recipe')
+	
 	event.shaped('netherchested:nether_chest',
 		[
 			'ADA',

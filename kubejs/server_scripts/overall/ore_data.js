@@ -1,7 +1,5 @@
 // priority: 150
 
-const missingNuggetToIngot = ['lead', 'silver', 'nickel', 'constantan', 'electrum', 'steel', 'tin'];
-
 const oreData = [
 	// BASE
     {
@@ -173,7 +171,7 @@ const oreData = [
 		type: 'alloy',
         name: 'brass',
 		rod_able: true,
-        dust_able: false
+		plate_able: true
     },
     {
 		type: 'alloy',

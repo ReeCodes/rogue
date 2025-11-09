@@ -1,47 +1,3 @@
-//CHANGE CHECK
-PlayerEvents.inventoryChanged(event => {
-	const {	player } = event;
-
-	if (isFakePlayer(player)) return;
-
-	//BOTANIA
-	if (player.handSlots.find(i => i.nbt?.mana >= 2147483646)) simpleQuestComplete(player, '119FE202C49F0884');
-
-	//BLOOD_MAGIC
-	if (player.handSlots.find(i => (/.+anointment_holder:.+max_damage:4096.+/.test(i.nbt)))) simpleQuestComplete(player, '19DADD5E464746B4');
-
-	if (/.+maxPoints:300.+/.test(player.getChestArmorItem().nbt)) simpleQuestComplete(player, '2050F43AAB0EFA00');
-
-	//MISC
-	if (player.handSlots.find(i => i.nbt?.BlockEntityTag?.Sandwich?.length == 32)) simpleQuestComplete(player, '5EC454BC5B4C683D');
-
-	if (player.handSlots.some(i => !!i.nbt && !!i.nbt['transmog:transmogItem'])) simpleQuestComplete(player, '5AC863CAF54EB649');
-
-	if (player.handSlots.find(i => (/.*betterarcheology.*/.test(i.nbt?.StoredEnchantments)))) simpleQuestComplete(player, '098B7E03BAF494F0')
-
-	//EMBERS
-	let headA = player.headArmorItem
-	let chestA = player.chestArmorItem
-	let legsA = player.legsArmorItem
-	let bootsA = player.feetArmorItem
-
-	if (player.handSlots.some(i =>
-			(/.*name:"embers(?!:core).*"/).test(headA.nbt) ||
-			(/.*name:"embers(?!:core).*"/).test(chestA.nbt) ||
-			(/.*name:"embers(?!:core).*"/).test(legsA.nbt) ||
-			(/.*name:"embers(?!:core).*"/).test(bootsA.nbt))) {
-		simpleQuestComplete(player, '418C7D35CE9B15AB')
-	}
-
-	if (player.handSlots.find(i => (/.+embers:alchemical_waste.+/.test(i.nbt)))) simpleQuestComplete(player, '4801CB3EABE24FF7');
-
-	if (player.handSlots.some(i => !!i.nbt && i.nbt['embers:heat_tag']?.heat >= 0)) simpleQuestComplete(player, '1A3CF1C1AF618473');
-
-	if (player.handSlots.some(i => !!i.nbt && i.nbt['embers:heat_tag']?.heat == 500)) simpleQuestComplete(player, '13CBD946740C7DD3');
-
-	if (player.handSlots.some(i => (/.*name:"embers(?!:core).*"/).test(i.nbt))) simpleQuestComplete(player, '389B29412651CE3F');
-})
-
 //POTION CHECK
 global.MobEffectAdded = (event, effectId) => {
 	let player = event.entity;
@@ -132,16 +88,15 @@ ItemEvents.rightClicked(event => {
 	//AC Floater
     if (item.id == 'alexscaves:floater') simpleQuestComplete(player, '3F80D0223B517E84');
 	
-	//BM Orb
-	if (/bloodmagic:.+bloodorb$/.test(item.id)) simpleQuestComplete(player, '33A9401D7A9A7A10');
-	
 	//AC Codex
 	if (item.id == 'alexscaves:cave_codex') simpleQuestComplete(player, '327E361C62833D5F');
+	
+	//BM Orb
+	if (/bloodmagic:.+bloodorb$/.test(item.id)) simpleQuestComplete(player, '33A9401D7A9A7A10');
 	
 	//AN GLYPH
 	if (/ars_.*:.*glyph.*/.test(item.id)) simpleQuestComplete(player, '4547300A9B5BA937');
 })
-
 
 BlockEvents.rightClicked(event => {
 	const { block, hand, player, server } = event;
@@ -153,8 +108,11 @@ BlockEvents.rightClicked(event => {
 	
 	//RITUAL-INIT CHECK
 	let ritualCheck = (playerItem, ritualData, qID) => {
-		if (block.id == 'bloodmagic:masterritualstone') {
-			if (handItem.id == playerItem && blockData.currentRitual == ritualData && blockData.isRunning) simpleQuestComplete(player, qID);
+		if (block.id == 'bloodmagic:masterritualstone' && 
+			handItem.id == playerItem && 
+			blockData.currentRitual == ritualData && 
+			blockData.isRunning) {
+			simpleQuestComplete(player, qID);
 		}
 	}
 
@@ -203,5 +161,4 @@ global.AnvilApply = event => {
 // COMMON TAME EVENT
 CommonAddedEvents.entityTame(event => {
 	const { entity, animal } = event;
-
 });

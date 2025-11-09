@@ -35,13 +35,12 @@ global.armorSets = [
 		leggings: 'eidolon:silver_leggings',
 		boots: 'eidolon:silver_boots',
 		effects: [
-		{effect: 'mobs_of_sins:bane_of_undead', amp: 1}, 
 		{effect: 'goety:fortunate', amp: 1}
 		]
 	},
 	{
 		head: 'tools_complement:copper_helmet',
-		chestplate: 'copperworks:copper_bracer_chestplate',
+		chestplate: 'tools_complement:copper_chestplate',
 		leggings: 'tools_complement:copper_leggings',
 		boots: 'tools_complement:copper_boots',
 		effects: [
@@ -96,7 +95,6 @@ global.armorSets = [
 		leggings: 'galosphere:sterling_leggings',
 		boots: 'galosphere:sterling_boots',
 		effects: [
-		{effect: 'mobs_of_sins:bane_of_undead', amp: 1}, 
 		{effect: 'deep_aether:valkyrie_valor', amp: 1}
 		]
 	},

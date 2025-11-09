@@ -1,6 +1,26 @@
 global.assistedCrafting = [
-	{name: 'hyperbox:hyperbox', tool: 'enderio:yeta_wrench'},
-	{name: 'javd:portal_block', tool: 'enderio:yeta_wrench'},
-	{name: 'naturescompass:naturescompass', tool: 'botania:livingwood_twig'},
-	{name: 'explorerscompass:explorerscompass', tool: 'botania:livingwood_twig'}
+	{
+		output: 'hyperbox:hyperbox',
+		input1: '#forge:gears/enderium',
+		input2: 'create:brass_casing',
+		tool: 'enderio:yeta_wrench'
+	},
+	{
+		output: 'javd:portal_block',
+		input1: 'enderio:ender_crystal_powder',
+		input2: 'minecraft:obsidian',
+		tool: 'enderio:yeta_wrench'
+	},
+	{
+		output: 'naturescompass:naturescompass',
+		input1: 'twilightforest:liveroot',
+		input2: 'minecraft:compass',
+		tool: 'botania:livingwood_twig'
+	},
+	{
+		output: 'explorerscompass:explorerscompass',
+		input1: 'minecraft:cobweb',
+		input2: 'minecraft:compass',
+		tool: 'botania:livingwood_twig'
+	}
 ];

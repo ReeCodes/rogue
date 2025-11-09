@@ -533,7 +533,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "One Of The Artifacts"
+			subtitle: "One of the Artifacts"
 			tasks: [{
 				id: "1EADED8BB9CBA634"
 				item: {
@@ -2070,7 +2070,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Flight &c(Currently Not Working)"
+			subtitle: "Flight"
 			tasks: [{
 				id: "0A352EFE3964056A"
 				item: {
@@ -2293,35 +2293,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["0E28503420F2B547"]
-			id: "76B81AB110381A55"
-			rewards: [
-				{
-					id: "4FDD310235D9710C"
-					type: "xp"
-					xp: 15
-				}
-				{
-					id: "19773A8C7F42976E"
-					item: "kubejs:jewelled_box"
-					type: "item"
-				}
-			]
-			subtitle: "Polar Opposites"
-			tasks: [{
-				id: "296067D74DDC8BD4"
-				item: {
-					Count: 1
-					id: "alexscaves_torpedoes:pocket_magnet"
-					tag: { }
-				}
-				title: "&eAcquire: &rPocket Magnet"
-				type: "item"
-			}]
-			x: -12.5d
-			y: -1.0d
-		}
-		{
 			id: "6EDB090E64B39AF7"
 			rewards: [
 				{
@@ -2504,6 +2475,51 @@
 			]
 			title: "&6Collection: &rAshen Keepsake"
 			x: -15.0d
+			y: -1.0d
+		}
+		{
+			id: "045FE5AA3F095609"
+			rewards: [
+				{
+					id: "3EAC3327534EEFD8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3DD3D5DB70655DD8"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Long Lasting Effects"
+			tasks: [{
+				id: "06CE7B25DF350491"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:potion_charm"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:custom"
+								tag: {
+									value: "has_potion"
+								}
+							}
+						]
+					}
+				}
+				title: "&eAcquire: &rPotion Charm"
+				type: "item"
+			}]
+			x: -12.5d
 			y: -1.0d
 		}
 	]

@@ -1,6 +1,5 @@
 global.disabledItems = [
 
-	'copperworks:rocket_boots',
 	'hearthandharvest:gunpowder_bag',
 	'malum:osmium_node',
 	
@@ -27,8 +26,6 @@ global.disabledItems = [
 	// TOOLS-CCOMPLEMENT
 	'/tools_complement:(silver|lead)_(sword|pickaxe$|axe$|shovel|hoe)/',
 	'/tools_complement:silver_(helmet|chestplate|leggings|boots)/',
-	'/tools_complement:copper_chestplate/',
-	'/tools_complement:copper_sword/',
 	
 	// GOBBER
 	'gobber2:gobber2_ring_attraction', 
@@ -119,7 +116,7 @@ global.clearedItems = [
 
 	'handcrafted:wood_plate', 
 	'cookingforblockheads:spice_rack', 
-	'luphieclutteredmod:small_shelf',
+	'cluttered:small_shelf',
 
 	'thermal:white_rockwool',
 

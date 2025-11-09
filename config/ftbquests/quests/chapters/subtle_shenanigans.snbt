@@ -164,9 +164,16 @@
 				}
 				{
 					icon: "transmog:void_fragment"
-					id: "5AC863CAF54EB649"
+					id: "3DB2A08F71F79D6D"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "transmogged"
+						}
+					}
 					title: "&eTransmogrify: &rItem"
-					type: "custom"
+					type: "item"
 				}
 			]
 			title: "&eOne The Side: &aTransmogification"
@@ -402,7 +409,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 10.5d
+			y: 11.5d
 		}
 		{
 			id: "7A91B19839F4B88C"
@@ -739,29 +746,6 @@
 			y: -2.0d
 		}
 		{
-			id: "53566B3E3FB4C26F"
-			rewards: [
-				{
-					id: "0F114F4BA92D2013"
-					type: "xp"
-					xp: 5
-				}
-				{
-					id: "760996B46CED38EA"
-					item: "kubejs:mischievous_box"
-					type: "item"
-				}
-			]
-			subtitle: "Anonymous Texting"
-			tasks: [{
-				id: "0C8160475066781E"
-				item: "copperworks:radio"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 11.5d
-		}
-		{
 			id: "6468E1F39B0B0C51"
 			rewards: [
 				{
@@ -850,8 +834,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 1.0d
+			y: 10.5d
 		}
 		{
 			icon: "luggage:luggage"

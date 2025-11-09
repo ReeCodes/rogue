@@ -5,6 +5,7 @@ const $Vec3 = Java.loadClass('net.minecraft.world.phys.Vec3');
 const $ShockwaveParticleOption = Java.loadClass('com.Polarice3.Goety.client.particles.ShockwaveParticleOption');
 const $ChatFormatting = Java.loadClass('net.minecraft.ChatFormatting');
 const $TextColor = Java.loadClass('net.minecraft.network.chat.TextColor');
+const $MagicMissile = Java.loadClass('vazkii.botania.common.entity.MagicMissileEntity');
 
 function playSound(level, sound, soundSource, x, y, z, vol, pitch) {
 	vol = vol || 0.3;
@@ -13,14 +14,15 @@ function playSound(level, sound, soundSource, x, y, z, vol, pitch) {
 }
 
 function applyCD(player, ability, baseCD) {
-	const finalCD = baseCD > 1 ? Math.max(1, Math.floor(baseCD - (baseCD * getPlayerAbilityCD(player)))) : 1;
-	ability.on_cooldown = finalCD;
+	const cdReduction = getPlayerAbilityCD(player);
+	const finalCD = baseCD > 1 ? Math.max(1, baseCD * (1 - cdReduction)) : 1;
+	ability.on_cooldown = finalCD * 20;
 }
 
 const handlers = {
 	onHurt: {
 		dark_hail: {
-			cd: 15, sound: 'alexscaves:dreadbow_rain', reset_sound: true,
+			cd: 40, sound: 'alexscaves:dreadbow_rain', reset_sound: true,
 			fn: (ctx) => {
 				const { entity, source, sourceType, ability, config } = ctx;
 				let level = source.level;
@@ -34,7 +36,7 @@ const handlers = {
 				if (source.getAttributes().getInstance("minecraft:generic.armor").getValue() == 0 && source.getAttributes().getInstance("minecraft:generic.armor_toughness").getValue() == 0) {
 					precise = true;
 				}
-				if (source.health == source.maxHealth) {
+				if (source.health >= source.maxHealth) {
 					perfectShot = true;
 				}
 				let hitPos = entity.position();
@@ -92,32 +94,31 @@ const handlers = {
 			fn: (ctx) => {
 				const { server, source, sourceType, ability, config } = ctx;
 				if (sourceType !== 'player' || !source.isPlayer()) return;
-				if (Math.random() < (ability.level * 0.01)) {
+				
+				if (Math.random() < (ability.level * 0.005)) {
 					playSound(source.level, config.sound, source.username, source.x, source.y, source.z, 0.3, 1.0);
 					server.scheduleInTicks(8, () => {
 						source.potionEffects.add('alexscaves:stunned', 40, 1, true, false);
 					});
-					applyCD(source, ability, config.cd);
+					applyCD(source, ability, (config.cd * ability.level));
 				}
 			}
 		},
 
 		magic_missile: {
-			cd: 5, sound: 'farlanders:entity.titan.hurt_heart', reset_sound: false,
+			cd: 0, sound: 'farlanders:entity.titan.hurt_heart', reset_sound: false,
 			fn: (ctx) => {
 				const { entity, source, sourceType, ability, config } = ctx;
 				if (sourceType !== 'player' || !source.isPlayer() || !entity.isMonster()) return;
-				let triggerChance = Math.min(ability.level * 0.04, 25);
-				if (Math.random() < (triggerChance)) {
-					let pUUID = source.nbt.UUID;
-					let pMotion = source.getLookAngle().add(0.0, 0.2, 0.0);
-					let mBarrage = source.level.createEntity("botania:magic_missile");
-					mBarrage.mergeNbt('{Owner:' + pUUID + '}');
-					mBarrage.setDeltaMovement(pMotion);
-					mBarrage.x = source.x;
-					mBarrage.y = source.y + 1.25;
-					mBarrage.z = source.z;
-					mBarrage.spawn();
+				
+				let triggerChance = 0.04 * Math.min(ability.level, 25);
+				if (Math.random() < triggerChance) {
+					let level = source.level;
+					let magicMissile = new $MagicMissile(source, false);
+					let angle = source.getLookAngle().subtract(0.0, 1.25, 0.0);
+					magicMissile.setDeltaMovement(angle);
+					magicMissile.setPos(source.x, source.y + 3.25, source.z);
+					level.addFreshEntity(magicMissile);
 					playSound(source.level, config.sound, source.username, source.x, source.y, source.z, 0.3);
 					applyCD(source, ability, config.cd);
 				}
@@ -125,12 +126,12 @@ const handlers = {
 		},
 
 		tracker: {
-			cd: 10, sound: 'alexscaves:seeking_arrow_hit', reset_sound: true,
+			cd: 15, sound: 'alexscaves:seeking_arrow_hit', reset_sound: true,
 			fn: (ctx) => {
 				const { entity, source, sourceType, ability, config } = ctx;
 				if (sourceType !== 'arrow' || !source.isPlayer()) return;
-				if (source.health != source.maxHealth) return;
-				entity.potionEffects.add('irons_spellbooks:guided', 10 * 20 * ability.level, 0, true, false);
+				if (source.health < source.maxHealth) return;
+				entity.potionEffects.add('irons_spellbooks:guided', config.cd * 20 * ability.level, 0, true, false);
 				playSound(source.level, config.sound, source.username, entity.x, entity.y, entity.z, 12, 0.1);
 				applyCD(source, ability, (config.cd * ability.level));
 			}
@@ -157,6 +158,7 @@ const handlers = {
 			cd: 15, sound: 'goety:hammer_swing', reset_sound: true,
 			fn: (ctx) => {
 				const {	server, player, source, sourceType, ability, config } = ctx;
+				
 				let chat = $ChatFormatting.RED;
 				let rgb = $TextColor.fromLegacyFormat(chat).getValue();
 				let r = ((rgb >> 16) & 0xFF) / 255.0;
@@ -213,22 +215,22 @@ const handlers = {
 	
 	onCrit: {
 		deep_cut: {
-			cd: 10, sound: false, reset_sound: true,
+			cd: 20, sound: false, reset_sound: true,
 			fn: (ctx) => {
 				const {	source, target, ability, config } = ctx;
 				if (!source.isPlayer()) return;
 				target.potionEffects.add('attributeslib:bleeding', 8 * 20, (ability.level - 1), true, false);
-				applyCD(source, ability, config.cd);
+				applyCD(source, ability, (config.cd * ability.level));
 			}
 		},
 		
 		exposed: {
-			cd: 10, sound: false, reset_sound: true,
+			cd: 20, sound: false, reset_sound: true,
 			fn: (ctx) => {
 				const {	source, target, ability, config } = ctx;
 				if (!source.isPlayer()) return;
 				target.potionEffects.add('attributeslib:sundering', 8 * 20, (ability.level - 1), true, false);
-				applyCD(source, ability, config.cd);
+				applyCD(source, ability, (config.cd * ability.level));
 			}
 		}
 	},
@@ -313,15 +315,6 @@ const handlers = {
 	}
 };
 
-// COOLDOWN RESET ON LOGIN
-PlayerEvents.loggedIn(event => {
-	let p = event.player;
-	if (!p.persistentData || !p.persistentData.puff_abilities) return;
-	p.persistentData.puff_abilities.forEach(ability => {
-		if (ability && ability.on_cooldown != 0) ability.on_cooldown = 0;
-	});
-});
-
 // ALL EVENTS
 
 // HURT EVENT
@@ -338,7 +331,7 @@ EntityEvents.hurt(event => {
 			if (!ability || ability.on_cooldown !== 0) return;
 			let name = ability.ability;
 			let cfg = handlers.onHurt[name];
-			if (cfg && cfg.fn) {
+			if (cfg?.fn) {
 				cfg.fn({
 					server: server,
 					entity: entity,
@@ -359,7 +352,7 @@ EntityEvents.hurt(event => {
 			if (!ability || ability.on_cooldown !== 0) return;
 			let name = ability.ability;
 			let cfg = handlers.onDefensive[name];
-			if (cfg && cfg.fn) {
+			if (cfg?.fn) {
 				cfg.fn({
 					server: server,
 					player: entity,
@@ -386,7 +379,7 @@ EntityEvents.death(event => {
 			if (!ability || ability.on_cooldown !== 0) return;
 			let name = ability.ability;
 			let cfg = handlers.onKill[name];
-			if (cfg && cfg.fn) {
+			if (cfg?.fn) {
 				cfg.fn({
 					server: server,
 					entity: entity,
@@ -411,7 +404,7 @@ global.CritEvent = event => {
 			if (!ability || ability.on_cooldown !== 0) return;
 			let name = ability.ability;
 			let cfg = handlers.onCrit[name];
-			if (cfg && cfg.fn) {
+			if (cfg?.fn) {
 				cfg.fn({
 					server: Utils.server,
 					target: target,
@@ -510,25 +503,25 @@ const COOLDOWN_BLACKLIST = ["nimble"];
 PlayerEvents.tick(event => {
 	let p = event.player;
 	if (!p.persistentData || !p.persistentData.puff_abilities) return;
-	if (p.age % 20 !== 0) return;
 
 	p.persistentData.puff_abilities.forEach(a => {
 		if (!a || !a.on_cooldown || COOLDOWN_BLACKLIST.includes(a.ability)) return;
+
 		a.on_cooldown -= 1;
-		if (a.on_cooldown === 0) {
+
+		if (a.on_cooldown <= 0) {
+			a.on_cooldown = 0;
+
 			let cfg = null;
-			
-			//EVENT HANDLER CHECK
 			for (let category in handlers) {
 				if (handlers[category][a.ability]) {
 					cfg = handlers[category][a.ability];
 					break;
 				}
 			}
-			
-			//PLAY RESET SOUND
-			if (cfg && cfg.reset_sound) {
-				playSound(Utils.server, 'create:confirm_2',	p.username,	p.x, p.y, p.z, 0.3, 0.1);
+
+			if (cfg?.reset_sound) {
+				playSound(Utils.server, 'create:confirm_2', p.username, p.x, p.y, p.z, 0.3, 0.1);
 			}
 		}
 	});

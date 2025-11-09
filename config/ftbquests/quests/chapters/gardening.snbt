@@ -815,139 +815,146 @@
 							Sandwich: [
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 								{
 									Count: 1b
-									id: "some_assembly_required:toasted_bread_slice"
+									id: "some_assembly_required:bread_slice"
 								}
 							]
 						}
 					}
 				}
-				id: "5EC454BC5B4C683D"
+				id: "63C8393E2C5AA731"
+				item: {
+					Count: 1
+					id: "itemfilters:custom"
+					tag: {
+						value: "bread_tower"
+					}
+				}
 				title: "&eAssemble: &rSandwich (32 Ingredients)"
-				type: "custom"
+				type: "item"
 			}]
 			title: "&eOn The Side: &aBread Tower"
 			x: 0.0d

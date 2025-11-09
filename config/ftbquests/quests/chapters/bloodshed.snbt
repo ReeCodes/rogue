@@ -395,8 +395,15 @@
 				{
 					icon: "bloodmagic:slate_vial"
 					id: "19DADD5E464746B4"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "high_tier_anointed"
+						}
+					}
 					title: "&eApply: &rHigh Tier Anointment"
-					type: "custom"
+					type: "item"
 				}
 			]
 			title: "&eOn The Side: &aAnointments, Pt. II"
@@ -1483,7 +1490,7 @@
 						}
 					}
 					id: "49C2A42AFD946886"
-					title: "&eActivate: &rRitual Of Living Evolution"
+					title: "&eActivate: &rRitual of Living Evolution"
 					type: "custom"
 				}
 				{
@@ -1504,59 +1511,19 @@
 						}
 					}
 					id: "2050F43AAB0EFA00"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "living_armor_upgraded"
+						}
+					}
 					title: "&eUpgrade: &rLiving Armor"
-					type: "custom"
+					type: "item"
 				}
 				{
 					id: "4F177DEE24387688"
-					item: {
-						Count: 1
-						id: "bloodmagic:upgradetrainer"
-						tag: {
-							Items: [{
-								Count: 1b
-								Slot: 0b
-								id: "bloodmagic:upgradetome"
-								tag: {
-									livingStats: {
-										maxPoints: 100
-										upgrades: [{
-											exp: 5.0d
-											key: "bloodmagic:curios_socket"
-										}]
-									}
-								}
-							}]
-							"button:blackwhitelist": 0b
-							displayIfLevelZero: 1b
-							itemInventoryTrainingBracelet: {
-								Items: [{
-									Count: 1b
-									Slot: 0b
-									id: "bloodmagic:upgradetome"
-									tag: {
-										displayIfLevelZero: 1b
-										livingStats: {
-											maxPoints: 100
-											upgrades: [{
-												exp: 5.0d
-												key: "bloodmagic:curios_socket"
-											}]
-										}
-									}
-								}]
-							}
-							leastSig: -6853398428899386979L
-							livingStats: {
-								maxPoints: 100
-								upgrades: [{
-									exp: 5.0d
-									key: "bloodmagic:curios_socket"
-								}]
-							}
-							mostSig: 3178253601215497377L
-						}
-					}
+					item: "bloodmagic:upgradetrainer"
 					type: "item"
 				}
 			]
@@ -2103,7 +2070,7 @@
 				{
 					icon: "bloodmagic:activationcrystalweak"
 					id: "34DF335C747A6DC0"
-					title: "&eActivate: &rResonance Of The Faceted Crystal (Ritual)"
+					title: "&eActivate: &rResonance of the Faceted Crystal (Ritual)"
 					type: "custom"
 				}
 				{

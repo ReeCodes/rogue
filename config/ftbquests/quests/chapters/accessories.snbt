@@ -9,82 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"Trade in a &eCopper Drill&r from an &eEngineering Villager&r. "
-				""
-				"Their workstation is a &eCopper Battery&r."
-				""
-				"After acquiring the drill, drop it at the Villager to &eupgrade&r it."
-			]
-			icon: {
-				Count: 1
-				id: "copperworks:copper_drill"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "683DFC795A999D9A"
-			rewards: [
-				{
-					id: "79E7BB321A974A37"
-					type: "xp"
-					xp: 15
-				}
-				{
-					count: 4
-					id: "7EE4499D616B0721"
-					item: "kubejs:jewelled_box"
-					type: "item"
-				}
-			]
-			size: 1.0d
-			subtitle: "No Guarantees"
-			tasks: [
-				{
-					icon: "minecraft:emerald"
-					id: "715F0C13AD175462"
-					title: "&eInteract: &rEngineer"
-					type: "custom"
-				}
-				{
-					id: "3601DD9A9B6CF4CE"
-					item: {
-						Count: 1
-						id: "copperworks:copper_drill"
-						tag: {
-							Damage: 0
-						}
-					}
-					match_nbt: false
-					title: "&eTrade In: &rCopper Drill"
-					type: "item"
-				}
-				{
-					advancement: "copperworks:engineering_guru_advancement"
-					criterion: ""
-					icon: {
-						Count: 1
-						id: "copperworks:copper_drill"
-						tag: {
-							Damage: 0
-							Enchantments: [{
-								id: "ars_elemental:soulbound"
-								lvl: 1s
-							}]
-							RepairCost: 1
-							"quark:RuneColor": "rainbow"
-						}
-					}
-					id: "5E8050BA696AEC9F"
-					title: "&eRetrieve: &rUpgraded Copper Drill"
-					type: "advancement"
-				}
-			]
-			title: "&eComplete: &rEngineer's Touch Up"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["0000000000000037"]
 			id: "1D9D70FB9163DD4B"
 			rewards: [
@@ -145,8 +69,8 @@
 				type: "item"
 			}]
 			title: "&eOn The Side: &aHearty Attack"
-			x: 16.0d
-			y: 6.0d
+			x: -16.0d
+			y: -2.0d
 		}
 		{
 			id: "6D52DFB5DE4FD9E7"
@@ -184,16 +108,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["683DFC795A999D9A"]
 			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				ForgeCaps: {
 					"cold_sweat:item_insulation": {
-						Insulation: [ ]
+						insulation: [ ]
 					}
 				}
-				id: "copperworks:copper_bracer_chestplate"
+				id: "tools_complement:copper_chestplate"
 				tag: {
 					Damage: 0
 				}
@@ -219,7 +142,7 @@
 					id: "0F0939FCFB4ED2A1"
 					item: {
 						Count: 1
-						id: "copperworks:copper_broad_sword"
+						id: "tools_complement:copper_sword"
 						tag: {
 							Damage: 0
 						}
@@ -249,13 +172,12 @@
 						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
-								Insulation: [ ]
+								insulation: [ ]
 							}
 						}
-						id: "copperworks:copper_bracer_chestplate"
+						id: "tools_complement:copper_chestplate"
 						tag: {
 							Damage: 0
-							Insulation: [ ]
 						}
 					}
 					type: "item"
@@ -3327,59 +3249,6 @@
 			y: -2.0d
 		}
 		{
-			id: "1C976961D034E28B"
-			rewards: [
-				{
-					id: "693CBB55D56F2271"
-					type: "xp"
-					xp: 75
-				}
-				{
-					count: 3
-					id: "0602CD5BC2F3F5E6"
-					item: "kubejs:jewelled_box"
-					type: "item"
-				}
-				{
-					id: "571EB3CA2B5219AE"
-					item: "kubejs:druidic_box"
-					type: "item"
-				}
-			]
-			size: 2.0d
-			subtitle: "Blood-Covered"
-			tasks: [
-				{
-					id: "0E1AF7CCABD51E43"
-					item: "sons_of_sins:sinful_sword"
-					type: "item"
-				}
-				{
-					id: "7E52C0FEBD74788E"
-					item: "sons_of_sins:sinful_pickaxe"
-					type: "item"
-				}
-				{
-					id: "60E7E27A101461D8"
-					item: "sons_of_sins:sinful_axe"
-					type: "item"
-				}
-				{
-					id: "340C1C23F93817F0"
-					item: "sons_of_sins:sinful_shovel"
-					type: "item"
-				}
-				{
-					id: "785E40A297777EAB"
-					item: "sons_of_sins:sinful_hoe"
-					type: "item"
-				}
-			]
-			title: "&6Collection: &rSinful Armory"
-			x: -12.0d
-			y: -2.0d
-		}
-		{
 			id: "24B782A54B62DAEC"
 			rewards: [
 				{
@@ -4053,7 +3922,7 @@
 				}
 			]
 			title: "&6Collection: &rAir Suit"
-			x: -16.0d
+			x: -12.0d
 			y: -2.0d
 		}
 		{

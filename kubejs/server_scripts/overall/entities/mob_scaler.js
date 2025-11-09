@@ -25,15 +25,9 @@ function getPetCooldown(entity) {
 	return getPetData(entity).sync_health_cooldown ?? 0;
 }
 
-function setPetCooldown(entity, value) {
-    getPetData(entity).sync_health_cooldown = value;
-}
-
-function decrementPetCooldown(entity) {
-    let petData = getPetData(entity);
-    if (petData.sync_health_cooldown > 0) {
-        petData.sync_health_cooldown--;
-    }
+function setPetCooldown(entity, seconds) {
+    let ticks = Math.max(0, seconds) * 20;
+    getPetData(entity).sync_health_cooldown = ticks;
 }
 
 function syncHealth(entity, player) {
@@ -67,8 +61,7 @@ function removeModifierByName(attributeInstance, modifierName) {
 
 function addModifiers(event, player, entity, attName, attModifierName, attOperation) {
 
-	if (ENTITY_SCALE_BLACKLIST.test(entity.type)) return;
-	if (entity.isPlayer() || !entity.isAlive() || !entity.isLiving()) return;
+	if (ENTITY_SCALE_BLACKLIST.test(entity.type) || entity.isPlayer() || !entity.isAlive() || !entity.isLiving()) return;
 	
 	const PLAYER_COEF = getPlayerCoef(player);
 	const PLAYER_MAX_COEF = getMaxPlayerCoef(player);
@@ -78,8 +71,8 @@ function addModifiers(event, player, entity, attName, attModifierName, attOperat
 		if (attModifierName == 'rogue:scaler') {
 			if (attName == 'minecraft:generic.max_health') {
 				let BOSS_MIN_HEALTH = 200;
-				let BASIC_ADD = 20 * (Math.pow(PLAYER_COEF, 1.18) - 1);
-				let BOSS_ADD = Math.min(Math.pow(PLAYER_COEF, 0.66) * (PLAYER_COEF * 15), 4500);
+				let BASIC_ADD = 15 * (Math.pow(PLAYER_COEF, 1.18) - 1);
+				let BOSS_ADD = Math.min(Math.pow(PLAYER_COEF, 0.66) * (PLAYER_COEF * 15), 8000);
 				let HEALTH_ADD_VALUE = 0;
 				
 				if (BASE_VALUE >= BOSS_MIN_HEALTH) {
@@ -95,18 +88,18 @@ function addModifiers(event, player, entity, attName, attModifierName, attOperat
 			  assignAtt(entity, player, attName, SPEED_ADD_VALUE, attModifierName, attOperation);
 			}
 			if (attName == 'minecraft:generic.attack_damage') {
-				let ATTACK_DMG_ADD = Math.pow(PLAYER_COEF, 0.97) + Math.pow(PLAYER_COEF, 0.97);
-				let ATTACK_DMG_ADD_VALUE = Math.min(ATTACK_DMG_ADD * (1 / (1 + (BASE_VALUE - 2) / 50)),	100);				
+				let ATTACK_DMG_ADD = Math.pow(PLAYER_COEF, 1.05) + Math.pow(PLAYER_COEF, 1.05);
+				let ATTACK_DMG_ADD_VALUE = Math.min(ATTACK_DMG_ADD * (1 / (1 + (BASE_VALUE - 1) / 40)),	(PLAYER_MAX_COEF * 2));	
 				assignAtt(entity, player, attName, ATTACK_DMG_ADD_VALUE, attModifierName, attOperation);
 			}
 			if (attName == 'attributeslib:arrow_damage') {
 				let ARROW_DMG_ADD = Math.pow(PLAYER_COEF, 0.57) + Math.pow(PLAYER_COEF, 0.57);
-				let ARROW_DMG_ADD_VALUE = Math.min(ARROW_DMG_ADD, 100);
+				let ARROW_DMG_ADD_VALUE = Math.min(ARROW_DMG_ADD, (PLAYER_MAX_COEF * 2)) - 1;
 				assignAtt(entity, player, attName, ARROW_DMG_ADD_VALUE, attModifierName, attOperation);
 			}
 			if (!allBowEntities.test(entity.type) && attName == 'obscure_api:magic_damage') {
 				let MAGIC_DMG_ADD = Math.pow(PLAYER_COEF, 0.53) + Math.pow(PLAYER_COEF, 0.53);
-				let MAGIC_DMG_ADD_VALUE = Math.min(MAGIC_DMG_ADD, 100);
+				let MAGIC_DMG_ADD_VALUE = Math.min(MAGIC_DMG_ADD, (PLAYER_MAX_COEF * 2));
 				assignAtt(entity, player, attName, MAGIC_DMG_ADD_VALUE, attModifierName, attOperation);
 			}
 			if (attName == 'forge:step_height_addition') {
@@ -116,21 +109,21 @@ function addModifiers(event, player, entity, attName, attModifierName, attOperat
 			}
 			if (!isTamed(entity) && entity.isMonster() && !ATT_EXCLUDE_ARMOR.test(entity.type)) {
 				if (attName == 'minecraft:generic.armor') {
-					let RANDOM_ARMOR_EXTRA_CHANCE = 0.5 + Math.random() * 1.65;
-					let ARMOR_ADD = Math.pow(PLAYER_COEF, 0.67) + Math.pow(PLAYER_COEF, 0.67);
-					let ARMOR_ADD_VALUE = Math.min(ARMOR_ADD * RANDOM_ARMOR_EXTRA_CHANCE, 60);
+					let RANDOM_ARMOR_EXTRA_CHANCE = Math.random() * 1.65;
+					let ARMOR_ADD = (Math.pow(PLAYER_COEF, 0.87) + Math.pow(PLAYER_COEF, 0.87)) - 2;
+					let ARMOR_ADD_VALUE = Math.min(ARMOR_ADD * RANDOM_ARMOR_EXTRA_CHANCE, (PLAYER_MAX_COEF + 20));
 					assignAtt(entity, player, attName, ARMOR_ADD_VALUE, attModifierName, attOperation);
 				}
 				if (attName == 'minecraft:generic.armor_toughness') {
-					let RANDOM_ARMOR_TOUGHNESS_EXTRA_CHANCE = 0.5 + Math.random() * 1.35;
-					let ARMOR_TOUGHNESS_ADD = Math.pow(PLAYER_COEF, 0.45) + Math.pow(PLAYER_COEF, 0.45);
-					let ARMOR_TOUGHNESS_ADD_VALUE = Math.min(ARMOR_TOUGHNESS_ADD * RANDOM_ARMOR_TOUGHNESS_EXTRA_CHANCE, 60);
+					let RANDOM_ARMOR_TOUGHNESS_EXTRA_CHANCE = Math.random() * 1.35;
+					let ARMOR_TOUGHNESS_ADD = (Math.pow(PLAYER_COEF, 0.65) + Math.pow(PLAYER_COEF, 0.65)) - 2;
+					let ARMOR_TOUGHNESS_ADD_VALUE = Math.min(ARMOR_TOUGHNESS_ADD * RANDOM_ARMOR_TOUGHNESS_EXTRA_CHANCE, (PLAYER_MAX_COEF + 20));
 					assignAtt(entity, player, attName, ARMOR_TOUGHNESS_ADD_VALUE, attModifierName, attOperation);
 				}
 				if (attName == 'lodestone:magic_resistance') {
-					let RANDOM_MAGIC_ARMOR_EXTRA_CHANCE = 0.5 + Math.random() * 1.45;
+					let RANDOM_MAGIC_ARMOR_EXTRA_CHANCE = Math.random() * 1.45;
 					let MAGIC_ARMOR_ADD = Math.pow(PLAYER_COEF, 0.55) + Math.pow(PLAYER_COEF, 0.55);
-					let MAGIC_ARMOR_ADD_VALUE = Math.min(MAGIC_ARMOR_ADD * RANDOM_MAGIC_ARMOR_EXTRA_CHANCE, 60);
+					let MAGIC_ARMOR_ADD_VALUE = Math.min(MAGIC_ARMOR_ADD * RANDOM_MAGIC_ARMOR_EXTRA_CHANCE, (PLAYER_MAX_COEF + 20));
 					assignAtt(entity, player, attName, MAGIC_ARMOR_ADD_VALUE, attModifierName, attOperation);
 				}
 			}
@@ -209,10 +202,12 @@ ItemEvents.entityInteracted(event => {
 	const { target, player, item, hand } = event;
 	
 	if (!isTamedBy(target, player).tamed || hand != 'MAIN_HAND' || item.id !== 'minecraft:air') return;
-	let petCD = getPetCooldown(target);
+	
+	//let petTicks = 
+	let petCD = Math.ceil(getPetCooldown(target) / 20);
 	let petPlayerCD = Math.round(getPlayerPetCD(player) * 100);
 	
-	if (petCD == undefined) return;
+	if (!petCD) return;
 		
 		let syncSuccess = [
 			Text.of('[Attribute Sync] ').color('#f7e7ba')
@@ -243,11 +238,15 @@ ItemEvents.entityInteracted(event => {
 //COOLDOWN DECREMENT
 LevelEvents.tick(event => {
     const { level } = event;
-	if (level.clientSide || level.time % 20 !== 0) return;
+    if (level.clientSide) return;
 
-	for (let entity of level.entities) {
-		if (isTamed(entity)) {
-			decrementPetCooldown(entity)
-		}
-	}
-})
+    for (let entity of level.entities) {
+        if (!isTamed(entity)) continue;
+
+        let petData = getPetData(entity);
+        if (petData && petData.sync_health_cooldown > 0) {
+            petData.sync_health_cooldown -= 1;
+            if (petData.sync_health_cooldown < 0) petData.sync_health_cooldown = 0;
+        }
+    }
+});

@@ -217,7 +217,7 @@
 	},
 	"root_ars": {
 		"title": "§6School:§f Sourcerer",
-		"description": "§a+1§f Spell Damage (Ars)\n§a+25%§r Magic Damage",
+		"description": "§a+1§f Spell Damage (Ars)\n§a+12.5%§r Magic Damage",
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",
@@ -244,7 +244,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "puffish_attributes:magic_damage",
-					"value": 0.25,
+					"value": 0.125,
 					"operation": "multiply_total"
 				}
 			}
@@ -302,7 +302,7 @@
 				"data": {
 					"attribute": "puffish_attributes:magic_damage",
 					"value": 0.01,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -684,7 +684,7 @@
 				"data": {
 					"attribute": "puffish_attributes:magic_damage",
 					"value": 0.1,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -969,7 +969,7 @@
 	},
 	"milestone_archmage": {
 		"title": "§6Archsourcerer",
-		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+75%§f Spell Damage (Ars)\n§a+25%§f Magic Damage\n\nLocks other §6Milestones"}],
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+50%§f Spell Damage (Ars)\n§a+25%§f Magic Damage\n\nLocks other §6Milestones"}],
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",
@@ -988,8 +988,8 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "ars_nouveau:ars_nouveau.perk.spell_damage",
-					"value": 0.75,
-					"operation": "multiply_total"
+					"value": 0.5,
+					"operation": "multiply_base"
 				}
 			},
 			{
@@ -997,7 +997,7 @@
 				"data": {
 					"attribute": "puffish_attributes:magic_damage",
 					"value": 0.25,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			}
 		]

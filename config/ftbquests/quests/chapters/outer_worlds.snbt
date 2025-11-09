@@ -30,7 +30,7 @@
 				}
 			]
 			size: 3.0d
-			subtitle: "Early Flight"
+			subtitle: "Machine Parts"
 			tasks: [
 				{
 					id: "288067D1352EC868"
@@ -72,7 +72,7 @@
 					type: "custom"
 				}
 			]
-			title: "&eIntroduction: &aPilot's License"
+			title: "&eIntroduction: &aMachine License"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -609,6 +609,198 @@
 			title: "&eConstruct: &rWarship"
 			x: 0.0d
 			y: 21.0d
+		}
+		{
+			dependencies: [
+				"3AC4DD7DB2F7F10C"
+				"288067D1352EC868"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_machinery:redstone_sheep"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "1786BC86A9A9E86B"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "091B12CE06DF736A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "794C8D7B24AD821F"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Harvester"
+			tasks: [{
+				id: "195CAC6333F4347C"
+				item: "immersive_machinery:redstone_sheep"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3AC4DD7DB2F7F10C"
+				"288067D1352EC868"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_machinery:bamboo_bee"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "2F49C9B6B63C768E"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "3E464340BD29232C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "3A598305CD22F3AD"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "792CB55CD26A40CA"
+				item: {
+					Count: 1
+					id: "immersive_machinery:bamboo_bee"
+					tag: {
+						ContainerPositions: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3AC4DD7DB2F7F10C"
+				"288067D1352EC868"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_machinery:tunnel_digger"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "3FD7EBB90152C016"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "14436344B49E75A4"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 4
+					id: "715FBC612813633E"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "7F9B6A8C38E1CCF1"
+					item: "immersive_machinery:tunnel_digger"
+					type: "item"
+				}
+				{
+					id: "357E5BD59F9F9848"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "immersive_machinery:diamond_drill"
+								}
+								{
+									Count: 1b
+									id: "immersive_machinery:netherite_drill"
+								}
+							]
+						}
+					}
+					title: "&eDrills"
+					type: "item"
+				}
+				{
+					icon: "immersive_machinery:tunnel_digger"
+					id: "4CBC79147F3A341C"
+					title: "&eOperate: &rTunnel Digger"
+					type: "custom"
+				}
+			]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"3AC4DD7DB2F7F10C"
+				"288067D1352EC868"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_machinery:copperfin"
+					DisplayMobScale: 1.0d
+				}
+			}
+			id: "3846E21E23EF6196"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "3C6187FA8B6F75C2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 4
+					id: "2BE5373849880578"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "6595FC262975470F"
+					item: "immersive_machinery:copperfin"
+					type: "item"
+				}
+				{
+					icon: "immersive_machinery:copperfin"
+					id: "70717AC6E96FBAF2"
+					title: "&eOperate: &rCopperfin"
+					type: "custom"
+				}
+			]
+			x: -7.0d
+			y: 8.0d
 		}
 	]
 	title: "{quest.overview.base_label.title} Manned"

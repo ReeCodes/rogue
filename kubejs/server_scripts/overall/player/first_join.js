@@ -23,7 +23,7 @@ PlayerEvents.loggedIn(event => {
 		player.stages.add('luggage');
 	};
 	
-	if (player.persistentData?.skilltree_version < skilltree_version) {
+	if (player.persistentData?.skilltree_version < 5) {
 		player.give(Item.of('minecraft:snowball', 64, "{display:{Name:'{\"text\":\"<rainb>OLD-SCALED REMOVER<rainb>\"}'},tag:\"kill_old\"}"));
 		player.tell(
 			Text.of("Your world used the old mob scaling system.\n\n" +
@@ -55,7 +55,7 @@ PlayerEvents.loggedIn(event => {
 		);
 	}
 	
-	if (player.persistentData?.skilltree_version != skilltree_version) {
+	if (player.persistentData?.skilltree_version && (player.persistentData?.skilltree_version != skilltree_version)) {
 		server.runCommandSilent(`execute as ${player.username} run puffish_reset`);
 		player.persistentData.skilltree_version = skilltree_version;
 	};

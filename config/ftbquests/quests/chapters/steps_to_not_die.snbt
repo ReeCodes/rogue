@@ -882,7 +882,7 @@
 				"{@pagebreak}"
 				"Every time your &edifficulty modifier&r increases or decreases, the &eRogue Meter&r will appear in the bottom left of your screen, reminding you of your current difficulty along with a sound cue."
 				""
-				"&a1.0&r is your starting value; &e10.0&r is hard on it's own; &420.0&r is the limit meaning: most mobs will finish you fast."
+				"&a1.0&r is your starting value; &e10.0&r is hard on it's own; &420.0&r is the limit meaning: most mobs will deal major amounts of damage. Expandable to a new maximum of &450&r."
 			]
 			icon: {
 				Count: 1

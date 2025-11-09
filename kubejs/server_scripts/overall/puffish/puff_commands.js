@@ -77,7 +77,7 @@ ServerEvents.commandRegistry(event => {
 						]);
 					}
 
-					Utils.server.runCommandSilent(`playsound create:confirm master ${player.username} ${player.x} ${player.y} ${player.z} 0.3`);
+					Utils.server.runCommandSilent(`playsound embers:item.heated.level_up master ${player.username} ${player.x} ${player.y} ${player.z} 0.3`);
 					return 1;
 				})
 		);

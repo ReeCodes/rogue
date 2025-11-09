@@ -14,8 +14,8 @@ follow:
   portalMaxTeleportedPets: -1
   portalTeleportingPets: true
 injuredStatus:
-  healthRatio: 0.2
+  healthRatio: 0.1
   stopAttacking: true
-  teleportToOwner: true
+  teleportToOwner: false
 combat:
-  betterSweepingEdgeEffect: true
+  betterSweepingEdgeEffect: false

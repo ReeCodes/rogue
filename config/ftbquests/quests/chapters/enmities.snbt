@@ -6,17 +6,14 @@
 	icon: {
 		Count: 1
 		ForgeCaps: {
-			Parent: {
-				Items: [ ]
-				Size: 1
+			"cold_sweat:item_insulation": {
+				insulation: [ ]
 			}
 		}
-		id: "sons_of_sins:puppet_of_strife"
+		id: "savage_and_ravage:griefer_helmet"
 		tag: {
-			Inventory: {
-				Items: [ ]
-				Size: 1
-			}
+			Damage: 0
+			insulation: [ ]
 		}
 	}
 	id: "7285283690E8A55C"
@@ -162,7 +159,7 @@
 				value: 1L
 			}]
 			x: 25.0d
-			y: 21.0d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -172,7 +169,6 @@
 				"1674C5D0CA5DF7A7"
 				"5289CBEAFDE36EC9"
 				"01CB646AF26E1E15"
-				"2586C2A78D34EFEE"
 			]
 			icon: {
 				Count: 1
@@ -901,7 +897,7 @@
 				value: 1L
 			}]
 			x: 21.0d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			id: "1674C5D0CA5DF7A7"
@@ -964,41 +960,6 @@
 			}]
 			x: -12.0d
 			y: 14.0d
-		}
-		{
-			id: "2586C2A78D34EFEE"
-			rewards: [
-				{
-					id: "412BC04187B4D8BD"
-					type: "xp_levels"
-					xp_levels: 25
-				}
-				{
-					count: 3
-					id: "6388CCB4200B6CFC"
-					item: "kubejs:glitched_box"
-					type: "item"
-				}
-			]
-			size: 2.0d
-			subtitle: "Prehistoric Blob"
-			tasks: [{
-				entity: "shineals_prehistoric_expansion:dunkleosteus"
-				icon: {
-					Count: 1
-					id: "alexsmobs:tab_icon"
-					tag: {
-						DisplayEntityType: "shineals_prehistoric_expansion:dunkleosteus"
-						DisplayMobScale: 0.75d
-					}
-				}
-				id: "4872FDBC08F8EDCF"
-				title: "&cSlay: &rDunk"
-				type: "kill"
-				value: 1L
-			}]
-			x: 21.0d
-			y: 24.0d
 		}
 		{
 			dependencies: [
@@ -1331,7 +1292,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Metalliferous Champion"
+			subtitle: "Champion"
 			tasks: [{
 				entity: "mowziesmobs:ferrous_wroughtnaut"
 				icon: {
@@ -1367,7 +1328,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Sanctified Sunbird"
+			subtitle: "Sanctified"
 			tasks: [{
 				entity: "mowziesmobs:umvuthi"
 				icon: {
@@ -1406,7 +1367,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Frozen Monstrosity"
+			subtitle: "Frosted"
 			tasks: [{
 				entity: "mowziesmobs:frostmaw"
 				icon: {
@@ -1440,7 +1401,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Winged Serpent"
+			subtitle: "Winged"
 			tasks: [{
 				entity: "mowziesmobs:naga"
 				icon: "mowziesmobs:naga_fang"
@@ -1858,6 +1819,7 @@
 				}
 			]
 			size: 2.0d
+			subtitle: "Balanced"
 			tasks: [{
 				entity: "mowziesmobs:sculptor"
 				icon: {

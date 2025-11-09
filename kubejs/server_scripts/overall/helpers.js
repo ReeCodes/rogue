@@ -1,6 +1,8 @@
 //priority: 500
 
 // CLASSES
+const $Player = Java.loadClass("net.minecraft.world.entity.player.Player");
+const $ServerPlayer = Java.loadClass("net.minecraft.server.level.ServerPlayer");
 const $FakePlayer = Java.loadClass("net.minecraftforge.common.util.FakePlayer");
 const $ItemStack = Java.loadClass("net.minecraft.world.item.ItemStack");
 const $TameEvent = Java.loadClass("net.minecraftforge.event.entity.living.AnimalTameEvent");
@@ -121,4 +123,25 @@ function isTamedBy(entity, player) {
 
 function isTamed(entity) {
 	return (!!entity?.owner || !!entity?.ownerUUID || !!entity?.nbt?.TrustedPlayers);
+}
+
+//GLOBAL EXECUTIONS
+global.spreadPlayer = entity => {
+	
+	if (isFakePlayer(entity)) return;	
+	let off = entity.offHandItem;
+	let main = entity.mainHandItem;
+	let nothing = 'kubejs:nothingness';
+	
+	if (entity.isHoldingInAnyHand(Item.of(nothing))) {
+		if (off.id == nothing) off.count--;
+		if (main.id == nothing) main.count--;
+		if (Utils.server.minecraftServer) Utils.server.tell(`§e${entity.username}§r used Nothingness`);
+		entity.setStatusMessage(Text.of(`Finding a right stop...`).yellow());
+		entity.addItemCooldown(nothing, 1000);
+		Utils.server.runCommandSilent(`playsound minecraft:block.glass.break master ${entity.username} ${entity.x} ${entity.y} ${entity.z} 0.5 0.5`)
+		Utils.server.scheduleInTicks(60, () => {
+			Utils.server.runCommandSilent(`execute as ${entity.username} run spreadplayers ~ ~ 5000 10000 false ${entity.username}`)
+		})
+	}
 }

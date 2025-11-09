@@ -24,10 +24,14 @@ function toTitleCase(string) {
 		.replace(/\b\w/g, c => c.toUpperCase());
 }
 
+const BASE_COLOR = '#EBCA60';
+const COLOR_ROGUE = '#f76628';
+const COLOR_TOOLTIP = '#97E072';
+
 let boxesInfo = [
 	{ 
 		item: 'kubejs:makeshift_box', 
-		info: 'Decrepit, Old, Moldy',
+		info: 'Decrepit, Moldy',
 		color: '#EFF283'
 	}, 
 	{ 
@@ -49,18 +53,18 @@ let boxesInfo = [
 	}, 
 	{ 
 		item: 'kubejs:mischievous_box', 
-		info: 'All Sorts Of Things',
+		info: 'All Sorts of Things',
 		color: '#EFF283',
 		nyt: true
 	}, 
 	{ 
 		item: 'kubejs:druidic_box', 
-		info: 'Disfigured By Corruption',
+		info: 'Disfigured',
 		color: '#EFF283'
 	}, 
 	{ 
 		item: 'kubejs:floral_box', 
-		info: 'Scent Of Nature',
+		info: 'Natural',
 		color: '#EFF283'
 	}, 
 	{ 
@@ -70,17 +74,17 @@ let boxesInfo = [
 	}, 
 	{ 
 		item: 'kubejs:oxidized_box', 
-		info: 'Subterranean Goods',
+		info: 'Subterranean',
 		color: '#EFF283'
 	}, 
 	{ 
 		item: 'kubejs:jewelled_box', 
-		info: 'Lavish Antiquities',
+		info: 'Lavish',
 		color: '#EFF283'
 	}, 
 	{ 
 		item: 'kubejs:bloated_box', 
-		info: 'Not Enough Space',
+		info: 'Pop',
 		color: '#EFF283'
 	}];
 
@@ -123,51 +127,51 @@ ItemEvents.tooltip(tooltip => {
 	})
 	
 	Ingredient.of(['@yoyos']).and(Ingredient.of(['/.*yoyo$/'])).stacks.forEach(i => {
-		tooltip.add(i.id, [Text.of('Uses both Ranged Damage and Attack Damage').yellow()])
+		tooltip.add(i.id, [Text.of('Uses both Ranged Damage and Attack Damage').color(COLOR_TOOLTIP)])
 	});
 	
 	tooltip.addAdvanced('kubejs:nothingness', (item, advanced, text) => {
 		if (!tooltip.isShift()) {
-			text.add(1, [Text.of('§oA hole would be something').color('#c4a9fc')])
+			text.add(1, [Text.of('§oA hole would be something').color(BASE_COLOR)])
 			text.add(2, shiftIndicator)
 		} else {
-			text.add(1, [Text.of('Teleports the user to a random location.').yellow()])
+			text.add(1, [Text.of('Teleports the user to a random location.').color(COLOR_TOOLTIP)])
 		}
 	})
 	
 	tooltip.addAdvanced('kubejs:enlightened_petal', (item, advanced, text) => {
 		if (!tooltip.isShift()) {
-			text.add(1, [Text.of('§oSkipping the hassle...').color('#c4a9fc')])
+			text.add(1, [Text.of('§oExtra XP').color(BASE_COLOR)])
 			text.add(2, shiftIndicator)
 		} else {
-			text.add(1, [Text.of('Grants +100XP to a random Skill Tree').yellow()])
+			text.add(1, [Text.of('Free Skill Tree points').color(COLOR_TOOLTIP)])
 		}
 	})
 	
 	tooltip.addAdvanced('kubejs:dust_size_down', (item, advanced, text) => {
 		if (!tooltip.isShift()) {
-			text.add(1, [Text.of('§oMakes the user shrink').color('#c4a9fc')])
+			text.add(1, [Text.of('§oMakes the user shrink').color(BASE_COLOR)])
 			text.add(2, shiftIndicator)
 		} else {
-			text.add(1, [Text.of('Use while sneaking to reset size.').yellow()])
+			text.add(1, [Text.of('Use while sneaking to reset size.').color(COLOR_TOOLTIP)])
 		}
 	})
 	
 	tooltip.addAdvanced('kubejs:dust_size_up', (item, advanced, text) => {
 		if (!tooltip.isShift()) {
-			text.add(1, [Text.of('§oMakes the user expand').color('#c4a9fc')])
+			text.add(1, [Text.of('§oMakes the user expand').color(BASE_COLOR)])
 			text.add(2, shiftIndicator)
 		} else {
-			text.add(1, [Text.of('Use while sneaking to reset size.').yellow()])
+			text.add(1, [Text.of('Use while sneaking to reset size.').color(COLOR_TOOLTIP)])
 		}
 	})
 	
 	tooltip.addAdvanced('kubejs:gluttonous_chest', (item, advanced, text) => {
 		if (!tooltip.isShift()) {
-			text.add(1, [Text.of('§oSpews food').color('#c4a9fc')])
+			text.add(1, [Text.of('§oSpews out Food').color(BASE_COLOR)])
 			text.add(2, shiftIndicator)
 		} else {
-			text.add(1, [Text.of('Food dependent on location').yellow()])
+			text.add(1, [Text.of('Biome dependent').color(COLOR_TOOLTIP)])
 		}
 	})
 	
@@ -177,13 +181,13 @@ ItemEvents.tooltip(tooltip => {
 				text.add(1, [Text.of(a.info).color(a.color)])
 				text.add(2, shiftIndicator)
 			} else {
-				text.add(1, [Text.of('Adapts to your overall progress, giving you better outcomes.').color('#EBCA60')])
-				text.add(2, [Text.of('Grants 12% chance for extra rolls per level of luck, decreasing diminishly.').color('#97E072')])
+				text.add(1, [Text.of('Adapts to your overall progress, giving you better outcomes.').color(BASE_COLOR)])
+				text.add(2, [Text.of('Grants 12% chance for extra rolls per level of luck, decreasing diminishly.').color(COLOR_TOOLTIP)])
 				if (a.item == 'kubejs:glitched_box') {
-					text.add(3, [Text.of('<rainb><glitch>Glitched Events: ').append(Text.of('8% chance for any of these Events').color('#44EBEB'))])
-					text.add(4, [Text.of('\uEBD4 ').font("symbols_n_stuff:symbols").append(Text.of('Spawn a ')).append(Text.of('Random Gateway').color('#f76628'))])
-					text.add(5, [Text.of('\uEBD4 ').font("symbols_n_stuff:symbols").append(Text.of('Increase ')).append(Text.of('Personal Maximum Coefficient').color('#f76628')).append(Text.of(' by §a+2§f'))])
-					text.add(6, [Text.of('\uEBD4 ').font("symbols_n_stuff:symbols").append(Text.of('Increase ')).append(Text.of('Personal Extra Coefficient').color('#f76628')).append(Text.of(' by §a+2§f'))])
+					text.add(3, [Text.of('<rainb><glitch>Glitched Events: ').append(Text.of('9% ').color(COLOR_ROGUE)).append(Text.of('chance for any of these ').color(BASE_COLOR)).append(Text.of('Rewards').color(COLOR_ROGUE))])
+					text.add(4, [Text.of('Spawn a ').color(BASE_COLOR).append(Text.of('Random Gateway').color(COLOR_ROGUE))])
+					text.add(5, [Text.of('Increase ').color(BASE_COLOR).append(Text.of('Personal Maximum Coefficient').color(COLOR_ROGUE)).append(Text.of(' by §a+2§f'))])
+					text.add(6, [Text.of('Increase ').color(BASE_COLOR).append(Text.of('Personal Extra Coefficient').color(COLOR_ROGUE)).append(Text.of(' by §a+2§f'))])
 				}
 			}
 		})
@@ -193,14 +197,14 @@ ItemEvents.tooltip(tooltip => {
 		tooltip.addAdvanced(a.item, (item, advanced, text) => {
 			if (a.desc) {
 				if (!tooltip.isShift()) {
-					text.add(1, [Text.of(a.info).color('#737373')])
+					text.add(1, [Text.of(a.info).color(BASE_COLOR)])
 					text.add(2, shiftIndicator)
 				} else {
-					text.add(1, [Text.of(a.desc).color('#737373').italic()])
+					text.add(1, [Text.of(a.desc).color(BASE_COLOR).italic()])
 				}
 			} else {
 				if (!a.warning) {
-					text.add(1, [Text.of(a.info).color('#737373')])
+					text.add(1, [Text.of(a.info).color(BASE_COLOR)])
 				} else {
 					text.add(1, [Text.of(a.warning).color('#FF0000').italic()])
 				}
@@ -209,10 +213,10 @@ ItemEvents.tooltip(tooltip => {
 	})
 
 	global.assistedCrafting.forEach(a => {
-		tooltip.addAdvanced(a.name, (item, advanced, text) => {
+		tooltip.addAdvanced(a.output, (item, advanced, text) => {
 			let toolName = Utils.snakeCaseToTitleCase(a.tool.substring(a.tool.indexOf(':') + 1))
 			if (!tooltip.isShift()) {
-				text.add(1, [Text.of('Assisted Crafting Required').color('#e0e0e0')])
+				text.add(1, [Text.of('Assisted Crafting Required').color(BASE_COLOR)])
 				text.add(2, shiftIndicator)
 			} else {
 				text.add(1, [Text.of('Requires: ').color('#fcec03').append(Text.of('\uE814').white()).append(Text.of(' holding a ').color('#fcec03')).append(Text.of(`${toolName}`).color('#f1fa93')).append(Text.of(' nearby').color('#fcec03'))])

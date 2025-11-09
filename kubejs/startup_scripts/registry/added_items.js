@@ -7,7 +7,7 @@ StartupEvents.registry('item', event => {
 			.displayName({ translate: 'item.kubejs.' + name })
 			.texture(`rogue:item/${path}/${name}`);
 		if (unstackable) item.unstackable();
-		if (typeof maxDamage !== 'undefined') item.maxDamage(maxDamage);
+		if (maxDamage) item.maxDamage(maxDamage);
 	}
 
 	// SPECIAL
@@ -20,18 +20,17 @@ StartupEvents.registry('item', event => {
 	event.create('rogue:completionist_trophy').parentModel('rogue:item/completionist_trophy').displayName('Completionist\'s Trophy');
 	
 	//NOTHINGNESS
-	event.create('nothingness').displayName('Nothingness')
+	event.create('nothingness')
+		.displayName('Nothingness')
 		.unstackable()
 		.use((level, player, hand) => true)
 		.useAnimation("bow")
 		.useDuration((itemstack) => 30)
 		.finishUsing((itemstack, level, entity) => {
-			if (!level.isClientSide()) {
-				Utils.server.scheduleInTicks(100, () => {
-					if (entity.player) global.spreadPlayer(entity)
-				})
-				return itemstack;
+			if (!level.isClientSide() && entity.player) {
+				global.spreadPlayer(entity)
 			}
+			return itemstack;
 	}).texture('rogue:item/special/nothingness');
 	
 	// BOXES
@@ -64,17 +63,3 @@ StartupEvents.registry('item', event => {
 		}
 	});
 })
-
-global.spreadPlayer = entity => {
-	var offHandItem = entity.getHeldItem('off_hand');
-	var mainHandItem = entity.getHeldItem('main_hand');
-	if (mainHandItem.id == 'kubejs:nothingness' || offHandItem.id == 'kubejs:nothingness') {
-		if (offHandItem.id == 'kubejs:nothingness') offHandItem.count--;
-		if (mainHandItem.id == 'kubejs:nothingness') mainHandItem.count--;
-		if (Utils.server.minecraftServer) Utils.server.tell(`§e${entity.username}§r used Nothingness`);
-		entity.setStatusMessage(Text.of(`This might take a while...`).yellow())
-		Utils.server.runCommandSilent(`playsound minecraft:block.glass.break master ${entity.username} ${entity.x} ${entity.y} ${entity.z} 1`)
-		Utils.server.runCommandSilent(`execute as ${entity.username} run spreadplayers ~ ~ 5000 10000 false ${entity.username}`)
-		entity.addItemCooldown('kubejs:nothingness', 1500)
-	}
-}

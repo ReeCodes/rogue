@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
 		}
 	});
 
-	removeOutput(global.assistedCrafting.map(r => r.name));
+	removeOutput(global.assistedCrafting.map(r => r.output));
 
 	removeById([
 		//BREAD

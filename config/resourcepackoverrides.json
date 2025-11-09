@@ -86,18 +86,19 @@
         "fabric",
         "file/Twilight JAPPA Pack 1.0.0.zip",
         "file/waystones_1_20_1_update_3.zip",
-        "file/Pixel-Consistent-Ghast.zip",
         "file/Fancy Crops v1.3.zip",
         "file/EnderEyes_1.20.1_v3.zip",
         "file/AETexturesBackport1.20-1.1.zip",
         "file/FreshAnimations_v1.10.1.zip",
+        "file/FA+Emissive-v1.4.zip",
+        "file/CrOv + FrAn [V1.2.2].zip",
         "file/Assorted Allays - V.10.2.zip",
-        "file/Assorted Wardens - V.3.0.zip",
         "file/Assorted Allays x FA - V.10.1.zip",
-        "file/FA+All_Extensions-v1.6.zip",
         "file/happy_ghast_vanilla_backport_compat.zip",
         "file/Powah_Pyxal-ated_0.1.2.zip",
-        "file/enderio-refrubished-preview.zip"
+        "file/enderio-refrubished-preview.zip",
+        "fragmentum",
+        "file/Fusion Emissive Ores v1.0.2 for Minecraft 1.20-1.21.8.zip"
     ],
     "default_overrides":{
         "force_compatible":true

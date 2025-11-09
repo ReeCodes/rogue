@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "heart"
 	filename: "companionship"
 	group: "46789BE19B4F2E15"
 	icon: {
@@ -50,7 +50,7 @@
 				title: "&eTame: &rCat"
 				type: "custom"
 			}]
-			x: 2.0d
+			x: 3.0d
 			y: 13.0d
 		}
 		{
@@ -942,7 +942,7 @@
 				title: "&eTame: &rGlare"
 				type: "custom"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: 13.0d
 		}
 		{
@@ -994,7 +994,7 @@
 				{
 					icon: "alshanex_familiars:familiar_tome"
 					id: "2AB92E03C6FBF951"
-					title: "&eCapture: &rFamiliar using Familiar Tome"
+					title: "&eCapture: &rFamiliar using &eFamiliar Tome"
 					type: "custom"
 				}
 			]
@@ -1052,8 +1052,8 @@
 				}
 			]
 			title: "&eSegment: &aZombiefication"
-			x: -3.0d
-			y: 15.0d
+			x: -4.0d
+			y: 16.0d
 		}
 		{
 			icon: "domesticationinnovation:sinister_carrot"
@@ -1099,8 +1099,8 @@
 				}
 			]
 			title: "&eSegment: &aVillainize"
-			x: 3.0d
-			y: 15.0d
+			x: 4.0d
+			y: 16.0d
 		}
 		{
 			icon: "domesticationinnovation:pet_bed_white"
@@ -1123,7 +1123,7 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 3.0d
 			subtitle: "Recovery"
 			tasks: [
 				{
@@ -1156,9 +1156,10 @@
 			]
 			title: "&eSegment: &aPet Accessoires"
 			x: 0.0d
-			y: 16.0d
+			y: 16.5d
 		}
 		{
+			description: ["Tamed using &bSpider Eyes&r."]
 			id: "17CD20D056A1C123"
 			rewards: [
 				{
@@ -1192,10 +1193,11 @@
 				title: "&eTame: &rFrog"
 				type: "custom"
 			}]
-			x: -2.0d
-			y: 17.0d
+			x: -3.0d
+			y: 19.0d
 		}
 		{
+			description: ["Tamed using &bTropical Fish&r."]
 			id: "519ED089E1620286"
 			rewards: [
 				{
@@ -1229,8 +1231,8 @@
 				title: "&eTame: &rAxolotl"
 				type: "custom"
 			}]
-			x: 2.0d
-			y: 17.0d
+			x: 3.0d
+			y: 19.0d
 		}
 		{
 			description: ["Mate two &bFoxes&r using &bSweet Berries&r."]
@@ -1268,7 +1270,7 @@
 				type: "custom"
 			}]
 			x: 0.0d
-			y: 18.5d
+			y: 21.0d
 		}
 	]
 	title: "{quest.overview.base_label.title} Companionship"

@@ -396,6 +396,17 @@
         "value": 100
       }
     },
+    "environmental:stealth": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "skilltree:evasion": {
       "enabled": false,
       "min": {
@@ -2079,17 +2090,6 @@
         "value": 100
       }
     },
-    "sons_of_sins:cooldown_cap": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 240,
-        "value": 240
-      }
-    },
     "additional_attributes:spell_type_lob_creeper": {
       "enabled": false,
       "min": {
@@ -2099,6 +2099,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "sons_of_sins:cooldown_cap": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 240,
+        "value": 240
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/sandstorm": {

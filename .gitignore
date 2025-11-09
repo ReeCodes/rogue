@@ -1,5 +1,69 @@
-*
-!config/
-!defaultconfig/
-!kubejs/
-!.gitignore
+# Project Infrastructure
+# ---
+/*
+
+!/config
+!/defaultconfigs
+!/kubejs
+!/resourcepacks
+!/shaderpacks
+!README.md
+!/mods/*.pw.toml
+!/resourcepacks/*.pw.toml
+!/shaderpacks/*.pw.toml
+
+# Using Quests Lang Splitter
+config/ftbquests/quests/lang/*.snbt
+config/ftbquests/quests/lang/recovery/*.snbt
+config/ftbquests/quests/lang/**/*.snbt_merged
+
+Server Test/
+knownkeys.txt
+automation/secrets.ps1
+automation/exports
+.curseclient
+
+/mods/*.jar
+/mods/.index
+/resourcepacks/*.zip
+/resourcepacks/*/
+/shaderpacks/*.zip
+/shaderpacks/*/
+*.disabled
+
+# Specific Mod Junk
+# ---
+/config/embeddium-fingerprint.json
+/config/spark/activity.json
+/config/ars_nouveau/search_index/
+/config/nolijium.json5
+/config/inventoryprofilesnext/*
+!/config/inventoryprofilesnext/integrationHints
+!/config/inventoryprofilesnext/inventoryprofiles.json
+
+# System Files / Misc.
+# ---
+*.bak
+/*.zip
+.DS_Store
+Thumbs.db
+
+# Misc.
+# ---
+ModListCreator-5.0.0-fatjar.jar
+
+# VSCode
+!/.vscode
+/.vscode/*
+!/.vscode/*.code-workspace
+!/.vscode/extensions.json
+
+# ProbeJS
+/kubejs/probe
+/kubejs/config/probejs.json
+/kubejs/config/probe-settings.json
+/kubejs/*/jsconfig.json
+.probe
+
+# Downloadable dependencies
+**/node_modules

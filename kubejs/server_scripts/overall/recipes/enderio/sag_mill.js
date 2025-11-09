@@ -62,4 +62,11 @@ ServerEvents.recipes(event => {
 		'4x #forge:dusts/copper',
 		'6x #forge:dusts/redstone'
 	], 'enigmatic_engine')
+	
+	//DEBRIS TO DUST
+	eio_sag_mill(event, 2400, '#forge:ores/netherite_scrap', [
+		'#forge:dusts/netherite_scrap',
+		{chance: 0.33, item: '#forge:dusts/netherite_scrap'},
+		{chance: 0.15, item: 'minecraft:soul_sand'}
+	], 'netherite_scrap_ore');
 })

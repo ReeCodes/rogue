@@ -1,16 +1,20 @@
 ItemEvents.entityInteracted(event => {
 	const { player, target, server, item } = event;
 	
-	//OTHER
-	if (target.type == 'minecraft:villager' && target.nbt.VillagerData.profession == "copperworks:engineer") {
-		simpleQuestComplete(player, '715F0C13AD175462');
+	//INTERACTION
+	if (target.type == 'immersive_machinery:tunnel_digger') {
+		simpleQuestComplete(player, '4CBC79147F3A341C');
+	}
+	
+	if (target.type == 'immersive_machinery:copperfin') {
+		simpleQuestComplete(player, '70717AC6E96FBAF2');
 	}
 	
 	if (target.type == 'minecraft:villager' && target.nbt.VillagerData.profession == "cloudstorage:balloon_salesman") {
 		simpleQuestComplete(player, '40E1D9320F4B18AB');
 	}
 	
-	if (target.type == 'immersive_aircraft:airship' || target.type == 'immersive_aircraft:gyrodyne' || target.type == 'immersive_aircraft:quadrocopter') {
+	if (target.type.includes('immersive_aircraft')) {
 		simpleQuestComplete(player, '6FC91C2B0505EBD4');
 	}
 	

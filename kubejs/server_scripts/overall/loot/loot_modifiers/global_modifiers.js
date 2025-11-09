@@ -10,9 +10,7 @@ let modifier_ids = [
 
 let m_aether = [
 	'gloves_loot_chain',
-	'gloves_loot_diamond',
 	'gloves_loot_gold',
-	'gloves_loot_iron',
 	'gloves_loot_leather',
 	'gloves_loot_netherite'
 ];
@@ -49,7 +47,6 @@ let m_sb = [
 
 let m_ss = [
 	'basic',
-	'end',
 	'nether'
 ];
 

@@ -378,9 +378,9 @@
 	"cr_recharge_time": {
 		"title": "§a+10%§f Roll Cooldown",
 		"icon": {
-			"type": "effect",
+			"type": "texture",
 			"data": {
-				"effect": "ender_wyrmlings:dash_cooldown"
+				"texture": "rogue:textures/pufferfish/skills/icon_dash_cooldown.png"
 			}
 		},
 		"rewards": [
@@ -816,9 +816,9 @@
 	"big_cr_distance": {
 		"title": "§a+50%§f Roll Distance",
 		"icon": {
-			"type": "effect",
+			"type": "texture",
 			"data": {
-				"effect": "ender_wyrmlings:dash_forward"
+				"texture": "rogue:textures/pufferfish/skills/icon_dash_forward.png"
 			}
 		},
 		"rewards": [

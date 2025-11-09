@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "ReeReeQ",
+      "uniqueId": "8dd44b9b-a1d4-4a73-a8c9-ad186cc988f1"
+    },
+    "time": 1762364378136,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/crPGMKfLCR"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "ReeReeQ",
+      "uniqueId": "8dd44b9b-a1d4-4a73-a8c9-ad186cc988f1"
+    },
+    "time": 1762301515782,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/efxZS0F4j5"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "ReeReeQ",
+      "uniqueId": "8dd44b9b-a1d4-4a73-a8c9-ad186cc988f1"
+    },
+    "time": 1762290413222,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/WeIODzwbuo"
+    }
+  }
+]

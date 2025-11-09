@@ -75,7 +75,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# Displays temperature in Celsius instead of Fahrenheit
 	# ⌄ 
-	Celsius = false
+	Celsius = true
 	#─────────────────────────────────────────────────────────────────────────
 	# Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
 	# ⌄ 
@@ -107,6 +107,11 @@
 	# Can be one of "drink", "pour", or "none"
 	# ⌄ 
 	"Waterskin Secondary Action" = "drink"
+	#─────────────────────────────────────────────────────────────────────────
+	# The opacity of the water droplets on-screen
+	# ⌄ 
+	#Range: 0.0 ~ 1.0
+	"Water Droplet Opacity" = 0.5
 
 [HUD]
 	#─────────────────────────────────────────────────────────────────────────

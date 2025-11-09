@@ -27,9 +27,7 @@
 					advancement: "rogue:rogue/unlock_ember_bore"
 					auto: "enabled"
 					criterion: ""
-					icon: "kubejs:druidic_box"
 					id: "0C48850CFBA97B5A"
-					title: "&aBetter Drops"
 					type: "advancement"
 				}
 			]
@@ -762,9 +760,7 @@
 					advancement: "rogue:rogue/unlock_exchange_tablet"
 					auto: "enabled"
 					criterion: ""
-					icon: "kubejs:druidic_box"
 					id: "39E075CE1D06EF5F"
-					title: "&aBetter Drops"
 					type: "advancement"
 				}
 			]
@@ -859,7 +855,7 @@
 				}
 			]
 			title: "&eOn The Side: &aBring To Paper"
-			x: -5.0d
+			x: -8.0d
 			y: 8.0d
 		}
 		{
@@ -869,6 +865,7 @@
 				"6B28D19E0630D906"
 				"2C230622D0956B82"
 			]
+			hide_until_deps_complete: true
 			icon: "embers:codebreaking_slate"
 			id: "7EE9093A48324D73"
 			min_required_dependencies: 3
@@ -907,72 +904,34 @@
 					type: "item"
 				}
 				{
-					icon: {
+					icon: "embers:codebreaking_slate"
+					id: "333D742D879191E5"
+					item: {
 						Count: 1
-						id: "embers:codebreaking_slate"
+						id: "itemfilters:and"
 						tag: {
-							inventory: {
-								Items: [{
+							items: [
+								{
 									Count: 1b
-									Slot: 0
-									id: "embers:alchemical_waste"
+									id: "embers:codebreaking_slate"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
 									tag: {
-										aspects: [
-											{
-												Count: 1b
-												id: "embers:dawnstone_aspectus"
-											}
-											{
-												Count: 1b
-												id: "embers:dawnstone_aspectus"
-											}
-											{
-												Count: 1b
-												id: "embers:dawnstone_aspectus"
-											}
-											{
-												Count: 1b
-												id: "embers:dawnstone_aspectus"
-											}
-										]
-										blackPins: 3
-										inputs: [
-											{
-												Count: 1b
-												id: "embers:dawnstone_plate"
-											}
-											{
-												Count: 1b
-												id: "embers:dawnstone_plate"
-											}
-											{
-												Count: 1b
-												id: "embers:dawnstone_plate"
-											}
-											{
-												Count: 1b
-												id: "embers:dawnstone_plate"
-											}
-										]
-										result: {
-											Count: 1b
-											id: "embers:winding_gears"
-										}
-										whitePins: 0
+										value: "is_waste"
 									}
-								}]
-								Size: 7
-							}
+								}
+							]
 						}
 					}
-					id: "4801CB3EABE24FF7"
 					title: "&eUnravel: &rAlchemical Waste"
-					type: "custom"
+					type: "item"
 				}
 			]
 			title: "&eOn The Side: &aRiddle Me This"
-			x: -7.0d
-			y: 8.0d
+			x: -6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1425,7 +1384,7 @@
 			]
 			title: "&eOn The Side: &aEmber Vault"
 			x: -10.0d
-			y: -10.0d
+			y: -11.0d
 		}
 		{
 			dependencies: [
@@ -1468,22 +1427,76 @@
 					type: "item"
 				}
 				{
-					icon: "embers:tinker_hammer"
-					id: "1A3CF1C1AF618473"
+					icon: {
+						Count: 1
+						id: "embers:tinker_hammer"
+						tag: {
+							targetFace: "west"
+							targetX: -31
+							targetY: -7
+							targetZ: -61
+						}
+					}
+					id: "18B99C88655E1845"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "has_heat"
+						}
+					}
 					title: "&eApply: &rAncient Motive Core"
-					type: "custom"
+					type: "item"
 				}
 				{
 					icon: "embers:ancient_motive_core"
-					id: "13CBD946740C7DD3"
+					id: "6A8CD09D4C93B213"
+					item: {
+						Count: 1
+						id: "itemfilters:custom"
+						tag: {
+							value: "finish_heat"
+						}
+					}
 					title: "&eReach: &rMax Heat Level"
-					type: "custom"
+					type: "item"
 				}
 				{
-					icon: "embers:tinker_hammer"
-					id: "389B29412651CE3F"
+					icon: {
+						Count: 1
+						id: "embers:tinker_hammer"
+						tag: {
+							targetFace: "west"
+							targetX: -31
+							targetY: -7
+							targetZ: -61
+						}
+					}
+					id: "1D44955C681EEDF4"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "is_tool"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "augmented_item"
+									}
+								}
+							]
+						}
+					}
 					title: "&eApply: &rAugment (Tool)"
-					type: "custom"
+					type: "item"
 				}
 			]
 			title: "&eSegment: &aDwarven Techniques"
@@ -1586,7 +1599,7 @@
 				}
 			]
 			title: "&eOn The Side: &aCrystal Harvest"
-			x: -9.0d
+			x: -10.0d
 			y: 7.0d
 		}
 		{
@@ -1740,7 +1753,7 @@
 				}
 			]
 			title: "&6Collection: &rAshen Set"
-			x: -10.0d
+			x: -11.0d
 			y: 5.0d
 		}
 		{
@@ -1800,12 +1813,43 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Feel Safer"
+			subtitle: "Augmentation"
 			tasks: [{
-				icon: "embers:tinker_hammer"
-				id: "418C7D35CE9B15AB"
+				icon: {
+					Count: 1
+					id: "embers:tinker_hammer"
+					tag: {
+						targetFace: "west"
+						targetX: -31
+						targetY: -7
+						targetZ: -61
+					}
+				}
+				id: "3632819CFFF1574D"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:custom"
+								tag: {
+									value: "is_armor"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:custom"
+								tag: {
+									value: "augmented_item"
+								}
+							}
+						]
+					}
+				}
 				title: "&eApply: &rAugment (Armor)"
-				type: "custom"
+				type: "item"
 			}]
 			title: "&eOn The Side: &aProtective Abilities"
 			x: -13.0d
@@ -2594,7 +2638,7 @@
 					xp_levels: 100
 				}
 				{
-					count: 15
+					count: 25
 					id: "445F51C6D58C5A5D"
 					item: "kubejs:druidic_box"
 					type: "item"

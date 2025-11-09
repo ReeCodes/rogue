@@ -186,7 +186,7 @@
 				"4F5338339868DA96"
 				"4509CEEAEB451F3D"
 			]
-			description: ["Complete every dependency tied to this quest."]
+			description: ["Complete all dependencies tied to this quest."]
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"

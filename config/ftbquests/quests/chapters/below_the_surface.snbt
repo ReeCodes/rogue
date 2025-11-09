@@ -919,7 +919,7 @@
 			]
 			title: "&6Collection: &rCovert Armory"
 			x: -14.0d
-			y: 10.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6468C02D2D4838B5"]
@@ -1489,92 +1489,18 @@
 			]
 			size: 2.0d
 			subtitle: "Wiped Out"
-			tasks: [
-				{
-					id: "4669A3D1D59FC752"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "alexscaves_torpedoes:tectonic_helmet"
-						tag: {
-							Damage: 0
-							Insulation: [ ]
-						}
+			tasks: [{
+				id: "5FF5FD89C47B4E2F"
+				item: {
+					Count: 1
+					id: "alexscaves:extinction_spear"
+					tag: {
+						Damage: 0
 					}
-					match_nbt: false
-					type: "item"
 				}
-				{
-					id: "2C6BD5FDF1D50EEC"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "alexscaves_torpedoes:tectonic_chestplate"
-						tag: {
-							Damage: 0
-							Insulation: [ ]
-						}
-					}
-					match_nbt: false
-					type: "item"
-				}
-				{
-					id: "11202F32E8672A12"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "alexscaves_torpedoes:tectonic_leggings"
-						tag: {
-							Damage: 0
-							Insulation: [ ]
-						}
-					}
-					match_nbt: false
-					type: "item"
-				}
-				{
-					id: "528D56E056CA73CC"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "alexscaves_torpedoes:tectonic_boots"
-						tag: {
-							Damage: 0
-							Insulation: [ ]
-						}
-					}
-					match_nbt: false
-					type: "item"
-				}
-				{
-					id: "5FF5FD89C47B4E2F"
-					item: {
-						Count: 1
-						id: "alexscaves:extinction_spear"
-						tag: {
-							Damage: 0
-						}
-					}
-					match_nbt: false
-					type: "item"
-				}
-			]
+				match_nbt: false
+				type: "item"
+			}]
 			title: "&6Collection: &rExtinct Armory"
 			x: -4.0d
 			y: 27.0d
@@ -2539,56 +2465,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["0E28503420F2B547"]
-			description: ["By placing a &eCarved Pumpkin&r on top of either a &eScarlet &ror &eAzure Energized Galena&r, a &ePolarizz&r will emerge."]
-			id: "4A4421262D59875C"
-			rewards: [
-				{
-					id: "6943010E4E4EB1F1"
-					type: "xp"
-					xp: 100
-				}
-				{
-					count: 2
-					id: "359BCE3E9E9352D5"
-					item: "kubejs:oxidized_box"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "3E15B7ECEFA2B34E"
-					item: "kubejs:mischievous_box"
-					type: "item"
-				}
-				{
-					id: "5FBB877A4486A4CD"
-					item: "kubejs:glitched_box"
-					type: "item"
-				}
-			]
-			size: 2.0d
-			subtitle: "Bouncy Buddy"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "alexsmobs:tab_icon"
-					tag: {
-						DisplayEntityType: "alexscaves_torpedoes:polarizz"
-						DisplayMobScale: 1.0d
-					}
-				}
-				id: "7B5C666306976657"
-				observe_type: 5
-				timer: 0L
-				title: "&eSummon: &rPolarizz"
-				to_observe: "alexscaves_torpedoes:polarizz"
-				type: "observation"
-			}]
-			title: "&eOn The Side: &aPolarizz"
-			x: 17.0d
-			y: 1.0d
-		}
-		{
 			dependencies: [
 				"7541A25EAE480BF5"
 				"21C08D06E7A5643E"
@@ -2623,49 +2499,6 @@
 			size: 2.0d
 			subtitle: "Futuristic Set"
 			tasks: [
-				{
-					id: "0C9B624D4321E2B7"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "alexscaves_torpedoes:magnetic_helmet"
-						tag: {
-							Damage: 0
-							Insulation: [ ]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "51C3472000AF6A6C"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "alexscaves_torpedoes:ferrousslime_boots"
-						tag: {
-							Damage: 0
-							Insulation: [ ]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "377EA56E714473F1"
-					item: {
-						Count: 1
-						id: "alexscaves_torpedoes:pulsargun"
-						tag: { }
-					}
-					type: "item"
-				}
 				{
 					id: "0752F36270F10847"
 					item: {
@@ -3064,7 +2897,7 @@
 					type: "custom"
 				}
 			]
-			title: "&eOn The Side: &aImmidiate Extraction"
+			title: "&eOn The Side: &aFlurry Extraction"
 			x: -9.0d
 			y: 19.0d
 		}
@@ -3403,7 +3236,7 @@
 					id: "7D418F1A40083E29"
 					observe_type: 5
 					timer: 0L
-					title: "&eFind/Build: &rSubmarine"
+					title: "&eFind or build: &rSubmarine"
 					to_observe: "alexscaves:submarine"
 					type: "observation"
 				}
