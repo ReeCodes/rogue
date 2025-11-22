@@ -2081,7 +2081,7 @@
 	},
 	"ability_deep_cut": {
 		"title": "§a+1 Level§f [§6Deep Cut§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fCritical hits inflict §aBleeding§f.\nEach §bLv§f increases its strength by §a+1§f\n§9Cooldown: (20s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fCritical hits inflict §bBleeding§f.\nEach §bLv§f increases its strength by §a+1§f\n§9Cooldown: (20s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§6Bleeding§f: Inflicts damage per second.",
 		"size": 2.0,
 		"frame": {
@@ -2108,7 +2108,7 @@
 	},
 	"ability_exposed": {
 		"title": "§a+1 Level§f [§6Exposed§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fCritical hits inflict §aSundering§f.\nEach §bLv§f increases its strength by §a+1§f\n§9Cooldown: (20s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fCritical hits inflict §bSundering§f.\nEach §bLv§f increases its strength by §a+1§f\n§9Cooldown: (20s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§6Sundering§f: Increases damage received.",
 		"size": 2.0,
 		"frame": {

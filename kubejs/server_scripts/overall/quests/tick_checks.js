@@ -12,10 +12,6 @@ PlayerEvents.tick(event => {
 			simpleQuestComplete(player, '1F1A0B5E5F71A6AD');
 		}
 
-		if (player.level.dimensionKey == 'minecraft:the_nether' && player.y <= 10) {
-			simpleQuestComplete(player, '008DD75F2D1100FD');
-		}
-
 		//SPECIAL MOUNT HEIGHT QUESTS
 		let hasRootVehicle = player.nbt?.RootVehicle;
 		if (!hasRootVehicle) return;

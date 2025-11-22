@@ -1,55 +1,126 @@
-ItemEvents.entityInteracted(event => {
-	const { player, target, server, item } = event;
+global.EntityMount = (event) => {
+	let mounter = event.entityMounting;
+	let mountedEntity = event.entityBeingMounted;
+	let level = event.level;
 	
-	//INTERACTION
-	if (target.type == 'immersive_machinery:tunnel_digger') {
-		simpleQuestComplete(player, '4CBC79147F3A341C');
+	// MOUNTING
+	function mountQuest(entity, qID) {
+		if (mountedEntity.type == entity) {
+			simpleQuestComplete(mounter, qID);
+		}
 	}
 	
-	if (target.type == 'immersive_machinery:copperfin') {
-		simpleQuestComplete(player, '70717AC6E96FBAF2');
+	//ALEXS MOBS (MOUNT)
+	mountQuest('alexsmobs:komodo_dragon', '63D1332EF0DDB4F6');
+	mountQuest('alexsmobs:elephant', '42351A136C064897');
+	mountQuest('alexscaves:atlatitan', '35C378EF9413F586');
+	
+	//ALEXS CAVES (MOUNT)
+	mountQuest('alexscaves:subterranodon', '117D40394B0BAF34');
+	mountQuest('alexscaves:tremorzilla', '20AC35886319AD3B');
+	mountQuest('alexscaves:submarine', '3CB28E4CB01B7919');
+	mountQuest('alexsmobs:cosmaw', '6ABF4A5642240DC5');
+	
+	//MISC
+	mountQuest('immersive_machinery:tunnel_digger', '4CBC79147F3A341C');
+	mountQuest('immersive_machinery:copperfin', '70717AC6E96FBAF2');
+	mountQuest('immersive_aircraft', '6FC91C2B0505EBD4');
+	mountQuest('immersive_aircraft:biplane', '219AD5F2D044C067');
+	mountQuest('man_of_many_planes:economy_plane', '5966779569D94092');
+	mountQuest('man_of_many_planes:scarlet_biplane', '5966779569D94092');
+	mountQuest('automobility:automobile', '1A29673838D3EB79');
+}
+
+CommonAddedEvents.entityTame(event => {
+	let tamedEntity = event.animal;
+	let player = event.player;
+	
+	// TAMING
+	function tameQuest(entity, qID) {
+		if (tamedEntity.type == entity) {
+			simpleQuestComplete(player, qID);
+		}
+	}
+	
+	//DEFAULT
+	tameQuest('minecraft:cat', '1CD35C926F3BD87F');
+	tameQuest('minecraft:horse', '3BCB07F0ABE70AC6');
+})
+
+global.BabyEntitySpawn = (event) => {
+	let child = event.child;
+	let player = event.causedByPlayer;
+	
+	// BREED
+	function breedQuest(entity, qID) {
+		if (child.type == entity && isTamedBy(child, player).tamed) {
+			simpleQuestComplete(player, qID);
+		}
+	}
+	
+	breedQuest('minecraft:fox', '1360CF36EEBD2009');
+}
+
+ItemEvents.entityInteracted(event => {
+	const { player, target, server, item, hand } = event;
+	
+	function specialTameQuest(entity, qID, extraTicks) {
+		extraTicks = extraTicks ? extraTicks : 1;
+		if (target.type == entity) {
+			server.scheduleInTicks(extraTicks, () => {
+				if (isTamedBy(target, player).tamed) simpleQuestComplete(player, qID);
+			})
+		}
+	}
+	
+	specialTameQuest('friendsandfoes:glare', '732CC3554429D768');
+	
+	specialTameQuest('minecraft:rabbit', '0CFCCFE827050103');
+	specialTameQuest('minecraft:frog', '381D5374A6B8FF7F');
+	specialTameQuest('minecraft:axolotl', '293BD0029890EC6C');
+	
+	//ALEXS MOBS (TAME)
+	specialTameQuest('alexsmobs:capuchin_monkey', '517D569FF1FFCC8F');
+	specialTameQuest('alexsmobs:komodo_dragon', '731FDD53B78414B9');
+	specialTameQuest('alexsmobs:warped_toad', '21105485939A9245');
+	specialTameQuest('alexsmobs:mantis_shrimp', '3CBA0F62405A85CB');
+	specialTameQuest('alexsmobs:kangaroo', '0C023564D56C7D60');
+	specialTameQuest('alexsmobs:bald_eagle', '3EE87005F6A6DCDC');
+	specialTameQuest('alexsmobs:tarantula_hawk', '2629976388226C5A');
+	specialTameQuest('alexsmobs:mimic_octopus', '3B4324D922B98CD9');
+	specialTameQuest('alexsmobs:flutter', '2A0EE30FE9CED1E1');
+	specialTameQuest('alexsmobs:mudskipper', '5E1685DB44BCDCC1');
+	specialTameQuest('alexsmobs:sugar_glider', '109415D8596CEB19');
+	specialTameQuest('alexscaves:tremorzilla', '42C75973743A5B18', 100);
+	specialTameQuest('alexsmobs:cosmaw', '693950A1809A92AF', 105);
+	
+	//ALEXS CAVES (TAME)
+	specialTameQuest('alexscaves:subterranodon', '6462A506F78FA43A');
+	specialTameQuest('alexscaves:vallumraptor', '499DDE39730D0FBB');
+	specialTameQuest('alexscaves:raycat', '5AFE3B12D1837D37');
+	specialTameQuest('alexscaves:candicorn', '03AF6E0C1BA1EB20');
+
+	//SPECIAL-INTERACTIONS
+	if (target.type == 'whaleborne:hullback' && hasCompletedQuest(player, '0B2397BFB9F65CD5')) {
+		simpleQuestComplete(player, '0D8815896B934D9E');
 	}
 	
 	if (target.type == 'minecraft:villager' && target.nbt.VillagerData.profession == "cloudstorage:balloon_salesman") {
 		simpleQuestComplete(player, '40E1D9320F4B18AB');
 	}
 	
-	if (target.type.includes('immersive_aircraft')) {
-		simpleQuestComplete(player, '6FC91C2B0505EBD4');
+	if (item.id == Item.of('frozenhappyghast:ghast_wand') && target.type == 'minecraft:happy_ghast') {
+		simpleQuestComplete(player, '1CE07A8BF1D8E8DF');
 	}
 	
-	if (target.type == 'immersive_aircraft:biplane') {
-		simpleQuestComplete(player, '219AD5F2D044C067');
+	if (item.id == Item.of('#minecraft:harnesses') && target.type == 'minecraft:happy_ghast') {
+		simpleQuestComplete(player, '44AF41FE53DB8FE1');
 	}
 	
-	if (target.type == 'man_of_many_planes:economy_plane' || target.type == 'man_of_many_planes:scarlet_biplane') {
-		simpleQuestComplete(player, '5966779569D94092');
+	if (item.id !== Item.of('#minecraft:harnesses') && target.type == 'minecraft:happy_ghast' && target.nbt.ArmorItems[2].id == Item.of('#minecraft:harnesses')) {
+		simpleQuestComplete(player, '2CBAD9F73C3773B5');
 	}
 	
-	if (target.type == 'automobility:automobile') {
-		simpleQuestComplete(player, '1A29673838D3EB79');
-	}
-	
-	//TAMING
-	function quest_taming(entity, qID, extraTicks) {
-		extraTicks = extraTicks ? extraTicks : 3
-		if (target.type == entity) {
-			server.scheduleInTicks(extraTicks, () => {
-				if (target.owner == player) simpleQuestComplete(player, qID);
-			})
-		}
-	}
-	
-	//MOUNTING
-	function quest_mounting(entity, qID) {
-		if (target.type == entity) {
-		server.scheduleInTicks(1, () => {
-				if (player.nbt.RootVehicle?.Entity?.id  == entity) simpleQuestComplete(player, qID);
-			})
-		}
-	}
-	
-	//SPECIAL-INTERACTIONS
 	if (item.id == Item.of('domesticationinnovation:rotten_apple') && target.owner == player && target.type == 'minecraft:horse') {
 		simpleQuestComplete(player, '30A4AC942AEFD72B');
 	}
@@ -129,8 +200,10 @@ ItemEvents.entityInteracted(event => {
 	}
 	
 	//ALEXS MOBS	
-	if (target.type == 'alexsmobs:flutter' && target.owner == player && target.nbt.Potted == 1) {
-		simpleQuestComplete(player, '7C5E7C14BF452286');
+	if (target.type == 'alexsmobs:flutter' && target.owner == player) {
+		server.scheduleInTicks(1, () => {
+			if (target.nbt.Potted == 1) simpleQuestComplete(player, '7C5E7C14BF452286');
+		})
 	}
 	
 	if (target.type == 'alexsmobs:mimic_octopus' && target.owner == player) {
@@ -209,80 +282,146 @@ ItemEvents.entityInteracted(event => {
 			if (target.nbt.Saddled == 1) simpleQuestComplete(player, '7F7D198CD0C38A85');
 		})
 	}
-	
-	//DEFAULT
-	quest_taming('minecraft:cat', '1CD35C926F3BD87F');
-	quest_taming('friendsandfoes:glare', '732CC3554429D768');
-	quest_taming('minecraft:horse', '3BCB07F0ABE70AC6');
-	quest_taming('minecraft:rabbit', '0CFCCFE827050103');
-	quest_taming('minecraft:frog', '381D5374A6B8FF7F');
-	quest_taming('minecraft:fox', '1360CF36EEBD2009');
-	quest_taming('minecraft:axolotl', '293BD0029890EC6C');
-	
-	//ALEXS MOBS (TAME)
-	quest_taming('alexsmobs:capuchin_monkey', '517D569FF1FFCC8F');
-	quest_taming('alexsmobs:komodo_dragon', '731FDD53B78414B9');
-	quest_taming('alexsmobs:warped_toad', '21105485939A9245');
-	quest_taming('alexsmobs:mantis_shrimp', '3CBA0F62405A85CB');
-	quest_taming('alexsmobs:kangaroo', '0C023564D56C7D60');
-	quest_taming('alexsmobs:bald_eagle', '3EE87005F6A6DCDC');
-	quest_taming('alexsmobs:tarantula_hawk', '2629976388226C5A');
-	quest_taming('alexsmobs:mimic_octopus', '3B4324D922B98CD9');
-	quest_taming('alexsmobs:cosmaw', '693950A1809A92AF', 105);
-	quest_taming('alexsmobs:flutter', '2A0EE30FE9CED1E1');
-	quest_taming('alexsmobs:mudskipper', '5E1685DB44BCDCC1');
-	quest_taming('alexsmobs:sugar_glider', '109415D8596CEB19');
-	
-	//ALEXS MOBS (MOUNT)
-	quest_mounting('alexsmobs:komodo_dragon', '63D1332EF0DDB4F6');
-	quest_mounting('alexsmobs:elephant', '42351A136C064897');
-	quest_mounting('alexscaves:atlatitan', '35C378EF9413F586');
-	
-	//ALEXS CAVES (TAME)
-	quest_taming('alexscaves:subterranodon', '6462A506F78FA43A');
-	quest_taming('alexscaves:vallumraptor', '499DDE39730D0FBB');
-	quest_taming('alexscaves:raycat', '5AFE3B12D1837D37');
-	quest_taming('alexscaves:tremorzilla', '42C75973743A5B18', 100);
-	quest_taming('alexscaves:candicorn', '03AF6E0C1BA1EB20');
-	
-	//ALEXS CAVES (MOUNT)
-	quest_mounting('alexscaves:subterranodon', '117D40394B0BAF34');
-	quest_mounting('alexscaves:tremorzilla', '20AC35886319AD3B');
-	quest_mounting('alexscaves:submarine', '3CB28E4CB01B7919');
 })
 
+function levelDetectQuest(condition, player, questID) {
+	if (!hasCompletedQuest(player, questID)) {
+		if (condition) simpleQuestComplete(player, questID);
+	}
+}
+
+function isHullbackClean(entity) {
+    if (!entity.nbt) return false;
+
+    let dirtSections = [
+        "HeadDirt",
+        "TailDirt",
+        "flukeDirt",
+        "BodyTopDirt",
+        "HeadTopDirt",
+        "BodyDirt"
+    ];
+
+    for (let section of dirtSections) {
+        let data = entity.nbt[section];
+        if (!data) continue; 
+
+        for (let key in data) {
+            let array = data[key];
+
+            for (let block of array) {
+                if (block.Name !== "minecraft:air") {
+                    return false; 
+                }
+            }
+        }
+    }
+    return true;
+}
+
+function hasSaddle(entity) {
+    if (!entity?.nbt?.Items) return false;
+
+    let items = entity.nbt.Items;
+
+    for (let i = 0; i < items.length; i++) {
+		let it = items[i];
+        if (it && it.id == "minecraft:saddle") {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function isBoated(entity) {
+    if (!entity?.nbt?.Items) return false;
+
+    let items = entity.nbt.Items;
+
+    for (let i = 0; i < items.length; i++) {
+		let it = items[i];
+        if (it && (/.*planks:*/).test(it.id)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+
 LevelEvents.tick(event => {
-	const {	level, server } = event;
-	if (level.clientSide) return;
+	const {	level } = event;
+	if (level.clientSide || level.time % 60 !== 0 || level.players.length === 0 || level.entities.length === 0) return;
 	
-	//CHECKS EVERY 4 SECONDS
-	if (level.time % 80 !== 0) return;
-	if (level.players.length === 0) return;
+	for (let player of level.players) {
+		let minDist = 4;
+		let maxDist = 8;
 
-		//SPECIAL-CHECKS
-		for (let player of level.players) {
-			
-			//VALLUMRAPTOR QUEST
-			let vRaptors = level.entities.filter(entity => (entity.type == 'alexscaves:vallumraptor' && entity.nbt.RelaxedTime >= 1 && entity.distanceToEntitySqr(player) <= Math.pow(16, 2)));
-			if (vRaptors.length !== 0) {
-				simpleQuestComplete(player, '72CBAD503889F198');
-			}
-
-			//BLACKSMITH FAMILIAR QUEST
-			let blacksmiths = level.getEntities().filter(entity => (entity.type == 'occultism:blacksmith_familiar' && entity.owner == player && entity.distanceToEntitySqr(player) <= Math.pow(16, 2)));
-			if (blacksmiths.length !== 0) {
-				simpleQuestComplete(player, '672A223B98FC56A8');
-			}
-			
-			//TOSS-TAMING
-			let quest_toss_taming = (entityId, itemTag, quest_id) => {
-				let entities = level.entities.filter(entity => (entity.type == entityId && entity.owner == player && $ItemStack.of(entity.nbt.HandItems[0]).hasTag(itemTag)));
-				if (entities.length !== 0) {
-					simpleQuestComplete(player, quest_id);
-				}
-			}
-			//ALEXS MOBS (TOSS-TAME)
-			quest_toss_taming('alexsmobs:gorilla', 'alexsmobs:gorilla_foodstuffs', '60E41D3C0C9F67F9');
-			quest_toss_taming('alexsmobs:crow', 'alexsmobs:crow_breedables', '670B9CF038ECDC1F');
+		let nearbyEntities = findNearbyEntitiesCloseToPlayer(level, player, questEntities, minDist, maxDist);
+		let entity;
+		
+		if (nearbyEntities.length > 1) {
+			let closestEntity = getClosestEntity(player, nearbyEntities, minDist);
+			if (!closestEntity) nearbyEntities[0];
+			entity = closestEntity;
+		} else {
+			entity = nearbyEntities[0];
 		}
+		if (!entity) continue;
+		
+		levelDetectQuest(
+			entity.type == 'alexscaves:vallumraptor' &&
+			entity.nbt.RelaxedTime >= 1,
+			player,
+			'72CBAD503889F198'
+		);
+
+		levelDetectQuest(
+			entity.type == 'occultism:blacksmith_familiar' &&
+			isTamedBy(entity, player).tamed,
+			player,
+			'672A223B98FC56A8'
+		);
+			
+		levelDetectQuest(
+			entity.type == 'alexsmobs:gorilla' &&
+			isTamedBy(entity, player).tamed &&
+			entity.getItemBySlot($EquipmentSlot.MAINHAND).hasTag('alexsmobs:gorilla_foodstuffs'),
+			player,
+			'60E41D3C0C9F67F9'
+		);
+		
+		levelDetectQuest(
+			entity.type == 'alexsmobs:crow' &&
+			isTamedBy(entity, player).tamed &&
+			entity.getItemBySlot($EquipmentSlot.MAINHAND).hasTag('alexsmobs:crow_breedables'),
+			player,
+			'670B9CF038ECDC1F'
+		);
+
+		if (hasCompletedQuest(player, '4488F91C0461630A') && !hasCompletedQuest(player, '713BA4BB1DA825B8')) {
+			
+			levelDetectQuest(
+				entity.type == 'whaleborne:hullback' &&
+				isHullbackClean(entity),
+				player,
+				'069675355CD1E139'
+			);
+			
+			levelDetectQuest(
+				entity.type == 'whaleborne:hullback' &&
+				hasSaddle(entity),
+				player,
+				'0F80291110DB5EAE'
+			);
+			
+			levelDetectQuest(
+				entity.type == 'whaleborne:hullback' &&
+				isBoated(entity),
+				player,
+				'0B2397BFB9F65CD5'
+			);
+		}
+	}
 })

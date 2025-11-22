@@ -108,24 +108,11 @@
   #   "minecraft:enchanting_table", "minecraft:brewing_stand", "minecraft:anvil", "minecraft:chipped_anvil", ... ]
   idle_griefing.targets.whitelist = [
     "minecraft:farmland",
-    "minecraft:beehive",
-    "minecraft:crafting_table",
-    "minecraft:furnace",
-    "minecraft:ladder",
-    "minecraft:enchanting_table",
-    "minecraft:brewing_stand",
-    "minecraft:anvil",
-    "minecraft:chipped_anvil",
-    "minecraft:damaged_anvil",
-    "minecraft:scaffolding",
     "minecraft:loom",
     "minecraft:smoker",
     "minecraft:blast_furnace",
     "minecraft:cartography_table",
     "minecraft:fletching_table",
-    "minecraft:grindstone",
-    "minecraft:smithing_table",
-    "minecraft:stonecutter",
     "handcrafted:oven",
     "davespotioneering:compound_brewing_stand",
     "ad_astra:aeronos_ladder",
@@ -217,18 +204,12 @@
   # Like "grief_targets.whitelist", but these blocks will not be targeted if they have a loot table tag.
   # For example, unopened dungeon chests will not be targeted.
   # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:chest",
-  #   "minecraft:ender_chest", "minecraft:trapped_chest", "minecraft:barrel", "netherchested:nether_chest",
-  #   "lootr:lootr_barrel", "lootr:lootr_chest", "lootr:lootr_trapped_chest", "lootr:lootr_inventory", ... ]
+  #   "minecraft:ender_chest", "minecraft:trapped_chest", "minecraft:barrel", "lootr:lootr_barrel", "lootr:lootr_chest",
+  #   "lootr:lootr_trapped_chest", "lootr:lootr_inventory", "blue_skies:bluebright_chest", ... ]
   idle_griefing.targets.lootable_list = [
-    "minecraft:chest",
     "minecraft:ender_chest",
     "minecraft:trapped_chest",
-    "minecraft:barrel",
     "netherchested:nether_chest",
-    "lootr:lootr_barrel",
-    "lootr:lootr_chest",
-    "lootr:lootr_trapped_chest",
-    "lootr:lootr_inventory",
     "chipped:acacia_barrel",
     "chipped:acacia_crate",
     "chipped:bamboo_barrel",
@@ -485,15 +466,9 @@
   #   be hidden in.
   # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:chest",
   #   "minecraft:trapped_chest", "minecraft:barrel", "lootr:lootr_barrel", "lootr:lootr_chest",
-  #   "lootr:lootr_trapped_chest", "lootr:lootr_inventory", "chipped:acacia_barrel", "chipped:acacia_crate", ... ]
+  #   "lootr:lootr_trapped_chest", "lootr:lootr_inventory", "blue_skies:bluebright_chest", "blue_skies:starlit_chest",
+  #   ... ]
   idle_hiding.targets.whitelist = [
-    "minecraft:chest",
-    "minecraft:trapped_chest",
-    "minecraft:barrel",
-    "lootr:lootr_barrel",
-    "lootr:lootr_chest",
-    "lootr:lootr_trapped_chest",
-    "lootr:lootr_inventory",
     "chipped:acacia_barrel",
     "chipped:acacia_crate",
     "chipped:bamboo_barrel",

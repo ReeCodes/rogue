@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 		'WYVERN',
 		50000000,
 		'4x #forge:storage_blocks/draconium_awakened',
-		'fusion_crafting/awakened_draconium_block'
+		'awakened_draconium_block'
 	)
 	
 	fusion_crafting(

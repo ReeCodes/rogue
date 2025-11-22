@@ -1884,7 +1884,7 @@
 			]
 			title: "&6Collection: &rNuclear Scientist"
 			x: 11.0d
-			y: 23.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["3CDB45845A0E258F"]
@@ -2110,7 +2110,7 @@
 			]
 			title: "&eOn The Side: &aNuclear Furnace"
 			x: 17.0d
-			y: 23.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["0E28503420F2B547"]

@@ -266,5 +266,5 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# Whether a thermometer is required to see exact world and body temperature
 	# ⌄ 
-	"Require Thermometer" = true
+	"Require Thermometer" = false
 

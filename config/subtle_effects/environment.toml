@@ -95,12 +95,12 @@ habitatBiomeDensity = 3
 [waterfalls]
 waterfallsEnabled = true
 smallWaterfallsEnabled = true
-waterfallUpdateFrequency = 6
+waterfallUpdateFrequency = 20
 randomizeWaterfallParticleRotation = false
-mediumWaterfallParticleDensity = 1.0
+mediumWaterfallParticleDensity = 0.29411766
 mediumWaterfallHeightThreshold = 6
 forceSpawnMediumWaterfallParticles = true
 largeWaterfallsEnabled = true
-largeWaterfallParticleDensity = 1.0
+largeWaterfallParticleDensity = 0.25441176
 largeWaterfallHeightThreshold = 10
 forceSpawnLargeWaterfallParticles = true

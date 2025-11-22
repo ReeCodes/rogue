@@ -18,6 +18,9 @@ ServerEvents.recipes(event => {
 	removeOutput(global.assistedCrafting.map(r => r.output));
 
 	removeById([
+		
+		'caverns_and_chasms:netherite_ingot_from_nuggets',
+		'caverns_and_chasms:copper_ingot_from_nuggets',
 		//BREAD
 		'quark:tweaks/crafting/utility/bent/bread',
 		'minecraft:bread',

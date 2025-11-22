@@ -69,7 +69,7 @@
 				type: "item"
 			}]
 			title: "&eOn The Side: &aHearty Attack"
-			x: -16.0d
+			x: 0.0d
 			y: -2.0d
 		}
 		{
@@ -105,7 +105,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 0.0d
+			y: -6.0d
 		}
 		{
 			dependency_requirement: "one_started"
@@ -129,7 +129,7 @@
 					xp: 15
 				}
 				{
-					count: 4
+					count: 2
 					id: "3B7BE1E41838E190"
 					item: "kubejs:jewelled_box"
 					type: "item"
@@ -218,8 +218,8 @@
 				}
 			]
 			title: "&6Collection: &rCopper Warrior"
-			x: 4.0d
-			y: -2.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			id: "22D340822CAEB3BD"
@@ -243,7 +243,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			id: "73697ACE715FFF52"
@@ -334,7 +334,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			description: ["Use the &eWooden Hammer&r on a &eCrafting Table&r to turn it into a &eWorkbench&r."]
@@ -385,9 +385,10 @@
 			]
 			title: "&eIntroduction: &aMalleability"
 			x: 0.0d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
+			dependencies: ["2B3E220FA1C386A6"]
 			id: "2CD4A7E3F8FA21AD"
 			rewards: [
 				{
@@ -542,8 +543,8 @@
 				}
 			]
 			title: "&6Collection: &rVoidic Armory"
-			x: -4.0d
-			y: -2.0d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6D52DFB5DE4FD9E7"]
@@ -580,7 +581,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -2.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["2CD4A7E3F8FA21AD"]
@@ -712,8 +713,8 @@
 				}
 			]
 			title: "&6Collection: &rCorrupt Armory"
-			x: -4.0d
-			y: -4.0d
+			x: 0.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1802DE6942A4768D"]
@@ -867,8 +868,8 @@
 				}
 			]
 			title: "&6Collection: &rTitanite Armory"
-			x: -4.0d
-			y: -6.0d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["02AF63EB5DDCB616"]
@@ -1011,8 +1012,8 @@
 				}
 			]
 			title: "&6Collection: &rIchor Armory"
-			x: -4.0d
-			y: -8.0d
+			x: 0.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["20920AD76B3F20CC"]
@@ -1166,8 +1167,8 @@
 				}
 			]
 			title: "&6Collection: &rAstral Armory"
-			x: -4.0d
-			y: -10.0d
+			x: 0.0d
+			y: -14.0d
 		}
 		{
 			id: "005DC752DCC73F5F"
@@ -1184,6 +1185,7 @@
 					type: "item"
 				}
 			]
+			size: 2.0d
 			subtitle: "Extravagant"
 			tasks: [{
 				id: "16E86999BFA5C60D"
@@ -1277,8 +1279,8 @@
 				}
 			]
 			title: "&6Collection: &rExoskeletal"
-			x: 0.0d
-			y: -2.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			id: "51646E54093C04D5"
@@ -1351,7 +1353,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 10.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7E7EECB521479A8B"]
@@ -1411,7 +1413,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 13.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["40757D7B69DC2137"]
@@ -1470,8 +1472,8 @@
 				title: "Buckled Toolbelt"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 13.0d
+			x: 8.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7A0678DFE405FAC4"]
@@ -1495,6 +1497,7 @@
 					type: "item"
 				}
 			]
+			size: 2.0d
 			subtitle: "Weaved In Shulker"
 			tasks: [{
 				advancement: "tetra:upgrades/toolbelt_upgraded"
@@ -1503,7 +1506,7 @@
 				title: "Inlaid Toolbelt"
 				type: "advancement"
 			}]
-			x: 6.0d
+			x: 8.0d
 			y: 16.0d
 		}
 		{
@@ -1887,8 +1890,8 @@
 				}
 			]
 			title: "&eSegment: &aDouble Headed"
-			x: 3.0d
-			y: 10.0d
+			x: 4.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
@@ -2056,8 +2059,8 @@
 				}
 			]
 			title: "&eSegment: &aBlades"
-			x: 4.0d
-			y: 8.0d
+			x: 5.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
@@ -2199,7 +2202,7 @@
 			]
 			title: "&eSegment: &aBows"
 			x: 5.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
@@ -2258,8 +2261,8 @@
 				type: "item"
 			}]
 			title: "&eSegment: &aCrossbows"
-			x: -5.0d
-			y: 6.0d
+			x: -6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
@@ -2378,8 +2381,8 @@
 				}
 			]
 			title: "&eSegment: &aShields"
-			x: -4.0d
-			y: 8.0d
+			x: -5.0d
+			y: 9.0d
 		}
 		{
 			id: "76C828991A60061C"
@@ -2405,7 +2408,7 @@
 			}]
 			title: "The Rack"
 			x: 2.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
@@ -2450,7 +2453,7 @@
 			]
 			title: "&eChapter I: &aHarder Materials"
 			x: 0.0d
-			y: 9.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -2620,8 +2623,8 @@
 				}
 			]
 			title: "&eSegment: &aSingle Headed"
-			x: -3.0d
-			y: 10.0d
+			x: -4.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -2711,7 +2714,7 @@
 			}]
 			title: "&eOn The Side: &aThe Last Touch Up"
 			x: 6.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -2848,7 +2851,7 @@
 			]
 			title: "&eChapter II: &aAncient Ruines"
 			x: 0.0d
-			y: 13.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -2944,8 +2947,8 @@
 				type: "item"
 			}]
 			title: "&eOn The Side: &aAlmost Flight"
-			x: 3.0d
-			y: 13.0d
+			x: 2.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5794BDC27D167B4E"]
@@ -3044,8 +3047,8 @@
 				}
 			]
 			title: "&eOn The Side: &aSalvaging Goods"
-			x: -3.0d
-			y: 13.0d
+			x: -2.0d
+			y: 14.0d
 		}
 		{
 			id: "00F394C1EBDBA3B3"
@@ -3245,8 +3248,8 @@
 				}
 			]
 			title: "&6Collection: &rFlux-Infused Armory"
-			x: -8.0d
-			y: -2.0d
+			x: -4.0d
+			y: -6.0d
 		}
 		{
 			id: "24B782A54B62DAEC"
@@ -3263,13 +3266,14 @@
 					type: "item"
 				}
 			]
+			size: 2.0d
 			subtitle: "Grind The Cartilage"
 			tasks: [{
 				id: "0A1B0458CB2966D3"
 				item: "cataclysm:meat_shredder"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -2.0d
 			y: -2.0d
 		}
 		{
@@ -3279,7 +3283,7 @@
 				type: "xp"
 				xp: 3
 			}]
-			size: 2.0d
+			size: 3.0d
 			subtitle: "Applications \\& Upgrades"
 			tasks: [{
 				block: "minecraft:smithing_table"
@@ -3291,9 +3295,9 @@
 				type: "questsadditions:place"
 				value: 1L
 			}]
-			title: "&eSegment: &aSmithing"
+			title: "&eIntroduction: &aSmithing"
 			x: -12.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -3351,8 +3355,8 @@
 				}
 			]
 			title: "&eApply: &rSmelter Prism "
-			x: -9.5d
-			y: 11.0d
+			x: -9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -3399,7 +3403,7 @@
 			]
 			title: "&eApply: &rSea Prism "
 			x: -14.5d
-			y: 11.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -3446,7 +3450,7 @@
 			]
 			title: "&eApply: &rTerrastomp Prism "
 			x: -13.5d
-			y: 11.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5B17CBCCE48C56CF"]
@@ -3503,7 +3507,7 @@
 			]
 			title: "&eSegment: &aHephaestus Forge"
 			x: -12.0d
-			y: 13.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -3549,8 +3553,8 @@
 				}
 			]
 			title: "&eApply: &rFerrognetic Mixture"
-			x: -10.5d
-			y: 11.0d
+			x: -10.0d
+			y: 6.5d
 		}
 		{
 			id: "28061D434A82F90E"
@@ -3566,6 +3570,7 @@
 					type: "item"
 				}
 			]
+			size: 2.0d
 			subtitle: "Fouled Sickle"
 			tasks: [{
 				id: "0061F55D4FAE42E1"
@@ -3578,7 +3583,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.0d
 			y: -2.0d
 		}
 		{
@@ -3623,7 +3628,7 @@
 			]
 			title: "&6Collection: &rEerie Armory"
 			x: 8.0d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			id: "4391C2FBD770D9D7"
@@ -3651,8 +3656,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.0d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
 			id: "6414E5A2589DBB5E"
@@ -3793,7 +3798,7 @@
 			]
 			title: "&6Collection: &rMasks Of The Indigenous"
 			x: 12.0d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			id: "00D043F9CBB1D1CC"
@@ -3827,8 +3832,8 @@
 				}
 				type: "item"
 			}]
-			x: -14.0d
-			y: -2.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			id: "1CACEF134500801E"
@@ -3922,8 +3927,8 @@
 				}
 			]
 			title: "&6Collection: &rAir Suit"
-			x: -12.0d
-			y: -2.0d
+			x: -8.0d
+			y: -6.0d
 		}
 		{
 			id: "5CAAFED6BC0119AF"
@@ -3951,7 +3956,65 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "species:spectralibur"
+				tag: { }
+			}
+			id: "2B605D3683173D88"
+			size: 2.0d
+			subtitle: "Minion Summon"
+			tasks: [
+				{
+					id: "63735B5FD2DC4796"
+					item: {
+						Count: 1
+						id: "species:spectralibur"
+						tag: { }
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "species:spectralibur"
+						tag: {
+							Souls: 5
+						}
+					}
+					id: "7F548D4CA44C4388"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "species:spectralibur"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											Souls: 5
+										}
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			x: -4.0d
 			y: -2.0d
 		}
 	]

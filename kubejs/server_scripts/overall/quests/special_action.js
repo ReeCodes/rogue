@@ -1,4 +1,4 @@
-//POTION CHECK
+// POTION CHECK
 global.MobEffectAdded = (event, effectId) => {
 	let player = event.entity;
 	if (isFakePlayer(player)) return;
@@ -7,10 +7,12 @@ global.MobEffectAdded = (event, effectId) => {
 		if (effectId == "minecraft:fire_resistance") simpleQuestComplete(player, "025A519AF6945B42");
 		if (effectId == "alexscaves:deepsight") simpleQuestComplete(player, "19F73C4CDCD8235E");
 		if (effectId == "alexscaves:sugar_rush") simpleQuestComplete(player, "68B25C8ACCD9E370");
+		if (effectId == "allyeffect:allyship") simpleQuestComplete(player, "26370CA5DAAB9F56");
+		if (effectId == "irons_rpg_tweaks:drowsy") simpleQuestComplete(player, "5414CD09900DC010");
 	}
 }
 
-//SERVER CHECK
+// SERVER CHECK
 PlayerEvents.loggedIn(event => {
 	const { player, server } = event;
 	
@@ -20,7 +22,7 @@ PlayerEvents.loggedIn(event => {
 	}
 })
 
-//SPECIAL BALD-EAGLE QUEST
+// SPECIAL BALD-EAGLE QUEST
 ItemEvents.firstLeftClicked(event => {
 	const {	level, server, item, player } = event;
 	
@@ -39,21 +41,21 @@ ItemEvents.firstLeftClicked(event => {
 	}
 })
 
+// HURT
 EntityEvents.hurt(event => {
-	let source = event.source.actual;
-	const {	level, server, entity } = event;
-	
+	let source = event.source?.actual;
 	if (isFakePlayer(source)) return;
+	const {	level, server, entity } = event;
 		
 	//TREMORSAURUS STUN
-	if (source.mainHandItem == Item.of('alexscaves:primitive_club') && entity.type == 'alexscaves:tremorsaurus') {
+	if (source?.mainHandItem == Item.of('alexscaves:primitive_club') && entity.type == 'alexscaves:tremorsaurus') {
 		server.scheduleInTicks(1, () => {
 			if (entity.nbt?.ActiveEffects?.some(e => e["forge:id"] == 'alexscaves:stunned')) simpleQuestComplete(source, '71AACB5B150D754A');
 		})
 	}
 
 	//SPECIAL POSSESSION QUEST
-	if (source.mainHandItem == Item.of('alexscaves:totem_of_possession') && entity.tags != 'resists_totem_of_possession') {
+	if (source?.mainHandItem == Item.of('alexscaves:totem_of_possession') && entity.tags != 'resists_totem_of_possession') {
 		simpleQuestComplete(source, '6F77AA460DC9D6B6');
 	}
 		
@@ -64,13 +66,12 @@ EntityEvents.hurt(event => {
 })
 
 EntityEvents.death(event => {
-	let source = event.source.actual;
-	const {	level, server, entity } = event;
-	
+	let source = event.source?.actual;
 	if (isFakePlayer(source)) return;
+	const {	level, server, entity } = event;
 		
 	//DESPOIL KILL
-	if (source.mainHandItem.id == Item.of('biomancy:despoil_sickle') || (Array.isArray(source.mainHandItem?.nbt?.Enchantments) && source.mainHandItem?.nbt?.Enchantments?.some(enchant => enchant.id == "biomancy:despoil"))) {
+	if (source?.mainHandItem?.id == Item.of('biomancy:despoil_sickle') || !!(Array.isArray(source?.mainHandItem?.nbt?.Enchantments) && source?.mainHandItem?.nbt?.Enchantments?.some(enchant => enchant.id == "biomancy:despoil"))) {
 		simpleQuestComplete(source, '1624298920C7C612');	
 	}
 		
@@ -116,10 +117,10 @@ BlockEvents.rightClicked(event => {
 		}
 	}
 
-	ritualCheck('bloodmagic:activationcrystalweak', 'armour_evolve', '49C2A42AFD946886')
-	ritualCheck('bloodmagic:activationcrystalweak', 'crystal_split', '34DF335C747A6DC0')
+	ritualCheck('bloodmagic:activationcrystalweak', 'armour_evolve', '49C2A42AFD946886');
+	ritualCheck('bloodmagic:activationcrystalweak', 'crystal_split', '34DF335C747A6DC0');
 	
-	//AETHERWORKS
+	// AETHERWORKS
 	if (handItem.id == 'embers:tinker_hammer' && block.id == 'aetherworks:forge_anvil' && blockData.hitTimeout >= 1) {
 		server.scheduleInTicks(5, () => {
 			simpleQuestComplete(player, '6AEA1DC98BE473A8');
@@ -140,7 +141,7 @@ BlockEvents.broken(event => {
 	
 	if (isFakePlayer(player)) return;
 	
-	if (block.id == 'minecraft:spawner' && player.mainHandItem?.nbt?.Enchantments && player.mainHandItem.nbt.Enchantments.some(e => e.id == "minecraft:silk_touch")) {
+	if (block.id == 'minecraft:spawner' && player.mainHandItem?.nbt?.Enchantments && player.mainHandItem?.nbt?.Enchantments.some(e => e.id == "minecraft:silk_touch")) {
 		simpleQuestComplete(player, '1FAE1ED7FF14FB95');
 	}
 	
@@ -149,16 +150,11 @@ BlockEvents.broken(event => {
 	}
 })
 
+// ANVIL APPLY
 global.AnvilApply = event => {
 	const { entity, output } = event;
-	let player = entity;
+	
 	if (/.+elementalcraft:\{jewel:.+\}.+/.test(output.nbt)) {
-		simpleQuestComplete(player, '0DC2F94E32B5B42F');
+		simpleQuestComplete(entity, '0DC2F94E32B5B42F');
 	}
 }
-
-
-// COMMON TAME EVENT
-CommonAddedEvents.entityTame(event => {
-	const { entity, animal } = event;
-});

@@ -19,7 +19,7 @@ enablePunishOffenders = false
 #Range: > 1
 zapInterval = 30
 #A list of blacklisted dimensions.
-dimensions = ["twilightforest:twilight_forest", "bloodmagic:dungeon", "dimdungeons:build_dimension", "dimdungeons:dungeon_dimension"]
+dimensions = ["bloodmagic:dungeon", "dimdungeons:dungeon_dimension", "fossil:anu_lair", "fossil:treasure_room"]
 #A list of game stage configurations unlocking flight in a dimension. The format is "checkType,check,game_stage" ex: "dimension,minecraft:the_nether,nether_unlocked" or "biome,minecraft:plains,stage_name"
 dimension_unlocks = []
 

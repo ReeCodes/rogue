@@ -189,14 +189,11 @@
 			description: ["Complete all dependencies tied to this quest."]
 			icon: {
 				Count: 1
-				id: "citadel:fancy_item"
+				id: "trofers:large_pillar"
 				tag: {
-					DisplayBob: 0
-					DisplayItem: "rogue:completionist_trophy"
-					DisplayScale: 1.75d
-					DisplayShake: 0
-					DisplaySpin: 1
-					DisplayZoom: 0
+					BlockEntityTag: {
+						Trophy: "trofers:trophies/completionist_trophy"
+					}
 				}
 			}
 			id: "52DEDCEA74ACCE4B"

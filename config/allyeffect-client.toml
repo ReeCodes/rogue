@@ -1,0 +1,7 @@
+
+#Client settings
+[client]
+	#The animation style for the ally effect (Default: HUG)
+	#Allowed Values: HUG, EVOCATION, DANCE
+	effectAnimation = "EVOCATION"
+

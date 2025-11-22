@@ -220,6 +220,17 @@
         "value": 100
       }
     },
+    "alembic:true_damage.resistance": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:innate_spell/cataclysm_spellbooks/dos_swarm": {
       "enabled": false,
       "min": {
@@ -473,6 +484,17 @@
         "value": 100
       }
     },
+    "caverns_and_chasms:slowness_infliction": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
+      }
+    },
     "additional_attributes:spell_school_lightning": {
       "enabled": false,
       "min": {
@@ -482,6 +504,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "alembic:true_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "minecraft:generic.flying_speed": {
@@ -616,6 +649,17 @@
         "value": 100
       }
     },
+    "alembic:physical_damage.absorption": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:generic.max_health": {
       "enabled": true,
       "min": {
@@ -676,6 +720,17 @@
       "min": {
         "default": 0,
         "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "alembic:arcane_damage.resistance": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
       },
       "max": {
         "default": 1024,
@@ -902,6 +957,17 @@
         "value": 200
       }
     },
+    "alembic:alchemical_damage.shielding": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "solarcraft:health_no_limit": {
       "enabled": false,
       "min": {
@@ -1045,17 +1111,6 @@
         "value": 1024
       }
     },
-    "irons_spellbooks:fire_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "malum:soul_ward_integrity": {
       "enabled": false,
       "min": {
@@ -1065,6 +1120,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "irons_spellbooks:fire_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "goety:void_potency": {
@@ -1131,6 +1197,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "alembic:fire_damage.shielding": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/cursed_rush": {
@@ -1551,6 +1628,17 @@
         "value": 1
       }
     },
+    "alembic:physical_damage.shielding": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:innate_spell/cataclysm_spellbooks/intrusion_prevention_system": {
       "enabled": false,
       "min": {
@@ -1672,6 +1760,17 @@
         "value": 1024
       }
     },
+    "alembic:arcane_damage.shielding": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/acid_orb": {
       "enabled": false,
       "min": {
@@ -1760,6 +1859,17 @@
         "value": 2147483647
       }
     },
+    "caverns_and_chasms:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
+      }
+    },
     "additional_attributes:spell_type_flaming_barrage": {
       "enabled": false,
       "min": {
@@ -1824,6 +1934,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "alembic:arcane_damage.absorption": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/atomic_laser": {
@@ -2022,6 +2143,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "alembic:true_damage.shielding": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "puffish_attributes:player.jump": {
@@ -2695,6 +2827,17 @@
         "value": 2048
       }
     },
+    "alembic:arcane_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "tetra:ability_cooldown": {
       "enabled": false,
       "min": {
@@ -2970,6 +3113,17 @@
         "value": 100
       }
     },
+    "caverns_and_chasms:experience_boost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
+      }
+    },
     "additional_attributes:innate_spell/alshanex_familiars/guardian_angel": {
       "enabled": false,
       "min": {
@@ -3168,6 +3322,17 @@
         "value": 2000
       }
     },
+    "caverns_and_chasms:weakness_aura": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
+      }
+    },
     "additional_attributes:spell_type_fireball": {
       "enabled": false,
       "min": {
@@ -3221,6 +3386,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "caverns_and_chasms:lifesteal": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 5,
+        "value": 5
       }
     },
     "goety:spell_potency": {
@@ -3850,17 +4026,6 @@
         "value": 10
       }
     },
-    "miniutilities:divine_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2147483647,
-        "value": 2147483647
-      }
-    },
     "lodestone:magic_proficiency": {
       "enabled": false,
       "min": {
@@ -3870,6 +4035,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "miniutilities:divine_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2147483647,
+        "value": 2147483647
       }
     },
     "additional_attributes:respiration": {
@@ -3947,6 +4123,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "alembic:fire_damage.resistance": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/dimensional_rift": {
@@ -4178,6 +4365,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "opposing_force:stealth": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "puffish_attributes:stamina": {
@@ -4464,6 +4662,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "alembic:fire_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "cold_sweat:burning_point": {
@@ -4807,6 +5016,17 @@
         "value": 100
       }
     },
+    "alembic:true_damage.absorption": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/tectonic_tremble": {
       "enabled": false,
       "min": {
@@ -4863,6 +5083,17 @@
       }
     },
     "ars_nouveau:ars_nouveau.perk.wixie": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "alembic:fire_damage.absorption": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -5016,6 +5247,17 @@
         "value": 100
       }
     },
+    "alembic:alchemical_damage.absorption": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell/alshanex_familiars/summon_shadows": {
       "enabled": false,
       "min": {
@@ -5058,6 +5300,17 @@
       "max": {
         "default": 200,
         "value": 200
+      }
+    },
+    "caverns_and_chasms:magic_protection": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/blood_needles": {
@@ -5621,6 +5874,17 @@
         "value": 100
       }
     },
+    "alembic:alchemical_damage.resistance": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:fire_damage": {
       "enabled": false,
       "min": {
@@ -5762,6 +6026,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "alembic:alchemical_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell_type_shield": {

@@ -1,18 +1,19 @@
-let previousCoef = null;
+//priority: 110
 
-function showMeter(event, level) {
-	level.players.forEach(player => {
-		let coef = getPlayerCoef(player);
-		let borderWidth = 4;
-		let barWidth = 102 - borderWidth;
-		let max_coef = getMaxPlayerCoef(player);
-		let pWidth = ((coef - 1) / (max_coef - 1)) * barWidth;
+let previousCoef;
+
+function showMeter(event, player) {
+	
+	let coef = getPlayerCoef(player);
+	let borderWidth = 4;
+	let barWidth = 102 - borderWidth;
+	let max_coef = getMaxPlayerCoef(player);
+	let pWidth = ((coef - 1) / (max_coef - 1)) * barWidth;
 		
-		if (player.age % 80 == 0) {
+	if (player.age % 80 == 0) {
 				
-			if (previousCoef !== coef) {
-				previousCoef = coef;
-
+		if (previousCoef !== coef) {
+			previousCoef = coef;
 				player.paint({
 					rogue_gui: {
 						type: 'rectangle',
@@ -71,11 +72,19 @@ function showMeter(event, level) {
 				});
 			}
 		}
-	})
 }
 
 LevelEvents.tick(event => {
 	const { level } = event;
 	if (level.clientSide) return;
-	showMeter(event, level)
+	
+	let updateablePlayers = level.players.filter(player =>	
+		player &&
+		!(isFakePlayer(player)) &&
+		!!player.persistentData.coef
+	);
+	
+	updateablePlayers.forEach(player => {
+		showMeter(event, player)
+	})
 });

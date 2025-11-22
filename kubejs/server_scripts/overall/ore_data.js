@@ -398,7 +398,11 @@ const oreData = [
     {
 		type: 'gem',
         name: 'jade',
-        dust_able: false,
+		has_ore: true
+    },
+    {
+		type: 'gem',
+        name: 'spinel',
 		has_ore: true
     },
     {

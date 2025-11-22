@@ -7,12 +7,6 @@ const $ChatFormatting = Java.loadClass('net.minecraft.ChatFormatting');
 const $TextColor = Java.loadClass('net.minecraft.network.chat.TextColor');
 const $MagicMissile = Java.loadClass('vazkii.botania.common.entity.MagicMissileEntity');
 
-function playSound(level, sound, soundSource, x, y, z, vol, pitch) {
-	vol = vol || 0.3;
-	pitch = pitch || 0.9;
-	level.runCommandSilent('playsound ' + sound + ' master ' + soundSource + ' ' + x + ' ' + y + ' ' + z + ' ' + vol + ' ' + pitch);
-}
-
 function applyCD(player, ability, baseCD) {
 	const cdReduction = getPlayerAbilityCD(player);
 	const finalCD = baseCD > 1 ? Math.max(1, baseCD * (1 - cdReduction)) : 1;
@@ -90,13 +84,14 @@ const handlers = {
 		},
 
 		brute_force: {
-			cd: 5, sound: 'goety:whisperer_attack', reset_sound: false,
+			cd: 5, reset_sound: false,
 			fn: (ctx) => {
 				const { server, source, sourceType, ability, config } = ctx;
 				if (sourceType !== 'player' || !source.isPlayer()) return;
 				
+				let stunSounds = ['species:entity.bewereager.stun', 'goety:whisperer_attack'];
 				if (Math.random() < (ability.level * 0.005)) {
-					playSound(source.level, config.sound, source.username, source.x, source.y, source.z, 0.3, 1.0);
+					playSound(source.level, randomize(stunSounds), source.username, source.x, source.y, source.z, 0.8, 0.8);
 					server.scheduleInTicks(8, () => {
 						source.potionEffects.add('alexscaves:stunned', 40, 1, true, false);
 					});

@@ -712,8 +712,8 @@
 				item: "tradingpost:trading_post"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 10.5d
+			x: -6.5d
+			y: 4.5d
 		}
 		{
 			id: "6B77C9986E67BD7B"
@@ -1113,8 +1113,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 5.5d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["41465C75AD6EAF0A"]
@@ -1132,7 +1132,7 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "All In One Place"
 			tasks: [{
 				id: "3E99A1A6814144E8"
@@ -1148,8 +1148,8 @@
 				type: "item"
 			}]
 			title: "&eOn The Side: &aTool Storage"
-			x: -6.0d
-			y: 7.0d
+			x: 0.0d
+			y: 8.5d
 		}
 		{
 			id: "52A542EBD329E8FE"
@@ -1308,8 +1308,36 @@
 				item: "barteringstation:bartering_station"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 10.5d
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			id: "57322A988DBA98F2"
+			rewards: [
+				{
+					id: "335E2D99CA712180"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "0C1068BE2D2A6441"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+				{
+					id: "6026A1AA12F552C5"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			subtitle: "Above the Maximum"
+			tasks: [{
+				id: "4A851ED276D31516"
+				item: "illagerinvasion:imbuing_table"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.5d
 		}
 	]
 	title: "{quest.overview.base_label.title} Subtle Shenanigans"

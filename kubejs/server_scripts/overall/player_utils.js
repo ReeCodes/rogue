@@ -1,7 +1,5 @@
 //priority: 600
 
-//const $Team = Java.loadClass("dev.ftb.mods.ftbteams.api.Team");
-//const $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.FTBTeamsAPIImpl").INSTANCE;
 const $TeamsApi = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI");
 
 const COEF_TOLERANCE = 1.67;
@@ -10,8 +8,8 @@ const BASE_MAX_COEF = 20;
 
 const ABSOLUTE_MAX_EXTRA_COEF = 20;
 const ABSOLUTE_MAX_COEF = 50;
-const ABSOLUTE_MAX_ABILITY_CD = 0.6;
-const ABSOLUTE_MAX_PET_CD = 0.6;
+const ABSOLUTE_MAX_ABILITY_CD = 0.95;
+const ABSOLUTE_MAX_PET_CD = 0.95;
 
 const NON_HOSTILE_DEBUFF = 0.67;
 const PET_SYNC_ABSOLUTE_CD = 80;
@@ -31,11 +29,13 @@ const Teams = {
 
 // COEF MODIFIERS
 function getMaxPlayerCoef(player) {
+	if (!player) return 0;
 	const playerMax = player.persistentData?.player_max_coef ?? 0;
 	return Math.min(BASE_MAX_COEF + playerMax, ABSOLUTE_MAX_COEF);
 };
 
 function getPlayerCoef(player) {
+	if (!player) return 1;
     const base = player.persistentData?.coef ?? 1;
     const extra = player.persistentData?.player_extra_coef ?? 0;
     return Math.min(base + extra, getMaxPlayerCoef(player));

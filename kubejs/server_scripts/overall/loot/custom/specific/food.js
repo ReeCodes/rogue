@@ -447,4 +447,4 @@ ServerEvents.chestLootTables(event => {
 		]).stacks.forEach(s => {
 			LootEntry.of(s.id).when((cond) => cond.anyDimension("minecraft:the_nether"));
 		})
-		*/
+*/

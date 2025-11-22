@@ -1,8 +1,6 @@
 PlayerEvents.loggedIn(event => {
 	const { player, server } = event;
 	
-	let skilltree_version = 5;
-	
 	if (!player.stages.has('starting_items')) {
 		server.runCommandSilent(`item replace entity ${player.username} container.9 with minecraft:potion{Potion:"minecraft:water",Purity:3} 12`);
 		server.runCommandSilent(`item replace entity ${player.username} container.10 with kubejs:gluttonous_chest 1`);

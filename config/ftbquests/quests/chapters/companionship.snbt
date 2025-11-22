@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "heart"
+	default_quest_shape: "diamond"
 	filename: "companionship"
 	group: "46789BE19B4F2E15"
 	icon: {
@@ -43,15 +43,15 @@
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "enderzoology:wither_cat"
-						DisplayMobScale: 1.5d
+						DisplayMobScale: 1.0d
 					}
 				}
 				id: "1CD35C926F3BD87F"
 				title: "&eTame: &rCat"
 				type: "custom"
 			}]
-			x: 3.0d
-			y: 13.0d
+			x: -2.0d
+			y: 14.0d
 		}
 		{
 			icon: {
@@ -116,8 +116,8 @@
 					type: "custom"
 				}
 			]
-			x: 9.0d
-			y: -9.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -171,8 +171,8 @@
 					type: "custom"
 				}
 			]
-			x: 3.0d
-			y: -3.0d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			id: "75362D6074D0F702"
@@ -202,15 +202,15 @@
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "alexsmobs:gorilla"
-						DisplayMobScale: 1.5d
+						DisplayMobScale: 1.15d
 					}
 				}
 				id: "60E41D3C0C9F67F9"
 				title: "&eTame: &rGorilla"
 				type: "custom"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			id: "3DFCBC1AEB01528A"
@@ -247,8 +247,8 @@
 				title: "&eTame: &rWarped Toad"
 				type: "custom"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			icon: {
@@ -280,7 +280,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Gentle Giants"
+			subtitle: "Gentle"
 			tasks: [
 				{
 					icon: {
@@ -288,7 +288,7 @@
 						id: "alexsmobs:tab_icon"
 						tag: {
 							DisplayEntityType: "alexsmobs:elephant"
-							DisplayMobScale: 0.6d
+							DisplayMobScale: 0.5d
 						}
 					}
 					id: "313936FC178EBF54"
@@ -315,7 +315,7 @@
 				}
 			]
 			x: 0.0d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			id: "083DADA621D02290"
@@ -352,8 +352,8 @@
 				title: "&eTame: &rCrow"
 				type: "custom"
 			}]
-			x: -7.0d
-			y: 0.0d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			icon: {
@@ -413,8 +413,8 @@
 					type: "custom"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			icon: {
@@ -466,7 +466,7 @@
 						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
-								Insulation: [ ]
+								insulation: [ ]
 							}
 						}
 						id: "minecraft:iron_chestplate"
@@ -475,7 +475,7 @@
 						}
 					}
 					id: "21FBCCFB52C71B38"
-					title: "&eFully Equip: &rKangaroo"
+					title: "&eEquip: &rKangaroo with all &e3 Pieces"
 					type: "custom"
 				}
 			]
@@ -512,7 +512,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Freedom Intensifies"
+			subtitle: "Flying Experience"
 			tasks: [
 				{
 					icon: {
@@ -556,8 +556,8 @@
 					type: "custom"
 				}
 			]
-			x: -6.0d
-			y: -6.0d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
 			id: "3FD75B269AFF88DE"
@@ -588,15 +588,15 @@
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "alexsmobs:tarantula_hawk"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.7d
 					}
 				}
 				id: "2629976388226C5A"
 				title: "&eTame: &rTarantula Hawk"
 				type: "custom"
 			}]
-			x: 7.0d
-			y: 0.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			icon: {
@@ -674,10 +674,18 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:cosmaw"
+					DisplayMobScale: 0.7d
+				}
+			}
 			id: "5210FC1D0F2007CC"
 			rewards: [
 				{
@@ -699,21 +707,36 @@
 			]
 			size: 2.0d
 			subtitle: "Proboscis Fish"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "alexsmobs:tab_icon"
-					tag: {
-						DisplayEntityType: "alexsmobs:cosmaw"
-						DisplayMobScale: 1.0d
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:cosmaw"
+							DisplayMobScale: 0.7d
+						}
 					}
+					id: "693950A1809A92AF"
+					title: "&eTame: &rCosmaw"
+					type: "custom"
 				}
-				id: "693950A1809A92AF"
-				title: "&eTame: &rCosmaw"
-				type: "custom"
-			}]
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:cosmaw"
+							DisplayMobScale: 0.7d
+						}
+					}
+					id: "6ABF4A5642240DC5"
+					title: "&eGet Rescued&r by &eCosmaw"
+					type: "custom"
+				}
+			]
 			x: 0.0d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
 			description: ["Interacting with mobs, using the &eAnimal Dictionary&r, explains to every last detail &ehow to tame&r or &eheal&r the mob. As well as what it's &eabilities&r are."]
@@ -743,7 +766,7 @@
 				title: "&eAnalyze: &rAlex's Mobs"
 				type: "custom"
 			}]
-			title: "&eSegment: &aAlex's Mobs"
+			title: "&eIntroduction: &aAlex's Mobs"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -805,8 +828,8 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
-			y: -9.0d
+			x: -6.0d
+			y: -6.0d
 		}
 		{
 			id: "0A5E61528B03D9A1"
@@ -842,8 +865,8 @@
 				title: "&eTame: &rMudskipper"
 				type: "custom"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: 4.0d
+			y: -4.0d
 		}
 		{
 			icon: {
@@ -903,8 +926,8 @@
 					type: "custom"
 				}
 			]
-			x: -3.0d
-			y: -3.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			description: ["Tamed using &bGlow Berries&r."]
@@ -942,8 +965,8 @@
 				title: "&eTame: &rGlare"
 				type: "custom"
 			}]
-			x: -3.0d
-			y: 13.0d
+			x: 2.0d
+			y: 14.0d
 		}
 		{
 			description: ["They seem to like &bArcane Essence&r."]
@@ -975,7 +998,7 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 3.0d
 			subtitle: "Henchmen"
 			tasks: [
 				{
@@ -997,10 +1020,15 @@
 					title: "&eCapture: &rFamiliar using &eFamiliar Tome"
 					type: "custom"
 				}
+				{
+					id: "7EFF48F68EEFBF71"
+					item: "alshanex_familiars:pet_bed"
+					type: "item"
+				}
 			]
-			title: "&eSegment: &aAlshanex's Familiars"
+			title: "&eChapter I, Pt. II: &aAlshanex's Familiars"
 			x: 0.0d
-			y: 14.0d
+			y: 10.5d
 		}
 		{
 			icon: "domesticationinnovation:rotten_apple"
@@ -1052,7 +1080,7 @@
 				}
 			]
 			title: "&eSegment: &aZombiefication"
-			x: -4.0d
+			x: -2.0d
 			y: 16.0d
 		}
 		{
@@ -1099,7 +1127,7 @@
 				}
 			]
 			title: "&eSegment: &aVillainize"
-			x: 4.0d
+			x: 2.0d
 			y: 16.0d
 		}
 		{
@@ -1123,7 +1151,7 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Recovery"
 			tasks: [
 				{
@@ -1149,17 +1177,35 @@
 					type: "item"
 				}
 				{
-					id: "68420E9D6E629874"
-					item: "domesticationinnovation:collar_tag"
+					id: "3217B0A934953F3A"
+					item: {
+						Count: 1
+						id: "supplementaries:flute"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57C8D76EDEF847F6"
+					item: {
+						Count: 1
+						id: "domesticationinnovation:feather_on_a_stick"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
 			title: "&eSegment: &aPet Accessoires"
-			x: 0.0d
-			y: 16.5d
+			x: -1.0d
+			y: 12.0d
 		}
 		{
 			description: ["Tamed using &bSpider Eyes&r."]
+			icon: "minecraft:spider_eye"
 			id: "17CD20D056A1C123"
 			rewards: [
 				{
@@ -1193,11 +1239,12 @@
 				title: "&eTame: &rFrog"
 				type: "custom"
 			}]
-			x: -3.0d
-			y: 19.0d
+			x: 3.0d
+			y: 15.0d
 		}
 		{
 			description: ["Tamed using &bTropical Fish&r."]
+			icon: "minecraft:tropical_fish"
 			id: "519ED089E1620286"
 			rewards: [
 				{
@@ -1231,11 +1278,12 @@
 				title: "&eTame: &rAxolotl"
 				type: "custom"
 			}]
-			x: 3.0d
-			y: 19.0d
+			x: 0.0d
+			y: 16.0d
 		}
 		{
 			description: ["Mate two &bFoxes&r using &bSweet Berries&r."]
+			icon: "minecraft:sweet_berries"
 			id: "0F2F535B3744E5DA"
 			rewards: [
 				{
@@ -1269,8 +1317,309 @@
 				title: "&eTame: &rFox"
 				type: "custom"
 			}]
+			x: -3.0d
+			y: 15.0d
+		}
+		{
+			icon: "domesticationinnovation:collar_tag"
+			id: "1DBCF620F8E70204"
+			rewards: [
+				{
+					id: "22221B3C3B3910CF"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 2
+					id: "0F1AB57DA92EC521"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "37753E5E6AD87C11"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Owned"
+			tasks: [
+				{
+					id: "4452C1F97A7155FE"
+					item: "domesticationinnovation:collar_tag"
+					type: "item"
+				}
+				{
+					icon: "domesticationinnovation:collar_tag"
+					id: "6A351BD22078A669"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "domesticationinnovation:collar_tag"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:custom"
+									tag: {
+										value: "is_enchanted"
+									}
+								}
+							]
+						}
+					}
+					title: "&eEnchant: &rCollar Tag"
+					type: "item"
+				}
+			]
+			title: "&eSegment: &aName It"
+			x: 1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["43C3E5D8167F0493"]
+			description: ["Rescue a &eDried Ghast&r from Nether and make it your flying &eCompanion&r."]
+			icon: "minecraft:dried_ghast"
+			id: "4A387713A3425B79"
+			rewards: [
+				{
+					id: "65F50F2EB8D52037"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "37E548042740C87D"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "45FF57B4C770B25B"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					id: "7D4EE9448675AB20"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Happy Retrieval"
+			tasks: [
+				{
+					id: "7919F6BBC052F9BF"
+					item: "minecraft:dried_ghast"
+					type: "item"
+				}
+				{
+					block: "minecraft:dried_ghast"
+					block_type: 0
+					id: "76A7966F998FB432"
+					replace: false
+					replaced: "minecraft:water"
+					title: "&ePlace: &rDried Ghast into &eWater"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					id: "4B38A6CB09BCD364"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:harnesses"
+						}
+					}
+					title: "&eHarnesses"
+					type: "item"
+				}
+				{
+					icon: "minecraft:white_harness"
+					id: "44AF41FE53DB8FE1"
+					title: "&eEquip: &rHappy Ghast with &eHarness"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "2CBAD9F73C3773B5"
+					title: "&eMount: &rHappy Ghast"
+					type: "custom"
+				}
+				{
+					id: "576D060E6D57676E"
+					item: "frozenhappyghast:ghast_wand"
+					type: "item"
+				}
+				{
+					icon: "frozenhappyghast:ghast_wand"
+					id: "1CE07A8BF1D8E8DF"
+					title: "&eFreeze: &rHappy Ghast"
+					type: "custom"
+				}
+			]
+			title: "&eChapter I, Pt. I: &aHappy Ghast"
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Get rid of &nall&r the &eHullbacks&r annoying &eBonnet&r using &eShears&r and an &eAxe&r. "
+				""
+				"&eSaddle&r the Hullback, then build a &ePlatform&r made from &eWooden Planks&r."
+				""
+				"&bSome tasks can sometimes not complete due to not being close to the actual Hullback. Try out going below the Hullback, also.&r"
+			]
+			icon: "whaleborne:helm"
+			id: "713BA4BB1DA825B8"
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "07CF5D0D0E30C19F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "7AA74FEC97EDC958"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4E8E659073FE7710"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "4F0F0622FA0E4470"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "A Wreck"
+			tasks: [
+				{
+					icon: "whaleborne:helm"
+					id: "4488F91C0461630A"
+					observe_type: 5
+					timer: 0L
+					title: "&eFind: &rHullback"
+					to_observe: "whaleborne:hullback"
+					type: "observation"
+				}
+				{
+					icon: "biomesoplenty:barnacles"
+					id: "069675355CD1E139"
+					title: "&eClean: &rHullback"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "0F80291110DB5EAE"
+					title: "&eSaddle: &rHullback"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:oak_planks"
+					id: "0B2397BFB9F65CD5"
+					title: "&eCreate: &rPlatform from &eWooden Planks"
+					type: "custom"
+				}
+				{
+					icon: "minecraft:saddle"
+					id: "0D8815896B934D9E"
+					title: "&eMount: &rHullback"
+					type: "custom"
+				}
+			]
+			title: "&eChapter I, Pt. III: &aHelp Wanted"
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"[\"\",{\"text\":\"Press \"},{ \"keybind\": \"key.keyboard.left.alt\", \"color\": \"gold\"},{\"text\":\" to bestow nearby allies and tamed enemies with positive effects.\"}]"
+				""
+				"Effects are given to allies within &e6 blocks&r."
+			]
+			id: "29DB426FC37E70BA"
+			rewards: [
+				{
+					id: "7D6710B30B13333C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "05E04216A8B40DEA"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+				{
+					id: "7DE8027179086CB0"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Gather up"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "citadel:effect_item"
+					tag: {
+						DisplayEffect: "allyeffect:allyship"
+					}
+				}
+				id: "26370CA5DAAB9F56"
+				title: "&eInspire: &rAllies"
+				type: "custom"
+			}]
+			title: "&eSegment: &aAllied Alliance"
 			x: 0.0d
-			y: 21.0d
+			y: 13.0d
+		}
+		{
+			id: "65919D35266C7AC8"
+			size: 2.0d
+			subtitle: "Rare Underwater Findings"
+			tasks: [
+				{
+					id: "27B794A0337034F1"
+					item: "whaleborne:sail"
+					type: "item"
+				}
+				{
+					id: "5DB8F046FF3EF754"
+					item: "whaleborne:cannon"
+					type: "item"
+				}
+				{
+					id: "17F6B4E50922310B"
+					item: "whaleborne:mast"
+					type: "item"
+				}
+				{
+					id: "2A800C14E20101BF"
+					item: "whaleborne:helm"
+					type: "item"
+				}
+				{
+					id: "4578834A25767607"
+					item: "whaleborne:anchor"
+					type: "item"
+				}
+			]
+			title: "&eOn The Side: &aFrom Wreck To Ship"
+			x: 4.0d
+			y: 12.0d
 		}
 	]
 	title: "{quest.overview.base_label.title} Companionship"

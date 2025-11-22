@@ -13,10 +13,5 @@ ServerEvents.entityLootTables(event => {
 			pool.addItem('eidolon:zombie_heart', 1)
 			pool.addCondition(cond_kbp).addCondition(cond_rChance_looting(0.1, 0.05))
 		})
-		table.addPool(pool => {
-			pool.rolls = 1;
-			pool.addItem('embers:lead_ingot', 1)
-			pool.addCondition(cond_kbp).addCondition(cond_rChance_looting(0.025, 0.01))
-		})
 	})
 })

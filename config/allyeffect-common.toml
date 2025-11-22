@@ -1,0 +1,15 @@
+
+#Effect settings
+[effect]
+	#The range the ally effect checks for other entities (Default: 3)
+	#Range: 0 ~ 64
+	effectRange = 5
+	#If true, the effect only activates when another entity is within range (Default: true)
+	activateOnlyInRange = true
+	#The frequency (in ticks) at which the giver entity receives the effect (Default: 20)
+	#Range: > 1
+	giverEffectFrequency = 20
+	#The frequency (in ticks) at which the receiver entity receives the effect (Default: 20)
+	#Range: > 1
+	receiverEffectFrequency = 20
+

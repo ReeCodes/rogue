@@ -1,9 +1,9 @@
 [
-	//LIMITERS
+	// SINGLE LIMITERS
 	{
 		"mob": "minecraft:bat",
 		"mincount": {
-			"amount": 4,
+			"amount": 8,
 			"mob": "minecraft:bat",
 			"perplayer": true
 		},
@@ -12,7 +12,7 @@
 	{
 		"mob": "minecraft:guardian",
 		"mincount": {
-			"amount": 16,
+			"amount": 20,
 			"mob": "minecraft:guardian",
 			"perplayer": true
 		},
@@ -28,85 +28,20 @@
 		"result": "deny"
 	},
 	{
-		"spawner": true,
-		"mod": "minecraft",
-		"passive": true,
+		"mob": "alexsmobs:cockroach",
 		"mincount": {
-			"spawner": true,
-			"amount": 60,
-			"mod": "minecraft",
-			"passive": true,
+			"amount": 6,
+			"mob": "alexsmobs:cockroach",
 			"perplayer": true
 		},
 		"result": "deny"
 	},
 	{
 		"spawner": false,
-		"mod": "forbidden_arcanus",
-		"mincount": {
-			"amount": 4,
-			"mod": "forbidden_arcanus",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "irons_spellbooks",
-		"mincount": {
-			"amount": 8,
-			"mod": "irons_spellbooks",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "ecologics",
-		"mincount": {
-			"amount": 8,
-			"mod": "ecologics",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "variantsandventures",
+		"mob": "embers:ancient_golem",
 		"mincount": {
 			"amount": 16,
-			"mod": "variantsandventures",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "friendsandfoes",
-		"mincount": {
-			"amount": 16,
-			"mod": "friendsandfoes",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"mob": "feywild:dwarf_blacksmith",
-		"mincount": {
-			"amount": 5,
-			"mob": "feywild:dwarf_blacksmith",
-			"perplayer": true
-		},
-		"result": "deny",
-		"when": "onjoin"
-	},
-	//GOETY
-	{
-		"spawner": false,
-		"mod": "goety",
-		"mincount": {
-			"amount": 8,
-			"mod": "goety",
+			"mob": "embers:ancient_golem",
 			"perplayer": true
 		},
 		"result": "deny"
@@ -121,287 +56,6 @@
 		},
 		"result": "deny"
 	},
-	//GRIMOIRE
-	{
-		"spawner": false,
-		"mod": "grimoireofgaia",
-		"mincount": {
-			"amount": 7,
-			"mod": "grimoireofgaia",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	//MUTANTS
-	{
-		"spawner": false,
-		"mod": "mutantmonsters",
-		"mincount": {
-			"amount": 2,
-			"mod": "mutantmonsters",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "instrumentalmobs",
-		"mincount": {
-			"amount": 4,
-			"mod": "instrumentalmobs",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "enderzoology",
-		"mincount": {
-			"amount": 7,
-			"mod": "enderzoology",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"mod": "productivebees",
-		"mincount": {
-			"amount": 8,
-			"mod": "productivebees",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "player_mobs",
-		"mincount": {
-			"amount": 6,
-			"mod": "player_mobs",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "alexsmobs",
-		"passive": true,
-		"mincount": {
-			"amount": 24,
-			"mod": "alexsmobs",
-			"passive": true,
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "alexsmobs",
-		"hostile": true,
-		"mincount": {
-			"amount": 24,
-			"mod": "alexsmobs",
-			"hostile": true,
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"mob": "alexsmobs:cockroach",
-		"mincount": {
-			"amount": 6,
-			"mod": "alexsmobs",
-			"hostile": true,
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"mob": "alexsmobs:fly",
-		"mincount": {
-			"amount": 6,
-			"mod": "alexsmobs",
-			"hostile": true,
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"mod": "aquaculture",
-		"mincount": {
-			"amount": 6,
-			"mod": "aquaculture",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"mod": "sushigocrafting",
-		"mincount": {
-			"amount": 6,
-			"mod": "sushigocrafting",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "creeperoverhaul",
-		"mincount": {
-			"amount": 5,
-			"mod": "creeperoverhaul",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "endermanoverhaul",
-		"mincount": {
-			"amount": 18,
-			"mod": "endermanoverhaul",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "ars_nouveau",
-		"mincount": {
-			"amount": 9,
-			"mod": "ars_nouveau",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "rats",
-		"mincount": {
-			"amount": 8,
-			"mod": "rats",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "farlanders",
-		"mincount": {
-			"amount": 8,
-			"mod": "farlanders",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "quark",
-		"mincount": {
-			"amount": 8,
-			"mod": "quark",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "thermal",
-		"mincount": {
-			"amount": 8,
-			"mod": "thermal",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "cataclysm",
-		"mincount": {
-			"amount": 18,
-			"mod": "cataclysm",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"hostile": true,
-		"mod": "eidolon",
-		"mincount": {
-			"amount": 8,
-			"mod": "eidolon",
-			"hostile": true,
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mob": "embers:ancient_golem",
-		"mincount": {
-			"amount": 6,
-			"mob": "embers:ancient_golem",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "whatareyouvotingfor",
-		"mincount": {
-			"amount": 9,
-			"mod": "whatareyouvotingfor",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "evilcraft",
-		"mincount": {
-			"amount": 6,
-			"mod": "evilcraft",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	#VANILLA
-	{
-		"spawner": false,
-		"mob": [
-		"minecraft:zombie", 
-		"minecraft:skeleton", 
-		"minecraft:creeper", 
-		"minecraft:spider", 
-		"minecraft:enderman", 
-		"minecraft:pillager", 
-		"minecraft:zombie_villager", 
-		"minecraft:drowned", 
-		"minecraft:piglin_brute", 
-		"minecraft:cave_spider", 
-		"minecraft:stray"
-		],
-		"mincount": {
-			"amount": 100,
-			"mob": [
-			"minecraft:zombie", 
-			"minecraft:skeleton", 
-			"minecraft:creeper", 
-			"minecraft:spider", 
-			"minecraft:enderman", 
-			"minecraft:pillager", 
-			"minecraft:zombie_villager", 
-			"minecraft:drowned", 
-			"minecraft:piglin_brute", 
-			"minecraft:cave_spider", 
-			"minecraft:stray"
-			],
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	#TF
 	{
 		"spawner": false,
 		"dimension":"twilightforest:twilight_forest",
@@ -429,14 +83,289 @@
 		"twilightforest:boar"
 		],
 		"mincount": {
-			"amount": 18,
+			"amount": 32,
 			"mod": "twilightforest",
 			"passive": true,
 			"perplayer": true
 		},
 		"result": "deny"
 	},
-	#DIMENSIONAL DISABLER
+	
+	//DISABLERS
+	{
+		"mob": ["caverns_and_chasms:glare", "caverns_and_chasms:copper_golem"],
+		"when": "onjoin",
+		"result": "deny"
+	},
+	// MOD LIMITERS
+	{
+		"spawner": true,
+		"mod": "minecraft",
+		"passive": true,
+		"mincount": {
+			"spawner": true,
+			"amount": 80,
+			"mod": "minecraft",
+			"passive": true,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "species",
+		"mincount": {
+			"amount": 16,
+			"mod": "species",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "irons_spellbooks",
+		"mincount": {
+			"amount": 16,
+			"mod": "irons_spellbooks",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "ecologics",
+		"mincount": {
+			"amount": 16,
+			"mod": "ecologics",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "variantsandventures",
+		"mincount": {
+			"amount": 16,
+			"mod": "variantsandventures",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "friendsandfoes",
+		"mincount": {
+			"amount": 16,
+			"mod": "friendsandfoes",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "goety",
+		"mincount": {
+			"amount": 8,
+			"mod": "goety",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "grimoireofgaia",
+		"mincount": {
+			"amount": 12,
+			"mod": "grimoireofgaia",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "mutantmonsters",
+		"mincount": {
+			"amount": 5,
+			"mod": "mutantmonsters",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "instrumentalmobs",
+		"mincount": {
+			"amount": 8,
+			"mod": "instrumentalmobs",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "enderzoology",
+		"mincount": {
+			"amount": 12,
+			"mod": "enderzoology",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "player_mobs",
+		"mincount": {
+			"amount": 16,
+			"mod": "player_mobs",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "alexsmobs",
+		"passive": true,
+		"mincount": {
+			"amount": 48,
+			"mod": "alexsmobs",
+			"passive": true,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "alexsmobs",
+		"hostile": true,
+		"mincount": {
+			"amount": 48,
+			"mod": "alexsmobs",
+			"hostile": true,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"mod": "aquaculture",
+		"mincount": {
+			"amount": 16,
+			"mod": "aquaculture",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"mod": "sushigocrafting",
+		"mincount": {
+			"amount": 16,
+			"mod": "sushigocrafting",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "creeperoverhaul",
+		"mincount": {
+			"amount": 16,
+			"mod": "creeperoverhaul",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "endermanoverhaul",
+		"mincount": {
+			"amount": 16,
+			"mod": "endermanoverhaul",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "ars_nouveau",
+		"mincount": {
+			"amount": 16,
+			"mod": "ars_nouveau",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "rats",
+		"mincount": {
+			"amount": 16,
+			"mod": "rats",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "farlanders",
+		"mincount": {
+			"amount": 16,
+			"mod": "farlanders",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "quark",
+		"mincount": {
+			"amount": 16,
+			"mod": "quark",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "thermal",
+		"mincount": {
+			"amount": 16,
+			"mod": "thermal",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"hostile": true,
+		"mod": "eidolon",
+		"mincount": {
+			"amount": 16,
+			"mod": "eidolon",
+			"hostile": true,
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "whatareyouvotingfor",
+		"mincount": {
+			"amount": 16,
+			"mod": "whatareyouvotingfor",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
+		"spawner": false,
+		"mod": "evilcraft",
+		"mincount": {
+			"amount": 16,
+			"mod": "evilcraft",
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	# DIMENSIONAL DISABLER
 	{
 		"dimension": ["ad_astra:moon", "aether:the_aether", "voidscape:void"],
 		"mod": ["alexsmobs", "mowziesmobs"],

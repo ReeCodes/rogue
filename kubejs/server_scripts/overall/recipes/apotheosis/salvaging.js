@@ -96,6 +96,13 @@ ServerEvents.recipes(event => {
 		}], a.id.split(':')[1])
 	})
 	
+	//ANCIENT CLOCK
+	salvaging('fossil:ancient_clock', [{
+		min: 1,
+		max: 3,
+		item: 'apotheotic_additions:heirloom_material'
+	}], 'ancient_clock')
+	
 	//CARDS
 	Ingredient.of(['#tarotcards:tarot_cards']).stacks.forEach(a => {
 		salvaging(a.id, [{

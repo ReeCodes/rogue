@@ -29,6 +29,7 @@ ServerEvents.commandRegistry(event => {
 				player.persistentData.remove('puff_abilities');
 			}
 		}
+		playSound(player.level, 'create:deny', player.username, player.x, player.y, player.z, 1.0);
 	}
 
 	function registerAbility(abilityName, hasLevels) {
@@ -67,16 +68,16 @@ ServerEvents.commandRegistry(event => {
 						player.tell([
 							Text.of(`\uEBD4`).white().font("symbols_n_stuff:symbols")
 								.append(Text.of(`\uE802`).white().font("minecraft:default"))
-								.append(Text.of(` ${Utils.snakeCaseToTitleCase(abilityName)} (Lv. ${existingAbility.level})`).gold())
+								.append(Text.of(` ${Utils.snakeCaseToTitleCase(abilityName)} (Lv. ${existingAbility.level})`).color(COLOR_ROGUE))
 						]);
 					} else {
 						player.tell([
 							Text.of(`\uEBD4`).white().font("symbols_n_stuff:symbols")
 								.append(Text.of(`\uE802`).white().font("minecraft:default"))
-								.append(Text.of(` ${Utils.snakeCaseToTitleCase(abilityName)}`).gold())
+								.append(Text.of(` ${Utils.snakeCaseToTitleCase(abilityName)}`).color(COLOR_ROGUE))
 						]);
 					}
-
+					
 					Utils.server.runCommandSilent(`playsound embers:item.heated.level_up master ${player.username} ${player.x} ${player.y} ${player.z} 0.3`);
 					return 1;
 				})
@@ -132,7 +133,7 @@ ServerEvents.commandRegistry(event => {
 			
 			player.setStatusMessage([
 				Text.of("\uE901").white().font("symbols_n_stuff:symbols")
-					.append(Text.of(" Skill Trees and abilities have been reset. All points have been refunded.").red())
+					.append(Text.of(" Skill Trees and abilities have been reset. Points have been refunded!").color('#fc5044'))
 			]);
 			return 1;
 		})
@@ -150,7 +151,7 @@ ServerEvents.commandRegistry(event => {
 				clearAbilities(player, isTree);
 				player.setStatusMessage([
 					Text.of("\uE901").white().font("symbols_n_stuff:symbols")
-						.append(Text.of(` Skill Tree [${treeName}] has been reset!`).color('#55FF55'))
+						.append(Text.of(` Skill Tree [${treeName}] has been reset!`).color('#fc5044'))
 				]);
 				return 1;
 			})

@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
     const { naturesaura } = event.recipes;
 	const { thermal } = event.recipes;
 	const { occultism } = event.recipes;
+	const { create } = event.recipes;
 	
 	oreData.forEach(i => {
 		
@@ -274,8 +275,9 @@ ServerEvents.recipes(event => {
 		
 		if (i.plate_able) {
 			if (!['gem', 'abundant_gem'].includes(i.type)) {
-				event.remove(['ad_astra:compressing', 'immersiveengineering:metal_press', 'thermal:press'].map(t => ({type: t , output: '#forge:plates/' + i.name})));
+				event.remove(['create:pressing', 'ad_astra:compressing', 'immersiveengineering:metal_press', 'thermal:press'].map(t => ({type: t , output: '#forge:plates/' + i.name})));
 				
+				create.pressing('#forge:plates/'+i.name, '#forge:ingots/'+i.name).id('create:pressing/' + i.name + '_ingot');
 				aa_compressing(event, 100, 20, '#forge:ingots/'+i.name, {id: '#forge:plates/'+i.name}, i.name+'_plate_from_compressing_'+i.name+'_ingots');
 				aa_compressing(event, 800, 20, '#forge:storage_blocks/'+i.name, {id: '#forge:plates/'+i.name, count: 9}, i.name+'_plate_from_compressing_'+i.name+'_blocks');
 				ie_metal_pressing(event, 2400, '#forge:ingots/' + i.name, 1, 'immersiveengineering:mold_plate', '#forge:plates/' + i.name, 'plate_' + i.name);

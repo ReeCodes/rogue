@@ -69,7 +69,9 @@ ServerEvents.tags('item', event => {
 		['forge:gems', 'alexscaves:uranium'],
 		['forge:gems/uranium_crystal', 'alexscaves:uranium'],
 		['forge:gems', 'powah:uraninite'],
-		['forge:gems/uraninite', 'powah:uraninite']
+		['forge:gems/uraninite', 'powah:uraninite'],
+		['forge:gems', 'caverns_and_chasms:spinel'],
+		['forge:gems/spinel', 'caverns_and_chasms:spinel']
 	])
 		
 	Ingredient.of(['@tools_complement']).subtract(Ingredient.of([
@@ -131,8 +133,7 @@ ServerEvents.tags('item', event => {
 	// ENCH REMOVAL	
 	//console.log('[ENCHANTMENTS] Disabling unwanted enchantments...');
 	global.disEnchantments.forEach(e => {
-		//console.log(e);
-		//event.add('c:hidden_from_recipe_viewers', Item.of('minecraft:enchanted_book').enchant(e));
+		//
 	})
 })
 

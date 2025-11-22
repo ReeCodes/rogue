@@ -90,15 +90,6 @@ global.armorSets = [
 		]
 	},
 	{
-		head: 'galosphere:sterling_helmet',
-		chestplate: 'galosphere:sterling_chestplate',
-		leggings: 'galosphere:sterling_leggings',
-		boots: 'galosphere:sterling_boots',
-		effects: [
-		{effect: 'deep_aether:valkyrie_valor', amp: 1}
-		]
-	},
-	{
 		head: 'tools_complement:constantan_helmet',
 		chestplate: 'tools_complement:constantan_chestplate',
 		leggings: 'tools_complement:constantan_leggings',

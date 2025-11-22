@@ -1,4 +1,4 @@
-const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier");
+//priority: 50
 
 const ENTITY_SCALE_BLACKLIST = new RegExp([
 	'dummmmmmy:target_dummy', 
@@ -11,6 +11,10 @@ const ENTITY_SCALE_BLACKLIST = new RegExp([
 
 const ATT_EXCLUDE_ARMOR = new RegExp([
 	'alshanex.*'
+].join("|"));
+
+const AUTO_SYNC_TAMED = new RegExp([
+	'species:spectre'
 ].join("|"));
 
 function getPetData(entity) {
@@ -59,11 +63,27 @@ function removeModifierByName(attributeInstance, modifierName) {
 	return false;
 }
 
-function addModifiers(event, player, entity, attName, attModifierName, attOperation) {
+function scaleAttribute(coef, exponent, defaultMax, subtract, customMax, randomMultiplier) {
+    randomMultiplier = randomMultiplier || 1;
+    let value = Math.pow(coef, exponent) * 2;
+    value *= randomMultiplier;
+    const cap = (customMax !== undefined) ? customMax : (defaultMax * 2);
+    const clamped = Math.min(value, cap);
+    return Math.max(0, clamped - subtract);
+}
 
-	if (ENTITY_SCALE_BLACKLIST.test(entity.type) || entity.isPlayer() || !entity.isAlive() || !entity.isLiving()) return;
+function scaleNormalizedAttribute(coef, maxCoef, exponent, clampMax, subtract) {
+	subtract = subtract || 0;
+    const value = Math.pow(coef, exponent) / Math.pow(maxCoef, exponent);
+    const clamped = Math.min(value, clampMax);
+    return Math.max(0, clamped - subtract);
+}
+
+const MAX_SPEED = 0.085;
+
+function addModifiers(event, player, coef, entity, attName, attModifierName, attOperation) {
 	
-	const PLAYER_COEF = getPlayerCoef(player);
+	const PLAYER_COEF = coef;
 	const PLAYER_MAX_COEF = getMaxPlayerCoef(player);
 		
 	if (entity.getAttributes().hasAttribute(attName)) {
@@ -83,59 +103,51 @@ function addModifiers(event, player, entity, attName, attModifierName, attOperat
 				assignAtt(entity, player, attName, HEALTH_ADD_VALUE, attModifierName, attOperation);
 			}
 			if (attName == 'minecraft:generic.movement_speed') {
-			  let MAX_SPEED = 0.085;
-			  let SPEED_ADD_VALUE = Math.min(Math.max(((PLAYER_COEF - 1) / 19) * MAX_SPEED, 0), MAX_SPEED);
-			  assignAtt(entity, player, attName, SPEED_ADD_VALUE, attModifierName, attOperation);
+			  const SPEED_ADD = Math.min(Math.max(((PLAYER_COEF - 1) / (PLAYER_MAX_COEF - 1)) * MAX_SPEED, 0), MAX_SPEED);
+			  assignAtt(entity, player, attName, SPEED_ADD, attModifierName, attOperation);
 			}
 			if (attName == 'minecraft:generic.attack_damage') {
-				let ATTACK_DMG_ADD = Math.pow(PLAYER_COEF, 1.05) + Math.pow(PLAYER_COEF, 1.05);
-				let ATTACK_DMG_ADD_VALUE = Math.min(ATTACK_DMG_ADD * (1 / (1 + (BASE_VALUE - 1) / 40)),	(PLAYER_MAX_COEF * 2));	
-				assignAtt(entity, player, attName, ATTACK_DMG_ADD_VALUE, attModifierName, attOperation);
+				const DAMAGE_MULTIPLIER = 1 / (1 + (BASE_VALUE - 1) / 40);
+				const ATTACK_DMG_ADD = scaleAttribute(PLAYER_COEF, 1.05, PLAYER_MAX_COEF, 2, PLAYER_MAX_COEF * 2, DAMAGE_MULTIPLIER);
+				assignAtt(entity, player, attName, ATTACK_DMG_ADD, attModifierName, attOperation);
 			}
 			if (attName == 'attributeslib:arrow_damage') {
-				let ARROW_DMG_ADD = Math.pow(PLAYER_COEF, 0.57) + Math.pow(PLAYER_COEF, 0.57);
-				let ARROW_DMG_ADD_VALUE = Math.min(ARROW_DMG_ADD, (PLAYER_MAX_COEF * 2)) - 1;
-				assignAtt(entity, player, attName, ARROW_DMG_ADD_VALUE, attModifierName, attOperation);
+				const ARROW_DMG_ADD = scaleAttribute(PLAYER_COEF, 0.57, PLAYER_MAX_COEF, 2);
+				assignAtt(entity, player, attName, ARROW_DMG_ADD, attModifierName, attOperation);
 			}
 			if (!allBowEntities.test(entity.type) && attName == 'obscure_api:magic_damage') {
-				let MAGIC_DMG_ADD = Math.pow(PLAYER_COEF, 0.53) + Math.pow(PLAYER_COEF, 0.53);
-				let MAGIC_DMG_ADD_VALUE = Math.min(MAGIC_DMG_ADD, (PLAYER_MAX_COEF * 2));
-				assignAtt(entity, player, attName, MAGIC_DMG_ADD_VALUE, attModifierName, attOperation);
+				const MAGIC_DMG_ADD = scaleAttribute(PLAYER_COEF, 0.53, PLAYER_MAX_COEF, 1);
+				assignAtt(entity, player, attName, MAGIC_DMG_ADD, attModifierName, attOperation);
 			}
 			if (attName == 'forge:step_height_addition') {
-				let STEP_HEIGHT_ADD_VALUE = Math.min((PLAYER_COEF - 1) / (BASE_MAX_COEF - 1) * 2, 2);
-				if (STEP_HEIGHT_ADD_VALUE < 0) STEP_HEIGHT_ADD_VALUE = 0;
-				assignAtt(entity, player, attName, STEP_HEIGHT_ADD_VALUE, attModifierName, attOperation);
+				const STEP_HEIGHT_ADD = Math.min((PLAYER_COEF - 1) / (BASE_MAX_COEF - 1) * 2, 2);
+				if (STEP_HEIGHT_ADD < 0) STEP_HEIGHT_ADD = 0;
+				assignAtt(entity, player, attName, STEP_HEIGHT_ADD, attModifierName, attOperation);
 			}
 			if (!isTamed(entity) && entity.isMonster() && !ATT_EXCLUDE_ARMOR.test(entity.type)) {
 				if (attName == 'minecraft:generic.armor') {
-					let RANDOM_ARMOR_EXTRA_CHANCE = Math.random() * 1.65;
-					let ARMOR_ADD = (Math.pow(PLAYER_COEF, 0.87) + Math.pow(PLAYER_COEF, 0.87)) - 2;
-					let ARMOR_ADD_VALUE = Math.min(ARMOR_ADD * RANDOM_ARMOR_EXTRA_CHANCE, (PLAYER_MAX_COEF + 20));
-					assignAtt(entity, player, attName, ARMOR_ADD_VALUE, attModifierName, attOperation);
+					const RANDOM_ARMOR = Math.random() * 1.35;
+					const ARMOR_ADD = scaleAttribute(PLAYER_COEF, 0.87, PLAYER_MAX_COEF, 2, PLAYER_MAX_COEF + 20, RANDOM_ARMOR);
+					assignAtt(entity, player, attName, ARMOR_ADD, attModifierName, attOperation);
 				}
 				if (attName == 'minecraft:generic.armor_toughness') {
-					let RANDOM_ARMOR_TOUGHNESS_EXTRA_CHANCE = Math.random() * 1.35;
-					let ARMOR_TOUGHNESS_ADD = (Math.pow(PLAYER_COEF, 0.65) + Math.pow(PLAYER_COEF, 0.65)) - 2;
-					let ARMOR_TOUGHNESS_ADD_VALUE = Math.min(ARMOR_TOUGHNESS_ADD * RANDOM_ARMOR_TOUGHNESS_EXTRA_CHANCE, (PLAYER_MAX_COEF + 20));
-					assignAtt(entity, player, attName, ARMOR_TOUGHNESS_ADD_VALUE, attModifierName, attOperation);
+					const RANDOM_ARMOR_TOUGHNESS = Math.random() * 1.25;
+					const ARMOR_TOUGHNESS_ADD = scaleAttribute(PLAYER_COEF, 0.65, PLAYER_MAX_COEF, 2, PLAYER_MAX_COEF + 20, RANDOM_ARMOR_TOUGHNESS);
+					assignAtt(entity, player, attName, ARMOR_TOUGHNESS_ADD, attModifierName, attOperation);
 				}
 				if (attName == 'lodestone:magic_resistance') {
-					let RANDOM_MAGIC_ARMOR_EXTRA_CHANCE = Math.random() * 1.45;
-					let MAGIC_ARMOR_ADD = Math.pow(PLAYER_COEF, 0.55) + Math.pow(PLAYER_COEF, 0.55);
-					let MAGIC_ARMOR_ADD_VALUE = Math.min(MAGIC_ARMOR_ADD * RANDOM_MAGIC_ARMOR_EXTRA_CHANCE, (PLAYER_MAX_COEF + 20));
-					assignAtt(entity, player, attName, MAGIC_ARMOR_ADD_VALUE, attModifierName, attOperation);
+					const RANDOM_ARMOR_MAGIC = Math.random() * 1.25;
+					const ARMOR_MAGIC_ADD = scaleAttribute(PLAYER_COEF, 0.55, PLAYER_MAX_COEF, 0, PLAYER_MAX_COEF + 20, RANDOM_ARMOR_MAGIC);
+					assignAtt(entity, player, attName, ARMOR_MAGIC_ADD, attModifierName, attOperation);
 				}
 			}
 			if (attName == 'attributeslib:armor_shred') {
-				let ARMOR_SHRED_ADD = ((Math.pow(PLAYER_COEF, 1.4) - 1) / (Math.pow(PLAYER_MAX_COEF, 1.4) - 1));
-				let ARMOR_SHRED_ADD_VALUE = Math.min(ARMOR_SHRED_ADD, 0.75);
-				assignAtt(entity, player, attName, ARMOR_SHRED_ADD_VALUE, attModifierName, attOperation);
+				const ARMOR_SHRED_ADD = scaleNormalizedAttribute(PLAYER_COEF, PLAYER_MAX_COEF, 0.4, 0.75);
+				assignAtt(entity, player, attName, ARMOR_SHRED_ADD, attModifierName, attOperation);
 			}
 			if (!entity.isMonster() && attName == 'attributeslib:current_hp_damage') {
-				let CHP_ADD = ((Math.pow(PLAYER_COEF, 1.2) - 1) / (Math.pow(PLAYER_MAX_COEF, 1.2) - 1));
-				let CHP_ADD_VALUE = Math.min(CHP_ADD, 0.075);
-				assignAtt(entity, player, attName, CHP_ADD_VALUE, attModifierName, attOperation);
+				const CHP_ADD = scaleNormalizedAttribute(PLAYER_COEF, PLAYER_MAX_COEF, 0.2, 0.075);
+				assignAtt(entity, player, attName, CHP_ADD, attModifierName, attOperation);
 			}
 		}
 	}
@@ -180,20 +192,45 @@ const NATURAL_ATTRIBUTES = [
 	'attributeslib:current_hp_damage'
 ];
 
-NATURAL_ATTRIBUTES.forEach(attribute => {
-	EntityEvents.spawned(event => {
-		const {	entity,	level } = event;
-		level.players.forEach(player => {
-			if (isTamedBy(entity, player).tamed) return;
-			addModifiers(event, player, entity, attribute, 'rogue:scaler', "addition");
-		})
-	});
-	ItemEvents.entityInteracted(event => {
-		const {	target,	player, item, hand } = event;
-		if (!isTamedBy(target, player).tamed || hand != 'MAIN_HAND' || item.id !== 'minecraft:air') return;
-		addModifiers(event, player, target, attribute, 'rogue:scaler', "addition");
-	});
-})
+EntityEvents.spawned(event => {
+	const {	entity,	level } = event;
+	if (level.clientSide || level.players.length == 0 || ENTITY_SCALE_BLACKLIST.test(entity.type) || entity.isPlayer() || !entity.isAlive() || !entity.isLiving()) return;
+
+	let coef;
+	let player;
+		
+	if (level.players.length === 1) {
+		player = level.players[0];
+		coef = getPlayerCoef(player);
+	} else if (level.players.length > 1) {
+		let followRange = getFollowRange(entity);
+		let radius = Math.floor(followRange + 16);
+		let nearbyPlayers = findNearbyPlayersCloseToEntity(level, entity, radius, maxPlayerSearchRange, true);
+		if (nearbyPlayers.length > 1) {
+			let closestPlayer = getClosestPlayer(entity, nearbyPlayers, radius);
+			if (!closestPlayer) nearbyPlayers[0];
+			coef = calculateCoef(entity, nearbyPlayers, radius);
+			player = closestPlayer;
+		} else {
+			player = nearbyPlayers[0];
+			coef = getPlayerCoef(player);
+		}
+	}
+	if (DEBUG_MODE_MS) console.log(`[Scaling / ${MAYHEM_MODE}] Selected Player: ${player.username}, Coef: ${coef}, Entity: ${entity.type}, Distance to Entity: ${player.distanceToEntitySqr(entity)}`);
+	if (isTamedBy(entity, player).tamed && !AUTO_SYNC_TAMED.test(entity.type)) return;
+	NATURAL_ATTRIBUTES.forEach(attribute => {
+		addModifiers(event, player, coef, entity, attribute, 'rogue:scaler', "addition");
+	})
+});
+
+ItemEvents.entityInteracted(event => {
+	const {	target,	player, item, hand } = event;
+	if (!isTamedBy(target, player).tamed || hand != 'MAIN_HAND' || item.id !== 'minecraft:air') return;
+	let coef = getPlayerCoef(player);
+	NATURAL_ATTRIBUTES.forEach(attribute => {
+		addModifiers(event, player, coef, target, attribute, 'rogue:scaler', "addition");
+	})
+});
 
 const SYNC_MESSAGE_TYPE = ['rats'];
 
@@ -203,7 +240,6 @@ ItemEvents.entityInteracted(event => {
 	
 	if (!isTamedBy(target, player).tamed || hand != 'MAIN_HAND' || item.id !== 'minecraft:air') return;
 	
-	//let petTicks = 
 	let petCD = Math.ceil(getPetCooldown(target) / 20);
 	let petPlayerCD = Math.round(getPlayerPetCD(player) * 100);
 	

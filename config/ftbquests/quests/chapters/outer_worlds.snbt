@@ -677,6 +677,7 @@
 				}
 			]
 			size: 2.0d
+			subtitle: "Programmable"
 			tasks: [{
 				id: "792CB55CD26A40CA"
 				item: {
@@ -720,6 +721,7 @@
 				}
 			]
 			size: 2.0d
+			subtitle: "Big Digger"
 			tasks: [
 				{
 					id: "7F9B6A8C38E1CCF1"
@@ -786,6 +788,7 @@
 				}
 			]
 			size: 2.0d
+			subtitle: "Submarine"
 			tasks: [
 				{
 					id: "6595FC262975470F"

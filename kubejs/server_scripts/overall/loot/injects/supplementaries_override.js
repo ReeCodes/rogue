@@ -18,10 +18,6 @@ let lt_supplementaries = [
 
 let tipped_spikes = [
 	'minecraft:weakness',
-	'attributeslib:grievous',
-	'attributeslib:sundering',
-	'twilightdelight:temporal_sadness',
-	'irons_spellbooks:rend',
 	'eidolon:vulnerable',
 	'undergarden:featherweight',
 	'undergarden:brittleness'

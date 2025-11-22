@@ -1,5 +1,7 @@
 global.oreTagsRemove = [
 	'alexscaves:sulfur',
+	'caverns_and_chasms:copper_nugget',
+	'caverns_and_chasms:netherite_nugget',
 
 	// MISC-BLOCKS
 	'thermal:slag',
@@ -73,6 +75,16 @@ global.oreTagsRemove = [
 	'caupona:lead_block',
 	'caupona:lead_ingot',
 	'caupona:lead_nugget',
+	
+	// C&C
+	'caverns_and_chasms:silver_block', 
+	'caverns_and_chasms:silver_ingot', 
+	'caverns_and_chasms:silver_nugget', 
+	'caverns_and_chasms:raw_silver', 
+	'caverns_and_chasms:raw_silver_block', 
+	'caverns_and_chasms:silver_ore', 
+	'caverns_and_chasms:deepslate_silver_ore', 
+	'caverns_and_chasms:soul_silver_ore',
 
 	// EIDOLON
 	'eidolon:deep_lead_ore',

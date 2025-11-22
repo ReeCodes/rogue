@@ -17,7 +17,7 @@ if (!global.DamageHandlers.some(fn => fn.tag === "damage_scaler")) {
         let multiplier = 1;
 		let newAmount = amount;
         
-		if (entity && entity.isAlive() && entity.type == "minecraft:player" && (entity instanceof $Player || entity instanceof $ServerPlayer) && entity.persistentData && PLAYER_DAMAGE_TYPES.includes(source.getType())) {
+		if (entity && entity.isAlive() && entity.type == "minecraft:player" && entity instanceof $ServerPlayer && entity.persistentData && PLAYER_DAMAGE_TYPES.includes(source.getType())) {
 			multiplier = getPlayerCoef(entity) ?? 1;			
 			let player_max_coef = getMaxPlayerCoef(entity) ?? 20;
 			let healthScale = 1 + Math.pow(entity.maxHealth, 0.06);

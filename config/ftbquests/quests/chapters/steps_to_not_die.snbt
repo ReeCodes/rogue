@@ -709,6 +709,8 @@
 				"14D2A28D7AB62763"
 				"5F8AA70D71B8D52A"
 				"44032D95B4718270"
+				"135E7F3BBDCC2DFF"
+				"498BC1244FD47726"
 			]
 			icon: "immersiveengineering:light_bulb"
 			id: "7B97BD09F41FDCB2"
@@ -930,7 +932,7 @@
 				type: "custom"
 			}]
 			shape: "circle"
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Public Server"
 			tasks: [
 				{
@@ -948,7 +950,7 @@
 			]
 			title: "&eTip: &aLan 2 Public"
 			x: 0.0d
-			y: 15.0d
+			y: 5.0d
 		}
 		{
 			description: [
@@ -1109,6 +1111,86 @@
 			title: "&eTip: &aArmor Set Effects"
 			x: 6.0d
 			y: 11.0d
+		}
+		{
+			description: [
+				"&eFrozen Biomes&r may contain &eRare Ice&r. "
+				""
+				"Each block may hold various &eItems encased within&r it."
+			]
+			icon: "minecraft:ice"
+			id: "135E7F3BBDCC2DFF"
+			rewards: [
+				{
+					id: "7573C3AC6B5AFA7A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6E90380D6682B2DC"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Frozen Goods"
+			tasks: [
+				{
+					icon: "minecraft:ice"
+					id: "3CCD435CDDEECC71"
+					observe_type: 0
+					timer: 0L
+					title: "&eFind: &rRare Ice"
+					to_observe: "rare-ice:rare_ice"
+					type: "observation"
+				}
+				{
+					block: "rare-ice:rare_ice"
+					block_type: 0
+					checkItem: false
+					icon: "minecraft:ice"
+					id: "154B66911662FE3C"
+					title: "&eBreak: &rRare Ice"
+					type: "questsadditions:break"
+					value: 3L
+				}
+			]
+			title: "&eTip: &aRare Ice"
+			x: 4.0d
+			y: 15.0d
+		}
+		{
+			id: "498BC1244FD47726"
+			rewards: [
+				{
+					id: "73B7560F31B24341"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "0BA22255633029B0"
+					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Zzz..."
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "citadel:effect_item"
+					tag: {
+						DisplayEffect: "irons_rpg_tweaks:drowsy"
+					}
+				}
+				id: "5414CD09900DC010"
+				type: "custom"
+			}]
+			title: "&eTip: &aHow To Fall Asleep"
+			x: -4.0d
+			y: 15.0d
 		}
 	]
 	title: "Fundamentals"

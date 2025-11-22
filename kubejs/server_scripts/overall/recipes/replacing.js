@@ -40,11 +40,6 @@ ServerEvents.recipes(event => {
 		'minecraft:iron_bars', 
 		'#forge:gears/invar'
 	)
-	
-	event.replaceInput({ output: 'cataclysm:meat_shredder', type: 'minecraft:crafting_shaped' }, 
-		'minecraft:iron_block', 
-		Item.of('immersiveengineering:sawblade', '{Damage:0}')
-	)
 		
 	//IA
 	event.replaceInput({ output: 'man_of_many_planes:economy_plane', type: 'minecraft:crafting_shaped' }, 

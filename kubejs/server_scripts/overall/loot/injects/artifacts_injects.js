@@ -25,17 +25,13 @@ ServerEvents.genericLootTables(event => {
 	event.addGeneric('artifacts:inject/entities/cow', table => {
 		table.addPool(pool => {
 			pool.rolls = 1;
-			pool.addEntry({
-				"type": "empty"
-			})
+			pool.addEntry(emptyJSON);
 		})
 	})
 	event.addGeneric('artifacts:inject/entities/mooshroom', table => {
 		table.addPool(pool => {
 			pool.rolls = 1;
-			pool.addEntry({
-				"type": "empty"
-			})
+			pool.addEntry(emptyJSON);
 		})
 	})
 })

@@ -171,7 +171,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# The default temperature of water
 	# └── Format: [temperature, *units]
-	"Default Water Temperature" = [-0.2222222222222222, "f"]
+	"Default Water Temperature" = [-0.0049382716049382715, "f"]
 	#─────────────────────────────────────────────────────────────────────────
 	# The maximum soak level a player can reach from rain alone (0.0 - 1.0)
 	#Range: 0.0 ~ Infinity

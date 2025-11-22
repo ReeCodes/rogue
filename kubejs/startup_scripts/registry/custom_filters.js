@@ -2,7 +2,7 @@ const $ItemFiltersAPI = Java.loadClass('dev.latvian.mods.itemfilters.api.ItemFil
 const $ToolItem = Java.loadClass('net.minecraft.world.item.TieredItem');
 const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 
-let filters = {
+const itemFilters = {
 	'no_nbt': item => !item.hasNBT(),
 	'only_damage': item => !item.nbt?.AttributeModifiers,
 	'brew_key': item => !!item.nbt?.brewKey,
@@ -35,9 +35,10 @@ let filters = {
 	'is_waste': item => !!(/.+embers:alchemical_waste.+/.test(item.nbt)),
 	'is_armor': item => !!(item.item instanceof $ArmorItem),
 	'is_tool': item => !!(item.item instanceof $ToolItem),
-	'has_potion': item => !!item.nbt?.Potion
+	'has_potion': item => !!item.nbt?.Potion,
+	'is_enchanted': item => !!(Array.isArray(item?.nbt?.Enchantments))
 };
 
-for (let [name, filter] of Object.entries(filters)) {
+for (let [name, filter] of Object.entries(itemFilters)) {
 	$ItemFiltersAPI.registerCustomFilter(name, filter);
 }

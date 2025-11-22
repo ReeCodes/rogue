@@ -3,6 +3,24 @@ global.disabledItems = [
 	'hearthandharvest:gunpowder_bag',
 	'malum:osmium_node',
 	
+	// GALOSPHERE
+	'galosphere:sterling_helmet',
+	'galosphere:sterling_chestplate',
+	'galosphere:sterling_leggings',
+	'galosphere:sterling_boots',
+	
+	// C&C
+	'caverns_and_chasms:silver_helmet',
+	'caverns_and_chasms:silver_chestplate',
+	'caverns_and_chasms:silver_leggings',
+	'caverns_and_chasms:silver_boots',
+	'caverns_and_chasms:silver_sword',
+	'caverns_and_chasms:silver_pickaxe',
+	'caverns_and_chasms:silver_axe',
+	'caverns_and_chasms:silver_shovel',
+	'caverns_and_chasms:silver_hoe',
+	'caverns_and_chasms:depth_gauge',
+	
 	// YOYOS
 	'yoyos:pigiron_yoyo',
 	'yoyos:rose_gold_yoyo',
@@ -93,6 +111,13 @@ global.disEnchantments = [
 
 global.clearedItems = [
 
+	'caverns_and_chasms:living_flesh',
+
+	'orbital_railgun:orbital_railgun',
+
+	'experienceobelisk:cognitive_flux',
+
+	'#forge:storage_blocks/draconium_awakened',
 	'draconicevolution:draconium_chest',
 	
 	'redstone_arsenal:flux_dust', 

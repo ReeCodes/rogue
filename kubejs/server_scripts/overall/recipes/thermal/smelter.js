@@ -15,4 +15,10 @@ ServerEvents.recipes(event => {
 		'2x #forge:dusts/mundabitur', 
 		'2x #forge:dusts/arcane_crystal'
 	]).xp(0.5).id('thermal:machines/smelter/deorum_ingot')
+	
+	thermal.smelter('#forge:ingots/flux_infused', [
+		['#forge:ingots/gold', '#forge:dusts/gold'], 
+		'5x #forge:dusts/redstone', 
+		['#forge:ingots/lumium', '#forge:dusts/lumium']
+	]).xp(0.5).id('thermal:machines/smelter/flux_infused_ingot')
 })
