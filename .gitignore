@@ -7,7 +7,6 @@
 !/kubejs
 !/resourcepacks
 !/shaderpacks
-!README.md
 !/mods/*.pw.toml
 !/resourcepacks/*.pw.toml
 !/shaderpacks/*.pw.toml
