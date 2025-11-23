@@ -1476,6 +1476,7 @@
 			]
 			icon: "whaleborne:helm"
 			id: "713BA4BB1DA825B8"
+			invisible: true
 			invisible_until_tasks: 1
 			rewards: [
 				{
@@ -1588,8 +1589,32 @@
 		}
 		{
 			id: "65919D35266C7AC8"
+			rewards: [
+				{
+					id: "4B3F51D4ADE7BA31"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 2
+					id: "282AF14AA9300D3E"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1F13D2E379F2EDEC"
+					item: "kubejs:stylish_box"
+					type: "item"
+				}
+				{
+					id: "66E1470BC2DDBD19"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
 			size: 2.0d
-			subtitle: "Rare Underwater Findings"
+			subtitle: "Rare Boat Armaments"
 			tasks: [
 				{
 					id: "27B794A0337034F1"

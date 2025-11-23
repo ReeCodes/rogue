@@ -9,6 +9,7 @@
 		}
 	},
 	"background": "ars_nouveau:textures/block/smooth_sourcestone.png",
+	"description": [{"text":"How to Level Up","color":"#8CDEA2"},{"text":"\n§3Defeat mobs§f using §3Magic Damage§f"}],
 	"colors": {
         "connections": {
 			"locked": {

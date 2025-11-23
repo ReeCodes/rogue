@@ -1,8 +1,7 @@
 {
 	"reset_brawler": {
 		"title": [{"text":"§f\uE83D","font":"symbols_n_stuff:symbols"}],
-		"description": [{"text":"\n§9Resets skill tree, all abilities (also [Explorer] abilties) and refunds points."},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
-		"extra_description": [{"text":"\n§f\uEB16 ","font":"symbols_n_stuff:symbols"},{"text":"[XP Sources]","color":"#8CDEA2"},{"text":"\n§3Receive damage§f, §3kill mobs§f using §3melee damage§f or §3magic damage§f"}],
+		"description": [{"text":"\n§9Resets skill tree, all abilities (also [Explorer] abilties) and refunds points."}],
 		"size": 1.25,
 		"cost": 0,
 		"required_spent_points": 1,

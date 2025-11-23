@@ -23,13 +23,13 @@ const DEBUG_MODE_MS = false;
 const COLOR_ROGUE = '#f76628';
 const skilltree_version = 5;
 
-const VALID_MAYHEM_MODES = ['HARD', 'BALANCED'];
+const VALID_SERVER_MODES = ['HARD', 'BALANCED'];
 
-const MAYHEM_MODE = VALID_MAYHEM_MODES.includes(SET_MAYHEM_MODE)
-    ? SET_MAYHEM_MODE
+const SERVER_MODE = VALID_SERVER_MODES.includes(SET_SERVER_MODE)
+    ? SET_SERVER_MODE
     : 'BALANCED';
 
-console.log("[SERVER MODE] Set to " + MAYHEM_MODE);
+console.log("[SERVER MODE] Set to " + SERVER_MODE);
 
 const questEntities = new RegExp([
 	'alexscaves:vallumraptor', 
@@ -288,17 +288,17 @@ function calculateCoef(entity, players, radius, debug) {
 	debug = debug || false;
     let resultCoef;
 
-    if (MAYHEM_MODE === 'HARD') {
+    if (SERVER_MODE === 'HARD') {
         let chosen = players.reduce((a, b) =>
             (getPlayerCoef(b) > getPlayerCoef(a)) ? b : a
         );
         resultCoef = getPlayerCoef(chosen);
-        if (debug) console.log(`[Scaling/${MAYHEM_MODE}] Chosen Player: ${chosen.username} [COEF:${resultCoef}]`);
-    } else if (MAYHEM_MODE === 'BALANCED') {
+        if (debug) console.log(`[Scaling/${SERVER_MODE}] Chosen Player: ${chosen.username} [COEF:${resultCoef}]`);
+    } else if (SERVER_MODE === 'BALANCED') {
         let total = 0;
         for (let p of players) total += getPlayerCoef(p);
         resultCoef = Math.max(1, total / players.length);
-        if (debug) console.log(`[Scaling/${MAYHEM_MODE}] Calculated Coef: [COEF:${resultCoef}]`);
+        if (debug) console.log(`[Scaling/${SERVER_MODE}] Calculated Coef: [COEF:${resultCoef}]`);
     }
 
     return resultCoef;

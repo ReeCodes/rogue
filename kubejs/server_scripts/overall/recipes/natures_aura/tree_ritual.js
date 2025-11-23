@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
 			'botania:lime_petal_block',
 			'naturesaura:gold_leaf',
 			'#forge:ingots/steeleaf',
-			'create_enchantment_industry:hyper_experience_bottle'
+			'dungeonnowloading:great_experience_bottle'
 		], 'quark:ancient_sapling',
 		'kubejs:enlightened_petal', 4000, 'enlightened_petal')
 });

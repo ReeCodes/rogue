@@ -5,5 +5,6 @@
 // Default: HARD; Possibles modes: BALANCED, HARD
 // HARD: When a mob is spawned close to multiple players, picks the player with the highest coefficient near that mob.
 // BALANCED: When a mob is spawned close to multiple players, divides total coefficient by the amount of nearby players.
+// MAYHEM: Soon...
 
-const SET_MAYHEM_MODE = 'BALANCED';
+const SET_SERVER_MODE = 'BALANCED';

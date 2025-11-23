@@ -1320,13 +1320,13 @@
 					xp: 30
 				}
 				{
-					id: "0C1068BE2D2A6441"
-					item: "kubejs:druidic_box"
+					id: "6026A1AA12F552C5"
+					item: "kubejs:mischievous_box"
 					type: "item"
 				}
 				{
-					id: "6026A1AA12F552C5"
-					item: "kubejs:mischievous_box"
+					id: "746DD3B4746D9BF3"
+					item: "kubejs:jewelled_box"
 					type: "item"
 				}
 			]
@@ -1336,7 +1336,36 @@
 				item: "illagerinvasion:imbuing_table"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
+			y: 5.5d
+		}
+		{
+			id: "10E3582D080C0763"
+			rewards: [
+				{
+					id: "3D21B33AFEEC160B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "6709F13A8D680F7C"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "71A549778172E432"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			subtitle: "Fix Up"
+			tasks: [{
+				id: "6214FA795B2263C8"
+				item: "dungeonnowloading:mending_table"
+				type: "item"
+			}]
+			x: -5.5d
 			y: 5.5d
 		}
 	]

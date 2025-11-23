@@ -3966,6 +3966,19 @@
 				tag: { }
 			}
 			id: "2B605D3683173D88"
+			rewards: [
+				{
+					id: "7B3546A3CB926206"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "6085F6CBDA222734"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "Minion Summon"
 			tasks: [
@@ -4010,6 +4023,7 @@
 							]
 						}
 					}
+					title: "&eCharge:&r Spectralibur"
 					type: "item"
 					weak_nbt_match: true
 				}

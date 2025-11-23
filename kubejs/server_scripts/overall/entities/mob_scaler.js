@@ -216,7 +216,7 @@ EntityEvents.spawned(event => {
 			coef = getPlayerCoef(player);
 		}
 	}
-	if (DEBUG_MODE_MS) console.log(`[Scaling / ${MAYHEM_MODE}] Selected Player: ${player.username}, Coef: ${coef}, Entity: ${entity.type}, Distance to Entity: ${player.distanceToEntitySqr(entity)}`);
+	if (DEBUG_MODE_MS) console.log(`[Scaling / ${SERVER_MODE}] Selected Player: ${player.username}, Coef: ${coef}, Entity: ${entity.type}, Distance to Entity: ${player.distanceToEntitySqr(entity)}`);
 	if (isTamedBy(entity, player).tamed && !AUTO_SYNC_TAMED.test(entity.type)) return;
 	NATURAL_ATTRIBUTES.forEach(attribute => {
 		addModifiers(event, player, coef, entity, attribute, 'rogue:scaler', "addition");

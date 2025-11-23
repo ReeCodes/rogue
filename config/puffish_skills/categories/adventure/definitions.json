@@ -1,8 +1,7 @@
 {
 	"reset_adventure": {
 		"title": [{"text":"§f\uE83D","font":"symbols_n_stuff:symbols"}],
-		"description": [{"text":"\n§9Resets skill tree, abilities (also [Brawler] abilties) and refunds points."},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
-		"extra_description": [{"text":"\n§f\uEB16 ","font":"symbols_n_stuff:symbols"},{"text":"[XP Sources]","color":"#8CDEA2"},{"text":"\n§3Mine blocks§f, §3fish§f and §3harvest crops§f"}],
+		"description": [{"text":"\n§9Resets skill tree, abilities (also [Brawler] abilties) and refunds points."}],
 		"size": 1.25,
 		"cost": 0,
 		"required_spent_points": 1,

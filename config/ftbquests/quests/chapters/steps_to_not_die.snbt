@@ -1161,6 +1161,18 @@
 			y: 15.0d
 		}
 		{
+			description: [
+				"You become tired after a certain amount of time has passed."
+				""
+				"To speed up this process, drink a &ePotion of Drowsiness&r."
+			]
+			icon: {
+				Count: 1
+				id: "citadel:effect_item"
+				tag: {
+					DisplayEffect: "irons_rpg_tweaks:drowsy"
+				}
+			}
 			id: "498BC1244FD47726"
 			rewards: [
 				{
@@ -1172,6 +1184,17 @@
 					count: 2
 					id: "0BA22255633029B0"
 					item: "kubejs:makeshift_box"
+					type: "item"
+				}
+				{
+					id: "2A02AC87622659DD"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "irons_rpg_tweaks:drowsy"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1186,6 +1209,7 @@
 					}
 				}
 				id: "5414CD09900DC010"
+				title: "&eBecome Drowsy&r"
 				type: "custom"
 			}]
 			title: "&eTip: &aHow To Fall Asleep"

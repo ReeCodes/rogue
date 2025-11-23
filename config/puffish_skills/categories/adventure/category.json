@@ -10,6 +10,7 @@
 		}
 	},
 	"background": "alexscaves:textures/block/limestone.png",
+	"description": [{"text":"How to Level Up","color":"#8CDEA2"},{"text":"\n§3Mine Blocks§f, §3Fish§f and §3Harvest Crops§f"}],
 	"colors": {
         "connections": {
 			"locked": {

@@ -1,3 +1,174 @@
+# Rogue! Mayhem | v0.16.1
+
+## MAJOR CHANGES ( ''' )
+* removed spawn unlocking
+* fixed crash when hovering over specific items
+
+## MINOR CHANGES ( '' )
+* removed nuggets and ingots from urn loot
+* fixed missing Quest Rewards and descriptions
+* renamed SET_MAYHEM_MODE to SET_SERVER_MODE
+
+### Mods added ( ++ )
+* Better Fog
+
+### Mods removed ( -- )
+* Fog
+* M.R.U
+
+### Mods updated ( ~~ )
+* Blood Magic 
+* Cull Leaves
+* DoesPotatoTick?
+* Hex Casting
+* MidnightLib
+* Pufferfish's Skills
+
+---
+# Rogue! Mayhem | v0.16
+
+## MAJOR CHANGES ( ''' )
+* overhauled Mob Scaling if played on server with more than 1 player
+
+### Forge updated to 47.4.11 ( ⬆️ )
+
+## MINOR CHANGES ( '' )
+* increased Nothingness spot finding speed significantly
+* added Hearth and Harvest drinkables and food to quench Thirst
+* removed certain blocks to not be broken by idle mobs
+* overhauled Companionship chapter
+* disabled force-loaded Spawn Chunks
+* improved level checking for Special Quests
+
+### Mob Scaling
+* improved random arrow modifier for entities that use bows - now use the same logic as mob scaling
+* Mob Scaling Enhancement for Servers
+	* Now searches all nearby Players around a spawning mob in a specified radius, thereby determining mob scaling based on the selected mode.
+	* If only one player is nearby the spawned entity, the mob scales regularly
+	* Mode can be change manually within "kubejs/server_scripts/server_modes.js"
+* added 2 MODES for servers: BALANCED, HARD; Default Mode: BALANCED
+	* HARD: When a mob is spawned close to multiple players, picks the player with the highest coefficient near that mob.
+	* BALANCED: When a mob is spawned close to multiple players, divides total coefficient by the amount of nearby players.
+* Spectres by Species now sync attributes properly when summoned by it's sword
+
+### Resources added ( °+ )
+* Abnormally Fresh
+* Cataclysmic tunes
+* Chaotix Apotheotic Tweaks
+* Fresh Moves
+* L_Ender 's Cataclysm Reimagined
+
+### Resources removed ( °- )
+* Fresh Animations
+* Fusion Emissive Ores
+* More Mob Variants x Fresh Animations
+
+### Resources updated ( °~ )
+* Powah Pyxal-ated
+
+### Mods added ( ++ )
+* Abnormals Delight
+* Ally Effect
+* Archery Expansion
+* Archery Expansion Squared
+* BadOptimizations
+* Better Clouds Reforged
+* Better F3
+* Better World Loading
+* Bocchium
+* BiomeSpy
+* Caverns & Chasms
+* Clean Tooltips
+* Cognition
+* Colorful Lighting
+* Common Networking
+* Cool Rain Reforged
+* Create Better FPS
+* Darker Depths
+* Dynamic Crosshair
+* Ender Trigon
+* Fire Spread Tweaks
+* Flerovium
+* Freeze the Happy Ghasts
+* GPUTape
+* Great Scrollable Tooltips
+* Illager Invasion
+* Illagers Wear Armor
+* Immersive Fixes
+* Integrated Villages
+* KubeJS EnderIO
+* Loot Beams: Refork
+* MES - Moog's End Structures
+* Mowzie's Cataclysm
+* Mystic's Monstrosity Fixes
+* Nirvana Lib
+* Orbital Railgun Reforged
+* Particle Core
+* Particle Effects Reforged
+* Platform
+* PVP Flagging
+* Quests Kill Task Tweaks
+* Responsive Shields
+* Save My Shaky Network
+* Summoner Scrolls
+* Tetratic Combat Expanded
+* Unusual End
+* Whaleborne
+* Vanilla Backport: Chase the Skies, The Garden Awakens
+
+### Mods removed ( -- )
+* Happy Ghasts Backport
+* Loot Beams: Relooted!
+* Lucent
+* Noisium
+
+### Mods updated ( ~~ )
+* [EMF] Entity Model Features
+* [ETF] Entity Texture Features
+* Advanced Loot Info
+* AllTheLeaks (Memory Leak Fix)
+* Amendments
+* Chat Heads
+* Common Capabilities
+* Create
+* Create Crafts & Additions
+* Create Slice & Dice
+* Create: Filters Anywhere
+* Create: Pattern Schematics
+* Create: Steam 'n' Rails
+* Crust
+* Cyclops Core
+* Drippy Loading Screen
+* Eidolon : Repraised
+* Embers Rekindled
+* Euphoria Patches
+* ExtendedAE
+* EvilCraft
+* Forgiving Void
+* Fragmentum
+* FTB Quests
+* Goety - The Dark Arts
+* Integrated Crafting
+* Integrated Dynamics
+* Integrated Terminals
+* Integrated Tunnels
+* Inventory Essentials
+* Mutant Monsters
+* Packet Fixer
+* Platform
+* Ponder for KubeJS
+* Sophisticated Backpacks
+* Sophisticated Backpacks Create Integration
+* Sophisticated Core
+* Special AI
+* Special Mobs
+* Supplementaries Squared
+* The Bumblezone
+---
+
+[Last logs have been deleted by accident]
+
+---
 # ROGUE! MAYHEM | v0.14d
 * redecleration error fix
 
@@ -245,6 +416,8 @@
 * TooManyRecipeViewers (TMRV)
 * UniLib
 * Waystones
+
+
 
 
 

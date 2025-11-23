@@ -27,7 +27,7 @@ toggleCrouch:false
 toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
-mouseSensitivity:0.5
+mouseSensitivity:0.5035211267605634
 fov:0.375
 screenEffectScale:1.0
 fovEffectScale:1.0
@@ -38,7 +38,7 @@ damageTiltStrength:1.0
 highContrast:false
 gamma:0.5
 renderDistance:12
-simulationDistance:8
+simulationDistance:9
 entityDistanceScaling:0.75
 guiScale:4
 particles:0
