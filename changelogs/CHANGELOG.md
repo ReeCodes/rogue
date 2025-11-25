@@ -133,6 +133,7 @@
 * Ender Trigon
 * Fire Spread Tweaks
 * Flerovium
+* Fossils and Archelogy: Revival
 * Freeze the Happy Ghasts
 * GPUTape
 * Great Scrollable Tooltips
@@ -580,4 +581,5 @@
 * Tinkers Integrations and Tweaks
 * TooManyRecipeViewers (TMRV)
 * UniLib
+
 * Waystones
