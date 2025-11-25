@@ -1,3 +1,5 @@
+//priority: 20
+
 // POTION CHECK
 global.MobEffectAdded = (event, effectId) => {
 	let player = event.entity;
@@ -29,11 +31,11 @@ ItemEvents.firstLeftClicked(event => {
 	if (isFakePlayer(player)) return;
 	
 	if (item.id == 'alexsmobs:falconry_glove') {
-		let eagleEntities = level.entities.filterSelector(`@e[type=alexsmobs:bald_eagle]`).filter(entity => isTamed(entity) && entity.nbt.HasCap == 1);
+		let eagleEntities = level.entities.filterSelector(`@e[type=alexsmobs:bald_eagle]`).filter(entity => isTamedBy(entity, player).tamed && entity.nbt.HasCap == 1);
 		if (eagleEntities.length === 0) return;
 		for (let baldEagle of eagleEntities) {
 			server.scheduleInTicks(601, () => {
-				if (baldEagle.nbt.LaunchTime >= 600 && baldEagle.nbt.HasCap == 1 && baldEagle.owner == player) {
+				if (baldEagle.nbt.LaunchTime >= 600 && baldEagle.nbt.HasCap == 1) {
 					simpleQuestComplete(player, '306474F0DF86D367');
 				}
 			})
@@ -158,3 +160,128 @@ global.AnvilApply = event => {
 		simpleQuestComplete(entity, '0DC2F94E32B5B42F');
 	}
 }
+
+function isHullbackClean(entity) {
+    if (!entity || !entity.nbt) return false;
+
+    let dirtSections = [
+        "HeadDirt",
+        "TailDirt",
+        "flukeDirt",
+        "BodyTopDirt",
+        "HeadTopDirt",
+        "BodyDirt"
+    ];
+
+    for (let section of dirtSections) {
+        let data = entity.nbt[section];
+        if (!data) continue;
+
+        let allAir = true;
+
+        for (let subKey in data) {
+            let blocks = data[subKey];
+            if (!Array.isArray(blocks)) continue;
+
+            for (let block of blocks) {
+                if (!block || block.Name !== "minecraft:air") {
+                    allAir = false;
+                    break;
+                }
+            }
+
+            if (!allAir) break;
+        }
+
+        if (allAir) return true;
+    }
+
+    return false;
+}
+
+function hasSaddle(entity) {
+    if (!entity?.nbt?.Items) return false;
+
+    let items = entity.nbt.Items;
+
+    for (let i = 0; i < items.length; i++) {
+		let it = items[i];
+        if (it && it.id == "minecraft:saddle") {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function isBoated(entity) {
+    if (!entity?.nbt?.Items) return false;
+
+    let items = entity.nbt.Items;
+
+    for (let i = 0; i < items.length; i++) {
+		let it = items[i];
+        if (it && (/.*planks:*/).test(it.id)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+let minDist = 4;
+let maxDist = 6;
+let nearbyEntities;
+
+PlayerEvents.tick(event => {
+	const {	player } = event;
+	if (!player || player.level.clientSide || player.age % 160 !== 0) return;
+	
+	let level = player.level;
+	
+	if ((hasCompletedQuest(player, '7F548D4CA44C4388') || hasCompletedQuest(player, '63735B5FD2DC4796')) && !hasCompletedQuest(player, '2B605D3683173D88')) {
+		nearbyEntities = findNearbyEntitiesCloseToPlayer(level, player, 'species:spectre', minDist, maxDist, true);
+		for (let entity of nearbyEntities) {
+			if (!entity || entity.type !== 'species:spectre') continue;		
+			levelDetectQuest((isTamedBy(entity, player).tamed && entity.nbt.Type == 'hulking_spectre'), player, '5D3CD2236CCBF635');
+			break;
+		}
+	}
+	
+	if (hasCompletedQuest(player, '4488F91C0461630A') && !hasCompletedQuest(player, '713BA4BB1DA825B8')) {
+		nearbyEntities = findNearbyEntitiesCloseToPlayer(level, player, 'whaleborne:hullback', minDist, maxDist);
+		for (let entity of nearbyEntities) {
+			if (!entity || entity.type !== 'whaleborne:hullback') continue;		
+			levelDetectQuest(isHullbackClean(entity), player, '069675355CD1E139');
+			levelDetectQuest(hasSaddle(entity), player,	'0F80291110DB5EAE');
+			levelDetectQuest(isBoated(entity), player, '0B2397BFB9F65CD5');
+		}
+	}
+		
+	if (hasCompletedQuest(player, '52B7CED353169C0E') && !hasCompletedQuest(player, '263EFC8C4D853891')) {
+		nearbyEntities = findNearbyEntitiesCloseToPlayer(level, player, 'alexscaves:vallumraptor', minDist, maxDist);
+		for (let entity of nearbyEntities) {
+			if (!entity || entity.type !== 'alexscaves:vallumraptor') continue;		
+			levelDetectQuest(entity.nbt.RelaxedTime >= 1, player, '72CBAD503889F198');
+			break;
+		}
+	}
+		
+	if (hasCompletedQuest(player, '106E1FE1F3B52A7F') && !hasCompletedQuest(player, '75362D6074D0F702')) {
+		nearbyEntities = findNearbyEntitiesCloseToPlayer(level, player, 'alexsmobs:gorilla', minDist, maxDist);
+		for (let entity of nearbyEntities) {
+			if (!entity || entity.type !== 'alexsmobs:gorilla') continue;		
+			levelDetectQuest(isTamedBy(entity, player).tamed, player, '60E41D3C0C9F67F9');
+			break;
+		}
+	}
+		
+	if (hasCompletedQuest(player, '79B93C32676C1B48') && !hasCompletedQuest(player, '083DADA621D02290')) {
+		nearbyEntities = findNearbyEntitiesCloseToPlayer(level, player, 'alexsmobs:crow', minDist, maxDist);
+		for (let entity of nearbyEntities) {
+			if (!entity || entity.type !== 'alexsmobs:crow') continue;		
+			levelDetectQuest(isTamedBy(entity, player).tamed, player, '670B9CF038ECDC1F');
+			break;
+		}
+	}
+})

@@ -25,7 +25,7 @@ function setPlayerCoef(player, server) {
 	(getAttValue(player, 'attributeslib:crit_damage') * 0.19) +
 	(getAttValue(player, 'puffish_attributes:tamed_damage') * 0.18);
 	
-    PLAYER_ATTRIBUTES /= 8;
+    PLAYER_ATTRIBUTES /= COEF_DIVISOR;
 
     let coef = Math.pow(PLAYER_ATTRIBUTES, COEF_TOLERANCE);
     if (coef < 1.001) coef = 1;
@@ -34,11 +34,6 @@ function setPlayerCoef(player, server) {
 
 PlayerEvents.tick(event => {
     const { player, server } = event;
-    if (player.age % 80 !== 0) return;
-    player.persistentData.coef = setPlayerCoef(player, server);
-});
-
-PlayerEvents.inventoryChanged(event => {
-    const { player, server } = event;
+    if (player.age % 160 !== 0) return;
     player.persistentData.coef = setPlayerCoef(player, server);
 });

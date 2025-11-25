@@ -107,8 +107,6 @@
   #   "minecraft:beehive", "minecraft:crafting_table", "minecraft:furnace", "minecraft:ladder",
   #   "minecraft:enchanting_table", "minecraft:brewing_stand", "minecraft:anvil", "minecraft:chipped_anvil", ... ]
   idle_griefing.targets.whitelist = [
-    "minecraft:farmland",
-    "minecraft:loom",
     "minecraft:smoker",
     "minecraft:blast_furnace",
     "minecraft:cartography_table",

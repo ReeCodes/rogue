@@ -75,6 +75,17 @@ global.disabledItems = [
 	'miniutilities:infused_chestplate',
 	'miniutilities:infused_leggings',
 	'miniutilities:infused_boots',
+	'miniutilities:chorus_tile',
+	'miniutilities:ender_tile',
+	'miniutilities:wooden_spikes', 
+	'miniutilities:iron_spikes', 
+	'miniutilities:gold_spikes', 
+	'miniutilities:diamond_spikes', 
+	'miniutilities:netherite_spikes',
+	'miniutilities:solar_panel_controller', 
+	'miniutilities:solar_panel', 
+	'miniutilities:lunar_panel',
+	'miniutilities:quantum_quarry',
 	
 	// NA
 	'naturesaura:chunk_loader',
@@ -194,19 +205,9 @@ global.clearedItems = [
 
 //DISABLED TT
 global.disabledTooltip = [
+	Item.of('elementalcraft:jewel', '{elementalcraft:{jewel:"elementalcraft:kirin"}}').strongNBT(),
 	'ae2:spatial_anchor',
 	'pneumaticcraft:chunkloader_upgrade',
-	'miniutilities:chorus_tile',
-	'miniutilities:ender_tile',
-	'miniutilities:wooden_spikes', 
-	'miniutilities:iron_spikes', 
-	'miniutilities:gold_spikes', 
-	'miniutilities:diamond_spikes', 
-	'miniutilities:netherite_spikes',
-	'miniutilities:solar_panel_controller', 
-	'miniutilities:solar_panel', 
-	'miniutilities:lunar_panel',
-	'miniutilities:quantum_quarry',
 	'rats:rat_upgrade_psychic',
 	'rats:rat_upgrade_ratinator'
 ];

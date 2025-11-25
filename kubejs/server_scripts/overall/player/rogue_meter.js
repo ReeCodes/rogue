@@ -9,11 +9,12 @@ function showMeter(event, player) {
 	let barWidth = 102 - borderWidth;
 	let max_coef = getMaxPlayerCoef(player);
 	let pWidth = ((coef - 1) / (max_coef - 1)) * barWidth;
-		
-	if (player.age % 80 == 0) {
+	
+	if (player.age % 40 == 0) {
 				
 		if (previousCoef !== coef) {
 			previousCoef = coef;
+			
 				player.paint({
 					rogue_gui: {
 						type: 'rectangle',
@@ -74,17 +75,8 @@ function showMeter(event, player) {
 		}
 }
 
-LevelEvents.tick(event => {
-	const { level } = event;
-	if (level.clientSide) return;
-	
-	let updateablePlayers = level.players.filter(player =>	
-		player &&
-		!(isFakePlayer(player)) &&
-		!!player.persistentData.coef
-	);
-	
-	updateablePlayers.forEach(player => {
-		showMeter(event, player)
-	})
+PlayerEvents.tick(event => {
+	const { player } = event;
+	if (!player || player.level.clientSide || !player.persistentData || !player.persistentData.coef || player.age % 15 !== 0) return;
+	showMeter(event, player);
 });

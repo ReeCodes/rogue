@@ -1032,7 +1032,7 @@
 			]
 			title: "&eMeet: &aSubterranodon"
 			x: 4.0d
-			y: 20.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["0E42D48A1836EB3B"]
@@ -1069,9 +1069,24 @@
 					type: "item"
 				}
 			]
-			size: 1.0d
 			subtitle: "Thief"
 			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexscaves:vallumraptor"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "52B7CED353169C0E"
+					observe_type: 5
+					timer: 0L
+					title: "&eFind: &rVallumraptor"
+					to_observe: "alexscaves:vallumraptor"
+					type: "observation"
+				}
 				{
 					id: "6AF7B0F46ED4F216"
 					item: "alexscaves:dinosaur_nugget"
@@ -1092,7 +1107,7 @@
 			]
 			title: "&eMeet: &aVallumraptor"
 			x: 4.0d
-			y: 18.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["58982FA3607D3486"]
@@ -1512,7 +1527,7 @@
 				id: "alexsmobs:tab_icon"
 				tag: {
 					DisplayEntityType: "alexscaves:grottoceratops"
-					DisplayMobScale: 1.0d
+					DisplayMobScale: 0.75d
 				}
 			}
 			id: "6E9E789659A89CD4"
@@ -1568,8 +1583,12 @@
 			y: 16.5d
 		}
 		{
-			dependencies: ["6E9E789659A89CD4"]
+			dependencies: [
+				"6E9E789659A89CD4"
+				"0E42D48A1836EB3B"
+			]
 			id: "6D05033A4350ED6C"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "3DE72C13796C745D"
@@ -2154,7 +2173,7 @@
 				value: 1L
 			}]
 			x: 12.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0E28503420F2B547"]
@@ -2200,7 +2219,7 @@
 				value: 1L
 			}]
 			x: 14.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0E28503420F2B547"]
@@ -2338,7 +2357,7 @@
 				value: 1L
 			}]
 			x: 15.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -2398,7 +2417,7 @@
 			]
 			title: "&eOn The Side: &aHolographic"
 			x: 12.0d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2551,7 +2570,7 @@
 			]
 			title: "&6Collection: &rAttractive Complexion"
 			x: 16.0d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7541A25EAE480BF5"]
@@ -2602,178 +2621,7 @@
 			]
 			title: "&eOn The Side: &aUnreliable Home Security"
 			x: 14.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["0E28503420F2B547"]
-			id: "3BD4D8E8C01683AE"
-			rewards: [
-				{
-					id: "195BCEAD0D8F03A2"
-					type: "xp"
-					xp: 100
-				}
-				{
-					count: 4
-					id: "7396380C33880F73"
-					item: "kubejs:oxidized_box"
-					type: "item"
-				}
-				{
-					count: 6
-					id: "6F972965B9F15086"
-					item: "kubejs:mischievous_box"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "0DAFA129A7F5FAC6"
-					item: "kubejs:glitched_box"
-					type: "item"
-				}
-			]
-			size: 2.0d
-			subtitle: "Magnetic Tools"
-			tasks: [
-				{
-					id: "6F636B9DE2264444"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:azure_sword"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:scarlet_sword"
-									tag: {
-										Damage: 0
-									}
-								}
-							]
-						}
-					}
-					title: "&eNeodymium Sword"
-					type: "item"
-				}
-				{
-					id: "207D8CE0DDDEFCFE"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:azure_pickaxe"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:scarlet_pickaxe"
-									tag: {
-										Damage: 0
-									}
-								}
-							]
-						}
-					}
-					title: "&eNeodymium Pickaxe"
-					type: "item"
-				}
-				{
-					id: "746F448EFE6C36FF"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:azure_axe"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:scarlet_axe"
-									tag: {
-										Damage: 0
-									}
-								}
-							]
-						}
-					}
-					title: "&eNeodymium Axe"
-					type: "item"
-				}
-				{
-					id: "16A954D5078D0725"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:azure_shovel"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:scarlet_shovel"
-									tag: {
-										Damage: 0
-									}
-								}
-							]
-						}
-					}
-					title: "&eNeodymium Shovel"
-					type: "item"
-				}
-				{
-					id: "6AE731F394C8E94A"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:azure_hoe"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "alexscaves_torpedoes:scarlet_hoe"
-									tag: {
-										Damage: 0
-									}
-								}
-							]
-						}
-					}
-					title: "&eNeodymium Hoe"
-					type: "item"
-				}
-			]
-			title: "&6Collection: &rTools Of Opposition"
-			x: 17.0d
-			y: -1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["30558EA99F6D9DF8"]
@@ -3312,7 +3160,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Your New Clique"
+			subtitle: "New Clique"
 			tasks: [
 				{
 					advancement: "alexscaves:alexscaves/trade_with_deep_one"

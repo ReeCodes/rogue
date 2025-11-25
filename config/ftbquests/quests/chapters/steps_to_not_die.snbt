@@ -1089,10 +1089,6 @@
 				"Equipping &efour pieces&r of armor made of the &esame material&r gives the user &eunique effects&r."
 				""
 				"Rare instances of &epartial armor sets&r do also exist, requiring only &eone piece&r."
-				""
-				"{@pagebreak}"
-				""
-				"Both of them can be found using the search bar via &e'#Full'&r \\& &e'#Partial'&r."
 			]
 			icon: "minecraft:armor_stand"
 			id: "5F8AA70D71B8D52A"

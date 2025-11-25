@@ -14,7 +14,8 @@ const ATT_EXCLUDE_ARMOR = new RegExp([
 ].join("|"));
 
 const AUTO_SYNC_TAMED = new RegExp([
-	'species:spectre'
+	'species:spectre',
+	'summonerscrolls.*'
 ].join("|"));
 
 function getPetData(entity) {
@@ -81,10 +82,10 @@ function scaleNormalizedAttribute(coef, maxCoef, exponent, clampMax, subtract) {
 
 const MAX_SPEED = 0.085;
 
-function addModifiers(event, player, coef, entity, attName, attModifierName, attOperation) {
+function addModifiers(event, player, coef, maxCoef, entity, attName, attModifierName, attOperation) {
 	
-	const PLAYER_COEF = coef;
-	const PLAYER_MAX_COEF = getMaxPlayerCoef(player);
+	let PLAYER_COEF = coef;
+	let PLAYER_MAX_COEF = maxCoef;
 		
 	if (entity.getAttributes().hasAttribute(attName)) {
 		let BASE_VALUE = entity.getAttributes().getInstance(attName).getBaseValue();
@@ -192,43 +193,64 @@ const NATURAL_ATTRIBUTES = [
 	'attributeslib:current_hp_damage'
 ];
 
+let coef;
+let player;
+let maxCoef;
+
 EntityEvents.spawned(event => {
 	const {	entity,	level } = event;
 	if (level.clientSide || level.players.length == 0 || ENTITY_SCALE_BLACKLIST.test(entity.type) || entity.isPlayer() || !entity.isAlive() || !entity.isLiving()) return;
 
-	let coef;
-	let player;
-		
 	if (level.players.length === 1) {
+		
 		player = level.players[0];
 		coef = getPlayerCoef(player);
+		maxCoef = getMaxPlayerCoef(player);
+		
 	} else if (level.players.length > 1) {
+		
 		let followRange = getFollowRange(entity);
 		let radius = Math.floor(followRange + 16);
 		let nearbyPlayers = findNearbyPlayersCloseToEntity(level, entity, radius, maxPlayerSearchRange, true);
+		
 		if (nearbyPlayers.length > 1) {
+			
 			let closestPlayer = getClosestPlayer(entity, nearbyPlayers, radius);
-			if (!closestPlayer) nearbyPlayers[0];
+			if (!closestPlayer) closestPlayer = nearbyPlayers[0];
+			
 			coef = calculateCoef(entity, nearbyPlayers, radius);
 			player = closestPlayer;
-		} else {
+			maxCoef = getMaxPlayerCoef(player);
+			
+		} else if (nearbyPlayers.length === 1) {
+			
 			player = nearbyPlayers[0];
 			coef = getPlayerCoef(player);
+			maxCoef = getMaxPlayerCoef(player);
+			
 		}
 	}
+	
 	if (DEBUG_MODE_MS) console.log(`[Scaling / ${SERVER_MODE}] Selected Player: ${player.username}, Coef: ${coef}, Entity: ${entity.type}, Distance to Entity: ${player.distanceToEntitySqr(entity)}`);
 	if (isTamedBy(entity, player).tamed && !AUTO_SYNC_TAMED.test(entity.type)) return;
 	NATURAL_ATTRIBUTES.forEach(attribute => {
-		addModifiers(event, player, coef, entity, attribute, 'rogue:scaler', "addition");
+		addModifiers(event, player, coef, maxCoef, entity, attribute, 'rogue:scaler', "addition");
 	})
+	
+	//SINGLE ENTITIES
+	if (entity.type == 'minecraft:warden') {
+		let RANGED_DMG_ADD = scaleAttribute(coef, 2.37, maxCoef, 0);
+		assignAtt(entity, player, 'puffish_attributes:ranged_damage', RANGED_DMG_ADD, 'rogue:scaler', "addition");
+	}
 });
 
 ItemEvents.entityInteracted(event => {
 	const {	target,	player, item, hand } = event;
 	if (!isTamedBy(target, player).tamed || hand != 'MAIN_HAND' || item.id !== 'minecraft:air') return;
 	let coef = getPlayerCoef(player);
+	let maxCoef = getMaxPlayerCoef(player);
 	NATURAL_ATTRIBUTES.forEach(attribute => {
-		addModifiers(event, player, coef, target, attribute, 'rogue:scaler', "addition");
+		addModifiers(event, player, coef, maxCoef, target, attribute, 'rogue:scaler', "addition");
 	})
 });
 
@@ -238,7 +260,7 @@ const SYNC_MESSAGE_TYPE = ['rats'];
 ItemEvents.entityInteracted(event => {
 	const { target, player, item, hand } = event;
 	
-	if (!isTamedBy(target, player).tamed || hand != 'MAIN_HAND' || item.id !== 'minecraft:air') return;
+	if (!isTamedBy(target, player).tamed || hand != 'MAIN_HAND' || item.id !== 'minecraft:air' || ENTITY_SCALE_BLACKLIST.test(target.type)) return;
 	
 	let petCD = Math.ceil(getPetCooldown(target) / 20);
 	let petPlayerCD = Math.round(getPlayerPetCD(player) * 100);

@@ -61,40 +61,51 @@ let specialArrows = [
 const MIN_SPECIAL_ARROW_CHANCE = 0.02;
 const MAX_SPECIAL_ARROW_CHANCE = 0.63;
 
+let coef;
+let maxCoef;
+let player;
+
 EntityEvents.spawned(event => {
 	const { entity, level } = event;
 	if (level.clientSide || level.players.length === 0) return;
 	
 	if (allBowEntities.test(entity.type) && 
 		entity.getItemBySlot($EquipmentSlot.MAINHAND) === 'minecraft:bow' && 
-		entity.getItemBySlot($EquipmentSlot.OFFHAND) === 'air') {
-		
-		let coef;
-		let maxCoef;
-		let player;
-		
-		let followRange = getFollowRange(entity);
-		let radius = Math.floor(followRange + 8);
-		
+		entity.getItemBySlot($EquipmentSlot.OFFHAND).isEmpty()) {
+	
 		if (level.players.length === 1) {
+			
 			player = level.players[0];
 			coef = getPlayerCoef(player);
 			maxCoef = getMaxPlayerCoef(player);
+			
 		} else if (level.players.length > 1) {
+			
+			let followRange = getFollowRange(entity);
+			let radius = Math.floor(followRange + 8);
 			let nearbyPlayers = findNearbyPlayersCloseToEntity(level, entity, radius, maxPlayerSearchRange, true);
+			
 			if (nearbyPlayers.length > 1) {
+				
 				let closestPlayer = getClosestPlayer(entity, nearbyPlayers, radius);
-				if (!closestPlayer) nearbyPlayers[0];
+				if (!closestPlayer) closestPlayer = nearbyPlayers[0];
+				
+				player = closestPlayer;
 				coef = calculateCoef(entity, nearbyPlayers, radius);
 				maxCoef = getMaxPlayerCoef(closestPlayer);
-			} else {
+				
+			}  else if (nearbyPlayers.length === 1) {
+				
 				player = nearbyPlayers[0];
 				coef = getPlayerCoef(player);
 				maxCoef = getMaxPlayerCoef(player);
+				
 			}
 		}
 		
 		let chanceForArrow = MIN_SPECIAL_ARROW_CHANCE + (coef - 1) * ((MAX_SPECIAL_ARROW_CHANCE - MIN_SPECIAL_ARROW_CHANCE) / (maxCoef - 1));
+		let chanceForBow = 0.5;
+
 		
 		if (Math.random() < chanceForArrow) {
 			

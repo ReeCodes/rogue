@@ -6,7 +6,7 @@ global.DamageEvent = event => {
     global.DamageHandlers
         .filter(fn => typeof fn === "function")
         .forEach((fn, i) => {
-            const handlerName = fn.tag || fn.name || `Handler${i}`;
+            const handlerName = fn.tag;
                 let result = fn(event, amount);
                 if (typeof result === "number") {
                     amount = result;

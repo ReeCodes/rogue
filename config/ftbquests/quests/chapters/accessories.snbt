@@ -4027,6 +4027,19 @@
 					type: "item"
 					weak_nbt_match: true
 				}
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "species:spectre"
+							DisplayMobScale: 1.0d
+						}
+					}
+					id: "5D3CD2236CCBF635"
+					title: "&eSummon:&r Spectre (Tier: V)"
+					type: "custom"
+				}
 			]
 			x: -4.0d
 			y: -2.0d

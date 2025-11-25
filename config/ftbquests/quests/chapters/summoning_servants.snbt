@@ -938,8 +938,11 @@
 						}
 					}
 					id: "672A223B98FC56A8"
+					observe_type: 5
+					timer: 0L
 					title: "&eSummon: &rBlacksmith Familiar"
-					type: "custom"
+					to_observe: "occultism:blacksmith_familiar"
+					type: "observation"
 				}
 				{
 					icon: "minecraft:iron_block"

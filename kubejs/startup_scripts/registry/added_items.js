@@ -28,7 +28,7 @@ StartupEvents.registry('item', event => {
 		.useDuration((itemstack) => 30)
 		.finishUsing((itemstack, level, entity) => {
 			if (!level.isClientSide() && entity.player) {
-				global.spreadPlayer(entity)
+				global.spreadPlayer(entity, level)
 			}
 			return itemstack;
 	}).texture('rogue:item/special/nothingness');

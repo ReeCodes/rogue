@@ -1,46 +1,84 @@
-LevelEvents.tick(event => {
-	const { level } = event;
-	if (level.clientSide) return;
-	if (level.time % 20 !== 0) return;
+ItemEvents.entityInteracted(event => {
+	const { player, target, server, item, hand } = event;
+	
+	if (target.type !== 'minecraft:allay') return;
+	
+	let allayHeld = target.getItemBySlot($EquipmentSlot.MAINHAND);
+	if (!allayHeld || allayHeld.isEmpty()) {
 
-	global.assistedCrafting.forEach(c => {
-		let allayItem = c.tool;
-		let allayStage = 'ac_' + allayItem.substring(allayItem.indexOf(':') + 1);
-		let allayItemOnly = allayItem.substring(allayItem.indexOf(':') + 1);
+        let heldByPlayer = item;
 
-		let allays = level.entities.filterSelector(`@e[type=minecraft:allay]`);
-		if (allays.length === 0 || level.players.length === 0) return;
+        for (let craft of global.assistedCrafting) {
+            if (heldByPlayer?.id === craft.tool) {
 
-		for (let player of level.players) {
-			let nearAllay = false;
+				if (!player.stages.has('allay_interacted')) player.stages.add('allay_interacted');
+				return;
+            }
+        }
+    }
+})
 
-			for (let allay of allays) {
-				if (allay?.nbt?.HandItems[0]?.id && allay.nbt.HandItems[0].id == allayItem) {
-					if (allay.distanceToEntitySqr(player) <= Math.pow(12, 2)) {
-						nearAllay = true;
-						break;
-					}
-				}
-			}
-			if (player.stages.has(allayStage) != nearAllay) {
-				if (nearAllay) {
-					player.setStatusMessage(
-						Text.of('Assisted Crafting: ').color('#fcec03')
-							.append(Text.of('\uE814 ').white())
-							.append(Text.of('holding ').color('#fcec03'))
-							.append(Text.of(Utils.snakeCaseToTitleCase(allayItemOnly)).color('#00d9fa'))
-					);
-					player.stages.add(allayStage);
-				} else {
-					player.setStatusMessage(
-						Text.of('Assisted Crafting: ').color('#fcec03')
-							.append(Text.of('\uE814 ').white())
-							.append(Text.of('out of range!').red())
-					);
-					player.stages.remove(allayStage);
-				}
-				player.stages.sync();
-			}
+PlayerEvents.tick(event => {
+	const { player } = event;
+	if (!player || player.level.clientSide || player.age % 50 !== 0) return;
+	let level = player.level;
+	
+	if (!player.stages.has('allay_interacted')) return;
+	let nearbyAllays = findNearbyEntitiesCloseToPlayer(level, player, 'minecraft:allay', 2, 4);
+	
+	if (nearbyAllays.length === 0) {
+
+		for (let craft of global.assistedCrafting) {
+			let idName = craft.tool.split(':')[1];
+			let stage = 'ac_' + idName;
+			if (player.stages.has(stage)) player.stages.remove(stage);
 		}
-	});
+
+		player.setStatusMessage(
+			Text.of("Assisted Crafting: ").color("#fcec03")
+				.append(Text.of("\uE814 ").white())
+				.append(Text.of("out of range!").red())
+		);
+		player.stages.sync();
+		return;
+	}
+	
+	let allay = (nearbyAllays.length > 1)
+        ? (getClosestEntity(player, nearbyAllays, playerAllayACSearchRange) || nearbyAllays[0])
+        : nearbyAllays[0];
+		
+	for (let craft of global.assistedCrafting) {
+
+        let allayItem = craft.tool;
+        let idName = allayItem.split(':')[1];
+        let acStage = 'ac_' + idName;
+
+        let held = allay.getItemBySlot($EquipmentSlot.MAINHAND);
+        let holdingCorrect = (held?.id === allayItem);
+
+        let currentlyHasStage = player.stages.has(acStage);
+
+        if (holdingCorrect !== currentlyHasStage) {
+
+            if (holdingCorrect) {
+                player.setStatusMessage(
+                    Text.of("Assisted Crafting: ").color("#fcec03")
+                        .append(Text.of("\uE814 ").white())
+                        .append(Text.of("holding ").color("#fcec03"))
+                        .append(Text.of(Utils.snakeCaseToTitleCase(idName)).color("#00d9fa"))
+                );
+                player.stages.add(acStage);
+            }
+            else {
+                player.setStatusMessage(
+                    Text.of("Assisted Crafting: ").color("#fcec03")
+                        .append(Text.of("\uE814 ").white())
+                        .append(Text.of("not holding an item!").red())
+                );
+                player.stages.remove(acStage);
+                player.stages.remove('allay_interacted');
+            }
+        }
+    }
+    player.stages.sync();
 });

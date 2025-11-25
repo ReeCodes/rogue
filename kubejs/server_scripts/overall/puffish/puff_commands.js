@@ -98,18 +98,66 @@ ServerEvents.commandRegistry(event => {
 					const amount = Arguments.FLOAT.getResult(ctx, 'amount');
 
 					if (!player) return 0;
+
+					const increase = roundTo(amount, 2);
+					const perIncrease = Math.round(increase * 100);
+
+					let newCD;
+
+					if (type === 'ability') {
+						addPlayerAbilityCD(player, increase);
+						newCD = Math.round(getPlayerAbilityCD(player) * 100);
+						player.tell([
+							Text.of(`§eAbility Cooldown decreased: §a-${perIncrease}%§f (Now: §6${newCD}%§f)`)
+						]);
+					} else if (type === 'pet') {
+						addPlayerPetCD(player, increase);
+						newCD = Math.round(getPlayerPetCD(player) * 100);
+						player.tell([
+							Text.of(`§ePet Sync Cooldown decreased: §a-${perIncrease}%§f (Now: §6${newCD}%§f)`)
+						]);
+					} else {
+						player.tell([Text.of(`Invalid Type: ${type}. Use "ability" or "pet".`).red()]);
+						return 0;
+					}
+
+					return 1;
+				})
+			)
+		)
+	);
+	
+	/*
+	// ADD PLAYER CD COMMANDS
+	event.register(
+		Commands.literal('player_cd')
+		.requires(src => src.hasPermission(2))
+		.then(
+			Commands.argument('type', Arguments.STRING.create(event))
+			.then(
+				Commands.argument('amount', Arguments.FLOAT.create(event))
+				.executes(ctx => {
+					const player = ctx.source.player;
+					const type = Arguments.STRING.getResult(ctx, 'type').toLowerCase();
+					const amount = Arguments.FLOAT.getResult(ctx, 'amount');
+
+					if (!player) return 0;
 					
 					let increase = roundTo(amount, 2);
 					let perIncrease = Math.round(increase * 100);
+					
+					let pAbilityCD = getPlayerAbilityCD(player);
+					let pPetCD = getPlayerPetCD(player);
+					
 					if (type === 'ability') {
 						addPlayerAbilityCD(player, increase);
 						player.tell([
-							Text.of(`§eAbility Cooldown decreased by §a-${perIncrease}%§f (Now: §6${getPlayerAbilityCD(player).toFixed(2)}§f)`)
+							Text.of(`§eAbility Cooldown increased: §a-${perIncrease}%§f (Now: §6${Math.round(roundTo(pAbilityCD, 2) * 100)}§f)`)
 						]);
 					} else if (type === 'pet') {
 						addPlayerPetCD(player, increase);
 						player.tell([
-							Text.of(`§ePet Sync Cooldown decreased by §a-${perIncrease}%§f (Now: §6${getPlayerPetCD(player).toFixed(2)}§f)`)
+							Text.of(`§ePet Sync Cooldown increased: §a-${perIncrease}%§f (Now: §6${Math.round(roundTo(pPetCD, 2) * 100)}§f)`)
 						]);
 					} else {
 						player.tell([Text.of(`Invalid Type: ${type}. Use "ability" or "pet".`).red()]);
@@ -120,6 +168,7 @@ ServerEvents.commandRegistry(event => {
 			)
 		)
 	);
+	*/
 
 	// RESET COMMAND
 	event.register(

@@ -196,19 +196,37 @@
 			]
 			size: 2.0d
 			subtitle: "Gentle Beasts"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "alexsmobs:tab_icon"
-					tag: {
-						DisplayEntityType: "alexsmobs:gorilla"
-						DisplayMobScale: 1.15d
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:gorilla"
+							DisplayMobScale: 1.15d
+						}
 					}
+					id: "106E1FE1F3B52A7F"
+					observe_type: 5
+					timer: 0L
+					title: "&eFind: &rGorilla"
+					to_observe: "alexsmobs:gorilla"
+					type: "observation"
 				}
-				id: "60E41D3C0C9F67F9"
-				title: "&eTame: &rGorilla"
-				type: "custom"
-			}]
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:gorilla"
+							DisplayMobScale: 1.15d
+						}
+					}
+					id: "60E41D3C0C9F67F9"
+					title: "&eTame: &rGorilla"
+					type: "custom"
+				}
+			]
 			x: 5.0d
 			y: 0.0d
 		}
@@ -339,19 +357,37 @@
 			]
 			size: 2.0d
 			subtitle: "Sleek Individual"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "alexsmobs:tab_icon"
-					tag: {
-						DisplayEntityType: "alexsmobs:crow"
-						DisplayMobScale: 1.5d
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:crow"
+							DisplayMobScale: 1.5d
+						}
 					}
+					id: "79B93C32676C1B48"
+					observe_type: 5
+					timer: 0L
+					title: "&eFind: &rCrow"
+					to_observe: "alexsmobs:crow"
+					type: "observation"
 				}
-				id: "670B9CF038ECDC1F"
-				title: "&eTame: &rCrow"
-				type: "custom"
-			}]
+				{
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "alexsmobs:crow"
+							DisplayMobScale: 1.5d
+						}
+					}
+					id: "670B9CF038ECDC1F"
+					title: "&eTame: &rCrow"
+					type: "custom"
+				}
+			]
 			x: -4.0d
 			y: 4.0d
 		}
@@ -1468,11 +1504,9 @@
 		}
 		{
 			description: [
-				"Get rid of &nall&r the &eHullbacks&r annoying &eBonnet&r using &eShears&r and an &eAxe&r. "
+				"Get rid of most of the &eHullbacks&r annoying &eBonnet&r using &eShears&r and an &eAxe&r. "
 				""
 				"&eSaddle&r the Hullback, then build a &ePlatform&r made from &eWooden Planks&r."
-				""
-				"&bSome tasks can sometimes not complete due to not being close to the actual Hullback. Try out going below the Hullback, also.&r"
 			]
 			icon: "whaleborne:helm"
 			id: "713BA4BB1DA825B8"
@@ -1588,6 +1622,11 @@
 			y: 13.0d
 		}
 		{
+			dependencies: [
+				"713BA4BB1DA825B8"
+				"4488F91C0461630A"
+			]
+			dependency_requirement: "one_completed"
 			id: "65919D35266C7AC8"
 			rewards: [
 				{

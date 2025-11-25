@@ -29,6 +29,9 @@ ServerEvents.tags('item', event => {
 		['forge:gems/dark', 'evilcraft:dark_gem'],
 		['forge:swords', 'species:spectralibur'],
 		['minecraft:swords', 'species:spectralibur'],
+		['forge:swords', 'miniutilities:kikoku'],
+		['minecraft:swords', 'miniutilities:kikoku'],
+		
 		
 		//FLUX-INFUSED
 		['forge:ingots', 'redstone_arsenal:flux_ingot'],

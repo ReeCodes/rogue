@@ -27,7 +27,7 @@ const itemFilters = {
 	'high_tier_anointed': item => !!(Array.isArray(item?.nbt?.anointment_holder?.anointments) && item.nbt?.anointment_holder?.anointments?.some(d => d.max_damage >= 4096)),
 	'living_armor_upgraded': item => !!(item.nbt?.livingStats?.maxPoints >= 300),
 	'bread_tower': item => !!(item.nbt?.BlockEntityTag?.Sandwich?.length >= 32),
-	'transmogged': item => !!(!!item.nbt && !!item.nbt['transmog:transmogItem']),
+	'transmogged': item => !!(item.nbt && !!item.nbt['transmog:transmogItem']),
 	'identified_artifact': item => !!(Array.isArray(item?.nbt?.StoredEnchantments) && item.nbt?.StoredEnchantments.some(e => (/.*betterarcheology.*/.test(e.id)))),
 	'augmented_item': item => !!(/.*name:"embers(?!:core).*"/).test(item.nbt),
 	'has_heat': item => !!(item.nbt && item.nbt['embers:heat_tag']?.heat >= 0),

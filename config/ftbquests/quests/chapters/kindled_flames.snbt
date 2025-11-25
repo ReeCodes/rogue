@@ -1903,6 +1903,18 @@
 		{
 			dependencies: ["3B57DE2EC7D43139"]
 			id: "5396EE6EE5D8A0DD"
+			rewards: [
+				{
+					id: "05CDB83DB326E32C"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "03EC8C47604F5454"
+					item: "kubejs:druidic_box"
+					type: "item"
+				}
+			]
 			subtitle: "Star Locator"
 			tasks: [{
 				id: "28E4AAFD098D7836"

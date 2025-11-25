@@ -82,9 +82,11 @@
 	"minecraft:weeping_vines_plant": "red;F",
 	"biomesoplenty:glowworm_silk": "#73b7d9;13",
 	"biomesoplenty:glowworm_silk_strand": "#73b7d9;14",
-	"galosphere:glinted_amethyst_cluster": "magenta;15",
+	"galosphere:glinted_amethyst_cluster": "magenta;F",
 	"galosphere:allurite_cluster": "#2596be;C",
-	"galosphere:glinted_allurite_cluster": "#2596be;15",
+	"galosphere:glinted_allurite_cluster": "#2596be;F",
 	"galosphere:lumiere_cluster": "#fcc358;C",
-	"galosphere:glinted_lumiere_cluster": "#fcc358;15"
+	"galosphere:glinted_lumiere_cluster": "#fcc358;F",
+	"embers:archaic_light": "orange;F",
+	"alexscaves:acid": "green;F"
 }

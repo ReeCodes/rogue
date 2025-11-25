@@ -14,7 +14,8 @@ const $MobEffectInstance = Java.loadClass("net.minecraft.world.effect.MobEffectI
 
 // CHANGEABLE CONSTANTS
 // [Mob Scaling] Search Radius for nearby Players
-const maxPlayerSearchRange = 192;
+const maxPlayerSearchRange = 128;
+const playerAllayACSearchRange = 6;
 
 // [Mob Scaling] Debugger
 const DEBUG_MODE_MS = false;
@@ -30,14 +31,6 @@ const SERVER_MODE = VALID_SERVER_MODES.includes(SET_SERVER_MODE)
     : 'BALANCED';
 
 console.log("[SERVER MODE] Set to " + SERVER_MODE);
-
-const questEntities = new RegExp([
-	'alexscaves:vallumraptor', 
-	'occultism:blacksmith_familiar', 
-	'alexsmobs:gorilla', 
-	'alexsmobs:crow', 
-	'whaleborne:hullback'
-].join("|"));
 
 const allBowEntities = new RegExp([
     'minecraft:skeleton',
@@ -254,12 +247,14 @@ function findNearbyPlayersCloseToEntity(level, entity, initialRadius, maxRadius,
 	}
 
 	if (nearby.length === 0) {
+		
 		if (isStrict) {
 			nearby = level.players;
 			if (debug) console.log("[Scanning Players] Fallback to all players in level for: " + entity.blockPosition(), entity.type);
 		} else {
 			if (debug) console.log("[Scanning Entities] No players found in specified range for: " + entity.blockPosition(), entity.type);
 		}
+		
 	}
 
 	return nearby;
@@ -285,6 +280,7 @@ function getClosestPlayer(entity, players, maxDistSq, debug) {
 }
 
 function calculateCoef(entity, players, radius, debug) {
+	
 	debug = debug || false;
     let resultCoef;
 
@@ -304,23 +300,30 @@ function calculateCoef(entity, players, radius, debug) {
     return resultCoef;
 }
 
+function levelDetectQuest(condition, player, questID) {
+	if (!hasCompletedQuest(player, questID)) {
+		if (condition) simpleQuestComplete(player, questID);
+	}
+}
+
 // GLOBAL EXECUTIONS
-global.spreadPlayer = entity => {
+global.spreadPlayer = (entity, level) => {
+	if (isFakePlayer(entity)) return;
 	
-	if (isFakePlayer(entity)) return;	
-	let off = entity.offHandItem;
-	let main = entity.mainHandItem;
+	let player = entity;
+	let server = player.getServer();
+	let off = player.offHandItem;
+	let main = player.mainHandItem;
 	let nothing = 'kubejs:nothingness';
 	
-	if (entity.isHoldingInAnyHand(Item.of(nothing))) {
+	if (player.isHoldingInAnyHand(Item.of(nothing))) {
 		if (off.id == nothing) off.count--;
 		if (main.id == nothing) main.count--;
-		if (Utils.server.minecraftServer) Utils.server.tell(`§e${entity.username}§r used Nothingness`);
-		entity.setStatusMessage(Text.of(`Finding a right stop...`).yellow());
-		entity.addItemCooldown(nothing, 1000);
-		Utils.server.runCommandSilent(`playsound minecraft:block.glass.break master ${entity.username} ${entity.x} ${entity.y} ${entity.z} 0.5 0.5`)
-		Utils.server.scheduleInTicks(60, () => {
-			Utils.server.runCommandSilent(`execute as ${entity.username} run spreadplayers ~ ~ 5000 10000 false ${entity.username}`)
+		player.setStatusMessage(Text.of(`Finding a right stop...`).yellow());
+		player.addItemCooldown(nothing, 800);
+		server.runCommandSilent(`playsound minecraft:block.glass.break master ${player.username} ${player.x} ${player.y} ${player.z} 0.5 0.5`);
+		server.scheduleInTicks(40, () => {
+			server.runCommandSilent(`execute as ${player.username} run spreadplayers ${player.x} ${player.z} 5000 10000 false ${player.username}`);
 		})
 	}
 }

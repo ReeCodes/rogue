@@ -1,8 +1,52 @@
+# Rogue! Mayhem | v0.16.2
+
+## MAJOR CHANGES ( ''' )
+* multiple tick optimizations for quests and assisted crafting improvements
+* added new rare ore veins (can be viewed with EMI)
+	* Starfall Vein - consists of 10 different rare ores
+	* Radioactive Vein - consists of radioactive ores found only within the Toxic Caves
+	
+### Forge updated to 47.4.12 ( ⬆️ )
+
+## MINOR CHANGES ( '' )
+* overhauled ore vein chance and distribution
+* fixed Glitched boxes not summoning Gateways, having debug code and displaying coef wrongly
+* optimised level entity detection quests
+	* now requires a condition before detecting nearby entities
+* fixed sound when finishing an assisted craft
+* reduced "maxPlayerSearchRange" by 64 blocks, now: 128 blocks; has no impact on singleplayer
+* fixed Nothingness not teleporting properly caused by Mystic's Monstrosity Fixes
+* removed Feywild's forge and blacksmith structures
+
+### Mob Scaling
+* Summoner's Scrolls now scale properly
+
+### Mods added ( ++ )
+* Structurify
+
+### Mods removed ( -- )
+* Mystic's Monstrosity Fixes
+
+### Mods updated ( ~~ )
+* [EMF] Entity Model Features [Fabric & Forge]
+* Data Anchor
+* Duplicationless
+* Embers Rekindled
+* FancyMenu
+* FTB Quests
+* Integrated Dynamics
+* Integrated Terminals
+* Macaw's Furniture
+* Macaw's Trapdoors
+* MidnightLib
+* Special Mobs
+* TooManyRecipeViewers (TMRV)
+
+---
 # Rogue! Mayhem | v0.16.1
 
 ## MAJOR CHANGES ( ''' )
 * removed spawn unlocking
-* fixed crash when hovering over specific items
 
 ## MINOR CHANGES ( '' )
 * removed nuggets and ingots from urn loot
@@ -164,9 +208,130 @@
 * Special Mobs
 * Supplementaries Squared
 * The Bumblezone
----
 
-[Last logs have been deleted by accident]
+---
+# Rogue! Mayhem | v0.15.2
+
+## MAJOR CHANGES ( ''' )
+* fixed Pufferfish abilities not triggering if not playing on server
+
+## MINOR CHANGES ( '' )
+* fixed Rogue Meter updating when no player is available
+
+### Mods removed ( -- )
+* CurioEnchantment
+* EMI Trades (Villager Trading EMI Plugin)
+* FastBoot
+
+---
+# Rogue! Mayhem | v0.15.1
+
+## MAJOR CHANGES ( ''' )
+* Changed event firing to not crash when played on servers
+
+### Resources updated ( °~ )
+* EnderIO - Refrubished!
+---
+# Rogue! Mayhem | v0.15
+
+## Notes ( !! )
+* Update may cause worlds to break! If you still want to play inside your old world you need to re-download [ShineaL's Prehistoric Expansion](https://www.curseforge.com/minecraft/mc-mods/shineals-prehistoric-expansion/files/all?page=1&pageSize=20&version=1.20.1&showAlphaFiles=show)  manually - it uses bad datapack injection. 
+
+## MAJOR CHANGES ( ''' )
+* MCreator mod cleanup
+* Ability cooldowns now decrement per tick, not per second
+* removed PlayerEvents.inventoryChanged event to custom filters for better quest item checking
+
+## Mob Scaling
+* nerfed starting [Arrow Damage]
+* slightly nerfed starting [Attack Damage]
+* nerfed starting [Armor] and [Armor Toughness]
+
+## MINOR CHANGES ( '' )
+* balanced Brawler skill tree attribute distribution
+* fixed lag when using Nothingness item
+* added Multiservo recipe for ingot to plate option
+* disabled shake effects caused by Warden spawning in
+* fixed offset recipe category for Assisted Crafting
+
+## Ability Changes
+* Brute Force trigger chance reduced from 1% to 0.5%. Now cooldown is tied to the ability's level.
+* Dark Hail cooldown increased from 15s to 40s
+* Crit Damage slightly reduced
+* Catabolic Link cost reduced to 1 point
+
+### Resources added ( °+ )
+* Creeper Overhaul x Fresh Animations
+* Fresh Animations: Emissive
+* Fusion Emissive Ores
+
+### Resources removed ( °- )
+* Assorted Wardens
+
+### Resources updated ( °~ )
+* Pixel Consistent Ghast
+
+### Shaderpacks added ( <+ )
+* Complementary Shaders - Unbound
+
+### Shaderpacks removed ( <- )
+* MakeUp - Ultra Fast | Shaders
+
+### Mods added ( ++ )
+* Chunk Sending
+* CurioEnchantment
+* Environmental
+* Happy Ghast Backport
+* Overflowing Bars
+* Unsafe World Random Access Detector
+
+### Mods removed ( -- )
+* Aether Delight (A Farmer's Delight Add-on)
+* Alex's Caves: Stuff & Torpedoes
+* Aquaculture Delight (A Farmer's Delight Add-on)
+* Copperworks
+* Create: Numismatics
+* Ender Wyrmlings
+* Mobs of Sins: Alex's Mobs Integration
+* Nether's Exoticism
+* Overloaded Armor Bar
+* ShineaL's Prehistoric Expansion
+* Tinkers Delight (A Farmer's Delight Add-on)
+* Quark Delight
+* Wither Spawn Animation
+
+### Mods updated ( ~~ )
+* Advanced Loot Info
+* AE2: Crafting Tree
+* AllTheLeaks (Memory Leak Fix)
+* Aquamirae
+* Cluttered
+* Cold Sweat
+* DoesPotatoTick?
+* Domum Ornamentum
+* Dungeon Now Loading 2%
+* Enchant With Mob
+* Ender IO
+* Entity Culling
+* Euphoria Patches
+* Fragmentum
+* Goety - The Dark Arts
+* Grimoire of Gaia
+* Inventory Essentials
+* Just Enough Breeding (JEBr)
+* Macaw's Furniture
+* ModernFix
+* Moonlight Lib
+* Obscure API
+* Ponder for KubeJS
+* Pufferfish's Attributes
+* Some Assembly Required
+* Sophisticated Backpacks
+* Sophisticated Backpacks Create Integration
+* Sophisticated Core
+* Text Animator
+* The Bumblezone
+* Tinkers Integrations and Tweaks
 
 ---
 # ROGUE! MAYHEM | v0.14d
@@ -416,13 +581,3 @@
 * TooManyRecipeViewers (TMRV)
 * UniLib
 * Waystones
-
-
-
-
-
-
-
-
-
-

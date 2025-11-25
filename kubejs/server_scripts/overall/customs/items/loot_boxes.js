@@ -34,6 +34,8 @@ const foodChestSound = [
 	'aether:block.chest_mimic.open'
 ];
 
+const BOX_ITEM_COOLDOWN = 10;
+
 ItemEvents.rightClicked(event => {
 	const {	player,	server,	item, level } = event;
 
@@ -51,7 +53,7 @@ ItemEvents.rightClicked(event => {
 		let particles = box.particles ?? false;
 		let lootPath = `rogue:suprise_boxes/${boxName}`;
 
-		addItemCooldown(player, boxItem, 20);
+		addItemCooldown(player, boxItem, BOX_ITEM_COOLDOWN);
 
 		if (box.special_event) {
 			if (boxName === 'glitched') {
@@ -60,37 +62,11 @@ ItemEvents.rightClicked(event => {
 				if (chance < 0.91) {					
 					spawnLoot(server, player, level, lootPath, calcLootAmountFromLuck(player));
 				} else if (chance < 0.94) {
-					player.tell('8%')
-					//server.runCommandSilent(`execute as ${player.username} in ${level.dimension} run open_gateway ${player.username} ${randomize(allGateways)}`);
+					server.runCommandSilent(`execute as ${player.username} in ${level.dimension} run open_gateway ${player.username} ${randomize(allGateways)}`);
 				} else if (chance < 0.97) {
 					addPlayerMaxCoef(player, 2);
-					player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
-						.append(Text.of('[Personal Max Coefficient] ').color(COLOR_ROGUE))
-						.append(Text.of('§a+2§f'))
-					]);
-					player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
-						.append(Text.of('[Personal Max Coefficient] ').color(COLOR_ROGUE))
-						.append(Text.of('Current: '))
-						.append(Text.of(BASE_MAX_COEF + player.persistentData.player_max_coef).gold())
-						.append(Text.of(' (Max: '))
-						.append(Text.of(ABSOLUTE_MAX_COEF).gold())
-						.append(Text.of(')'))
-					]);
-				} else {
+				} else {					
 					addPlayerExtraCoef(player, 2);
-					player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
-						.append(Text.of('[Personal Extra Coefficient] ').color(COLOR_ROGUE))
-						.append(Text.of('§a+2§f'))
-						]);
-
-					player.tell([Text.of('\uE729 ').font("symbols_n_stuff:symbols")
-						.append(Text.of('[Personal Extra Coefficient] ').color(COLOR_ROGUE))
-						.append(Text.of('Current: '))
-						.append(Text.of('+'+player.persistentData.player_extra_coef.toFixed(0)).gold())
-						.append(Text.of(' (Max: '))
-						.append(Text.of(+ABSOLUTE_MAX_EXTRA_COEF).gold())
-						.append(Text.of(')'))
-					]);
 				}
 			}
 		} else {
@@ -102,7 +78,7 @@ ItemEvents.rightClicked(event => {
 	}
 
 	if (item.id === 'kubejs:gluttonous_chest') {
-		addItemCooldown(player, 'kubejs:gluttonous_chest', 20);
+		addItemCooldown(player, 'kubejs:gluttonous_chest', BOX_ITEM_COOLDOWN);
 		playEffects(server, player, randomize(foodChestSound), false);
 		spawnLoot(server, player, level, 'rogue:chests/loot/food', calcLootAmountFromLuck(player));
 		if (!player.isCreative()) player.damageHeldItem(event.hand, 1);

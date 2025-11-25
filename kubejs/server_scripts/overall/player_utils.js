@@ -2,12 +2,14 @@
 
 const $TeamsApi = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI");
 
-const COEF_TOLERANCE = 1.67;
+const COEF_TOLERANCE = 1.33;
+const COEF_DIVISOR = 9;
 
 const BASE_MAX_COEF = 20;
 
 const ABSOLUTE_MAX_EXTRA_COEF = 20;
 const ABSOLUTE_MAX_COEF = 50;
+
 const ABSOLUTE_MAX_ABILITY_CD = 0.95;
 const ABSOLUTE_MAX_PET_CD = 0.95;
 
@@ -30,8 +32,8 @@ const Teams = {
 // COEF MODIFIERS
 function getMaxPlayerCoef(player) {
 	if (!player) return 0;
-	const playerMax = player.persistentData?.player_max_coef ?? 0;
-	return Math.min(BASE_MAX_COEF + playerMax, ABSOLUTE_MAX_COEF);
+	const extraMax = player.persistentData?.player_max_coef ?? 0;
+	return Math.min(BASE_MAX_COEF + extraMax, ABSOLUTE_MAX_COEF);
 };
 
 function getPlayerCoef(player) {
@@ -42,19 +44,38 @@ function getPlayerCoef(player) {
 }
 
 function addPlayerExtraCoef(player, amount) {
-    if (!player.persistentData) player.persistentData = {};
-
-    const p_extra_coef = player.persistentData.player_extra_coef ?? 0;
-    const newExtra = Math.min(p_extra_coef + amount, ABSOLUTE_MAX_EXTRA_COEF, getMaxPlayerCoef(player) - (player.persistentData.coef ?? 1));
-    player.persistentData.player_extra_coef = Math.max(0, newExtra);
+	if (!player.persistentData) player.persistentData = {};
+    const currentExtraCoef = player.persistentData.player_extra_coef ?? 0;
+	const addExtraCoef = Math.min(currentExtraCoef + amount, ABSOLUTE_MAX_EXTRA_COEF);
+	player.tell([Text.of('[Personal Extra Coefficient] ').color(COLOR_ROGUE)
+		.append(Text.of('+' + amount).green())
+	]);
+	player.tell([Text.of('[Personal Extra Coefficient] ').color(COLOR_ROGUE)
+		.append(Text.of('Current: ').white())
+		.append(Text.of(addExtraCoef).gold())
+		.append(Text.of(' [Max: ').white())
+		.append(Text.of(+ ABSOLUTE_MAX_EXTRA_COEF).gold())
+		.append(Text.of(']').white())
+	]);
+    player.persistentData.player_extra_coef = addExtraCoef;
 }
-
 
 function addPlayerMaxCoef(player, amount) {
 	if (!player.persistentData) player.persistentData = {};
-
-	const p_max_coef = player.persistentData.player_max_coef ?? 0;
-	player.persistentData.player_max_coef = Math.min(p_max_coef + amount, ABSOLUTE_MAX_COEF);
+	const currentMaxCoef = player.persistentData.player_max_coef ?? 0;
+	const addMaxCoef = Math.min(currentMaxCoef + amount, (ABSOLUTE_MAX_COEF - BASE_MAX_COEF));
+	const actualMaxCoef = BASE_MAX_COEF + addMaxCoef;
+	player.tell([Text.of('[Personal Max Coefficient] ').color(COLOR_ROGUE)
+		.append(Text.of('+' + amount).green())
+	]);
+	player.tell([Text.of('[Personal Max Coefficient] ').color(COLOR_ROGUE)
+		.append(Text.of('Current: ').white())
+		.append(Text.of(actualMaxCoef).gold())
+		.append(Text.of(' [Max: ').white())
+		.append(Text.of(ABSOLUTE_MAX_COEF).gold())
+		.append(Text.of(']').white())
+	]);
+	player.persistentData.player_max_coef = addMaxCoef;
 }
 
 // COOLDOWNS MODIFIERS
