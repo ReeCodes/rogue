@@ -26,6 +26,7 @@
 
 ### Mods removed ( -- )
 * Mystic's Monstrosity Fixes
+* Trials Chambers Backport (has been removed by the author)
 
 ### Mods updated ( ~~ )
 * [EMF] Entity Model Features [Fabric & Forge]
@@ -583,3 +584,4 @@
 * UniLib
 
 * Waystones
+
