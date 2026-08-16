@@ -1,21 +1,6 @@
-function romanize(num) {
-	let lookup = {
-			XL: 40,
-			X: 10,
-			IX: 9,
-			V: 5,
-			IV: 4,
-			I: 1
-		},
-		roman = '',
-		i;
-	for (i in lookup) {
-		while (num >= lookup[i]) {
-			roman += i;
-			num -= lookup[i];
-		}
-	}
-	return roman;
+function makeNumeral(level) {
+	level = Math.max(0, Math.min(level, 9));
+	return `§f${String.fromCodePoint(0xDB80, 0xDE28 + level)}§r`;
 }
 
 function toTitleCase(string) {
@@ -239,7 +224,7 @@ ItemEvents.tooltip(tooltip => {
 					text.add(1, [Text.of('\uE811')])
 					for (let j = 0; j < b.effects.length; j++) {
 						let effects = b.effects[j]
-						text.add(2 + j, [Text.of(`§e${toTitleCase(effects.effect.split(':')[1].replace(/_/g, ' '))} §6${romanize(effects.amp+1)}`)])
+						text.add(2 + j, [Text.of(`§e${toTitleCase(effects.effect.split(':')[1].replace(/_/g, ' '))} §6${makeNumeral(effects.amp+1)}`)])
 					}
 				}
 			})

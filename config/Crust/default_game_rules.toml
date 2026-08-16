@@ -15,6 +15,9 @@ config_enabled = false
 # Category: player
 # Default game rule settings for the 'player' category.
 
+  player.companion.always_teleport_horses = false
+  player.companion.immortal_pets = false
+  player.companion.pet_friendly_fire = true
   player.disable_elytra_movement_check = false
   player.do_immediate_respawn = false
   player.do_limited_crafting = false
@@ -22,10 +25,10 @@ config_enabled = false
   player.fall_damage = true
   player.fire_damage = true
   player.freeze_damage = true
-  player.jaws_damage_limit = 666
   player.keep_inventory = false
   player.natural_regeneration = true
   player.players_sleeping_percentage = 100
+  player.slush_source_conversion = false
   player.spawn_radius = 10
   player.spectators_generate_chunks = true
 
@@ -85,7 +88,7 @@ config_enabled = false
   chat.announce_advancements = true
   chat.command_block_output = true
   chat.log_admin_commands = true
-  chat.puffish_skills:announce_new_points = true
+  chat.puffish_skills.announce_new_points = true
   chat.send_command_feedback = true
   chat.show_death_messages = true
 
@@ -93,7 +96,7 @@ config_enabled = false
 # Category: misc
 # Default game rule settings for the 'misc' category.
 
-  misc.brandonscore:allow_sign_editing = false
+  misc.brandonscore.allow_sign_editing = false
   misc.command_modification_block_limit = 32768
   misc.global_sound_events = true
   misc.max_command_chain_length = 65536

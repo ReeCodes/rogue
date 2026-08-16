@@ -89,27 +89,28 @@
   # Killing villagers already gives major bad reputation in vanilla, and cannot be overridden here.
   # Note that killing creatures will only affect 'minor negative' or 'minor positive' reputation, which both have an
   #   upper limit of 200.
-  # <Entity List> Format: [ "namespace:entity_type value1 value2 ...", ... ], Default: [ "minecraft:cat -20.0",
-  #   "minecraft:cow -5.0", "minecraft:sheep -5.0", "minecraft:pig -5.0", "minecraft:chicken -3.0", "minecraft:horse -
-  #   15.0", "minecraft:iron_golem -40.0", "minecraft:wandering_trader -40.0", "minecraft:zombie 4.0", ... ]
-  #    Range for Values: Any Value
+  # <Entity Map> Format: [ "key_1 value_1", "key_2 exclude", "key_3 value_3", ... ]
+  # Key Patterns: "~namespace:path", "namespace:path", "namespace:partial_path*", "#namespace:tag_path"
+  # Value Format: <Integer (Any Value)>
+  # Default: [ "minecraft:cat -20", "minecraft:cow -5", "minecraft:sheep -5", "minecraft:pig -5", "minecraft:chicken -
+  #   3", "minecraft:horse -20", "minecraft:iron_golem -50", "minecraft:wandering_trader -40", "minecraft:vex 1", ... ]
   reputation.reputation_changing_creatures = [
-    "minecraft:cat -20.0",
-    "minecraft:cow -5.0",
-    "minecraft:sheep -5.0",
-    "minecraft:pig -5.0",
-    "minecraft:chicken -3.0",
-    "minecraft:horse -15.0",
-    "minecraft:iron_golem -40.0",
-    "minecraft:wandering_trader -40.0",
-    "minecraft:zombie 4.0",
-    "minecraft:skeleton 3.0",
-    "minecraft:creeper 5.0",
-    "minecraft:enderman 2.0",
-    "minecraft:spider 2.0",
-    "minecraft:slime 1.0",
-    "minecraft:vex 1.0",
-    "#minecraft:raiders 15.0"
+    "minecraft:cat -20",
+    "minecraft:cow -5",
+    "minecraft:sheep -5",
+    "minecraft:pig -5",
+    "minecraft:chicken -3",
+    "minecraft:horse -15",
+    "minecraft:iron_golem -40",
+    "minecraft:wandering_trader -40",
+    "minecraft:zombie 4",
+    "minecraft:skeleton 3",
+    "minecraft:creeper 5",
+    "minecraft:enderman 2",
+    "minecraft:spider 2",
+    "minecraft:slime 1",
+    "minecraft:vex 1",
+    "#minecraft:raiders 15"
   ]
   # If a player's reputation is greater than or equal to this value with a villager, the observing villager will not
   #   be bothered if the player kills a creature in the village that would otherwise give bad reputation.

@@ -78,9 +78,9 @@ ServerEvents.highPriorityData(event => {
                 { block: "minecraft:deepslate", oreBlock: "minecraft:deepslate_iron_ore" }
             ]),
             placeConfig: {
-                rarity: 16,
+                rarity: 12,
 				shape: "minecraft:trapezoid",
-                maxRange: 24,
+                maxRange: 48,
                 minRange: -64
             }
         },
@@ -96,10 +96,10 @@ ServerEvents.highPriorityData(event => {
                 { tag: "minecraft:deepslate_ore_replaceables", oreBlock: "embers:deepslate_lead_ore" }
             ]),
             placeConfig: {
-                rarity: 18,
+                rarity: 13,
 				shape: "minecraft:trapezoid",
                 maxRange: 64,
-                minRange: -28
+                minRange: -48
             }
         },
         "decaying": {
@@ -117,7 +117,7 @@ ServerEvents.highPriorityData(event => {
             ]),
             placeConfig: {
                 rarity: 16,
-				shape: "minecraft:very_biased_to_bottom",
+				shape: "minecraft:biased_to_bottom",
                 maxRange: 10,
                 minRange: -58
             }
@@ -132,7 +132,7 @@ ServerEvents.highPriorityData(event => {
             ]),
             placeConfig: {
                 rarity: 7,
-				shape: "minecraft:very_biased_to_bottom",
+				shape: "minecraft:biased_to_bottom",
                 maxRange: 20,
                 minRange: -16
             }
@@ -149,10 +149,10 @@ ServerEvents.highPriorityData(event => {
                 { tag: "minecraft:deepslate_ore_replaceables", oreBlock: "thermal:deepslate_tin_ore" }
             ]),
             placeConfig: {
-                rarity: 9,
-				shape: "minecraft:biased_to_bottom",
+                rarity: 7,
+				shape: "minecraft:uniform",
                 maxRange: 100,
-                minRange: -10
+                minRange: -30
             }
         },
         "starfall": {
@@ -166,7 +166,6 @@ ServerEvents.highPriorityData(event => {
                 { block: "minecraft:deepslate", probability: 0.09, oreBlock: "farlanders:deepslate_endumium_ore" },
                 { block: "minecraft:deepslate", probability: 0.13, oreBlock: "minecraft:deepslate_diamond_ore" },
                 { block: "minecraft:deepslate", probability: 0.24, oreBlock: "evilcraft:dark_ore_deepslate" },
-                { block: "minecraft:deepslate", probability: 0.16, oreBlock: "caverns_and_chasms:deepslate_spinel_ore" },
                 { block: "minecraft:deepslate", probability: 0.15, oreBlock: "draconicevolution:deepslate_draconium_ore" }
             ]),
             placeConfig: {
@@ -188,7 +187,6 @@ ServerEvents.highPriorityData(event => {
                 { block: "minecraft:deepslate", probability: 0.19, oreBlock: "farlanders:deepslate_endumium_ore" },
                 { block: "minecraft:deepslate", probability: 0.23, oreBlock: "minecraft:deepslate_diamond_ore" },
                 { block: "minecraft:deepslate", probability: 0.34, oreBlock: "evilcraft:dark_ore_deepslate" },
-                { block: "minecraft:deepslate", probability: 0.26, oreBlock: "caverns_and_chasms:deepslate_spinel_ore" },
                 { block: "minecraft:deepslate", probability: 0.25, oreBlock: "draconicevolution:deepslate_draconium_ore" }
             ]),
             placeConfig: {

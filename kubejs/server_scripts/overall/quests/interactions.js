@@ -1,12 +1,15 @@
 global.EntityMount = (event) => {
-	let mounter = event.entityMounting;
-	let mountedEntity = event.entityBeingMounted;
-	let level = event.level;
+	const { entityBeingMounted, entityMounting, level } = event
+	if (isFakePlayer(entityMounting)) return;
 	
 	// MOUNTING
 	function mountQuest(entity, qID) {
-		if (mountedEntity.type == entity) {
-			simpleQuestComplete(mounter, qID);
+		let matched = (entity instanceof RegExp)
+			? entity.test(entityBeingMounted.type)
+			: entityBeingMounted.type === entity;
+		
+		if (matched) {
+			simpleQuestComplete(entityMounting, qID);
 		}
 	}
 	
@@ -14,18 +17,26 @@ global.EntityMount = (event) => {
 	mountQuest('alexsmobs:komodo_dragon', '63D1332EF0DDB4F6');
 	mountQuest('alexsmobs:elephant', '42351A136C064897');
 	mountQuest('alexscaves:atlatitan', '35C378EF9413F586');
+	mountQuest('alexsmobs:cosmaw', '6ABF4A5642240DC5');
 	
 	//ALEXS CAVES (MOUNT)
 	mountQuest('alexscaves:subterranodon', '117D40394B0BAF34');
 	mountQuest('alexscaves:tremorzilla', '20AC35886319AD3B');
 	mountQuest('alexscaves:submarine', '3CB28E4CB01B7919');
-	mountQuest('alexsmobs:cosmaw', '6ABF4A5642240DC5');
 	
-	//MISC
+	//MACHINES
+	mountQuest(entityRegex(['immersive_aircraft:.*']), '5308268336774F96');
+	
 	mountQuest('immersive_machinery:tunnel_digger', '4CBC79147F3A341C');
 	mountQuest('immersive_machinery:copperfin', '70717AC6E96FBAF2');
-	mountQuest('immersive_aircraft', '6FC91C2B0505EBD4');
 	mountQuest('immersive_aircraft:biplane', '219AD5F2D044C067');
+	mountQuest('immersive_aircraft:gyrodyne', '395AB011A8BB0F88');
+	mountQuest('immersive_aircraft:quadrocopter', '630C9DF2B54627D0');
+	mountQuest('immersive_aircraft:airship', '5AC62ADB0AFDF6C4');
+	mountQuest('immersive_aircraft:cargo_airship', '7ED15EBE93E65859');
+	mountQuest('immersive_aircraft:warship', '55FD2AD949D436B1');
+	mountQuest('immersive_aircraft:bamboo_hopper', '5966779569D94092');
+	
 	mountQuest('man_of_many_planes:economy_plane', '5966779569D94092');
 	mountQuest('man_of_many_planes:scarlet_biplane', '5966779569D94092');
 	mountQuest('automobility:automobile', '1A29673838D3EB79');
@@ -37,7 +48,8 @@ CommonAddedEvents.entityTame(event => {
 	
 	// TAMING
 	function tameQuest(entity, qID) {
-		if (tamedEntity.type == entity) {
+		if (hasCompletedQuest(player, qID)) return;
+		if (tamedEntity.getType() == entity) {
 			simpleQuestComplete(player, qID);
 		}
 	}
@@ -53,6 +65,7 @@ global.BabyEntitySpawn = (event) => {
 	
 	// BREED
 	function breedQuest(entity, qID) {
+		if (hasCompletedQuest(player, qID)) return;
 		if (child.type == entity && isTamedBy(child, player).tamed) {
 			simpleQuestComplete(player, qID);
 		}
@@ -65,14 +78,17 @@ ItemEvents.entityInteracted(event => {
 	const { player, target, server, item, hand } = event;
 	
 	function specialTameQuest(entity, qID, extraTicks) {
-		extraTicks = extraTicks ? extraTicks : 1;
-		if (target.type == entity) {
+		if (hasCompletedQuest(player, qID)) return;
+		if (target.getType() == entity) {
+			extraTicks = extraTicks ? extraTicks : 1;
 			server.scheduleInTicks(extraTicks, () => {
 				if (isTamedBy(target, player).tamed) simpleQuestComplete(player, qID);
 			})
 		}
 	}
 	
+	let targetType = String(target.getType());
+		
 	specialTameQuest('friendsandfoes:glare', '732CC3554429D768');
 	
 	specialTameQuest('minecraft:rabbit', '0CFCCFE827050103');
@@ -101,35 +117,35 @@ ItemEvents.entityInteracted(event => {
 	specialTameQuest('alexscaves:candicorn', '03AF6E0C1BA1EB20');
 
 	//SPECIAL-INTERACTIONS
-	if (target.type == 'whaleborne:hullback' && hasCompletedQuest(player, '0B2397BFB9F65CD5')) {
+	if (target.getType() == 'whaleborne:hullback' && hasCompletedQuest(player, '0B2397BFB9F65CD5')) {
 		simpleQuestComplete(player, '0D8815896B934D9E');
 	}
 	
-	if (target.type == 'minecraft:villager' && target.nbt.VillagerData.profession == "cloudstorage:balloon_salesman") {
+	if (target.getType() == 'minecraft:villager' && target.nbt.VillagerData.profession == "cloudstorage:balloon_salesman") {
 		simpleQuestComplete(player, '40E1D9320F4B18AB');
 	}
 	
-	if (item.id == Item.of('frozenhappyghast:ghast_wand') && target.type == 'minecraft:happy_ghast') {
+	if (item.id == Item.of('frozenhappyghast:ghast_wand') && target.getType() == 'minecraft:happy_ghast') {
 		simpleQuestComplete(player, '1CE07A8BF1D8E8DF');
 	}
 	
-	if (item.id == Item.of('#minecraft:harnesses') && target.type == 'minecraft:happy_ghast') {
+	if (item.id == Item.of('#minecraft:harnesses') && target.getType() == 'minecraft:happy_ghast') {
 		simpleQuestComplete(player, '44AF41FE53DB8FE1');
 	}
 	
-	if (item.id !== Item.of('#minecraft:harnesses') && target.type == 'minecraft:happy_ghast' && target.nbt.ArmorItems[2].id == Item.of('#minecraft:harnesses')) {
+	if (item.id !== Item.of('#minecraft:harnesses') && target.getType() == 'minecraft:happy_ghast' && target.nbt.ArmorItems[2].id == Item.of('#minecraft:harnesses')) {
 		simpleQuestComplete(player, '2CBAD9F73C3773B5');
 	}
 	
-	if (item.id == Item.of('domesticationinnovation:rotten_apple') && target.owner == player && target.type == 'minecraft:horse') {
+	if (item.id == Item.of('domesticationinnovation:rotten_apple') && target.owner == player && target.getType() == 'minecraft:horse') {
 		simpleQuestComplete(player, '30A4AC942AEFD72B');
 	}
 	
-	if (item.id == Item.of('domesticationinnovation:sinister_carrot') && target.owner == player && target.type == 'minecraft:zombie_horse') {
+	if (item.id == Item.of('domesticationinnovation:sinister_carrot') && target.owner == player && target.getType() == 'minecraft:zombie_horse') {
 		simpleQuestComplete(player, '2BBB7DE25D9AC9E6');
 	}
 	
-	if (item.id == Item.of('domesticationinnovation:sinister_carrot') && target.owner == player && target.type == 'minecraft:rabbit') {
+	if (item.id == Item.of('domesticationinnovation:sinister_carrot') && target.owner == player && target.getType() == 'minecraft:rabbit') {
 		simpleQuestComplete(player, '20AACC090EC1C27D');
 	}
 	
@@ -143,35 +159,31 @@ ItemEvents.entityInteracted(event => {
 	}
 	
 	//ALSHANEX
-	if (target.type.includes('alshanex_familiars:') && JSON.stringify(target.nbt.ownerUUID) === JSON.stringify(player.nbt.UUID)) {
+	if (targetType.includes('alshanex_familiars:') && JSON.stringify(target.nbt.ownerUUID) === JSON.stringify(player.nbt.UUID)) {
 		simpleQuestComplete(player, '7628C671DBEB0B5C');
 	}
 	
-	if (target.type.includes('alshanex_familiars:') && JSON.stringify(target.nbt.ownerUUID) === JSON.stringify(player.nbt.UUID) && item.id == Item.of('alshanex_familiars:familiar_tome')) {
-		simpleQuestComplete(player, '2AB92E03C6FBF951');
-	}
-	
 	//ANIMAL DICTIONARY
-	if (target.type.includes('alexsmobs:') && item.id == Item.of('alexsmobs:animal_dictionary')) {
+	if (targetType.includes('alexsmobs:') && item.id == Item.of('alexsmobs:animal_dictionary')) {
 		simpleQuestComplete(player, '3BA790B9D9DD30F6');
 	}
 	
 	//OCCULTISM - IRON COUNTER
-	if (target.type == 'occultism:blacksmith_familiar') {
+	if (target.getType() == 'occultism:blacksmith_familiar') {
 		if (item.hasTag('forge:ingots/iron') || item.hasTag('forge:storage_blocks/iron')) {
 			if (target.nbt.ironCount >= 1) simpleQuestComplete(player, '321D44AFD3D5D73A');
 		}
 	}
 	
 	//CHAMELEON-TRUSTED
-	if (target.type == 'cold_sweat:chameleon') {
+	if (target.getType() == 'cold_sweat:chameleon') {
 		server.scheduleInTicks(20, () => {
 			if (target.isPlayerTrusted(player.uuid)) simpleQuestComplete(player, '7240042625E84AD9');
 		})
 	}
 	
 	//ALEXS CAVES
-	if (target.type == 'alexscaves:submarine') {
+	if (target.getType() == 'alexscaves:submarine') {
 		if (item.hasTag('minecraft:axes') || item.hasTag('forge:tools/axes')) {
 			if (target.nbt.Oxidization >= 1) simpleQuestComplete(player, '016E87C448173B5B');
 		}
@@ -183,30 +195,30 @@ ItemEvents.entityInteracted(event => {
 		}
 	}
 	
-	if (target.type == 'alexscaves:sea_pig' && item.hasTag('alexscaves:sea_pig_digests')) {
+	if (target.getType() == 'alexscaves:sea_pig' && item.hasTag('alexscaves:sea_pig_digests')) {
 		simpleQuestComplete(player, '40FF39CFA43FE8B4');
 	}
 	
-	if (target.type == 'alexscaves:atlatitan' && item.id == Item.of('alexscaves:serene_salad')) {
+	if (target.getType() == 'alexscaves:atlatitan' && item.id == Item.of('alexscaves:serene_salad')) {
 		server.scheduleInTicks(3, () => {
 			if (target.nbt.RideableTime >= 1) simpleQuestComplete(player, '23A40F31301BBF70');
 		})
 	}
 	
-	if (target.type == 'alexscaves:gummy_bear' && item.id == Item.of('minecraft:potion')) {
+	if (target.getType() == 'alexscaves:gummy_bear' && item.id == Item.of('minecraft:potion')) {
 		server.scheduleInTicks(1, () => {
 			if (target.nbt.SleepTime >= 1) simpleQuestComplete(player, '447B979989707FDC');
 		})
 	}
 	
 	//ALEXS MOBS	
-	if (target.type == 'alexsmobs:flutter' && target.owner == player) {
+	if (target.getType() == 'alexsmobs:flutter' && target.owner == player) {
 		server.scheduleInTicks(1, () => {
 			if (target.nbt.Potted == 1) simpleQuestComplete(player, '7C5E7C14BF452286');
 		})
 	}
 	
-	if (target.type == 'alexsmobs:mimic_octopus' && target.owner == player) {
+	if (target.getType() == 'alexsmobs:mimic_octopus' && target.owner == player) {
 		server.scheduleInTicks(1, () => {
 			if (target.nbt.Upgraded == 1) {
 				simpleQuestComplete(player, '4C5704F62767A12D');
@@ -224,17 +236,17 @@ ItemEvents.entityInteracted(event => {
 		})
 	}
 	
-	if (target.type == 'alexsmobs:kangaroo' && target.owner == player) {
+	if (target.getType() == 'alexsmobs:kangaroo' && target.owner == player) {
 		if (target.nbt.HelmetInvIndex != -1 && target.nbt.ChestInvIndex != -1 && target.nbt.SwordInvIndex != -1) {
 			simpleQuestComplete(player, '21FBCCFB52C71B38');
 		}
 	}
 	
-	if (target.type == 'alexsmobs:mantis_shrimp' && target.owner == player && target.nbt?.Command == 2) {
+	if (target.getType() == 'alexsmobs:mantis_shrimp' && target.owner == player && target.nbt?.Command == 2) {
 		if (!!target.nbt?.HandItems[0]?.id) simpleQuestComplete(player, '7D4480E4D601F185');
 	}
 	
-	if (target.type == 'alexsmobs:elephant' && target.owner == player) {
+	if (target.getType() == 'alexsmobs:elephant' && target.owner == player) {
 		server.scheduleInTicks(1, () => {
 			if (target.nbt.Tusked == 0) {
 				simpleQuestComplete(player, '313936FC178EBF54');
@@ -248,7 +260,7 @@ ItemEvents.entityInteracted(event => {
 		})
 	}
 
-	if (target.type == 'alexsmobs:bald_eagle' && target.owner == player) {
+	if (target.getType() == 'alexsmobs:bald_eagle' && target.owner == player) {
 		server.scheduleInTicks(1, () => {
 			if (player.nbt.Passengers && player.nbt.Passengers.some(p => p.id == 'alexsmobs:bald_eagle')) {
 				simpleQuestComplete(player, '5580F2944EFD5AC8');
@@ -256,7 +268,7 @@ ItemEvents.entityInteracted(event => {
 		})
 	}
 	
-	if (target.type == 'alexsmobs:sugar_glider' && target.owner == player) {
+	if (target.getType() == 'alexsmobs:sugar_glider' && target.owner == player) {
 		server.scheduleInTicks(1, () => {
 			if (player.nbt.Passengers && player.nbt.Passengers.some(p => p.id == 'alexsmobs:sugar_glider')) {
 				simpleQuestComplete(player, '7D081DFA8574775D');
@@ -264,7 +276,7 @@ ItemEvents.entityInteracted(event => {
 		})
 	}
 	
-	if (target.type == 'alexsmobs:capuchin_monkey' && target.owner == player) {
+	if (target.getType() == 'alexsmobs:capuchin_monkey' && target.owner == player) {
 		if (item.id == Item.of('alexsmobs:ancient_dart')) {
 			server.scheduleInTicks(1, () => {
 				if (target.nbt.HasDart == 1) simpleQuestComplete(player, '08AAAD7C68DBDFEE');
@@ -277,7 +289,7 @@ ItemEvents.entityInteracted(event => {
 		})
 	}
 	
-	if (target.type == 'alexscaves:candicorn' && item.id == Item.of('minecraft:saddle')) {
+	if (target.getType() == 'alexscaves:candicorn' && item.id == Item.of('minecraft:saddle')) {
 		server.scheduleInTicks(1, () => {
 			if (target.nbt.Saddled == 1) simpleQuestComplete(player, '7F7D198CD0C38A85');
 		})

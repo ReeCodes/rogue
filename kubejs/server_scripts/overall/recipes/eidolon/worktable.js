@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
 				tag: 'forge:ingots/soularium'
 			},
 			c: {
-				item: 'galosphere:silver_upgrade_smithing_template'
+				item: 'deeperdarker:warden_upgrade_smithing_template'
 			},
 			d: {
 				tag: 'forge:ingots/nether_brick'

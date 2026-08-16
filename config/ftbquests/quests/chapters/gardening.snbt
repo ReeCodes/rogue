@@ -16,6 +16,7 @@
 	quests: [
 		{
 			dependencies: ["07A923A7FB5D900C"]
+			entity_vis_size: 1.0f
 			id: "1EB9E49F244DB32C"
 			rewards: [
 				{
@@ -40,6 +41,7 @@
 			y: -5.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "568F600D01CABBC2"
 			rewards: [
 				{
@@ -64,6 +66,7 @@
 			y: -4.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "228B16260C1FED7C"
 			rewards: [
 				{
@@ -87,6 +90,7 @@
 			y: -5.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "farmersdelight:cooking_pot"
 			id: "744D100174790CBB"
 			rewards: [
@@ -188,6 +192,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -261,6 +266,7 @@
 			y: -4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "farmersdelight:cutting_board"
 			id: "63A625744D70090D"
 			rewards: [
@@ -318,6 +324,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "farmersdelight:rich_soil"
 			id: "53041BF6C3A9A93E"
 			rewards: [
@@ -396,6 +403,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1879B6B2C0F58D8E"
 			rewards: [
 				{
@@ -430,6 +438,7 @@
 				"1879B6B2C0F58D8E"
 				"000000000000000E"
 			]
+			entity_vis_size: 1.0f
 			id: "5B09D29E7BF6D3D9"
 			rewards: [
 				{
@@ -461,6 +470,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "33106E35E67DBE47"
 			rewards: [
 				{
@@ -485,6 +495,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "cookingforblockheads:white_kitchen_floor"
 			id: "560497C684D21809"
 			rewards: [
@@ -613,6 +624,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4B3867DA8E228B85"
 			rewards: [
 				{
@@ -678,6 +690,7 @@
 			y: -3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5134F1C58BF0CBAD"
 			rewards: [
 				{
@@ -715,6 +728,7 @@
 			y: -4.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "sliceanddice:sprinkler"
 			id: "5853E84BBDC3F55B"
 			rewards: [
@@ -749,6 +763,7 @@
 			y: -3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "some_assembly_required:sandwiching_station"
 			id: "45783CB7CCF24397"
 			rewards: [
@@ -790,6 +805,7 @@
 				"5A752B1202A33696"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "69BBA78BF8537218"
 			rewards: [
 				{

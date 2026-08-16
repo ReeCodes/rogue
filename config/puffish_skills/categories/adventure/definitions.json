@@ -1,7 +1,7 @@
 {
 	"reset_adventure": {
 		"title": [{"text":"§f\uE83D","font":"symbols_n_stuff:symbols"}],
-		"description": [{"text":"\n§9Resets skill tree, abilities (also [Brawler] abilties) and refunds points."}],
+		"description": [{"text":"\n§9Resets Skill Tree, Abilities and refunds points."}],
 		"size": 1.25,
 		"cost": 0,
 		"required_spent_points": 1,
@@ -1094,9 +1094,30 @@
 			}
 		]
 	},
+	"apothic_enhancer": {
+		"title": [{"text":"Apothic Enhancer","color":"#8CDEA2"}],
+		"description": [{"text":"§f\uE801\n\n§a+50%§f Apothic Enhancing Chance"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"extra_description": "\n§6Apothic Enhancing§f: Grants the ability to automatically §benhance a crafted item§f with an affix equal to the chance.\n\nAs this chance increases, §bhigher affix rarities§f become available, eventually guaranteeing the highest rarity up to §a600%§f (§bAncient Rarity§f) or higher.",
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture":  "tconstruct:textures/gui/modifiers/melee/fiery.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:apothic_crafting",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
 	"ability_graceful": {
 		"title": "§a+1 Level§f [§6Graceful§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn kill, gain Grace for §a(30s × Lv)§f.\n§9Cooldown: (30s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn kill, gain Grace for §a(30s × Lv)§f.\n§9Cooldown: (30s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§6Grace§f: Immunity against temperature-based damage.",
 		"size": 2.0,
 		"frame": {
@@ -1123,7 +1144,7 @@
 	},
 	"ability_quenched": {
 		"title": "§a+1 Level§f [§6Quenched§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn kill, restore §a(1 §f\uE813§a × Lv)§f Thirst.\n\nWhile §bsated§f, double the effect.\n§9Cooldown: 3s§f","font":"minecraft:default"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn kill, restore §a(1 §f\uE813§a × Lv)§f Thirst.\n\nWhile §bsated§f, double the effect.\n§9Cooldown: 3s§f","font":"minecraft:default"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",

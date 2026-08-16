@@ -71,10 +71,16 @@
 	# ⌄ 
 	"Chameleon Shedding Timings" = [400, 36000, 0.1]
 	#─────────────────────────────────────────────────────────────────────────
-	# If true, chameleons will automatically shed their skin over time
-	# If false, chameleons will only shed when a player interacts with them
+	# If true, chameleons will automatically drop molt when ready to shed
+	# If false, chameleons will only drop molt when a player interacts with them
 	# ⌄ 
 	"Chameleons Shed Automatically" = false
+	#─────────────────────────────────────────────────────────────────────────
+	# The time limit for how long a chameleon can wait to be shed by a player
+	# Has no effect if 'Chameleons Shed Automatically' is enabled
+	# ⌄ 
+	#Range: > 0
+	"Chameleon Interact Time Limit" = 6000
 
 ["Mob Spawning"]
 	#─────────────────────────────────────────────────────────────────────────//v
@@ -92,8 +98,7 @@
 	    ["biomesoplenty:rainforest", 20],
 	    ["biomesoplenty:rocky_rainforest", 15],
 	    ["biomesoplenty:fungal_jungle", 10],
-	    ["biomesoplenty:tropics", 8],
-	    ["biomesoplenty:outback", 2]
+	    ["biomesoplenty:tropics", 8]
 	]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines the biomes that Chameleons can spawn in
@@ -111,7 +116,6 @@
 	    ["minecraft:windswept_gravelly_hills", 4],
 	    ["minecraft:grove", 5],
 	    ["minecraft:stony_peaks", 8],
-	    ["biomesoplenty:boreal_forest", 5],
 	    ["biomesoplenty:jade_cliffs", 4],
 	    ["biomesoplenty:crag", 3]
 	]

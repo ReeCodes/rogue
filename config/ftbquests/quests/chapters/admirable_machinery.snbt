@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "64B536F73A545995"
 			rewards: [
 				{
@@ -34,6 +35,7 @@
 		}
 		{
 			dependencies: ["23736A09E5EEF31C"]
+			entity_vis_size: 1.0f
 			id: "60A3E1607331A729"
 			rewards: [
 				{
@@ -58,6 +60,7 @@
 			y: -11.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "03A8F9FC02486D29"
 			rewards: [
 				{
@@ -116,6 +119,7 @@
 			y: -8.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "immersiveengineering:thermoelectric_generator"
 			id: "7F80D8855E600B48"
 			rewards: [
@@ -196,6 +200,7 @@
 			y: -6.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -239,6 +244,7 @@
 			y: -6.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -290,6 +296,7 @@
 		{
 			dependencies: ["0000000000000699"]
 			dependency_requirement: "all_started"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -320,6 +327,21 @@
 			subtitle: "Coke Fabrication"
 			tasks: [
 				{
+					count: 27L
+					id: "7B725AD41914DF41"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "citadel:fancy_item"
@@ -339,12 +361,6 @@
 					to_observe: "immersiveengineering:coke_oven"
 					type: "observation"
 				}
-				{
-					count: 27L
-					id: "7B725AD41914DF41"
-					item: "immersiveengineering:cokebrick"
-					type: "item"
-				}
 			]
 			title: "&eSegment: &aCoke Oven"
 			x: -3.0d
@@ -352,6 +368,7 @@
 		}
 		{
 			dependencies: ["0000000000000699"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -382,6 +399,21 @@
 			subtitle: "Simply Alloying"
 			tasks: [
 				{
+					count: 8L
+					id: "3E176B0D67CA3923"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "citadel:fancy_item"
@@ -401,12 +433,6 @@
 					to_observe: "immersiveengineering:alloy_smelter"
 					type: "observation"
 				}
-				{
-					count: 8L
-					id: "3E176B0D67CA3923"
-					item: "immersiveengineering:alloybrick"
-					type: "item"
-				}
 			]
 			title: "&eSegment: &aAlloy Kiln"
 			x: 3.0d
@@ -417,6 +443,7 @@
 				"0000000000000699"
 				"4F1AB519E7B23A3F"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0000000000000681"
 			rewards: [
@@ -458,6 +485,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0000000000000699"
 			rewards: [
@@ -488,6 +516,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			hide_dependency_lines: false
 			id: "38CA95685E6442C9"
 			rewards: [
@@ -533,6 +562,7 @@
 		}
 		{
 			dependencies: ["0000000000000699"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -563,6 +593,12 @@
 			subtitle: "Tinker's Techniques"
 			tasks: [
 				{
+					count: 27L
+					id: "58ADB02F68D3AE04"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+				{
 					advancement: "immersiveengineering:main/mb_blastfurnace"
 					criterion: ""
 					icon: {
@@ -582,12 +618,6 @@
 					type: "advancement"
 				}
 				{
-					count: 27L
-					id: "58ADB02F68D3AE04"
-					item: "immersiveengineering:blastbrick"
-					type: "item"
-				}
-				{
 					id: "4F1AB519E7B23A3F"
 					item: "immersiveengineering:ingot_steel"
 					type: "item"
@@ -602,6 +632,7 @@
 				"0000000000000699"
 				"4F1AB519E7B23A3F"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -652,6 +683,15 @@
 					type: "advancement"
 				}
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "citadel:fancy_item"
@@ -681,6 +721,7 @@
 				"0000000000000699"
 				"4F1AB519E7B23A3F"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -745,6 +786,7 @@
 				"0000000000000699"
 				"4F1AB519E7B23A3F"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "691A90F3E4EA4ABA"
 			rewards: [
@@ -787,6 +829,7 @@
 		}
 		{
 			dependencies: ["5C0541B0209B7F45"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -817,6 +860,12 @@
 			subtitle: "Automated Steel"
 			tasks: [
 				{
+					count: 2L
+					id: "42DADA63479C183A"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+				{
 					advancement: "immersiveengineering:main/mb_improvedblastfurnace"
 					criterion: ""
 					icon: {
@@ -835,12 +884,6 @@
 					title: "&eBuild: &rImproved Blast Furnace"
 					type: "advancement"
 				}
-				{
-					count: 2L
-					id: "42DADA63479C183A"
-					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
-					type: "item"
-				}
 			]
 			title: "&eSegment: &aImproved Blast Furnace"
 			x: 0.0d
@@ -851,6 +894,7 @@
 				"0000000000000699"
 				"4F1AB519E7B23A3F"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "63BB47FC26345E9A"
 			rewards: [
@@ -896,6 +940,7 @@
 				"0000000000000699"
 				"4F1AB519E7B23A3F"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -927,6 +972,15 @@
 			subtitle: "Carpenter's Value"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "citadel:fancy_item"
@@ -987,6 +1041,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "0571C720616E30E4"
 			rewards: [
 				{
@@ -1011,6 +1066,7 @@
 			y: 4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "40184DDB4E5D0FBF"
 			rewards: [
 				{
@@ -1036,6 +1092,7 @@
 		}
 		{
 			dependencies: ["0571C720616E30E4"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -1066,6 +1123,15 @@
 			subtitle: "Modifying Timelessly"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "citadel:fancy_item"
@@ -1131,6 +1197,7 @@
 				"4F1AB519E7B23A3F"
 			]
 			description: [""]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -1162,6 +1229,15 @@
 			subtitle: "Rotten Yield"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "citadel:fancy_item"
@@ -1226,6 +1302,7 @@
 				"0000000000000699"
 				"4F1AB519E7B23A3F"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -1257,6 +1334,15 @@
 			subtitle: "Sqashing Into Juice"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "citadel:fancy_item"
@@ -1326,6 +1412,7 @@
 				"76615AE50D214BBC"
 				"09499EB9915324B5"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -1356,6 +1443,15 @@
 			subtitle: "Ethanol Production"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "citadel:fancy_item"
@@ -1416,6 +1512,7 @@
 			y: 9.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "435A5F548069DE79"
 			rewards: [
 				{
@@ -1452,6 +1549,7 @@
 			y: -4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "57BB7691CF50EBBA"
 			rewards: [
 				{
@@ -1475,6 +1573,7 @@
 			y: -11.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "70FEBF392743A0F7"
 			rewards: [
 				{
@@ -1499,6 +1598,7 @@
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "493F9F8EA44E9789"
 			rewards: [
 				{
@@ -1523,6 +1623,7 @@
 			y: -12.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "00C82F97426F30BA"
 			rewards: [
 				{
@@ -1547,6 +1648,7 @@
 			y: -12.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5227E6ED06F6DA43"
 			rewards: [
 				{
@@ -1575,6 +1677,7 @@
 			y: -12.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "0A7D38B4036239C0"
 			rewards: [
 				{
@@ -1599,6 +1702,7 @@
 			y: -12.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6B161002504B573E"
 			rewards: [
 				{
@@ -1627,6 +1731,7 @@
 			y: -12.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "2C5ADDB4E6086610"
 			rewards: [
 				{
@@ -1651,6 +1756,7 @@
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "388541B446B102AE"
 			rewards: [
 				{
@@ -1754,6 +1860,7 @@
 			y: -8.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "439920D0AE4620F2"
 			rewards: [
 				{
@@ -1847,6 +1954,7 @@
 			y: -10.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1DF6286B9BFD4DB4"
 			rewards: [
 				{
@@ -1920,6 +2028,7 @@
 			y: -10.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "50EB16D64E2A6E98"
 			rewards: [
 				{
@@ -1988,6 +2097,7 @@
 			y: -10.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5B403F6EED86A308"
 			rewards: [
 				{

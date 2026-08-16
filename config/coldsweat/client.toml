@@ -1,81 +1,9 @@
 
-[Accessibility]
-	#─────────────────────────────────────────────────────────────────────────
-	# Enables visual distortion effects when the player is too hot or cold
-	# ⌄ 
-	"Distortion Effects" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# Enables high contrast mode for UI elements
-	# ⌄ 
-	"High Contrast" = false
-	#─────────────────────────────────────────────────────────────────────────
-	# Shows a frozen texture over the player's health bar when they are freezing
-	# ⌄ 
-	"Show Frozen Health" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# The opacity of the icy overlay when the player is freezing
-	# Does not affect Vanilla's powder snow overlay
-	# ⌄ 
-	#Range: 0.0 ~ 1.0
-	"Freezing Overlay Opacity" = 1.0
-	#─────────────────────────────────────────────────────────────────────────
-	# The intensity of the shivering effect when the player is too cold
-	# ⌄ 
-	#Range: 0.0 ~ 2.0
-	"Shiver Intensity" = 1.0
-	#─────────────────────────────────────────────────────────────────────────
-	# The opacity of the pulsing red border around the screen when the player is too hot
-	# ⌄ 
-	#Range: 0.0 ~ 1.0
-	"Heatstroke Border Opacity" = 1.0
-	#─────────────────────────────────────────────────────────────────────────
-	# The amount of blur applied to the screen when the player is too hot
-	# ⌄ 
-	#Range: 0.0 ~ 1.0
-	"Heatstroke Blur Strength" = 1.0
-	#─────────────────────────────────────────────────────────────────────────
-	# The amount of camera sway applied when the player is too hot
-	# ⌄ 
-	#Range: 0.0 ~ 2.0
-	"Heatstroke Sway Amount" = 1.0
-	#─────────────────────────────────────────────────────────────────────────
-	# The speed of the camera sway applied when the player is too hot
-	# ⌄ 
-	#Range: 0.0 ~ 2.0
-	"Heatstroke Sway Speed" = 1.0
-
-[Misc]
-	#─────────────────────────────────────────────────────────────────────────
-	# Warns the player about a bug that clears armor insulation when in creative mode
-	# ⌄ 
-	"Enable Creative Mode Warning" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# Displays areas that the Hearth is affecting when the F3 debug menu is open
-	# ⌄ 
-	"Hearth Debug" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# Show the config menu button in the Options menu
-	# ⌄ 
-	"Enable In-Game Config" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# The position (offset) of the config button on the screen
-	# ⌄ 
-	"Config Button Position" = [0, 0]
-	#─────────────────────────────────────────────────────────────────────────
-	# Enables the animated soul spring lamp model
-	# Disable this if there are visual errors like missing textures
-	# ⌄ 
-	"Animated Soulspring Lamp" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# Uses custom player arm posing when holding a soulspring lamp
-	# ⌄ 
-	"Pose Soulspring Lamp" = true
-
 [Preferences]
 	#─────────────────────────────────────────────────────────────────────────
 	# Displays temperature in Celsius instead of Fahrenheit
 	# ⌄ 
-	Celsius = true
+	Celsius = false
 	#─────────────────────────────────────────────────────────────────────────
 	# Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
 	# ⌄ 
@@ -94,6 +22,11 @@
 	#Range: 0 ~ 3
 	"Show Water Effect" = 3
 	#─────────────────────────────────────────────────────────────────────────
+	# The opacity of the water droplets on-screen
+	# ⌄ 
+	#Range: 0.0 ~ 1.0
+	"Water Droplet Opacity" = 0.5
+	#─────────────────────────────────────────────────────────────────────────
 	# The scale of the water droplets on-screen, in scaled "pixels"
 	# ⌄ 
 	"Water Droplet Scale" = [40, 48]
@@ -107,11 +40,6 @@
 	# Can be one of "drink", "pour", or "none"
 	# ⌄ 
 	"Waterskin Secondary Action" = "drink"
-	#─────────────────────────────────────────────────────────────────────────
-	# The opacity of the water droplets on-screen
-	# ⌄ 
-	#Range: 0.0 ~ 1.0
-	"Water Droplet Opacity" = 0.5
 
 [HUD]
 	#─────────────────────────────────────────────────────────────────────────
@@ -159,6 +87,51 @@
 	# ⌄ 
 	"Show Food Effects" = true
 
+[Accessibility]
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables visual distortion effects when the player is too hot or cold
+	# ⌄ 
+	"Distortion Effects" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables high contrast mode for UI elements
+	# ⌄ 
+	"High Contrast" = false
+	#─────────────────────────────────────────────────────────────────────────
+	# Shows a frozen texture over the player's health bar when they are freezing
+	# ⌄ 
+	"Show Frozen Health" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# The opacity of the icy overlay when the player is freezing
+	# Does not affect Vanilla's powder snow overlay
+	# ⌄ 
+	#Range: 0.0 ~ 1.0
+	"Freezing Overlay Opacity" = 1.0
+	#─────────────────────────────────────────────────────────────────────────
+	# The intensity of the shivering effect when the player is too cold
+	# ⌄ 
+	#Range: 0.0 ~ 2.0
+	"Shiver Intensity" = 1.0
+	#─────────────────────────────────────────────────────────────────────────
+	# The opacity of the pulsing red border around the screen when the player is too hot
+	# ⌄ 
+	#Range: 0.0 ~ 1.0
+	"Heatstroke Border Opacity" = 1.0
+	#─────────────────────────────────────────────────────────────────────────
+	# The amount of blur applied to the screen when the player is too hot
+	# ⌄ 
+	#Range: 0.0 ~ 1.0
+	"Heatstroke Blur Strength" = 1.0
+	#─────────────────────────────────────────────────────────────────────────
+	# The amount of camera sway applied when the player is too hot
+	# ⌄ 
+	#Range: 0.0 ~ 2.0
+	"Heatstroke Sway Amount" = 1.0
+	#─────────────────────────────────────────────────────────────────────────
+	# The speed of the camera sway applied when the player is too hot
+	# ⌄ 
+	#Range: 0.0 ~ 2.0
+	"Heatstroke Sway Speed" = 1.0
+
 [Tooltips]
 	#─────────────────────────────────────────────────────────────────────────
 	# Determines when armor insulation tooltips should show
@@ -178,4 +151,31 @@
 	# Show keybind hints in tooltips, i.e. "Hold [Shift]"
 	# ⌄ 
 	"Enable Hints" = true
+
+[Misc]
+	#─────────────────────────────────────────────────────────────────────────
+	# Show the config menu button in the Options menu
+	# ⌄ 
+	"Enable In-Game Config" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# The position (offset) of the config button on the screen
+	# ⌄ 
+	"Config Button Position" = [0, 0]
+	#─────────────────────────────────────────────────────────────────────────
+	# Warns the player about a bug that clears armor insulation when in creative mode
+	# ⌄ 
+	"Enable Creative Mode Warning" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# Displays areas that the Hearth is affecting when the F3 debug menu is open
+	# ⌄ 
+	"Hearth Debug" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the animated soul spring lamp model
+	# Disable this if there are visual errors like missing textures
+	# ⌄ 
+	"Animated Soulspring Lamp" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# Uses custom player arm posing when holding a soulspring lamp
+	# ⌄ 
+	"Pose Soulspring Lamp" = true
 

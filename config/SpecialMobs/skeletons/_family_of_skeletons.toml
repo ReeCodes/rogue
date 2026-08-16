@@ -26,7 +26,6 @@
   general.family_random_scaling = -1.0
 
   # The chance for skeletons to spawn as special variants.
-  # NOTE: Some environment check types can cause deadlocks on servers currently, so be careful!
   # <Number> Range: 0.0 ~ 1.0, Default: 0.25
   general.special_variant_chance.base = 0.25
   # The chance for skeletons to spawn as special variants when specific environmental conditions are met.
@@ -36,8 +35,9 @@
   #    Range for Values: 0.0 ~ 1.0
   general.special_variant_chance.exceptions = [
     "0.13 world_time < 120000",
-    "0.5 moon_phase full",
-    "0.38 moon_phase full"
+    "0.5 moon_phase full & special_difficulty >= 0.5",
+    "0.38 moon_phase full",
+    "0.38 special_difficulty >= 0.5"
   ]
 
   # The weight of each skeleton species to be chosen as the replacement when skeletons spawn as special variants.
@@ -74,7 +74,7 @@
   ]
   general.weight.gatling.exceptions = []
   general.weight.giant.exceptions = [
-    "300.0",
+    "300.0 biome_tag #forge:is_mountain",
     "300.0 y_from_sea >= 25",
     "150.0 moon_phase new",
     "15.0 y_from_sea < 0"
@@ -83,9 +83,10 @@
   general.weight.ninja.exceptions = []
   general.weight.pirate.exceptions = []
   general.weight.poison.exceptions = [
-    "300.0 biome_category taiga",
-    "300.0 biome_category jungle",
-    "300.0 biome_category forest",
+    "300.0 biome_tag #minecraft:is_taiga",
+    "300.0 biome_tag #minecraft:is_jungle",
+    "300.0 biome_tag #minecraft:is_forest",
+    "300.0 biome_tag #forge:is_swamp",
     "300.0 biome minecraft:crimson_forest",
     "150.0 moon_phase full"
   ]
@@ -117,7 +118,7 @@
   general.weight.weathered.exceptions = [
     "300.0 dimension_property ultrawarm",
     "300.0 dimension_property natural & rainfall = 0.0",
-    "7.5",
+    "7.5 biome_tag #forge:is_water",
     "7.5 rainfall > 0.85",
     "7.5 weather rain & position can_see_sky",
     "150.0 moon_brightness < 0.5"

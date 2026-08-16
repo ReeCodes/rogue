@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: "create:propeller"
 			id: "3AC4DD7DB2F7F10C"
 			rewards: [
@@ -54,9 +55,9 @@
 					type: "item"
 				}
 				{
-					icon: "create:propeller"
-					id: "6FC91C2B0505EBD4"
-					title: "&eFly: &r1st Generation Aircraft"
+					icon: "immersive_aircraft:enhanced_propeller"
+					id: "5308268336774F96"
+					title: "&eOperate: &rAny Aircraft"
 					type: "custom"
 				}
 				{
@@ -77,6 +78,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5C8EEF45B6265E7A"
 			rewards: [
 				{
@@ -130,6 +132,7 @@
 				"288067D1352EC868"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -159,17 +162,26 @@
 			]
 			size: 2.0d
 			subtitle: "Delivery Recruit"
-			tasks: [{
-				id: "6CF3B2EBB3E186A3"
-				item: "immersive_aircraft:airship"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6CF3B2EBB3E186A3"
+					item: "immersive_aircraft:airship"
+					type: "item"
+				}
+				{
+					icon: "immersive_aircraft:airship"
+					id: "5AC62ADB0AFDF6C4"
+					title: "&eOperate: &rAirship"
+					type: "custom"
+				}
+			]
 			title: "&eConstruct: &rSimple Aeronautics"
 			x: 0.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["341CF68652A5A18D"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -200,11 +212,19 @@
 			]
 			size: 2.0d
 			subtitle: "Flying Freight"
-			tasks: [{
-				id: "1571073E1B1D85E5"
-				item: "immersive_aircraft:cargo_airship"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1571073E1B1D85E5"
+					item: "immersive_aircraft:cargo_airship"
+					type: "item"
+				}
+				{
+					icon: "immersive_aircraft:cargo_airship"
+					id: "7ED15EBE93E65859"
+					title: "&eOperate: &rCargo Airship"
+					type: "custom"
+				}
+			]
 			title: "&eConstruct: &rCargo Airship"
 			x: 0.0d
 			y: 12.0d
@@ -215,6 +235,7 @@
 				"3AC4DD7DB2F7F10C"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -239,11 +260,19 @@
 			]
 			size: 2.0d
 			subtitle: "Rotor Lift"
-			tasks: [{
-				id: "4F3DE47CA5C02A61"
-				item: "immersive_aircraft:gyrodyne"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4F3DE47CA5C02A61"
+					item: "immersive_aircraft:gyrodyne"
+					type: "item"
+				}
+				{
+					icon: "immersive_aircraft:gyrodyne"
+					id: "395AB011A8BB0F88"
+					title: "&eOperate: &rGyrodyne"
+					type: "custom"
+				}
+			]
 			title: "&eConstruct: &rGyrodyne"
 			x: -5.0d
 			y: -1.0d
@@ -254,6 +283,7 @@
 				"288067D1352EC868"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -278,18 +308,30 @@
 			]
 			size: 2.0d
 			subtitle: "Drone Physics"
-			tasks: [{
-				id: "74D30BE3208A33CC"
-				item: "immersive_aircraft:quadrocopter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "74D30BE3208A33CC"
+					item: "immersive_aircraft:quadrocopter"
+					type: "item"
+				}
+				{
+					icon: "immersive_aircraft:quadrocopter"
+					id: "630C9DF2B54627D0"
+					title: "&eOperate: &rQuadrocopter"
+					type: "custom"
+				}
+			]
 			title: "&eConstruct: &rQuadrocopter"
 			x: 5.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["3AC4DD7DB2F7F10C"]
+			dependencies: [
+				"3AC4DD7DB2F7F10C"
+				"288067D1352EC868"
+			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -329,7 +371,7 @@
 				{
 					icon: "immersive_aircraft:biplane"
 					id: "219AD5F2D044C067"
-					title: "&eFly: &rWinged Aircraft"
+					title: "&eOperate: &rWinged Aircraft"
 					type: "custom"
 				}
 				{
@@ -355,12 +397,13 @@
 				"1AA081492C194847"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
 				tag: {
 					DisplayEntityType: "man_of_many_planes:scarlet_biplane"
-					DisplayMobScale: 1.0d
+					DisplayMobScale: 0.5d
 				}
 			}
 			id: "27BDF32658F99718"
@@ -400,12 +443,13 @@
 				"1AA081492C194847"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
 				tag: {
 					DisplayEntityType: "man_of_many_planes:economy_plane"
-					DisplayMobScale: 1.0d
+					DisplayMobScale: 0.5d
 				}
 			}
 			id: "27A28D17EFD1908A"
@@ -440,6 +484,7 @@
 			y: -17.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7139BE70B1428B73"
 			rewards: [
 				{
@@ -514,8 +559,10 @@
 			dependencies: [
 				"27BDF32658F99718"
 				"27A28D17EFD1908A"
+				"70463313BEDD1909"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "man_of_many_planes:economy_plane"
 			id: "4BD0848C8CEB691C"
 			rewards: [
@@ -567,10 +614,11 @@
 			]
 			title: "&eFinale: &aFirst Class"
 			x: 0.0d
-			y: -20.0d
+			y: -25.0d
 		}
 		{
 			dependencies: ["7B58C255F8871A56"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -601,11 +649,19 @@
 			]
 			size: 2.0d
 			subtitle: "Flying Horde"
-			tasks: [{
-				id: "1DB3CAC3891787EF"
-				item: "immersive_aircraft:warship"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1DB3CAC3891787EF"
+					item: "immersive_aircraft:warship"
+					type: "item"
+				}
+				{
+					icon: "immersive_aircraft:warship"
+					id: "55FD2AD949D436B1"
+					title: "&eOperate: &rWarship"
+					type: "custom"
+				}
+			]
 			title: "&eConstruct: &rWarship"
 			x: 0.0d
 			y: 21.0d
@@ -615,6 +671,7 @@
 				"3AC4DD7DB2F7F10C"
 				"288067D1352EC868"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -653,6 +710,7 @@
 				"3AC4DD7DB2F7F10C"
 				"288067D1352EC868"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -697,6 +755,7 @@
 				"3AC4DD7DB2F7F10C"
 				"288067D1352EC868"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -764,6 +823,7 @@
 				"3AC4DD7DB2F7F10C"
 				"288067D1352EC868"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -804,6 +864,47 @@
 			]
 			x: -7.0d
 			y: 8.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "immersive_aircraft:bamboo_hopper"
+					DisplayMobScale: 0.5d
+				}
+			}
+			id: "70463313BEDD1909"
+			rewards: [
+				{
+					id: "37BB18882A364977"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					count: 3
+					id: "05240122A5EECEC2"
+					item: "kubejs:mischievous_box"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "412E17F3C0676D8A"
+					item: "kubejs:gear_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Ecological Transporter"
+			tasks: [{
+				id: "79F0BDD6DF26FFF0"
+				item: "immersive_aircraft:bamboo_hopper"
+				type: "item"
+			}]
+			title: "&eConstruct: &rBamboo Hopper"
+			x: 0.0d
+			y: -17.0d
 		}
 	]
 	title: "{quest.overview.base_label.title} Manned"

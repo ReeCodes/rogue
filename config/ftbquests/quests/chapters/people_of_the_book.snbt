@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:worn_notebook"
 			id: "6D544692632B5B3D"
 			rewards: [{
@@ -47,6 +48,7 @@
 				"17408E8BCB27769A"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:scribes_table"
 			id: "7AC2EEEA96D962DB"
 			rewards: [{
@@ -109,6 +111,7 @@
 				"17408E8BCB27769A"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:imbuement_chamber"
 			id: "4F51F7E406EB29E2"
 			rewards: [{

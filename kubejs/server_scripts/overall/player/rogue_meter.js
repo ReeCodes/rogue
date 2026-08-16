@@ -7,8 +7,8 @@ function showMeter(event, player) {
 	let coef = getPlayerCoef(player);
 	let borderWidth = 4;
 	let barWidth = 102 - borderWidth;
-	let max_coef = getMaxPlayerCoef(player);
-	let pWidth = ((coef - 1) / (max_coef - 1)) * barWidth;
+	let maxCoef = getMaxPlayerCoef(player);
+	let pWidth = ((coef - 1) / (maxCoef - 1)) * barWidth;
 	
 	if (player.age % 40 == 0) {
 				
@@ -55,9 +55,9 @@ function showMeter(event, player) {
 						type: 'text',
 						alignX: 'left',
 						alignY: 'bottom',
-						x: 58,
+						x: (barWidth / 2) + 4,
 						y: -22,
-						text: `${coef.toFixed(2)}`,
+						text: `${coef} / ${maxCoef}`,
 						shadow: true,
 						color: '#DBD2E0',
 						scale: 0.65,
@@ -77,6 +77,13 @@ function showMeter(event, player) {
 
 PlayerEvents.tick(event => {
 	const { player } = event;
-	if (!player || player.level.clientSide || !player.persistentData || !player.persistentData.coef || player.age % 15 !== 0) return;
+	
+	if (!player || 
+		player.level.clientSide || 
+		player.getPersistentData().isEmpty() || 
+		!player.getPersistentData().contains('coef') || 
+		player.age % 15 !== 0
+	) return;
+	
 	showMeter(event, player);
 });

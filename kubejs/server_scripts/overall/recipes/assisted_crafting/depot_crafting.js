@@ -5,7 +5,6 @@ function depot_application(event, output, inputInHand, inputOnDepot, hasDurabili
 	if (!hasDurability) hasDurability = false;
 
     let depotItem = block.entityData?.HeldItem?.Item?.id;
-    let depotData = block.entityData;
     let handItem = player.mainHandItem;
 
     if (!depotItem) return;
@@ -19,12 +18,12 @@ function depot_application(event, output, inputInHand, inputOnDepot, hasDurabili
         } else {
             handItem.count--;
         }
-
-        let depotCount = depotData.HeldItem.Item.Count;
+		
+        let depotCount = block.entityData.HeldItem.Item.Count;
         if (depotCount > 1) {
-            server.runCommandSilent(`data modify block ${block.x} ${block.y} ${block.z} HeldItem.Item.Count set value ${depotCount - 1}`);
-        } else {
-            server.runCommandSilent(`data remove block ${block.x} ${block.y} ${block.z} HeldItem`);
+			server.runCommandSilent(`execute in ${player.level.getDimension()} run data modify block ${block.x} ${block.y} ${block.z} HeldItem.Item.Count set value ${depotCount - 1}`);
+		} else {
+			server.runCommandSilent(`execute in ${player.level.getDimension()} run data remove block ${block.x} ${block.y} ${block.z} HeldItem`);
         }
 
         player.give(output);
@@ -35,11 +34,11 @@ function depot_application(event, output, inputInHand, inputOnDepot, hasDurabili
 
 BlockEvents.rightClicked('create:depot', event => {
     let player = event.player;
-    if (!player) return;
+    if (isFakePlayer(player)) return;
 
     for (let recipe of global.assistedCrafting) {
-        let requiredStage = 'ac_' + recipe.tool.split(':')[1];
-        if (player.stages.has(requiredStage)) {
+        let requiredCheck = 'ac_' + recipe.tool.split(':')[1];
+		if (player.getPersistentData().contains(requiredCheck)) {
             depot_application(
                 event,
                 recipe.output,

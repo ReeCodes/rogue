@@ -1,7 +1,7 @@
 {
 	"reset_brawler": {
 		"title": [{"text":"§f\uE83D","font":"symbols_n_stuff:symbols"}],
-		"description": [{"text":"\n§9Resets skill tree, all abilities (also [Explorer] abilties) and refunds points."}],
+		"description": [{"text":"\n§9Resets Skill Tree, Abilities and refunds points."}],
 		"size": 1.25,
 		"cost": 0,
 		"required_spent_points": 1,
@@ -28,7 +28,7 @@
 	},
 	"root_champion": {
 		"title": "§6Class:§f Champion",
-		"description": [{"text":"§a+4§f Health\n§a+20%§f Pet Damage\n§a+2.5%§f Pet Resistance"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§a+4§f Health\n§a+20%§f Pet Damage\n§a+1%§f Tamed Resistance"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§f§oTake up the mantle of a §b§oBeastmaster§f§o, empowering your tamed companions while enduring the brunt of enemy attacks.\n\nYour pets do most of the heavy lifting in battle.",
 		"size": 2.0,
 		"frame": {
@@ -64,7 +64,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "puffish_attributes:tamed_resistance",
-					"value": 0.025,
+					"value": 0.01,
 					"operation": "multiply_base"
 				}
 			}
@@ -72,7 +72,7 @@
 	},
 	"root_rogue": {
 		"title": "§6Class:§f Rogue",
-		"description": [{"text":"§a+8%§f Attack Damage\n§a+8%§f Attack Speed\n§a+5%§f Movement Speed"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§a+8%§f Attack Damage\n§a+2%§f Attack Speed\n§a+5%§f Movement Speed"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§f§oA rather offensive strategist relying heavily on dodging attacks while also being granted agility in every way possible.\n\nKnowing his enemies weak spots, heavy armored mobs are no problem for this class.",
 		"size": 2.0,
 		"frame": {
@@ -92,7 +92,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.attack_speed",
-					"value": 0.08,
+					"value": 0.02,
 					"operation": "multiply_base"
 				}
 			},
@@ -160,7 +160,7 @@
 	},
 	"root_sickle": {
 		"title": "§6Class:§f Sickle",
-		"description": [{"text":"§a+10%§f Crit Damage\n§a+0.25%§f Current HP Damage\n§a+2.5%§f Overheal"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§a+10%§f Crit Damage\n§a+0.25%§f Current HP Damage\n§a+15%§f Overheal"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§f§oA ruthless striker who excels at landing critical hits, dealing damage based on enemy health, and sustaining through overheal.",
 		"size": 2.0,
 		"frame": {
@@ -196,7 +196,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "attributeslib:overheal",
-					"value": 0.025,
+					"value": 0.15,
 					"operation": "multiply_base"
 				}
 			}
@@ -558,7 +558,7 @@
 	},
 	"tamed_resistance": {
 		"title": [{"text":"Protective Plating","color":"#8CDEA2"}],
-		"description": "§a+2.5%§f Tamed Resistance",
+		"description": "§a+0.5%§f Tamed Resistance",
 		"icon": {
 			"type": "item",
 			"data": {
@@ -570,7 +570,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "puffish_attributes:tamed_resistance",
-					"value": 0.025,
+					"value": 0.005,
 					"operation": "multiply_base"
 				}
 			}
@@ -701,7 +701,7 @@
 	},
 	"attack_speed": {
 		"title": [{"text":"Quickstrike","color":"#8CDEA2"}],
-		"description": "§a+1.75%§f Attack Speed",
+		"description": "§a+1%§f Attack Speed",
 		"icon": {
 			"type": "effect",
 			"data": {
@@ -713,7 +713,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.attack_speed",
-					"value": 0.0175,
+					"value": 0.01,
 					"operation": "multiply_base"
 				}
 			}
@@ -818,7 +818,7 @@
 	},
 	"overheal": {
 		"title": [{"text":"Gooey Heart","color":"#8CDEA2"}],
-		"description": "§a+3%§f Overheal",
+		"description": "§a+5%§f Overheal",
 		"icon": {
 			"type": "item",
 			"data": {
@@ -830,7 +830,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "attributeslib:overheal",
-					"value": 0.03,
+					"value": 0.05,
 					"operation": "multiply_base"
 				}
 			}
@@ -1084,7 +1084,7 @@
 	},
 	"big_overheal": {
 		"title": "§6Flavescent Heart",
-		"description": "§a+6%§f Overheal",
+		"description": "§a+15%§f Overheal",
 		"size": 1.5,
 		"icon": {
 			"type": "item",
@@ -1097,7 +1097,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "attributeslib:overheal",
-					"value": 0.06,
+					"value": 0.15,
 					"operation": "multiply_base"
 				}
 			}
@@ -1171,7 +1171,7 @@
 	},
 	"big_attack_damage_quick": {
 		"title": "§6Pointy Rapier",
-		"description": "§f\uE801\n\n§a+9%§f Attack Damage\n§a+2%§f Attack Speed\n§c-2.5%§f Crit Damage",
+		"description": "§f\uE801\n\n§a+9%§f Attack Damage\n§a+1.5%§f Attack Speed\n§c-2.5%§f Crit Damage",
 		"size": 1.5,
 		"icon": {
 			"type": "item",
@@ -1192,7 +1192,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.attack_speed",
-					"value": 0.02,
+					"value": 0.015,
 					"operation": "multiply_base"
 				}
 			},
@@ -1252,7 +1252,7 @@
 	},
 	"big_attack_speed": {
 		"title": "§6Whirlwind",
-		"description": "§f\uE801\n\n§a+5%§f Attack Speed\n§c-2.5%§f Crit Damage",
+		"description": "§f\uE801\n\n§a+3%§f Attack Speed\n§c-2.5%§f Crit Damage",
 		"size": 1.5,
 		"icon": {
 			"type": "item",
@@ -1265,7 +1265,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.attack_speed",
-					"value": 0.05,
+					"value": 0.03,
 					"operation": "multiply_base"
 				}
 			},
@@ -1364,7 +1364,7 @@
 	},
 	"combo_friendship": {
 		"title": "§6Friendship",
-		"description": "§f\uE801\n\n§a+16%§f Tamed Damage\n§a+3%§f Tamed Resistance\n§a-2.5%§f Pet Sync Cooldown",
+		"description": "§f\uE801\n\n§a+16%§f Tamed Damage\n§a+2%§f Tamed Resistance\n§a-2.5%§f Pet Sync Cooldown",
 		"size": 1.5,
 		"icon": {
 			"type": "item",
@@ -1385,7 +1385,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "puffish_attributes:tamed_resistance",
-					"value": 0.03,
+					"value": 0.02,
 					"operation": "multiply_base"
 				}
 			},
@@ -1438,7 +1438,7 @@
 	"combo_pierce": {
 		"title": "§6Caustic Edge",
 		"description": [{"text":"§f\uE801\n\n§a§a+15%§r Melee Resistance Shred\n§a§a+5%§r Armor Pierce\n§a+5%§r Prot Pierce\n§a+5%§f Armor Shred\n§a+5%§f Prot Shred"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
-		"extra_description": "\n§3Pierce§f ignores target's protection points based on §3flat values§f\n\n§3Shred§f ignores target's armor based on §3percentage§f\n\n§3Shred§f is applied before §3Pierce§f",
+		"extra_description": "\n§3Pierce§f ignores target's protection points based on §3flat values§f.\n\n§3Shred§f ignores target's armor based on §3percentage§f.\n\n§3Shred§f is applied before §3Pierce§f.",
 		"size": 1.5,
 		"icon": {
 			"type": "effect",
@@ -1656,7 +1656,7 @@
 	"combo_vigor": {
 		"title": "§6Vigor",
 		"size": 1.5,
-		"description": "§f\uE801\n\n§a+4%§f Movement Speed\n§a+8%§f Attack Speed",
+		"description": "§f\uE801\n\n§a+4%§f Movement Speed\n§a+4%§f Attack Speed",
 		"icon": {
 			"type": "effect",
 			"data": {
@@ -1676,7 +1676,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.attack_speed",
-					"value": 0.08,
+					"value": 0.04,
 					"operation": "multiply_base"
 				}
 			}
@@ -1837,7 +1837,7 @@
 	},
 	"ability_brute_force": {
 		"title": "§a+1 Level§f [§6Brute Force§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fDeal §a+30%§f attack damage.\nOn hit, §a(0.5% × Lv)§f chance to stun yourself.\n\nCannot retrigger during cooldown.\n§9Cooldown: (5s × Lv)§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fDeal §a+30%§f attack damage.\nOn hit, §a(0.5% × Lv)§f chance to stun yourself.\n\nCannot retrigger during cooldown.\n§9Cooldown: (5s × Lv)§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -1871,7 +1871,7 @@
 	},
 	"ability_magic_missile": {
 		"title": "§a+1 Level§f [§6Magic Missile§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn hit, §a(+4% × Lv)§f chance to summon a §bHoming Magic Missile§f dealing §dMagic Damage§f, which seeks out nearby enemies.\n§9Cooldown: 5s§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn hit, §a(+4% × Lv)§f chance to summon a §bHoming Magic Missile§f dealing §dMagic Damage§f, which seeks out nearby enemies.\n§9Cooldown: 5s§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -1897,7 +1897,7 @@
 	},
 	"ability_dark_hail": {
 		"title": "§a+1 Level§f [§6Dark Hail§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn projectile hit, summon a barrage of §a(10 × Lv)§f §bDark Arrows§f dealing §a3§f base damage scaling with your §bCoefficient§f.\n\nWhile at §bfull health§f, deal §adouble damage§f.\n\nIf §bunarmored§f, the barrage focuses on the target; otherwise the arrows rain in a wider spread.\n§9Cooldown: 40s§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fOn projectile hit, summon a barrage of §a(10 × Lv)§f §bDark Arrows§f dealing §a3§f base damage scaling with your §bCoefficient§f.\n\nWhile at §bfull health§f, deal §adouble damage§f.\n\nIf §bunarmored§f, the barrage focuses on the target; otherwise the arrows rain in a wider spread.\n§9Cooldown: 40s§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -1923,7 +1923,7 @@
 	},
 	"ability_warding_impulse": {
 		"title": "§a+1 Level§f [§6Warding Impulse§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fBeing attacked by a mob has a §b33%§f chance to spawn §a(+1 × Lv)§f temporary shield, blocking any amount of damage once.\n\nIf successful the ability goes on cooldown.\n§9Cooldown: 20s§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fBeing attacked by a mob has a §b33%§f chance to spawn §a(+1 × Lv)§f temporary shield, blocking any amount of damage once.\n\nIf successful the ability goes on cooldown.\n§9Cooldown: 30s§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -1949,7 +1949,7 @@
 	},
 	"ability_nimble": {
 		"title": "§a+1 Level§f [§6Nimble: Amped Step§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fPerform a §bCombat Roll§f ["},{"keybind":"keybinds.combatroll.roll","color":"gold"},{"text":"§f] to amp your next strike, dealing §a(+25% × Lv)§f damage\n§9No Cooldown§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fPerform a §bCombat Roll§f ["},{"keybind":"keybinds.combatroll.roll","color":"gold"},{"text":"§f] to amp your next strike, dealing §a(+25% × Lv)§f damage\n§9No Cooldown§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -1975,7 +1975,7 @@
 	},
 	"ability_tracker": {
 		"title": "§a+1 Level§f [§6Tracker§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile at full health, arrows inflict §bGuided§f on hit for §a(15s × Lv)§f\n§9Cooldown: (15s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile at full health, arrows inflict §bGuided§f on hit for §a(15s × Lv)§f\n§9Cooldown: (15s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§6Guided§f: All projectiles home in on the afflicted target.",
 		"size": 2.0,
 		"frame": {
@@ -2000,9 +2000,62 @@
 			}
 		]
 	},
+	"ability_hellborne": {
+		"title": "§a+1 Level§f [§6Hellborne§f]",
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile target is set on "},{"text":"Fire","color":"#fc7703"},{"text":"§f, deal §a(+20% × Lv)§f more damage.\n\nWhile set on "},{"text":"Fire","color":"#fc7703"},{"text":"§f yourself, deal an additional §a+20%§f more damage.\n\nMobs "},{"text":"immune","color":"#9e3cfa"},{"text":"§f to "},{"text":"Fire Damage","color":"#fc7703"},{"text":"§f are not affected.\n§9No Cooldown§f"}],
+		"size": 2.0,
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "rogue:textures/misc/gui/frame_ability_unlocked.png",
+				"available": "rogue:textures/misc/gui/frame_ability.png"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:burn_hex"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_hellborne"
+				}
+			}
+		]
+	},
+	"ability_afflicted": {
+		"title": "§a+1 Level§f [§6Afflicted§f]",
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fFor each "},{"text":"Potion Effect","color":"#91037c"},{"text":"§f of the target deal §a(+5% × Lv)§f more damage.\n\n§bMax Effects: 5§f\n§9No Cooldown§f"}],
+		"size": 2.0,
+		"frame": {
+			"type": "texture",
+			"data": {
+				"unlocked": "rogue:textures/misc/gui/frame_ability_unlocked.png",
+				"available": "rogue:textures/misc/gui/frame_ability.png"
+			}
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:lingering_potion",
+				"nbt": "{Potion:\"undergarden:long_virulent_resistance\"}"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "pa_afflicted"
+				}
+			}
+		]
+	},
 	"ability_high_ground": {
 		"title": "§a+1 Level§f [§6High Ground§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile airborne and not touching the ground, deal §a(+20% × Lv)§f more damage\n§9No Cooldown§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile airborne and not touching the ground, deal §a(+20% × Lv)§f more damage\n§9No Cooldown§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -2028,7 +2081,7 @@
 	},
 	"ability_cavalry": {
 		"title": "§a+1 Level§f [§6Cavalry§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile mounted, deal §a(+30% × Lv)§f more damage\n§9No Cooldown§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile mounted, deal §a(+30% × Lv)§f more damage\n§9No Cooldown§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -2054,7 +2107,7 @@
 	},
 	"ability_stunlocked": {
 		"title": "§a+1 Level§f [§6Stunlocked§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhen hit and below §b60%§f health, unleash a shockwave, stunning all mobs in an §a(8 + Lv × 2)§f block radius\n§9Cooldown: 15s§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhen hit and below §b60%§f health, unleash a shockwave, stunning all mobs in an §a(8 + Lv × 2)§f block radius\n§9Cooldown: 15s§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -2080,7 +2133,7 @@
 	},
 	"ability_deep_cut": {
 		"title": "§a+1 Level§f [§6Deep Cut§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fCritical hits inflict §bBleeding§f.\nEach §bLv§f increases its strength by §a+1§f\n§9Cooldown: (20s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fCritical hits inflict §bBleeding§f.\nEach §bLv§f increases its strength by §a+1§f\n§9Cooldown: (20s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§6Bleeding§f: Inflicts damage per second.",
 		"size": 2.0,
 		"frame": {
@@ -2107,7 +2160,7 @@
 	},
 	"ability_exposed": {
 		"title": "§a+1 Level§f [§6Exposed§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fCritical hits inflict §bSundering§f.\nEach §bLv§f increases its strength by §a+1§f\n§9Cooldown: (20s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fCritical hits inflict §bSundering§f.\nEach §bLv§f increases its strength by §a+1§f\n§9Cooldown: (20s × Lv)§f"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
 		"extra_description": "\n§6Sundering§f: Increases damage received.",
 		"size": 2.0,
 		"frame": {
@@ -2134,7 +2187,7 @@
 	},
 	"ability_overbite": {
 		"title": "§a+1 Level§f [§6Overbite§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile a nearby §bOwned Pet§f deals damage, overheal §a(50% × Lv)§f of damage dealt as §bAbsorption Hearts§f.\n\nIf §bAbsorption Hearts§f are already present, the ability remains dormant.\n§9Cooldown: 15s§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fWhile a nearby §bOwned Pet§f deals damage, overheal §a(30% × Lv)§f of damage dealt as §bAbsorption Hearts§f.\n\nIf §bAbsorption Hearts§f are already present, the ability remains dormant.\n§9Cooldown: 15s§f"}],
 		"size": 2.0,
 		"frame": {
 			"type": "texture",
@@ -2198,7 +2251,8 @@
 	},
 	"end_persistent_hearts": {
 		"title": "§6Anointment: Azure",
-		"description": "§f\uE801\n\n§a+1§f Permanent Soul Heart",
+		"description": [{"text":"§f\uE801\n\n§a+10%§f Stealth\n§a+10%§f Fall Reduction"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"extra_description": "\n§3Stealth§f decreases distance of being detected by other entities. Default detection distance varies for each entity.\n\n§3Fall Reduction§f reduces fall damage by decreasing fall distance.",
 		"size": 2.0,
 		"icon": {
 			"type": "item",
@@ -2210,16 +2264,24 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "eidolon:persistent_soul_hearts",
-					"value": 2,
-					"operation": "addition"
+					"attribute": "puffish_attributes:stealth",
+					"value": 0.10,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fall_reduction",
+					"value": 0.10,
+					"operation": "multiply_base"
 				}
 			}
 		]
 	},
 	"end_voidic_arrow_dmg": {
 		"title": "§6Anointment: Amaranthine",
-		"description": "§f\uE801\n\n§a+20%§f Total Arrow Damage\n§a+20%§f Total Arrow Velocity",
+		"description": "§f\uE801\n\n§a+20%§f Arrow Damage\n§a+10%§f Arrow Velocity",
 		"size": 2.0,
 		"icon": {
 			"type": "item",
@@ -2233,22 +2295,22 @@
 				"data": {
 					"attribute": "attributeslib:arrow_damage",
 					"value": 0.2,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			},
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "attributeslib:arrow_velocity",
-					"value": 0.2,
-					"operation": "multiply_total"
+					"value": 0.1,
+					"operation": "multiply_base"
 				}
 			}
 		]
 	},
 	"end_voidic_melee_dmg": {
 		"title": "§6Anointment: Indigo",
-		"description": "§f\uE801\n\n§a+20%§f Total Melee Damage\n§a+20%§f Total Attack Damage",
+		"description": "§f\uE801\n\n§a+20%§f Melee Damage\n§a+10%§f Attack Damage",
 		"size": 2.0,
 		"icon": {
 			"type": "item",
@@ -2262,22 +2324,22 @@
 				"data": {
 					"attribute": "puffish_attributes:melee_damage",
 					"value": 0.2,
-					"operation": "multiply_total"
+					"operation": "multiply_base"
 				}
 			},
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "minecraft:generic.attack_damage",
-					"value": 0.2,
-					"operation": "multiply_total"
+					"value": 0.1,
+					"operation": "multiply_base"
 				}
 			}
 		]
 	},
 	"end_voidic_res": {
 		"title": "§6Anointment: Fuchsia",
-		"description": "§f\uE801\n\n§a+20%§f Total Melee Resistance\n§a+20%§f Total Resistance",
+		"description": "§f\uE801\n\n§a+10%§f Melee Resistance\n§a+5%§f Resistance",
 		"size": 2.0,
 		"icon": {
 			"type": "item",
@@ -2290,23 +2352,23 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "puffish_attributes:melee_resistance",
-					"value": 0.2,
-					"operation": "multiply_total"
+					"value": 0.1,
+					"operation": "multiply_base"
 				}
 			},
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "puffish_attributes:resistance",
-					"value": 0.2,
-					"operation": "multiply_total"
+					"value": 0.05,
+					"operation": "multiply_base"
 				}
 			}
 		]
 	},
 	"augment_catabolic_link": {
 		"title": "[§6Catabolic Link§f]",
-		"description": [{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fDeal §a+0.5§f damage for each full §bAbsorption Heart§f.\n§9No Cooldown§f\n\n§fUnlocks after spending at least §6164 Points§f"}],
+		"description": [{"text":"§f\uEBD1","font":"symbols_n_stuff:symbols"},{"text":"§f\uE802","font":"minecraft:default"},{"text":"§f\n\uEC44","font":"symbols_n_stuff:symbols"},{"text":"§f\uE804","font":"minecraft:default"},{"text":"\n\n§fDeal §a+0.5§f damage for each full §bAbsorption Heart§f.\n§9No Cooldown§f\n\n§fUnlocks after spending at least §6164 Points§f"}],
 		"size": 2.5,
 		"required_spent_points": 164,
 		"frame": {

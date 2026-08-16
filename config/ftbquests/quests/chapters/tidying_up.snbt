@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: "toms_storage:ts.storage_terminal"
 			id: "255608310F0222A1"
 			rewards: [
@@ -59,6 +60,7 @@
 			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "toms_storage:ts.level_emitter"
 			id: "7B79976FEC18EB70"
 			rewards: [
@@ -158,6 +160,7 @@
 			y: 4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6362D0F743059FEE"
 			rewards: [
 				{
@@ -202,6 +205,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1D942F86126A27E2"
 			rewards: [
 				{
@@ -227,6 +231,7 @@
 		}
 		{
 			description: ["By tying a &eBalloon&r to a storage countainer like a chest or dispenser, it will be sent up to the &eCloud&r, granting you storage space to your designated &eCloud Chest&r of the same balloon color."]
+			entity_vis_size: 1.0f
 			icon: "cloudstorage:guide_book"
 			id: "206402FDF641ABD6"
 			rewards: [
@@ -275,6 +280,7 @@
 			y: -1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -332,6 +338,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -380,6 +387,7 @@
 		{
 			dependencies: ["04A1A0537D6353F9"]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -450,6 +458,7 @@
 			y: -7.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "cloudstorage:balloon_buddy"
@@ -498,6 +507,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "333AA8B549380352"
 			rewards: [
 				{
@@ -588,6 +598,7 @@
 				"737D437176EA0564"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "7B651F7C5760601D"
 			rewards: [
 				{
@@ -614,6 +625,7 @@
 			y: 3.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "27E8D10CA38F7BBC"
 			rewards: [
 				{
@@ -641,6 +653,7 @@
 				"333AA8B549380352"
 				"737D437176EA0564"
 			]
+			entity_vis_size: 1.0f
 			id: "052043F142EE1BFC"
 			rewards: [
 				{

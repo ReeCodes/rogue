@@ -6,7 +6,7 @@ WorldgenEvents.remove(event => {
 			'/occultism.*silver_ore/',
 			'/galosphere.*silver_ore/',
 			'/eidolon.*(silver|lead)_ore/',
-			'/caverns_and_chasms:silver:*_ore/'
+			'/iceandfire:(sapphire|silver|deepslate_silver)_ore$/'
 		];
 	})
 })

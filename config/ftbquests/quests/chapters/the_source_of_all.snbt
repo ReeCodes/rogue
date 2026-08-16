@@ -21,6 +21,7 @@
 	quests: [
 		{
 			description: ["Seek out those &eUnknown Floating Orbs&r."]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -83,6 +84,7 @@
 		}
 		{
 			dependencies: ["45529191476D01F1"]
+			entity_vis_size: 1.0f
 			icon: "elementalcraft:drenched_iron_ingot"
 			id: "2BF663625E036D19"
 			rewards: [
@@ -147,6 +149,7 @@
 		}
 		{
 			dependencies: ["2BF663625E036D19"]
+			entity_vis_size: 1.0f
 			id: "723DE14E176AAFBA"
 			min_required_dependencies: 2
 			rewards: [
@@ -172,6 +175,7 @@
 		}
 		{
 			dependencies: ["2BF663625E036D19"]
+			entity_vis_size: 1.0f
 			id: "10F9384AD7D4DBC2"
 			min_required_dependencies: 2
 			rewards: [
@@ -197,6 +201,7 @@
 		}
 		{
 			dependencies: ["2BF663625E036D19"]
+			entity_vis_size: 1.0f
 			id: "5301ABC20AC7C437"
 			min_required_dependencies: 2
 			rewards: [
@@ -222,6 +227,7 @@
 		}
 		{
 			dependencies: ["2BF663625E036D19"]
+			entity_vis_size: 1.0f
 			id: "3E1069E23E665AD5"
 			min_required_dependencies: 2
 			rewards: [
@@ -250,6 +256,7 @@
 				"2BF663625E036D19"
 				"723DE14E176AAFBA"
 			]
+			entity_vis_size: 1.0f
 			icon: "elementalcraft:swift_alloy_ingot"
 			id: "09686C5AEE1F4125"
 			min_required_dependencies: 3
@@ -291,6 +298,7 @@
 		}
 		{
 			dependencies: ["4290CD4909C0862C"]
+			entity_vis_size: 1.0f
 			id: "2A4223847D90954F"
 			rewards: [
 				{
@@ -357,6 +365,7 @@
 		}
 		{
 			dependencies: ["09686C5AEE1F4125"]
+			entity_vis_size: 1.0f
 			icon: "elementalcraft:crystallizer"
 			id: "4290CD4909C0862C"
 			rewards: [
@@ -399,6 +408,7 @@
 		}
 		{
 			dependencies: ["4290CD4909C0862C"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:anvil"
 			id: "345C05A0381D8A7C"
 			rewards: [
@@ -454,6 +464,7 @@
 		}
 		{
 			dependencies: ["5301ABC20AC7C437"]
+			entity_vis_size: 1.0f
 			id: "1535B639AF73AFC6"
 			rewards: [
 				{
@@ -482,6 +493,7 @@
 				"3E1069E23E665AD5"
 				"7312D901B08A5823"
 			]
+			entity_vis_size: 1.0f
 			id: "2A4C0D5433F63EE7"
 			rewards: [
 				{
@@ -510,6 +522,7 @@
 				"700C19EFF145DF4F"
 				"10F9384AD7D4DBC2"
 			]
+			entity_vis_size: 1.0f
 			id: "4E2528C843B41286"
 			rewards: [
 				{
@@ -552,6 +565,7 @@
 		}
 		{
 			dependencies: ["4290CD4909C0862C"]
+			entity_vis_size: 1.0f
 			icon: "elementalcraft:inscriber"
 			id: "24062E85EBFB6B5C"
 			rewards: [
@@ -714,6 +728,7 @@
 		}
 		{
 			dependencies: ["7312D901B08A5823"]
+			entity_vis_size: 1.0f
 			icon: "elementalcraft:focus"
 			id: "60FA90A74829137A"
 			min_required_dependencies: 2
@@ -956,6 +971,7 @@
 				"5301ABC20AC7C437"
 				"09686C5AEE1F4125"
 			]
+			entity_vis_size: 1.0f
 			id: "500401D9C2C50009"
 			rewards: [
 				{
@@ -981,6 +997,7 @@
 		}
 		{
 			dependencies: ["4290CD4909C0862C"]
+			entity_vis_size: 1.0f
 			icon: "elementalcraft:pureinfuser"
 			id: "7312D901B08A5823"
 			rewards: [
@@ -1036,6 +1053,7 @@
 		}
 		{
 			dependencies: ["4290CD4909C0862C"]
+			entity_vis_size: 1.0f
 			id: "7D48FEB11DD73287"
 			rewards: [
 				{
@@ -1070,6 +1088,7 @@
 		}
 		{
 			dependencies: ["09686C5AEE1F4125"]
+			entity_vis_size: 1.0f
 			id: "226D0B9D26B3C1C6"
 			rewards: [
 				{
@@ -1149,6 +1168,7 @@
 		}
 		{
 			dependencies: ["7312D901B08A5823"]
+			entity_vis_size: 1.0f
 			id: "711801572A977117"
 			rewards: [
 				{
@@ -1224,6 +1244,7 @@
 				"50AFEABB8CE9A179"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "elementalcraft:source_analysis_glass"
 			id: "6AA6F89407B8AFF3"
 			rewards: [
@@ -1332,6 +1353,7 @@
 		}
 		{
 			dependencies: ["7312D901B08A5823"]
+			entity_vis_size: 1.0f
 			id: "3F41480757D4833F"
 			rewards: [
 				{

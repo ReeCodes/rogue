@@ -1,0 +1,55 @@
+#Levels cost required to apply Token of Fortitude to an item. (Default: 30)
+#Range: 1 ~ 1000
+breakPreventionApplyCost = 30
+#The aura cost of using the loot finder item. (Default: 100,000)
+#Range: 0 ~ 1200000
+lootFinderAuraCost = 100000
+#Maximum range (in blocks) upto which loot finder item can detect treasure. (Default: 64)
+#Range: 0 ~ 1024
+lootFinderRange = 64
+#Cooldown set on loot finder item upon use, in ticks. (Default: 1,200)
+#Range: 0 ~ 72000
+lootFinderUseCooldownInTicks = 1200
+#How long the loot finder particles stay, in ticks. (Default: 1,200)
+#Range: 0 ~ 72000
+lootFinderLightLifeInTicks = 1200
+#Maximum range upto which pets are selected to be teleported alongside owner upon using aura coffee. (Default: 4)
+#Range: 1 ~ 64
+petRecallRange = 4
+#Aura capacity for the Naturalist Sash. (Default: 1,200,000)
+#Range: > 1
+sashAuraCapacity = 1200000
+#Mana capacity for the Naturalist Sash. (Default: 2,000,000)
+#Range: > 1
+sashManaCapacity = 2000000
+#The aura cost per recipe for the furnace booster block. (Default: 6,500)
+#Range: 0 ~ 1000000
+furnaceBoosterAuraCost = 6500
+#Whether the furnace booster should check the input item in furnace against the tag #naturesaura_plus:valid_smeltable_to_boost,
+# to decide whether to double the smelted output or not (Default: false)
+allowAllForFurnaceBoost = false
+#The aura cost per recipe for the furnace booster block. (Default: 45)
+#Range: 0 ~ 100
+furnaceBoosterChance = 45
+#Whether the ore spawning from Powder of the Bountiful Core applies to a cubical range (else spherical range). (Default: true)
+isOreEffectCubical = true
+#The minimum environmental aura required for Powder of the Bountiful Core to function. (Default: 2,000,000)
+#Range: > 0
+minAuraForOreSpawn = 2000000
+#Maximum number of ores the Powder of the Bountiful Core attempts to place per operation. (Default: 20)
+#Range: > 1
+maxIterationForOreSpawn = 20
+#Value of oreSpawnIterationCalcScale in the formula: AuraNearby / (AuraSpotsNearby * oreSpawnIterationCalcScale),
+# to determine the number of ores the Powder of the Bountiful Core attempts to place per operation. (Default: 300,000)
+#Range: 0.0 ~ 2.147483647E9
+oreSpawnIterationCalcScale = 300000.0
+#Value of oreSpawnRangeScale in the formula: AuraNearby / oreSpawnRangeScale, to determine the range of the Powder of the Bountiful Core. (Default: 150,000)
+#Range: 1.0 ~ 2.147483647E9
+oreSpawnRangeScale = 150000.0
+#Minimum radius for range of the of the Powder of the Bountiful Core. (Default: 5)
+#Range: > 1
+minOreSpawnRange = 5
+#Maximum attempts for the Powder of the Bountiful Core to place an ore, before failing and passing. (Default: 10)
+#Range: 1 ~ 100
+maxOreSpawnRange = 10
+

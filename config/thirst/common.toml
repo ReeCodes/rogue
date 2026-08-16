@@ -36,6 +36,8 @@
 	handDrinkingQuenched = 2
 	#Whether extra hydration will convert to quenched
 	ExtraHydrationConvertToQuenched = true
+	#Whether purity system is enabled. When disabled, no NBT purity tags will be added and no purity effects will apply
+	enablePurity = true
 
 [World]
 	#Y level above which water has 1 more level of purification by default (i.e Mountains)
@@ -64,8 +66,6 @@
 	purifiedPoisonPercentage = 0
 	#% of getting sick (hunger and nausea) after drinking purified water
 	purifiedNauseaPercentage = 0
-	#Purity for drinks that normally have purity but for whatever reason don't have a value set
-	defaultPurity = 3
 
 ["Purification levels"]
 	#How many levels of purification are added after boiling in a kettle

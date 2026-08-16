@@ -22,6 +22,7 @@
 	quests: [
 		{
 			dependencies: ["0FA241E6F30219A4"]
+			entity_vis_size: 1.0f
 			id: "2B122C71AF75ADE9"
 			rewards: [
 				{
@@ -36,27 +37,31 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Extra Hard"
 			tasks: [{
 				entity: "minecraft:ender_dragon"
-				icon: {
-					Count: 1
-					id: "alexsmobs:tab_icon"
-					tag: {
-						DisplayEntityType: "minecraft:ender_dragon"
-						DisplayMobScale: 0.5d
-					}
-				}
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: "minecraft:dragon_head"
 				id: "36AFD123D715ED5C"
 				title: "&cSlay: &rEnder Dragon"
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -1.0d
+			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "48D4CC406B2AAE10"
 			rewards: [
 				{
@@ -71,16 +76,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Visible Decay"
 			tasks: [{
 				entity: "minecraft:wither"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "minecraft:wither"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "1A0251706A4E62C0"
@@ -88,10 +103,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -5.0d
-			y: -10.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "2F7DD0247D9CA67B"
 			rewards: [
 				{
@@ -106,16 +122,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Chamber Guardian"
 			tasks: [{
 				entity: "dungeonnowloading:chaos_spawner"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "dungeonnowloading:chaos_spawner"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "0110B4C7732F8FF0"
@@ -123,10 +149,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
-			y: -17.0d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "0B3A9C0C6054BD95"
 			rewards: [
 				{
@@ -141,16 +168,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Abyssal Depths"
 			tasks: [{
 				entity: "aquamirae:anglerfish"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "aquamirae:anglerfish"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "1B37475633CF49DE"
@@ -158,8 +195,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 25.0d
-			y: 20.0d
+			x: 1.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -170,6 +207,7 @@
 				"5289CBEAFDE36EC9"
 				"01CB646AF26E1E15"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -192,18 +230,19 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Aquatic Legacy"
 			tasks: [{
 				id: "04145FDFA8DD22DA"
 				title: "&eDefeat: &aChildren Of Ikaroa"
 				type: "checkmark"
 			}]
-			title: "&eComplete: &aChildren Of Ikaroa"
-			x: 21.0d
-			y: 16.5d
+			title: "&eComplete: &aIkaroa"
+			x: 0.0d
+			y: 7.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4B3CF658A83A6D83"
 			rewards: [
 				{
@@ -218,16 +257,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "More Teeth Than Eye"
 			tasks: [{
 				entity: "upgrade_aquatic:great_thrasher"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "upgrade_aquatic:great_thrasher"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "3436633D5A192BF6"
@@ -235,8 +284,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 17.0d
-			y: 20.0d
+			x: -1.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -248,7 +297,11 @@
 				"2B122C71AF75ADE9"
 				"4B3FFBE574A3BD7E"
 				"7320CBE229F99827"
+				"07AF6A4FCBBD113A"
+				"4074D168E9DE2AE5"
+				"218D7E48BC56633E"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -275,7 +328,7 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Main Focus"
 			tasks: [{
 				id: "411761E133338DCF"
@@ -283,7 +336,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -296,6 +349,7 @@
 				"2F8CE021A72C0569"
 				"769B29C2444ED613"
 			]
+			entity_vis_size: 1.0f
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "4169D212E732562A"
 			rewards: [
@@ -311,17 +365,18 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Ongoing Tumult"
 			tasks: [{
 				id: "7E12B8896D2EA018"
 				title: "&eComplete: &aHaunted Mystical Bosses"
 				type: "checkmark"
 			}]
-			x: -9.0d
-			y: 16.5d
+			x: -5.0d
+			y: 7.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "56FD92D06EB96EE9"
 			rewards: [
 				{
@@ -336,19 +391,30 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "twilightforest:naga"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:naga_trophy"
 				id: "348FA3FD2DFCC6BA"
 				title: "&cSlay: &rNaga"
 				type: "kill"
 				value: 1L
 			}]
-			x: -11.0d
-			y: 12.0d
+			x: -6.0d
+			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5302950126282D5E"
 			rewards: [
 				{
@@ -363,19 +429,30 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "twilightforest:lich"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:lich_trophy"
 				id: "59B650E980E96727"
 				title: "&cSlay: &rLich"
 				type: "kill"
 				value: 1L
 			}]
-			x: -9.0d
-			y: 11.0d
+			x: -5.0d
+			y: 5.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6E42313688278E8C"
 			rewards: [
 				{
@@ -390,19 +467,30 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "twilightforest:hydra"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:hydra_trophy"
 				id: "79D6A32685C2F2D6"
 				title: "&cSlay: &rHydra"
 				type: "kill"
 				value: 1L
 			}]
-			x: -7.0d
-			y: 12.0d
+			x: -4.0d
+			y: 8.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "29A0EE962817140F"
 			rewards: [
 				{
@@ -417,19 +505,30 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "twilightforest:snow_queen"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:snow_queen_trophy"
 				id: "2ED319D69924AC8F"
 				title: "&cSlay: &rSnow Queen"
 				type: "kill"
 				value: 1L
 			}]
-			x: -6.0d
-			y: 14.0d
+			x: -4.0d
+			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "76FD382F265C156C"
 			rewards: [
 				{
@@ -444,19 +543,30 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "twilightforest:minoshroom"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:minoshroom_trophy"
 				id: "60A85B69EA26AB89"
 				title: "&cSlay: &rMinoshroom"
 				type: "kill"
 				value: 1L
 			}]
-			x: -11.0d
-			y: 20.0d
+			x: -6.5d
+			y: 7.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "077654F392613E79"
 			rewards: [
 				{
@@ -471,19 +581,30 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "twilightforest:knight_phantom"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:knight_phantom_trophy"
 				id: "43A01B6D98217EDE"
 				title: "&cSlay: &rKnight Phantom"
 				type: "kill"
 				value: 1L
 			}]
-			x: -9.0d
-			y: 21.0d
+			x: -6.0d
+			y: 8.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "2F8CE021A72C0569"
 			rewards: [
 				{
@@ -498,19 +619,30 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "twilightforest:alpha_yeti"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:alpha_yeti_trophy"
 				id: "2BB0A3351BDE4DF4"
 				title: "&cSlay: &rAlpha Yeti"
 				type: "kill"
 				value: 1L
 			}]
-			x: -7.0d
-			y: 20.0d
+			x: -5.0d
+			y: 8.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "41D4129824DDA25E"
 			rewards: [
 				{
@@ -525,16 +657,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Airborne Chief"
 			tasks: [{
 				entity: "rats:rat_baron"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "rats:rat_baron_plane"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.25d
 					}
 				}
 				id: "1A936DF65993274F"
@@ -542,10 +684,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 6.0d
-			y: 11.0d
+			x: 5.0d
+			y: 9.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4513CD56703B4E11"
 			rewards: [
 				{
@@ -560,16 +703,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Intertwined Tails"
 			tasks: [{
 				entity: "rats:rat_king"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "rats:rat_king"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "17F6F9A1E8FE81AD"
@@ -577,10 +730,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 2.0d
-			y: 14.0d
+			x: 4.0d
+			y: 8.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "562C1096EFA61E5B"
 			rewards: [
 				{
@@ -595,16 +749,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Rotten Captain"
 			tasks: [{
 				entity: "rats:dutchrat"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "rats:dutchrat"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "547CAD1926E5DBEF"
@@ -612,17 +776,18 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 10.0d
-			y: 14.0d
+			x: 6.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5D5B989A4F8D0E9D"]
+			entity_vis_size: 1.0f
 			id: "7AFE491263E9DA60"
 			rewards: [
 				{
 					id: "5C87847546A789D1"
 					type: "xp_levels"
-					xp_levels: 50
+					xp_levels: 35
 				}
 				{
 					count: 4
@@ -631,28 +796,39 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Breakout Confrontation"
 			tasks: [{
 				entity: "outer_end:stalker"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "deeperdarker:stalker"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "203A5AD7BF767924"
 				title: "&cSlay: &rStalker"
 				type: "kill"
-				value: 1L
+				value: 5L
 			}]
-			x: -5.0d
-			y: -4.0d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0FA241E6F30219A4"]
+			entity_vis_size: 1.0f
 			id: "6E146E136318462F"
 			rewards: [
 				{
@@ -667,31 +843,31 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Void's Revenge"
 			tasks: [{
 				entity: "alexsmobs:void_worm"
-				icon: {
-					Count: 1
-					id: "citadel:fancy_item"
-					tag: {
-						DisplayBob: 0
-						DisplayItem: "alexsmobs:void_worm_eye"
-						DisplayScale: 1.0d
-						DisplayShake: 0
-						DisplaySpin: 0
-						DisplayZoom: 1
-					}
-				}
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: "alexsmobs:void_worm_eye"
 				id: "4DEAC50F1A2E30F9"
 				title: "&cSlay: &rVoid Worm"
 				type: "kill"
 				value: 1L
 			}]
-			x: 5.0d
-			y: -4.0d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "52384762E2693325"
 			rewards: [
 				{
@@ -706,16 +882,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Deep Sea Icon"
 			tasks: [{
 				entity: "aquamirae:captain_cornelia"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "aquamirae:captain_cornelia"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "7EE56E7D979DB4D8"
@@ -723,8 +909,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -3.0d
-			y: -14.0d
+			x: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -734,6 +920,7 @@
 				"7B299E0906DD4F89"
 				"09721AF482FEA9F6"
 			]
+			entity_vis_size: 1.0f
 			icon: "rats:idol_of_ratlantis"
 			id: "5BF8B0A7CC52B824"
 			rewards: [
@@ -749,17 +936,18 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Rogue Rodents"
 			tasks: [{
 				id: "67CF6C3B94B97B5C"
 				title: "&eComplete: &aMurine Residence"
 				type: "checkmark"
 			}]
-			x: 6.0d
-			y: 16.5d
+			x: 5.0d
+			y: 7.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7B299E0906DD4F89"
 			rewards: [
 				{
@@ -774,10 +962,20 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Bubonic Bigot"
 			tasks: [{
 				entity: "rats:black_death"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
@@ -791,10 +989,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 9.0d
-			y: 21.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "09721AF482FEA9F6"
 			rewards: [
 				{
@@ -809,10 +1008,20 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Skillful Flautist"
 			tasks: [{
 				entity: "rats:pied_piper"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
@@ -826,10 +1035,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 3.0d
-			y: 21.0d
+			x: 3.5d
+			y: 7.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "01CB646AF26E1E15"
 			rewards: [
 				{
@@ -844,10 +1054,20 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Skele-Jockeys"
 			tasks: [{
 				entity: "alexsmobs:skelewag"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
@@ -861,10 +1081,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 17.0d
-			y: 14.0d
+			x: -1.5d
+			y: 7.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5289CBEAFDE36EC9"
 			rewards: [
 				{
@@ -879,16 +1100,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Old Man"
 			tasks: [{
 				entity: "minecraft:elder_guardian"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "minecraft:elder_guardian"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "7F9BD01C9DE70762"
@@ -896,10 +1127,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 21.0d
-			y: 12.0d
+			x: 0.0d
+			y: 9.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1674C5D0CA5DF7A7"
 			rewards: [
 				{
@@ -914,10 +1146,20 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Temple Minions"
 			tasks: [{
 				entity: "minecraft:guardian"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
@@ -931,10 +1173,11 @@
 				type: "kill"
 				value: 20L
 			}]
-			x: 25.0d
-			y: 14.0d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "769B29C2444ED613"
 			rewards: [
 				{
@@ -949,17 +1192,27 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "twilightforest:ur_ghast"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:ur_ghast_trophy"
 				id: "782D54E41DC956F5"
 				title: "&cSlay: &rUr-Ghast"
 				type: "kill"
 				value: 1L
 			}]
-			x: -12.0d
-			y: 14.0d
+			x: -3.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -967,7 +1220,15 @@
 				"2A41D087A5D13CAF"
 				"75DBB6AC74F225B4"
 				"54001D0BAC9E43CE"
+				"69287B452F30968D"
+				"0B939F21D6F0B457"
+				"2D7CF0A6A3EF63F6"
+				"5DE39A2AA1674EB3"
+				"3D61F289544A4222"
+				"24D529AEE5320452"
+				"796A476DD9D64FA2"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:effect_item"
@@ -989,17 +1250,18 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Virus Outbreak"
 			tasks: [{
 				id: "533A4CC6A77797A5"
 				title: "&eComplete: &aMutated Beings"
 				type: "checkmark"
 			}]
-			x: -24.0d
-			y: 16.5d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "337C6809857A9435"
 			rewards: [
 				{
@@ -1014,16 +1276,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Undeniable Explosion"
 			tasks: [{
 				entity: "mutantmonsters:mutant_creeper"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "mutantmonsters:mutant_creeper"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "2D01A3FDCB5F262D"
@@ -1031,10 +1303,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -21.0d
-			y: 13.0d
+			x: 11.5d
+			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "2A41D087A5D13CAF"
 			rewards: [
 				{
@@ -1049,16 +1322,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Ender Extremity"
 			tasks: [{
 				entity: "mutantmonsters:mutant_enderman"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "mutantmonsters:mutant_enderman"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "050593552595E9EC"
@@ -1066,10 +1349,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -27.0d
-			y: 13.0d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "75DBB6AC74F225B4"
 			rewards: [
 				{
@@ -1084,16 +1368,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Toxo-Skeletal"
 			tasks: [{
 				entity: "mutantmonsters:mutant_skeleton"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "mutantmonsters:mutant_skeleton"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "2AD0326E5715BEA0"
@@ -1101,10 +1395,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -27.0d
-			y: 21.0d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "54001D0BAC9E43CE"
 			rewards: [
 				{
@@ -1119,16 +1414,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Undead Recovery"
 			tasks: [{
 				entity: "mutantmonsters:mutant_zombie"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "mutantmonsters:mutant_zombie"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "390F4E03F3D2023C"
@@ -1136,10 +1441,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -21.0d
-			y: 21.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "095226AFC1EA1231"
 			rewards: [
 				{
@@ -1154,15 +1460,25 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "cataclysm:the_harbinger"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "cataclysm:the_harbinger"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.25d
 					}
 				}
 				id: "16894389844662E7"
@@ -1170,10 +1486,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 9.0d
-			y: -2.0d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4B3FFBE574A3BD7E"
 			rewards: [
 				{
@@ -1188,16 +1505,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Salted Wounds"
 			tasks: [{
 				entity: "galosphere:berserker"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "galosphere:berserker"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "70E2459EE9E0D32D"
@@ -1205,10 +1532,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 3.0d
-			y: -14.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7320CBE229F99827"
 			rewards: [
 				{
@@ -1223,16 +1551,26 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Sculk Hearing"
 			tasks: [{
 				entity: "minecraft:warden"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "minecraft:warden"
-						DisplayMobScale: 1.0d
+						DisplayMobScale: 0.5d
 					}
 				}
 				id: "3B5517808C75175A"
@@ -1240,8 +1578,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 5.0d
-			y: -10.0d
+			x: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1251,6 +1589,7 @@
 				"09B5CDF23422FEA1"
 				"675680CDAB91093D"
 			]
+			entity_vis_size: 1.0f
 			icon: "mowziesmobs:logo"
 			id: "43CDD5A23151415F"
 			rewards: [
@@ -1266,17 +1605,18 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Mobs Of Mowzie"
 			tasks: [{
 				id: "232956A23A094AC0"
 				title: "&eComplete: &aMowzie's Residency"
 				type: "checkmark"
 			}]
-			x: -15.0d
-			y: -7.5d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5C27FCF8ABFF3C0D"
 			rewards: [
 				{
@@ -1291,10 +1631,20 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Champion"
 			tasks: [{
 				entity: "mowziesmobs:ferrous_wroughtnaut"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -1309,10 +1659,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -18.0d
-			y: -11.0d
+			x: -6.5d
+			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "641654E62B7EA314"
 			rewards: [
 				{
@@ -1327,10 +1678,20 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Sanctified"
 			tasks: [{
 				entity: "mowziesmobs:umvuthi"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					ForgeCaps: {
@@ -1348,10 +1709,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -12.0d
-			y: -11.0d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "0E868D3A7A804BED"
 			rewards: [
 				{
@@ -1366,10 +1728,20 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Frosted"
 			tasks: [{
 				entity: "mowziesmobs:frostmaw"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "mowziesmobs:ice_crystal"
@@ -1382,10 +1754,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -12.0d
-			y: -5.0d
+			x: -4.0d
+			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "09B5CDF23422FEA1"
 			rewards: [
 				{
@@ -1400,18 +1773,28 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Winged"
 			tasks: [{
 				entity: "mowziesmobs:naga"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "mowziesmobs:naga_fang"
 				id: "43AC3F7D3A872899"
 				title: "&cSlay: &rNaga"
 				type: "kill"
 				value: 1L
 			}]
-			x: -18.0d
-			y: -5.0d
+			x: -6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1422,6 +1805,7 @@
 				"30F3AC0161FE81AA"
 				"3B026E7325C96A42"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:effect_item"
@@ -1443,17 +1827,18 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Old Legends"
 			tasks: [{
 				id: "085D72F2D7033D24"
 				title: "&eComplete: &aCataclystic Chaos"
 				type: "checkmark"
 			}]
-			x: 14.0d
-			y: -7.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "2EDBF7CC01D76E88"
 			rewards: [
 				{
@@ -1468,15 +1853,25 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "cataclysm:ignis"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "cataclysm:ignis"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.25d
 					}
 				}
 				id: "4A71CDAD3317D256"
@@ -1484,10 +1879,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 9.0d
-			y: -12.0d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "367E12AEEEB10B8B"
 			rewards: [
 				{
@@ -1502,15 +1898,25 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "cataclysm:ender_guardian"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "cataclysm:ender_guardian"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.25d
 					}
 				}
 				id: "35A985D2063F12B7"
@@ -1518,10 +1924,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 14.0d
-			y: 4.0d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "56B7D8DE9E86B2B4"
 			rewards: [
 				{
@@ -1536,15 +1943,25 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "cataclysm:netherite_monstrosity"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "cataclysm:netherite_monstrosity"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.25d
 					}
 				}
 				id: "5703961D28D96579"
@@ -1552,10 +1969,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 20.0d
-			y: -2.0d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "30F3AC0161FE81AA"
 			rewards: [
 				{
@@ -1570,15 +1988,25 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "cataclysm:the_leviathan"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "cataclysm:the_leviathan"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.25d
 					}
 				}
 				id: "32FF0008C96F9807"
@@ -1586,10 +2014,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 14.0d
-			y: -21.0d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "3B026E7325C96A42"
 			rewards: [
 				{
@@ -1604,15 +2033,25 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				entity: "cataclysm:ancient_remnant"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					Count: 1
 					id: "alexsmobs:tab_icon"
 					tag: {
 						DisplayEntityType: "cataclysm:ancient_remnant"
-						DisplayMobScale: 0.75d
+						DisplayMobScale: 0.25d
 					}
 				}
 				id: "75404DB9DF0E0415"
@@ -1620,8 +2059,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 20.0d
-			y: -12.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1630,6 +2069,7 @@
 				"7759A42B3A1A2CEF"
 				"1F8B70AFB5FE8496"
 			]
+			entity_vis_size: 1.0f
 			icon: "meetyourfight:dame_fortuna_head"
 			id: "1620AD479D2CB88B"
 			rewards: [
@@ -1645,17 +2085,18 @@
 					type: "item"
 				}
 			]
-			size: 3.0d
+			size: 2.0d
 			subtitle: "+4 Bosses"
 			tasks: [{
 				id: "59BCDE42FA3DF345"
 				title: "&eComplete: &aThe Accursed"
 				type: "checkmark"
 			}]
-			x: -25.5d
-			y: -7.5d
+			x: -10.0d
+			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "meetyourfight:fossil_bait"
 			id: "7DC9B919F9818A00"
 			rewards: [
@@ -1671,7 +2112,7 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Decayed"
 			tasks: [
 				{
@@ -1681,6 +2122,16 @@
 				}
 				{
 					entity: "meetyourfight:swampjaw"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "meetyourfight:fossil_bait"
 					id: "42A6108D69CA33D9"
 					title: "&cSlay: &rSwampjaw"
@@ -1689,10 +2140,11 @@
 				}
 			]
 			title: "&cSlay: &rSwampjaw"
-			x: -28.0d
-			y: -11.0d
+			x: -11.5d
+			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "meetyourfight:haunted_bell"
 			id: "7DE34F59679A81A7"
 			rewards: [
@@ -1708,7 +2160,7 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Audible"
 			tasks: [
 				{
@@ -1718,6 +2170,16 @@
 				}
 				{
 					entity: "meetyourfight:bellringer"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "meetyourfight:haunted_bell"
 					id: "3B5062A530D87161"
 					title: "&cSlay: &rBellringer"
@@ -1726,10 +2188,11 @@
 				}
 			]
 			title: "&cSlay: &rBellringer"
-			x: -23.0d
-			y: -11.0d
+			x: -8.5d
+			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "meetyourfight:devils_ante"
 			id: "7759A42B3A1A2CEF"
 			rewards: [
@@ -1745,7 +2208,7 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Serendipitous"
 			tasks: [
 				{
@@ -1755,6 +2218,16 @@
 				}
 				{
 					entity: "meetyourfight:dame_fortuna"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "meetyourfight:devils_ante"
 					id: "78C411190F7F4D56"
 					title: "&cSlay: &rDame Fortuna"
@@ -1763,10 +2236,11 @@
 				}
 			]
 			title: "&cSlay: &rDame Fortuna"
-			x: -28.0d
-			y: -4.0d
+			x: -11.0d
+			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "meetyourfight:dusk_key"
 			id: "1F8B70AFB5FE8496"
 			rewards: [
@@ -1782,7 +2256,7 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Mutilated"
 			tasks: [
 				{
@@ -1792,6 +2266,16 @@
 				}
 				{
 					entity: "meetyourfight:rosalyne"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "meetyourfight:dusk_key"
 					id: "2D609CBEAE7F725B"
 					title: "&cSlay: &rRosalyne"
@@ -1800,10 +2284,11 @@
 				}
 			]
 			title: "&cSlay: &rRosalyne"
-			x: -23.0d
-			y: -4.0d
+			x: -9.0d
+			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "675680CDAB91093D"
 			rewards: [
 				{
@@ -1818,25 +2303,450 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Balanced"
 			tasks: [{
 				entity: "mowziesmobs:sculptor"
-				icon: {
-					Count: 1
-					id: "alexsmobs:tab_icon"
-					tag: {
-						DisplayEntityType: "mowziesmobs:sculptor"
-						DisplayMobScale: 1.0d
-					}
-				}
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: "mowziesmobs:gong"
 				id: "1C51E68DD317D3C6"
 				title: "&cSlay: &rTongbi, The Sculptor"
 				type: "kill"
 				value: 1L
 			}]
-			x: -15.0d
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "69287B452F30968D"
+			rewards: [
+				{
+					id: "307E0F8207C27344"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 3
+					id: "23451DD54AD46C32"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Fire Wall"
+			tasks: [{
+				entity: "mutantmore:mutant_blaze"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmore:mutant_blaze"
+						DisplayMobScale: 0.35d
+					}
+				}
+				id: "2CC6E9320BE03FFD"
+				title: "&cSlay: &rMutant Blaze"
+				type: "kill"
+				value: 1L
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0B939F21D6F0B457"
+			rewards: [
+				{
+					id: "3BFB73D5D38187E9"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "68D2ED026075B4F1"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Tundra's DNA"
+			tasks: [{
+				entity: "mutantmore:mutant_frozen_zombie"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmore:mutant_frozen_zombie"
+						DisplayMobScale: 0.5d
+					}
+				}
+				id: "5DD69A58DF51A9EC"
+				title: "&cSlay: &rMutant Frozen Zombie"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2D7CF0A6A3EF63F6"
+			rewards: [
+				{
+					id: "44CCD075BF1C17B4"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "1CAA2D20008B3EC6"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Boar Gone Rogue"
+			tasks: [{
+				entity: "mutantmore:mutant_hoglin"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmore:mutant_hoglin"
+						DisplayMobScale: 0.35d
+					}
+				}
+				id: "0C476028EF50C233"
+				title: "&cSlay: &rMutant Hoglin"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3D61F289544A4222"
+			rewards: [
+				{
+					id: "763130B6A2AF1894"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "6ADE9B49032AC031"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Experiment 009"
+			tasks: [{
+				entity: "mutantmore:mutant_jungle_zombie"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmore:mutant_jungle_zombie"
+						DisplayMobScale: 0.5d
+					}
+				}
+				id: "2B9347B56396C81B"
+				title: "&cSlay: &rMutant Jungle Zombie"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5DE39A2AA1674EB3"
+			rewards: [
+				{
+					id: "77FC6109D8C5CF26"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 2
+					id: "04DBA8E39B5091A1"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Dust-Covered"
+			tasks: [{
+				entity: "mutantmore:mutant_husk"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmore:mutant_husk"
+						DisplayMobScale: 0.5d
+					}
+				}
+				id: "61DF1386D9C91BF8"
+				title: "&cSlay: &rMutant Husk"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "796A476DD9D64FA2"
+			rewards: [
+				{
+					id: "6730E227DEF025A0"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 3
+					id: "5AE705DCAA0D9CE3"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Nimble Assassin"
+			tasks: [{
+				entity: "mutantmore:mutant_wither_skeleton"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "FORCE_OFF"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							insulation: [ ]
+						}
+					}
+					id: "mutantmore:mutant_wither_skeleton_skull"
+					tag: {
+						Damage: 0
+						insulation: [ ]
+					}
+				}
+				id: "7FCB30942B004957"
+				title: "&cSlay: &rMutant Wither Skeleton"
+				type: "kill"
+				value: 1L
+			}]
+			x: 9.5d
 			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "24D529AEE5320452"
+			rewards: [
+				{
+					id: "3A9AC361715D77D1"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 3
+					id: "074F41D494CB3398"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Mid-Air Fight"
+			tasks: [{
+				entity: "mutantmore:mutant_shulker"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mutantmore:mutant_shulker"
+						DisplayMobScale: 0.5d
+					}
+				}
+				id: "6475E8A422A17816"
+				title: "&cSlay: &rMutant Shulker"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "07AF6A4FCBBD113A"
+			rewards: [
+				{
+					id: "13746CC8AD80FF77"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					count: 10
+					id: "3E07B17410850AE1"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Challenge ++"
+			tasks: [{
+				icon: "minecraft:ominous_bottle"
+				id: "17FECB0F35CED7C2"
+				stat: "minecraft:raid_win"
+				title: "&eFinish Raids"
+				type: "stat"
+				value: 5
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4074D168E9DE2AE5"
+			rewards: [
+				{
+					id: "0DA2E63D6411DB34"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					count: 5
+					id: "477736894C729AE3"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Regurgitate"
+			tasks: [{
+				entity: "dungeonnowloading:fairkeeper_boros"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "4FFB7134D1DC2AD4"
+				title: "&cSlay: &rFairkeeper Boros"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "218D7E48BC56633E"
+			rewards: [
+				{
+					id: "5BC8F29E0C64AED6"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					count: 5
+					id: "047CEEEE8081D262"
+					item: "kubejs:glitched_box"
+					type: "item"
+				}
+			]
+			subtitle: "Consume"
+			tasks: [{
+				entity: "dungeonnowloading:fairkeeper_ouros"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "066F31445BF337DF"
+				title: "&cSlay: &rFairkeeper Ourus"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -0.5d
 		}
 	]
 	title: "{quest.overview.base_label.title} Enmities"

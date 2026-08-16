@@ -102,13 +102,13 @@
 		"root": false
 	},
 	"zo6z9czggjs2nogd": {
-		"definition": "ability_magic_missile",
+		"definition": "ability_afflicted",
 		"x": -277.1281292110204,
 		"y": -480,
 		"root": false
 	},
 	"f80p7jjisympoo1i": {
-		"definition": "ability_magic_missile",
+		"definition": "ability_hellborne",
 		"x": -387.97938089542845,
 		"y": -96,
 		"root": false
@@ -222,7 +222,7 @@
 		"root": false
 	},
 	"n062iw5paazofeo9": {
-		"definition": "ability_magic_missile",
+		"definition": "ability_afflicted",
 		"x": -665.1075101064491,
 		"y": -960,
 		"root": false
@@ -588,7 +588,7 @@
 		"root": false
 	},
 	"5wx6dmbdfwb1yubu": {
-		"definition": "ability_magic_missile",
+		"definition": "ability_afflicted",
 		"x": -609.6818842642449,
 		"y": -672,
 		"root": false
@@ -750,7 +750,7 @@
 		"root": false
 	},
 	"gyuf5jbw8wm5xwek": {
-		"definition": "ability_magic_missile",
+		"definition": "ability_afflicted",
 		"x": -1330.2150202128976,
 		"y": -960,
 		"root": false
@@ -2658,7 +2658,7 @@
 		"root": false
 	},
 	"7wvffvp5y5l6fbbv": {
-		"definition": "ability_magic_missile",
+		"definition": "ability_hellborne",
 		"x": -886.8100134752656,
 		"y": -192,
 		"root": false
@@ -2718,7 +2718,7 @@
 		"root": false
 	},
 	"t1clb5wb97f7fv4a": {
-		"definition": "ability_magic_missile",
+		"definition": "ability_afflicted",
 		"x": -1607.3431494239178,
 		"y": -864,
 		"root": false
@@ -4596,7 +4596,7 @@
 		"root": false
 	},
 	"k2tn2p8xfkf3yzip": {
-		"definition": "ability_magic_missile",
+		"definition": "ability_hellborne",
 		"x": -1718.1944011083262,
 		"y": -96,
 		"root": false

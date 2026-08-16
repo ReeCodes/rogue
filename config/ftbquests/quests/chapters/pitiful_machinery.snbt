@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: "industrialforegoing:pitiful_generator"
 			id: "5EE0DE521B56812D"
 			rewards: [
@@ -72,6 +73,7 @@
 			y: -1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "47C8D029BB25A343"
 			rewards: [
 				{
@@ -115,6 +117,7 @@
 		}
 		{
 			dependencies: ["735F640B11C05517"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -151,6 +154,7 @@
 		}
 		{
 			dependencies: ["735F640B11C05517"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -188,6 +192,7 @@
 		}
 		{
 			dependencies: ["735F640B11C05517"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -232,6 +237,7 @@
 		}
 		{
 			dependencies: ["47C8D029BB25A343"]
+			entity_vis_size: 1.0f
 			id: "46A4C08718DD7EA2"
 			rewards: [
 				{
@@ -257,6 +263,7 @@
 		}
 		{
 			dependencies: ["47C8D029BB25A343"]
+			entity_vis_size: 1.0f
 			id: "53F2E2C26082F3E5"
 			rewards: [
 				{
@@ -282,6 +289,7 @@
 		}
 		{
 			dependencies: ["735F640B11C05517"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -323,6 +331,7 @@
 				"2413453C334727D1"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -384,18 +393,8 @@
 			y: 4.0d
 		}
 		{
-			icon: {
-				Count: 1
-				id: "citadel:fancy_item"
-				tag: {
-					DisplayBob: 0
-					DisplayItem: "create:cogwheel"
-					DisplayScale: 1.5d
-					DisplayShake: 0
-					DisplaySpin: 1
-					DisplayZoom: 0
-				}
-			}
+			entity_vis_size: 1.0f
+			icon: "create:cogwheel"
 			id: "2413453C334727D1"
 			rewards: [
 				{
@@ -428,6 +427,7 @@
 			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "57E00AA9987470BD"
 			rewards: [
 				{
@@ -453,6 +453,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "23881255397BBDE8"
 			rewards: [
 				{
@@ -478,6 +479,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "23736A09E5EEF31C"
 			rewards: [
 				{
@@ -503,6 +505,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1FD7B01B65815D5B"
 			rewards: [
 				{
@@ -530,6 +533,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4537E3583F4E30E6"
 			rewards: [
 				{
@@ -562,6 +566,7 @@
 			y: -3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7EAFF36709C1FDB7"
 			rewards: [
 				{

@@ -17,6 +17,7 @@
 	quests: [
 		{
 			description: ["Tamed using &bFish&r."]
+			entity_vis_size: 1.0f
 			id: "11E618B39C0677FC"
 			rewards: [
 				{
@@ -54,6 +55,7 @@
 			y: 14.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -120,6 +122,7 @@
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -175,6 +178,15 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:gorilla"
+					DisplayMobScale: 1.15d
+				}
+			}
 			id: "75362D6074D0F702"
 			rewards: [
 				{
@@ -198,6 +210,15 @@
 			subtitle: "Gentle Beasts"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "alexsmobs:tab_icon"
@@ -227,10 +248,12 @@
 					type: "custom"
 				}
 			]
+			title: "&eTame: &rGorilla"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "3DFCBC1AEB01528A"
 			rewards: [
 				{
@@ -269,6 +292,7 @@
 			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -336,6 +360,7 @@
 			y: 5.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "083DADA621D02290"
 			rewards: [
 				{
@@ -359,6 +384,15 @@
 			subtitle: "Sleek Individual"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "alexsmobs:tab_icon"
@@ -388,10 +422,12 @@
 					type: "custom"
 				}
 			]
+			title: "&eTame: &rCrow"
 			x: -4.0d
 			y: 4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -453,6 +489,7 @@
 			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -519,6 +556,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -588,7 +626,7 @@
 				{
 					icon: "alexsmobs:falconry_hood"
 					id: "306474F0DF86D367"
-					title: "&eFly as Eagle for: &r30s"
+					title: "&eFly: &rAs Eagle"
 					type: "custom"
 				}
 			]
@@ -596,6 +634,7 @@
 			y: -4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "3FD75B269AFF88DE"
 			rewards: [
 				{
@@ -635,6 +674,7 @@
 			y: 4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -714,6 +754,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -776,6 +817,7 @@
 		}
 		{
 			description: ["Interacting with mobs, using the &eAnimal Dictionary&r, explains to every last detail &ehow to tame&r or &eheal&r the mob. As well as what it's &eabilities&r are."]
+			entity_vis_size: 1.0f
 			id: "1490B8D678E2CCC0"
 			rewards: [
 				{
@@ -807,6 +849,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -868,6 +911,7 @@
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "0A5E61528B03D9A1"
 			rewards: [
 				{
@@ -905,6 +949,7 @@
 			y: -4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -967,6 +1012,7 @@
 		}
 		{
 			description: ["Tamed using &bGlow Berries&r."]
+			entity_vis_size: 1.0f
 			id: "13A3037DB5434C46"
 			rewards: [
 				{
@@ -1006,14 +1052,8 @@
 		}
 		{
 			description: ["They seem to like &bArcane Essence&r."]
-			icon: {
-				Count: 1
-				id: "alexsmobs:tab_icon"
-				tag: {
-					DisplayEntityType: "alshanex_familiars:druid_pet"
-					DisplayMobScale: 1.0d
-				}
-			}
+			entity_vis_size: 1.0f
+			icon: "alshanex_familiars:pet_bed"
 			id: "05F76623101D6B4F"
 			rewards: [
 				{
@@ -1038,22 +1078,9 @@
 			subtitle: "Henchmen"
 			tasks: [
 				{
-					icon: {
-						Count: 1
-						id: "alexsmobs:tab_icon"
-						tag: {
-							DisplayEntityType: "alshanex_familiars:druid_pet"
-							DisplayMobScale: 1.0d
-						}
-					}
+					icon: "irons_spellbooks:arcane_essence"
 					id: "7628C671DBEB0B5C"
 					title: "&eTame: &rFamiliar"
-					type: "custom"
-				}
-				{
-					icon: "alshanex_familiars:familiar_tome"
-					id: "2AB92E03C6FBF951"
-					title: "&eCapture: &rFamiliar using &eFamiliar Tome"
 					type: "custom"
 				}
 				{
@@ -1067,6 +1094,7 @@
 			y: 10.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "domesticationinnovation:rotten_apple"
 			id: "59B3F0FBC327478F"
 			rewards: [
@@ -1120,6 +1148,7 @@
 			y: 16.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "domesticationinnovation:sinister_carrot"
 			id: "2E4F1447098BF483"
 			rewards: [
@@ -1167,6 +1196,7 @@
 			y: 16.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "domesticationinnovation:pet_bed_white"
 			id: "4DB87F40C3C7E5E0"
 			rewards: [
@@ -1234,6 +1264,11 @@
 					}
 					type: "item"
 				}
+				{
+					id: "01B930A48F8E1B7B"
+					item: "bookoffamiliars:familiar_book"
+					type: "item"
+				}
 			]
 			title: "&eSegment: &aPet Accessoires"
 			x: -1.0d
@@ -1241,6 +1276,7 @@
 		}
 		{
 			description: ["Tamed using &bSpider Eyes&r."]
+			entity_vis_size: 1.0f
 			icon: "minecraft:spider_eye"
 			id: "17CD20D056A1C123"
 			rewards: [
@@ -1280,6 +1316,7 @@
 		}
 		{
 			description: ["Tamed using &bTropical Fish&r."]
+			entity_vis_size: 1.0f
 			icon: "minecraft:tropical_fish"
 			id: "519ED089E1620286"
 			rewards: [
@@ -1319,6 +1356,7 @@
 		}
 		{
 			description: ["Mate two &bFoxes&r using &bSweet Berries&r."]
+			entity_vis_size: 1.0f
 			icon: "minecraft:sweet_berries"
 			id: "0F2F535B3744E5DA"
 			rewards: [
@@ -1357,6 +1395,7 @@
 			y: 15.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "domesticationinnovation:collar_tag"
 			id: "1DBCF620F8E70204"
 			rewards: [
@@ -1418,6 +1457,7 @@
 		{
 			dependencies: ["43C3E5D8167F0493"]
 			description: ["Rescue a &eDried Ghast&r from Nether and make it your flying &eCompanion&r."]
+			entity_vis_size: 1.0f
 			icon: "minecraft:dried_ghast"
 			id: "4A387713A3425B79"
 			rewards: [
@@ -1508,9 +1548,9 @@
 				""
 				"&eSaddle&r the Hullback, then build a &ePlatform&r made from &eWooden Planks&r."
 			]
+			entity_vis_size: 1.0f
 			icon: "whaleborne:helm"
 			id: "713BA4BB1DA825B8"
-			invisible: true
 			invisible_until_tasks: 1
 			rewards: [
 				{
@@ -1541,6 +1581,15 @@
 			subtitle: "A Wreck"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "whaleborne:helm"
 					id: "4488F91C0461630A"
 					observe_type: 5
@@ -1579,54 +1628,12 @@
 			y: 10.5d
 		}
 		{
-			description: [
-				"[\"\",{\"text\":\"Press \"},{ \"keybind\": \"key.keyboard.left.alt\", \"color\": \"gold\"},{\"text\":\" to bestow nearby allies and tamed enemies with positive effects.\"}]"
-				""
-				"Effects are given to allies within &e6 blocks&r."
-			]
-			id: "29DB426FC37E70BA"
-			rewards: [
-				{
-					id: "7D6710B30B13333C"
-					type: "xp"
-					xp: 15
-				}
-				{
-					count: 3
-					id: "05E04216A8B40DEA"
-					item: "kubejs:makeshift_box"
-					type: "item"
-				}
-				{
-					id: "7DE8027179086CB0"
-					item: "kubejs:stylish_box"
-					type: "item"
-				}
-			]
-			size: 2.0d
-			subtitle: "Gather up"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "citadel:effect_item"
-					tag: {
-						DisplayEffect: "allyeffect:allyship"
-					}
-				}
-				id: "26370CA5DAAB9F56"
-				title: "&eInspire: &rAllies"
-				type: "custom"
-			}]
-			title: "&eSegment: &aAllied Alliance"
-			x: 0.0d
-			y: 13.0d
-		}
-		{
 			dependencies: [
 				"713BA4BB1DA825B8"
 				"4488F91C0461630A"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "65919D35266C7AC8"
 			rewards: [
 				{

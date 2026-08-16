@@ -1,7 +1,6 @@
 {
   "enabled": true,
   "day_enabled": true,
-  "night_enabled": true,
   "rain_enabled": true,
   "thunder_enabled": true,
   "cave_enabled": true,
@@ -9,7 +8,6 @@
   "void_enabled": true,
   "water_enabled": true,
   "lava_enabled": true,
-  "use_vanilla_for_unconfigured": true,
   "dimension_blacklist": [
     "minecraft:the_end"
   ],
@@ -25,5 +23,21 @@
   "void_pick": 6,
   "change_time": 200,
   "step_color": 0.1,
-  "step_distance": 20.0
+  "step_distance": 20.0,
+  "config_version": 3,
+  "night_enabled": true,
+  "sunrise_enabled": true,
+  "sunset_enabled": true,
+  "moon_enabled": true,
+  "depth_enabled": true,
+  "snow_enabled": true,
+  "enclosed_enabled": true,
+  "use_vanilla_for_unconfigured": false,
+  "cave_sky_gate": true,
+  "depth_max": 32,
+  "biome_blend_distance": 24,
+  "biome_blend_samples": 7,
+  "noise_amount": 0.0,
+  "noise_speed": 1.0,
+  "noise_scale": 0.01
 }

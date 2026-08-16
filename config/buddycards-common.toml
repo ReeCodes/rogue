@@ -9,6 +9,10 @@
 	#Range: 0.0 ~ 1.0
 	piglinChance = 0.05
 	#
+	#Odds of wardens dropping cave set packs, 0 for 0%, 1 for 100%, default is 75%
+	#Range: 0.0 ~ 1.0
+	wardenChance = 0.75
+	#
 	#Odds of ender dragons dropping end set packs, 0 for 0%, 1 for 100%, default is 100%
 	#Range: 0.0 ~ 1.0
 	dragonChance = 1.0
@@ -20,6 +24,10 @@
 	#Odds of withers dropping nether set packs, 0 for 0%, 1 for 100%, default is 50%
 	#Range: 0.0 ~ 1.0
 	witherChance = 0.5
+	#
+	#Maximum amount of packs dropped when a warden drops packs, default is 1
+	#Range: 1 ~ 16
+	wardenMaxPacks = 1
 	#
 	#Odds of baby zombie villager dropping base set packs, 0 for 0%, 1 for 100%, default is 10%
 	#Range: 0.0 ~ 1.0
@@ -98,4 +106,10 @@
 	#Odds for an Enderling to spawn with an Enderman in the Overworld, 0-1, default is 1.5%
 	#Range: 0.0 ~ 1.0
 	overOdds = 0.015
+
+[misc]
+	#
+	#Chance to pull an extra card in a pack when using a Charged Buddysteel Ring, 0-1, default is 50%
+	#Range: 0.0 ~ 1.0
+	buddysteelRingChance = 0.5
 

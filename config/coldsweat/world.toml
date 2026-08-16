@@ -18,10 +18,10 @@
 	# • temperature: The temperature offset to apply to the dimension
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
 	"Dimension Temperature Offsets" = [
-	    ["minecraft:the_nether", 0.7],
-	    ["minecraft:the_end", -0.1],
-	    ["twilightforest:twilight_forest_type", 0.2],
-	    ["aether:the_aether", 0.7]
+	    ["minecraft:the_nether", 32, "f"],
+	    ["minecraft:the_end", -5, "f"],
+	    ["twilightforest:twilight_forest_type", 10, "f"],
+	    ["aether:the_aether", 32, "f"]
 	]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines the temperature of a dimension, overriding biome and elevation temperature
@@ -53,51 +53,86 @@
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
 	# • *waterTemp: The temperature of water in the biome
 	"Biome Temperatures" = [
-	    ["minecraft:soul_sand_valley", 53, 53, "F"],
+	    ["minecraft:badlands", 84, 120, "F", -5],
+	    ["minecraft:bamboo_jungle", 76, 87, "F"],
+	    ["minecraft:beach", 52, 84, "F"],
+	    ["minecraft:birch_forest", 47, 77, "F"],
+	    ["minecraft:cherry_grove", 42, 67, "F"],
+	    ["minecraft:cold_ocean", 39, 70, "F"],
+	    ["minecraft:dark_forest", 53, 80, "F"],
+	    ["minecraft:deep_cold_ocean", 39, 70, "F"],
+	    ["minecraft:deep_dark", 63, 63, "F"],
+	    ["minecraft:deep_frozen_ocean", 8, 31, "F"],
+	    ["minecraft:deep_lukewarm_ocean", 39, 70, "F"],
+	    ["minecraft:deep_ocean", 39, 70, "F"],
+	    ["minecraft:desert", 48, 115, "F"],
+	    ["minecraft:dripstone_caves", "disable"],
+	    ["minecraft:eroded_badlands", 88, 120, "F", -5],
+	    ["minecraft:flower_forest", 51, 76, "F"],
+	    ["minecraft:forest", 51, 76, "F"],
+	    ["minecraft:frozen_ocean", 15, 31, "F"],
+	    ["minecraft:frozen_peaks", 8, 31, "F"],
+	    ["minecraft:frozen_river", 15, 31, "F"],
+	    ["minecraft:grove", 10, 36, "F"],
+	    ["minecraft:ice_spikes", 17, 47, "F"],
+	    ["minecraft:jagged_peaks", -11, 12, "F"],
+	    ["minecraft:jungle", 76, 89, "F"],
+	    ["minecraft:lukewarm_ocean", 39, 70, "F"],
+	    ["minecraft:lush_caves", 39, 70, "F"],
+	    ["minecraft:mangrove_swamp", 56, 80, "F"],
+	    ["minecraft:meadow", 42, 67, "F"],
+	    ["minecraft:mushroom_fields", 61, 84, "F"],
+	    ["minecraft:ocean", 39, 70, "F"],
 	    ["minecraft:old_growth_birch_forest", 58, 72, "F"],
-	    ["minecraft:river", 60, 70, "F"],
-	    ["minecraft:swamp", 72, 84, "F"],
-	    ["minecraft:savanna", 70, 95, "F"],
-	    ["minecraft:savanna_plateau", 76, 98, "F"],
-	    ["minecraft:windswept_savanna", 67, 90, "F"],
-	    ["minecraft:taiga", 44, 62, "F"],
-	    ["minecraft:snowy_taiga", 19, 48, "F"],
 	    ["minecraft:old_growth_pine_taiga", 48, 62, "F"],
 	    ["minecraft:old_growth_spruce_taiga", 48, 62, "F"],
-	    ["minecraft:desert", 48, 115, "F"],
+	    ["minecraft:plains", 52, 84, "F"],
+	    ["minecraft:river", "disable"],
+	    ["minecraft:savanna", 70, 95, "F"],
+	    ["minecraft:savanna_plateau", 76, 98, "F"],
+	    ["minecraft:small_end_islands", 39, 70, "F"],
+	    ["minecraft:snowy_beach", 8, 30, "F"],
+	    ["minecraft:snowy_plains", 8, 30, "F"],
+	    ["minecraft:snowy_slopes", 24, 32, "F"],
+	    ["minecraft:snowy_taiga", 8, 30, "F"],
+	    ["minecraft:soul_sand_valley", 53, 53, "F"],
+	    ["minecraft:sparse_jungle", 62, 87, "F"],
+	    ["minecraft:stony_peaks", 60, 94, "F"],
 	    ["minecraft:stony_shore", 50, 64, "F"],
-	    ["minecraft:snowy_beach", 38, 52, "F"],
-	    ["minecraft:snowy_slopes", 24, 38, "F"],
+	    ["minecraft:sunflower_plains", 52, 84, "F"],
+	    ["minecraft:swamp", 72, 84, "F", 5],
+	    ["minecraft:taiga", 44, 62, "F"],
+	    ["minecraft:warm_ocean", 67, 76, "F", 10],
 	    ["minecraft:windswept_forest", 48, 66, "F"],
-	    ["minecraft:frozen_peaks", 15, 33, "F"],
-	    ["minecraft:warm_ocean", 67, 76, "F"],
-	    ["minecraft:deep_frozen_ocean", 56, 65, "F"],
-	    ["minecraft:jungle", 76, 87, "F"],
-	    ["minecraft:bamboo_jungle", 76, 87, "F"],
-	    ["minecraft:badlands", 84, 120, "F"],
-	    ["minecraft:wooded_badlands", 80, 108, "F"],
-	    ["minecraft:eroded_badlands", 88, 120, "F"],
-	    ["minecraft:deep_dark", 63, 63, "F"],
-	    ["biomesoplenty:bayou", 67, 78, "F"],
-	    ["biomesoplenty:bog", 62, 73, "F"],
-	    ["biomesoplenty:fir_clearing", 56, 68, "F"],
-	    ["biomesoplenty:marsh", 76, 87, "F"],
-	    ["biomesoplenty:wetland", 63, 74, "F"],
-	    ["biomesoplenty:field", 64, 85, "F"],
-	    ["biomesoplenty:ominous_woods", 65, 72, "F"],
-	    ["biomesoplenty:coniferous_forest", 44, 58, "F"],
-	    ["biomesoplenty:seasonal_forest", 52, 64, "F"],
-	    ["biomesoplenty:pumpkin_patch", 57, 78, "F"],
+	    ["minecraft:windswept_gravelly_hills", 24, 58, "F"],
+	    ["minecraft:windswept_hills", 24, 58, "F"],
+	    ["minecraft:windswept_savanna", 67, 90, "F"],
+	    ["minecraft:wooded_badlands", 80, 108, "F", -5],
+	    ["biomesoplenty:bog", 41, 58, "F"],
+	    ["biomesoplenty:cold_desert", 0, 40, "F"],
+	    ["biomesoplenty:floodplain", 68, 89, "F"],
+	    ["biomesoplenty:fir_clearing", 49, 68, "F"],
+	    ["biomesoplenty:marsh", 70, 84, "F", 5],
+	    ["biomesoplenty:crag", 62, 80, "F"],
+	    ["biomesoplenty:wetland", 63, 83, "F", -8],
+	    ["biomesoplenty:field", 58, 85, "F"],
+	    ["biomesoplenty:hot_springs", 26, 54, "F", 20],
+	    ["biomesoplenty:coniferous_forest", 44, 67, "F"],
+	    ["biomesoplenty:seasonal_forest", 48, 64, "F"],
+	    ["biomesoplenty:pumpkin_patch", 48, 64, "F"],
+	    ["biomesoplenty:aspen_glade", 28, 48, "F"],
 	    ["biomesoplenty:woodland", 67, 80, "F"],
+	    ["biomesoplenty:old_growth_woodland", 67, 80, "F"],
 	    ["biomesoplenty:mediterranean_forest", 64, 78, "F"],
 	    ["biomesoplenty:dune_beach", 67, 78, "F"],
+	    ["biomesoplenty:rainforest", 73, 86, "F"],
 	    ["biomesoplenty:rocky_rainforest", 73, 86, "F"],
-	    ["biomesoplenty:old_growth_woodland", 65, 78, "F"],
-	    ["biomesoplenty:forested_field", 64, 78, "F"],
+	    ["biomesoplenty:forested_field", 58, 78, "F"],
 	    ["biomesoplenty:fungal_jungle", 73, 86, "F"],
 	    ["biomesoplenty:highland", 57, 70, "F"],
-	    ["biomesoplenty:highland_moor", 54, 68, "F"],
-	    ["biomesoplenty:grassland", 58, 82, "F"],
+	    ["biomesoplenty:moor", 54, 68, "F"],
+	    ["biomesoplenty:muskeg", 10, 32, "F"],
+	    ["biomesoplenty:grassland", 54, 79, "F"],
 	    ["biomesoplenty:clover_patch", 56, 78, "F"],
 	    ["biomesoplenty:jade_cliffs", 57, 70, "F"],
 	    ["biomesoplenty:lush_desert", 72, 94, "F"],
@@ -107,13 +142,14 @@
 	    ["biomesoplenty:orchard", 58, 78, "F"],
 	    ["biomesoplenty:prairie", 66, 82, "F"],
 	    ["biomesoplenty:origin_valley", 65, 80, "F"],
-	    ["biomesoplenty:snowy_coniferous_forest", 28, 48, "F"],
-	    ["biomesoplenty:snowy_fir_clearing", 32, 51, "F"],
 	    ["biomesoplenty:snowy_maple_woods", 32, 48, "F"],
 	    ["biomesoplenty:spider_nest", 75, 75, "F"],
+	    ["biomesoplenty:tundra", 8, 30, "F"],
 	    ["biomesoplenty:volcanic_plains", 82, 95, "F"],
 	    ["biomesoplenty:volcano", 94, 120, "F"],
-	    ["biomesoplenty:wooded_wasteland", 78, 95, "F"]
+	    ["biomesoplenty:wasteland", 78, 105, "F"],
+	    ["biomesoplenty:wasteland_steppe", 78, 95, "F"],
+	    ["environmental:marsh", 60, 80, "F", -5]
 	]
 
 [Blocks]
@@ -132,17 +168,21 @@
 	# • *tempLimit: The maximum world temperature at which this block temp will have any effect.
 	#   (Represents the minimum temp if the block temp is negative)
 	"Block Temperatures" = [
-	    ["cold_sweat:boiler", 0.27, 7, "mc", 0.88, "lit=true", "", 4],
-	    ["cold_sweat:icebox", -0.27, 7, "mc", 0.88, "frosted=true", "", 0],
-	    ["#minecraft:fire", 0.476, 7, "mc", 0.9, "", "", 8],
-	    ["#minecraft:campfires", 0.476, 7, "mc", 0.9, "lit=true", " ", 8],
-	    ["minecraft:magma_block", 0.25, 3, "mc", 1.0],
-	    ["minecraft:lava_cauldron", 0.5, 7, "mc", 1.5],
-	    ["minecraft:ice", -0.15, 4, "mc", 0.6, "", "", -0.7],
-	    ["minecraft:packed_ice", -0.25, 4, "mc", 1.0, "", "", -0.7],
-	    ["minecraft:blue_ice", -0.35, 4, "mc", 1.4, "", "", -0.7],
-	    ["#minecraft:ice", -0.15, 4, "mc", 0.6, "", "", -0.7],
-	    ["minecraft:lava", 0.25, 7, "mc", 4, "", "", 21.5, true]
+	    ["cold_sweat:boiler", 15, 7, "f", 36, "lit=true", "", 212],
+	    ["cold_sweat:icebox", -15, 7, "f", 36, "frosted=true", "", 32],
+	    ["minecraft:lava", 30, 7, "f", 200, "", "", 1000, true],
+	    ["#minecraft:fire", 25, 7, "f", 50, "", "", 400],
+	    ["#minecraft:campfires", 25, 7, "f", 50, "lit=true", " ", 400],
+	    ["minecraft:magma_block", 20, 3, "f", 48],
+	    ["minecraft:lava_cauldron", 30, 7, "f", 200, "", "", 1000, true],
+	    ["minecraft:ice", -10, 4, "f", 24, "", "", 33],
+	    ["minecraft:packed_ice", -15, 4, "f", 48, "", "", 16],
+	    ["minecraft:blue_ice", -20, 4, "f", 64, "", "", 0],
+	    ["#minecraft:ice", -6, 4, "f", 27, "", "", 33],
+	    ["create:blaze_burner", 5, 3, "f", 30, "blaze=smouldering", "", 400],
+	    ["create:blaze_burner", 12, 4, "f", 30, "blaze=fading", "", 400],
+	    ["create:blaze_burner", 20, 5, "f", 45, "blaze=kindled", "", 400],
+	    ["create:blaze_burner", 30, 6, "f", 60, "blaze=seething", "", 400]
 	]
 	#─────────────────────────────────────────────────────────────────────────
 	# The maximum range of blocks' area of effect
@@ -154,7 +194,7 @@
 	# When set to true, uses Cold Sweat's temperature system to determine water freezing behavior
 	"Custom Freezing Behavior" = true
 	#─────────────────────────────────────────────────────────────────────────
-	# When set to true, modifies ice blocks to be harvestable with a pickaxe
+	# When set to true, modifies ice blocks to be harvestable with a pickaxe and tweaks its mining speed
 	"Custom Ice Drops" = true
 	#─────────────────────────────────────────────────────────────────────────
 	# The speed at which wet players dry off
@@ -171,13 +211,35 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# The default temperature of water
 	# └── Format: [temperature, *units]
-	"Default Water Temperature" = [-0.0049382716049382715, "f"]
+	"Default Water Temperature" = [-10, "f"]
 	#─────────────────────────────────────────────────────────────────────────
 	# The maximum soak level a player can reach from rain alone (0.0 - 1.0)
 	#Range: 0.0 ~ Infinity
 	"Max Rain Soak" = 0.2
 
+[Structures]
+	#─────────────────────────────────────────────────────────────────────────
+	# Overrides the world temperature when the player is within this structure
+	# ├── Format: [["structure_id", temperature, *units], [...], etc]
+	# └── [* = optional]
+	# • structure_id: The ID of the structure (i.e. "minecraft:stronghold")
+	# • temperature: The temperature of the structure, in Minecraft units
+	# • *units: The units of the temperature ("f" for Fahrenheit, "c" for Celsius, "mc" for Minecraft units)
+	"Structure Temperatures" = []
+	#─────────────────────────────────────────────────────────────────────────
+	# Offsets the world temperature when the player is within this structure
+	# ├── Format: [["structure_id", offset, *units], [...], etc]
+	# └── [* = optional]
+	# • structure_id: The ID of the structure (i.e. "minecraft:igloo")
+	# • offset: The temperature offset of the structure, in Minecraft units
+	# • *units: The units of the temperature ("f" for Fahrenheit, "c" for Celsius, "mc" for Minecraft units)
+	"Structure Temperature Offsets" = []
+
 [Misc]
+	#─────────────────────────────────────────────────────────────────────────
+	# A temperature offset applied when in complete shade or when the sky is overcast
+	# └── Format: [offset, *units]
+	"Shade Temperature Offset" = [-9, "f"]
 	#─────────────────────────────────────────────────────────────────────────
 	# List of blocks that will allow the player to sleep on them, regardless of the "Prevent Sleep When in Danger" setting
 	# Use this list if the player is not getting the temperature effect from sleeping on particular blocks
@@ -189,10 +251,6 @@
 	# Converts damage dealt by Soul Fire to cold damage (default: true)
 	# Does not affect the block's temperature
 	"Cold Soul Fire" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# A temperature offset applied when in complete shade or when the sky is overcast
-	# └── Format: [offset, *units]
-	"Shade Temperature Offset" = [-0.2, "mc"]
 
 #"Thermal sources" are blocks that have a smokestack and give frigidness/warmth. like the hearth, boiler, and iceobx
 ["Thermal Sources"]
@@ -203,7 +261,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# List of additional blocks that thermal sources can spread through
 	# Use this list if thermal sources aren't spreading through particular blocks that they should
-	"Thermal Source Spread Whitelist" = ["minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "evilcraft:undead_leaves", "naturesaura:golden_leaves", "naturesaura:ancient_leaves", "naturesaura:decayed_leaves", "mythicbotany:dreamwood_leaves", "shineals_prehistoric_expansion:ginkgo_leaves", "shineals_prehistoric_expansion:juniper_berry_bush", "shineals_prehistoric_expansion:juniper_leaves", "mysticsbiomes:strawberry_blossoms", "mysticsbiomes:pink_cherry_blossoms", "mysticsbiomes:white_cherry_blossoms", "mysticsbiomes:budding_peony_leaves", "mysticsbiomes:peony_leaves", "mysticsbiomes:peach_leaves", "mysticsbiomes:maple_leaves", "mysticsbiomes:orange_maple_leaves", "mysticsbiomes:yellow_maple_leaves", "mysticsbiomes:sea_shrub_leaves", "mysticsbiomes:tropical_leaves", "mysticsbiomes:hydrangea_leaves", "mysticsbiomes:jacaranda_blossoms", "mysticsbiomes:jacaranda_leaves", "sushigocrafting:avocado_leaves", "occultism:otherworld_leaves", "occultism:otherworld_leaves_natural", "ad_astra:glacian_leaves", "arts_and_crafts:cork_leaves", "chipped:apple_acacia_leaves", "chipped:cherry_acacia_leaves", "chipped:dead_acacia_leaves", "chipped:frosted_acacia_leaves", "chipped:golden_acacia_leaves", "chipped:golden_apple_acacia_leaves", "chipped:golden_cherry_acacia_leaves", "chipped:magenta_flower_acacia_leaves", "chipped:orange_acacia_leaves", "chipped:red_acacia_leaves", "chipped:white_flower_acacia_leaves", "chipped:apple_birch_leaves", "chipped:cherry_birch_leaves", "chipped:dead_birch_leaves", "chipped:frosted_birch_leaves", "chipped:golden_birch_leaves", "chipped:golden_apple_birch_leaves", "chipped:golden_cherry_birch_leaves", "chipped:magenta_flower_birch_leaves", "chipped:orange_birch_leaves", "chipped:red_birch_leaves", "chipped:white_flower_birch_leaves", "chipped:apple_dark_oak_leaves", "chipped:cherry_dark_oak_leaves", "chipped:dead_dark_oak_leaves", "chipped:frosted_dark_oak_leaves", "chipped:golden_dark_oak_leaves", "chipped:golden_apple_dark_oak_leaves", "chipped:golden_cherry_dark_oak_leaves", "chipped:magenta_flower_dark_oak_leaves", "chipped:orange_dark_oak_leaves", "chipped:red_dark_oak_leaves", "chipped:white_flower_dark_oak_leaves", "chipped:apple_jungle_leaves", "chipped:cherry_jungle_leaves", "chipped:dead_jungle_leaves", "chipped:frosted_jungle_leaves", "chipped:golden_jungle_leaves", "chipped:golden_apple_jungle_leaves", "chipped:golden_cherry_jungle_leaves", "chipped:magenta_flower_jungle_leaves", "chipped:orange_jungle_leaves", "chipped:red_jungle_leaves", "chipped:white_flower_jungle_leaves", "chipped:apple_oak_leaves", "chipped:cherry_oak_leaves", "chipped:dead_oak_leaves", "chipped:frosted_oak_leaves", "chipped:golden_oak_leaves", "chipped:golden_apple_oak_leaves", "chipped:golden_cherry_oak_leaves", "chipped:magenta_flower_oak_leaves", "chipped:orange_oak_leaves", "chipped:red_oak_leaves", "chipped:white_flower_oak_leaves", "chipped:apple_spruce_leaves", "chipped:cherry_spruce_leaves", "chipped:dead_spruce_leaves", "chipped:frosted_spruce_leaves", "chipped:golden_spruce_leaves", "chipped:golden_apple_spruce_leaves", "chipped:golden_cherry_spruce_leaves", "chipped:magenta_flower_spruce_leaves", "chipped:orange_spruce_leaves", "chipped:red_spruce_leaves", "chipped:white_flower_spruce_leaves", "twilightdelight:ironwood_leaves", "undergarden:smogstem_leaves", "undergarden:wigglewood_leaves", "undergarden:grongle_leaves", "caupona:walnut_leaves", "caupona:wolfberry_leaves", "caupona:fig_leaves", "outer_end:azure_leaves", "tconstruct:earth_slime_leaves", "tconstruct:sky_slime_leaves", "tconstruct:ender_slime_leaves", "goety:rotten_leaves", "goety:windswept_leaves", "goety:pine_leaves", "goety:hardened_leaves", "biomesoplenty:null_leaves", "biomesoplenty:origin_leaves", "biomesoplenty:flowering_oak_leaves", "biomesoplenty:cypress_leaves", "biomesoplenty:snowblossom_leaves", "biomesoplenty:rainbow_birch_leaves", "biomesoplenty:fir_leaves", "biomesoplenty:pine_leaves", "biomesoplenty:red_maple_leaves", "biomesoplenty:orange_maple_leaves", "biomesoplenty:yellow_maple_leaves", "biomesoplenty:redwood_leaves", "biomesoplenty:mahogany_leaves", "biomesoplenty:jacaranda_leaves", "biomesoplenty:palm_leaves", "biomesoplenty:willow_leaves", "biomesoplenty:dead_leaves", "biomesoplenty:magic_leaves", "biomesoplenty:umbran_leaves", "biomesoplenty:hellbark_leaves", "biomesoplenty:empyreal_leaves", "ecologics:coconut_leaves", "ecologics:walnut_leaves", "integrateddynamics:menril_leaves", "hexerei:willow_leaves", "hexerei:witch_hazel_leaves", "hexerei:mahogany_leaves", "blue_skies:bluebright_leaves", "blue_skies:starlit_leaves", "blue_skies:frostbright_leaves", "blue_skies:lunar_leaves", "blue_skies:dusk_leaves", "blue_skies:maple_leaves", "blue_skies:crystallized_leaves", "blue_skies:comet_leaves", "blue_skies:crescent_fruit_leaves", "feywild:autumn_tree_brown_leaves", "feywild:autumn_tree_dark_gray_leaves", "feywild:autumn_tree_light_gray_leaves", "feywild:autumn_tree_red_leaves", "feywild:blossom_tree_magenta_leaves", "feywild:blossom_tree_pink_leaves", "feywild:blossom_tree_white_leaves", "feywild:hexen_tree_black_leaves", "feywild:hexen_tree_purple_leaves", "feywild:spring_tree_cyan_leaves", "feywild:spring_tree_green_leaves", "feywild:spring_tree_lime_leaves", "feywild:summer_tree_orange_leaves", "feywild:summer_tree_yellow_leaves", "feywild:winter_tree_blue_leaves", "feywild:winter_tree_light_blue_leaves", "ars_nouveau:purple_archwood_leaves", "ars_nouveau:blue_archwood_leaves", "ars_nouveau:red_archwood_leaves", "ars_nouveau:green_archwood_leaves", "ars_elemental:yellow_archwood_leaves", "eidolon:illwood_leaves", "aether:skyroot_leaves", "aether:golden_oak_leaves", "aether:crystal_leaves", "aether:crystal_fruit_leaves", "aether:holiday_leaves", "aether:decorated_holiday_leaves", "deep_aether:roseroot_leaves", "deep_aether:blue_roseroot_leaves", "deep_aether:flowering_roseroot_leaves", "deep_aether:flowering_blue_roseroot_leaves", "deep_aether:yagroot_leaves", "deep_aether:cruderoot_leaves", "deep_aether:conberry_leaves", "deep_aether:sunroot_leaves", "aether_redux:blightwillow_leaves", "aether_redux:glacia_leaves", "aether_redux:purple_glacia_leaves", "aether_redux:gilded_oak_leaves", "aether_redux:fieldsproot_leaves", "aether_redux:blighted_skyroot_leaves", "thermal:rubberwood_leaves", "twilightforest:rainbow_oak_leaves", "twilightforest:twilight_oak_leaves", "twilightforest:canopy_leaves", "twilightforest:mangrove_leaves", "twilightforest:dark_leaves", "twilightforest:time_leaves", "twilightforest:transformation_leaves", "twilightforest:mining_leaves", "twilightforest:sorting_leaves", "twilightforest:thorn_leaves", "twilightforest:beanstalk_leaves", "deeperdarker:echo_leaves", "beachparty:palm_leaves", "autumnity:maple_leaves", "autumnity:yellow_maple_leaves", "autumnity:orange_maple_leaves", "autumnity:red_maple_leaves", "upgrade_aquatic:river_leaves", "hexcasting:amethyst_edified_leaves", "hexcasting:aventurine_edified_leaves", "hexcasting:citrine_edified_leaves", "alexscaves:ancient_leaves", "forbidden_arcanus:aurum_leaves", "forbidden_arcanus:nuggety_aurum_leaves", "quark:blue_blossom_leaves", "quark:lavender_blossom_leaves", "quark:orange_blossom_leaves", "quark:yellow_blossom_leaves", "quark:red_blossom_leaves", "quark:ancient_leaves", "malum:azure_runewood_leaves", "malum:soulwood_leaves", "malum:budding_soulwood_leaves", "malum:runewood_leaves", "rats:pirat_leaves", "create:encased_fluid_pipe"]
+	"Thermal Source Spread Whitelist" = ["minecraft:iron_bars", "#minecraft:leaves", "create:encased_fluid_pipe"]
 	#─────────────────────────────────────────────────────────────────────────
 	# List of additional blocks that thermal sources spread through
 	# Use this list if thermal sources are spreading through particular blocks that they shouldn't
@@ -301,22 +359,4 @@
 		# Lower numbers cause fuel to be consumed faster. Setting to 0 disables fuel consumption
 		#Range: > 0
 		"Icebox Fuel Consumption Interval" = 40
-
-[Structures]
-	#─────────────────────────────────────────────────────────────────────────
-	# Overrides the world temperature when the player is within this structure
-	# ├── Format: [["structure_id", temperature, *units], [...], etc]
-	# └── [* = optional]
-	# • structure_id: The ID of the structure (i.e. "minecraft:stronghold")
-	# • temperature: The temperature of the structure, in Minecraft units
-	# • *units: The units of the temperature ("f" for Fahrenheit, "c" for Celsius, "mc" for Minecraft units)
-	"Structure Temperatures" = []
-	#─────────────────────────────────────────────────────────────────────────
-	# Offsets the world temperature when the player is within this structure
-	# ├── Format: [["structure_id", offset, *units], [...], etc]
-	# └── [* = optional]
-	# • structure_id: The ID of the structure (i.e. "minecraft:igloo")
-	# • offset: The temperature offset of the structure, in Minecraft units
-	# • *units: The units of the temperature ("f" for Fahrenheit, "c" for Celsius, "mc" for Minecraft units)
-	"Structure Temperature Offsets" = []
 

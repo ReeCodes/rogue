@@ -75,7 +75,7 @@
 	"Rat King Max Constantly Spawns Rats" = true
 	#Defines the amount of Rats the Rat King can have at its command at a time.
 	#Range: 0 ~ 100
-	"Rat King Max Rats" = 10
+	"Rat King Max Rats" = 4
 
 ["Ratlantean Automaton"]
 	#If true, the Ratlantean Automaton will only be summonable in Ratlantis. Building it in any other dimension will have no effect.

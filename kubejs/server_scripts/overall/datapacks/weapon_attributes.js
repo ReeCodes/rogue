@@ -8,7 +8,7 @@ ServerEvents.highPriorityData(event => {
         event.addJson(`${mod}:weapon_attributes/${item}.json`, weaponAttributer(weaponType));
     }
 	
-	//MISC
+	//MISC	
     applyAtt('miniutilities:kikoku', 'katana');
 	applyAtt('dungeons_plus:warped_axe', 'heavy_axe');
 	applyAtt('evilcraft:mace_of_distortion', 'mace');
@@ -60,5 +60,11 @@ ServerEvents.highPriorityData(event => {
 	});
 	Ingredient.of(['@tools_complement']).and(Ingredient.of(['/.*pickaxe$/'])).stacks.forEach(i => {
 		applyAtt(i.id, 'pickaxe')
+	});
+	
+	//I&F
+    applyAtt('iceandfire:troll_weapon_hammer', 'hammer');
+	Ingredient.of(['/iceandfire:troll_weapon_(column|trunk).*/']).stacks.forEach(i => {
+		applyAtt(i.id, 'mace')
 	});
 });

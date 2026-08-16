@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
 		'enderio:photovoltaic_plate'
 	)
 	
-	event.replaceInput({type: 'minecraft:crafting_shaped' }, 
+	event.replaceInput({ type: 'minecraft:crafting_shaped' }, 
 		'minecraft:chest', 
 		'#forge:chests/wooden'
 	)
@@ -166,17 +166,6 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ output: '/convivium:.+/', type: 'minecraft:crafting_shaped' }, 
 		'caupona:lead_ingot', 
 		'#forge:ingots/lead'
-		)
-		
-	//SILVER-REPLACEMENTS
-	event.replaceInput({}, 
-		'galosphere:silver_block', 
-		'#forge:storage_blocks/silver'
-		)
-		
-	event.replaceInput({}, 
-		'galosphere:silver_ingot', 
-		'#forge:ingots/silver'
 		)
 		
 	//ADASTRA - STEEL

@@ -1,0 +1,5 @@
+#Whether the rules for aura generations will be displayed in log or not. (Default: true)
+showAuraGenRulesInLog = true
+#Whether the rules for Powder of the Bountiful Core will be displayed in log or not. (Default: true)
+showOreSpawnRulesInLog = true
+

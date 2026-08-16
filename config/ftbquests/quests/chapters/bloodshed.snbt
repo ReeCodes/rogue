@@ -10,6 +10,7 @@
 	quests: [
 		{
 			description: ["Feed an animal a &eDarkened Apple&r. Watch it become corrupted. Throw a &ebook&r at it's corrupted spirit."]
+			entity_vis_size: 1.0f
 			icon: "evilcraft:origins_of_darkness"
 			id: "000000000000065B"
 			rewards: [
@@ -47,6 +48,7 @@
 		}
 		{
 			description: ["Your book &eSanguine Scientiem&r will help you through this bloody journey."]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -124,6 +126,7 @@
 		{
 			dependencies: ["1CDA460A3E3C3EA9"]
 			dependency_requirement: "one_started"
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:alchemytable"
 			id: "60A02404CA3A8C37"
 			rewards: [
@@ -212,6 +215,7 @@
 		}
 		{
 			dependencies: ["60A02404CA3A8C37"]
+			entity_vis_size: 1.0f
 			id: "55121DDCDC68F014"
 			rewards: [
 				{
@@ -314,6 +318,7 @@
 		}
 		{
 			dependencies: ["55121DDCDC68F014"]
+			entity_vis_size: 1.0f
 			id: "437404A5E3375088"
 			rewards: [
 				{
@@ -418,6 +423,7 @@
 				"2BCDC9E55FC18EEB"
 				"38F9D524F44EAF1F"
 			]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:soulforge"
 			id: "5655BB3ACBC7EDA2"
 			min_required_dependencies: 3
@@ -478,6 +484,7 @@
 				"5655BB3ACBC7EDA2"
 				"00ED3F9C67493B2E"
 			]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:throwing_dagger_syringe"
 			id: "4AFE195F52964E5C"
 			rewards: [
@@ -515,6 +522,7 @@
 				"5655BB3ACBC7EDA2"
 				"00ED3F9C67493B2E"
 			]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:tippedamethystthrowingdagger"
 			id: "185CE85DC4EE773F"
 			rewards: [
@@ -560,6 +568,7 @@
 				"5655BB3ACBC7EDA2"
 				"00ED3F9C67493B2E"
 			]
+			entity_vis_size: 1.0f
 			id: "01768C5004BB538C"
 			rewards: [
 				{
@@ -600,6 +609,7 @@
 				"38F9D524F44EAF1F"
 			]
 			dependency_requirement: "all_started"
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:soulsnare"
 			id: "44654B6C41851541"
 			min_required_dependencies: 3
@@ -639,6 +649,7 @@
 				"5655BB3ACBC7EDA2"
 				"00ED3F9C67493B2E"
 			]
+			entity_vis_size: 1.0f
 			id: "4B6A7681865CE748"
 			rewards: [
 				{
@@ -718,6 +729,7 @@
 		}
 		{
 			dependencies: ["1CDA460A3E3C3EA9"]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:magicianbloodorb"
 			id: "6A48BAE79E69949B"
 			rewards: [
@@ -820,6 +832,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["Planting the &eTau Fruit&r on top of a type of &eFarmland&r, while a &emob&r or &eanimal&r is standing on top of the crop, saturates the fruit, converting it to &eSaturated Tau&r."]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:alchemicalreactionchamber"
 			id: "6B9D99291F526996"
 			rewards: [
@@ -844,6 +857,15 @@
 					type: "item"
 				}
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "bloodmagic:weak_tau"
 					id: "7A41C1FFFAC01511"
 					observe_type: 0
@@ -853,6 +875,15 @@
 					type: "observation"
 				}
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "bloodmagic:strong_tau"
 					id: "41C09D45848A5563"
 					observe_type: 0
@@ -896,6 +927,7 @@
 		}
 		{
 			dependencies: ["6B9D99291F526996"]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:masterbloodorb"
 			id: "6C14D866C311E8CD"
 			rewards: [
@@ -1006,6 +1038,7 @@
 		}
 		{
 			dependencies: ["1CDA460A3E3C3EA9"]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:incensealtar"
 			id: "155865CB80ECC6CB"
 			rewards: [
@@ -1063,6 +1096,7 @@
 				"155865CB80ECC6CB"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "7E8183DFE6212E96"
 			rewards: [
 				{
@@ -1153,6 +1187,7 @@
 		}
 		{
 			dependencies: ["6C14D866C311E8CD"]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:archmagebloodorb"
 			id: "316C7A0024FC47A5"
 			rewards: [
@@ -1193,6 +1228,7 @@
 				"6A48BAE79E69949B"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "543CFB50DD4EB8A9"
 			rewards: [
 				{
@@ -1289,6 +1325,7 @@
 		}
 		{
 			dependencies: ["60A02404CA3A8C37"]
+			entity_vis_size: 1.0f
 			id: "21B4D7A47C96E669"
 			rewards: [
 				{
@@ -1408,6 +1445,7 @@
 		}
 		{
 			dependencies: ["543CFB50DD4EB8A9"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "bloodmagic:upgradetrainer"
@@ -1533,6 +1571,7 @@
 		}
 		{
 			dependencies: ["316C7A0024FC47A5"]
+			entity_vis_size: 1.0f
 			id: "0B9BF0F7066F4E9A"
 			rewards: [
 				{
@@ -1609,6 +1648,7 @@
 				"4CF824A29C798DDD"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "2B6741A688B17B45"
 			rewards: [
 				{
@@ -1662,6 +1702,7 @@
 		{
 			dependencies: ["1CDA460A3E3C3EA9"]
 			dependency_requirement: "one_started"
+			entity_vis_size: 1.0f
 			id: "523F301C5A81E52F"
 			rewards: [
 				{
@@ -1686,6 +1727,7 @@
 		}
 		{
 			dependencies: ["60A02404CA3A8C37"]
+			entity_vis_size: 1.0f
 			id: "459E52C3C8DC8214"
 			rewards: [
 				{
@@ -1717,6 +1759,7 @@
 		}
 		{
 			dependencies: ["6A48BAE79E69949B"]
+			entity_vis_size: 1.0f
 			id: "55031A8DE2E93CC9"
 			rewards: [
 				{
@@ -1745,6 +1788,7 @@
 				"212D6B91F4B51F77"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:teleposer"
 			id: "7B8A13F29CCC99F2"
 			rewards: [
@@ -1780,6 +1824,7 @@
 		}
 		{
 			dependencies: ["6A48BAE79E69949B"]
+			entity_vis_size: 1.0f
 			id: "1D5D41AD8F7632B2"
 			rewards: [
 				{
@@ -1825,6 +1870,7 @@
 		{
 			dependencies: ["1CDA460A3E3C3EA9"]
 			dependency_requirement: "one_started"
+			entity_vis_size: 1.0f
 			id: "3A652AEFD76C6993"
 			rewards: [
 				{
@@ -1872,6 +1918,7 @@
 		}
 		{
 			dependencies: ["6B9D99291F526996"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:deepslate_iron_ore"
 			id: "4776514880CB6259"
 			rewards: [
@@ -1963,6 +2010,7 @@
 				"7881426F120C6551"
 				"5655BB3ACBC7EDA2"
 			]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:masterroutingnode"
 			id: "137F8DBB0118D15D"
 			rewards: [
@@ -2023,6 +2071,7 @@
 				"6A48BAE79E69949B"
 				"5655BB3ACBC7EDA2"
 			]
+			entity_vis_size: 1.0f
 			icon: "bloodmagic:demoncrystallizer"
 			id: "44473913933D9149"
 			rewards: [

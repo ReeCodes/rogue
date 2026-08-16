@@ -1,0 +1,10 @@
+
+[reroll]
+	#Enable the reroll button in Apotheosis' enchanting table GUI.
+	#Reroll costs (lapis + experience) are taken from Easy Magic's own config.
+	enableReroll = true
+
+[previews]
+	#Show all possible enchantments in slot tooltips (ignoring clue count from shelves).
+	showAllEnchantments = false
+

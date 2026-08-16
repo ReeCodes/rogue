@@ -17,6 +17,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: "minecraft:snowball"
 			id: "648483F84A2E39C5"
 			rewards: [
@@ -32,18 +33,33 @@
 				}
 			]
 			subtitle: "Niflheim Experience"
-			tasks: [{
-				advancement: "cold_sweat:huddle_close"
-				criterion: ""
-				id: "5512FBF05045C881"
-				title: "Warm Up"
-				type: "advancement"
-			}]
+			tasks: [
+				{
+					advancement: "cold_sweat:huddle_close"
+					criterion: ""
+					id: "5512FBF05045C881"
+					title: "&eWarm Up&r"
+					type: "advancement"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "citadel:effect_item"
+						tag: {
+							DisplayEffect: "cold_sweat:ice_resistance"
+						}
+					}
+					id: "033E156124085BAD"
+					title: "&eGain Effect: &rIce Resistance"
+					type: "custom"
+				}
+			]
 			title: "&bWhen In Cold..."
 			x: -3.0d
 			y: 23.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "irons_spellbooks:fire_upgrade_orb"
 			id: "245F22162E11EA0F"
 			rewards: [
@@ -76,6 +92,7 @@
 			y: 23.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "cold_sweat:sewing_table"
 			id: "7525D2194D408D54"
 			rewards: [
@@ -113,26 +130,13 @@
 					title: "&eInsulate: &rArmor"
 					type: "advancement"
 				}
-				{
-					advancement: "cold_sweat:full_insulation"
-					criterion: ""
-					icon: {
-						Count: 1
-						id: "citadel:effect_item"
-						tag: {
-							DisplayEffect: "cold_sweat:warmth"
-						}
-					}
-					id: "16C17D843C41E3C6"
-					title: "&eFully Insulate: &rArmor"
-					type: "advancement"
-				}
 			]
 			title: "&eSegment: &aInsulating"
 			x: 0.0d
 			y: 20.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "cold_sweat:boiler"
 			id: "2340109634946CFE"
 			rewards: [
@@ -158,6 +162,7 @@
 			y: 24.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "cold_sweat:icebox"
 			id: "5EA64C21B9936AD8"
 			rewards: [
@@ -183,6 +188,7 @@
 			y: 24.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5272FF1BDC667878"
 			rewards: [
 				{
@@ -207,6 +213,7 @@
 		}
 		{
 			dependencies: ["2413453C334727D1"]
+			entity_vis_size: 1.0f
 			id: "5CE1E16C37C0D8F8"
 			rewards: [
 				{
@@ -247,6 +254,7 @@
 				"0A12D1871E992570"
 				"71FE71DD87AAB1A8"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -290,6 +298,7 @@
 				""
 				"Wait for them to shed their skin, to obtain &eChameleon Molt&r."
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -360,7 +369,8 @@
 				"3C95C83A5B2DA6DE"
 			]
 			dependency_requirement: "one_completed"
-			icon: "cold_sweat:goat_fur"
+			entity_vis_size: 1.0f
+			icon: "twilightforest:arctic_fur"
 			id: "14344985077FC690"
 			rewards: [
 				{
@@ -381,99 +391,9 @@
 				id: "38D26F553547E87F"
 				item: {
 					Count: 1
-					id: "itemfilters:and"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:or"
-								tag: {
-									items: [
-										{
-											Count: 1b
-											id: "cold_sweat:fur"
-										}
-										{
-											Count: 1b
-											id: "cold_sweat:fur_cap"
-											tag: {
-												Damage: 0
-											}
-										}
-										{
-											Count: 1b
-											id: "cold_sweat:fur_parka"
-											tag: {
-												Damage: 0
-											}
-										}
-										{
-											Count: 1b
-											id: "cold_sweat:fur_pants"
-											tag: {
-												Damage: 0
-											}
-										}
-										{
-											Count: 1b
-											id: "cold_sweat:fur_boots"
-											tag: {
-												Damage: 0
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "minecraft:wool"
-											}
-										}
-									]
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:not"
-								tag: {
-									items: [{
-										Count: 1b
-										id: "itemfilters:or"
-										tag: {
-											items: [
-												{
-													Count: 1b
-													id: "itemfilters:mod"
-													tag: {
-														value: "ad_astra"
-													}
-												}
-												{
-													Count: 1b
-													id: "itemfilters:mod"
-													tag: {
-														value: "chipped"
-													}
-												}
-												{
-													Count: 1b
-													id: "itemfilters:mod"
-													tag: {
-														value: "dyenamics"
-													}
-												}
-												{
-													Count: 1b
-													id: "itemfilters:mod"
-													tag: {
-														value: "rats"
-													}
-												}
-											]
-										}
-									}]
-								}
-							}
-						]
+						"ftbfiltersystem:filter": "custom(insulation/cold)"
 					}
 				}
 				title: "&eCold Insulators"
@@ -489,7 +409,8 @@
 				"3C95C83A5B2DA6DE"
 			]
 			dependency_requirement: "one_completed"
-			icon: "cold_sweat:hoglin_hide"
+			entity_vis_size: 1.0f
+			icon: "immersiveengineering:ersatz_leather"
 			id: "54526C35C855F280"
 			rewards: [
 				{
@@ -509,53 +430,9 @@
 				id: "33415481B72852A5"
 				item: {
 					Count: 1
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "cold_sweat:hoglin_headpiece"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "cold_sweat:hoglin_tunic"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "cold_sweat:hoglin_trousers"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "cold_sweat:hoglin_hooves"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "cold_sweat:hoglin_hide"
-							}
-							{
-								Count: 1b
-								id: "minecraft:rabbit_hide"
-							}
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "thermal:rockwool"
-								}
-							}
-						]
+						"ftbfiltersystem:filter": "custom(insulation/heat)"
 					}
 				}
 				title: "&eHeat Insulators"
@@ -571,7 +448,8 @@
 				"3C95C83A5B2DA6DE"
 			]
 			dependency_requirement: "one_completed"
-			icon: "minecraft:leather"
+			entity_vis_size: 1.0f
+			icon: "cold_sweat:chameleon_molt"
 			id: "1B90E63E1ADD34B6"
 			rewards: [
 				{
@@ -585,80 +463,40 @@
 					type: "item"
 				}
 			]
-			subtitle: "Slightly Adaptive"
-			tasks: [{
-				id: "3ED5F134072E1E9A"
-				item: {
-					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:or"
-								tag: {
-									items: [
-										{
-											Count: 1b
-											id: "minecraft:leather"
-										}
-										{
-											Count: 1b
-											id: "immersiveengineering:ersatz_leather"
-										}
-										{
-											Count: 1b
-											id: "cold_sweat:chameleon_molt"
-										}
-										{
-											Count: 1b
-											id: "minecraft:leather_helmet"
-											tag: {
-												Damage: 0
-											}
-										}
-										{
-											Count: 1b
-											id: "minecraft:leather_chestplate"
-											tag: {
-												Damage: 0
-											}
-										}
-										{
-											Count: 1b
-											id: "minecraft:leather_leggings"
-											tag: {
-												Damage: 0
-											}
-										}
-										{
-											Count: 1b
-											id: "minecraft:leather_boots"
-											tag: {
-												Damage: 0
-											}
-										}
-									]
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:custom"
-								tag: {
-									value: "only_damage"
-								}
-							}
-						]
+			size: 2.0d
+			subtitle: "Adaptive"
+			tasks: [
+				{
+					id: "3ED5F134072E1E9A"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "custom(insulation/neutral)"
+						}
 					}
+					title: "&eNeutral Insulators"
+					type: "item"
 				}
-				title: "&eBi-Insulators"
-				type: "item"
-			}]
+				{
+					id: "5EDC8336A4EBBAF1"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "custom(insulation/adaptive)"
+						}
+					}
+					title: "&eAdaptive Insulators"
+					type: "item"
+				}
+			]
 			title: "Bisulation"
 			x: 0.0d
-			y: 18.5d
+			y: 18.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "cold_sweat:filled_waterskin"
@@ -712,6 +550,7 @@
 				"135E7F3BBDCC2DFF"
 				"498BC1244FD47726"
 			]
+			entity_vis_size: 1.0f
 			icon: "immersiveengineering:light_bulb"
 			id: "7B97BD09F41FDCB2"
 			rewards: [
@@ -747,6 +586,7 @@
 				""
 				"After the spawner has reached it's limit, it will &ebreak itself&r."
 			]
+			entity_vis_size: 1.0f
 			icon: "minecraft:spawner"
 			id: "14D2A28D7AB62763"
 			rewards: [
@@ -777,6 +617,7 @@
 		}
 		{
 			description: ["Upon &4dying&r a totem will spawn bearing all of your otherwise dropped &eitems&r."]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -815,6 +656,7 @@
 				""
 				"Dimensions will likely cost you more &eXP&r."
 			]
+			entity_vis_size: 1.0f
 			id: "62765CDB07A527CB"
 			rewards: [
 				{
@@ -846,6 +688,7 @@
 			y: 9.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "44032D95B4718270"
 			rewards: [
 				{
@@ -882,10 +725,11 @@
 				""
 				"Achievements are the only category of adaptation which &ecannot be undone&r."
 				"{@pagebreak}"
-				"Every time your &edifficulty modifier&r increases or decreases, the &eRogue Meter&r will appear in the bottom left of your screen, reminding you of your current difficulty along with a sound cue."
+				"Every time your &edifficulty modifier&r increases or decreases, the &eRogue Meter&r will appear in the bottom left of your screen, reminding you of your current difficulty."
 				""
-				"&a1.0&r is your starting value; &e10.0&r is hard on it's own; &420.0&r is the limit meaning: most mobs will deal major amounts of damage. Expandable to a new maximum of &450&r."
+				"&a1.0&r is your starting value; &e10.0&r is hard on it's own; &420.0&r is the limit meaning: most mobs will deal major amounts of damage. Expandable to a new maximum of &450&r using the <rainb><glitch>Glitched Box."
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:effect_item"
@@ -919,6 +763,7 @@
 				""
 				"The &eIP&r will be shown in chat."
 			]
+			entity_vis_size: 1.0f
 			icon: "ae2:creative_item_cell"
 			id: "6924F6186EB94A2A"
 			optional: true
@@ -961,6 +806,7 @@
 				""
 				"[\"\",{\"text\":\"Press \"},{ \"keybind\": \"keybind.luggage.wait\", \"color\": \"gold\"},{\"text\":\" to make your Luggage dormant.\"}]"
 			]
+			entity_vis_size: 1.0f
 			id: "66B22F62FA87E39E"
 			rewards: [{
 				id: "6E8AEE86AC2242AE"
@@ -970,22 +816,38 @@
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Everlasting Friendship"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "alexsmobs:tab_icon"
-					tag: {
-						DisplayEntityType: "luggage:luggage"
-						DisplayMobScale: 1.0d
+			tasks: [
+				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					icon: {
+						Count: 1
+						id: "alexsmobs:tab_icon"
+						tag: {
+							DisplayEntityType: "luggage:luggage"
+							DisplayMobScale: 1.0d
+						}
 					}
+					id: "4B441BBD1EDB4FE7"
+					observe_type: 5
+					timer: 0L
+					title: "&eObserve: &rLuggage"
+					to_observe: "luggage:luggage"
+					type: "observation"
 				}
-				id: "4B441BBD1EDB4FE7"
-				observe_type: 5
-				timer: 0L
-				title: "&eObserve: &rLuggage"
-				to_observe: "luggage:luggage"
-				type: "observation"
-			}]
+				{
+					id: "0DB9F71F79672189"
+					item: "luggage:luggage"
+					type: "item"
+				}
+			]
 			title: "&eTip: &aPolylegged Follower"
 			x: -6.0d
 			y: 11.0d
@@ -996,6 +858,7 @@
 				""
 				"The &eDefault Range&r is 18 blocks."
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:diamond_pickaxe"
@@ -1029,6 +892,7 @@
 		}
 		{
 			description: ["[\"\",{\"text\":\"Pressing \"},{ \"keybind\": \"key.findme.search\", \"color\": \"gold\"},{\"text\":\" while hovering over an item highlights it for you in any nearby inventories.\"}]"]
+			entity_vis_size: 1.0f
 			icon: "ironchests:gold_chest"
 			id: "1134D17C621A7C37"
 			rewards: [
@@ -1060,6 +924,7 @@
 				""
 				"Gain experience to unlock skills and abilities."
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:icon_item"
@@ -1090,6 +955,7 @@
 				""
 				"Rare instances of &epartial armor sets&r do also exist, requiring only &eone piece&r."
 			]
+			entity_vis_size: 1.0f
 			icon: "minecraft:armor_stand"
 			id: "5F8AA70D71B8D52A"
 			rewards: [{
@@ -1114,6 +980,7 @@
 				""
 				"Each block may hold various &eItems encased within&r it."
 			]
+			entity_vis_size: 1.0f
 			icon: "minecraft:ice"
 			id: "135E7F3BBDCC2DFF"
 			rewards: [
@@ -1133,6 +1000,15 @@
 			subtitle: "Frozen Goods"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "minecraft:ice"
 					id: "3CCD435CDDEECC71"
 					observe_type: 0
@@ -1162,6 +1038,7 @@
 				""
 				"To speed up this process, drink a &ePotion of Drowsiness&r."
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:effect_item"

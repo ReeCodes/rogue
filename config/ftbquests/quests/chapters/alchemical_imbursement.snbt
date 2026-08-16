@@ -15,6 +15,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "modonomicon:modonomicon"
@@ -42,6 +43,7 @@
 		}
 		{
 			dependencies: ["176E586C9F2E7411"]
+			entity_vis_size: 1.0f
 			icon: "theurgy:alchemical_salt_mineral"
 			id: "0091344CAA1BC9B5"
 			rewards: [{
@@ -69,6 +71,7 @@
 		}
 		{
 			dependencies: ["176E586C9F2E7411"]
+			entity_vis_size: 1.0f
 			icon: "theurgy:mercury_shard"
 			id: "78FA8660995E0604"
 			rewards: [
@@ -104,6 +107,7 @@
 		{
 			dependencies: ["78FA8660995E0604"]
 			description: ["Use &eMercury&r as a heating source, instead of regular fuel."]
+			entity_vis_size: 1.0f
 			icon: "theurgy:mercury_catalyst"
 			id: "5E4E9A4FAA353662"
 			rewards: [
@@ -138,6 +142,7 @@
 		}
 		{
 			dependencies: ["176E586C9F2E7411"]
+			entity_vis_size: 1.0f
 			icon: "theurgy:sal_ammoniac_bucket"
 			id: "41E67315C256C772"
 			rewards: [
@@ -203,6 +208,7 @@
 				"41E67315C256C772"
 			]
 			dependency_requirement: "all_started"
+			entity_vis_size: 1.0f
 			icon: "theurgy:incubator"
 			id: "2AAB2B96FBD7138B"
 			rewards: [
@@ -265,6 +271,7 @@
 			]
 			dependency_requirement: "all_started"
 			description: ["The book &eThe Hermetica&r will help you construct this apparatus."]
+			entity_vis_size: 1.0f
 			icon: "theurgy:reformation_result_pedestal"
 			id: "5C032838DF3C0E75"
 			min_required_dependencies: 10
@@ -316,6 +323,7 @@
 		}
 		{
 			dependencies: ["2E3E451E95EAF2D1"]
+			entity_vis_size: 1.0f
 			icon: "theurgy:fermentation_vat"
 			id: "06D722E91BB72D5F"
 			rewards: [
@@ -371,6 +379,7 @@
 		}
 		{
 			dependencies: ["61B8452E79A28C75"]
+			entity_vis_size: 1.0f
 			icon: "theurgy:digestion_vat"
 			id: "2DC84B1D2E50BDD5"
 			rewards: [
@@ -407,6 +416,7 @@
 		}
 		{
 			dependencies: ["41E67315C256C772"]
+			entity_vis_size: 1.0f
 			id: "7CF786DF0823A086"
 			rewards: [
 				{
@@ -497,6 +507,7 @@
 			y: -3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "598A7AA1A4205094"
 			rewards: [{
 				id: "70AAD1652FA3023F"
@@ -579,6 +590,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4014CDD8E7FE1411"
 			rewards: [{
 				id: "15DD370E5DC946F4"

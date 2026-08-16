@@ -2,6 +2,8 @@ const $ItemFiltersAPI = Java.loadClass('dev.latvian.mods.itemfilters.api.ItemFil
 const $ToolItem = Java.loadClass('net.minecraft.world.item.TieredItem');
 const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 
+const $CSConfigSettings = Java.loadClass('com.momosoftworks.coldsweat.config.ConfigSettings');
+
 const itemFilters = {
 	'no_nbt': item => !item.hasNBT(),
 	'only_damage': item => !item.nbt?.AttributeModifiers,

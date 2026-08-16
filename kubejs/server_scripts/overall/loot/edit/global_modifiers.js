@@ -11,12 +11,16 @@ function removeByMod(event, mod, ids) {
 }
 
 LootJS.modifiers(event => {
+	
+	//console.log(event.getGlobalModifiers());
+	
 	const mods = {
+		
 		removeByMod: [
 		'@enigmaticlegacy', 
 		'@cardiac',
 		'@galosphere',
-		'@feywild'		
+		'@feywild'
 		],
 
 		removeById: [

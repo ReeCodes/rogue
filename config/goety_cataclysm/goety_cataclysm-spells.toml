@@ -90,7 +90,7 @@
 		#Sandstorm Spell Cooldown, Default: 500
 		#Range: > 0
 		sandstormCoolDown = 500
-		#Sandstorm Spell Damage, Default: 5.0
+		#Sandstorm Spell Damage, Default: 7.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		sandstormDamage = 5.0
 
@@ -119,6 +119,9 @@
 		#Total number of Ender Golems an individual player can have, Default: 2
 		#Range: > 0
 		enderGolemLimit = 2
+		#Number of Leviathans that an individual player can have, Default: 1
+		#Range: > 0
+		leviathanLimit = 1
 		#Total number of Prowlers an individual player can have, Default: 2
 		#Range: > 0
 		prowlerLimit = 2
@@ -329,6 +332,31 @@
 		#Range: 0 ~ 72000
 		cindariaSummonDown = 150
 
+	[Spells."Earth Shake Spell"]
+		#Earth Shake Spell Cooldown, Default: 160
+		#Range: > 0
+		earthShakeCoolDown = 160
+		#Time to cast Earth Shake Spell, Default: 100
+		#Range: 0 ~ 72000
+		earthShakeTime = 16
+		#Earth Shake Spell Damage, Default: 8.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		earthShakeDamage = 8.0
+		#Earth Shake Spell Cost, Default: 48
+		#Range: > 0
+		earthShakeCost = 48
+
+	[Spells."Battlefield Spell"]
+		#Battlefield Spell Cost, Default: 48
+		#Range: > 0
+		battlefieldCost = 128
+		#Battlefield Spell Damage, Default: 10.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		battlefieldDamage = 10.0
+		#Battlefield Spell Cooldown, Default: 250
+		#Range: > 0
+		battlefieldCoolDown = 250
+
 	[Spells."Thunder Rage Spell"]
 		#Thunder Rage Spell Cost, Default: 64
 		#Range: > 0
@@ -392,12 +420,23 @@
 		#Extinct Flame Spell Cooldown, Default: 300
 		#Range: > 0
 		extinctFlameCoolDown = 300
+		#How much base damage regular Extinct Flame Fireballs deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		extinctFlameDamage = 6.0
+		#Whether Extinct Flame Spell can set fires, Default: false
+		extinctFlameGriefing = false
 		#Extinct Flame's Fireballs default explosion radius, Default: 1.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		extinctFlameRadius = 1.0
 		#Extinct Flame Spell Cost, Default: 64
 		#Range: > 0
 		extinctFlameCost = 64
+		#How much base damage Extinct Flame Soul Fireballs deals, Default: 8.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		extinctFlameSoulDamage = 8.0
+		#How much base damage Extinct Flame Abyss Fireballs deals, Default: 10.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		extinctFlameAbyssDamage = 10.0
 
 	[Spells."Abyssal Mines Spell"]
 		#Time to cast Abyssal Mines Spell, Default: 70
@@ -446,4 +485,9 @@
 		#Kakoúrgos Spell Cooldown, Default: 100
 		#Range: > 0
 		urchinkinCoolDown = 100
+
+[General]
+	#How many ticks water attacks, ie. drench, gives Wet effect, set to 0 to disable, Default: 100
+	#Range: > 0
+	waterAttackWet = 100
 

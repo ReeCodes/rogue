@@ -9,7 +9,6 @@ Ponder.registry(event => {
 			(scene, util) => {
 				
 				let pAetherium = $PrismBlockEntity.GLOW_WORK;
-				//let pAetherium = new $GlowParticleOptions($AWUtils.AETHERIUM_COLOR, 2.0); //deprecated
 				let pEmber = $GlowParticleOptions.EMBER;
 				
 				let pAetheriumBeamPos = util.vector.blockSurface(util.grid.at(4, 4, 4), Direction.DOWN);

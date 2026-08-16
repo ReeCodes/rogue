@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -93,6 +94,7 @@
 				"4A12D71AA059DE70"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "apotheosis:salvaging_table"
 			id: "4B63C777893C83F4"
 			rewards: [
@@ -142,6 +144,7 @@
 			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4AFF8673B04C1978"
 			rewards: [
 				{
@@ -183,6 +186,7 @@
 				"4A12D71AA059DE70"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "apotheosis:gem_cutting_table"
 			id: "56CDCD2E264F04DB"
 			rewards: [
@@ -225,6 +229,7 @@
 				"16C1ECABE673B3C5"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "apotheosis:mythic_material"
 			id: "089EB50C3A032059"
 			rewards: [
@@ -274,6 +279,7 @@
 				"4DC8AB60F08F5BB8"
 				"40E387396E92BB70"
 			]
+			entity_vis_size: 1.0f
 			icon: "minecraft:smithing_table"
 			id: "31D541C8299F16FC"
 			min_required_dependencies: 2
@@ -339,6 +345,7 @@
 				"4A12D71AA059DE70"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "apotheosis:simple_reforging_table"
 			id: "1426FA0C7F48D6DE"
 			rewards: [
@@ -378,6 +385,7 @@
 				"691BADF562607730"
 				"48D4CC406B2AAE10"
 			]
+			entity_vis_size: 1.0f
 			icon: "apotheosis:augmenting_table"
 			id: "1DFB631AA0421966"
 			min_required_dependencies: 2
@@ -419,6 +427,7 @@
 				"4B63C777893C83F4"
 				"5A244201BE4817D8"
 			]
+			entity_vis_size: 1.0f
 			icon: "apotheosis:reforging_table"
 			id: "2EC4D77D6800E215"
 			min_required_dependencies: 2
@@ -447,6 +456,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4D08BA54580EC328"
 			rewards: [
 				{
@@ -527,6 +537,7 @@
 				"6D7912360E9D1491"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "apotheosis:library"
 			id: "6A7D7A6001394631"
 			rewards: [
@@ -580,6 +591,7 @@
 				"089EB50C3A032059"
 				"18A9B2A3074B1955"
 			]
+			entity_vis_size: 1.0f
 			id: "646A3DCD8C0E0621"
 			min_required_dependencies: 2
 			rewards: [
@@ -636,6 +648,7 @@
 				"18A9B2A3074B1955"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "2083B4F1A9F0C573"
 			rewards: [
 				{
@@ -700,6 +713,7 @@
 				"646A3DCD8C0E0621"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "apotheosis:ender_library"
 			id: "2EE76657DE42B2F0"
 			rewards: [

@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: "embers:ancient_codex"
 			id: "4B1095BE7EFD96FA"
 			rewards: [
@@ -91,6 +92,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "3B57DE2EC7D43139"
 			rewards: [
 				{
@@ -118,6 +120,7 @@
 				"4B1095BE7EFD96FA"
 				"5602561D0B18265B"
 			]
+			entity_vis_size: 1.0f
 			icon: "embers:ember_emitter"
 			id: "1838CFCD5508B6DC"
 			min_required_dependencies: 1
@@ -163,6 +166,7 @@
 				"4B1095BE7EFD96FA"
 				"5602561D0B18265B"
 			]
+			entity_vis_size: 1.0f
 			icon: "embers:caminite_lever"
 			id: "2094003AD43F9EFC"
 			min_required_dependencies: 1
@@ -232,6 +236,7 @@
 				"4B1095BE7EFD96FA"
 				"5602561D0B18265B"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -301,6 +306,7 @@
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "199DE84E4E70AF30"
 			rewards: [
 				{
@@ -324,6 +330,7 @@
 			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6854019DC590F35A"
 			rewards: [
 				{
@@ -353,6 +360,7 @@
 				"1838CFCD5508B6DC"
 			]
 			description: ["If one is unsure on how to build this apparatus properly, a &eponder view&r is available."]
+			entity_vis_size: 1.0f
 			icon: "embers:hearth_coil"
 			id: "6B13772AB74218F5"
 			min_required_dependencies: 1
@@ -420,6 +428,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "79D40D1424A2AD87"
 			rewards: [
 				{
@@ -449,6 +458,7 @@
 				"5FA487A17D7D90A3"
 				"1AF0BEB30E860D76"
 			]
+			entity_vis_size: 1.0f
 			icon: "embers:mechanical_core"
 			id: "1485D678883F7DE8"
 			min_required_dependencies: 1
@@ -500,6 +510,7 @@
 		}
 		{
 			dependencies: ["1838CFCD5508B6DC"]
+			entity_vis_size: 1.0f
 			icon: "embers:dawnstone_ingot"
 			id: "334CE594A647C251"
 			rewards: [
@@ -555,6 +566,7 @@
 		}
 		{
 			dependencies: ["334CE594A647C251"]
+			entity_vis_size: 1.0f
 			icon: "embers:pressure_refinery"
 			id: "34D3F87C3C62F984"
 			rewards: [
@@ -661,6 +673,7 @@
 			y: -12.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7A2005DAA05461AB"
 			rewards: [
 				{
@@ -684,6 +697,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -710,6 +724,16 @@
 			tasks: [
 				{
 					entity: "embers:ancient_golem"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "alexsmobs:tab_icon"
@@ -741,6 +765,7 @@
 				"7C25FF9A544475EF"
 			]
 			description: ["If one is unsure on how to build this apparatus properly, a &eponder view&r is available."]
+			entity_vis_size: 1.0f
 			icon: "embers:alchemy_tablet"
 			id: "577AA3CDA3EBE44C"
 			min_required_dependencies: 3
@@ -812,6 +837,7 @@
 				"6B28D19E0630D906"
 				"2C230622D0956B82"
 			]
+			entity_vis_size: 1.0f
 			icon: "embers:mnemonic_inscriber"
 			id: "44BE4B2E0A80A6DE"
 			min_required_dependencies: 3
@@ -865,6 +891,7 @@
 				"6B28D19E0630D906"
 				"2C230622D0956B82"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "embers:codebreaking_slate"
 			id: "7EE9093A48324D73"
@@ -940,6 +967,7 @@
 				"78BFCA458E91E521"
 				"5F712A31FE7D88DD"
 			]
+			entity_vis_size: 1.0f
 			id: "001E8F2BF8376A60"
 			min_required_dependencies: 2
 			rewards: [
@@ -1009,6 +1037,7 @@
 		}
 		{
 			dependencies: ["334CE594A647C251"]
+			entity_vis_size: 1.0f
 			icon: "embers:copper_charger"
 			id: "46EF5E52BB98F58F"
 			rewards: [
@@ -1102,6 +1131,7 @@
 		}
 		{
 			dependencies: ["4B1095BE7EFD96FA"]
+			entity_vis_size: 1.0f
 			id: "6C2A4D0CA93763D7"
 			rewards: [
 				{
@@ -1126,6 +1156,7 @@
 		}
 		{
 			dependencies: ["4B1095BE7EFD96FA"]
+			entity_vis_size: 1.0f
 			id: "0A5E905DB80101E7"
 			rewards: [
 				{
@@ -1151,6 +1182,7 @@
 		{
 			dependencies: ["2094003AD43F9EFC"]
 			dependency_requirement: "one_started"
+			entity_vis_size: 1.0f
 			id: "06D531553173E97E"
 			rewards: [
 				{
@@ -1174,6 +1206,7 @@
 			y: -5.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "48E2D74299FB0E96"
 			rewards: [
 				{
@@ -1198,6 +1231,7 @@
 		}
 		{
 			dependencies: ["334CE594A647C251"]
+			entity_vis_size: 1.0f
 			icon: "embers:ember_ejector"
 			id: "5115EBEFCBEFD382"
 			rewards: [
@@ -1253,6 +1287,7 @@
 				"6B28D19E0630D906"
 				"2C230622D0956B82"
 			]
+			entity_vis_size: 1.0f
 			id: "486A572882C048FE"
 			min_required_dependencies: 3
 			rewards: [
@@ -1284,6 +1319,7 @@
 				"6B28D19E0630D906"
 				"2C230622D0956B82"
 			]
+			entity_vis_size: 1.0f
 			id: "5BECBB65DC5F19C7"
 			min_required_dependencies: 3
 			rewards: [
@@ -1324,6 +1360,7 @@
 		}
 		{
 			dependencies: ["334CE594A647C251"]
+			entity_vis_size: 1.0f
 			id: "4F7D5843CD06A15F"
 			rewards: [
 				{
@@ -1349,6 +1386,7 @@
 		}
 		{
 			dependencies: ["334CE594A647C251"]
+			entity_vis_size: 1.0f
 			id: "46561B7299502303"
 			rewards: [
 				{
@@ -1392,6 +1430,7 @@
 				"577AA3CDA3EBE44C"
 				"55A03CAC8D2415A5"
 			]
+			entity_vis_size: 1.0f
 			icon: "embers:dawnstone_anvil"
 			id: "4C142EFAB79343D4"
 			min_required_dependencies: 2
@@ -1510,6 +1549,7 @@
 				"6B28D19E0630D906"
 				"2C230622D0956B82"
 			]
+			entity_vis_size: 1.0f
 			icon: "embers:ignem_reactor"
 			id: "22E9B6CE7DA1F019"
 			min_required_dependencies: 3
@@ -1554,6 +1594,7 @@
 				"577AA3CDA3EBE44C"
 				"7A4ABF99BAD0157E"
 			]
+			entity_vis_size: 1.0f
 			icon: "embers:ember_injector"
 			id: "2E20609A3E05E51D"
 			min_required_dependencies: 1
@@ -1608,6 +1649,7 @@
 				"577AA3CDA3EBE44C"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "embers:catalytic_plug"
 			id: "77B668D2C532A40F"
 			rewards: [
@@ -1653,6 +1695,7 @@
 				"6B28D19E0630D906"
 				"2C230622D0956B82"
 			]
+			entity_vis_size: 1.0f
 			id: "799D79A6B2515D71"
 			min_required_dependencies: 3
 			rewards: [
@@ -1762,6 +1805,7 @@
 				"5602561D0B18265B"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "embers:cinder_plinth"
 			id: "28544F6320DDEB16"
 			rewards: [
@@ -1798,6 +1842,7 @@
 				"2D1C95095ACE54EA"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "6D5AF7682FB49001"
 			rewards: [
 				{
@@ -1856,6 +1901,7 @@
 			y: -3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "aetherworks:aether_shard"
 			id: "72020A53D0F0D2CB"
@@ -1902,6 +1948,7 @@
 		}
 		{
 			dependencies: ["3B57DE2EC7D43139"]
+			entity_vis_size: 1.0f
 			id: "5396EE6EE5D8A0DD"
 			rewards: [
 				{
@@ -1931,6 +1978,7 @@
 				"32B62908F500D23B"
 			]
 			description: ["If one is unsure on how to build this apparatus properly, a &eponder view&r is available."]
+			entity_vis_size: 1.0f
 			icon: "aetherworks:prism"
 			id: "26CA6F66231DA179"
 			min_required_dependencies: 2
@@ -1991,6 +2039,7 @@
 		}
 		{
 			dependencies: ["607953986BD15EA9"]
+			entity_vis_size: 1.0f
 			id: "0D622319F66C2F06"
 			rewards: [
 				{
@@ -2024,6 +2073,7 @@
 		}
 		{
 			dependencies: ["26CA6F66231DA179"]
+			entity_vis_size: 1.0f
 			icon: "aetherworks:aether_gas_painful_bucket"
 			id: "5ECC015D1532E258"
 			rewards: [
@@ -2060,6 +2110,7 @@
 		{
 			dependencies: ["26CA6F66231DA179"]
 			description: ["If one is unsure on how to build this apparatus properly, a &eponder view&r is available."]
+			entity_vis_size: 1.0f
 			icon: "aetherworks:aether_forge"
 			id: "607953986BD15EA9"
 			rewards: [
@@ -2130,6 +2181,7 @@
 				""
 				"The second part however involves &eno risks&r, ensuring your part does &enot break&r."
 			]
+			entity_vis_size: 1.0f
 			icon: "aetherworks:forge_anvil"
 			id: "0F10DC29BCF250C5"
 			rewards: [
@@ -2308,6 +2360,7 @@
 		}
 		{
 			dependencies: ["334CE594A647C251"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "1CF420F7F9040BAC"
 			rewards: [
@@ -2338,6 +2391,7 @@
 				"7A4ABF99BAD0157E"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "671953E439B64D28"
 			rewards: [
 				{
@@ -2367,6 +2421,7 @@
 				"7C25FF9A544475EF"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "356080DC10850341"
 			rewards: [
 				{
@@ -2396,6 +2451,7 @@
 				"26D1F5A3F7610CBF"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "5AB8C5056FED4CB8"
 			rewards: [
 				{
@@ -2523,6 +2579,7 @@
 				"5B31B5489F9EB329"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -2642,6 +2699,7 @@
 		}
 		{
 			dependencies: ["0F10DC29BCF250C5"]
+			entity_vis_size: 1.0f
 			id: "4E4E4C2240E9AD06"
 			rewards: [
 				{
@@ -2780,6 +2838,7 @@
 				"0F10DC29BCF250C5"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "aetherworks:lexicon_receptacle"
 			id: "7482BD13A68D99A9"
 			rewards: [

@@ -198,6 +198,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/irons_spellbooks/touch_dig": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell_type_frost_step": {
       "enabled": false,
       "min": {
@@ -242,6 +253,17 @@
         "value": 100
       }
     },
+    "caverns_and_chasms:stealth": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additional_attributes:innate_school/alshanex_familiars/sound": {
       "enabled": false,
       "min": {
@@ -262,6 +284,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/solar_chorus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "additional_attributes:innate_spell/cataclysm_spellbooks/desert_winds": {
@@ -341,6 +374,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/alshanex_familiars/ice_age": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/angel_wing": {
       "enabled": false,
       "min": {
@@ -385,7 +429,29 @@
         "value": 100
       }
     },
+    "additional_attributes:spell_type_throw": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/summon_horse": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_pocket_dimension": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -407,6 +473,17 @@
         "value": 100
       }
     },
+    "familiarslib:sound_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "environmental:stealth": {
       "enabled": false,
       "min": {
@@ -416,6 +493,28 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "goety:geomancy_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/fissure": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "skilltree:evasion": {
@@ -430,6 +529,28 @@
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/firecracker": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/weeping_wall": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_ice_tomb": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -473,11 +594,33 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/irons_spellbooks/frostbite": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/firefly_swarm": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_school_lightning": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
       },
       "max": {
         "default": 100,
@@ -493,17 +636,6 @@
       "max": {
         "default": 30,
         "value": 30
-      }
-    },
-    "additional_attributes:spell_school_lightning": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "alembic:true_damage": {
@@ -539,11 +671,44 @@
         "value": 100
       }
     },
+    "minecraft:bounciness": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "legendary_spellbooks:annihilation_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "irons_spellbooks:lightning_spell_power": {
       "enabled": false,
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/raise_hell": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 100,
@@ -627,6 +792,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/irons_spellbooks/shadow_slash": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "tconstruct:player.critical_damage": {
       "enabled": false,
       "min": {
@@ -693,6 +869,17 @@
         "value": 100
       }
     },
+    "gtbcs_geomancy_plus:geo_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/cataclysm_spellbooks/conjure_thralls": {
       "enabled": false,
       "min": {
@@ -724,6 +911,28 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "additional_attributes:spell/ioticspellbooks/hex_grid": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_arcane_shackle": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "alembic:arcane_damage.resistance": {
@@ -770,6 +979,28 @@
         "value": 1000
       }
     },
+    "goety:frost_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/solar_beam": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/cataclysm_spellbooks/shutdown": {
       "enabled": false,
       "min": {
@@ -786,6 +1017,17 @@
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_school/gtbcs_geomancy_plus/geo": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 100,
@@ -1111,6 +1353,17 @@
         "value": 1024
       }
     },
+    "additional_attributes:spell/alshanex_familiars/megido": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "malum:soul_ward_integrity": {
       "enabled": false,
       "min": {
@@ -1131,6 +1384,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "gtbcs_spell_lib:elemental_permeability": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "goety:void_potency": {
@@ -1243,6 +1507,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/irons_spellbooks/arcane_shackle": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_school/irons_spellbooks/ice": {
       "enabled": false,
       "min": {
@@ -1255,6 +1530,17 @@
       }
     },
     "additional_attributes:innate_spell/cataclysm_spellbooks/conjure_coral_golem": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/ioticspellbooks/hex_grid": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -1386,6 +1672,17 @@
         "value": 100
       }
     },
+    "irons_lib:armor_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/conjure_coral_golem": {
       "enabled": false,
       "min": {
@@ -1409,6 +1706,17 @@
       }
     },
     "tconstruct:generic.knockback_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:school/gtbcs_geomancy_plus/geo": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -1574,6 +1882,17 @@
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/gear_shift": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/seismic_surf": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -1782,6 +2101,39 @@
         "value": 100
       }
     },
+    "wind_spellbooks:wind_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/petrivise": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_frostbite": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/meteor_spew": {
       "enabled": false,
       "min": {
@@ -1859,17 +2211,6 @@
         "value": 2147483647
       }
     },
-    "caverns_and_chasms:magic_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 30,
-        "value": 30
-      }
-    },
     "additional_attributes:spell_type_flaming_barrage": {
       "enabled": false,
       "min": {
@@ -1879,6 +2220,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "caverns_and_chasms:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/wither_skull": {
@@ -1914,7 +2266,40 @@
         "value": 1000000
       }
     },
+    "additional_attributes:spell/gtbcs_geomancy_plus/tremor_step": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/ray_of_frost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "goety:abyss_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/eroding_boulder": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -1967,6 +2352,17 @@
       "max": {
         "default": Infinity,
         "value": Infinity
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/solar_storm": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/raise_dead": {
@@ -2024,6 +2420,17 @@
         "value": 1024
       }
     },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/geo_conductor": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell_type_planar_sight": {
       "enabled": false,
       "min": {
@@ -2040,6 +2447,17 @@
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/crystalline_conduit": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 100,
@@ -2101,6 +2519,17 @@
         "value": 100
       }
     },
+    "additional_attributes:spell/gtbcs_geomancy_plus/crystalline_conduit": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell_school_evocation": {
       "enabled": false,
       "min": {
@@ -2134,6 +2563,17 @@
         "value": Infinity
       }
     },
+    "additional_attributes:innate_spell/alshanex_familiars/end_mayhem": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/wall_of_fire": {
       "enabled": false,
       "min": {
@@ -2143,6 +2583,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "ftbultimine:experience_modifier": {
+      "enabled": false,
+      "min": {
+        "default": -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      },
+      "max": {
+        "default": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
       }
     },
     "alembic:true_damage.shielding": {
@@ -2266,6 +2717,17 @@
         "value": 10
       }
     },
+    "irons_lib:dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "botania:pixie_spawn_chance": {
       "enabled": false,
       "min": {
@@ -2321,7 +2783,29 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/eroding_boulder": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/blood_slash": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_fire_arrow": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -2399,6 +2883,17 @@
       }
     },
     "additional_attributes:innate_spell/cataclysm_spellbooks/incineration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/throw": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -2497,6 +2992,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/seismic_surf": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "hexcasting:grid_zoom": {
       "enabled": false,
       "min": {
@@ -2506,6 +3012,17 @@
       "max": {
         "default": 4,
         "value": 4
+      }
+    },
+    "additional_attributes:innate_school/familiarslib/sound": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "additional_attributes:spell/alshanex_familiars/explosion_melody": {
@@ -2607,6 +3124,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/solar_chorus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "irons_spellbooks:eldritch_spell_power": {
       "enabled": false,
       "min": {
@@ -2640,6 +3168,17 @@
         "value": 100
       }
     },
+    "goety:wind_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/summon_polar_bear": {
       "enabled": false,
       "min": {
@@ -2662,6 +3201,17 @@
         "value": 100
       }
     },
+    "goety:necromancy_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "puffish_attributes:player.shovel_speed": {
       "enabled": false,
       "min": {
@@ -2678,6 +3228,28 @@
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "fallen_gems_affixes:max_health_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "additional_attributes:spell_type_summon_swords": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 100,
@@ -2816,6 +3388,17 @@
         "value": 100
       }
     },
+    "additional_attributes:spell_type_shadow_slash": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "tetra:draw_speed": {
       "enabled": false,
       "min": {
@@ -2893,6 +3476,28 @@
         "value": 100
       }
     },
+    "cataclysm:additional_critical_damage": {
+      "enabled": false,
+      "min": {
+        "default": -512,
+        "value": -512
+      },
+      "max": {
+        "default": 512,
+        "value": 512
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/solar_beam": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/ashen_breath": {
       "enabled": false,
       "min": {
@@ -2937,6 +3542,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_school/ioticspellbooks/hex": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell_type_magma_bomb": {
       "enabled": false,
       "min": {
@@ -2953,6 +3569,17 @@
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_snowball": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 100,
@@ -3025,6 +3652,17 @@
         "value": 100
       }
     },
+    "additional_attributes:spell/gtbcs_geomancy_plus/chunker": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell_type_blood_slash": {
       "enabled": false,
       "min": {
@@ -3058,6 +3696,17 @@
         "value": 20
       }
     },
+    "gtbcs_spell_lib:spell_crit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additional_attributes:spell_type_devour": {
       "enabled": false,
       "min": {
@@ -3074,6 +3723,17 @@
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/tremor_spike": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 100,
@@ -3113,15 +3773,15 @@
         "value": 100
       }
     },
-    "caverns_and_chasms:experience_boost": {
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/tremor_step": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 30,
-        "value": 30
+        "default": 100,
+        "value": 100
       }
     },
     "additional_attributes:innate_spell/alshanex_familiars/guardian_angel": {
@@ -3144,6 +3804,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "caverns_and_chasms:experience_boost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/conjure_ignited_reinforcement": {
@@ -3267,6 +3938,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/irons_spellbooks/summon_swords": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/summon_vex": {
       "enabled": false,
       "min": {
@@ -3301,6 +3983,17 @@
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/overcharged": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/tremor_spike": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -3355,6 +4048,17 @@
         "value": 30
       }
     },
+    "goety:wild_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additional_attributes:spell_type_fireball": {
       "enabled": false,
       "min": {
@@ -3364,6 +4068,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "gtbcs_spell_lib:spell_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "additional_attributes:spell_type_sacrifice": {
@@ -3389,6 +4104,39 @@
       }
     },
     "additional_attributes:spell/alshanex_familiars/guardian_angel": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/weeping_cluster": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "gtbcs_spell_lib:magic_projectile_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "additional_attributes:spell_type_volt_strike": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -3509,6 +4257,28 @@
         "value": 10000
       }
     },
+    "additional_attributes:spell_type_scapegoat": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell/alshanex_familiars/fire_fist": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "puffish_attributes:player.melee_damage": {
       "enabled": false,
       "min": {
@@ -3608,7 +4378,29 @@
         "value": 100
       }
     },
+    "additional_attributes:school/ioticspellbooks/hex": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/ray_of_siphoning": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/petrivise": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -3631,6 +4423,17 @@
       }
     },
     "additional_attributes:school/alshanex_familiars/sound": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/fire_arrow": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -3675,6 +4478,17 @@
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/shockwave": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/weeping_cluster": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -3795,6 +4609,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/irons_spellbooks/blizzard": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell_type_gluttony": {
       "enabled": false,
       "min": {
@@ -3839,6 +4664,17 @@
         "value": 100
       }
     },
+    "minecraft:friction_modifier": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "eidolon:max_soul_hearts": {
       "enabled": false,
       "min": {
@@ -3872,6 +4708,28 @@
         "value": 100
       }
     },
+    "additional_attributes:spell_type_raise_hell": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/pillar_of_the_resounding_earth": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/comet_shower": {
       "enabled": false,
       "min": {
@@ -3883,7 +4741,40 @@
         "value": 100
       }
     },
+    "additional_attributes:spell/gtbcs_geomancy_plus/pillar_of_the_resounding_earth": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/void_beam": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/solar_storm": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/snowball": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -4136,6 +5027,17 @@
         "value": 1000
       }
     },
+    "irons_lib:arrow_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:innate_spell/alshanex_familiars/default_note": {
       "enabled": false,
       "min": {
@@ -4213,6 +5115,50 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/irons_spellbooks/volt_strike": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "irons_lib:mining_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "goety:void_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/geo_conductor": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/cataclysm_spellbooks/conjure_coralssus": {
       "enabled": false,
       "min": {
@@ -4258,6 +5204,17 @@
       }
     },
     "additional_attributes:innate_spell/cataclysm_spellbooks/summon_koboleton": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_gravity_fissure": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -4379,6 +5336,17 @@
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/cleanse": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell/alshanex_familiars/ice_age": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -4587,6 +5555,17 @@
         "value": 100
       }
     },
+    "goety:nether_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additional_attributes:innate_spell/cataclysm_spellbooks/rewire": {
       "enabled": false,
       "min": {
@@ -4664,6 +5643,17 @@
         "value": 100
       }
     },
+    "cataclysm:charge_time": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 512,
+        "value": 512
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/blight": {
       "enabled": false,
       "min": {
@@ -4676,6 +5666,17 @@
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/lock_on": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_fang_swirl": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -4807,11 +5808,33 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/irons_spellbooks/pocket_dimension": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "alshanex_familiars:sound_spell_power": {
       "enabled": false,
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:spell_type_blizzard": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 100,
@@ -4834,6 +5857,17 @@
       "min": {
         "default": 0,
         "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "familiarslib:sound_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
       },
       "max": {
         "default": 100,
@@ -4884,6 +5918,17 @@
         "value": 100
       }
     },
+    "gtbcs_spell_lib:spell_crit_damage": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/starfall": {
       "enabled": false,
       "min": {
@@ -4906,11 +5951,55 @@
         "value": 100
       }
     },
+    "irons_lib:healing_received": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "additional_attributes:spell_type_touch_dig": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/cataclysm_spellbooks/hellish_blade": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "minecraft:air_drag_modifier": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
+    "gtbcs_geomancy_plus:geo_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
       },
       "max": {
         "default": 100,
@@ -4994,6 +6083,17 @@
         "value": 100
       }
     },
+    "irons_spellbooks:casting_movespeed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_school/cataclysm_spellbooks/abyssal": {
       "enabled": false,
       "min": {
@@ -5060,6 +6160,17 @@
         "value": 100
       }
     },
+    "irons_lib:experience_gained": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "alembic:true_damage.absorption": {
       "enabled": false,
       "min": {
@@ -5124,6 +6235,28 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "additional_attributes:innate_spell/alshanex_familiars/ice_chamber": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/ice_tomb": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "ars_nouveau:ars_nouveau.perk.wixie": {
@@ -5208,6 +6341,17 @@
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/scapegoat": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 100,
@@ -5302,6 +6446,17 @@
         "value": 1024
       }
     },
+    "ftbultimine:cooldown_modifier": {
+      "enabled": false,
+      "min": {
+        "default": -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      },
+      "max": {
+        "default": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      }
+    },
     "additional_attributes:spell/alshanex_familiars/summon_shadows": {
       "enabled": false,
       "min": {
@@ -5313,7 +6468,29 @@
         "value": 100
       }
     },
+    "additional_attributes:spell/alshanex_familiars/ice_chamber": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/construct_watchers": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/alshanex_familiars/megido": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -5346,17 +6523,6 @@
         "value": 200
       }
     },
-    "caverns_and_chasms:magic_protection": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 30,
-        "value": 30
-      }
-    },
     "additional_attributes:innate_spell/irons_spellbooks/blood_needles": {
       "enabled": false,
       "min": {
@@ -5368,7 +6534,29 @@
         "value": 100
       }
     },
+    "caverns_and_chasms:magic_protection": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/conjure_coralssus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/gravity_fissure": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -5445,6 +6633,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/dripstone_bolt": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/lightning_lance": {
       "enabled": false,
       "min": {
@@ -5454,6 +6653,28 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "additional_attributes:spell_type_ice_spikes": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "goety:storm_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "additional_attributes:spell_type_acupuncture": {
@@ -5509,6 +6730,39 @@
       "max": {
         "default": 1000000,
         "value": 1000000
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/weeping_wall": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "cataclysm:nature_heal": {
+      "enabled": false,
+      "min": {
+        "default": -256,
+        "value": -256
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "legendary_spellbooks:annihilation_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/infernal_strike": {
@@ -5654,6 +6908,39 @@
         "value": 100
       }
     },
+    "ftbultimine:max_blocks_modifier": {
+      "enabled": false,
+      "min": {
+        "default": -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      },
+      "max": {
+        "default": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      }
+    },
+    "piglinproliferation:turning_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/ice_spikes": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:spell/cataclysm_spellbooks/void_rune": {
       "enabled": false,
       "min": {
@@ -5709,7 +6996,51 @@
         "value": 1
       }
     },
+    "additional_attributes:school/familiarslib/sound": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "tconstruct:generic.bad_effect_duration_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/fang_swirl": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "wind_spellbooks:wind_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/fissure": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -5819,6 +7150,17 @@
         "value": 100
       }
     },
+    "additional_attributes:spell/alshanex_familiars/end_mayhem": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/poison_arrow": {
       "enabled": false,
       "min": {
@@ -5839,6 +7181,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "additional_attributes:spell/gtbcs_geomancy_plus/dripstone_bolt": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "additional_attributes:spell/cataclysm_spellbooks/abyss_fireball": {
@@ -5918,6 +7271,17 @@
         "value": 100
       }
     },
+    "additional_attributes:innate_spell/gtbcs_geomancy_plus/chunker": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "alembic:alchemical_damage.resistance": {
       "enabled": false,
       "min": {
@@ -5982,6 +7346,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "additional_attributes:innate_spell/alshanex_familiars/fire_fist": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "additional_attributes:spell_type_arrow_volley": {
@@ -6193,6 +7568,17 @@
         "value": 100
       }
     },
+    "ftbultimine:exhaustion_modifier": {
+      "enabled": false,
+      "min": {
+        "default": -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      },
+      "max": {
+        "default": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/wisp": {
       "enabled": false,
       "min": {
@@ -6213,6 +7599,17 @@
       "max": {
         "default": 200,
         "value": 1000000
+      }
+    },
+    "cataclysm:eat_speed": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "irons_spellbooks:blood_spell_power": {
@@ -6356,6 +7753,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "irons_lib:crit_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "tconstruct:player.use_item_speed": {

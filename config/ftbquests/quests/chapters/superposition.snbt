@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["0000000000000176"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -68,6 +69,7 @@
 		}
 		{
 			description: ["Slowly lose your &esanity&r whilst standing on &eBedrock&r until being fully consumed by the fog."]
+			entity_vis_size: 1.0f
 			icon: "voidscape:voidic_crystal"
 			id: "2B3E220FA1C386A6"
 			rewards: [
@@ -85,26 +87,19 @@
 			]
 			size: 3.0d
 			subtitle: "Losing Sanity"
-			tasks: [
-				{
-					icon: "minecraft:bedrock"
-					id: "1F1A0B5E5F71A6AD"
-					title: "&9Task: &rStand on Bedrock below Y10"
-					type: "custom"
-				}
-				{
-					dimension: "voidscape:void"
-					icon: "voidscape:voidic_crystal"
-					id: "290570E8DEA3B152"
-					title: "&9Enter: &rThe Void"
-					type: "dimension"
-				}
-			]
+			tasks: [{
+				dimension: "voidscape:void"
+				icon: "voidscape:voidic_crystal"
+				id: "290570E8DEA3B152"
+				title: "&9Enter: &rThe Void"
+				type: "dimension"
+			}]
 			title: "&9Enter: &rThe Void"
 			x: -63.0d
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "hyperbox:hyperbox"
 			id: "26599AA681E7B97E"
 			rewards: [
@@ -141,6 +136,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "javd:portal_block"
 			id: "402E7B02FEA57F6F"
 			rewards: [
@@ -182,6 +178,7 @@
 				""
 				"Use the &eCatalyst&r onto the inner frame to open it."
 			]
+			entity_vis_size: 1.0f
 			icon: "undergarden:deepturf_block"
 			id: "50D551FBF08FE43A"
 			rewards: [
@@ -219,6 +216,7 @@
 		}
 		{
 			description: ["Throwing a &ediamond&r into a two by two &epond of water&r surrounded by &eeight flowers&r will open the portal."]
+			entity_vis_size: 1.0f
 			id: "474475C9E4D3A306"
 			rewards: [
 				{
@@ -250,6 +248,7 @@
 				""
 				"Use a &eWater Bucket&r onto the inner frame to open it."
 			]
+			entity_vis_size: 1.0f
 			icon: "aether:aether_portal_frame"
 			id: "551277B21629C127"
 			rewards: [
@@ -278,6 +277,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "43C3E5D8167F0493"
 			rewards: [
 				{
@@ -305,6 +305,7 @@
 		}
 		{
 			dependencies: ["6D0ADA64280B0E84"]
+			entity_vis_size: 1.0f
 			id: "0FA241E6F30219A4"
 			rewards: [
 				{
@@ -333,6 +334,7 @@
 		}
 		{
 			description: ["By throwing an &eEnder Pearl&r at either a &eBee Nest&r or &eBee Hive&r, you will be send into the &eRealm Of The Bees&r."]
+			entity_vis_size: 1.0f
 			id: "77AADFD11BD171CE"
 			rewards: [
 				{
@@ -362,6 +364,7 @@
 		}
 		{
 			description: ["Using a Warden's &eHeart Of The Deep&r allows the user to light up the inner frame, constructed in the middle of the &eAncient City&r."]
+			entity_vis_size: 1.0f
 			icon: "deeperdarker:infested_sculk"
 			id: "5D5B989A4F8D0E9D"
 			rewards: [
@@ -406,6 +409,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "dimdungeons:block_portal_keyhole"
 			id: "73C6238D482A08FB"
 			rewards: [
@@ -525,6 +529,7 @@
 		}
 		{
 			dependencies: ["7B8931F9A61A5C2F"]
+			entity_vis_size: 1.0f
 			icon: "dimdungeons:item_homeward_pearl"
 			id: "2E758AE521BAE249"
 			rewards: [
@@ -613,6 +618,7 @@
 		}
 		{
 			dependencies: ["73C6238D482A08FB"]
+			entity_vis_size: 1.0f
 			icon: "dimdungeons:block_key_charger"
 			id: "63E22D450C78E3E4"
 			rewards: [
@@ -670,6 +676,7 @@
 		}
 		{
 			dependencies: ["73C6238D482A08FB"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "dimdungeons:item_blank_advanced_key"
 			id: "3074818E5335C10D"
@@ -802,6 +809,7 @@
 		}
 		{
 			dependencies: ["73C6238D482A08FB"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "dimdungeons:item_blank_teleporter_key"
 			id: "6EACB0E1CB471682"
@@ -875,6 +883,7 @@
 			y: 3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6D0ADA64280B0E84"
 			rewards: [
 				{
@@ -1026,6 +1035,7 @@
 			y: 3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "rats:ratlantis_portal"
 			id: "43032D6B5107B8BB"
 			rewards: [

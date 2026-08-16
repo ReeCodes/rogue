@@ -5,6 +5,9 @@
 		#How much Max Health Malghast have, Default: 20.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		malghastHealth = 20.0
+		#How much damage Malghasts' hell blasts/lavaballs deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		malghastDamage = 6.0
 
 		[Attributes.Cultists."Skeleton Villager Servant"]
 			#How much Max Health Skeleton Villager Servants have, Default: 20.0
@@ -62,9 +65,17 @@
 			#How much natural armor points Heretics have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			hereticArmor = 0.0
-			#How much damage Heretics deals, Default: 2.0
+			#How much damage Heretics deals, Default: 5.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			hereticDamage = 2.0
+
+		[Attributes.Cultists.Reprobate]
+			#How much Max Health Reprobates have, Default: 26.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			reprobateHealth = 26.0
+			#How much natural armor points Reprobates have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			reprobateArmor = 0.0
 
 	[Attributes.Illagers]
 		#How much Max Health Conquillager have, Default: 24.0
@@ -266,6 +277,34 @@
 			#How much damage Reapers deals, Default: 8.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			reaperDamage = 8.0
+
+		[Attributes.General."Cairn Necromancer"]
+			#How much Max Health Cairn Necromancers have, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			cairnNecromancerHealth = 50.0
+			#How much natural Armor Cairn Necromancers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			cairnNecromancerArmor = 0.0
+			#How much following/detection range Cairn Necromancers have, Default: 16.0
+			#Range: 1.0 ~ 2048.0
+			cairnNecromancerFollowRange = 16.0
+			#How much damage Cairn Necromancers deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			cairnNecromancerDamage = 3.0
+
+		[Attributes.General."Mossy Necromancer"]
+			#How much Max Health Mossy Necromancers have, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			mossyNecromancerHealth = 50.0
+			#How much natural Armor Mossy Necromancers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			mossyNecromancerArmor = 0.0
+			#How much following/detection range Mossy Necromancers have, Default: 16.0
+			#Range: 1.0 ~ 2048.0
+			mossyNecromancerFollowRange = 16.0
+			#How much damage Mossy Necromancers deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			mossyNecromancerDamage = 3.0
 
 	[Attributes."Summoned Mobs"]
 
@@ -983,6 +1022,133 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			witchServantFollowRange = 16.0
 
+		[Attributes."Summoned Mobs"."Frayed Servant"]
+			#How much Max Health Frayed Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			frayedServantHealth = 20.0
+			#How much natural armor points Frayed Servants have, Default: 2.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			frayedServantArmor = 2.0
+			#How much damage Frayed Servants deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			frayedServantDamage = 3.0
+
+		[Attributes."Summoned Mobs"."Rattled Servant"]
+			#How much Max Health Rattled Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			rattledServantHealth = 20.0
+			#How much natural Armor Rattled Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			rattledServantArmor = 0.0
+			#How much damage Rattled Servants deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			rattledServantDamage = 2.0
+			#How much extra damage Rattled Servants range attack deals, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			rattledServantRangeDamage = 0.0
+
+		[Attributes."Summoned Mobs"."Signaler Servant"]
+			#How much Max Health Signaler Servants have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			signalerServantHealth = 24.0
+			#How much natural Armor Signaler Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			signalerServantArmor = 0.0
+			#How much initial following/detection range Signaler Servants have, Default: 32.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			signalerServantFollowRange = 32.0
+
+		[Attributes."Summoned Mobs".Sprite]
+			#How much Max Health Sprites have, Default: 12.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			spriteHealth = 12.0
+			#How much damage Sprites deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			spriteDamage = 2.0
+
+		[Attributes."Summoned Mobs".Gnasher]
+			#How much Max Health Gnashers have, Default: 30.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			gnasherHealth = 30.0
+			#How much natural Armor Gnashers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			gnasherArmor = 0.0
+			#How much damage Gnashers melee attack deals, Default: 6.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			gnasherDamage = 6.0
+
+		[Attributes."Summoned Mobs"."Carrion Maggot"]
+			#How much Max Health Carrion Maggots have, Default: 8.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			carrionMaggotHealth = 8.0
+			#How much natural Armor Carrion Maggots have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			carrionMaggotArmor = 0.0
+			#How much damage Carrion Maggots melee attack deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			carrionMaggotDamage = 2.0
+
+		[Attributes."Summoned Mobs"."Carrion Fly"]
+			#How much Max Health Carrion Flies have, Default: 8.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			carrionFlyHealth = 8.0
+			#How much natural Armor Carrion Flies have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			carrionFlyArmor = 0.0
+			#How much damage Carrion Flies melee attack deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			carrionFlyDamage = 3.0
+
+		[Attributes."Summoned Mobs"."Stone Ministrosity"]
+			#How much Max Health Stone Ministrosities have, Default: 10.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			stoneMinistrosityHealth = 10.0
+			#How much natural armor points Stone Ministrosities have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			stoneMinistrosityArmor = 0.0
+			#How much damage Stone Ministrosities deals, Default: 4.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			stoneMinistrosityDamage = 4.0
+			#How much following/detection range Stone Ministrosities have, Default: 16.0
+			#Range: 1.0 ~ 2048.0
+			stoneMinistrosityFollowRange = 16.0
+
+		[Attributes."Summoned Mobs"."Redstone Ministrosity"]
+			#How much Max Health Redstone Ministrosities have, Default: 15.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			redstoneMinistrosityHealth = 15.0
+			#How much natural armor points Redstone Ministrosities have, Default: 1.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			redstoneMinistrosityArmor = 1.0
+			#How much damage Redstone Ministrosities deals, Default: 5.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			redstoneMinistrosityDamage = 5.0
+			#How much following/detection range Redstone Ministrosities have, Default: 16.0
+			#Range: 1.0 ~ 2048.0
+			redstoneMinistrosityFollowRange = 16.0
+
+		[Attributes."Summoned Mobs"."Guardian Servant"]
+			#How much Max Health Guardian Servants have, Default: 30.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			guardianHealth = 30.0
+			#How much natural Armor Guardian Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			guardianArmor = 0.0
+			#How much damage Guardian Servants attack deals, Default: 6.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			guardianDamage = 6.0
+
+		[Attributes."Summoned Mobs"."Elder Guardian Servant"]
+			#How much Max Health Elder Guardian Servants have, Default: 80.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			elderGuardianHealth = 80.0
+			#How much natural Armor Elder Guardian Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			elderGuardianArmor = 0.0
+			#How much damage Elder Guardian Servants attack deals, Default: 8.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			elderGuardianDamage = 8.0
+
 	[Attributes.Mini-Bosses]
 
 		[Attributes.Mini-Bosses.Crone]
@@ -1036,6 +1202,17 @@
 			#How much damage Endersents deals, Default: 14.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			endersentDamage = 14.0
+
+		[Attributes.Mini-Bosses.Heresiarch]
+			#How much Max Health Heresiarch have, Default: 130.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			heresiarchHealth = 130.0
+			#How much natural Armor Points Heresiarch have, Default: 4.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			heresiarchArmor = 4.0
+			#How much damage Heresiarch deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			heresiarchDamage = 2.0
 
 	[Attributes.Bosses]
 

@@ -1,3 +1,3 @@
-StartupEvents.postInit(event => {
-	Platform.mods.kubejs.name = 'ROGUE! MAYHEM';
-})
+// priority: 2000
+
+Platform.mods.kubejs.name = 'ROGUE! MAYHEM';

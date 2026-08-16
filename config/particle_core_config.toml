@@ -1,7 +1,12 @@
 # Don't change this! Version used to track needed updates.
-version = 0
-turnOffPotionParticles = "NONE"
-reduceAllChance = 0.9044118
-reduceDecreasedChance = 0.85294116
+version = 1
 disableParticles = false
 byTypeReductions = {  }
+maxParticlesPerSheet = 16384
+particleRenderDistanceMultiplier = 1.0
+asynchronousTicking = false
+reduceAllChance = 0.9044118
+reduceDecreasedChance = 0.85294116
+turnOffPotionParticlesV2 = [
+    "NONE"
+]

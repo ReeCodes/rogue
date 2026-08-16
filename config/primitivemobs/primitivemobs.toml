@@ -1,0 +1,95 @@
+
+#Enable/Disable mobs
+[mob_activation_settings]
+	#Enable/Disable the Chameleon
+	enableChameleon = false
+	#Enable/Disable the Treasure Slime
+	enableTreasureSlime = false
+	#Enable/Disable the Haunted Tool
+	enableHauntedTool = false
+	#Enable/Disable the Grove Sprite
+	enableGroveSprite = true
+	#Enable/Disable the Bewitched Tome
+	enableEnchantedBook = false
+	#Enable/Disable the Filch Lizard
+	enableFilchLizard = false
+	#Enable/Disable the Brain Slime
+	enableBrainSlime = true
+	#Enable/Disable the Rocket Creeper
+	enableRocketCreeper = true
+	#Enable/Disable the Festive Creeper
+	enableFestiveCreeper = true
+	#Enable/Disable the Support Creeper
+	enableSupportCreeper = true
+	#Enable/Disable the Skeleton Warrior
+	enableSkeletonWarrior = false
+	#Enable/Disable the Blazing Juggernaut
+	enableBlazingJuggernaut = false
+	#Enable/Disable the Lily lurker
+	enableLilyLurker = false
+	#Enable/Disable the Spider Family
+	enableSpiderFamily = false
+	#Enable/Disable the Troll
+	enableTrollager = false
+	#Enable/Disable the Lost Miner
+	enableLostMiner = false
+	#Enable/Disable the Traveling Merchant
+	enableMerchant = false
+	#Enable/Disable the Dodo
+	enableDodo = false
+	#Enable/Disable the Mimic
+	enableMimic = false
+	#Enable/Disable the Sheepman
+	enableSheepman = false
+	#Enable/Disable the Goblin
+	enableGoblin = false
+	#Enable/Disable the Harpy
+	enableHarpy = false
+	#Enable/Disable the Flame Spewer
+	enableFlameSpewer = false
+	#Enable/Disable the Void Eye
+	enableVoidWatcher = true
+
+#Settings specific to certain mobs.
+[mob_specific_settings]
+	#Enable/Disable if the Miner Villager profession should also spawn naturally in villages
+	minerInVillage = false
+	#Enable/Disable if the Festive Creeper throws tnt that harms the terrain (this way you do not have to disable ALL Creeper explosions with mobGriefing)
+	festiveCreeperDestruction = false
+	#Set the maximum amount of Baby Spiders that can potentially spawn with a Mother Spider
+	#Range: 0 ~ 20
+	maxSpiderFamilySize = 3
+	#Enable/Disable if the Lost Miner should make villager sounds
+	lostMinerSounds = true
+	#Enable/Disable if the Trollager can destroy terrain with its attack
+	trollDestruction = false
+	#Set the chance that a tameable Treasure Slime can spawn in percentage
+	#Range: 0 ~ 100
+	tameableSlimeChance = 5
+	#Set the chance that a Filch Lizard spawns holding loot in percentage
+	#Range: 0 ~ 100
+	filchLizardLootChance = 25
+	#Enable/Disable if the Traveling Merchant can settle after being bribed with an Emerald Block
+	merchantCanSettle = true
+	#Enable/Disable if the Mimic chests should generate in caves, instead of spawn like mobs
+	mimicGenerates = true
+	#Enable/Disable if Dodos should convert Grass into Mycelium blocks overtime
+	dodoMycelium = true
+	#Enable/Disable if the Traveling Merchant should enter houses
+	travelerVisit = true
+	#Enable/Disable if rocket creepers should always jump at the player, even if they would hit the ceiling
+	rocketCreeperAlwaysJump = false
+	#Minimum emeralds received when saving a Lost Miner
+	#Range: 0 ~ 64
+	lostMinerLootMin = 2
+	#Variable addition to emeralds received when saving a Lost Miner
+	#Range: 0 ~ 64
+	lostMinerLootVariable = 2
+	#Enable/Disable if Haunted Tools should drop full durability items.
+	hauntedToolFullDurability = false
+	#How often a Mimic chest generates. Higher number = rarer. 0 = no mimics chests.
+	#Range: 0 ~ 1000
+	mimicSpawnRate = 25
+	#Enable/Disable if Grove Sprites should plant sapling they hold.
+	groveSpritesPlant = true
+

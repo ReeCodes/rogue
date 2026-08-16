@@ -1,0 +1,7 @@
+# NaturesAuraPlus Config File
+# Set to false to allow error messages regarding missing mod ids for NaturesAuraPlus JSONs.
+pleaseUnfloodMyLogs = true
+
+# Values inside the array below are treated as mod ids for whom error logs will be shown even if they are not installed.
+# Values should be separated by commas and surrounded in quotes. (All values should be contained in a single line)
+allowed_mod_ids = []

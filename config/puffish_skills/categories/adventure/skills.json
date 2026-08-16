@@ -684,7 +684,7 @@
 		"root": false
 	},
 	"xl1keu4bmv8yp0j5": {
-		"definition": "big_fortune",
+		"definition": "xp_gained",
 		"x": 0,
 		"y": -147.8016689125442,
 		"root": false
@@ -708,13 +708,13 @@
 		"root": false
 	},
 	"xpa98p0hs9r5igdm": {
-		"definition": "big_decreased_exhaustion",
+		"definition": "apothic_enhancer",
 		"x": -320,
 		"y": -184.75208614068023,
 		"root": false
 	},
 	"hc39ei62qweoykda": {
-		"definition": "big_saturation",
+		"definition": "apothic_enhancer",
 		"x": 0,
 		"y": -369.5041722813604,
 		"root": false
@@ -738,13 +738,13 @@
 		"root": false
 	},
 	"7z00bdbi29ingnkk": {
-		"definition": "big_decreased_exhaustion",
+		"definition": "apothic_enhancer",
 		"x": 320,
 		"y": -184.75208614068023,
 		"root": false
 	},
 	"a78el2i8zw9kxezw": {
-		"definition": "big_saturation",
+		"definition": "apothic_enhancer",
 		"x": 0,
 		"y": 369.50417228136047,
 		"root": false
@@ -804,7 +804,7 @@
 		"root": false
 	},
 	"3fqvkkw23btkbmjm": {
-		"definition": "ability_graceful",
+		"definition": "apothic_enhancer",
 		"x": 320,
 		"y": 184.75208614068023,
 		"root": false
@@ -900,7 +900,7 @@
 		"root": false
 	},
 	"g6wwu27hbnktg7in": {
-		"definition": "ability_graceful",
+		"definition": "apothic_enhancer",
 		"x": -320,
 		"y": 184.75208614068023,
 		"root": false

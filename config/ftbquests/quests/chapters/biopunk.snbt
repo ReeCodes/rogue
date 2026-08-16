@@ -14,6 +14,7 @@
 				""
 				"After collecting the needed body parts, you will be able to craft the &bPrimordial Cradle&r."
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "biomancy:despoil_sickle"
@@ -105,7 +106,7 @@
 						Count: 1
 						id: "itemfilters:tag"
 						tag: {
-							value: "c:fangs"
+							value: "biomancy:fangs"
 						}
 					}
 					title: "&eFangs"
@@ -128,6 +129,7 @@
 				""
 				"Additionally, offer it any &braw meat&r. The order in which you feed it is irrelevant."
 			]
+			entity_vis_size: 1.0f
 			icon: "biomancy:primordial_cradle"
 			id: "36FB9A91C8D33139"
 			rewards: [
@@ -199,6 +201,7 @@
 		{
 			dependencies: ["36FB9A91C8D33139"]
 			description: ["Birth a &bfleshy being&r."]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -254,6 +257,7 @@
 		}
 		{
 			dependencies: ["2B36C0021383C51E"]
+			entity_vis_size: 1.0f
 			icon: "biomancy:decomposer"
 			id: "1CA3CFA93D0F4089"
 			rewards: [
@@ -329,6 +333,7 @@
 		}
 		{
 			dependencies: ["2B36C0021383C51E"]
+			entity_vis_size: 1.0f
 			id: "1F3A79A6165C3E47"
 			rewards: [
 				{
@@ -380,6 +385,7 @@
 				"589C1A5007DE16EF"
 				"1B636F49534B6576"
 			]
+			entity_vis_size: 1.0f
 			icon: "biomancy:digester"
 			id: "6ED28334E5218C37"
 			min_required_dependencies: 5
@@ -445,6 +451,7 @@
 				"589C1A5007DE16EF"
 				"1B636F49534B6576"
 			]
+			entity_vis_size: 1.0f
 			icon: "biomancy:bio_lab"
 			id: "691475616E946FF1"
 			min_required_dependencies: 5
@@ -540,6 +547,7 @@
 		}
 		{
 			dependencies: ["1F3A79A6165C3E47"]
+			entity_vis_size: 1.0f
 			id: "4825C37E3FB06B19"
 			rewards: [
 				{
@@ -678,6 +686,7 @@
 		}
 		{
 			dependencies: ["1F3A79A6165C3E47"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "biomancy:extractor"
@@ -812,6 +821,7 @@
 				"4C0228F1C119CB9B"
 				"275ACA44B117E2BA"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "biomancy:extractor"

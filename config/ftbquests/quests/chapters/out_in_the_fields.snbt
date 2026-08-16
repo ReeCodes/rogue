@@ -15,6 +15,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [""]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -40,6 +41,15 @@
 			subtitle: "Archaic Spice"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "caupona:silphium"
 					id: "59BE5FEB57FC3C6B"
 					observe_type: 0
@@ -66,6 +76,7 @@
 		}
 		{
 			dependency_requirement: "one_started"
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "caupona:portable_brazier"
 			id: "5711223A05FB932D"
@@ -116,6 +127,7 @@
 			y: 3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "652ABF40A0980A4E"
 			rewards: [
 				{
@@ -177,6 +189,7 @@
 				"528A196F5B5BDF95"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -202,6 +215,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "053651F4A767892B"
 			rewards: [
 				{
@@ -255,6 +269,7 @@
 			y: 3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "caupona:tessellation_workbench"
 			id: "7B8A09FB3D63B5B9"
 			rewards: [
@@ -336,6 +351,7 @@
 		}
 		{
 			dependencies: ["053651F4A767892B"]
+			entity_vis_size: 1.0f
 			icon: "caupona:copper_frying_pan"
 			id: "2407BAC4CB90536C"
 			rewards: [
@@ -458,6 +474,7 @@
 		}
 		{
 			dependencies: ["5711223A05FB932D"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "caupona:bamboo_skimmer"
@@ -518,6 +535,7 @@
 		}
 		{
 			dependencies: ["43C3E5D8167F0493"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "caupona:litharge_cake"
 			id: "3BF1C3D19006FF99"
@@ -553,6 +571,7 @@
 			y: -1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "3027B76930D38EF5"
 			rewards: [
 				{
@@ -594,6 +613,7 @@
 		{
 			dependencies: ["053651F4A767892B"]
 			description: ["Gain enough building materials to build a rustic bathhouse. While resting inside the heated water, you gain &eexperience&r."]
+			entity_vis_size: 1.0f
 			icon: "caupona:wolf_statue"
 			id: "64E650AF8F9CAEF9"
 			rewards: [
@@ -733,6 +753,7 @@
 		}
 		{
 			description: ["Come across a &eFumarole Vent&r."]
+			entity_vis_size: 1.0f
 			id: "5BAC332F07D06C71"
 			rewards: [
 				{
@@ -749,6 +770,15 @@
 			]
 			subtitle: "Volcanic Source"
 			tasks: [{
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "caupona:fumarole_vent"
 				id: "57F2459F092FDA23"
 				observe_type: 0
@@ -766,6 +796,7 @@
 				"2FDE0B45C7BDFBDF"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -824,6 +855,7 @@
 				"2FDE0B45C7BDFBDF"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -897,6 +929,7 @@
 				"2FDE0B45C7BDFBDF"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "48A769386B759EBD"
 			rewards: [
@@ -945,6 +978,7 @@
 		}
 		{
 			dependencies: ["053651F4A767892B"]
+			entity_vis_size: 1.0f
 			icon: "caupona:soot"
 			id: "01C993B7456C832A"
 			rewards: [
@@ -1065,6 +1099,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["Cook something using &9Leaden Cookware&r amidst &eVinegar&r to accumulate the desired Spice."]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "caupona:sapa_spice_jar"
@@ -1136,6 +1171,7 @@
 				"5711223A05FB932D"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "7F6EC22B30D4F185"
 			rewards: [
 				{
@@ -1168,6 +1204,7 @@
 			y: 2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "caupona:situla"
 			id: "05C7CEBC9BA8F21D"
 			rewards: [
@@ -1200,6 +1237,7 @@
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "326E995473F992AE"
 			rewards: [
 				{
@@ -1223,6 +1261,7 @@
 			y: -1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "convivium:aeolipile"
 			id: "528A196F5B5BDF95"
@@ -1265,6 +1304,7 @@
 		}
 		{
 			dependencies: ["528A196F5B5BDF95"]
+			entity_vis_size: 1.0f
 			id: "404BAEC4AE0F49BE"
 			rewards: [
 				{
@@ -1291,6 +1331,7 @@
 		}
 		{
 			dependencies: ["528A196F5B5BDF95"]
+			entity_vis_size: 1.0f
 			id: "4E3D30DEC0888555"
 			rewards: [
 				{
@@ -1321,6 +1362,7 @@
 				"5BAC332F07D06C71"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "convivium:basin"
 			id: "2FDE0B45C7BDFBDF"
@@ -1364,6 +1406,7 @@
 		}
 		{
 			dependencies: ["31DE3820775979A0"]
+			entity_vis_size: 1.0f
 			id: "4B41ECB71602563F"
 			rewards: [
 				{

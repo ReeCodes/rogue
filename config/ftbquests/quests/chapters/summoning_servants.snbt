@@ -10,6 +10,7 @@
 	quests: [
 		{
 			description: ["Throw both items at the ground."]
+			entity_vis_size: 1.0f
 			icon: "forbidden_arcanus:dark_matter"
 			id: "49F66F380834447C"
 			rewards: [
@@ -46,6 +47,15 @@
 					type: "item"
 				}
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "forbidden_arcanus:dark_matter"
 					id: "38AE2B526D4BE87F"
 					observe_type: 0
@@ -60,6 +70,7 @@
 			y: 3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "occultism:dictionary_of_spirits"
@@ -94,6 +105,7 @@
 		}
 		{
 			dependencies: ["485680C175ED95AF"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -160,6 +172,7 @@
 		}
 		{
 			dependencies: ["3759ED9A7C7D9AB2"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -255,6 +268,7 @@
 		}
 		{
 			dependencies: ["4C569D22D6C07EBD"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -301,6 +315,15 @@
 					type: "item"
 				}
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "alexsmobs:tab_icon"
@@ -323,6 +346,7 @@
 		}
 		{
 			dependencies: ["485680C175ED95AF"]
+			entity_vis_size: 1.0f
 			icon: "occultism:iesnium_ore"
 			id: "133068A434E5C0F2"
 			rewards: [
@@ -380,6 +404,7 @@
 		}
 		{
 			dependencies: ["4C569D22D6C07EBD"]
+			entity_vis_size: 1.0f
 			icon: "occultism:dimensional_mineshaft"
 			id: "1CCB341F4EC1A406"
 			rewards: [
@@ -439,6 +464,7 @@
 		}
 		{
 			dependencies: ["4C569D22D6C07EBD"]
+			entity_vis_size: 1.0f
 			id: "20D38ABA64BBAD82"
 			rewards: [
 				{
@@ -474,6 +500,7 @@
 		}
 		{
 			dependencies: ["4C569D22D6C07EBD"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -564,6 +591,7 @@
 		}
 		{
 			dependencies: ["283762A586C661F7"]
+			entity_vis_size: 1.0f
 			id: "4FC780AAEAA2FFF2"
 			rewards: [
 				{
@@ -613,6 +641,7 @@
 		}
 		{
 			dependencies: ["4FC780AAEAA2FFF2"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "14258A17F881BC21"
 			rewards: [
@@ -666,6 +695,7 @@
 				"14258A17F881BC21"
 				"72C2813615126EC8"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "708449EE32386F59"
 			rewards: [
@@ -716,6 +746,7 @@
 		}
 		{
 			dependencies: ["4C569D22D6C07EBD"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "occultism:soul_gem"
@@ -797,6 +828,7 @@
 		}
 		{
 			dependencies: ["4C569D22D6C07EBD"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -824,6 +856,16 @@
 			tasks: [
 				{
 					entity: "occultism:afrit_wild"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "alexsmobs:tab_icon"
@@ -849,6 +891,7 @@
 		}
 		{
 			dependencies: ["72C2813615126EC8"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -881,6 +924,15 @@
 					type: "item"
 				}
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "alexsmobs:tab_icon"
@@ -903,6 +955,7 @@
 		}
 		{
 			dependencies: ["4C569D22D6C07EBD"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -929,6 +982,15 @@
 			subtitle: "Name's Hewg"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						Count: 1
 						id: "alexsmobs:tab_icon"

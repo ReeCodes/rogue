@@ -102,6 +102,11 @@ const oreData = [
 		has_node: true,
 		has_ore: true
     },
+	{
+        name: 'palladium',
+		has_raw: true,
+		has_ore: true
+    },
     {
         name: 'uranium',
         dust_able: true,
@@ -398,11 +403,6 @@ const oreData = [
     {
 		type: 'gem',
         name: 'jade',
-		has_ore: true
-    },
-    {
-		type: 'gem',
-        name: 'spinel',
 		has_ore: true
     },
     {

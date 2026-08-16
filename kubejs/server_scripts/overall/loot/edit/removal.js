@@ -28,10 +28,17 @@ LootJS.modifiers((event) => {
 		}
 	}
 	*/
+	
 	// SINGLE
-	event.addLootTableModifier('minecraft:entities/pillager').removeLoot('galosphere:silver_nugget');
+	
+	// I&F
+	event.addLootTableModifier(/iceandfire:chest.*/).removeLoot([/iceandfire:armor_(silver|copper)_metal_(helmet|chestplate|leggings|boots)/]);
+	event.addLootTableModifier(/iceandfire:chest.*/).removeLoot([/iceandfire:(silver|copper)_(sword|pickaxe$|axe$|shovel|hoe)/]);
+	event.addLootTableModifier('iceandfire:entities/stymphalian_bird').removeLoot('iceandfire:copper_nugget');
+	
+	// FOSSIL
 	event.addLootTableModifier(/fossil:chests.*/).removeLoot([/fossil:(wooden|stone|iron|gold)_javelin/]);
 	
 	// BY MOD
-	event.addLootTableModifier(/.*/).removeLoot(['@galosphere', '@caverns_and_chasms', '@cardiac', '@cluttered']);
+	event.addLootTableModifier(/.*/).removeLoot(['@galosphere', '@cardiac', '@cluttered']);
 });

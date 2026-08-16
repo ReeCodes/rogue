@@ -1,4 +1,17 @@
 
+[Spawning]
+
+	[Spawning."Draugr Necromancer"]
+		#Spawn Weight for Draugr Necromancer, Default: 5
+		#Range: > 0
+		draugrNecromancerSpawnWeight = 5
+		#Spawn minimum group count for Draugr Necromancer, Default: 1
+		#Range: > 1
+		draugrNecromancerSpawnMinCount = 1
+		#Spawn maximum group count for Draugr Necromancer, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		draugrNecromancerSpawnMaxCount = 1
+
 [Servants]
 	#Whether owned Prowlers drop Mechanized Cores, Default: true
 	prowlerCore = true
@@ -18,6 +31,8 @@
 		netheriteMonstrosityGriefing = false
 		#Whether Ignited Helms works on Blazes instead of just Wildfires, Default: false
 		blazeIgnitedHelm = false
+		#Whether Netherite Monstrosity servants spawn lava, Default: true
+		netheriteMonstrositySpawnLava = true
 
 	[Servants."Abyss Servants"]
 		#How long until a Deepling Angler Servant will catch another Lionfish if they don't have one already attached, Default: 12000
@@ -29,4 +44,16 @@
 		deeplingMoistness = true
 		#Whether Symbioctos provide water breathing to ridden entity, Default: true
 		symbioctoBreath = true
+		#Whether Leviathan, owned by players, breaks blocks if mob griefing is enabled, Default: false
+		leviathanGriefing = false
+
+[Textures]
+
+	[Textures."Leviathan Servants"]
+		#If Leviathan Servants have custom textures, Default: true
+		leviathanServantTexture = true
+
+	[Textures."Netherite Monstrosity Servants"]
+		#If Netherite Monstrosity Servants have custom textures, Default: true
+		netheriteMonstrosityServantTexture = true
 

@@ -46,8 +46,30 @@
 	cameraShake = true
 	#Using an item while holding a wand or staff on main/offhand will cause the wand or staff to be put on cooldown to prevent accidental spellcasting, Default: true
 	wandCoolItemUse = true
-	#Entities part of a Player's Book of Goodwill will not take most damage from said Player rather than just spells, Default: false
+	#Entities part of a Player's Grimoire of Goodwill will not take most damage from said Player rather than just spells, Default: false
 	goodwillNoDamage = false
+	#Arca will save the Player if past Totem Maximum Soul Count but only if they're a Lich, Default: true
+	arcaLichUndying = true
+	#Entities part of a Player's Grimoire of Goodwill will be protected by the Player's servants, Default: true
+	goodwillServantGuard = true
+	#Entities part of a Player's Grimoire of Goodwill will be considered as the Player's ally codewise, Default: false
+	goodwillFullAlly = false
+	#Show the Ominous Charm Bad Omen amount in Gui, Default: true
+	ocGuiShow = true
+	#Show the Eternal Cauldron cooldown in Gui, Default: true
+	ecGuiShow = true
+	#Move where the equipped Ominous Charm counter is located horizontally from its original position (- = Left, + = Right), Default: 0
+	#Range: > -2147483647
+	ocGuiHorizontal = 0
+	#Move where the equipped Ominous Charm counter is located vertically from its original position (- = Up, + = Down), Default: 0
+	#Range: > -2147483647
+	ocGuiVertical = 0
+	#Move where the equipped Eternal Cauldron counter is located horizontally from its original position (- = Left, + = Right), Default: 0
+	#Range: > -2147483647
+	ecGuiHorizontal = 0
+	#Move where the equipped Eternal Cauldron counter is located vertically from its original position (- = Up, + = Down), Default: 0
+	#Range: > -2147483647
+	ecGuiVertical = 0
 
 [Blocks]
 	#Add mobs that Hook Bells don't work on. 
@@ -112,6 +134,17 @@
 	#The amount of Illager Servants an Ominous Idol can register to revive, Default: 16
 	#Range: > 0
 	ominousIdolLimit = 16
+	#Add mobs that Forbidden Grass will not spawn. 
+	#To do so, enter the namespace ID of the mob, like "minecraft:zombie, minecraft:skeleton".
+	forbiddenGrassBlackList = []
+	#How many blocks each Tall Skull increases the Shrieking Obelisk's area of effect, Default: 4
+	#Range: > 1
+	shriekObeliskIncrease = 4
+	#Whether Shrieking Obelisk can prevent Pillager Patrols, Default: true
+	ShriekObeliskPatrol = true
+	#How many ticks until Void Frames returns back to Locked State after being used, Default: 24000
+	#Range: > 0
+	voidFrameCoolTime = 24000
 
 ["Soul Taken"]
 	#Multiplies the amount of Souls taken by this amount, Default: 2
@@ -194,4 +227,8 @@
 	ironBuff = true
 	#If enabled, Ender Dragon's Fireballs will leave clouds that damages even undead and will not hit itself. Default: false
 	betterDragonFireball = true
+	#If L_Ender's Cataclysm is installed, pouring Lava onto Void Fluid source blocks will turn it into Void Stones. Default: true
+	cataclysmVoidStone = true
+	#If there's a Block of Lapis Lazuli below, Lava interacting with water will generate Ominous Stone. Default: true
+	ominousStoneGenerator = true
 

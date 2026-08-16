@@ -61,6 +61,10 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "fallen_gems_affixes": {
+    "entity_affixes": true,
+    "deadeye_marked": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },
@@ -88,6 +92,12 @@
     "tesseract": true,
     "remove_default": true
   },
+  "strawgolem": {
+    "strawgolem_barrel": true,
+    "strawgolem_decay": true,
+    "strawgolem_hunger": true,
+    "strawgolem": true
+  },
   "reliquary": {
     "pedestal": true,
     "altar": true,
@@ -104,6 +114,7 @@
     "block_owner": true,
     "soul_energy": true,
     "raider_leader": true,
+    "hostile": true,
     "servant_mode": true,
     "capture_mode": true,
     "zombie_villager": true,
@@ -149,6 +160,10 @@
   },
   "fossil": {
     "feeder_status": true
+  },
+  "iceandfire": {
+    "multipart": true,
+    "dragon": true
   },
   "functionalstorage": {
     "armory": true

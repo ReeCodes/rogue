@@ -3,5 +3,6 @@
   "protectPetsFromPets": true,
   "protectChildren": true,
   "reflectDamage": false,
-  "displayHitWarning": true
+  "displayHitWarning": true,
+  "crouchBypassesProtection": true
 }

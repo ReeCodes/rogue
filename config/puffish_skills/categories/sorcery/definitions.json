@@ -1,7 +1,7 @@
 {
 	"reset_sorcery": {
 		"title": [{"text":"§f\uE83D","font":"symbols_n_stuff:symbols"}],
-		"description": [{"text":"\n§9§oResets skill tree and refunds points."}],
+		"description": [{"text":"\n§9§oResets Skill Tree and refunds Points."}],
 		"size": 1.25,
 		"cost": 0,
 		"required_spent_points": 1,
@@ -28,7 +28,7 @@
 	},
 	"root_nature": {
 		"title": "§6School:§f Naturalist",
-		"description": "§a+1§f Nature Spell Power\n§a+1§f Lightning Spell Power\n§a+10%§r Magic Damage",
+		"description": "§a+1§f Nature Spell Power\n§a+1§f Lightning Spell Power\n§a+1§f Geo Spell Power\n§a+5%§r Magic Damage",
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",
@@ -62,8 +62,16 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
+					"attribute": "gtbcs_geomancy_plus:geo_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
 					"attribute": "puffish_attributes:magic_damage",
-					"value": 0.1,
+					"value": 0.05,
 					"operation": "multiply_total"
 				}
 			}
@@ -71,7 +79,7 @@
 	},
 	"root_elemental": {
 		"title": "§6School:§f Elementalist",
-		"description": "§a+1§f Ice Spell Power\n§a+1§f Fire Spell Power\n§a+10%§r Magic Damage",
+		"description": "§a+1§f Ice Spell Power\n§a+1§f Fire Spell Power\n§a+1§f Wind Spell Power\n§a+5%§r Magic Damage",
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",
@@ -105,8 +113,16 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
+					"attribute": "wind_spellbooks:wind_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
 					"attribute": "puffish_attributes:magic_damage",
-					"value": 0.1,
+					"value": 0.05,
 					"operation": "multiply_total"
 				}
 			}
@@ -165,7 +181,7 @@
 	},
 	"root_cleric": {
 		"title": "§6School:§f Apprentice Cleric",
-		"description": "§a+1§f Holy Spell Power\n§a+1§f Evocation Spell Power\n§a+1§f Sound Spell Power\n§a+5%§r Magic Damage",
+		"description": "§a+1§f Holy Spell Power\n§a+1§f Evocation Spell Power\n§a+1§f Sound Spell Power\n§a+1§f Annihilation Spell Power\n§a+2.5%§r Magic Damage",
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",
@@ -199,7 +215,15 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "alshanex_familiars:sound_spell_power",
+					"attribute": "familiarslib:sound_spell_power",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "legendary_spellbooks:annihilation_spell_power",
 					"value": 1,
 					"operation": "addition"
 				}
@@ -208,7 +232,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "puffish_attributes:magic_damage",
-					"value": 0.05,
+					"value": 0.025,
 					"operation": "multiply_total"
 				}
 			}
@@ -269,11 +293,11 @@
 		]
 	},
 	"summon_damage_iron": {
-		"title": "§a+6%§f Summoning Damage (Irons)",
+		"title": "§a+5%§f Summoning Damage (Irons)",
 		"icon": {
 			"type": "item",
 			"data": {
-				"item": "dungeonnowloading:scepter_of_sealed_chaos"
+				"item": "goety:cursed_cage"
 			}
 		},
 		"rewards": [
@@ -281,7 +305,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:summon_damage",
-					"value": 0.06,
+					"value": 0.05,
 					"operation": "multiply_total"
 				}
 			}
@@ -497,7 +521,7 @@
 		]
 	},
 	"spell_power_eldritch": {
-		"title": "§a+5%§f Eldritch Spell Power",
+		"title": "§a+2.5%§f Eldritch Spell Power",
 		"icon": {
 			"type": "item",
 			"data": {
@@ -509,7 +533,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:eldritch_spell_power",
-					"value": 0.05,
+					"value": 0.025,
 					"operation": "multiply_total"
 				}
 			}
@@ -565,7 +589,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "alshanex_familiars:sound_spell_power",
+					"attribute": "familiarslib:sound_spell_power",
 					"value": 0.05,
 					"operation": "multiply_total"
 				}
@@ -591,6 +615,44 @@
 			}
 		]
 	},
+	"spell_power_ice": {
+		"title": "§a+5%§f Ice Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "irons_spellbooks:ice_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "irons_spellbooks:ice_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_wind": {
+		"title": "§a+5%§f Wind Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "wind_spellbooks:wind_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "wind_spellbooks:wind_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
 	"spell_power_holy": {
 		"title": "§a+5%§f Holy Spell Power",
 		"icon": {
@@ -610,19 +672,19 @@
 			}
 		]
 	},
-	"spell_power_ice": {
-		"title": "§a+5%§f Ice Spell Power",
+	"spell_power_annihilation": {
+		"title": "§a+5%§f Annihilation Spell Power",
 		"icon": {
 			"type": "item",
 			"data": {
-				"item": "irons_spellbooks:ice_upgrade_orb"
+				"item": "legendary_spellbooks:upgrade_orb_annihilation"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "irons_spellbooks:ice_spell_power",
+					"attribute": "legendary_spellbooks:annihilation_spell_power",
 					"value": 0.05,
 					"operation": "multiply_total"
 				}
@@ -661,6 +723,25 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:nature_spell_power",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_power_geo": {
+		"title": "§a+5%§f Geo Spell Power",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "gtbcs_geomancy_plus:geo_upgrade_orb"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "gtbcs_geomancy_plus:geo_spell_power",
 					"value": 0.05,
 					"operation": "multiply_total"
 				}
@@ -711,7 +792,7 @@
 	},
 	"big_spell_power_iron": {
 		"title": [{"text":"Caster's Core","color":"#E045F7"}],
-		"description": "§a+12%§f Spell Power (Irons)",
+		"description": "§a+12%§f Spell Power (Irons)\n§a+5%§f Spell Crit Chance",
 		"size": 1.5,
 		"icon": {
 			"type": "item",
@@ -727,12 +808,71 @@
 					"value": 0.12,
 					"operation": "multiply_total"
 				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "gtbcs_spell_lib:spell_crit_chance",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"spell_crit_dmg": {
+		"title": [{"text":"Surge","color":"#E045F7"}],
+		"description": "§a+30%§f Spell Crit Damage\n§a+5%§f Spell Crit Chance",
+		"size": 1.5,
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "goety:gravity_pulse"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "gtbcs_spell_lib:spell_crit_damage",
+					"value": 0.30,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "gtbcs_spell_lib:spell_crit_chance",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"sturdy_scroll": {
+		"title": [{"text":"Sturdy Scroll","color":"#E045F7"}],
+		"description": [{"text":"§f\uE801\n\n§a+10%§f Scroll Keep Chance"},{"text":"\n\uE108\uE154","font":"symbols_n_stuff:symbols"}],
+		"extra_description": "\n§6Keep Scroll Chance§f: Grants a chance to preserve a scroll when used.",
+		"size": 1.5,
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "elementalcraft:scroll_paper"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:keep_scroll",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
 			}
 		]
 	},
 	"milestone_nature": {
-		"title": "§6The Pestilent",
-		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+25%§f Nature Spell Power\n§a+25%§f Lightning Spell Power\n§a+1 Lv§f to Nature Spells\n§a+1 Lv§f to Lightning Spells\n\nLocks other §6Milestones"}],
+		"title": "§6Pestilent",
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEB92","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+15%§f Nature Spell Power\n§a+15%§f Lightning Spell Power\n§a+15%§f Geo Spell Power\n§a+1 Lv§f to Nature Spells\n§a+1 Lv§f to Lightning Spells\n§a+1 Lv§f to Geo Spells\n\nLocks other §6Milestones"}],
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",
@@ -751,7 +891,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:nature_spell_power",
-					"value": 0.25,
+					"value": 0.15,
 					"operation": "multiply_total"
 				}
 			},
@@ -759,7 +899,15 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:lightning_spell_power",
-					"value": 0.25,
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "gtbcs_geomancy_plus:geo_spell_power",
+					"value": 0.15,
 					"operation": "multiply_total"
 				}
 			},
@@ -778,12 +926,20 @@
 					"value": 1,
 					"operation": "addition"
 				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:school/gtbcs_geomancy_plus/geo",
+					"value": 1,
+					"operation": "addition"
+				}
 			}
 		]
 	},
 	"milestone_elementalist": {
 		"title": "§6Chroma",
-		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+25%§f Ice Spell Power\n§a+25%§f Fire Spell Power\n§a+1 Lv§f to Fire Spells\n§a+1 Lv§f to Ice Spells\n\nLocks other §6Milestones"}],
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEBD4","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+15%§f Ice Spell Power\n§a+15%§f Fire Spell Power\n§a+25%§f Wind Spell Power\n§a+1 Lv§f to Fire Spells\n§a+1 Lv§f to Ice Spells\n\nLocks other §6Milestones"}],
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",
@@ -802,7 +958,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:fire_spell_power",
-					"value": 0.25,
+					"value": 0.15,
 					"operation": "multiply_total"
 				}
 			},
@@ -810,6 +966,14 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:ice_spell_power",
+					"value": 0.15,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "wind_spellbooks:wind_spell_power",
 					"value": 0.25,
 					"operation": "multiply_total"
 				}
@@ -901,7 +1065,7 @@
 	},
 	"milestone_priest": {
 		"title": "§6Conjurer",
-		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+15%§f Holy Spell Power\n§a+15%§f Evocation Spell Power\n§a+15%§f Sound Spell Power\n§a+1 Lv§f to Holy Spells\n§a+1 Lv§f to Sound Spells\n§a+1 Lv§f to Evocation Spells\n\nLocks other §6Milestones"}],
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEC59","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+10%§f Holy Spell Power\n§a+10%§f Evocation Spell Power\n§a+10%§f Sound Spell Power\n§a+20%§f Annihilation Spell Power\n§a+1 Lv§f to Holy Spells\n§a+1 Lv§f to Sound Spells\n§a+1 Lv§f to Evocation Spells\n\nLocks other §6Milestones"}],
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",
@@ -920,7 +1084,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:holy_spell_power",
-					"value": 0.15,
+					"value": 0.10,
 					"operation": "multiply_total"
 				}
 			},
@@ -928,24 +1092,24 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:evocation_spell_power",
-					"value": 0.15,
+					"value": 0.10,
 					"operation": "multiply_total"
 				}
 			},
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "alshanex_familiars:sound_spell_power",
-					"value": 0.15,
+					"attribute": "familiarslib:sound_spell_power",
+					"value": 0.10,
 					"operation": "multiply_total"
 				}
 			},
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "additional_attributes:school/alshanex_familiars/sound",
-					"value": 1,
-					"operation": "addition"
+					"attribute": "legendary_spellbooks:annihilation_spell_power",
+					"value": 0.20,
+					"operation": "multiply_total"
 				}
 			},
 			{
@@ -963,12 +1127,20 @@
 					"value": 1,
 					"operation": "addition"
 				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "additional_attributes:school/familiarslib/sound",
+					"value": 1,
+					"operation": "addition"
+				}
 			}
 		]
 	},
 	"milestone_archmage": {
 		"title": "§6Archsourcerer",
-		"description": [{"text":"§f\uE812"},{"text":"§f\uEC12","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+50%§f Spell Damage (Ars)\n§a+25%§f Magic Damage\n\nLocks other §6Milestones"}],
+		"description": [{"text":"§f\uE812"},{"text":"§f\uEC60","font":"symbols_n_stuff:symbols"},{"text":"\n\n§a+50%§f Spell Damage (Ars)\n§a+25%§f Magic Damage\n\nLocks other §6Milestones"}],
 		"size": 2.0,
 		"frame": {
 			"type": "advancement",

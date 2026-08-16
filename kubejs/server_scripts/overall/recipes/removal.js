@@ -19,24 +19,26 @@ ServerEvents.recipes(event => {
 
 	removeById([
 	
-		//C&C
-		'caverns_and_chasms:netherite_ingot_from_nuggets',
-		'caverns_and_chasms:copper_ingot_from_nuggets',
+		// MC
+		'minecraft:chainmail_helmet',
+		'minecraft:chainmail_chestplate',
+		'minecraft:chainmail_leggings',
+		'minecraft:chainmail_boots',
 		
-		//BREAD
+		// BREAD
 		'quark:tweaks/crafting/utility/bent/bread',
 		'minecraft:bread',
 		
-		//CREATE
+		// CREATE
 		'create:crafting/materials/copper_ingot',
 		'createaddition:compat/immersiveengineering/crushing/coke_block',
 		'create:crushing/compat/immersiveengineering/coke_block',
 		'/createaddition:pressing.+/',
 		
-		//OCC
+		// OCC
 		'/occultism:(smelting|blasting)/(copper|gold)_.+/',
 		
-		//IE
+		// IE
 		'/immersiveengineering:smelting/(copper|iron|gold)_.+/',
 		'immersiveengineering:crafting/nugget_copper_to_copper_ingot',
 		'/immersiveengineering:crafting/nugget_.+_to_ingot_.+/',
@@ -44,7 +46,7 @@ ServerEvents.recipes(event => {
 		'/immersiveengineering:crafting/plate_.+/',
 		'immersiveengineering:smelting/slag_glass',
 		
-		//THERMAL
+		// THERMAL
 		'redstone_arsenal:materials/flux_gem',
 		'thermal:storage/coal_coke_block',
 		'/thermal:rubber_from_(vine|dandelion)/',
@@ -54,20 +56,20 @@ ServerEvents.recipes(event => {
 		'/thermal:storage/.+_nugget_from_ingot/',
 		'/thermal:machines/press/unpacking/press_.+_nugget_unpacking/',
 		
-		//AD-ASTRA
+		// AD-ASTRA
 		'ad_astra:steel_rod',
 		'/ad_astra:alloying.+/',
 		'/ad_astra:compressing.+/',
 		
-		//BM
+		// BM
 		'/bloodmagic:arc/dustsfrom_.+(?!netherite).+/',
 		
-		//MINI-U
+		// MINI-U
 		'miniutilities:angel_ring_crafting',
 		'miniutilities:ender_dust_to_ender_pearl',
 		'miniutilities:unstable_ingot',
 		
-		//EIO
+		// EIO
 		'enderio:sag_milling/soularium',
 		'enderio:wood_gear_corner',
 		'enderio:enchanting/soulbound',
@@ -81,11 +83,11 @@ ServerEvents.recipes(event => {
 		'enderio:smelting/miniutilities/smelting/ender_ore',
 		'enderio:alloy_smelting/ender_pearl',
 		
-		//PC
+		// PC
 		'pneumaticcraft:copper_ingot_from_nugget',
 		'pneumaticcraft:block_heat_properties/immersiveengineering/uranium',
 		
-		//MISC
+		// MISC
 		'redstone_arsenal:storage/flux_nugget_from_ingot',
 		'tconstruct:common/materials/copper_ingot_from_nuggets',
 		'tconstruct:common/materials/netherite_ingot_from_nuggets',

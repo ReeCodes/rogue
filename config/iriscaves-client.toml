@@ -1,0 +1,14 @@
+
+#IrisCaves — automatic shader pack patching
+[general]
+	#Scan the shaderpacks folder on startup and write a patched '<pack>_iriscaves' copy
+	#of every supported Complementary Reimagined pack found.
+	autoPatch = true
+	#Re-generate the patched copy when the source pack (or this mod's patch set) changes.
+	#When false, an existing patched copy is left untouched.
+	regenerateOnChange = true
+	#After generating, attempt to select the patched pack in Iris/Oculus automatically.
+	#Off by default so the mod never overrides the pack you picked; enable if you want
+	#IrisCaves to switch you onto the patched pack on its own.
+	autoSelect = false
+

@@ -87,7 +87,7 @@
   # <Number> Range: ≥ 0.0, Default: 0.5
   idle_griefing.break_speed = 0.5
   # If true, creepers will be upset about not having arms to grief blocks with and resort to what they know best.
-  # <Boolean> Valid Values: { true, false }, Default: true
+  # <Boolean> Valid Values: { true, false }, Default: false
   idle_griefing.mad_creepers = true
   # If 'mad_creepers' is enabled, creepers will not try to explode blocks with an explosion resistance value equal to
   #   or higher than this value.
@@ -112,7 +112,6 @@
     "minecraft:cartography_table",
     "minecraft:fletching_table",
     "handcrafted:oven",
-    "davespotioneering:compound_brewing_stand",
     "ad_astra:aeronos_ladder",
     "ad_astra:strophar_ladder",
     "chipped:crooked_ladder",
@@ -202,8 +201,7 @@
   # Like "grief_targets.whitelist", but these blocks will not be targeted if they have a loot table tag.
   # For example, unopened dungeon chests will not be targeted.
   # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:chest",
-  #   "minecraft:ender_chest", "minecraft:trapped_chest", "minecraft:barrel", "lootr:lootr_barrel", "lootr:lootr_chest",
-  #   "lootr:lootr_trapped_chest", "lootr:lootr_inventory", "blue_skies:bluebright_chest", ... ]
+  #   "minecraft:ender_chest", "minecraft:trapped_chest", "minecraft:barrel" ]
   idle_griefing.targets.lootable_list = [
     "minecraft:ender_chest",
     "minecraft:trapped_chest",
@@ -269,9 +267,6 @@
     "goety:trapped_chorus_chest",
     "goety:corrupt_chorus_chest",
     "goety:trapped_corrupt_chorus_chest",
-    "hexerei:willow_chest",
-    "hexerei:witch_hazel_chest",
-    "hexerei:mahogany_chest",
     "blue_skies:bluebright_chest",
     "blue_skies:starlit_chest",
     "blue_skies:frostbright_chest",
@@ -303,72 +298,38 @@
     "alexscaves:gingerbarrel",
     "quark:ancient_chest",
     "quark:ancient_trapped_chest",
-    "quark:lootr_ancient_chest",
-    "quark:lootr_ancient_trapped_chest",
     "quark:azalea_chest",
     "quark:azalea_trapped_chest",
-    "quark:lootr_azalea_chest",
-    "quark:lootr_azalea_trapped_chest",
     "quark:blossom_chest",
     "quark:blossom_trapped_chest",
-    "quark:lootr_blossom_chest",
-    "quark:lootr_blossom_trapped_chest",
     "quark:oak_chest",
     "quark:oak_trapped_chest",
-    "quark:lootr_oak_chest",
-    "quark:lootr_oak_trapped_chest",
     "quark:spruce_chest",
     "quark:spruce_trapped_chest",
-    "quark:lootr_spruce_chest",
-    "quark:lootr_spruce_trapped_chest",
     "quark:birch_chest",
     "quark:birch_trapped_chest",
-    "quark:lootr_birch_chest",
-    "quark:lootr_birch_trapped_chest",
     "quark:jungle_chest",
     "quark:jungle_trapped_chest",
-    "quark:lootr_jungle_chest",
-    "quark:lootr_jungle_trapped_chest",
     "quark:acacia_chest",
     "quark:acacia_trapped_chest",
-    "quark:lootr_acacia_chest",
-    "quark:lootr_acacia_trapped_chest",
     "quark:dark_oak_chest",
     "quark:dark_oak_trapped_chest",
-    "quark:lootr_dark_oak_chest",
-    "quark:lootr_dark_oak_trapped_chest",
     "quark:crimson_chest",
     "quark:crimson_trapped_chest",
-    "quark:lootr_crimson_chest",
-    "quark:lootr_crimson_trapped_chest",
     "quark:warped_chest",
     "quark:warped_trapped_chest",
-    "quark:lootr_warped_chest",
-    "quark:lootr_warped_trapped_chest",
     "quark:mangrove_chest",
     "quark:mangrove_trapped_chest",
-    "quark:lootr_mangrove_chest",
-    "quark:lootr_mangrove_trapped_chest",
     "quark:bamboo_chest",
     "quark:bamboo_trapped_chest",
-    "quark:lootr_bamboo_chest",
-    "quark:lootr_bamboo_trapped_chest",
     "quark:cherry_chest",
     "quark:cherry_trapped_chest",
-    "quark:lootr_cherry_chest",
-    "quark:lootr_cherry_trapped_chest",
     "quark:nether_brick_chest",
     "quark:nether_brick_trapped_chest",
-    "quark:lootr_nether_brick_chest",
-    "quark:lootr_nether_brick_trapped_chest",
     "quark:purpur_chest",
     "quark:purpur_trapped_chest",
-    "quark:lootr_purpur_chest",
-    "quark:lootr_purpur_trapped_chest",
     "quark:prismarine_chest",
     "quark:prismarine_trapped_chest",
-    "quark:lootr_prismarine_chest",
-    "quark:lootr_prismarine_trapped_chest",
     "woodworks:oak_chest",
     "woodworks:spruce_chest",
     "woodworks:birch_chest",
@@ -463,9 +424,7 @@
   # List of blocks that can be hidden in by the idle hiding AI. Note that only blocks with tile entities are able to
   #   be hidden in.
   # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: [ "minecraft:chest",
-  #   "minecraft:trapped_chest", "minecraft:barrel", "lootr:lootr_barrel", "lootr:lootr_chest",
-  #   "lootr:lootr_trapped_chest", "lootr:lootr_inventory", "blue_skies:bluebright_chest", "blue_skies:starlit_chest",
-  #   ... ]
+  #   "minecraft:trapped_chest", "minecraft:barrel" ]
   idle_hiding.targets.whitelist = [
     "chipped:acacia_barrel",
     "chipped:acacia_crate",
@@ -520,9 +479,6 @@
     "goety:trapped_chorus_chest",
     "goety:corrupt_chorus_chest",
     "goety:trapped_corrupt_chorus_chest",
-    "hexerei:willow_chest",
-    "hexerei:witch_hazel_chest",
-    "hexerei:mahogany_chest",
     "blue_skies:bluebright_chest",
     "blue_skies:starlit_chest",
     "blue_skies:frostbright_chest",
@@ -641,7 +597,10 @@
     "woodworks:trapped_cherry_chest",
     "woodworks:trapped_bamboo_closet",
     "woodworks:trapped_crimson_chest",
-    "woodworks:trapped_warped_chest"
+    "woodworks:trapped_warped_chest",
+    "lootr:lootr_chest",
+    "lootr:lootr_barrel",
+    "lootr:lootr_trapped_chest"
   ]
   # <Block List> Format: [ "namespace:block_name[properties]", ... ], Default: []
   idle_hiding.targets.blacklist = []

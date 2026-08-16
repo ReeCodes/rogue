@@ -1,6 +1,16 @@
 [
 	// SINGLE LIMITERS
 	{
+		"mob": "minecraft:enderman",
+		"dimension": ["minecraft:the_end"],
+		"mincount": {
+			"amount": 20,
+			"mob": ["specialmobs:enderman", "minecraft:enderman"],
+			"perplayer": true
+		},
+		"result": "deny"
+	},
+	{
 		"mob": "minecraft:bat",
 		"mincount": {
 			"amount": 8,
@@ -99,24 +109,21 @@
 	},
 	// MOD LIMITERS
 	{
-		"spawner": true,
-		"mod": "minecraft",
-		"passive": true,
+		"spawner": false,
+		"mod": "species",
 		"mincount": {
-			"spawner": true,
-			"amount": 80,
-			"mod": "minecraft",
-			"passive": true,
+			"amount": 16,
+			"mod": "species",
 			"perplayer": true
 		},
 		"result": "deny"
 	},
 	{
 		"spawner": false,
-		"mod": "species",
+		"mod": "specialmobs",
 		"mincount": {
-			"amount": 16,
-			"mod": "species",
+			"amount": 50,
+			"mod": "specialmobs",
 			"perplayer": true
 		},
 		"result": "deny"
@@ -177,26 +184,6 @@
 		"mincount": {
 			"amount": 12,
 			"mod": "grimoireofgaia",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "mutantmonsters",
-		"mincount": {
-			"amount": 5,
-			"mod": "mutantmonsters",
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "instrumentalmobs",
-		"mincount": {
-			"amount": 8,
-			"mod": "instrumentalmobs",
 			"perplayer": true
 		},
 		"result": "deny"
@@ -341,16 +328,6 @@
 			"amount": 16,
 			"mod": "eidolon",
 			"hostile": true,
-			"perplayer": true
-		},
-		"result": "deny"
-	},
-	{
-		"spawner": false,
-		"mod": "whatareyouvotingfor",
-		"mincount": {
-			"amount": 16,
-			"mod": "whatareyouvotingfor",
 			"perplayer": true
 		},
 		"result": "deny"

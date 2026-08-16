@@ -1,0 +1,7 @@
+{
+  "id": "rogue:broken_spawners",
+  "type": "emixx:group",
+  "contents": [
+    "enderio:broken_spawner"
+  ]
+}

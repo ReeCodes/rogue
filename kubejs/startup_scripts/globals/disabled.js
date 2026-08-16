@@ -3,33 +3,29 @@ global.disabledItems = [
 	'hearthandharvest:gunpowder_bag',
 	'malum:osmium_node',
 	
+	// PM
+	'primitivemobs:dodo', 
+	'primitivemobs:cooked_dodo', 
+	'primitivemobs:dodo_egg', 
+	'/primitivemobs:goblin_mace/',
+	
+	'nethersdelight:blackstone_furnace', 
+	'nethersdelight:nether_brick_smoker', 
+	'nethersdelight:blackstone_blast_furnace',
+	
+	// I&F
+	'/iceandfire:copper_(sword|pickaxe$|axe$|shovel|hoe)/',
+	'/iceandfire:armor_copper_metal_(helmet|chestplate|leggings|boots)/',
+	'/iceandfire:silver_(sword|pickaxe$|axe$|shovel|hoe|ingot|nugget|block)/',
+	'/iceandfire:armor_silver_metal_(helmet|chestplate|leggings|boots)/',
+	
 	// GALOSPHERE
 	'galosphere:sterling_helmet',
 	'galosphere:sterling_chestplate',
 	'galosphere:sterling_leggings',
 	'galosphere:sterling_boots',
 	
-	// C&C
-	'caverns_and_chasms:silver_helmet',
-	'caverns_and_chasms:silver_chestplate',
-	'caverns_and_chasms:silver_leggings',
-	'caverns_and_chasms:silver_boots',
-	'caverns_and_chasms:silver_sword',
-	'caverns_and_chasms:silver_pickaxe',
-	'caverns_and_chasms:silver_axe',
-	'caverns_and_chasms:silver_shovel',
-	'caverns_and_chasms:silver_hoe',
-	'caverns_and_chasms:depth_gauge',
-	
-	// YOYOS
-	'yoyos:pigiron_yoyo',
-	'yoyos:rose_gold_yoyo',
-	'yoyos:steel_yoyo',
-	'yoyos:nickel_yoyo',
-	'yoyos:constantan_yoyo',
-	'yoyos:electrum_yoyo',
-	'yoyos:silver_yoyo',
-	'yoyos:lead_yoyo',
+	'galosphere:palladium_dust',
 	
 	// GENERATORS
 	'draconicevolution:generator',
@@ -205,7 +201,6 @@ global.clearedItems = [
 
 //DISABLED TT
 global.disabledTooltip = [
-	Item.of('elementalcraft:jewel', '{elementalcraft:{jewel:"elementalcraft:kirin"}}').strongNBT(),
 	'ae2:spatial_anchor',
 	'pneumaticcraft:chunkloader_upgrade',
 	'rats:rat_upgrade_psychic',

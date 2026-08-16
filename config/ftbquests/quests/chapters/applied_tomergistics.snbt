@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: "ae2:mysterious_cube"
 			id: "3E146BE5F50B89A3"
 			rewards: [
@@ -69,6 +70,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: "ae2:charger"
 			id: "3356CE1CDF4A2D23"
 			rewards: [{
@@ -95,6 +97,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7B69E303B9D38298"
 			rewards: [
 				{
@@ -119,6 +122,7 @@
 		}
 		{
 			dependencies: ["3E146BE5F50B89A3"]
+			entity_vis_size: 1.0f
 			icon: "ae2:inscriber"
 			id: "558F3EDF44BFF78C"
 			rewards: [
@@ -231,6 +235,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["The &eCrystal Resonance Generator&r allows to run a small &eME Setup&r without the need of another source of energy."]
+			entity_vis_size: 1.0f
 			icon: "ae2:vibration_chamber"
 			id: "6FC00E047557D3F3"
 			rewards: [
@@ -275,6 +280,7 @@
 		}
 		{
 			dependencies: ["558F3EDF44BFF78C"]
+			entity_vis_size: 1.0f
 			icon: "ae2:drive"
 			id: "122664F499BC5E96"
 			rewards: [
@@ -628,6 +634,22 @@
 					title: "&eCables"
 					type: "item"
 				}
+				{
+					icon: "ae2:terminal"
+					id: "5294C49C0AA1DBF9"
+					stat: "ae2:items_extracted"
+					title: "&eExtract:&r a Stack of Items from your &eME System&r"
+					type: "stat"
+					value: 64
+				}
+				{
+					icon: "ae2:terminal"
+					id: "340E173DA26EFF36"
+					stat: "ae2:items_inserted"
+					title: "&eAdd:&r a Stack of Items to your &eME System&r"
+					type: "stat"
+					value: 64
+				}
 			]
 			title: "&eChapter I: &aThe System"
 			x: 7.0d
@@ -639,6 +661,7 @@
 				"26E54C9D3E5128D9"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "megacells:accumulation_processor_press"
 			id: "3FDEFA5EF5BCBD18"
 			rewards: [
@@ -702,6 +725,7 @@
 				"42885A6F3014CA22"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "megacells:bulk_item_cell"
@@ -973,6 +997,7 @@
 				"42885A6F3014CA22"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "megacells:cell_component_256m"
 			id: "31F7E41AB47A15D7"
 			rewards: [
@@ -1075,6 +1100,7 @@
 				"122664F499BC5E96"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: "ae2:controller"
 			id: "26E54C9D3E5128D9"
 			rewards: [
@@ -1206,6 +1232,7 @@
 		}
 		{
 			dependencies: ["558F3EDF44BFF78C"]
+			entity_vis_size: 1.0f
 			icon: "ae2:spatial_pylon"
 			id: "6C34DF77F763B025"
 			rewards: [
@@ -1312,6 +1339,7 @@
 				"558F3EDF44BFF78C"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "ae2:memory_card"
@@ -1374,6 +1402,7 @@
 		}
 		{
 			dependencies: ["558F3EDF44BFF78C"]
+			entity_vis_size: 1.0f
 			icon: "expatternprovider:ex_pattern_provider"
 			id: "4BED5CA104DF8293"
 			rewards: [
@@ -1430,6 +1459,7 @@
 		{
 			dependencies: ["558F3EDF44BFF78C"]
 			description: ["Counts any type of item as &b1 byte&r, but also uses more storage per byte."]
+			entity_vis_size: 1.0f
 			id: "2A6AAB36A32000D1"
 			rewards: [
 				{

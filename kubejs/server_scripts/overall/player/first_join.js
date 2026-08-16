@@ -1,36 +1,36 @@
+const skilltree_version = 6;
+
 PlayerEvents.loggedIn(event => {
 	const { player, server } = event;
 	
-	let pData = player.persistentData;
-	
-	if (!player.stages.has('starting_items')) {
-		server.runCommandSilent(`item replace entity ${player.username} container.9 with minecraft:potion{Potion:"minecraft:water",Purity:3} 12`);
-		server.runCommandSilent(`item replace entity ${player.username} container.10 with kubejs:gluttonous_chest 1`);
-		player.give(Item.of('eccentrictome:tome', '{"eccentrictome:mods":{ad_astra:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"ad_astra:astrodux"}}},alexsmobs:{0:{Count:1b,id:"alexsmobs:animal_dictionary"}},apotheosis:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"apotheosis:apoth_chronicle"}}},ars_nouveau:{0:{Count:1b,id:"ars_nouveau:worn_notebook"}},bloodmagic:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"bloodmagic:guide"}}},botania:{0:{Count:1b,id:"botania:lexicon"}},buildinggadgets2:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"buildinggadgets2:buildinggadgets2book"}}},caupona:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"caupona:book"}}},cloudstorage:{0:{Count:1b,id:"cloudstorage:guide_book"}},convivium:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"convivium:book"}}},dimdungeons:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"dimdungeons:guide_book"}}},eidolon:{0:{Count:1b,id:"eidolon:codex"}},elementalcraft:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"elementalcraft:element_book"}}},embers:{0:{Count:1b,id:"embers:ancient_codex"}},feywild:{0:{Count:1b,id:"feywild:feywild_lexicon"}},goety:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"goety:black_book"}},1:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"goety:witches_brew"}}},hexcasting:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"hexcasting:thehexbook"}}},immersiveengineering:{0:{Count:1b,id:"immersiveengineering:manual"}},industrialforegoing:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"industrialforegoing:industrial_foregoing"}}},integrateddynamics:{0:{Count:1b,id:"integrateddynamics:on_the_dynamics_of_integration"}},irons_spellbooks:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"irons_spellbooks:iss_guide_book"}}},modonomicon:{0:{Count:1b,id:"modonomicon:modonomicon",tag:{"modonomicon:book_id":"theurgy:the_hermetica"}}},naturesaura:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"naturesaura:book"}}},occultism:{0:{Count:1b,id:"occultism:dictionary_of_spirits",tag:{"modonomicon:book_id":"occultism:dictionary_of_spirits"}}},pneumaticcraft:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}}},powah:{0:{Count:1b,id:"powah:book"}},productivebees:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"productivebees:guide"}}},securitycraft:{0:{Count:1b,id:"minecraft:air"}},sushigocrafting:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"sushigocrafting:sushigocrafting"}}},twilightdelight:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"twilightdelight:twilight_guide"}}}}}'))
+	if (!getPersistentBoolean(player, 'starting_items', false)) {
+		player.give(Item.of('eccentrictome:tome', '{"eccentrictome:items":[{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"ad_astra:astrodux"}},{Count:1b,id:"alexsmobs:animal_dictionary"},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"apotheosis:apoth_chronicle"}},{Count:1b,id:"ars_nouveau:worn_notebook"},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"industrialforegoing:industrial_foregoing"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"buildinggadgets2:buildinggadgets2book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"modularrouters:book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"convivium:book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"bloodmagic:guide"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"naturesaura:book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"sushigocrafting:sushigocrafting"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"twilightdelight:twilight_guide"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"caupona:book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"goety:black_book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"goety:witches_brew"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"psi:encyclopaedia_psionica"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"dimdungeons:guide_book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"elementalcraft:element_book"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"productivebees:guide"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"hexcasting:thehexbook"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"enderio:guide"}},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"thermal:guidebook"}},{Count:1b,id:"feywild:feywild_lexicon"},{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"grimoireofgaia:gaiapedia"}},{Count:1b,id:"cloudstorage:guide_book"},{Count:1b,id:"eidolon:codex"},{Count:1b,id:"embers:ancient_codex"},{Count:1b,id:"immersiveengineering:manual"},{Count:1b,id:"integrateddynamics:on_the_dynamics_of_integration"},{Count:1b,id:"modonomicon:modonomicon",tag:{"modonomicon:book_id":"theurgy:the_hermetica"}},{Count:1b,id:"powah:book"},{Count:1b,id:"occultism:dictionary_of_spirits",tag:{"modonomicon:book_id":"occultism:dictionary_of_spirits"}}],"eccentrictome:version":2}'))
+		player.give(Item.of('minecraft:potion', 16, '{Potion:"minecraft:water",Purity:3}'))
+		player.give('kubejs:gluttonous_chest')
 		player.give('kubejs:nothingness');
-		player.stages.add('starting_items');
+		setPersistentBoolean(player, 'starting_items', true);
 	};
 	
-	if (!player.stages.has('luggage')) {
+	if (!getPersistentBoolean(player, 'luggage', false)) {
 		let pUUID = player.nbt.UUID;
 		let luggage = player.level.createEntity("luggage:luggage");
-		luggage.setCustomName(`${player.username}'s Accomplice`);
 		luggage.mergeNbt(`{Owner:${pUUID}}`);
 		luggage.x = player.x;
 		luggage.y = player.y;
 		luggage.z = player.z;
 		luggage.spawn();
-		player.stages.add('luggage');
+		setPersistentBoolean(player, 'luggage', true);
 	};
 	
-	if (pData && !pData.coef) {
-		pData.coef = 1;
+	let pData = player.getPersistentData();
+	
+	if (pData.contains('skilltree_version')) {
+		let currentVersion = getPersistentInt(player, 'skilltree_version', 0);
+		if (currentVersion !== skilltree_version) {
+			server.runCommandSilent(`execute as ${player.username} run puffish_reset`);
+			setPersistentInt(player, 'skilltree_version', skilltree_version);
+		}
+	} else {
+		setPersistentInt(player, 'skilltree_version', skilltree_version);
 	}
-	
-	if (pData && pData.skilltree_version && pData.skilltree_version !== skilltree_version) {
-		server.runCommandSilent(`execute as ${player.username} run puffish_reset`);
-		pData.skilltree_version = skilltree_version;
-	};
-	
-	if (!pData.skilltree_version) pData.skilltree_version = skilltree_version;
 })

@@ -128,7 +128,19 @@ global.armorSets = [
 		effects: [
 		{effect: 'tconstruct:momentum_armor', amp: 0}, 
 		{effect: 'tconstruct:calcified', amp: 0},
-		{effect: 'tetra:small_strength', amp: 2}
+		{effect: 'tetra:small_strength', amp: 1}
+		]
+	},
+	{
+		head: 'mutantmore:mutant_wither_skeleton_skull',
+		chestplate: 'mutantmore:mutant_wither_skeleton_chestplate',
+		leggings: 'mutantmore:mutant_wither_skeleton_leggings',
+		boots: 'mutantmore:mutant_wither_skeleton_boots',
+		effects: [
+		{effect: 'tconstruct:momentum_armor', amp: 0}, 
+		{effect: 'tconstruct:calcified', amp: 0},
+		{effect: 'tetra:small_strength', amp: 2},
+		{effect: 'occultism:bat_lifesteal', amp: 1}
 		]
 	},
 	{

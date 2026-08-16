@@ -1,7 +1,12 @@
 global.oreTagsRemove = [
-	'alexscaves:sulfur',
-	'caverns_and_chasms:copper_nugget',
-	'caverns_and_chasms:netherite_nugget',
+
+	'alexscaves:sulfur',	
+	
+	// I&F
+	'/iceandfire:raw_silver(_block)?$/',
+	'/iceandfire:sapphire_(gem$|block$|ore$)/',
+	'/iceandfire:(deepslate_)?silver_ore$/',
+	'iceandfire:copper_nugget',
 
 	// MISC-BLOCKS
 	'thermal:slag',
@@ -75,16 +80,6 @@ global.oreTagsRemove = [
 	'caupona:lead_block',
 	'caupona:lead_ingot',
 	'caupona:lead_nugget',
-	
-	// C&C
-	'caverns_and_chasms:silver_block', 
-	'caverns_and_chasms:silver_ingot', 
-	'caverns_and_chasms:silver_nugget', 
-	'caverns_and_chasms:raw_silver', 
-	'caverns_and_chasms:raw_silver_block', 
-	'caverns_and_chasms:silver_ore', 
-	'caverns_and_chasms:deepslate_silver_ore', 
-	'caverns_and_chasms:soul_silver_ore',
 
 	// EIDOLON
 	'eidolon:deep_lead_ore',
@@ -101,7 +96,7 @@ global.oreTagsRemove = [
 	'eidolon:silver_ingot',
 	'eidolon:silver_nugget',
 	'eidolon:silver_ore',
-
+/*
 	// GALOSPHERE
 	'galosphere:deepslate_silver_ore',
 	'galosphere:raw_silver',
@@ -110,7 +105,7 @@ global.oreTagsRemove = [
 	'galosphere:silver_ingot',
 	'galosphere:silver_nugget',
 	'galosphere:silver_ore',
-
+*/
 	// IMMERSIVE ENGINEERING
 	'immersiveengineering:deepslate_ore_lead',
 	'immersiveengineering:deepslate_ore_silver',

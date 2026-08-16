@@ -47,7 +47,7 @@ ServerEvents.genericLootTables(event => {
 					pool.addItem('supplementaries:bomb', 7, [2, 5])
 					pool.addItem('minecraft:lapis_lazuli', 10, [4, 12])
 					pool.addItem('minecraft:amethyst_shard', 12, [4, 16])
-					pool.addItem('galosphere:silver_bomb', 11, [2, 6])
+					pool.addItem('galosphere:palladium_bomb', 11, [2, 6])
 					pool.addItem('reliquary:holy_hand_grenade', 5, [1, 2])
 					pool.addItem('botania:keep_ivy', 6)
 					pool.addItem('botania:overgrowth_seed', 5)

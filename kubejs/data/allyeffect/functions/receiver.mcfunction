@@ -1,1 +1,0 @@
-effect give @s upgrade_aquatic:vibing 10 2 true

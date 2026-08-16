@@ -1,0 +1,7 @@
+{
+  "id": "rogue:block_bits",
+  "type": "emixx:group",
+  "contents": [
+    "chiselsandbits:block_bit"
+  ]
+}

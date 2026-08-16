@@ -93,6 +93,9 @@ ItemEvents.entityInteracted(event => {
 
 PlayerEvents.tick(event => {
 	const { player, server } = event;
+	
+	if (server.tickCount % 5 !== 0) return;
+	
 	if (player.isHoldingInAnyHand(Item.of(sizeDOWN)) || player.isHoldingInAnyHand(Item.of(sizeUP))) {
 		player.setStatusMessage([Text.of(`Current Scale: `).append(Text.of(`${getScaleData(player).toFixed(2)}x`).color(COLOR_ROGUE))]);
 	}

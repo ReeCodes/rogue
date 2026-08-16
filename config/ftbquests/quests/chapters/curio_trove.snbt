@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "50299A41930935ED"
 			rewards: [
 				{
@@ -41,6 +42,7 @@
 		}
 		{
 			dependencies: ["50299A41930935ED"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -279,6 +281,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "0000000000000031"
 			rewards: [
 				{
@@ -304,6 +307,7 @@
 		}
 		{
 			dependencies: ["0000000000000031"]
+			entity_vis_size: 1.0f
 			id: "0000000000000033"
 			rewards: [
 				{
@@ -330,6 +334,7 @@
 		}
 		{
 			dependencies: ["0000000000000033"]
+			entity_vis_size: 1.0f
 			id: "0000000000000035"
 			rewards: [
 				{
@@ -356,6 +361,7 @@
 		}
 		{
 			dependencies: ["0000000000000035"]
+			entity_vis_size: 1.0f
 			id: "0000000000000037"
 			rewards: [
 				{
@@ -389,6 +395,7 @@
 				"10E3F2B916F16C68"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0000000000000039"
 			rewards: [
@@ -459,6 +466,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "0000000000000077"
 			rewards: [
 				{
@@ -486,6 +494,7 @@
 		{
 			dependencies: ["35C2D260EF739762"]
 			description: ["&o\"Deep down in the Lands of the Jellyfish, he sipped his last drink.\""]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4C0481A708CD6977"
 			rewards: [
@@ -520,6 +529,7 @@
 			y: -2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "35C2D260EF739762"
 			rewards: [
 				{
@@ -588,6 +598,7 @@
 			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "281088C5B705303A"
 			rewards: [
 				{
@@ -1061,6 +1072,7 @@
 		}
 		{
 			dependencies: ["35C2D260EF739762"]
+			entity_vis_size: 1.0f
 			id: "70B5A20114F16BDE"
 			rewards: [
 				{
@@ -1254,6 +1266,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5E32D90C9E3E8162"
 			rewards: [
 				{
@@ -1988,6 +2001,7 @@
 		}
 		{
 			dependencies: ["0000000000000037"]
+			entity_vis_size: 1.0f
 			id: "10E3F2B916F16C68"
 			rewards: [
 				{
@@ -2013,6 +2027,7 @@
 			y: 4.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "64A3EF738F43767A"
 			rewards: [
 				{
@@ -2056,6 +2071,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "18D40DF43E5CF7D5"
 			rewards: [
 				{
@@ -2088,6 +2104,7 @@
 		}
 		{
 			dependencies: ["3CDB45845A0E258F"]
+			entity_vis_size: 1.0f
 			id: "30CB0D1FBB7C8963"
 			rewards: [
 				{
@@ -2127,6 +2144,7 @@
 		}
 		{
 			dependencies: ["6468C02D2D4838B5"]
+			entity_vis_size: 1.0f
 			id: "319E03FE0710CDA3"
 			rewards: [
 				{
@@ -2174,6 +2192,7 @@
 		}
 		{
 			dependencies: ["0E28503420F2B547"]
+			entity_vis_size: 1.0f
 			id: "792C68E7AEC6487E"
 			rewards: [
 				{
@@ -2216,6 +2235,7 @@
 		}
 		{
 			dependencies: ["0E42D48A1836EB3B"]
+			entity_vis_size: 1.0f
 			id: "138921ACDC11CD8C"
 			rewards: [
 				{
@@ -2255,6 +2275,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5FE0F641FCAEABA2"
 			rewards: [
 				{
@@ -2293,6 +2314,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6EDB090E64B39AF7"
 			rewards: [
 				{
@@ -2340,6 +2362,7 @@
 		}
 		{
 			dependencies: ["6EDB090E64B39AF7"]
+			entity_vis_size: 1.0f
 			id: "667B9B389871F9A5"
 			rewards: [
 				{
@@ -2419,6 +2442,7 @@
 				"17E1EE88E5CCDA15"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "3D97FB6DC6DD5A99"
 			min_required_dependencies: 1
 			rewards: [
@@ -2478,6 +2502,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "045FE5AA3F095609"
 			rewards: [
 				{

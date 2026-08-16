@@ -68,6 +68,10 @@
   # The cooldown in ticks between each time the mob will consume one item out of the food item stack it has found.
   # <Integer> Range: ≥ 0, Default: 2
   animals.eating_cooldown = 2
+  # List of animal entities that should not get the 'eat breeding items' AI.
+  # <Entity List> Format: [ "namespace:entity_type value1 value2 ...", ... ], Default: []
+  #    Range for Values: Any Value
+  animals.eating_blacklist = []
 
 
 # Category: reaction_ai
@@ -185,7 +189,9 @@
   #    Range for Values: 0.0 ~ 1.0
   door_breaking.entities.whitelist = [
     "minecraft:zombie 1.0",
-    "minecraft:creeper 1.0"
+    "minecraft:creeper 1.0",
+    "eidolon:zombie_brute 1.0",
+    "player_mobs:player_mob 1.0"
   ]
   # <Entity List> Format: [ "namespace:entity_type", ... ], Default: []
   door_breaking.entities.blacklist = []

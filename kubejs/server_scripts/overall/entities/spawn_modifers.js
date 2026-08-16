@@ -58,20 +58,15 @@ let specialArrows = [
 	'archeryexp:netherite_arrow'
 ];
 
-const MIN_SPECIAL_ARROW_CHANCE = 0.02;
-const MAX_SPECIAL_ARROW_CHANCE = 0.63;
-
-let coef;
-let maxCoef;
-let player;
-
 EntityEvents.spawned(event => {
 	const { entity, level } = event;
 	if (level.clientSide || level.players.length === 0) return;
 	
-	if (allBowEntities.test(entity.type) && 
-		entity.getItemBySlot($EquipmentSlot.MAINHAND) === 'minecraft:bow' && 
-		entity.getItemBySlot($EquipmentSlot.OFFHAND).isEmpty()) {
+	if (!allBowEntities.test(entity.getType())) return;
+	if (entity.getItemBySlot($EquipmentSlot.MAINHAND).id !== 'minecraft:bow') return;
+	if (!entity.getItemBySlot($EquipmentSlot.OFFHAND).isEmpty()) return;
+			
+		let player, coef, maxCoef;
 	
 		if (level.players.length === 1) {
 			
@@ -82,12 +77,13 @@ EntityEvents.spawned(event => {
 		} else if (level.players.length > 1) {
 			
 			let followRange = getFollowRange(entity);
-			let radius = Math.floor(followRange + 8);
-			let nearbyPlayers = findNearbyPlayersCloseToEntity(level, entity, radius, maxPlayerSearchRange, true);
+			let radius = Math.floor(followRange + 16);
+			let dynamicSearchRange = getDynamicSearchRange(level.players.length);
+			let nearbyPlayers = findNearbyPlayersCloseToEntity(level, entity, radius, dynamicSearchRange, true);
 			
 			if (nearbyPlayers.length > 1) {
 				
-				let closestPlayer = getClosestPlayer(entity, nearbyPlayers, radius);
+				let closestPlayer = getClosestInRange(entity, nearbyPlayers, radius);
 				if (!closestPlayer) closestPlayer = nearbyPlayers[0];
 				
 				player = closestPlayer;
@@ -100,31 +96,20 @@ EntityEvents.spawned(event => {
 				coef = getPlayerCoef(player);
 				maxCoef = getMaxPlayerCoef(player);
 				
+			} else {
+				return;
 			}
 		}
 		
 		let chanceForArrow = MIN_SPECIAL_ARROW_CHANCE + (coef - 1) * ((MAX_SPECIAL_ARROW_CHANCE - MIN_SPECIAL_ARROW_CHANCE) / (maxCoef - 1));
-		let chanceForBow = 0.5;
 
-		
 		if (Math.random() < chanceForArrow) {
-			
-			let selectedEffectByPotion = randomize(effectsByPotion);
-			let selectArrowFromPotion = $PotionUtils.setPotion(Item.of('minecraft:tipped_arrow'), selectedEffectByPotion);
-			
-			let selectedEffectById = randomize(effectsById);
-			let selectArrowFromPotionId = $PotionUtils.setCustomEffects(Item.of('minecraft:tipped_arrow'), [new $MobEffectInstance(selectedEffectById, 100, 0)]);
-			
-			let selectSpecialArrow = randomize(specialArrows);
-			
-			let arrowFormula = [
-				selectArrowFromPotion, 
-				selectArrowFromPotionId, 
-				selectSpecialArrow
-				];
-			
-			let selectedArrow = randomize(arrowFormula);
+			let arrowPool = [
+				() => $PotionUtils.setPotion(Item.of('minecraft:tipped_arrow'), randomize(effectsByPotion)),
+				() => $PotionUtils.setCustomEffects(Item.of('minecraft:tipped_arrow'), [new $MobEffectInstance(randomize(effectsById), 100, 0)]),
+				() => randomize(specialArrows)
+			];
+			let selectedArrow = randomize(arrowPool)();
 			entity.setItemSlot($EquipmentSlot.OFFHAND, selectedArrow);
 		}
-	}
 })

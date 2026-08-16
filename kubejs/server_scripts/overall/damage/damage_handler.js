@@ -1,17 +1,20 @@
 /*
-	Recalculates damage changed by abilities and the damage scaling system
+	Recalculates damage dealt by abilities
 */
+
 global.DamageEvent = event => {
     let amount = event.getAmount();
-    global.DamageHandlers
-        .filter(fn => typeof fn === "function")
-        .forEach((fn, i) => {
-            const handlerName = fn.tag;
-                let result = fn(event, amount);
-                if (typeof result === "number") {
-                    amount = result;
-                }
-        });
-	amount = amount.toFixed(1);
-    event.setAmount(amount);
+    let handlers = global.DamageHandlers;
+    
+    for (let i = 0; i < handlers.length; i++) {
+        let fn = handlers[i];
+        if (typeof fn !== "function") continue;
+        
+        let result = fn(event, amount);
+        if (typeof result === "number") {
+            amount = result;
+        }
+    }
+    
+    event.setAmount(Number(amount.toFixed(1)));
 };

@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["0000000000000037"]
+			entity_vis_size: 1.0f
 			id: "1D9D70FB9163DD4B"
 			rewards: [
 				{
@@ -69,10 +70,11 @@
 				type: "item"
 			}]
 			title: "&eOn The Side: &aHearty Attack"
-			x: 0.0d
+			x: -1.0d
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6D52DFB5DE4FD9E7"
 			rewards: [
 				{
@@ -104,11 +106,12 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
+			x: 0.0d
+			y: -0.5d
 		}
 		{
 			dependency_requirement: "one_started"
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -129,7 +132,6 @@
 					xp: 15
 				}
 				{
-					count: 2
 					id: "3B7BE1E41838E190"
 					item: "kubejs:jewelled_box"
 					type: "item"
@@ -218,10 +220,11 @@
 				}
 			]
 			title: "&6Collection: &rCopper Warrior"
-			x: 0.0d
-			y: 2.0d
+			x: -6.0d
+			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "22D340822CAEB3BD"
 			rewards: [
 				{
@@ -242,10 +245,11 @@
 				item: "artifacts:umbrella"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -6.0d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "73697ACE715FFF52"
 			rewards: [
 				{
@@ -338,6 +342,7 @@
 		}
 		{
 			description: ["Use the &eWooden Hammer&r on a &eCrafting Table&r to turn it into a &eWorkbench&r."]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "tetra:modular_double"
@@ -389,6 +394,7 @@
 		}
 		{
 			dependencies: ["2B3E220FA1C386A6"]
+			entity_vis_size: 1.0f
 			id: "2CD4A7E3F8FA21AD"
 			rewards: [
 				{
@@ -548,6 +554,7 @@
 		}
 		{
 			dependencies: ["6D52DFB5DE4FD9E7"]
+			entity_vis_size: 1.0f
 			id: "3052DEC2560BC0AF"
 			rewards: [
 				{
@@ -580,12 +587,13 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -8.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2CD4A7E3F8FA21AD"]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "1802DE6942A4768D"
 			rewards: [
 				{
@@ -719,6 +727,7 @@
 		{
 			dependencies: ["1802DE6942A4768D"]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "02AF63EB5DDCB616"
 			rewards: [
 				{
@@ -874,6 +883,7 @@
 		{
 			dependencies: ["02AF63EB5DDCB616"]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "20920AD76B3F20CC"
 			rewards: [
 				{
@@ -1018,6 +1028,7 @@
 		{
 			dependencies: ["20920AD76B3F20CC"]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "06B2C21D4C1DA03D"
 			rewards: [
 				{
@@ -1171,6 +1182,7 @@
 			y: -14.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "005DC752DCC73F5F"
 			rewards: [
 				{
@@ -1192,10 +1204,11 @@
 				item: "miniutilities:kikoku"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7C1CD8343B3B7FE7"
 			rewards: [
 				{
@@ -1279,10 +1292,11 @@
 				}
 			]
 			title: "&6Collection: &rExoskeletal"
-			x: 4.0d
+			x: 2.0d
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "51646E54093C04D5"
 			rewards: [
 				{
@@ -1311,6 +1325,7 @@
 		}
 		{
 			dependencies: ["51646E54093C04D5"]
+			entity_vis_size: 1.0f
 			id: "7E7EECB521479A8B"
 			rewards: [
 				{
@@ -1357,6 +1372,7 @@
 		}
 		{
 			dependencies: ["7E7EECB521479A8B"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "tetra:modular_toolbelt"
@@ -1417,6 +1433,7 @@
 		}
 		{
 			dependencies: ["40757D7B69DC2137"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "tetra:modular_toolbelt"
@@ -1477,6 +1494,7 @@
 		}
 		{
 			dependencies: ["7A0678DFE405FAC4"]
+			entity_vis_size: 1.0f
 			id: "2B5284AD7629D9C7"
 			rewards: [
 				{
@@ -1511,6 +1529,7 @@
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:stone_pickaxe"
@@ -1895,6 +1914,7 @@
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "tetra:modular_sword"
@@ -2064,6 +2084,7 @@
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:bow"
@@ -2206,6 +2227,7 @@
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:crossbow"
@@ -2266,6 +2288,7 @@
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -2385,6 +2408,7 @@
 			y: 9.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "76C828991A60061C"
 			rewards: [
 				{
@@ -2412,6 +2436,7 @@
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:blackstone"
 			id: "5EFD693D87BE9FD2"
 			rewards: [
@@ -2462,6 +2487,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["By combining two &eCombustion Chambers&r to each side of the &eForge Hammer&r, you will end up reaching a high enough tier to be able to upgrade your &eObsidian Hammer&r to &eNetherite&r."]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "tetra:modular_double"
@@ -2514,6 +2540,7 @@
 		}
 		{
 			dependencies: ["68C7DC00971C573B"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:stone_shovel"
@@ -2635,6 +2662,7 @@
 				"6143D0D4E03DAFAD"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "11C1D7D4A41C10AD"
 			rewards: [
 				{
@@ -2726,6 +2754,7 @@
 				""
 				"Your upgraded &eHolosphere&r will aid you in your search."
 			]
+			entity_vis_size: 1.0f
 			icon: "tetra:forged_platform"
 			id: "5794BDC27D167B4E"
 			rewards: [
@@ -2833,6 +2862,15 @@
 					type: "advancement"
 				}
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "tetra:hammer_base"
 					id: "06C7F0E883384843"
 					observe_type: 0
@@ -2858,6 +2896,7 @@
 				"7A0678DFE405FAC4"
 				"6C6889F047722548"
 			]
+			entity_vis_size: 1.0f
 			id: "62CBFF60EF89842E"
 			rewards: [
 				{
@@ -2952,6 +2991,7 @@
 		}
 		{
 			dependencies: ["5794BDC27D167B4E"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "citadel:fancy_item"
@@ -3051,6 +3091,7 @@
 			y: 14.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "00F394C1EBDBA3B3"
 			rewards: [
 				{
@@ -3248,10 +3289,11 @@
 				}
 			]
 			title: "&6Collection: &rFlux-Infused Armory"
-			x: -4.0d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "24B782A54B62DAEC"
 			rewards: [
 				{
@@ -3273,10 +3315,11 @@
 				item: "cataclysm:meat_shredder"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5B17CBCCE48C56CF"
 			rewards: [{
 				id: "70C536CB09FECB59"
@@ -3304,6 +3347,7 @@
 				"5B17CBCCE48C56CF"
 				"24CA2A54B597C78D"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "forbidden_arcanus:smelter_prism"
@@ -3363,6 +3407,7 @@
 				"5B17CBCCE48C56CF"
 				"24CA2A54B597C78D"
 			]
+			entity_vis_size: 1.0f
 			icon: "forbidden_arcanus:sea_prism"
 			id: "3948429ADBBFE31E"
 			rewards: [
@@ -3410,6 +3455,7 @@
 				"5B17CBCCE48C56CF"
 				"24CA2A54B597C78D"
 			]
+			entity_vis_size: 1.0f
 			icon: "forbidden_arcanus:terrastomp_prism"
 			id: "19136C8F83A97D6B"
 			rewards: [
@@ -3455,6 +3501,7 @@
 		{
 			dependencies: ["5B17CBCCE48C56CF"]
 			description: ["To see how to build the rest of the structure, look at it's &eponder&r by holding &e'W'&r over the hovered item."]
+			entity_vis_size: 1.0f
 			icon: "forbidden_arcanus:hephaestus_forge"
 			id: "24CA2A54B597C78D"
 			rewards: [
@@ -3474,6 +3521,15 @@
 			subtitle: "Smithing Altar"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "forbidden_arcanus:hephaestus_forge"
 					id: "524D0711244F66A7"
 					observe_type: 0
@@ -3514,6 +3570,7 @@
 				"24CA2A54B597C78D"
 				"5B17CBCCE48C56CF"
 			]
+			entity_vis_size: 1.0f
 			icon: "forbidden_arcanus:ferrognetic_mixture"
 			id: "3722238C7E1BE893"
 			rewards: [
@@ -3557,6 +3614,7 @@
 			y: 6.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "28061D434A82F90E"
 			rewards: [
 				{
@@ -3583,10 +3641,11 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: -2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "595BCE26B2329728"
 			rewards: [
 				{
@@ -3627,10 +3686,11 @@
 				}
 			]
 			title: "&6Collection: &rEerie Armory"
-			x: 8.0d
+			x: 4.0d
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4391C2FBD770D9D7"
 			rewards: [
 				{
@@ -3656,10 +3716,11 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.0d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6414E5A2589DBB5E"
 			rewards: [
 				{
@@ -3797,10 +3858,11 @@
 				}
 			]
 			title: "&6Collection: &rMasks Of The Indigenous"
-			x: 12.0d
+			x: 6.0d
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "00D043F9CBB1D1CC"
 			rewards: [
 				{
@@ -3832,10 +3894,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1CACEF134500801E"
 			rewards: [
 				{
@@ -3927,10 +3990,11 @@
 				}
 			]
 			title: "&6Collection: &rAir Suit"
-			x: -8.0d
+			x: -4.0d
 			y: -6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "5CAAFED6BC0119AF"
 			rewards: [
 				{
@@ -3956,10 +4020,11 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: -6.0d
+			x: -1.0d
+			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "species:spectralibur"
@@ -4041,7 +4106,38 @@
 					type: "custom"
 				}
 			]
-			x: -4.0d
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1A02091F4CD0DEA6"
+			rewards: [
+				{
+					id: "65024F26D36044B8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 5
+					id: "5AFD461DC8F58D07"
+					item: "kubejs:jewelled_box"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "5DD9F833DCC1A4E6"
+				item: {
+					Count: 1
+					id: "minecraft:mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
 			y: -2.0d
 		}
 	]

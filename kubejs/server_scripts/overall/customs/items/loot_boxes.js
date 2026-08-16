@@ -19,13 +19,14 @@ function spawnLoot(server, player, level, lootPath, amount) {
     }
 }
 
-function calcLootAmountFromLuck(player) {
-    let lootAmount = 1;
-    let player_luck = player.getAttributeValue('minecraft:generic.luck') || 0;
-    player_luck *= 0.12;
-    if (Math.random() < player_luck) lootAmount++;
-    if (player_luck > 1.0 && Math.random() < (player_luck - 1) * 0.1) lootAmount++;
-    return lootAmount;
+function getLootAmount(player) {
+	let luckFactor = (player.getAttributeValue('minecraft:generic.luck') || 0) * 0.12;
+	let lootAmount = 1;
+	
+	if (Math.random() < luckFactor) lootAmount++;
+	if (luckFactor > 1.0 && Math.random() < (luckFactor - 1) * 0.1) lootAmount++;
+	
+	return lootAmount;
 }
 
 const foodChestSound = [
@@ -60,7 +61,7 @@ ItemEvents.rightClicked(event => {
 				playEffects(server, player, soundEffect, particles);
 				let chance = Math.random();
 				if (chance < 0.91) {					
-					spawnLoot(server, player, level, lootPath, calcLootAmountFromLuck(player));
+					spawnLoot(server, player, level, lootPath, getLootAmount(player));
 				} else if (chance < 0.94) {
 					server.runCommandSilent(`execute as ${player.username} in ${level.dimension} run open_gateway ${player.username} ${randomize(allGateways)}`);
 				} else if (chance < 0.97) {
@@ -71,7 +72,7 @@ ItemEvents.rightClicked(event => {
 			}
 		} else {
 			playEffects(server, player, soundEffect, particles);
-			spawnLoot(server, player, level, lootPath, calcLootAmountFromLuck(player));
+			spawnLoot(server, player, level, lootPath, getLootAmount(player));
 		}
 		useItem(player, boxItem);
 		return;
@@ -80,7 +81,7 @@ ItemEvents.rightClicked(event => {
 	if (item.id === 'kubejs:gluttonous_chest') {
 		addItemCooldown(player, 'kubejs:gluttonous_chest', BOX_ITEM_COOLDOWN);
 		playEffects(server, player, randomize(foodChestSound), false);
-		spawnLoot(server, player, level, 'rogue:chests/loot/food', calcLootAmountFromLuck(player));
+		spawnLoot(server, player, level, 'rogue:chests/loot/food', getLootAmount(player));
 		if (!player.isCreative()) player.damageHeldItem(event.hand, 1);
 	}
 });

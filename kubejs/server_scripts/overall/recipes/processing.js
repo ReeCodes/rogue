@@ -1,4 +1,4 @@
-// priority: -200
+// priority: -1
 
 ServerEvents.recipes(event => {
     const { naturesaura } = event.recipes;

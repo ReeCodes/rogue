@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
 		}).id('deep_aether:' + id)
 	}
 	
-	combining('combinable_misc', 0.4, ['illagerinvasion:primal_essence', 'minecraft:ghast_tear', 'minecraft:rotten_flesh'], '4x caverns_and_chasms:living_flesh', 200, 'living_flesh_1');
-	combining('combinable_misc', 0.2, ['eidolon:death_essence', 'minecraft:ghast_tear', 'minecraft:rotten_flesh'], '2x caverns_and_chasms:living_flesh', 200, 'living_flesh_2');
+	combining('combinable_misc', 2.4, ['illagerinvasion:primal_essence', 'malum:hallowed_gold_ingot', 'naturesaura:token_joy'], 'minecraft:totem_of_undying', 200, 'tou_1');
+	combining('combinable_misc', 4.8, ['illagerinvasion:primal_essence', 'illagerinvasion:hallowed_gem', 'naturesaura:token_anger'], 'friendsandfoes:totem_of_freezing', 200, 'tof_1');
+	combining('combinable_misc', 4.8, ['illagerinvasion:primal_essence', 'illagerinvasion:hallowed_gem', 'naturesaura:token_fear'], 'friendsandfoes:totem_of_illusion', 200, 'toi_1');
 })
