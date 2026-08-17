@@ -1,36 +1,3 @@
-# Rogue! Mayhem | v0.17.1
-
-## MINOR CHANGES ( '' )
-* hopefully fixed dying causing a crash
-
-### Mods removed ( -- )
-* Locator Bar
-* 
-* Custom FoV
-* Immersive UI
-* ItemZoom
-* Perception
-* Obscure Tooltips
-* Obscure Tooltips Fix
-* ServerCore
-* Server Performance - Smooth Chunk Save
-* Tumbleweed
-
-### Mods added ( ++ )
-* Big Brain
-* ItemZoomMore
-* Piglin Proliferation
-* Wakes Reforged
-
-### Mods updated ( ~~ )
-* Amendments
-* FancyMenu
-* Sophisticated Backpacks Create Integration
-* Sophisticated Backpacks
-* Sophisticated Core
-* Legendary Monsters
-* Reliquary Reincarnations
-
 # Rogue! Mayhem | v0.17
 
 ## MAJOR CHANGES ( ''' )
